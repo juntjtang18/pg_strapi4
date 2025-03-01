@@ -38,23 +38,23 @@
       "target": "plugin::users-permissions.user",
       "inversedBy": "articles"
     },
-    "quality": {
+    "like_count": {
       "pluginOptions": {
         "i18n": {
           "localized": false
         }
       },
       "type": "integer",
-      "default": 5
+      "default": 0
     },
-    "popularity": {
+    "unlike_count": {
       "pluginOptions": {
         "i18n": {
           "localized": false
         }
       },
       "type": "integer",
-      "default": 1
+      "default": 0
     },
     "create_time": {
       "pluginOptions": {
@@ -84,6 +84,15 @@
       "relation": "manyToMany",
       "target": "api::category.category",
       "inversedBy": "articles"
+    },
+    "visit_count": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "type": "integer",
+      "default": 0
     }
   }
 }

@@ -396,20 +396,20 @@ export interface ApiArticleArticle extends Schema.CollectionType {
       'manyToOne',
       'plugin::users-permissions.user'
     >;
-    quality: Attribute.Integer &
+    like_count: Attribute.Integer &
       Attribute.SetPluginOptions<{
         i18n: {
           localized: false;
         };
       }> &
-      Attribute.DefaultTo<5>;
-    popularity: Attribute.Integer &
+      Attribute.DefaultTo<0>;
+    unlike_count: Attribute.Integer &
       Attribute.SetPluginOptions<{
         i18n: {
           localized: false;
         };
       }> &
-      Attribute.DefaultTo<1>;
+      Attribute.DefaultTo<0>;
     create_time: Attribute.DateTime &
       Attribute.SetPluginOptions<{
         i18n: {
@@ -433,6 +433,13 @@ export interface ApiArticleArticle extends Schema.CollectionType {
       'manyToMany',
       'api::category.category'
     >;
+    visit_count: Attribute.Integer &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: false;
+        };
+      }> &
+      Attribute.DefaultTo<0>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
