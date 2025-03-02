@@ -403,13 +403,6 @@ export interface ApiArticleArticle extends Schema.CollectionType {
         };
       }> &
       Attribute.DefaultTo<0>;
-    unlike_count: Attribute.Integer &
-      Attribute.SetPluginOptions<{
-        i18n: {
-          localized: false;
-        };
-      }> &
-      Attribute.DefaultTo<0>;
     create_time: Attribute.DateTime &
       Attribute.SetPluginOptions<{
         i18n: {
@@ -434,6 +427,13 @@ export interface ApiArticleArticle extends Schema.CollectionType {
       'api::category.category'
     >;
     visit_count: Attribute.Integer &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: false;
+        };
+      }> &
+      Attribute.DefaultTo<0>;
+    sortScore: Attribute.Integer &
       Attribute.SetPluginOptions<{
         i18n: {
           localized: false;

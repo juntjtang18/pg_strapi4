@@ -47,15 +47,6 @@
       "type": "integer",
       "default": 0
     },
-    "unlike_count": {
-      "pluginOptions": {
-        "i18n": {
-          "localized": false
-        }
-      },
-      "type": "integer",
-      "default": 0
-    },
     "create_time": {
       "pluginOptions": {
         "i18n": {
@@ -86,6 +77,15 @@
       "inversedBy": "articles"
     },
     "visit_count": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "type": "integer",
+      "default": 0
+    },
+    "sortScore": {
       "pluginOptions": {
         "i18n": {
           "localized": false
