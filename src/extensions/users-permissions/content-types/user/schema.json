@@ -71,6 +71,12 @@
       "relation": "oneToMany",
       "target": "api::article.article",
       "mappedBy": "users_permissions_user"
+    },
+    "posts": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::post.post",
+      "mappedBy": "users_permissions_user"
     }
   }
 }
