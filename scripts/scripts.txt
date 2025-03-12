@@ -7,3 +7,7 @@ create database "strapi-db2";
 
 psql -h /cloudsql/lucid-arch-451211-b0\:us-west1\:cloud-sql-server -U dbadmin -d strapi-db2 -f strapi-db-dump.sql
 
+
+
+
+docker run -it -p 8080:8080 --env-file .env -v ~/.config/gcloud/application_default_credentials.json:/app/credentials.json -e GOOGLE_APPLICATION_CREDENTIALS=/app/credentials.json gcr.io/lucid-arch-451211-b0/my-strapi-app:latest /bin/bash

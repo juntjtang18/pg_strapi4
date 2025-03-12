@@ -1,0 +1,10 @@
+FROM node:18
+WORKDIR /app
+COPY package*.json ./
+RUN npm install
+COPY . .
+# Install Cloud SQL Proxy
+RUN wget https://dl.google.com/cloudsql/cloud_sql_proxy.linux.amd64 -O cloud_sql_proxy \
+    && chmod +x cloud_sql_proxy
+EXPOSE 8080
+# CMD ["sh", "-c", "./cloud_sql_proxy -instances=lucid-arch-451211-b0:us-west1:cloud-sql-server=unix:/cloudsql/lucid-arch-451211-b0:us-west1:cloud-sql-server & npm run develop"]
