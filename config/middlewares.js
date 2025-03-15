@@ -5,7 +5,17 @@ module.exports = [
   'strapi::poweredBy',
   'strapi::logger',
   'strapi::query',
-  'strapi::body',
+  {
+    name: 'strapi::body',
+    config: {
+      json: {
+        limit: '100mb', // Allows JSON payloads up to 100MB
+      },
+      multipart: {
+        maxFileSize: 50 * 1024 * 1024, // 50MB for file uploads
+      },
+    },
+  },
   'strapi::session',
   'strapi::favicon',
   'strapi::public',
