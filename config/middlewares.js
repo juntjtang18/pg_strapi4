@@ -1,9 +1,21 @@
 module.exports = [
+  {
+    name: 'strapi::cors',
+    config: {
+      origin: ['http://localhost:8081', 'http://localhost:8080'], // Your Spring Boot app’s origin
+      methods: ['GET', 'POST', 'PUT', 'DELETE'],
+      headers: ['Content-Type', 'Authorization']
+    }
+  },
   'strapi::errors',
   'strapi::security',
-  'strapi::cors',
   'strapi::poweredBy',
-  'strapi::logger',
+  {
+    name: 'strapi::logger',
+    config: {
+      level: 'debug', // Increase from default 'info'
+    }
+  },
   'strapi::query',
   {
     name: 'strapi::body',

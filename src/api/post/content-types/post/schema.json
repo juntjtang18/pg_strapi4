@@ -4,7 +4,8 @@
   "info": {
     "singularName": "post",
     "pluralName": "posts",
-    "displayName": "post"
+    "displayName": "post",
+    "description": ""
   },
   "options": {
     "draftAndPublish": false
@@ -29,25 +30,6 @@
       "target": "plugin::users-permissions.user",
       "inversedBy": "posts"
     },
-    "like_count": {
-      "pluginOptions": {
-        "i18n": {
-          "localized": false
-        }
-      },
-      "type": "integer",
-      "default": 0,
-      "required": false
-    },
-    "sort_score": {
-      "pluginOptions": {
-        "i18n": {
-          "localized": false
-        }
-      },
-      "type": "integer",
-      "default": 0
-    },
     "create_time": {
       "pluginOptions": {
         "i18n": {
@@ -56,20 +38,17 @@
       },
       "type": "datetime"
     },
-    "always_on_top": {
-      "pluginOptions": {
-        "i18n": {
-          "localized": false
-        }
-      },
-      "type": "boolean",
-      "default": false
-    },
-    "category": {
+    "tags": {
       "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::category.category",
-      "inversedBy": "posts"
+      "relation": "manyToMany",
+      "target": "api::tag.tag",
+      "mappedBy": "posts"
+    },
+    "likes": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::like.like",
+      "mappedBy": "post"
     }
   }
 }
