@@ -5,9 +5,11 @@ module.exports = [
       origin: [
         'https://strapi.geniusparentingai.ca', 
         'http://localhost:8080',               
+	'http://localhost:8081',
+	'https://my-strapi-app-852311377699.us-west1.run.app',
       ],
-      methods: ['GET', 'POST', 'PUT', 'DELETE'],
-      headers: ['Content-Type', 'Authorization'],
+      methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+      headers: '*',
       credentials: true,
     },
   },
