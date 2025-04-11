@@ -2,10 +2,14 @@ module.exports = [
   {
     name: 'strapi::cors',
     config: {
-      origin: ['http://localhost:8081', 'http://localhost:8080'], // Your Spring Boot app’s origin
+      origin: [
+        'https://strapi.geniusparentingai.ca', 
+        'http://localhost:8080',               
+      ],
       methods: ['GET', 'POST', 'PUT', 'DELETE'],
-      headers: ['Content-Type', 'Authorization']
-    }
+      headers: ['Content-Type', 'Authorization'],
+      credentials: true,
+    },
   },
   'strapi::errors',
   'strapi::security',
@@ -13,18 +17,18 @@ module.exports = [
   {
     name: 'strapi::logger',
     config: {
-      level: 'debug', // Increase from default 'info'
-    }
+      level: 'debug',
+    },
   },
   'strapi::query',
   {
     name: 'strapi::body',
     config: {
       json: {
-        limit: '100mb', // Allows JSON payloads up to 100MB
+        limit: '100mb',
       },
       multipart: {
-        maxFileSize: 50 * 1024 * 1024, // 50MB for file uploads
+        maxFileSize: 50 * 1024 * 1024, // 50MB
       },
     },
   },
@@ -32,3 +36,4 @@ module.exports = [
   'strapi::favicon',
   'strapi::public',
 ];
+

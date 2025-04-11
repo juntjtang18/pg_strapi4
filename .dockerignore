@@ -1,7 +1,12 @@
-backup
 node_modules
 .git
 .gitignore
-dist
 build
+backup
+dist
+Dockerfile*
+deploy.sh
+*.md
+*.bak
+scripts
 

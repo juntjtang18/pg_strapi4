@@ -16,14 +16,6 @@
     }
   },
   "attributes": {
-    "content": {
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
-      "type": "blocks"
-    },
     "users_permissions_user": {
       "type": "relation",
       "relation": "manyToOne",
@@ -49,6 +41,14 @@
       "relation": "oneToMany",
       "target": "api::like.like",
       "mappedBy": "post"
+    },
+    "content": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "richtext"
     }
   }
 }

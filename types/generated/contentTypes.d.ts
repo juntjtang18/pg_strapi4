@@ -978,12 +978,6 @@ export interface ApiPostPost extends Schema.CollectionType {
     };
   };
   attributes: {
-    content: Attribute.Blocks &
-      Attribute.SetPluginOptions<{
-        i18n: {
-          localized: true;
-        };
-      }>;
     users_permissions_user: Attribute.Relation<
       'api::post.post',
       'manyToOne',
@@ -997,6 +991,12 @@ export interface ApiPostPost extends Schema.CollectionType {
       }>;
     tags: Attribute.Relation<'api::post.post', 'manyToMany', 'api::tag.tag'>;
     likes: Attribute.Relation<'api::post.post', 'oneToMany', 'api::like.like'>;
+    content: Attribute.RichText &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     createdBy: Attribute.Relation<'api::post.post', 'oneToOne', 'admin::user'> &
