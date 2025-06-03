@@ -111,5 +111,7 @@ exports
 dist
 build
 .strapi-updater.json
-./backup/storage
+backup/storage
+backup/storage/*
+
 
