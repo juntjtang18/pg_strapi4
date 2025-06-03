@@ -961,6 +961,28 @@ export interface ApiLikeLike extends Schema.CollectionType {
   };
 }
 
+export interface ApiPingPing extends Schema.CollectionType {
+  collectionName: 'pings';
+  info: {
+    singularName: 'ping';
+    pluralName: 'pings';
+    displayName: 'Ping';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    status: Attribute.String & Attribute.DefaultTo<'ok'>;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<'api::ping.ping', 'oneToOne', 'admin::user'> &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<'api::ping.ping', 'oneToOne', 'admin::user'> &
+      Attribute.Private;
+  };
+}
+
 export interface ApiPostPost extends Schema.CollectionType {
   collectionName: 'posts';
   info: {
@@ -1070,6 +1092,7 @@ declare module '@strapi/types' {
       'api::category.category': ApiCategoryCategory;
       'api::function.function': ApiFunctionFunction;
       'api::like.like': ApiLikeLike;
+      'api::ping.ping': ApiPingPing;
       'api::post.post': ApiPostPost;
       'api::tag.tag': ApiTagTag;
     }

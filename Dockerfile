@@ -26,7 +26,7 @@ WORKDIR /app
 COPY --from=build /app ./
 
 # Add production-only environment variables
-ENV NODE_ENV=production
+#ENV NODE_ENV=production
 
 # Expose Strapi port
 EXPOSE 8080

@@ -7,7 +7,32 @@ create database "strapi-db2";
 
 psql -h /cloudsql/lucid-arch-451211-b0\:us-west1\:cloud-sql-server -U dbadmin -d strapi-db2 -f strapi-db-dump.sql
 
-
-
-
 docker run -it -p 8080:8080 --env-file .env -v ~/.config/gcloud/application_default_credentials.json:/app/credentials.json -e GOOGLE_APPLICATION_CREDENTIALS=/app/credentials.json gcr.io/lucid-arch-451211-b0/my-strapi-app:latest /bin/bash
+
+
+admin/Passw0rd@Gpa
+
+
+dbadmin/tj13in4link
+postgres/tj13in4link
+
+
+pg_dump -h /cloudsql/lucid-arch-451211-b0/:us-west1/:cloud-sql-server -U dbadmin -d strapi-db2 > ./backups/strapi-db2_backup-20250601.sql
+
+# To run the Cloud SQL Proxy locally and connect to the Cloud SQL instance
+gcloud auth login
+gcloud config set project lucid-arch-451211-b0
+cloud_sql_proxy lucid-arch-451211-b0:us-west1:cloud-sql-server   --unix-socket=/Users/James/cloudsql   --credentials-file=/Users/James/.config/gcloud/application_default_credentials.json
+
+
+# run strapi locally with the Cloud SQL Proxy
+export CLOUD_SQL_INSTANCE=lucid-arch-451211-b0:us-west1:cloud-sql-server 
+export DATABASE_NAME=strapi-db2
+export DATABASE_USERNAME=dbadmin 
+export DATABASE_PASSWORD=tj13in4link 
+export PORT=8080 
+npm run develop
+
+
+# Tokens
+Bearer 4ce79caf486d02a1f1d56690e10edb120172038193626d7e7eec0ba7679e219dd616c1a9a6908f079576f0d73d55ffda5fe6b057c2fdf9c19017f802f735d72ca2434a62b3398b4bdea42d84a2a4aab1657a2a3616e6f70c9ac12f80428259fd86dea64d7192e05eafcd90bfc6bbce606453e2e07048d608d52840f242524e41
