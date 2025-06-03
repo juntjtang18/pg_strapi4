@@ -9,4 +9,5 @@ deploy.sh
 *.md
 *.bak
 scripts
+database
 
