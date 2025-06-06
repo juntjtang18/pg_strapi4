@@ -865,6 +865,132 @@ export interface ApiCategoryCategory extends Schema.CollectionType {
   };
 }
 
+export interface ApiCourseCourse extends Schema.CollectionType {
+  collectionName: 'courses';
+  info: {
+    singularName: 'course';
+    pluralName: 'courses';
+    displayName: 'course';
+    description: '';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  pluginOptions: {
+    i18n: {
+      localized: true;
+    };
+  };
+  attributes: {
+    title: Attribute.String &
+      Attribute.Required &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    coursecategory: Attribute.Relation<
+      'api::course.course',
+      'manyToOne',
+      'api::coursecategory.coursecategory'
+    >;
+    content: Attribute.DynamicZone<
+      [
+        'coursecontent.text',
+        'coursecontent.image',
+        'coursecontent.video',
+        'coursecontent.external-video',
+        'coursecontent.quiz',
+        'coursecontent.pagebreaker'
+      ]
+    > &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    icon_image: Attribute.Media &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::course.course',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::course.course',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    localizations: Attribute.Relation<
+      'api::course.course',
+      'oneToMany',
+      'api::course.course'
+    >;
+    locale: Attribute.String;
+  };
+}
+
+export interface ApiCoursecategoryCoursecategory extends Schema.CollectionType {
+  collectionName: 'coursecategories';
+  info: {
+    singularName: 'coursecategory';
+    pluralName: 'coursecategories';
+    displayName: 'coursecategory';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  pluginOptions: {
+    i18n: {
+      localized: true;
+    };
+  };
+  attributes: {
+    name: Attribute.String &
+      Attribute.Required &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    courses: Attribute.Relation<
+      'api::coursecategory.coursecategory',
+      'oneToMany',
+      'api::course.course'
+    >;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::coursecategory.coursecategory',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::coursecategory.coursecategory',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    localizations: Attribute.Relation<
+      'api::coursecategory.coursecategory',
+      'oneToMany',
+      'api::coursecategory.coursecategory'
+    >;
+    locale: Attribute.String;
+  };
+}
+
 export interface ApiFunctionFunction extends Schema.CollectionType {
   collectionName: 'functions';
   info: {
@@ -1090,6 +1216,8 @@ declare module '@strapi/types' {
       'plugin::users-permissions.user': PluginUsersPermissionsUser;
       'api::article.article': ApiArticleArticle;
       'api::category.category': ApiCategoryCategory;
+      'api::course.course': ApiCourseCourse;
+      'api::coursecategory.coursecategory': ApiCoursecategoryCoursecategory;
       'api::function.function': ApiFunctionFunction;
       'api::like.like': ApiLikeLike;
       'api::ping.ping': ApiPingPing;

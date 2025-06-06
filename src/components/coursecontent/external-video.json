@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_coursecontent_external_videos",
+  "info": {
+    "displayName": "external_video",
+    "icon": "monitor"
+  },
+  "options": {},
+  "attributes": {
+    "external_url": {
+      "type": "string"
+    },
+    "thumbnail": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "caption": {
+      "type": "string"
+    }
+  }
+}
