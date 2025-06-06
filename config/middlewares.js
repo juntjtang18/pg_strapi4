@@ -1,13 +1,14 @@
+// config/middlewares.js
 module.exports = [
   {
     name: 'strapi::cors',
     config: {
       origin: [
-        'https://strapi.geniusparentingai.ca', 
-        'http://localhost:8080',               
-	'http://localhost:8081',
-        'https://www.geniusparentingai.ca', 
-	'https://my-strapi-app-852311377699.us-west1.run.app',
+        'https://strapi.geniusparentingai.ca',
+        'http://localhost:8080',
+        'http://localhost:8081',
+        'https://www.geniusparentingai.ca',
+        'https://my-strapi-app-852311377699.us-west1.run.app',
       ],
       methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
       headers: '*',
@@ -31,7 +32,7 @@ module.exports = [
         limit: '100mb',
       },
       multipart: {
-        maxFileSize: 50 * 1024 * 1024, // 50MB
+        maxFileSize: 1024 * 1024 * 1024, // 1 GB
       },
     },
   },
@@ -39,4 +40,3 @@ module.exports = [
   'strapi::favicon',
   'strapi::public',
 ];
-

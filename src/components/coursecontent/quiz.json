@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_coursecontent_quizzes",
+  "info": {
+    "displayName": "quiz",
+    "icon": "feather"
+  },
+  "options": {},
+  "attributes": {
+    "question": {
+      "type": "text"
+    },
+    "options": {
+      "type": "json"
+    },
+    "correctAnswer": {
+      "type": "string"
+    }
+  }
+}

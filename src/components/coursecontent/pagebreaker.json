@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_coursecontent_pagebreakers",
+  "info": {
+    "displayName": "pagebreaker",
+    "icon": "file"
+  },
+  "options": {},
+  "attributes": {
+    "backbutton": {
+      "type": "boolean",
+      "default": true
+    },
+    "nextbutton": {
+      "type": "boolean",
+      "default": true
+    }
+  }
+}

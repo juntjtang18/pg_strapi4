@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_coursecontent_texts",
+  "info": {
+    "displayName": "text",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "data": {
+      "type": "text",
+      "required": true
+    },
+    "style": {
+      "type": "json",
+      "required": false
+    }
+  }
+}
