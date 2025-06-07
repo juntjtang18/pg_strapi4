@@ -991,6 +991,56 @@ export interface ApiCoursecategoryCoursecategory extends Schema.CollectionType {
   };
 }
 
+export interface ApiDailylessonDailylesson extends Schema.SingleType {
+  collectionName: 'dailylessons';
+  info: {
+    singularName: 'dailylesson';
+    pluralName: 'dailylessons';
+    displayName: 'Daily Lesson Plan';
+    description: '';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  pluginOptions: {
+    i18n: {
+      localized: true;
+    };
+  };
+  attributes: {
+    dailylessons: Attribute.Component<
+      'dailylesson.daily-lesson-selection',
+      true
+    > &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::dailylesson.dailylesson',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::dailylesson.dailylesson',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    localizations: Attribute.Relation<
+      'api::dailylesson.dailylesson',
+      'oneToMany',
+      'api::dailylesson.dailylesson'
+    >;
+    locale: Attribute.String;
+  };
+}
+
 export interface ApiFunctionFunction extends Schema.CollectionType {
   collectionName: 'functions';
   info: {
@@ -1218,6 +1268,7 @@ declare module '@strapi/types' {
       'api::category.category': ApiCategoryCategory;
       'api::course.course': ApiCourseCourse;
       'api::coursecategory.coursecategory': ApiCoursecategoryCoursecategory;
+      'api::dailylesson.dailylesson': ApiDailylessonDailylesson;
       'api::function.function': ApiFunctionFunction;
       'api::like.like': ApiLikeLike;
       'api::ping.ping': ApiPingPing;
