@@ -74,6 +74,33 @@ export interface CoursecontentVideo extends Schema.Component {
   };
 }
 
+export interface DailylessonDailyLessonSelection extends Schema.Component {
+  collectionName: 'components_dailylesson_daily_lesson_selections';
+  info: {
+    displayName: 'DailyLessonSelection';
+    icon: 'dashboard';
+    description: '';
+  };
+  attributes: {
+    day: Attribute.Enumeration<
+      [
+        'Monday',
+        'Tuesday',
+        'Wednesday',
+        'Thursday',
+        'Friday',
+        'Saturday',
+        'Sunday'
+      ]
+    >;
+    courses: Attribute.Relation<
+      'dailylesson.daily-lesson-selection',
+      'oneToMany',
+      'api::course.course'
+    >;
+  };
+}
+
 declare module '@strapi/types' {
   export module Shared {
     export interface Components {
@@ -83,6 +110,7 @@ declare module '@strapi/types' {
       'coursecontent.quiz': CoursecontentQuiz;
       'coursecontent.text': CoursecontentText;
       'coursecontent.video': CoursecontentVideo;
+      'dailylesson.daily-lesson-selection': DailylessonDailyLessonSelection;
     }
   }
 }
