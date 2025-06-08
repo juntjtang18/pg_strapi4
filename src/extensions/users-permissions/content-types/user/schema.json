@@ -77,6 +77,12 @@
       "relation": "oneToMany",
       "target": "api::post.post",
       "mappedBy": "users_permissions_user"
+    },
+    "user_profile": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::user-profile.user-profile",
+      "mappedBy": "users_permissions_user"
     }
   }
 }

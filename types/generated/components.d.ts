@@ -101,6 +101,19 @@ export interface DailylessonDailyLessonSelection extends Schema.Component {
   };
 }
 
+export interface ProfileChild extends Schema.Component {
+  collectionName: 'components_profile_children';
+  info: {
+    displayName: 'child';
+    icon: 'user';
+  };
+  attributes: {
+    name: Attribute.String;
+    age: Attribute.Integer;
+    gender: Attribute.Enumeration<['male', 'female']>;
+  };
+}
+
 declare module '@strapi/types' {
   export module Shared {
     export interface Components {
@@ -111,6 +124,7 @@ declare module '@strapi/types' {
       'coursecontent.text': CoursecontentText;
       'coursecontent.video': CoursecontentVideo;
       'dailylesson.daily-lesson-selection': DailylessonDailyLessonSelection;
+      'profile.child': ProfileChild;
     }
   }
 }
