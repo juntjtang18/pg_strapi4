@@ -4,7 +4,7 @@ echo "Restoring PostgreSQL..."
 
 PGPASSWORD=tj13in4link psql \
   -h /cloudsql/lucid-arch-451211-b0:us-west1:cloud-sql-server \
-  -U dbadmin -d strapi-dev2 < ./backups/strapi-dev2_backup.sql
+  -U dbadmin -d strapi-dev3 < ./backups/strapi-dev3_backup.sql
 
 echo "PostgreSQL restore completed."
 
