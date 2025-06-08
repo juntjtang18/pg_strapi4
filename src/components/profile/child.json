@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_profile_children",
+  "info": {
+    "displayName": "child",
+    "icon": "user"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "age": {
+      "type": "integer"
+    },
+    "gender": {
+      "type": "enumeration",
+      "enum": [
+        "male",
+        "female"
+      ]
+    }
+  }
+}
