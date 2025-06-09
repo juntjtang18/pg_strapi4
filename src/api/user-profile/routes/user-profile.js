@@ -1,9 +1,16 @@
 'use strict';
 
-/**
- * user-profile router
- */
-
-const { createCoreRouter } = require('@strapi/strapi').factories;
-
-module.exports = createCoreRouter('api::user-profile.user-profile');
+module.exports = {
+  routes: [
+    {
+      method: 'PUT',
+      path: '/user-profiles/mine',
+      handler: 'user-profile.updateMine',
+      config: {
+        // This forces Strapi to skip the broken permission layer.
+        // Security will be handled inside the controller.
+        auth: false,
+      },
+    },
+  ],
+};

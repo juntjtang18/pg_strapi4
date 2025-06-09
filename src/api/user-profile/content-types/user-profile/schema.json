@@ -4,7 +4,8 @@
   "info": {
     "singularName": "user-profile",
     "pluralName": "user-profiles",
-    "displayName": "User Profile"
+    "displayName": "User Profile",
+    "description": ""
   },
   "options": {
     "draftAndPublish": false
@@ -29,14 +30,6 @@
       },
       "type": "boolean",
       "default": false
-    },
-    "numberOfChildren": {
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
-      "type": "integer"
     },
     "children": {
       "type": "component",
