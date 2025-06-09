@@ -1259,6 +1259,7 @@ export interface ApiUserProfileUserProfile extends Schema.CollectionType {
     singularName: 'user-profile';
     pluralName: 'user-profiles';
     displayName: 'User Profile';
+    description: '';
   };
   options: {
     draftAndPublish: false;
@@ -1281,12 +1282,6 @@ export interface ApiUserProfileUserProfile extends Schema.CollectionType {
         };
       }> &
       Attribute.DefaultTo<false>;
-    numberOfChildren: Attribute.Integer &
-      Attribute.SetPluginOptions<{
-        i18n: {
-          localized: true;
-        };
-      }>;
     children: Attribute.Component<'profile.child', true> &
       Attribute.SetPluginOptions<{
         i18n: {
