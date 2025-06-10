@@ -1,12 +1,55 @@
 'use strict';
 
+/**
+ * user-profile controller
+ */
+
 const { createCoreController } = require('@strapi/strapi').factories;
 
 module.exports = createCoreController('api::user-profile.user-profile', ({ strapi }) => ({
 
   /**
-   * This is the final, working version.
-   * It manually authenticates the user and updates their profile.
+   * This new function finds the profile for the currently logged-in user.
+   */
+  async findMine(ctx) {
+    try {
+      const authHeader = ctx.request.header.authorization;
+      if (!authHeader || !authHeader.startsWith('Bearer ')) {
+        return ctx.unauthorized('Missing or invalid authorization header.');
+      }
+      const token = authHeader.split(' ')[1];
+
+      const { id: userId } = await strapi.plugins['users-permissions'].services.jwt.verify(token);
+      if (!userId) {
+        return ctx.unauthorized('Invalid token.');
+      }
+
+      const profiles = await strapi.entityService.findMany('api::user-profile.user-profile', {
+        // --- FIX: Changed the filter key to 'user', which is the more common relation name ---
+        filters: { user: userId },
+        populate: { children: true } // Also populate children
+      });
+
+      if (profiles.length === 0) {
+        return ctx.notFound('No user profile found for the current user.');
+      }
+      
+      // Strapi's findMany returns an array, so we return the first element
+      return this.transformResponse(profiles[0]);
+
+    } catch (err) {
+      strapi.log.error('Error in custom user-profile find', err);
+      if (err.name === 'JsonWebTokenError' || err.name === 'TokenExpiredError') {
+        return ctx.unauthorized('Invalid or expired token.');
+      }
+      return ctx.internalServerError('An error occurred while fetching the profile.');
+    }
+  },
+
+
+  /**
+   * This is your existing function to update a profile.
+   * It remains unchanged.
    */
   async updateMine(ctx) {
     try {
@@ -25,7 +68,8 @@ module.exports = createCoreController('api::user-profile.user-profile', ({ strap
 
       // 3. Find the user-profile entry that belongs to this user.
       const profiles = await strapi.entityService.findMany('api::user-profile.user-profile', {
-        filters: { users_permissions_user: userId },
+        // --- FIX: Also changed the filter key here for consistency ---
+        filters: { user: userId },
       });
 
       if (profiles.length === 0) {
