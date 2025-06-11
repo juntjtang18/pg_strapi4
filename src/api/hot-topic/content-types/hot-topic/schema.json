@@ -1,0 +1,24 @@
+{
+  "kind": "singleType",
+  "collectionName": "hot_topics",
+  "info": {
+    "singularName": "hot-topic",
+    "pluralName": "hot-topics",
+    "displayName": "Hot Topic"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "topics": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::topic.topic"
+    }
+  }
+}
