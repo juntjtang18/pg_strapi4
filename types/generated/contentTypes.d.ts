@@ -1109,6 +1109,50 @@ export interface ApiFunctionFunction extends Schema.CollectionType {
   };
 }
 
+export interface ApiHotTopicHotTopic extends Schema.SingleType {
+  collectionName: 'hot_topics';
+  info: {
+    singularName: 'hot-topic';
+    pluralName: 'hot-topics';
+    displayName: 'Hot Topic';
+  };
+  options: {
+    draftAndPublish: false;
+  };
+  pluginOptions: {
+    i18n: {
+      localized: true;
+    };
+  };
+  attributes: {
+    topics: Attribute.Relation<
+      'api::hot-topic.hot-topic',
+      'oneToMany',
+      'api::topic.topic'
+    >;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::hot-topic.hot-topic',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::hot-topic.hot-topic',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    localizations: Attribute.Relation<
+      'api::hot-topic.hot-topic',
+      'oneToMany',
+      'api::hot-topic.hot-topic'
+    >;
+    locale: Attribute.String;
+  };
+}
+
 export interface ApiLikeLike extends Schema.CollectionType {
   collectionName: 'likes';
   info: {
@@ -1253,6 +1297,73 @@ export interface ApiTagTag extends Schema.CollectionType {
   };
 }
 
+export interface ApiTopicTopic extends Schema.CollectionType {
+  collectionName: 'topics';
+  info: {
+    singularName: 'topic';
+    pluralName: 'topics';
+    displayName: 'Topic';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  pluginOptions: {
+    i18n: {
+      localized: true;
+    };
+  };
+  attributes: {
+    title: Attribute.String &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    icon_image: Attribute.Media &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    content: Attribute.DynamicZone<
+      [
+        'coursecontent.text',
+        'coursecontent.image',
+        'coursecontent.video',
+        'coursecontent.external-video',
+        'coursecontent.quiz',
+        'coursecontent.pagebreaker'
+      ]
+    > &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::topic.topic',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::topic.topic',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    localizations: Attribute.Relation<
+      'api::topic.topic',
+      'oneToMany',
+      'api::topic.topic'
+    >;
+    locale: Attribute.String;
+  };
+}
+
 export interface ApiUserProfileUserProfile extends Schema.CollectionType {
   collectionName: 'user_profiles';
   info: {
@@ -1333,10 +1444,12 @@ declare module '@strapi/types' {
       'api::coursecategory.coursecategory': ApiCoursecategoryCoursecategory;
       'api::dailylesson.dailylesson': ApiDailylessonDailylesson;
       'api::function.function': ApiFunctionFunction;
+      'api::hot-topic.hot-topic': ApiHotTopicHotTopic;
       'api::like.like': ApiLikeLike;
       'api::ping.ping': ApiPingPing;
       'api::post.post': ApiPostPost;
       'api::tag.tag': ApiTagTag;
+      'api::topic.topic': ApiTopicTopic;
       'api::user-profile.user-profile': ApiUserProfileUserProfile;
     }
   }
