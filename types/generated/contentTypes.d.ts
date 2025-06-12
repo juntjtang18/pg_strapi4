@@ -996,6 +996,50 @@ export interface ApiCoursecategoryCoursecategory extends Schema.CollectionType {
   };
 }
 
+export interface ApiDailyTipDailyTip extends Schema.SingleType {
+  collectionName: 'daily_tips';
+  info: {
+    singularName: 'daily-tip';
+    pluralName: 'daily-tips';
+    displayName: 'Daily Tip';
+  };
+  options: {
+    draftAndPublish: false;
+  };
+  pluginOptions: {
+    i18n: {
+      localized: true;
+    };
+  };
+  attributes: {
+    tips: Attribute.Relation<
+      'api::daily-tip.daily-tip',
+      'oneToMany',
+      'api::tip.tip'
+    >;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::daily-tip.daily-tip',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::daily-tip.daily-tip',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    localizations: Attribute.Relation<
+      'api::daily-tip.daily-tip',
+      'oneToMany',
+      'api::daily-tip.daily-tip'
+    >;
+    locale: Attribute.String;
+  };
+}
+
 export interface ApiDailylessonDailylesson extends Schema.SingleType {
   collectionName: 'dailylessons';
   info: {
@@ -1297,6 +1341,49 @@ export interface ApiTagTag extends Schema.CollectionType {
   };
 }
 
+export interface ApiTipTip extends Schema.CollectionType {
+  collectionName: 'tips';
+  info: {
+    singularName: 'tip';
+    pluralName: 'tips';
+    displayName: 'tip';
+  };
+  options: {
+    draftAndPublish: false;
+  };
+  pluginOptions: {
+    i18n: {
+      localized: true;
+    };
+  };
+  attributes: {
+    text: Attribute.String &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    icon_image: Attribute.Media &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<'api::tip.tip', 'oneToOne', 'admin::user'> &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<'api::tip.tip', 'oneToOne', 'admin::user'> &
+      Attribute.Private;
+    localizations: Attribute.Relation<
+      'api::tip.tip',
+      'oneToMany',
+      'api::tip.tip'
+    >;
+    locale: Attribute.String;
+  };
+}
+
 export interface ApiTopicTopic extends Schema.CollectionType {
   collectionName: 'topics';
   info: {
@@ -1442,6 +1529,7 @@ declare module '@strapi/types' {
       'api::category.category': ApiCategoryCategory;
       'api::course.course': ApiCourseCourse;
       'api::coursecategory.coursecategory': ApiCoursecategoryCoursecategory;
+      'api::daily-tip.daily-tip': ApiDailyTipDailyTip;
       'api::dailylesson.dailylesson': ApiDailylessonDailylesson;
       'api::function.function': ApiFunctionFunction;
       'api::hot-topic.hot-topic': ApiHotTopicHotTopic;
@@ -1449,6 +1537,7 @@ declare module '@strapi/types' {
       'api::ping.ping': ApiPingPing;
       'api::post.post': ApiPostPost;
       'api::tag.tag': ApiTagTag;
+      'api::tip.tip': ApiTipTip;
       'api::topic.topic': ApiTopicTopic;
       'api::user-profile.user-profile': ApiUserProfileUserProfile;
     }

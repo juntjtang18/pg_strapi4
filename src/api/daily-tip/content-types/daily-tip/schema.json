@@ -1,0 +1,24 @@
+{
+  "kind": "singleType",
+  "collectionName": "daily_tips",
+  "info": {
+    "singularName": "daily-tip",
+    "pluralName": "daily-tips",
+    "displayName": "Daily Tip"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "tips": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::tip.tip"
+    }
+  }
+}

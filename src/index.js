@@ -5,52 +5,70 @@ module.exports = {
 
   bootstrap({ strapi }) {
     console.log('✅ Strapi bootstrap function has been called.');
-    console.log('⏳ Scheduling the daily topic selection cron job...');
+    console.log('⏳ Scheduling background jobs...');
     
+    // --- JOB 1: HOT TOPICS (Unchanged) ---
     strapi.cron.add({
-      // Test schedule: every minute. Change to '0 0 * * *' for production.
-      '0 0 * * *': async () => {
+      '0 0 * * *': async () => { 
         try {
           console.log('🚀 Cron job triggered! Starting hot topic selection...');
           const knex = strapi.db.connection;
-
-          // Get the table name for the 'topic' model
           const topicModel = strapi.getModel('api::topic.topic');
           const tableName = topicModel.collectionName;
           
-          // Use a raw query with RANDOM() for PostgreSQL
-          const randomTopics = await knex(tableName)
-            .orderByRaw('RANDOM()')
-            .limit(2);
+          const randomTopics = await knex(tableName).orderByRaw('RANDOM()').limit(2);
           
-          console.log(`🔍 Found ${randomTopics.length} random topics.`);
-
           if (randomTopics.length >= 2) {
             const topicIds = randomTopics.map(topic => topic.id);
             console.log(`📌 Selected Topic IDs: ${topicIds.join(', ')}`);
 
-            // Find the 'Hot Topic' single type entry. Create it if it doesn't exist.
             let hotTopicEntry = await strapi.db.query('api::hot-topic.hot-topic').findOne({ where: { id: 1 } });
-            
             if (!hotTopicEntry) {
-                 console.log("Hot Topic entry doesn't exist, creating one...");
                  await strapi.entityService.create('api::hot-topic.hot-topic', { data: {} });
-                 console.log("Hot Topic entry created.");
             }
 
-            // Update the 'Hot Topic' single type with the new relations
-            await strapi.entityService.update('api::hot-topic.hot-topic', 1, {
-              data: {
-                topics: topicIds,
-              },
-            });
-
+            await strapi.entityService.update('api::hot-topic.hot-topic', 1, { data: { topics: topicIds } });
             console.log('✅ Successfully updated hot topics in the database.');
           } else {
-            console.warn('⚠️ Cron job warning: Not enough topics in the database to select two.');
+            console.warn('⚠️ Cron job (Hot Topics): Not enough topics to select from.');
           }
         } catch (error) {
-          console.error('❌ An error occurred during the cron job:', error);
+          console.error('❌ An error occurred during the Hot Topics cron job:', error);
+        }
+      },
+    });
+
+    // --- JOB 2: DAILY TIPS (Modified to select 2) ---
+    strapi.cron.add({
+      '0 0 * * *': async () => { 
+        try {
+          console.log('🚀 Cron job triggered! Starting daily tip selection...');
+          const knex = strapi.db.connection;
+          const tipModel = strapi.getModel('api::tip.tip');
+          const tableName = tipModel.collectionName;
+
+          // --- CHANGE: Fetch 2 random tips instead of 1 ---
+          const randomTips = await knex(tableName).orderByRaw('RANDOM()').limit(2);
+
+          // --- CHANGE: Check if we found at least 2 tips ---
+          if (randomTips.length >= 2) {
+            const tipIds = randomTips.map(tip => tip.id);
+            console.log(`📌 Selected Tip IDs: ${tipIds.join(', ')}`);
+
+            let dailyTipEntry = await strapi.db.query('api::daily-tip.daily-tip').findOne({ where: { id: 1 } });
+            if (!dailyTipEntry) {
+                 await strapi.entityService.create('api::daily-tip.daily-tip', { data: {} });
+            }
+
+            // --- CHANGE: Pass the array of two IDs ---
+            await strapi.entityService.update('api::daily-tip.daily-tip', 1, { data: { tips: tipIds } });
+
+            console.log('✅ Successfully updated daily tips in the database.');
+          } else {
+            console.warn('⚠️ Cron job (Daily Tip): Not enough tips found to select two.');
+          }
+        } catch (error) {
+          console.error('❌ An error occurred during the Daily Tip cron job:', error);
         }
       },
     });
