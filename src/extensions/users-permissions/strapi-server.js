@@ -1,18 +1,14 @@
-// src/extensions/users-permissions/strapi-server.js
-
 "use strict";
 
 module.exports = (plugin) => {
-  // Override the default 'me' controller
   plugin.controllers.user.me = async (ctx) => {
-    // Ensure the user is authenticated
     if (!ctx.state.user || !ctx.state.user.id) {
-      return ctx.response.status = 401; // Unauthorized
+      ctx.response.status = 401;
+      return;
     }
 
-    // --- FINAL FIX ---
-    // Replace the shallow populate:'*' with a specific, deep-populate object
     const populate = {
+      role: true,
       user_profile: {
         populate: {
           children: true,
@@ -23,27 +19,42 @@ module.exports = (plugin) => {
     const user = await strapi.entityService.findOne(
       "plugin::users-permissions.user",
       ctx.state.user.id,
-      { populate: populate } // Pass the specific populate object
+      { populate }
     );
-    // --- END FIX ---
 
-    // Manually build the response object to prevent sanitization from stripping relations
-    if (user) {
-      ctx.body = {
-        id: user.id,
-        username: user.username,
-        email: user.email,
-        confirmed: user.confirmed,
-        blocked: user.blocked,
-        createdAt: user.createdAt,
-        updatedAt: user.updatedAt,
-        user_profile: user.user_profile || null,
-      };
-    } else {
+    if (!user) {
       return ctx.notFound();
     }
+
+    const cleanRole = user.role
+      ? (({ id, name, description, type }) => ({ id, name, description, type }))(user.role)
+      : null;
+
+    const cleanChildren = Array.isArray(user.user_profile?.children)
+      ? user.user_profile.children.map(({ id, name, age, gender }) => ({
+          id, name, age, gender,
+        }))
+      : [];
+
+    const cleanUserProfile = user.user_profile
+      ? {
+          id: user.user_profile.id,
+          locale: user.user_profile.locale,
+          consentForEmailNotice: user.user_profile.consentForEmailNotice,
+          children: cleanChildren,
+        }
+      : null;
+
+    ctx.body = {
+      id: user.id,
+      username: user.username,
+      email: user.email,
+      confirmed: user.confirmed,
+      blocked: user.blocked,
+      role: cleanRole,
+      user_profile: cleanUserProfile,
+    };
   };
 
   return plugin;
 };
-
