@@ -2,19 +2,13 @@
   "collectionName": "components_coursecontent_external_videos",
   "info": {
     "displayName": "external_video",
-    "icon": "monitor"
+    "icon": "monitor",
+    "description": ""
   },
   "options": {},
   "attributes": {
     "external_url": {
       "type": "string"
-    },
-    "thumbnail": {
-      "allowedTypes": [
-        "images"
-      ],
-      "type": "media",
-      "multiple": false
     },
     "caption": {
       "type": "string"

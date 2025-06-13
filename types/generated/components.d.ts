@@ -5,10 +5,10 @@ export interface CoursecontentExternalVideo extends Schema.Component {
   info: {
     displayName: 'external_video';
     icon: 'monitor';
+    description: '';
   };
   attributes: {
     external_url: Attribute.String;
-    thumbnail: Attribute.Media;
     caption: Attribute.String;
   };
 }
