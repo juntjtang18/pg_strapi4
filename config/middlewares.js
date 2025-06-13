@@ -9,6 +9,7 @@ module.exports = [
         'http://localhost:8081',
         'https://www.geniusparentingai.ca',
         'https://my-strapi-app-852311377699.us-west1.run.app',
+        'https://chatbot.geniusparentingai.ca',
       ],
       methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
       headers: '*',
