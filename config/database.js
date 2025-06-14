@@ -1,5 +1,5 @@
-module.exports = ({ env }) => ({
-  connection: {
+module.exports = ({ env }) => {
+  const dbConfig = {
     client: 'postgres',
     connection: {
       host: env('DATABASE_HOST', '/cloudsql/lucid-arch-451211-b0:us-west1:cloud-sql-server'),
@@ -10,6 +10,20 @@ module.exports = ({ env }) => ({
       schema: env('DATABASE_SCHEMA', 'public'),
     },
     debug: false,
-  },
-});
+  };
 
+  // ✅ Log the database connection configuration (except the password for security)
+  console.log('Strapi is connecting to the database with config:');
+  console.log({
+    client: dbConfig.client,
+    host: dbConfig.connection.host,
+    port: dbConfig.connection.port,
+    database: dbConfig.connection.database,
+    user: dbConfig.connection.user,
+    schema: dbConfig.connection.schema,
+  });
+
+  return {
+    connection: dbConfig,
+  };
+};
