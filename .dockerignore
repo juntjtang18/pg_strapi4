@@ -10,4 +10,4 @@ deploy.sh
 *.bak
 scripts
 database
-
+.env
