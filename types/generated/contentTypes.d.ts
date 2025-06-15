@@ -1291,7 +1291,13 @@ export interface ApiPostPost extends Schema.CollectionType {
       }>;
     tags: Attribute.Relation<'api::post.post', 'manyToMany', 'api::tag.tag'>;
     likes: Attribute.Relation<'api::post.post', 'oneToMany', 'api::like.like'>;
-    content: Attribute.RichText &
+    content: Attribute.Text &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    media: Attribute.Media &
       Attribute.SetPluginOptions<{
         i18n: {
           localized: true;
