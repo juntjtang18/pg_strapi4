@@ -83,6 +83,12 @@
       "relation": "oneToOne",
       "target": "api::user-profile.user-profile",
       "mappedBy": "users_permissions_user"
+    },
+    "likes": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::like.like",
+      "mappedBy": "users_permissions_user"
     }
   }
 }

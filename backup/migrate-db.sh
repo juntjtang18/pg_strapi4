@@ -3,40 +3,26 @@
 # Exit immediately if a command exits with a non-zero status.
 set -e
 
-# --- Configuration ---
-# The standard user for connecting to and managing the Strapi database.
-# This user will own the new database.
 PG_USER="strapi"
-PG_USER_PASSWORD="Passw0rd@Strapi" # <-- IMPORTANT: Set your strapi user's password here
-
-# The admin user with privileges to create new databases.
-# This is typically 'postgres'.
+PG_USER_PASSWORD="Passw0rd@Strapi" 
 PG_ADMIN_USER="postgres"
-PG_ADMIN_PASSWORD="tj13in4link" # <-- IMPORTANT: Set your admin user's password here
+PG_ADMIN_PASSWORD="tj13in4link" 
 
 # The original database to be backed up.
 SOURCE_DB="strapi-dev3"
-
 # The new database to be created and restored into.
 DEST_DB="strapi-db3"
 
 # The directory where the backup file will be stored.
 BACKUP_DIR="./database"
-
-# Generate a timestamp in the format YYYY-MM-DD_HH-MM-SS.
 TIMESTAMP=$(date +%Y-%m-%d_%H-%M-%S)
-
-# The full path to the backup file, including the timestamp.
 BACKUP_FILE="$BACKUP_DIR/${SOURCE_DB}_${TIMESTAMP}.dump"
 
 # The Google Cloud SQL instance connection name (Unix socket path).
 # This is the directory where the socket file is located.
 CLOUD_SQL_SOCKET_PATH="/cloudsql/lucid-arch-451211-b0:us-west1:cloud-sql-server"
 
-# --- Script ---
-
 echo "Starting database backup and restore process..."
-
 # Create the backup directory if it doesn't exist.
 if [ ! -d "$BACKUP_DIR" ]; then
   echo "Creating backup directory: $BACKUP_DIR"
