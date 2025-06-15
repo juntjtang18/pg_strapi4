@@ -675,6 +675,11 @@ export interface PluginUsersPermissionsUser extends Schema.CollectionType {
       'oneToOne',
       'api::user-profile.user-profile'
     >;
+    likes: Attribute.Relation<
+      'plugin::users-permissions.user',
+      'oneToMany',
+      'api::like.like'
+    >;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     createdBy: Attribute.Relation<
@@ -1045,11 +1050,11 @@ export interface ApiDailylessonDailylesson extends Schema.SingleType {
   info: {
     singularName: 'dailylesson';
     pluralName: 'dailylessons';
-    displayName: 'Daily Lesson Plan';
+    displayName: 'Daily Lesson';
     description: '';
   };
   options: {
-    draftAndPublish: true;
+    draftAndPublish: false;
   };
   pluginOptions: {
     i18n: {
@@ -1068,7 +1073,6 @@ export interface ApiDailylessonDailylesson extends Schema.SingleType {
       }>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
-    publishedAt: Attribute.DateTime;
     createdBy: Attribute.Relation<
       'api::dailylesson.dailylesson',
       'oneToOne',
@@ -1215,6 +1219,11 @@ export interface ApiLikeLike extends Schema.CollectionType {
   };
   attributes: {
     post: Attribute.Relation<'api::like.like', 'manyToOne', 'api::post.post'>;
+    users_permissions_user: Attribute.Relation<
+      'api::like.like',
+      'manyToOne',
+      'plugin::users-permissions.user'
+    >;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     createdBy: Attribute.Relation<'api::like.like', 'oneToOne', 'admin::user'> &
@@ -1390,9 +1399,10 @@ export interface ApiTopicTopic extends Schema.CollectionType {
     singularName: 'topic';
     pluralName: 'topics';
     displayName: 'Topic';
+    description: '';
   };
   options: {
-    draftAndPublish: true;
+    draftAndPublish: false;
   };
   pluginOptions: {
     i18n: {
@@ -1429,7 +1439,6 @@ export interface ApiTopicTopic extends Schema.CollectionType {
       }>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
-    publishedAt: Attribute.DateTime;
     createdBy: Attribute.Relation<
       'api::topic.topic',
       'oneToOne',

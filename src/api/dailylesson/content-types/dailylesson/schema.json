@@ -4,11 +4,11 @@
   "info": {
     "singularName": "dailylesson",
     "pluralName": "dailylessons",
-    "displayName": "Daily Lesson Plan",
+    "displayName": "Daily Lesson",
     "description": ""
   },
   "options": {
-    "draftAndPublish": true
+    "draftAndPublish": false
   },
   "pluginOptions": {
     "i18n": {
