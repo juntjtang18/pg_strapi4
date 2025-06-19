@@ -9,7 +9,11 @@ module.exports = () => ({
         uniform: false,
         basePath: '',
       },
-      sizeLimit: 1024 * 1024 * 1024, // 1 GB
+      sizeLimit: 1024 * 1024 * 1024, // 1GB
+      formidable: {
+        maxFileSize: 1024 * 1024 * 1024, // 1GB
+        maxFiles: 10, // Optional: limit number of files
+      },
     },
   },
 });

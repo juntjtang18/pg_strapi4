@@ -1,6 +1,4 @@
 // config/middlewares.js
-console.log('Middlewares loaded'); // Confirm file is loaded
-
 module.exports = [
   {
     name: 'strapi::cors',
@@ -18,36 +16,24 @@ module.exports = [
       credentials: true,
     },
   },
-  {
-    name: 'strapi::errors',
-    config: {
-      stackTrace: true,
-    },
-  },
+  'strapi::errors',
+  'strapi::security',
+  'strapi::poweredBy',
   {
     name: 'strapi::logger',
     config: {
       level: 'debug',
-      exposeInContext: true,
-      requests: true,
     },
   },
-  'strapi::security',
-  'strapi::poweredBy',
   'strapi::query',
   {
     name: 'strapi::body',
     config: {
-      formLimit: '1024mb',
-      jsonLimit: '1024mb',
-      textLimit: '1024mb',
-      formidable: {
-        maxFileSize: 1024 * 1024 * 1024, // 1GB
-        maxFiles: 10,
-      },
-      onError: (error, ctx) => {
-        console.error('Body middleware error:', error.message, error.stack);
-        throw error;
+      formLimit: '1024mb', // Increase the form limit
+      jsonLimit: '1024mb', // Increase the JSON limit
+      textLimit: '1024mb', // Increase the text limit
+      multipart: {
+        maxFileSize: 1024 * 1024 * 1024, // 1 GB
       },
     },
   },

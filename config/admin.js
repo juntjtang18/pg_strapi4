@@ -14,4 +14,13 @@ module.exports = ({ env }) => ({
     nps: env.bool('FLAG_NPS', true),
     promoteEE: env.bool('FLAG_PROMOTE_EE', true),
   },
+  // Add this block
+  settings: {
+    media_library: {
+      maxAssetSize: 1024 * 1024 * 1024, // 1GB
+    },
+  },
+  fileUpload: {
+    maxFileSize: 1024 * 1024 * 1024, // 1GB
+  },
 });
