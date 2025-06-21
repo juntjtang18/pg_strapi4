@@ -9,7 +9,7 @@ module.exports = {
     
     // --- JOB 1: HOT TOPICS (Unchanged) ---
     strapi.cron.add({
-      '0 0 * * *': async () => { 
+      '0 0 0 * * *': async () => { 
         try {
           console.log('🚀 Cron job triggered! Starting hot topic selection...');
           const knex = strapi.db.connection;
@@ -40,7 +40,7 @@ module.exports = {
 
     // --- JOB 2: DAILY TIPS (Modified to select 2) ---
     strapi.cron.add({
-      '0 0 * * *': async () => { 
+      '0 0 0 * * *': async () => { 
         try {
           console.log('🚀 Cron job triggered! Starting daily tip selection...');
           const knex = strapi.db.connection;
