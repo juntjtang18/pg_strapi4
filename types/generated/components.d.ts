@@ -1,15 +1,15 @@
-import type { Attribute, Schema } from '@strapi/strapi';
+import type { Schema, Attribute } from '@strapi/strapi';
 
 export interface CoursecontentExternalVideo extends Schema.Component {
   collectionName: 'components_coursecontent_external_videos';
   info: {
-    description: '';
     displayName: 'external_video';
     icon: 'monitor';
+    description: '';
   };
   attributes: {
-    caption: Attribute.String;
     external_url: Attribute.String;
+    caption: Attribute.String;
   };
 }
 
@@ -20,7 +20,7 @@ export interface CoursecontentImage extends Schema.Component {
     icon: 'picture';
   };
   attributes: {
-    image_file: Attribute.Media<'images'>;
+    image_file: Attribute.Media;
   };
 }
 
@@ -43,17 +43,17 @@ export interface CoursecontentQuiz extends Schema.Component {
     icon: 'feather';
   };
   attributes: {
-    correctAnswer: Attribute.String;
-    options: Attribute.JSON;
     question: Attribute.Text;
+    options: Attribute.JSON;
+    correctAnswer: Attribute.String;
   };
 }
 
 export interface CoursecontentText extends Schema.Component {
   collectionName: 'components_coursecontent_texts';
   info: {
-    description: '';
     displayName: 'text';
+    description: '';
   };
   attributes: {
     data: Attribute.Text & Attribute.Required;
@@ -64,29 +64,24 @@ export interface CoursecontentText extends Schema.Component {
 export interface CoursecontentVideo extends Schema.Component {
   collectionName: 'components_coursecontent_videos';
   info: {
-    description: '';
     displayName: 'video';
     icon: 'medium';
+    description: '';
   };
   attributes: {
-    thumbnail: Attribute.Media<'images'>;
-    video_file: Attribute.Media<'videos'>;
+    video_file: Attribute.Media;
+    thumbnail: Attribute.Media;
   };
 }
 
 export interface DailylessonDailyLessonSelection extends Schema.Component {
   collectionName: 'components_dailylesson_daily_lesson_selections';
   info: {
-    description: '';
     displayName: 'DailyLessonSelection';
     icon: 'dashboard';
+    description: '';
   };
   attributes: {
-    courses: Attribute.Relation<
-      'dailylesson.daily-lesson-selection',
-      'oneToMany',
-      'api::course.course'
-    >;
     day: Attribute.Enumeration<
       [
         'Monday',
@@ -98,6 +93,11 @@ export interface DailylessonDailyLessonSelection extends Schema.Component {
         'Sunday'
       ]
     >;
+    courses: Attribute.Relation<
+      'dailylesson.daily-lesson-selection',
+      'oneToMany',
+      'api::course.course'
+    >;
   };
 }
 
@@ -108,9 +108,9 @@ export interface ProfileChild extends Schema.Component {
     icon: 'user';
   };
   attributes: {
+    name: Attribute.String;
     age: Attribute.Integer;
     gender: Attribute.Enumeration<['male', 'female']>;
-    name: Attribute.String;
   };
 }
 
