@@ -4,10 +4,11 @@
   "info": {
     "singularName": "coursecategory",
     "pluralName": "coursecategories",
-    "displayName": "coursecategory"
+    "displayName": "coursecategory",
+    "description": ""
   },
   "options": {
-    "draftAndPublish": true
+    "draftAndPublish": false
   },
   "pluginOptions": {
     "i18n": {
@@ -29,6 +30,14 @@
       "relation": "oneToMany",
       "target": "api::course.course",
       "mappedBy": "coursecategory"
+    },
+    "order": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "type": "integer"
     }
   }
 }
