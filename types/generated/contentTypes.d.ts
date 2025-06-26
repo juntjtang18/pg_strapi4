@@ -899,11 +899,6 @@ export interface ApiCourseCourse extends Schema.CollectionType {
           localized: true;
         };
       }>;
-    coursecategory: Attribute.Relation<
-      'api::course.course',
-      'manyToOne',
-      'api::coursecategory.coursecategory'
-    >;
     content: Attribute.DynamicZone<
       [
         'coursecontent.text',
@@ -925,6 +920,11 @@ export interface ApiCourseCourse extends Schema.CollectionType {
           localized: true;
         };
       }>;
+    coursecategory: Attribute.Relation<
+      'api::course.course',
+      'manyToOne',
+      'api::coursecategory.coursecategory'
+    >;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     createdBy: Attribute.Relation<
@@ -954,9 +954,10 @@ export interface ApiCoursecategoryCoursecategory extends Schema.CollectionType {
     singularName: 'coursecategory';
     pluralName: 'coursecategories';
     displayName: 'coursecategory';
+    description: '';
   };
   options: {
-    draftAndPublish: true;
+    draftAndPublish: false;
   };
   pluginOptions: {
     i18n: {
@@ -976,9 +977,14 @@ export interface ApiCoursecategoryCoursecategory extends Schema.CollectionType {
       'oneToMany',
       'api::course.course'
     >;
+    order: Attribute.Integer &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: false;
+        };
+      }>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
-    publishedAt: Attribute.DateTime;
     createdBy: Attribute.Relation<
       'api::coursecategory.coursecategory',
       'oneToOne',
