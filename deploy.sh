@@ -62,6 +62,6 @@ gcloud run deploy "${SERVICE_NAME}" \
   --set-env-vars "ADMIN_JWT_SECRET=4mvOKZ35kjlNVjjxB/+0xQ==" \
   --set-env-vars "JWT_SECRET=zNFVknwhnld60t/32I7iPA==" \
   --set-env-vars "TRANSFER_TOKEN_SALT=O35AEehAeD7N+1h6sS73Lw==" \
-  --revision-suffix "v${VERSION}"
+  --revision-suffix "v${VERSION//./-}"
 
 echo "--- Deployment of ${SERVICE_NAME} version ${VERSION} complete! ---"
