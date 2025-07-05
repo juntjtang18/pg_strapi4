@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_a_features",
+  "info": {
+    "displayName": "features",
+    "icon": "check"
+  },
+  "options": {},
+  "attributes": {
+    "feature": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

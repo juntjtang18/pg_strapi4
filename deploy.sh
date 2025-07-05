@@ -3,6 +3,14 @@
 # Exit immediately if a command exits with a non-zero status.
 set -e
 
+# Load environment variables from .env
+if [ -f .env ]; then
+    source .env
+else
+    echo "Error: .env file not found. Please create .env with required variables."
+    exit 1
+fi
+
 # --- Versioning Configuration ---
 # The script will automatically increment the minor version number.
 # To reset or change the major version, manually edit the 'VERSION' file.
@@ -16,14 +24,12 @@ fi
 VERSION=$(awk -F. -v OFS=. '{$NF++;print}' "$VERSION_FILE")
 echo "$VERSION" > "$VERSION_FILE"
 
-
 # --- Configuration ---
 PROJECT_ID="lucid-arch-451211-b0"
 SERVICE_NAME="my-strapi-app"
 REGION="us-west1"
 IMAGE_NAME="gcr.io/${PROJECT_ID}/${SERVICE_NAME}:${VERSION}"
 CLOUD_SQL_INSTANCE="lucid-arch-451211-b0:us-west1:cloud-sql-server"
-
 
 # --- Deployment Steps ---
 
@@ -54,14 +60,15 @@ gcloud run deploy "${SERVICE_NAME}" \
   --set-env-vars "CLOUD_SQL_INSTANCE=${CLOUD_SQL_INSTANCE}" \
   --set-env-vars "DATABASE_NAME=strapi-db3" \
   --set-env-vars "DATABASE_USERNAME=strapi" \
-  --set-env-vars "DATABASE_PASSWORD=Passw0rd@Strapi" \
+  --set-env-vars "DATABASE_PASSWORD=${DATABASE_PASSWORD}" \
   --set-env-vars "APP_URL=https://strapi.geniusParentingAI.ca" \
   --set-env-vars "ADMIN_URL=https://strapi.geniusParentingAI.ca/admin" \
-  --set-env-vars "APP_KEYS=qasqVyZOf8KJ/rgYYbE4/w==,JmDepwXWOjGxfNHgDhg43w==,ANPSI9a+z4WmnfBOaHxlHg==,V6CIUf0vcj/GJ8Gt4306TA==" \
-  --set-env-vars "API_TOKEN_SALT=Xtz+i5IPW3ApE3eIsYQF9w==" \
-  --set-env-vars "ADMIN_JWT_SECRET=4mvOKZ35kjlNVjjxB/+0xQ==" \
-  --set-env-vars "JWT_SECRET=zNFVknwhnld60t/32I7iPA==" \
-  --set-env-vars "TRANSFER_TOKEN_SALT=O35AEehAeD7N+1h6sS73Lw==" \
+  --set-env-vars "APP_KEYS=${APP_KEYS}" \
+  --set-env-vars "API_TOKEN_SALT=${API_TOKEN_SALT}" \
+  --set-env-vars "ADMIN_JWT_SECRET=${ADMIN_JWT_SECRET}" \
+  --set-env-vars "JWT_SECRET=${JWT_SECRET}" \
+  --set-env-vars "TRANSFER_TOKEN_SALT=${TRANSFER_TOKEN_SALT}" \
+  --set-env-vars "OPENAI_API_KEY=${OPENAI_API_KEY}" \
   --revision-suffix "v${VERSION//./-}"
 
 echo "--- Deployment of ${SERVICE_NAME} version ${VERSION} complete! ---"

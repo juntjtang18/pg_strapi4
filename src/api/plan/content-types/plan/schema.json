@@ -1,0 +1,106 @@
+{
+  "kind": "collectionType",
+  "collectionName": "plans",
+  "info": {
+    "singularName": "plan",
+    "pluralName": "plans",
+    "displayName": "plan",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "name": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string",
+      "required": true
+    },
+    "productId": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "type": "string",
+      "required": true
+    },
+    "features": {
+      "type": "component",
+      "repeatable": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "a.features"
+    },
+    "entitlements": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::entitlement.entitlement",
+      "inversedBy": "plans"
+    },
+    "inheritFrom": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::plan.plan",
+      "inversedBy": "childPlan"
+    },
+    "childPlan": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::plan.plan",
+      "mappedBy": "inheritFrom"
+    },
+    "isMostPopular": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "saleProductId": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "type": "string"
+    },
+    "saleStartDate": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "type": "datetime"
+    },
+    "saleEndDate": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "type": "datetime"
+    },
+    "subscriptions": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::subscription.subscription",
+      "mappedBy": "plan"
+    }
+  }
+}

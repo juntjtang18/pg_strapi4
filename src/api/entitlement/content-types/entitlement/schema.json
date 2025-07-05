@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "entitlements",
+  "info": {
+    "singularName": "entitlement",
+    "pluralName": "entitlements",
+    "displayName": "entitlement"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "name"
+    },
+    "description": {
+      "type": "string"
+    },
+    "plans": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::plan.plan",
+      "mappedBy": "entitlements"
+    }
+  }
+}
