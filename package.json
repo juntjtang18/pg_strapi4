@@ -7,7 +7,8 @@
     "develop": "strapi develop",
     "start": "strapi start",
     "build": "strapi build",
-    "strapi": "strapi"
+    "strapi": "strapi",
+    "backup": "env-cmd -f .env -- sh -c 'pg_dump -h \"$DATABASE_HOST\" -U \"$DATABASE_USERNAME\" \"$DATABASE_NAME\" > database/backups/gpa_full.sql'"
   },
   "dependencies": {
     "@strapi-community/strapi-provider-upload-google-cloud-storage": "^4.10.5",
