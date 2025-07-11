@@ -8616,7 +8616,7 @@ COPY public.courses_localizations_links (id, course_id, inv_course_id, course_or
 --
 
 COPY public.daily_tips (id, created_at, updated_at, created_by_id, updated_by_id, locale) FROM stdin;
-1	2025-06-14 14:31:13.526	2025-07-11 00:00:56.124	1	1	en
+1	2025-06-14 14:31:13.526	2025-07-11 00:00:00.383	1	1	en
 \.
 
 
@@ -8634,8 +8634,8 @@ COPY public.daily_tips_localizations_links (id, daily_tip_id, inv_daily_tip_id, 
 
 COPY public.daily_tips_tips_links (id, daily_tip_id, tip_id, tip_order) FROM stdin;
 86	1	4	1
-89	1	22	2
-90	1	18	3
+92	1	12	2
+93	1	1	3
 \.
 
 
@@ -10199,7 +10199,7 @@ COPY public.functions_localizations_links (id, function_id, inv_function_id, fun
 --
 
 COPY public.hot_topics (id, created_at, updated_at, created_by_id, updated_by_id, locale) FROM stdin;
-1	2025-06-14 15:05:44.841	2025-07-11 00:00:01.561	1	1	en
+1	2025-06-14 15:05:44.841	2025-07-11 00:00:00.414	1	1	en
 \.
 
 
@@ -10216,9 +10216,9 @@ COPY public.hot_topics_localizations_links (id, hot_topic_id, inv_hot_topic_id, 
 --
 
 COPY public.hot_topics_topics_links (id, hot_topic_id, topic_id, topic_order) FROM stdin;
-86	1	10	1
-84	1	8	2
-85	1	21	3
+89	1	5	1
+85	1	21	2
+91	1	19	3
 \.
 
 
@@ -11744,7 +11744,7 @@ SELECT pg_catalog.setval('public.daily_tips_localizations_links_id_seq', 1, fals
 -- Name: daily_tips_tips_links_id_seq; Type: SEQUENCE SET; Schema: public; Owner: strapi
 --
 
-SELECT pg_catalog.setval('public.daily_tips_tips_links_id_seq', 90, true);
+SELECT pg_catalog.setval('public.daily_tips_tips_links_id_seq', 93, true);
 
 
 --
@@ -11828,7 +11828,7 @@ SELECT pg_catalog.setval('public.hot_topics_localizations_links_id_seq', 1, fals
 -- Name: hot_topics_topics_links_id_seq; Type: SEQUENCE SET; Schema: public; Owner: strapi
 --
 
-SELECT pg_catalog.setval('public.hot_topics_topics_links_id_seq', 88, true);
+SELECT pg_catalog.setval('public.hot_topics_topics_links_id_seq', 91, true);
 
 
 --
