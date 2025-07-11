@@ -7,7 +7,7 @@ module.exports = {
 
   bootstrap({ strapi }) {
     //console.log('✅ Strapi bootstrap function has been called.');
-    console.log('⏳ Scheduling background jobs...');
+    //console.log('⏳ Scheduling background jobs...');
 
     // --- HOT TOPIC DAILY JOB ---
     strapi.cron.add({

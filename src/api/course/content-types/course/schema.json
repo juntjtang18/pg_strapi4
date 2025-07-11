@@ -59,6 +59,14 @@
       "relation": "manyToOne",
       "target": "api::coursecategory.coursecategory",
       "inversedBy": "courses"
+    },
+    "order": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "type": "integer"
     }
   }
 }

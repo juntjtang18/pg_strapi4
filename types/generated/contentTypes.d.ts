@@ -930,6 +930,12 @@ export interface ApiCourseCourse extends Schema.CollectionType {
       'manyToOne',
       'api::coursecategory.coursecategory'
     >;
+    order: Attribute.Integer &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: false;
+        };
+      }>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     createdBy: Attribute.Relation<
