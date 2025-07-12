@@ -1,0 +1,44 @@
+curl -X POST "http://localhost:8080/api/auth/local" \
+-H "Content-Type: application/json" \
+-d '{
+  "identifier": "july11@example.com",
+  "password": "SecurePassword123!"
+}' \
+| jq .
+
+
+curl -X POST "http://localhost:8080/api/auth/local/register" \
+-H "Content-Type: application/json" \
+-d '{
+  "username": "july11",
+  "email": "july11@example.com",
+  "password": "SecurePassword123!"
+}' \
+| jq .
+
+
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NTksImlhdCI6MTc1MjI3OTU5NCwiZXhwIjoxNzU0ODcxNTk0fQ.tX_NAmSsMxqqeGvS76B4J_tEa4qJopYDakuSkGelcwg
+
+curl -X GET 'http://localhost:8080/api/users/me' \
+  --header 'Content-Type: application/json' \
+  --header 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MjMsImlhdCI6MTc1MjI5NzE2NywiZXhwIjoxNzU0ODg5MTY3fQ.1GzthtPcBp-YyjlTUMpIj8kfysFP1CFxE6t6-EEGiqU' \
+
+
+curl -X POST "http://localhost:8080/api/auth/local" \
+-H "Content-Type: application/json" \
+-d '{
+  "identifier": "new@gpa.com",
+  "password": "Passw0rd"
+}' \
+| jq .
+
+
+
+curl -X POST "http://localhost:8080/api/auth/local/register" \
+-H "Content-Type: application/json" \
+-d '{
+  "username": "july113",
+  "email": "july113@example.com",
+  "password": "Passw0rd"
+}' \
+| jq .
