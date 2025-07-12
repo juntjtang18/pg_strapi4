@@ -680,11 +680,6 @@ export interface PluginUsersPermissionsUser extends Schema.CollectionType {
       'oneToMany',
       'api::like.like'
     >;
-    subscriptions: Attribute.Relation<
-      'plugin::users-permissions.user',
-      'oneToMany',
-      'api::subscription.subscription'
-    >;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     createdBy: Attribute.Relation<
@@ -1110,42 +1105,6 @@ export interface ApiDailylessonDailylesson extends Schema.SingleType {
   };
 }
 
-export interface ApiEntitlementEntitlement extends Schema.CollectionType {
-  collectionName: 'entitlements';
-  info: {
-    singularName: 'entitlement';
-    pluralName: 'entitlements';
-    displayName: 'entitlement';
-  };
-  options: {
-    draftAndPublish: false;
-  };
-  attributes: {
-    name: Attribute.String & Attribute.Required;
-    slug: Attribute.UID<'api::entitlement.entitlement', 'name'>;
-    description: Attribute.String;
-    plans: Attribute.Relation<
-      'api::entitlement.entitlement',
-      'manyToMany',
-      'api::plan.plan'
-    >;
-    createdAt: Attribute.DateTime;
-    updatedAt: Attribute.DateTime;
-    createdBy: Attribute.Relation<
-      'api::entitlement.entitlement',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-    updatedBy: Attribute.Relation<
-      'api::entitlement.entitlement',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-  };
-}
-
 export interface ApiFunctionFunction extends Schema.CollectionType {
   collectionName: 'functions';
   info: {
@@ -1313,104 +1272,6 @@ export interface ApiPingPing extends Schema.CollectionType {
   };
 }
 
-export interface ApiPlanPlan extends Schema.CollectionType {
-  collectionName: 'plans';
-  info: {
-    singularName: 'plan';
-    pluralName: 'plans';
-    displayName: 'plan';
-    description: '';
-  };
-  options: {
-    draftAndPublish: false;
-  };
-  pluginOptions: {
-    i18n: {
-      localized: true;
-    };
-  };
-  attributes: {
-    name: Attribute.String &
-      Attribute.Required &
-      Attribute.SetPluginOptions<{
-        i18n: {
-          localized: true;
-        };
-      }>;
-    productId: Attribute.String &
-      Attribute.Required &
-      Attribute.SetPluginOptions<{
-        i18n: {
-          localized: false;
-        };
-      }>;
-    features: Attribute.Component<'a.features', true> &
-      Attribute.SetPluginOptions<{
-        i18n: {
-          localized: true;
-        };
-      }>;
-    entitlements: Attribute.Relation<
-      'api::plan.plan',
-      'manyToMany',
-      'api::entitlement.entitlement'
-    >;
-    inheritFrom: Attribute.Relation<
-      'api::plan.plan',
-      'manyToOne',
-      'api::plan.plan'
-    >;
-    childPlan: Attribute.Relation<
-      'api::plan.plan',
-      'oneToMany',
-      'api::plan.plan'
-    >;
-    isMostPopular: Attribute.Boolean &
-      Attribute.Required &
-      Attribute.SetPluginOptions<{
-        i18n: {
-          localized: false;
-        };
-      }> &
-      Attribute.DefaultTo<false>;
-    saleProductId: Attribute.String &
-      Attribute.SetPluginOptions<{
-        i18n: {
-          localized: false;
-        };
-      }>;
-    saleStartDate: Attribute.DateTime &
-      Attribute.SetPluginOptions<{
-        i18n: {
-          localized: false;
-        };
-      }>;
-    saleEndDate: Attribute.DateTime &
-      Attribute.SetPluginOptions<{
-        i18n: {
-          localized: false;
-        };
-      }>;
-    subscriptions: Attribute.Relation<
-      'api::plan.plan',
-      'oneToMany',
-      'api::subscription.subscription'
-    >;
-    createdAt: Attribute.DateTime;
-    updatedAt: Attribute.DateTime;
-    createdBy: Attribute.Relation<'api::plan.plan', 'oneToOne', 'admin::user'> &
-      Attribute.Private;
-    updatedBy: Attribute.Relation<'api::plan.plan', 'oneToOne', 'admin::user'> &
-      Attribute.Private;
-    localizations: Attribute.Relation<
-      'api::plan.plan',
-      'oneToMany',
-      'api::plan.plan'
-    >;
-    locale: Attribute.String;
-  };
-}
-
 export interface ApiPostPost extends Schema.CollectionType {
   collectionName: 'posts';
   info: {
@@ -1465,50 +1326,6 @@ export interface ApiPostPost extends Schema.CollectionType {
       'api::post.post'
     >;
     locale: Attribute.String;
-  };
-}
-
-export interface ApiSubscriptionSubscription extends Schema.CollectionType {
-  collectionName: 'subscriptions';
-  info: {
-    singularName: 'subscription';
-    pluralName: 'subscriptions';
-    displayName: 'subscription';
-  };
-  options: {
-    draftAndPublish: false;
-  };
-  attributes: {
-    user: Attribute.Relation<
-      'api::subscription.subscription',
-      'manyToOne',
-      'plugin::users-permissions.user'
-    >;
-    plan: Attribute.Relation<
-      'api::subscription.subscription',
-      'manyToOne',
-      'api::plan.plan'
-    >;
-    status: Attribute.Enumeration<['active', 'canceled', 'expired']> &
-      Attribute.Required;
-    startDate: Attribute.DateTime & Attribute.Required;
-    expireDate: Attribute.DateTime & Attribute.Required;
-    originalTransactionId: Attribute.String;
-    latestTransactionId: Attribute.String;
-    createdAt: Attribute.DateTime;
-    updatedAt: Attribute.DateTime;
-    createdBy: Attribute.Relation<
-      'api::subscription.subscription',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-    updatedBy: Attribute.Relation<
-      'api::subscription.subscription',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
   };
 }
 
@@ -1740,14 +1557,11 @@ declare module '@strapi/types' {
       'api::coursecategory.coursecategory': ApiCoursecategoryCoursecategory;
       'api::daily-tip.daily-tip': ApiDailyTipDailyTip;
       'api::dailylesson.dailylesson': ApiDailylessonDailylesson;
-      'api::entitlement.entitlement': ApiEntitlementEntitlement;
       'api::function.function': ApiFunctionFunction;
       'api::hot-topic.hot-topic': ApiHotTopicHotTopic;
       'api::like.like': ApiLikeLike;
       'api::ping.ping': ApiPingPing;
-      'api::plan.plan': ApiPlanPlan;
       'api::post.post': ApiPostPost;
-      'api::subscription.subscription': ApiSubscriptionSubscription;
       'api::tag.tag': ApiTagTag;
       'api::tip.tip': ApiTipTip;
       'api::topic.topic': ApiTopicTopic;

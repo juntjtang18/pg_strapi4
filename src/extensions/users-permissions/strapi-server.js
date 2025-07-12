@@ -2,15 +2,57 @@
 console.log("[DEBUG] ==> Loading custom users-permissions strapi-server.js");
 
 const axios = require("axios");
-const { ApplicationError } = require('@strapi/utils').errors;
+const { ApplicationError, ValidationError } = require('@strapi/utils').errors;
 const { sanitize } = require('@strapi/utils');
+
+/**
+ * Helper function to transform the raw subscription object from the subsys API
+ * into a cleaner, flatter structure for the client.
+ * @param {object} rawSubscription - The raw subscription object from the subsys API.
+ * @returns {object|null} A clean subscription object or null.
+ */
+const transformSubscription = (rawSubscription) => {
+  if (!rawSubscription?.data?.attributes) {
+    return null;
+  }
+
+  const subAttrs = rawSubscription.data.attributes;
+  const planAttrs = subAttrs.plan?.data?.attributes;
+
+  if (!planAttrs) {
+    return {
+      id: rawSubscription.data.id,
+      status: subAttrs.status,
+      startDate: subAttrs.startDate,
+      expireDate: subAttrs.expireDate,
+      plan: null, // Plan data is missing or malformed
+    };
+  }
+  
+  // The 'plan.attributes.attributes' is an extra layer of nesting to remove.
+  const planDetails = planAttrs.attributes || {};
+
+  return {
+    id: rawSubscription.data.id,
+    status: subAttrs.status,
+    startDate: subAttrs.startDate,
+    expireDate: subAttrs.expireDate,
+    plan: {
+      id: subAttrs.plan.data.id,
+      name: planDetails.name,
+      productId: planDetails.productId,
+      features: (planDetails.features?.data || []).map(feat => feat.attributes),
+      entitlements: planDetails.entitlements || [],
+    },
+  };
+};
+
 
 module.exports = (plugin) => {
   // =================================================================
-  // 1. YOUR ORIGINAL 'ME' ENDPOINT - UNCHANGED
+  // 1. 'ME' ENDPOINT - WITH SUBSCRIPTION
   // =================================================================
   plugin.controllers.user.me = async (ctx) => {
-    // ... your 'me' controller code remains the same ...
     if (!ctx.state.user || !ctx.state.user.id) {
       ctx.response.status = 401;
       return;
@@ -34,6 +76,32 @@ module.exports = (plugin) => {
     if (!user) {
       return ctx.notFound();
     }
+
+    // --- Subscription Fetching Logic ---
+    let subscription = null;
+    try {
+      console.log("[DEBUG] Entering subscription fetching logic for 'me' endpoint.");
+      const subscriptionUrl = process.env.SUBSYS_BASE_URL;
+      const secret = process.env.SUBSCRIPTION_SERVICE_SECRET;
+      
+      if (!subscriptionUrl || !secret) {
+        console.error("[ERROR] Subscription environment variables not set. Skipping call.");
+      } else {
+        const userId = ctx.state.user.id;
+        console.log(`[DEBUG] Calling subscription endpoint for user ${userId}`);
+        const response = await axios.get(
+          `${subscriptionUrl}/api/v1/subscription-of-a-user/${userId}`,
+          { headers: { Authorization: `Bearer ${secret}` } }
+        );
+        // Transform the raw response here
+        subscription = transformSubscription(response.data);
+        console.log(`[DEBUG] Subscription data fetched and transformed for user ${userId}.`);
+      }
+    } catch (error) {
+      console.error("[ERROR] Failed to fetch subscription data for user.", error.message);
+      subscription = null;
+    }
+    // --- End Subscription Logic ---
 
     const cleanRole = user.role
       ? (({ id, name, description, type }) => ({ id, name, description, type }))(user.role)
@@ -62,12 +130,50 @@ module.exports = (plugin) => {
       blocked: user.blocked,
       role: cleanRole,
       user_profile: cleanUserProfile,
+      subscription: subscription, // Attach CLEAN subscription data here
     };
+  };
+
+  // =================================================================
+  // 2. 'LOGIN' ENDPOINT (/api/auth/local) - WITH SUBSCRIPTION
+  // =================================================================
+  const originalCallback = plugin.controllers.auth.callback;
+  plugin.controllers.auth.callback = async (ctx) => {
+    // Let the original controller handle the authentication
+    await originalCallback(ctx);
+
+    // If authentication was successful, ctx.body will have jwt and user
+    if (ctx.body.jwt && ctx.body.user) {
+      const user = ctx.body.user;
+      let subscription = null;
+      try {
+        console.log(`[DEBUG] Login successful for user ${user.id}. Fetching subscription.`);
+        const subscriptionUrl = process.env.SUBSYS_BASE_URL;
+        const secret = process.env.SUBSCRIPTION_SERVICE_SECRET;
+
+        if (!subscriptionUrl || !secret) {
+          console.error("[ERROR] Subscription environment variables not set. Skipping call.");
+        } else {
+          const response = await axios.get(
+            `${subscriptionUrl}/api/v1/subscription-of-a-user/${user.id}`,
+            { headers: { Authorization: `Bearer ${secret}` } }
+          );
+          // Transform the raw response here
+          subscription = transformSubscription(response.data);
+          console.log(`[DEBUG] Subscription data fetched and transformed for user ${user.id}.`);
+        }
+      } catch (error) {
+        console.error(`[ERROR] Failed to fetch subscription data for user ${user.id} during login.`, error.message);
+        subscription = null;
+      }
+      // Attach the CLEAN subscription to the user object in the response
+      ctx.body.user.subscription = subscription;
+    }
   };
 
 
   // =================================================================
-  // 2. CUSTOMIZATION FOR THE 'REGISTER' ENDPOINT (WITH FIX)
+  // 3. 'REGISTER' ENDPOINT - WITH FIX
   // =================================================================
   plugin.controllers.auth.register = async (ctx) => {
     console.log("[DEBUG] ==> Starting custom /register controller.");
@@ -87,8 +193,6 @@ module.exports = (plugin) => {
         throw new ApplicationError("Username, email, and password are required.");
     }
     
-    // --- FIX START ---
-    // 1. Find the default role for new users
     const role = await strapi
       .query('plugin::users-permissions.role')
       .findOne({ where: { type: settings.default_role } });
@@ -96,7 +200,6 @@ module.exports = (plugin) => {
     if (!role) {
       throw new ApplicationError('Impossible to find the default role.');
     }
-    // --- FIX END ---
 
     const userWithSameEmail = await strapi
       .query("plugin::users-permissions.user")
@@ -113,7 +216,7 @@ module.exports = (plugin) => {
         password,
         provider: "local",
         confirmed: true,
-        role: role.id, // --- FIX: Assign the role ID here
+        role: role.id,
       });
 
       console.log(`[DEBUG] User ${newUser.email} (ID: ${newUser.id}) created in main Strapi.`);
@@ -123,7 +226,6 @@ module.exports = (plugin) => {
         console.log("[DEBUG] Entering subscription logic block.");
         const subscriptionUrl = process.env.SUBSYS_BASE_URL;
         const secret = process.env.SUBSCRIPTION_SERVICE_SECRET;
-        //console.log(`[DEBUG] Subscription URL: ${subscriptionUrl}, Secret: ${secret}`);
         if (!subscriptionUrl || !secret) {
           console.error("[ERROR] Subscription environment variables not set. Skipping call.");
         } else {
@@ -135,19 +237,13 @@ module.exports = (plugin) => {
           );
           console.log(`[DEBUG] Subscription call completed for user ${newUser.id}.`);
         }
-      // Inside your register function's subscription logic...
       } catch (subError) {
-        // CHANGE THIS:
-        // console.error("[ERROR] Subscription call failed. Rolling back user creation.", subError.message);
-
-        // TO THIS:
         console.error("[ERROR] Subscription call failed. Rolling back user creation.", subError);
 
         await userService.remove({ id: newUser.id });
         throw new ApplicationError("Account could not be created due to a subscription system error.");
       }      
-      // --- FIX START ---
-      // 2. Re-fetch the user with the role populated for the response
+      
       const userWithRole = await strapi.entityService.findOne(
         "plugin::users-permissions.user",
         newUser.id,
@@ -156,7 +252,6 @@ module.exports = (plugin) => {
 
       const userSchema = strapi.getModel('plugin::users-permissions.user');
       const sanitizedUser = await sanitize.contentAPI.output(userWithRole, userSchema);
-      // --- FIX END ---
 
       return ctx.send({
         jwt: jwtService.issue({ id: sanitizedUser.id }),
@@ -165,11 +260,9 @@ module.exports = (plugin) => {
 
     } catch (error) {
       console.error("[ERROR] An error during registration:", error);
-      // Ensure we don't leak internal errors to the client
       if (error instanceof ApplicationError) {
           throw error;
       }
-      // Throw a generic error for other cases
       throw new ApplicationError("An error occurred during the registration process.");
     }
   };

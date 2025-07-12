@@ -89,12 +89,6 @@
       "relation": "oneToMany",
       "target": "api::like.like",
       "mappedBy": "users_permissions_user"
-    },
-    "subscriptions": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::subscription.subscription",
-      "mappedBy": "user"
     }
   }
 }
