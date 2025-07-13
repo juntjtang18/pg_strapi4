@@ -22,14 +22,6 @@
       "target": "plugin::users-permissions.user",
       "inversedBy": "posts"
     },
-    "create_time": {
-      "pluginOptions": {
-        "i18n": {
-          "localized": false
-        }
-      },
-      "type": "datetime"
-    },
     "tags": {
       "type": "relation",
       "relation": "manyToMany",
@@ -51,19 +43,26 @@
       "type": "text"
     },
     "media": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
       ],
-      "type": "media",
-      "multiple": true,
       "pluginOptions": {
         "i18n": {
           "localized": true
         }
       }
+    },
+    "comments": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::comment.comment",
+      "mappedBy": "post"
     }
   }
 }

@@ -89,6 +89,12 @@
       "relation": "oneToMany",
       "target": "api::like.like",
       "mappedBy": "users_permissions_user"
+    },
+    "comments": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::comment.comment",
+      "mappedBy": "author"
     }
   }
 }
