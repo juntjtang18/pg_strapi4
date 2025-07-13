@@ -4234,6 +4234,20 @@ COPY public.categories_localizations_links (id, category_id, inv_category_id, ca
 COPY public.comments (id, message, created_at, updated_at, created_by_id, updated_by_id) FROM stdin;
 1	Asdfasdf	2025-07-12 19:00:56.516	2025-07-12 19:00:56.516	\N	\N
 2	Asgard asdf	2025-07-12 19:01:27.099	2025-07-12 19:01:27.099	\N	\N
+3	Enjoy the day.	2025-07-13 13:15:53.862	2025-07-13 13:15:53.862	\N	\N
+4	Let’s try a long string, very very very very very very very very very very very looooooooooong	2025-07-13 13:36:35.665	2025-07-13 13:36:35.665	\N	\N
+5	This layout is much much much much better than ever ever ever. 	2025-07-13 13:43:25.979	2025-07-13 13:43:25.979	\N	\N
+6	Why the user id is not saved?	2025-07-13 13:53:14.69	2025-07-13 13:53:14.69	\N	\N
+7	Test the user id saving	2025-07-13 14:02:04.996	2025-07-13 14:02:04.996	\N	\N
+8	This is a test comment from curl.	2025-07-13 14:10:48.955	2025-07-13 14:10:48.955	\N	\N
+9	This is a test comment from curl.	2025-07-13 14:15:26.15	2025-07-13 14:15:26.15	\N	\N
+10	This is a test comment from curl.	2025-07-13 14:18:18.342	2025-07-13 14:18:18.342	\N	\N
+11	This is a test comment from curl.	2025-07-13 14:21:13.302	2025-07-13 14:21:13.302	\N	\N
+12	Tests again for the user id	2025-07-13 14:26:56.386	2025-07-13 14:26:56.386	\N	\N
+13	You have taken a beautiful photo. I like it. 	2025-07-13 15:35:06.197	2025-07-13 15:35:06.197	\N	\N
+14	This is good. 	2025-07-13 15:42:25.371	2025-07-13 15:42:25.371	\N	\N
+15	Leaving children to grandparents is not a very good idea. Parents should have time for their kids. 	2025-07-13 15:46:32.435	2025-07-13 15:46:32.435	\N	\N
+16	Let’s try to say hello to the nature. I find out a way to urge the kinds to go out of home. 	2025-07-13 15:50:46.158	2025-07-13 15:50:46.158	\N	\N
 \.
 
 
@@ -4244,6 +4258,12 @@ COPY public.comments (id, message, created_at, updated_at, created_by_id, update
 COPY public.comments_author_links (id, comment_id, user_id, comment_order) FROM stdin;
 1	1	23	1
 2	2	23	2
+3	11	23	3
+4	12	23	4
+5	13	23	5
+6	14	23	6
+7	15	23	7
+8	16	23	8
 \.
 
 
@@ -4262,6 +4282,20 @@ COPY public.comments_parent_comment_links (id, comment_id, inv_comment_id, comme
 COPY public.comments_post_links (id, comment_id, post_id, comment_order) FROM stdin;
 1	1	75	1
 2	2	75	2
+3	3	75	3
+4	4	75	4
+5	5	75	5
+6	6	75	6
+7	7	75	7
+8	8	75	8
+9	9	75	9
+10	10	75	10
+11	11	75	11
+12	12	75	12
+13	13	75	13
+14	14	75	14
+15	15	81	1
+16	16	75	15
 \.
 
 
@@ -8466,7 +8500,7 @@ COPY public.courses_localizations_links (id, course_id, inv_course_id, course_or
 --
 
 COPY public.daily_tips (id, created_at, updated_at, created_by_id, updated_by_id, locale) FROM stdin;
-1	2025-06-14 14:31:13.526	2025-07-13 00:00:00.607	1	1	en
+1	2025-06-14 14:31:13.526	2025-07-13 00:00:00.277	1	1	en
 \.
 
 
@@ -8484,8 +8518,8 @@ COPY public.daily_tips_localizations_links (id, daily_tip_id, inv_daily_tip_id, 
 
 COPY public.daily_tips_tips_links (id, daily_tip_id, tip_id, tip_order) FROM stdin;
 100	1	11	1
-101	1	7	2
-102	1	22	3
+104	1	9	2
+105	1	13	3
 \.
 
 
@@ -9187,6 +9221,7 @@ COPY public.files (id, name, alternative_text, caption, width, height, formats, 
 666	Gemini_Generated_Image_oeffkmoeffkmoeff.png	\N	\N	2048	1842	{"large": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/large_Gemini_Generated_Image_oeffkmoeffkmoeff_5fa6fe6933/large_Gemini_Generated_Image_oeffkmoeffkmoeff_5fa6fe6933.png", "hash": "large_Gemini_Generated_Image_oeffkmoeffkmoeff_5fa6fe6933", "mime": "image/png", "name": "large_Gemini_Generated_Image_oeffkmoeffkmoeff.png", "path": null, "size": 1675.44, "width": 1000, "height": 899}, "small": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/small_Gemini_Generated_Image_oeffkmoeffkmoeff_5fa6fe6933/small_Gemini_Generated_Image_oeffkmoeffkmoeff_5fa6fe6933.png", "hash": "small_Gemini_Generated_Image_oeffkmoeffkmoeff_5fa6fe6933", "mime": "image/png", "name": "small_Gemini_Generated_Image_oeffkmoeffkmoeff.png", "path": null, "size": 430.61, "width": 500, "height": 450}, "medium": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/medium_Gemini_Generated_Image_oeffkmoeffkmoeff_5fa6fe6933/medium_Gemini_Generated_Image_oeffkmoeffkmoeff_5fa6fe6933.png", "hash": "medium_Gemini_Generated_Image_oeffkmoeffkmoeff_5fa6fe6933", "mime": "image/png", "name": "medium_Gemini_Generated_Image_oeffkmoeffkmoeff.png", "path": null, "size": 939.52, "width": 750, "height": 675}, "thumbnail": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/thumbnail_Gemini_Generated_Image_oeffkmoeffkmoeff_5fa6fe6933/thumbnail_Gemini_Generated_Image_oeffkmoeffkmoeff_5fa6fe6933.png", "hash": "thumbnail_Gemini_Generated_Image_oeffkmoeffkmoeff_5fa6fe6933", "mime": "image/png", "name": "thumbnail_Gemini_Generated_Image_oeffkmoeffkmoeff.png", "path": null, "size": 59.08, "width": 173, "height": 156}}	Gemini_Generated_Image_oeffkmoeffkmoeff_5fa6fe6933	.png	image/png	1771.29	https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/Gemini_Generated_Image_oeffkmoeffkmoeff_5fa6fe6933/Gemini_Generated_Image_oeffkmoeffkmoeff_5fa6fe6933.png	\N	@strapi-community/strapi-provider-upload-google-cloud-storage	\N	/1	2025-07-13 00:13:12.501	2025-07-13 00:13:12.501	\N	\N
 667	Gemini_Generated_Image_tlhn9xtlhn9xtlhn.png	\N	\N	2040	1826	{"large": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/large_Gemini_Generated_Image_tlhn9xtlhn9xtlhn_c9cfeee838/large_Gemini_Generated_Image_tlhn9xtlhn9xtlhn_c9cfeee838.png", "hash": "large_Gemini_Generated_Image_tlhn9xtlhn9xtlhn_c9cfeee838", "mime": "image/png", "name": "large_Gemini_Generated_Image_tlhn9xtlhn9xtlhn.png", "path": null, "size": 1779.29, "width": 1000, "height": 895}, "small": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/small_Gemini_Generated_Image_tlhn9xtlhn9xtlhn_c9cfeee838/small_Gemini_Generated_Image_tlhn9xtlhn9xtlhn_c9cfeee838.png", "hash": "small_Gemini_Generated_Image_tlhn9xtlhn9xtlhn_c9cfeee838", "mime": "image/png", "name": "small_Gemini_Generated_Image_tlhn9xtlhn9xtlhn.png", "path": null, "size": 458.35, "width": 500, "height": 448}, "medium": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/medium_Gemini_Generated_Image_tlhn9xtlhn9xtlhn_c9cfeee838/medium_Gemini_Generated_Image_tlhn9xtlhn9xtlhn_c9cfeee838.png", "hash": "medium_Gemini_Generated_Image_tlhn9xtlhn9xtlhn_c9cfeee838", "mime": "image/png", "name": "medium_Gemini_Generated_Image_tlhn9xtlhn9xtlhn.png", "path": null, "size": 996.35, "width": 750, "height": 671}, "thumbnail": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/thumbnail_Gemini_Generated_Image_tlhn9xtlhn9xtlhn_c9cfeee838/thumbnail_Gemini_Generated_Image_tlhn9xtlhn9xtlhn_c9cfeee838.png", "hash": "thumbnail_Gemini_Generated_Image_tlhn9xtlhn9xtlhn_c9cfeee838", "mime": "image/png", "name": "thumbnail_Gemini_Generated_Image_tlhn9xtlhn9xtlhn.png", "path": null, "size": 65.43, "width": 174, "height": 156}}	Gemini_Generated_Image_tlhn9xtlhn9xtlhn_c9cfeee838	.png	image/png	1667.29	https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/Gemini_Generated_Image_tlhn9xtlhn9xtlhn_c9cfeee838/Gemini_Generated_Image_tlhn9xtlhn9xtlhn_c9cfeee838.png	\N	@strapi-community/strapi-provider-upload-google-cloud-storage	\N	/1	2025-07-13 00:13:58.89	2025-07-13 00:13:58.89	\N	\N
 668	cry.jpg	\N	\N	2048	2048	{"large": {"ext": ".jpg", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/large_cry_b9c656aa18/large_cry_b9c656aa18.jpg", "hash": "large_cry_b9c656aa18", "mime": "image/jpeg", "name": "large_cry.jpg", "path": null, "size": 107.28, "width": 1000, "height": 1000}, "small": {"ext": ".jpg", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/small_cry_b9c656aa18/small_cry_b9c656aa18.jpg", "hash": "small_cry_b9c656aa18", "mime": "image/jpeg", "name": "small_cry.jpg", "path": null, "size": 30.14, "width": 500, "height": 500}, "medium": {"ext": ".jpg", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/medium_cry_b9c656aa18/medium_cry_b9c656aa18.jpg", "hash": "medium_cry_b9c656aa18", "mime": "image/jpeg", "name": "medium_cry.jpg", "path": null, "size": 60.85, "width": 750, "height": 750}, "thumbnail": {"ext": ".jpg", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/thumbnail_cry_b9c656aa18/thumbnail_cry_b9c656aa18.jpg", "hash": "thumbnail_cry_b9c656aa18", "mime": "image/jpeg", "name": "thumbnail_cry.jpg", "path": null, "size": 5.39, "width": 156, "height": 156}}	cry_b9c656aa18	.jpg	image/jpeg	472.91	https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/cry_b9c656aa18/cry_b9c656aa18.jpg	\N	@strapi-community/strapi-provider-upload-google-cloud-storage	\N	/1	2025-07-13 02:48:38.524	2025-07-13 02:48:38.524	\N	\N
+669	Twerking.jpg	\N	\N	2048	2048	{"large": {"ext": ".jpg", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/large_Twerking_607a61e2b8/large_Twerking_607a61e2b8.jpg", "hash": "large_Twerking_607a61e2b8", "mime": "image/jpeg", "name": "large_Twerking.jpg", "path": null, "size": 110.2, "width": 1000, "height": 1000}, "small": {"ext": ".jpg", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/small_Twerking_607a61e2b8/small_Twerking_607a61e2b8.jpg", "hash": "small_Twerking_607a61e2b8", "mime": "image/jpeg", "name": "small_Twerking.jpg", "path": null, "size": 37.59, "width": 500, "height": 500}, "medium": {"ext": ".jpg", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/medium_Twerking_607a61e2b8/medium_Twerking_607a61e2b8.jpg", "hash": "medium_Twerking_607a61e2b8", "mime": "image/jpeg", "name": "medium_Twerking.jpg", "path": null, "size": 68.66, "width": 750, "height": 750}, "thumbnail": {"ext": ".jpg", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/thumbnail_Twerking_607a61e2b8/thumbnail_Twerking_607a61e2b8.jpg", "hash": "thumbnail_Twerking_607a61e2b8", "mime": "image/jpeg", "name": "thumbnail_Twerking.jpg", "path": null, "size": 6.72, "width": 156, "height": 156}}	Twerking_607a61e2b8	.jpg	image/jpeg	403.45	https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/Twerking_607a61e2b8/Twerking_607a61e2b8.jpg	\N	@strapi-community/strapi-provider-upload-google-cloud-storage	\N	/1	2025-07-13 17:13:41.538	2025-07-13 17:13:41.538	\N	\N
 \.
 
 
@@ -9790,6 +9825,7 @@ COPY public.files_folder_links (id, file_id, folder_id, file_order) FROM stdin;
 593	666	1	593
 594	667	1	594
 595	668	1	595
+596	669	1	596
 \.
 
 
@@ -10067,6 +10103,7 @@ COPY public.files_related_morphs (id, file_id, related_id, related_type, field, 
 2780	650	389	coursecontent.image	image_file	1
 2787	663	400	coursecontent.image	image_file	1
 2789	664	401	coursecontent.image	image_file	1
+2796	669	81	api::post.post	media	1
 2649	540	635	coursecontent.image	image_file	1
 2658	554	17	coursecontent.image	image_file	1
 2666	280	26	coursecontent.image	image_file	1
@@ -10239,7 +10276,7 @@ COPY public.functions_localizations_links (id, function_id, inv_function_id, fun
 --
 
 COPY public.hot_topics (id, created_at, updated_at, created_by_id, updated_by_id, locale) FROM stdin;
-1	2025-06-14 15:05:44.841	2025-07-13 00:00:00.605	1	1	en
+1	2025-06-14 15:05:44.841	2025-07-13 00:00:00.278	1	1	en
 \.
 
 
@@ -10256,9 +10293,9 @@ COPY public.hot_topics_localizations_links (id, hot_topic_id, inv_hot_topic_id, 
 --
 
 COPY public.hot_topics_topics_links (id, hot_topic_id, topic_id, topic_order) FROM stdin;
-98	1	7	1
-99	1	19	2
-100	1	14	3
+100	1	14	1
+102	1	17	2
+103	1	18	3
 \.
 
 
@@ -10295,6 +10332,7 @@ COPY public.likes (id, created_at, updated_at, created_by_id, updated_by_id, loc
 19	2025-07-05 15:02:39.516	2025-07-05 15:02:39.516	\N	\N	en
 20	2025-07-07 18:53:18.601	2025-07-07 18:53:18.601	\N	\N	en
 21	2025-07-07 18:53:39.45	2025-07-07 18:53:39.45	\N	\N	en
+22	2025-07-13 15:45:10.936	2025-07-13 15:45:10.936	\N	\N	en
 \.
 
 
@@ -10322,6 +10360,7 @@ COPY public.likes_post_links (id, like_id, post_id, like_order) FROM stdin;
 19	19	59	1
 20	20	62	1
 21	21	65	1
+22	22	81	1
 \.
 
 
@@ -10404,6 +10443,7 @@ COPY public.posts (id, content, created_at, updated_at, created_by_id, updated_b
 71	In recent times, environmental concerns have become a major issue, and we're trying to educate our kids on how to protect the environment and contribute to a sustainable society. Do you have any additional suggestions, aside from involving kids in related activities?	2025-07-09 02:10:29.256	2025-07-12 12:43:37.209	\N	1	en
 70	We are new immigrants to Canada and don't have much money to invest in parenting resources. Your GPA is a fantastic, free resource for us, and we've learned so much from it. Thank you for your kind support!	2025-07-09 02:04:02.084	2025-07-12 12:43:44.221	\N	1	en
 80	Single-parent families with only one income often experience high levels of pressure. Do you have any suggestions or advice to help manage this?	2025-07-13 02:48:38.763	2025-07-13 02:48:38.763	\N	\N	en
+81	My husband and I both work far from home, and my parents take care of our son while we're away. How can we help our child develop good habits?	2025-07-13 17:13:41.802	2025-07-13 17:13:41.802	\N	\N	en
 \.
 
 
@@ -10462,6 +10502,7 @@ COPY public.posts_users_permissions_user_links (id, post_id, user_id, post_order
 77	71	16	2
 78	70	59	1
 81	80	24	19
+82	81	24	20
 \.
 
 
@@ -10544,7 +10585,7 @@ COPY public.strapi_core_store_settings (id, key, value, type, environment, tag) 
 86	plugin_content_manager_configuration_content_types::api::course.course	{"uid":"api::course.course","settings":{"bulkable":true,"filterable":true,"searchable":true,"pageSize":100,"mainField":"title","defaultSortBy":"title","defaultSortOrder":"ASC"},"metadatas":{"id":{"edit":{},"list":{"label":"id","searchable":true,"sortable":true}},"title":{"edit":{"label":"title","description":"","placeholder":"","visible":true,"editable":true},"list":{"label":"title","searchable":true,"sortable":true}},"content":{"edit":{"label":"content","description":"","placeholder":"","visible":true,"editable":true},"list":{"label":"content","searchable":false,"sortable":false}},"icon_image":{"edit":{"label":"icon_image","description":"","placeholder":"","visible":true,"editable":true},"list":{"label":"icon_image","searchable":false,"sortable":false}},"coursecategory":{"edit":{"label":"coursecategory","description":"","placeholder":"","visible":true,"editable":true,"mainField":"name"},"list":{"label":"coursecategory","searchable":true,"sortable":true}},"order":{"edit":{"label":"order","description":"","placeholder":"","visible":true,"editable":true},"list":{"label":"order","searchable":true,"sortable":true}},"createdAt":{"edit":{"label":"createdAt","description":"","placeholder":"","visible":false,"editable":true},"list":{"label":"createdAt","searchable":true,"sortable":true}},"updatedAt":{"edit":{"label":"updatedAt","description":"","placeholder":"","visible":false,"editable":true},"list":{"label":"updatedAt","searchable":true,"sortable":true}},"createdBy":{"edit":{"label":"createdBy","description":"","placeholder":"","visible":false,"editable":true,"mainField":"firstname"},"list":{"label":"createdBy","searchable":true,"sortable":true}},"updatedBy":{"edit":{"label":"updatedBy","description":"","placeholder":"","visible":false,"editable":true,"mainField":"firstname"},"list":{"label":"updatedBy","searchable":true,"sortable":true}}},"layouts":{"edit":[[{"name":"title","size":6}],[{"name":"icon_image","size":6}],[{"name":"coursecategory","size":6},{"name":"order","size":4}],[{"name":"content","size":12}]],"list":["id","title","icon_image","coursecategory"]}}	object	\N	\N
 81	plugin_content_manager_configuration_content_types::api::coursecategory.coursecategory	{"uid":"api::coursecategory.coursecategory","settings":{"bulkable":true,"filterable":true,"searchable":true,"pageSize":10,"mainField":"name","defaultSortBy":"name","defaultSortOrder":"ASC"},"metadatas":{"id":{"edit":{},"list":{"label":"id","searchable":true,"sortable":true}},"name":{"edit":{"label":"name","description":"","placeholder":"","visible":true,"editable":true},"list":{"label":"name","searchable":true,"sortable":true}},"courses":{"edit":{"label":"courses","description":"","placeholder":"","visible":true,"editable":true,"mainField":"title"},"list":{"label":"courses","searchable":false,"sortable":false}},"order":{"edit":{"label":"order","description":"","placeholder":"","visible":true,"editable":true},"list":{"label":"order","searchable":true,"sortable":true}},"createdAt":{"edit":{"label":"createdAt","description":"","placeholder":"","visible":false,"editable":true},"list":{"label":"createdAt","searchable":true,"sortable":true}},"updatedAt":{"edit":{"label":"updatedAt","description":"","placeholder":"","visible":false,"editable":true},"list":{"label":"updatedAt","searchable":true,"sortable":true}},"createdBy":{"edit":{"label":"createdBy","description":"","placeholder":"","visible":false,"editable":true,"mainField":"firstname"},"list":{"label":"createdBy","searchable":true,"sortable":true}},"updatedBy":{"edit":{"label":"updatedBy","description":"","placeholder":"","visible":false,"editable":true,"mainField":"firstname"},"list":{"label":"updatedBy","searchable":true,"sortable":true}}},"layouts":{"list":["id","name","courses","createdAt"],"edit":[[{"name":"name","size":6}],[{"name":"courses","size":6},{"name":"order","size":4}]]}}	object	\N	\N
 11	plugin_content_manager_configuration_content_types::plugin::users-permissions.user	{"uid":"plugin::users-permissions.user","settings":{"bulkable":true,"filterable":true,"searchable":true,"pageSize":100,"mainField":"username","defaultSortBy":"id","defaultSortOrder":"DESC"},"metadatas":{"id":{"edit":{},"list":{"label":"id","searchable":true,"sortable":true}},"username":{"edit":{"label":"username","description":"","placeholder":"","visible":true,"editable":true},"list":{"label":"username","searchable":true,"sortable":true}},"email":{"edit":{"label":"email","description":"","placeholder":"","visible":true,"editable":true},"list":{"label":"email","searchable":true,"sortable":true}},"provider":{"edit":{"label":"provider","description":"","placeholder":"","visible":false,"editable":true},"list":{"label":"provider","searchable":true,"sortable":true}},"password":{"edit":{"label":"password","description":"","placeholder":"","visible":true,"editable":true},"list":{"label":"password","searchable":true,"sortable":true}},"resetPasswordToken":{"edit":{"label":"resetPasswordToken","description":"","placeholder":"","visible":false,"editable":true},"list":{"label":"resetPasswordToken","searchable":true,"sortable":true}},"confirmationToken":{"edit":{"label":"confirmationToken","description":"","placeholder":"","visible":false,"editable":true},"list":{"label":"confirmationToken","searchable":true,"sortable":true}},"confirmed":{"edit":{"label":"confirmed","description":"","placeholder":"","visible":true,"editable":true},"list":{"label":"confirmed","searchable":true,"sortable":true}},"blocked":{"edit":{"label":"blocked","description":"","placeholder":"","visible":true,"editable":true},"list":{"label":"blocked","searchable":true,"sortable":true}},"role":{"edit":{"label":"role","description":"","placeholder":"","visible":true,"editable":true,"mainField":"name"},"list":{"label":"role","searchable":true,"sortable":true}},"articles":{"edit":{"label":"articles","description":"","placeholder":"","visible":true,"editable":true,"mainField":"id"},"list":{"label":"articles","searchable":false,"sortable":false}},"posts":{"edit":{"label":"posts","description":"","placeholder":"","visible":true,"editable":true,"mainField":"id"},"list":{"label":"posts","searchable":false,"sortable":false}},"user_profile":{"edit":{"label":"user_profile","description":"","placeholder":"","visible":true,"editable":true,"mainField":"id"},"list":{"label":"user_profile","searchable":true,"sortable":true}},"likes":{"edit":{"label":"likes","description":"","placeholder":"","visible":true,"editable":true,"mainField":"id"},"list":{"label":"likes","searchable":false,"sortable":false}},"comments":{"edit":{"label":"comments","description":"","placeholder":"","visible":true,"editable":true,"mainField":"message"},"list":{"label":"comments","searchable":false,"sortable":false}},"createdAt":{"edit":{"label":"createdAt","description":"","placeholder":"","visible":false,"editable":true},"list":{"label":"createdAt","searchable":true,"sortable":true}},"updatedAt":{"edit":{"label":"updatedAt","description":"","placeholder":"","visible":false,"editable":true},"list":{"label":"updatedAt","searchable":true,"sortable":true}},"createdBy":{"edit":{"label":"createdBy","description":"","placeholder":"","visible":false,"editable":true,"mainField":"firstname"},"list":{"label":"createdBy","searchable":true,"sortable":true}},"updatedBy":{"edit":{"label":"updatedBy","description":"","placeholder":"","visible":false,"editable":true,"mainField":"firstname"},"list":{"label":"updatedBy","searchable":true,"sortable":true}}},"layouts":{"list":["id","username","email","confirmed","role"],"edit":[[{"name":"username","size":6},{"name":"email","size":6}],[{"name":"password","size":6},{"name":"confirmed","size":4}],[{"name":"blocked","size":4},{"name":"role","size":6}],[{"name":"articles","size":6},{"name":"posts","size":6}],[{"name":"user_profile","size":6},{"name":"likes","size":6}],[{"name":"comments","size":6}]]}}	object	\N	\N
-122	plugin_content_manager_configuration_content_types::api::comment.comment	{"uid":"api::comment.comment","settings":{"bulkable":true,"filterable":true,"searchable":true,"pageSize":10,"mainField":"message","defaultSortBy":"message","defaultSortOrder":"ASC"},"metadatas":{"id":{"edit":{},"list":{"label":"id","searchable":true,"sortable":true}},"message":{"edit":{"label":"message","description":"","placeholder":"","visible":true,"editable":true},"list":{"label":"message","searchable":true,"sortable":true}},"author":{"edit":{"label":"author","description":"","placeholder":"","visible":true,"editable":true,"mainField":"username"},"list":{"label":"author","searchable":true,"sortable":true}},"post":{"edit":{"label":"post","description":"","placeholder":"","visible":true,"editable":true,"mainField":"id"},"list":{"label":"post","searchable":true,"sortable":true}},"parent_comment":{"edit":{"label":"parent_comment","description":"","placeholder":"","visible":true,"editable":true,"mainField":"message"},"list":{"label":"parent_comment","searchable":true,"sortable":true}},"replies":{"edit":{"label":"replies","description":"","placeholder":"","visible":true,"editable":true,"mainField":"message"},"list":{"label":"replies","searchable":false,"sortable":false}},"createdAt":{"edit":{"label":"createdAt","description":"","placeholder":"","visible":false,"editable":true},"list":{"label":"createdAt","searchable":true,"sortable":true}},"updatedAt":{"edit":{"label":"updatedAt","description":"","placeholder":"","visible":false,"editable":true},"list":{"label":"updatedAt","searchable":true,"sortable":true}},"createdBy":{"edit":{"label":"createdBy","description":"","placeholder":"","visible":false,"editable":true,"mainField":"firstname"},"list":{"label":"createdBy","searchable":true,"sortable":true}},"updatedBy":{"edit":{"label":"updatedBy","description":"","placeholder":"","visible":false,"editable":true,"mainField":"firstname"},"list":{"label":"updatedBy","searchable":true,"sortable":true}}},"layouts":{"list":["id","message","author","post"],"edit":[[{"name":"message","size":6},{"name":"author","size":6}],[{"name":"post","size":6},{"name":"parent_comment","size":6}],[{"name":"replies","size":6}]]}}	object	\N	\N
+122	plugin_content_manager_configuration_content_types::api::comment.comment	{"uid":"api::comment.comment","settings":{"bulkable":true,"filterable":true,"searchable":true,"pageSize":100,"mainField":"message","defaultSortBy":"createdAt","defaultSortOrder":"DESC"},"metadatas":{"id":{"edit":{},"list":{"label":"id","searchable":true,"sortable":true}},"message":{"edit":{"label":"message","description":"","placeholder":"","visible":true,"editable":true},"list":{"label":"message","searchable":true,"sortable":true}},"author":{"edit":{"label":"author","description":"","placeholder":"","visible":true,"editable":true,"mainField":"username"},"list":{"label":"author","searchable":true,"sortable":true}},"post":{"edit":{"label":"post","description":"","placeholder":"","visible":true,"editable":true,"mainField":"id"},"list":{"label":"post","searchable":true,"sortable":true}},"parent_comment":{"edit":{"label":"parent_comment","description":"","placeholder":"","visible":true,"editable":true,"mainField":"message"},"list":{"label":"parent_comment","searchable":true,"sortable":true}},"replies":{"edit":{"label":"replies","description":"","placeholder":"","visible":true,"editable":true,"mainField":"message"},"list":{"label":"replies","searchable":false,"sortable":false}},"createdAt":{"edit":{"label":"createdAt","description":"","placeholder":"","visible":false,"editable":true},"list":{"label":"createdAt","searchable":true,"sortable":true}},"updatedAt":{"edit":{"label":"updatedAt","description":"","placeholder":"","visible":false,"editable":true},"list":{"label":"updatedAt","searchable":true,"sortable":true}},"createdBy":{"edit":{"label":"createdBy","description":"","placeholder":"","visible":false,"editable":true,"mainField":"firstname"},"list":{"label":"createdBy","searchable":true,"sortable":true}},"updatedBy":{"edit":{"label":"updatedBy","description":"","placeholder":"","visible":false,"editable":true,"mainField":"firstname"},"list":{"label":"updatedBy","searchable":true,"sortable":true}}},"layouts":{"edit":[[{"name":"message","size":6},{"name":"author","size":6}],[{"name":"post","size":6},{"name":"parent_comment","size":6}],[{"name":"replies","size":6}]],"list":["id","message","author","post"]}}	object	\N	\N
 105	plugin_content_manager_configuration_components::a.features	{"uid":"a.features","settings":{"bulkable":true,"filterable":true,"searchable":true,"pageSize":10,"mainField":"feature","defaultSortBy":"feature","defaultSortOrder":"ASC"},"metadatas":{"id":{"edit":{},"list":{"label":"id","searchable":false,"sortable":false}},"feature":{"edit":{"label":"feature","description":"","placeholder":"","visible":true,"editable":true},"list":{"label":"feature","searchable":true,"sortable":true}}},"layouts":{"list":["id","feature"],"edit":[[{"name":"feature","size":6}]]},"isComponent":true}	object	\N	\N
 \.
 
@@ -11010,10 +11051,7 @@ COPY public.up_permissions (id, action, created_at, updated_at, created_by_id, u
 386	plugin::users-permissions.permissions.getPermissions	2025-07-10 21:50:40.296	2025-07-10 21:50:40.296	\N	\N
 376	plugin::users-permissions.user.update	2025-07-10 21:50:40.296	2025-07-10 21:50:40.296	\N	\N
 385	plugin::users-permissions.role.updateRole	2025-07-10 21:50:40.296	2025-07-10 21:50:40.296	\N	\N
-409	api::post.post.findWithUsername	2025-07-12 19:36:50.414	2025-07-12 19:36:50.414	\N	\N
-411	api::post.post.findWithUsername	2025-07-12 19:37:13.394	2025-07-12 19:37:13.394	\N	\N
 377	plugin::users-permissions.user.me	2025-07-10 21:50:40.296	2025-07-10 21:50:40.296	\N	\N
-410	api::post.post.findWithUsername	2025-07-12 19:37:03.216	2025-07-12 19:37:03.216	\N	\N
 378	plugin::users-permissions.user.findOne	2025-07-10 21:50:40.296	2025-07-10 21:50:40.296	\N	\N
 387	plugin::users-permissions.role.deleteRole	2025-07-10 21:50:40.296	2025-07-10 21:50:40.296	\N	\N
 412	api::comment.comment.findWithAuthor	2025-07-12 19:48:11.737	2025-07-12 19:48:11.737	\N	\N
@@ -11021,15 +11059,24 @@ COPY public.up_permissions (id, action, created_at, updated_at, created_by_id, u
 379	plugin::users-permissions.role.findOne	2025-07-10 21:50:40.296	2025-07-10 21:50:40.296	\N	\N
 413	api::comment.comment.findWithAuthor	2025-07-12 19:48:29.308	2025-07-12 19:48:29.308	\N	\N
 380	plugin::users-permissions.user.find	2025-07-10 21:50:40.296	2025-07-10 21:50:40.296	\N	\N
+415	api::post.post.findOneWithDetails	2025-07-13 09:13:48.71	2025-07-13 09:13:48.71	\N	\N
+417	api::post.post.findOneWithDetails	2025-07-13 09:14:12.808	2025-07-13 09:14:12.808	\N	\N
 381	plugin::users-permissions.role.find	2025-07-10 21:50:40.296	2025-07-10 21:50:40.296	\N	\N
+416	api::post.post.findOneWithDetails	2025-07-13 09:14:01.234	2025-07-13 09:14:01.234	\N	\N
 382	plugin::users-permissions.user.destroy	2025-07-10 21:50:40.296	2025-07-10 21:50:40.296	\N	\N
+418	api::comment.comment.findOneWithAuthor	2025-07-13 09:19:27.713	2025-07-13 09:19:27.713	\N	\N
+420	api::comment.comment.findOneWithAuthor	2025-07-13 09:20:03.328	2025-07-13 09:20:03.328	\N	\N
 383	plugin::users-permissions.role.createRole	2025-07-10 21:50:40.296	2025-07-10 21:50:40.296	\N	\N
+419	api::comment.comment.findOneWithAuthor	2025-07-13 09:19:37.984	2025-07-13 09:19:37.984	\N	\N
 384	plugin::users-permissions.user.count	2025-07-10 21:50:40.296	2025-07-10 21:50:40.296	\N	\N
+421	api::post.post.findWithFirstPageComments	2025-07-13 11:29:28.988	2025-07-13 11:29:28.988	\N	\N
+423	api::post.post.findWithFirstPageComments	2025-07-13 11:30:02.067	2025-07-13 11:30:02.067	\N	\N
 389	api::comment.comment.findOne	2025-07-12 18:27:06.473	2025-07-12 18:27:06.473	\N	\N
 388	api::comment.comment.find	2025-07-12 18:27:06.473	2025-07-12 18:27:06.473	\N	\N
 390	api::comment.comment.findOne	2025-07-12 18:27:23.742	2025-07-12 18:27:23.742	\N	\N
 392	api::comment.comment.create	2025-07-12 18:27:23.742	2025-07-12 18:27:23.742	\N	\N
 394	api::comment.comment.delete	2025-07-12 18:27:26.529	2025-07-12 18:27:26.529	\N	\N
+422	api::post.post.findWithFirstPageComments	2025-07-13 11:29:44.926	2025-07-13 11:29:44.926	\N	\N
 391	api::comment.comment.find	2025-07-12 18:27:23.742	2025-07-12 18:27:23.742	\N	\N
 393	api::comment.comment.update	2025-07-12 18:27:23.742	2025-07-12 18:27:23.742	\N	\N
 397	api::comment.comment.find	2025-07-12 18:51:49.701	2025-07-12 18:51:49.701	\N	\N
@@ -11382,12 +11429,18 @@ COPY public.up_permissions_role_links (id, permission_id, role_id, permission_or
 404	402	4	18
 405	405	4	18
 406	406	4	18
-409	409	1	24
-410	410	3	32
-411	411	4	19
 412	412	1	25
 413	413	3	33
 414	414	4	20
+415	415	1	26
+416	416	3	34
+417	417	4	21
+418	418	1	27
+419	419	3	35
+420	420	4	22
+421	421	1	28
+422	422	3	36
+423	423	4	23
 \.
 
 
@@ -11397,9 +11450,9 @@ COPY public.up_permissions_role_links (id, permission_id, role_id, permission_or
 
 COPY public.up_roles (id, name, description, type, created_at, updated_at, created_by_id, updated_by_id) FROM stdin;
 2	Public	Default role given to unauthenticated user.	public	2025-02-27 01:45:38.684	2025-07-12 18:27:06.323	\N	\N
-1	Authenticated	Default role given to authenticated user.	authenticated	2025-02-27 01:45:38.466	2025-07-12 19:48:11.59	\N	\N
-3	editor	Editor of articles	editor	2025-04-09 13:41:55.508	2025-07-12 19:48:29.162	\N	\N
-4	admin	Administrator of the system	admin	2025-07-11 04:40:53.058	2025-07-12 19:48:36.118	\N	\N
+4	admin	Administrator of the system	admin	2025-07-11 04:40:53.058	2025-07-13 11:30:45.23	\N	\N
+3	editor	Editor of articles	editor	2025-04-09 13:41:55.508	2025-07-13 11:31:13.786	\N	\N
+1	Authenticated	Default role given to authenticated user.	authenticated	2025-02-27 01:45:38.466	2025-07-13 11:39:37.418	\N	\N
 \.
 
 
@@ -11612,14 +11665,14 @@ SELECT pg_catalog.setval('public.categories_localizations_links_id_seq', 1, fals
 -- Name: comments_author_links_id_seq; Type: SEQUENCE SET; Schema: public; Owner: strapi
 --
 
-SELECT pg_catalog.setval('public.comments_author_links_id_seq', 2, true);
+SELECT pg_catalog.setval('public.comments_author_links_id_seq', 8, true);
 
 
 --
 -- Name: comments_id_seq; Type: SEQUENCE SET; Schema: public; Owner: strapi
 --
 
-SELECT pg_catalog.setval('public.comments_id_seq', 2, true);
+SELECT pg_catalog.setval('public.comments_id_seq', 16, true);
 
 
 --
@@ -11633,7 +11686,7 @@ SELECT pg_catalog.setval('public.comments_parent_comment_links_id_seq', 1, false
 -- Name: comments_post_links_id_seq; Type: SEQUENCE SET; Schema: public; Owner: strapi
 --
 
-SELECT pg_catalog.setval('public.comments_post_links_id_seq', 2, true);
+SELECT pg_catalog.setval('public.comments_post_links_id_seq', 16, true);
 
 
 --
@@ -11766,7 +11819,7 @@ SELECT pg_catalog.setval('public.daily_tips_localizations_links_id_seq', 1, fals
 -- Name: daily_tips_tips_links_id_seq; Type: SEQUENCE SET; Schema: public; Owner: strapi
 --
 
-SELECT pg_catalog.setval('public.daily_tips_tips_links_id_seq', 102, true);
+SELECT pg_catalog.setval('public.daily_tips_tips_links_id_seq', 105, true);
 
 
 --
@@ -11794,21 +11847,21 @@ SELECT pg_catalog.setval('public.dailylessons_localizations_links_id_seq', 1, fa
 -- Name: files_folder_links_id_seq; Type: SEQUENCE SET; Schema: public; Owner: strapi
 --
 
-SELECT pg_catalog.setval('public.files_folder_links_id_seq', 595, true);
+SELECT pg_catalog.setval('public.files_folder_links_id_seq', 596, true);
 
 
 --
 -- Name: files_id_seq; Type: SEQUENCE SET; Schema: public; Owner: strapi
 --
 
-SELECT pg_catalog.setval('public.files_id_seq', 668, true);
+SELECT pg_catalog.setval('public.files_id_seq', 669, true);
 
 
 --
 -- Name: files_related_morphs_id_seq; Type: SEQUENCE SET; Schema: public; Owner: strapi
 --
 
-SELECT pg_catalog.setval('public.files_related_morphs_id_seq', 2795, true);
+SELECT pg_catalog.setval('public.files_related_morphs_id_seq', 2796, true);
 
 
 --
@@ -11843,7 +11896,7 @@ SELECT pg_catalog.setval('public.hot_topics_localizations_links_id_seq', 1, fals
 -- Name: hot_topics_topics_links_id_seq; Type: SEQUENCE SET; Schema: public; Owner: strapi
 --
 
-SELECT pg_catalog.setval('public.hot_topics_topics_links_id_seq', 100, true);
+SELECT pg_catalog.setval('public.hot_topics_topics_links_id_seq', 103, true);
 
 
 --
@@ -11857,7 +11910,7 @@ SELECT pg_catalog.setval('public.i18n_locale_id_seq', 2, true);
 -- Name: likes_id_seq; Type: SEQUENCE SET; Schema: public; Owner: strapi
 --
 
-SELECT pg_catalog.setval('public.likes_id_seq', 21, true);
+SELECT pg_catalog.setval('public.likes_id_seq', 22, true);
 
 
 --
@@ -11871,7 +11924,7 @@ SELECT pg_catalog.setval('public.likes_localizations_links_id_seq', 1, false);
 -- Name: likes_post_links_id_seq; Type: SEQUENCE SET; Schema: public; Owner: strapi
 --
 
-SELECT pg_catalog.setval('public.likes_post_links_id_seq', 21, true);
+SELECT pg_catalog.setval('public.likes_post_links_id_seq', 22, true);
 
 
 --
@@ -11892,7 +11945,7 @@ SELECT pg_catalog.setval('public.pings_id_seq', 1, false);
 -- Name: posts_id_seq; Type: SEQUENCE SET; Schema: public; Owner: strapi
 --
 
-SELECT pg_catalog.setval('public.posts_id_seq', 80, true);
+SELECT pg_catalog.setval('public.posts_id_seq', 81, true);
 
 
 --
@@ -11906,7 +11959,7 @@ SELECT pg_catalog.setval('public.posts_localizations_links_id_seq', 1, false);
 -- Name: posts_users_permissions_user_links_id_seq; Type: SEQUENCE SET; Schema: public; Owner: strapi
 --
 
-SELECT pg_catalog.setval('public.posts_users_permissions_user_links_id_seq', 81, true);
+SELECT pg_catalog.setval('public.posts_users_permissions_user_links_id_seq', 82, true);
 
 
 --
@@ -12039,14 +12092,14 @@ SELECT pg_catalog.setval('public.topics_localizations_links_id_seq', 1, false);
 -- Name: up_permissions_id_seq; Type: SEQUENCE SET; Schema: public; Owner: strapi
 --
 
-SELECT pg_catalog.setval('public.up_permissions_id_seq', 414, true);
+SELECT pg_catalog.setval('public.up_permissions_id_seq', 423, true);
 
 
 --
 -- Name: up_permissions_role_links_id_seq; Type: SEQUENCE SET; Schema: public; Owner: strapi
 --
 
-SELECT pg_catalog.setval('public.up_permissions_role_links_id_seq', 414, true);
+SELECT pg_catalog.setval('public.up_permissions_role_links_id_seq', 423, true);
 
 
 --

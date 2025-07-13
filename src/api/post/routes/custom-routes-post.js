@@ -4,11 +4,13 @@ module.exports = {
   routes: [
     {
       method: 'GET',
-      path: '/getposts', // Changed from /posts/custom
-      handler: 'post.findWithUsername',
-      config: {
-        // Authentication configurations remain here
-      },
+      path: '/getposts',
+      handler: 'post.findWithFirstPageComments',
+    },
+    {
+      method: 'GET',
+      path: '/posts/:id',
+      handler: 'post.findOneWithDetails',
     },
   ],
 };
