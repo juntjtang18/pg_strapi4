@@ -22,5 +22,8 @@ module.exports = ({ env }) => {
         keepAliveTimeout: 300000, // 5 minutes
       },
     },
+    watchIgnoreFiles: [
+      '**/test/**'
+    ],
   };
 };
