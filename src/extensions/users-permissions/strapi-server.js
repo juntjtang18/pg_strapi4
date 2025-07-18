@@ -16,15 +16,10 @@ module.exports = (plugin) => {
       return;
     }
 
-    const populate = {
-      role: true,
-      user_profile: true,
-    };
-
     const user = await strapi.entityService.findOne(
       "plugin::users-permissions.user",
       ctx.state.user.id,
-      { populate }
+      { populate: { role: true, user_profile: true } }
     );
 
     if (!user) {
@@ -56,28 +51,12 @@ module.exports = (plugin) => {
     }
     // --- End Subscription Logic ---
 
-    const cleanRole = user.role
-      ? (({ id, name, description, type }) => ({ id, name, description, type }))(user.role)
-      : null;
-
-    const cleanUserProfile = user.user_profile
-      ? {
-          id: user.user_profile.id,
-          telephone: user.user_profile.telephone,
-          baseLanguage: user.user_profile.baseLanguage,
-        }
-      : null;
-
-    ctx.body = {
-      id: user.id,
-      username: user.username,
-      email: user.email,
-      confirmed: user.confirmed,
-      blocked: user.blocked,
-      role: cleanRole,
-      user_profile: cleanUserProfile,
-      subscription: subscription,
-    };
+    const userSchema = strapi.getModel('plugin::users-permissions.user');
+    const sanitizedUser = await sanitize.contentAPI.output(user, userSchema);
+    sanitizedUser.subscription = subscription;
+    
+    // Replace the original user object in the response with our new, detailed one
+    ctx.body = sanitizedUser;
   };
 
   // =================================================================

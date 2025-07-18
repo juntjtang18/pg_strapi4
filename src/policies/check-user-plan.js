@@ -2,6 +2,8 @@
 
 'use strict';
 
+const { ForbiddenError } = require('@strapi/utils').errors;
+
 /**
  * `check-user-plan` policy
  */
@@ -21,7 +23,7 @@ module.exports = (policyContext, config, { strapi }) => {
   }
 
   // 2. Define the allowed roles.
-  const allowedRoles = ['basicplan', 'proplan', 'editor'];
+  const allowedRoles = ['basicplan', 'proplan', 'editor', 'Authenticated', 'admin'];
   //console.log('Allowed roles:', allowedRoles);
 
   // 3. Log the user's role name directly for an easy comparison.
@@ -42,6 +44,6 @@ module.exports = (policyContext, config, { strapi }) => {
     // If the user does not have the required role, block access.
     //console.log('POLICY FAILED: User role is not in the allowed list.');
     //console.log('--------------------------------------\n');
-    return policyContext.forbidden('You do not have the required plan to perform this action.');
+    throw new ForbiddenError('You do not have the required plan to perform this action.');
   }
 };

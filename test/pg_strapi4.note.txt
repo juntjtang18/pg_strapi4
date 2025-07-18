@@ -88,3 +88,16 @@ curl -X POST http://192.168.1.66:8080/api/comments \
         "post": 75
     }
 }'
+
+
+curl -X GET http://localhost:8080/api/plans \
+-H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MjMsImlhdCI6MTc1Mjc3NDYzNCwiZXhwIjoxNzU1MzY2NjM0fQ.0rz6gNizA-k5ffpXkyxCprkHkGS9ktTTfZycsaXR0QY" \
+| jq .
+
+
+
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MjMsImlhdCI6MTc1Mjc4NDI2NywiZXhwIjoxNzU1Mzc2MjY3fQ.O4kKs0s_5fb-4_uxgZhCTHGsfXh8x1-VUgLDS3cubNk
+
+curl -X GET http://localhost:8080/api/users/me   \
+-H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MjMsImlhdCI6MTc1Mjc3NDYzNCwiZXhwIjoxNzU1MzY2NjM0fQ.0rz6gNizA-k5ffpXkyxCprkHkGS9ktTTfZycsaXR0QY" \
+| jq .

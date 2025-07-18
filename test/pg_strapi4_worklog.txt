@@ -1,0 +1,171 @@
+curl -X POST "http://localhost:8080/api/auth/local" -H "Content-Type: application/json" -d '{
+  "identifier": "new@gpa.com",
+  "password": "Passw0rd"
+}' | jq .
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100  2373  100  2314  100    59   1508     38  0:00:01  0:00:01 --:--:--  1545
+{
+  "jwt": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MjMsImlhdCI6MTc1Mjc3MTM3MSwiZXhwIjoxNzU1MzYzMzcxfQ.YxF9znQfc2mx3fjkSoLH7RGWJ8QhzQ3kvre53kIK4bc",
+  "user": {
+    "id": 23,
+    "username": "new",
+    "email": "new@gpa.com",
+    "provider": "local",
+    "confirmed": true,
+    "blocked": false,
+    "createdAt": "2025-06-11T22:20:07.429Z",
+    "updatedAt": "2025-07-13T02:49:51.375Z",
+    "role": {
+      "id": 1,
+      "name": "Authenticated",
+      "description": "Default role given to authenticated user.",
+      "type": "authenticated",
+      "createdAt": "2025-02-27T09:45:38.466Z",
+      "updatedAt": "2025-07-13T18:39:37.418Z"
+    },
+    "user_profile": {
+      "id": 1,
+      "consentForEmailNotice": true,
+      "createdAt": "2025-06-14T20:10:27.518Z",
+      "updatedAt": "2025-07-06T00:10:06.343Z",
+      "locale": "en"
+    },
+    "subscription": {
+      "data": {
+        "id": 46,
+        "attributes": {
+          "strapiUserId": 23,
+          "status": "active",
+          "expireDate": "2025-08-11T07:43:20.296Z",
+          "originalTransactionId": null,
+          "latestTransactionId": null,
+          "createdAt": "2025-07-12T07:43:20.519Z",
+          "updatedAt": "2025-07-12T07:43:20.519Z",
+          "startDate": "2025-07-12T07:43:20.489Z",
+          "plan": {
+            "id": 2,
+            "attributes": {
+              "name": "basic monthly plan",
+              "productId": "basic-monthly-plan",
+              "order": 2,
+              "sale": {
+                "productId": null,
+                "startDate": null,
+                "endDate": null
+              },
+              "features": {
+                "data": [
+                  {
+                    "id": 1,
+                    "attributes": {
+                      "name": "Learning from basic parenting courses",
+                      "order": 1
+                    }
+                  },
+                  {
+                    "id": 2,
+                    "attributes": {
+                      "name": "Learning membership course",
+                      "order": 2
+                    }
+                  },
+                  {
+                    "id": 3,
+                    "attributes": {
+                      "name": "Talk to AI Parenting Consulting",
+                      "order": 3
+                    }
+                  },
+                  {
+                    "id": 4,
+                    "attributes": {
+                      "name": "Share experience in community",
+                      "order": 4
+                    }
+                  },
+                  {
+                    "id": 5,
+                    "attributes": {
+                      "name": "Get daily tips on parenting",
+                      "order": 5
+                    }
+                  },
+                  {
+                    "id": 8,
+                    "attributes": {
+                      "name": "Learning Hot topics every day",
+                      "order": 8
+                    }
+                  },
+                  {
+                    "id": 9,
+                    "attributes": {
+                      "name": "Learning from parenting tools",
+                      "order": 9
+                    }
+                  }
+                ]
+              },
+              "entitlements": {
+                "data": [
+                  {
+                    "id": 1,
+                    "attributes": {
+                      "name": "basic courses",
+                      "slug": "basic-courses",
+                      "isMetered": null,
+                      "limit": null,
+                      "resetPeriod": null
+                    }
+                  },
+                  {
+                    "id": 3,
+                    "attributes": {
+                      "name": "parenting tools",
+                      "slug": "parenting-tools",
+                      "isMetered": null,
+                      "limit": null,
+                      "resetPeriod": null
+                    }
+                  },
+                  {
+                    "id": 5,
+                    "attributes": {
+                      "name": "AI chatbot",
+                      "slug": "ai-chatbot",
+                      "isMetered": true,
+                      "limit": 20,
+                      "resetPeriod": "day"
+                    }
+                  },
+                  {
+                    "id": 4,
+                    "attributes": {
+                      "name": "community post",
+                      "slug": "community-post",
+                      "isMetered": null,
+                      "limit": null,
+                      "resetPeriod": null
+                    }
+                  },
+                  {
+                    "id": 2,
+                    "attributes": {
+                      "name": "membership courses",
+                      "slug": "membership-courses",
+                      "isMetered": null,
+                      "limit": null,
+                      "resetPeriod": null
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        }
+      },
+      "meta": {}
+    }
+  }
+}
