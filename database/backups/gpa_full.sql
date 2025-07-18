@@ -4321,59 +4321,32 @@ COPY public.components_coursecontent_external_videos (id, external_url, caption)
 --
 
 COPY public.components_coursecontent_images (id) FROM stdin;
-44
-129
-45
-46
-48
-47
-49
-51
-50
-52
-53
-54
-56
-148
-149
-55
-59
-58
-57
-61
-60
-62
-64
-152
-151
-153
-154
-22
-63
-156
-23
-32
-155
-65
 67
-157
-31
-33
-280
-125
-36
-34
-35
-159
-3
 66
-69
-71
-137
-138
-140
-68
 70
+72
+129
+164
+3
+138
+137
+141
+1
+142
+14
+18
+140
+139
+20
+21
+146
+125
+22
+23
+143
+145
+144
+37
 86
 88
 89
@@ -4393,107 +4366,107 @@ COPY public.components_coursecontent_images (id) FROM stdin;
 106
 118
 117
-73
 119
 120
 123
-143
-72
-74
-75
-76
+38
 130
 132
-142
-145
-146
-144
+42
+44
+46
+47
 131
 128
 134
-77
-78
-80
-139
-141
-669
+48
+45
+49
+51
+52
+50
+148
+152
+154
 135
+153
 133
+149
+155
+156
+151
+157
+159
+280
+669
 2
 656
-13
-1
-14
-19
-17
-38
 439
-79
-82
-81
 83
 85
 84
 87
 124
-39
-15
-20
-18
-37
-21
-42
+60
+61
+62
 126
+64
+63
+65
+68
+69
+71
 619
-161
-163
-167
-451
+150
+277
 473
 482
 483
 488
 492
-505
-512
 459
 617
 433
 437
 441
 270
-527
-531
-535
-536
-539
-552
-561
 572
-583
-585
+161
+561
+166
+163
+167
+593
+112
+647
 594
 595
-593
 597
+654
 599
 604
 607
 608
 615
-40
-112
-647
-277
-654
+552
+527
+531
+535
+536
+539
+505
+512
 626
 633
-638
 27
-657
-150
-609
-614
+451
+583
+585
+515
+43
+586
+574
 173
 174
 175
@@ -4582,42 +4555,35 @@ COPY public.components_coursecontent_images (id) FROM stdin;
 258
 247
 248
-30
-660
-275
+528
+377
+284
 263
-43
-453
+275
 475
 480
 484
 493
+170
+171
+530
 160
 162
-165
-166
-164
 168
 169
-171
-170
 172
+453
 460
 468
-506
-507
-514
-290
-515
-517
-518
-522
-553
-574
-578
-586
 598
 605
+537
+290
+553
+609
+614
+578
+514
 339
 618
 262
@@ -4628,10 +4594,10 @@ COPY public.components_coursecontent_images (id) FROM stdin;
 497
 352
 502
-528
-530
-537
-544
+517
+660
+506
+518
 554
 555
 559
@@ -4643,8 +4609,8 @@ COPY public.components_coursecontent_images (id) FROM stdin;
 267
 264
 266
-378
-382
+276
+379
 287
 289
 291
@@ -4660,127 +4626,118 @@ COPY public.components_coursecontent_images (id) FROM stdin;
 309
 308
 312
-278
-284
-25
 286
+278
+279
+25
+544
+376
+507
+282
+382
+378
+522
 283
 274
-279
-282
-276
-376
-377
-379
 295
 292
 293
 296
-385
+568
 620
-455
 476
 485
 487
 490
-508
-516
-520
-521
 622
 461
 465
 432
 436
 268
+147
 498
-529
-545
-549
+516
+520
+521
 557
 562
 566
 567
-568
 577
-587
+165
+385
 601
 610
-612
-627
-634
-639
-26
-147
-661
-664
-41
 103
 107
-668
+612
 110
 111
 114
 649
-384
+545
+549
+529
+587
+661
+664
+668
+508
+627
+26
+455
+569
 621
 623
-445
-447
-450
 469
 470
 474
 477
 486
-509
-519
-525
 624
 463
 435
 442
 269
 273
+519
+525
+573
 499
 504
 500
-532
-543
-551
 558
 563
-569
-573
 575
 579
-580
-588
-591
 600
-611
+384
 104
 115
 651
+611
+543
+551
+532
+580
+588
+591
+662
+667
+663
+509
 628
 631
-635
-640
-28
-662
-663
-667
-386
-446
-449
-452
+445
+447
+450
+570
+523
+526
 479
 489
 494
-510
-513
-523
-526
 456
 462
 464
@@ -4789,28 +4746,31 @@ COPY public.components_coursecontent_images (id) FROM stdin;
 438
 443
 271
+659
 501
-533
+556
+602
+613
 540
-542
+386
 541
+542
 546
 550
 547
-556
-570
+533
+665
+510
 581
 584
 589
 592
-602
-613
-632
+513
 629
-636
-29
-659
-665
+632
+446
+449
+452
 641
 108
 642
@@ -4820,6 +4780,7 @@ COPY public.components_coursecontent_images (id) FROM stdin;
 645
 650
 652
+576
 419
 420
 422
@@ -4835,8 +4796,8 @@ COPY public.components_coursecontent_images (id) FROM stdin;
 428
 418
 457
-448
-454
+571
+524
 471
 472
 478
@@ -4846,17 +4807,28 @@ COPY public.components_coursecontent_images (id) FROM stdin;
 466
 302
 311
+336
+335
+374
+375
+285
+391
 388
 389
 390
-391
 392
-374
-375
-380
+393
+395
 381
+380
 383
 387
+548
+396
+394
+397
+398
+400
 294
 299
 298
@@ -4873,18 +4845,6 @@ COPY public.components_coursecontent_images (id) FROM stdin;
 321
 323
 324
-325
-326
-327
-330
-328
-329
-332
-331
-334
-333
-336
-335
 337
 338
 340
@@ -4912,25 +4872,12 @@ COPY public.components_coursecontent_images (id) FROM stdin;
 440
 272
 127
-393
-394
-396
-395
-397
-398
-399
-405
-406
-408
+534
+538
+666
+511
+630
 407
-409
-410
-411
-413
-415
-412
-416
-414
 362
 364
 366
@@ -4942,35 +4889,46 @@ COPY public.components_coursecontent_images (id) FROM stdin;
 370
 372
 373
-511
-524
-400
+408
+401
 109
 646
+399
 503
-534
-538
-548
 560
 564
-571
-576
-582
-590
-596
-603
-606
+405
+409
+410
+413
+414
+415
 653
 655
-285
-630
-637
-24
-401
-402
-404
 403
-666
+596
+404
+402
+603
+411
+416
+412
+606
+24
+582
+590
+448
+454
+325
+326
+327
+328
+329
+331
+330
+332
+333
+334
 \.
 
 
@@ -4979,55 +4937,25 @@ COPY public.components_coursecontent_images (id) FROM stdin;
 --
 
 COPY public.components_coursecontent_pagebreakers (id, backbutton, nextbutton) FROM stdin;
-34	t	t
-35	t	t
-36	t	t
 138	t	t
-60	t	t
-37	t	t
-38	t	t
-41	t	t
-40	t	t
-39	t	t
-42	t	t
-45	t	t
-43	t	t
-44	t	t
-47	t	t
-49	t	t
-48	t	t
-46	t	t
-51	t	t
-52	t	t
-53	t	t
-50	t	t
-56	t	t
-54	t	t
-55	t	t
-58	t	t
-57	t	t
-59	t	t
-62	t	t
 61	t	t
-63	t	t
-17	t	t
-65	t	t
-64	t	t
-67	t	t
-16	t	t
-21	t	t
-18	t	t
-22	t	t
-27	t	t
-621	t	t
 26	t	t
-28	t	t
+62	t	t
+63	t	t
+65	t	t
+66	t	t
+67	t	t
+69	t	t
+64	t	t
+621	t	t
 628	t	t
-82	t	t
-84	t	t
-86	t	t
-83	t	t
-85	t	t
+68	t	t
+591	t	t
+72	t	t
+71	t	t
+70	t	t
+76	t	t
+77	t	t
 88	t	t
 87	t	t
 90	t	t
@@ -5040,40 +4968,29 @@ COPY public.components_coursecontent_pagebreakers (id, backbutton, nextbutton) F
 96	t	t
 97	t	t
 99	t	t
-31	t	t
+592	t	t
 98	t	t
 100	t	t
 102	t	t
-30	t	t
+620	t	t
+600	t	t
+80	t	t
 104	t	t
 101	t	t
 107	t	t
 106	t	t
 103	t	t
 105	t	t
-66	t	t
-68	t	t
-72	t	t
-70	t	t
-69	t	t
-160	t	t
+78	t	t
+327	t	t
+333	t	t
 139	t	t
 140	t	t
-1	t	t
+335	t	t
 141	t	t
 143	t	t
-3	t	t
-74	t	t
-71	t	t
 108	t	t
 113	t	t
-73	t	t
-77	t	t
-75	t	t
-76	t	t
-78	t	t
-81	t	t
-79	t	t
 127	t	t
 128	t	t
 129	t	t
@@ -5085,49 +5002,67 @@ COPY public.components_coursecontent_pagebreakers (id, backbutton, nextbutton) F
 134	t	t
 135	t	t
 136	t	t
-80	t	t
-591	t	t
-592	t	t
-620	t	t
-600	t	t
-606	t	t
+160	t	t
+3	t	t
+1	t	t
+34	t	t
+35	t	t
+41	t	t
+38	t	t
+43	t	t
+42	t	t
+40	t	t
+39	t	t
+44	t	t
+45	t	t
+47	t	t
+48	t	t
+46	t	t
+50	t	t
+51	t	t
+52	t	t
+49	t	t
+504	t	t
+630	t	t
 2	t	t
 5	t	t
-4	t	t
-8	t	t
-9	t	t
-6	t	t
 10	t	t
 11	t	t
-142	t	t
+12	t	t
 13	t	t
 14	t	t
-12	t	t
+142	t	t
 15	t	t
-168	t	t
-170	t	t
-384	t	t
-622	t	t
-624	t	t
-169	t	t
-172	t	t
-171	t	t
-174	t	t
-175	t	t
-173	t	t
-176	t	t
-177	t	t
-178	t	t
-179	t	t
-181	t	t
-180	t	t
-593	t	t
+17	t	t
+18	t	t
+16	t	t
 149	t	t
 150	t	t
-596	t	t
 151	t	t
-594	t	t
+164	t	t
+167	t	t
+154	t	t
+168	t	t
+169	t	t
+161	t	t
+163	t	t
+170	t	t
+166	t	t
+152	t	t
+153	t	t
 155	t	t
+158	t	t
+156	t	t
+157	t	t
+278	t	t
+280	t	t
+279	t	t
+622	t	t
+283	t	t
+624	t	t
+282	t	t
+593	t	t
+284	t	t
 182	t	t
 183	t	t
 184	t	t
@@ -5211,7 +5146,7 @@ COPY public.components_coursecontent_pagebreakers (id, backbutton, nextbutton) F
 263	t	t
 253	t	t
 254	t	t
-597	t	t
+596	t	t
 264	t	t
 265	t	t
 266	t	t
@@ -5230,37 +5165,34 @@ COPY public.components_coursecontent_pagebreakers (id, backbutton, nextbutton) F
 146	t	t
 148	t	t
 147	t	t
-601	t	t
-607	t	t
+594	t	t
+597	t	t
 291	t	t
-279	t	t
-33	t	t
-152	t	t
-154	t	t
-278	t	t
-157	t	t
-162	t	t
-156	t	t
-280	t	t
-158	t	t
-153	t	t
-283	t	t
+601	t	t
+281	t	t
+285	t	t
+436	t	t
+286	t	t
+500	t	t
+288	t	t
+384	t	t
+174	t	t
 109	t	t
 119	t	t
 612	t	t
 337	t	t
 613	t	t
-282	t	t
-284	t	t
-281	t	t
-286	t	t
-288	t	t
+171	t	t
+172	t	t
+175	t	t
+176	t	t
+173	t	t
 350	t	t
-285	t	t
-161	t	t
-164	t	t
-163	t	t
-166	t	t
+177	t	t
+179	t	t
+180	t	t
+181	t	t
+178	t	t
 302	t	t
 304	t	t
 307	t	t
@@ -5269,16 +5201,24 @@ COPY public.components_coursecontent_pagebreakers (id, backbutton, nextbutton) F
 311	t	t
 313	t	t
 312	t	t
+328	t	t
+162	t	t
 165	t	t
-167	t	t
+334	t	t
 365	t	t
 366	t	t
 367	t	t
 368	t	t
 369	t	t
-391	t	t
 623	t	t
 627	t	t
+602	t	t
+595	t	t
+498	t	t
+505	t	t
+507	t	t
+508	t	t
+391	t	t
 110	t	t
 118	t	t
 121	t	t
@@ -5287,11 +5227,8 @@ COPY public.components_coursecontent_pagebreakers (id, backbutton, nextbutton) F
 614	t	t
 616	t	t
 619	t	t
-595	t	t
-602	t	t
-608	t	t
-29	t	t
-32	t	t
+329	t	t
+331	t	t
 359	t	t
 360	t	t
 363	t	t
@@ -5305,9 +5242,9 @@ COPY public.components_coursecontent_pagebreakers (id, backbutton, nextbutton) F
 413	t	t
 415	t	t
 412	t	t
-383	t	t
 385	t	t
-386	t	t
+388	t	t
+389	t	t
 417	t	t
 418	t	t
 419	t	t
@@ -5327,29 +5264,30 @@ COPY public.components_coursecontent_pagebreakers (id, backbutton, nextbutton) F
 305	t	t
 306	t	t
 308	t	t
-387	t	t
-397	t	t
-388	t	t
 392	t	t
-394	t	t
-396	t	t
-393	t	t
 398	t	t
-389	t	t
+379	t	t
+386	t	t
+393	t	t
+380	t	t
+394	t	t
 395	t	t
+396	t	t
+381	t	t
+375	t	t
+397	t	t
+372	t	t
+378	t	t
+382	t	t
 370	t	t
+289	t	t
+383	t	t
+387	t	t
 371	t	t
 373	t	t
-372	t	t
-375	t	t
-378	t	t
+377	t	t
 374	t	t
 376	t	t
-377	t	t
-379	t	t
-380	t	t
-382	t	t
-381	t	t
 290	t	t
 294	t	t
 292	t	t
@@ -5372,17 +5310,15 @@ COPY public.components_coursecontent_pagebreakers (id, backbutton, nextbutton) F
 323	t	t
 322	t	t
 324	t	t
-325	t	t
-326	t	t
-327	t	t
-328	t	t
-330	t	t
-331	t	t
-332	t	t
-329	t	t
-334	t	t
-333	t	t
-335	t	t
+489	t	t
+490	t	t
+491	t	t
+493	t	t
+492	t	t
+494	t	t
+496	t	t
+495	t	t
+399	t	t
 336	t	t
 339	t	t
 338	t	t
@@ -5416,17 +5352,16 @@ COPY public.components_coursecontent_pagebreakers (id, backbutton, nextbutton) F
 475	t	t
 476	t	t
 477	t	t
-399	t	t
-400	t	t
-401	t	t
-403	t	t
-407	t	t
-402	t	t
-408	t	t
-405	t	t
-404	t	t
-409	t	t
-406	t	t
+434	t	t
+435	t	t
+437	t	t
+439	t	t
+438	t	t
+441	t	t
+440	t	t
+442	t	t
+443	t	t
+497	t	t
 478	t	t
 479	t	t
 424	t	t
@@ -5439,17 +5374,6 @@ COPY public.components_coursecontent_pagebreakers (id, backbutton, nextbutton) F
 432	t	t
 431	t	t
 433	t	t
-603	t	t
-435	t	t
-436	t	t
-434	t	t
-440	t	t
-438	t	t
-437	t	t
-439	t	t
-441	t	t
-443	t	t
-442	t	t
 444	t	t
 445	t	t
 448	t	t
@@ -5459,49 +5383,33 @@ COPY public.components_coursecontent_pagebreakers (id, backbutton, nextbutton) F
 452	t	t
 450	t	t
 453	t	t
-489	t	t
-490	t	t
-491	t	t
-492	t	t
-493	t	t
-494	t	t
-495	t	t
-496	t	t
-497	t	t
-498	t	t
-499	t	t
-500	t	t
-501	t	t
-503	t	t
-502	t	t
-504	t	t
-505	t	t
-506	t	t
-507	t	t
-508	t	t
+401	t	t
+402	t	t
+403	t	t
+405	t	t
+407	t	t
+408	t	t
+409	t	t
+404	t	t
+406	t	t
 454	t	t
 455	t	t
 451	t	t
 422	t	t
 423	t	t
-609	t	t
-289	t	t
+326	t	t
+325	t	t
 533	t	t
 541	t	t
-390	t	t
 625	t	t
 629	t	t
-520	t	t
-525	t	t
-521	t	t
-526	t	t
-523	t	t
-522	t	t
-524	t	t
-527	t	t
-529	t	t
-531	t	t
-532	t	t
+598	t	t
+23	t	t
+25	t	t
+499	t	t
+501	t	t
+287	t	t
+390	t	t
 115	t	t
 114	t	t
 117	t	t
@@ -5509,15 +5417,36 @@ COPY public.components_coursecontent_pagebreakers (id, backbutton, nextbutton) F
 126	t	t
 610	t	t
 617	t	t
-287	t	t
-598	t	t
-604	t	t
-20	t	t
-23	t	t
-25	t	t
+330	t	t
+521	t	t
+522	t	t
+525	t	t
+523	t	t
+527	t	t
+524	t	t
+526	t	t
+531	t	t
+529	t	t
+532	t	t
+520	t	t
 534	t	t
 535	t	t
 626	t	t
+599	t	t
+558	t	t
+559	t	t
+561	t	t
+159	t	t
+560	t	t
+563	t	t
+565	t	t
+564	t	t
+562	t	t
+568	t	t
+566	t	t
+567	t	t
+569	t	t
+546	t	t
 112	t	t
 116	t	t
 122	t	t
@@ -5525,10 +5454,21 @@ COPY public.components_coursecontent_pagebreakers (id, backbutton, nextbutton) F
 611	t	t
 618	t	t
 615	t	t
-599	t	t
-605	t	t
+547	t	t
+548	t	t
+551	t	t
+552	t	t
+553	t	t
+549	t	t
+554	t	t
+550	t	t
+555	t	t
+556	t	t
+557	t	t
 24	t	t
-159	t	t
+502	t	t
+503	t	t
+506	t	t
 480	t	t
 481	t	t
 484	t	t
@@ -5538,19 +5478,6 @@ COPY public.components_coursecontent_pagebreakers (id, backbutton, nextbutton) F
 485	t	t
 486	t	t
 487	t	t
-509	t	t
-511	t	t
-510	t	t
-512	t	t
-513	t	t
-515	t	t
-514	t	t
-516	t	t
-517	t	t
-519	t	t
-518	t	t
-528	t	t
-530	t	t
 536	t	t
 537	t	t
 538	t	t
@@ -5560,51 +5487,41 @@ COPY public.components_coursecontent_pagebreakers (id, backbutton, nextbutton) F
 543	t	t
 545	t	t
 544	t	t
-546	t	t
-547	t	t
-550	t	t
-548	t	t
-549	t	t
-552	t	t
-554	t	t
-551	t	t
-553	t	t
-556	t	t
-557	t	t
-555	t	t
-558	t	t
-559	t	t
-560	t	t
-561	t	t
-563	t	t
-565	t	t
-562	t	t
-564	t	t
-566	t	t
-568	t	t
-567	t	t
-569	t	t
 570	t	t
-572	t	t
 571	t	t
+572	t	t
 574	t	t
-575	t	t
 573	t	t
+575	t	t
 576	t	t
 577	t	t
-579	t	t
-580	t	t
 578	t	t
-582	t	t
+579	t	t
 581	t	t
+582	t	t
+580	t	t
 583	t	t
-585	t	t
 584	t	t
-586	t	t
 589	t	t
 588	t	t
-587	t	t
 590	t	t
+585	t	t
+586	t	t
+587	t	t
+332	t	t
+528	t	t
+530	t	t
+509	t	t
+510	t	t
+511	t	t
+512	t	t
+515	t	t
+516	t	t
+513	t	t
+514	t	t
+519	t	t
+518	t	t
+517	t	t
 \.
 
 
@@ -5613,25 +5530,25 @@ COPY public.components_coursecontent_pagebreakers (id, backbutton, nextbutton) F
 --
 
 COPY public.components_coursecontent_quizzes (id, question, options, correct_answer) FROM stdin;
-9	Quiz 3. How can parents show unconditional love during challenging moments?	["A) Withdraw affection when the child is misbehaving", "B) Consistently show support and be emotionally available", "C) Ignore the child until they change their behavior"]	B) Consistently show support and be emotionally available
-8	Quiz 2. Which of the following is a key element of unconditional love?	["A) Setting boundaries to show care", "B) Giving your child everything they want", "C) Praising them only for their achievements"]	A) Setting boundaries to show care
-16	Quiz 5. How can parents ensure their actions align with what they teach?	["A) Parents should always do exactly what they tell their children to do", "B) Parents should be mindful of their behavior and reflect on their actions regularly", "C) Parents should only focus on verbal communication with their children"]	A) Parents should always do exactly what they tell their children to do
 6	Quiz 5. Which of the following is an example of an open-ended question that promotes open communication with your child?	["a) Did you have a good day?", "b) What was the best part of your day?", "c) Are you angry?", "d) Do you want to talk about it?"]	b) "What was the best part of your day?" 
-7	Quiz 1. What is the difference between unconditional love and conditional love?	["A) Unconditional love is based on your child's behavior", "B) Unconditional love is consistent and unwavering, regardless of behavior", "C) Conditional love is when you love your child only when they meet expectations"]	B) Unconditional love is consistent and unwavering, regardless of behavior
 12	Quiz 1. What does "Modeling Behavior" mean in parenting?	["A) Teaching children through lectures and advice", "B) Teaching children through observation of your actions and attitudes", "C) Telling children exactly what to do and how to act"]	B) Teaching children through observation of your actions and attitudes
+16	Quiz 5. How can parents ensure their actions align with what they teach?	["A) Parents should always do exactly what they tell their children to do", "B) Parents should be mindful of their behavior and reflect on their actions regularly", "C) Parents should only focus on verbal communication with their children"]	A) Parents should always do exactly what they tell their children to do
+8	Quiz 2. Which of the following is a key element of unconditional love?	["A) Setting boundaries to show care", "B) Giving your child everything they want", "C) Praising them only for their achievements"]	A) Setting boundaries to show care
+9	Quiz 3. How can parents show unconditional love during challenging moments?	["A) Withdraw affection when the child is misbehaving", "B) Consistently show support and be emotionally available", "C) Ignore the child until they change their behavior"]	B) Consistently show support and be emotionally available
+15	Quiz 4. What is the importance of being consistent in modeling behavior	["A) It teaches children that behavior is unpredictable", "B) It helps children understand and internalize values over time", "C) It has no impact on a child’s behavior"]	B) It helps children understand and internalize values over time
 19	Quiz 3. Why is it important for parents to model resilience?	["A) Children learn better when they see their parents handle challenges with calm and perseverance", "B) Children won’t learn resilience unless parents are perfect all the time", "C) Resilience only comes from academic success"]	A) Children learn better when they see their parents handle challenges with calm and perseverance
 18	Quiz 2. Which of the following is a way to help your child develop resilience?	["A) Shielding them from all stressful situations", "B) Encouraging them to give up when things get tough", "C) Encouraging problem-solving and learning from mistakes"]	C) Encouraging problem-solving and learning from mistakes
 13	Quiz 2. What is the best way for parents to teach emotional regulation to their child?	["A) Yelling at the child when they make a mistake", "B) Modeling calm and controlled reactions to frustration and stress", "C) Ignoring the child’s emotional outbursts"]	B) Modeling calm and controlled reactions to frustration and stress
-15	Quiz 4. What is the importance of being consistent in modeling behavior	["A) It teaches children that behavior is unpredictable", "B) It helps children understand and internalize values over time", "C) It has no impact on a child’s behavior"]	B) It helps children understand and internalize values over time
-14	Quiz 3. If a parent makes a mistake in front of their child, how should they respond?	["A) Ignore the mistake and move on", "B) Apologize and show the child how to fix the situation", "C) Blame the child for their mistake"]	B) Apologize and show the child how to fix the situation
+7	Quiz 1. What is the difference between unconditional love and conditional love?	["A) Unconditional love is based on your child's behavior", "B) Unconditional love is consistent and unwavering, regardless of behavior", "C) Conditional love is when you love your child only when they meet expectations"]	B) Unconditional love is consistent and unwavering, regardless of behavior
 20	Quiz 4. What should parents do when their child makes a mistake?	["A) Punish them for failing", "B) Ignore the mistake and move on", "C) Discuss what went wrong, what was learned, and how to try again next time"]	C) Discuss what went wrong, what was learned, and how to try again next time
-2	Quiz 2. Which of these is not one of the core principles of Open Communication?	["a) Active Listening", "b) Empathy", "c) Avoiding difficult conversations at all costs", "d) Non-judgmental Attitude"]	c) Avoiding difficult conversations at all costs.
 3	Quiz 1: Which of the following best describes "Open Communication" in parenting?	["a) Only talking about things when there is a problem", "b) Creating a space where both parents and children feel comfortable sharing their thoughts and feelings, even when it’s difficult", "c) Letting your child talk without you offering any feedback or guidance", "d) Communicating with your child primarily through text or written messages"]	b) Creating a space where both parents and children feel comfortable sharing their thoughts and feelings, even when it’s difficult. 
-10	Quiz 4. What should parents avoid when showing unconditional love?	["A) Conditional praise for achievements", "B) Showing affection at all times", "C) Encouraging emotional expression"]	A) Conditional praise for achievements
+2	Quiz 2. Which of these is not one of the core principles of Open Communication?	["a) Active Listening", "b) Empathy", "c) Avoiding difficult conversations at all costs", "d) Non-judgmental Attitude"]	c) Avoiding difficult conversations at all costs.
 11	Quiz 5. Why is it important to practice unconditional love in parenting?	["A) It builds trust and security, fostering emotional resilience in children", "B) It ensures the child behaves in a certain way", "C) It helps parents gain control over their children"]	A) It builds trust and security, fostering emotional resilience in children
+14	Quiz 3. If a parent makes a mistake in front of their child, how should they respond?	["A) Ignore the mistake and move on", "B) Apologize and show the child how to fix the situation", "C) Blame the child for their mistake"]	B) Apologize and show the child how to fix the situation
+10	Quiz 4. What should parents avoid when showing unconditional love?	["A) Conditional praise for achievements", "B) Showing affection at all times", "C) Encouraging emotional expression"]	A) Conditional praise for achievements
 26	Quiz 5. Your child complains about a task you assigned. You should:	["A. Take over to avoid a meltdown", "B. Punish them for complaining", "C. Validate their feelings, remind them it’s their responsibility, and check if they need help getting started", "D. Remove the task altogether"]	✅ C Why: Teaching responsibility includes showing empathy and holding clear expectations. 
 23	Quiz 3. Which of the following best encourages internal motivation?	["A. Giving rewards for every chore", "B. Constantly reminding them what to do", "C. Asking open-ended questions like “What’s your plan for today?”", "D. Making sure everything is done for them so nothing goes wrong"]	✅ C Why: Open-ended questions shift responsibility to the child and promote self-direction.
-35	Quiz 2. Your child runs up to you excitedly while you’re texting on your phone. What do you do?	["A) Tell them to wait—what you’re doing is more important", "B) Keep looking at your phone while saying “uh-huh”", "C) Pause what you’re doing, make eye contact, and say, “Tell me all about it!”", "D) Nod and tell them to go play"]	C) Pause what you’re doing, make eye contact, and say, “Tell me all about it!”
+37	Quiz 3. After yelling at your child out of frustration, you should...	["A) Pretend it didn’t happen—kids forget easily", "B) Apologize sincerely and explain that you’re working on managing your feelings", "C) Tell them it’s their fault for making you mad", "D) Let it go—they deserved it"]	B) Apologize sincerely and explain that you’re working on managing your feelings
 17	Quiz 1. What is the main idea behind resilience in parenting?	["A) Always protecting children from failure", "B) Helping children develop the ability to handle and grow from challenges", "C) Giving children constant rewards for good behavior"]	B) Helping children develop the ability to handle and grow from challenges
 25	Quiz 4. What is one key difference between punishment and natural consequences?	["A. Punishment is usually calmer than consequences", "B. Consequences focus on learning and ownership, not fear", "C. Punishment works faster", "D. Natural consequences are only used for major issues"]	✅ B  Why: Natural consequences help children learn from real-life experiences without damaging trust or self-esteem.
 29	Quiz 3. I adjust my parenting approach based on:	["A. My child’s personality and development", "B. What worked for other parents", "C. Expert books or advice", "D. What I believe is “normal” or “right"]	A. My child’s personality and development
@@ -5640,14 +5557,14 @@ COPY public.components_coursecontent_quizzes (id, question, options, correct_ans
 24	Quiz 2. Your child spills milk on the floor. You:	["A. Clean it up yourself to save time", "B. Get angry and punish them", "C. Calmly ask them to clean it up and guide them if needed", "D. Ignore it until someone else does it"]	✅ C Why: Responsibility is about “owning” actions and learning how to fix mistakes, not just avoiding blame. 
 36	Quiz 4. Your child wants to play a game that makes no sense to you. What’s the best way to respond?	["A) Redirect them to a more educational activity", "B) Join in and follow their lead, even if it’s silly", "C) Suggest a different game you prefer", "D) Tell them to play alone"]	B) Join in and follow their lead, even if it’s silly
 27	Quiz 1. When my child gets really interested in something (even if it’s messy or inconvenient), I usually:	["A. Encourage and provide more tools", "B. Allow it within limits", "C. Redirect to something more structured", "D. Ignore or discourage it"]	A. Encourage and provide more tools
-37	Quiz 3. After yelling at your child out of frustration, you should...	["A) Pretend it didn’t happen—kids forget easily", "B) Apologize sincerely and explain that you’re working on managing your feelings", "C) Tell them it’s their fault for making you mad", "D) Let it go—they deserved it"]	B) Apologize sincerely and explain that you’re working on managing your feelings
 38	Quiz 5. Your child tells you they’re scared to sleep alone. You should...	["A) Tell them to stop being a baby", "B) Acknowledge their fear and offer comfort, while helping them gradually feel safe", "C) Let them sleep with you permanently", "D) Ignore them—they’ll get over it eventually"]	B) Acknowledge their fear and offer comfort, while helping them gradually feel safe
+35	Quiz 2. Your child runs up to you excitedly while you’re texting on your phone. What do you do?	["A) Tell them to wait—what you’re doing is more important", "B) Keep looking at your phone while saying “uh-huh”", "C) Pause what you’re doing, make eye contact, and say, “Tell me all about it!”", "D) Nod and tell them to go play"]	C) Pause what you’re doing, make eye contact, and say, “Tell me all about it!”
 30	Quiz 4. When my child struggles with something new, I usually:	["A. Help them work through it with encouragement", "B. Step in and do it for them", "C. Avoid those types of tasks", "D. Criticize or push them harder"]	Help them work through it with encouragement
 28	Quiz 2. How often do I ask my child open-ended questions about what they like or dream about?	["A. Daily", "B. Weekly", "C. Rarely", "D. Never"]	A. Daily
 31	Quiz 5. My parenting success feels tied to:	["A. My child’s well-being and individuality", "B. How they perform compared to others", "C. Keeping order and routine", "D. Not making mistakes"]	My child’s well-being and individuality
+5	Quiz 4. What should a parent do if their child expresses frustration or anger during a conversation?	["a) Tell them to stop being upset and calm down", "b) Tell them that their feelings aren’t valid", "c) Acknowledge their emotions and listen carefully before responding", "d) Ignore the issue and move on to something else"]	c) Acknowledge their emotions and listen carefully before responding.
 34	Quiz 1. When your child throws a tantrum because they can’t have a toy, what’s your first response?	["A) Tell them to stop crying immediately—tantrums are not allowed", "B) Ignore them so they learn not to seek attention that way", "C) Kneel down, acknowledge their feelings, and gently set the limit", "D) Buy them the toy to make them stop"]	C) Kneel down, acknowledge their feelings, and gently set the limit
 4	Quiz 3. Why is Active Listening important in open communication?	["a) It helps the parent gather information quickly to give advice", "b) It allows the parent to make decisions for the child faster", "c) It shows the child that their thoughts and feelings are valued and understood", "d) It creates a chance for the parent to talk more about their own experiences"]	c) It shows the child that their thoughts and feelings are valued and understood.
-5	Quiz 4. What should a parent do if their child expresses frustration or anger during a conversation?	["a) Tell them to stop being upset and calm down", "b) Tell them that their feelings aren’t valid", "c) Acknowledge their emotions and listen carefully before responding", "d) Ignore the issue and move on to something else"]	c) Acknowledge their emotions and listen carefully before responding.
 \.
 
 
@@ -5656,221 +5573,198 @@ COPY public.components_coursecontent_quizzes (id, question, options, correct_ans
 --
 
 COPY public.components_coursecontent_texts (id, data, style) FROM stdin;
-6	🧠 What Is Celebrating Progress?\n\nAcknowledging small wins, milestones, and improvements in your child’s behavior, skills, or efforts to encourage continued growth and confidence.\n\n\n	\N
+148	🎯 Active Listening Starter Phrases for Parents\n\n•\t“Sounds like you’re feeling…”\n•\t“It seems like you’re saying…”\n•\t“You wish that…”\n•\t“That must have felt…”\n•\t“Tell me more about that.”\n•\t“I can see how that would be upsetting.”\n•\t“Wow, that’s exciting! What happened next?”\n	\N
 103	"Raising Responsible Kids: Building Accountability from the Inside Out" is a parenting approach that empowers children to take ownership of their actions, choices, and commitments by developing internal motivation rather than relying on external control.\n	\N
-24	Model Open Communication: Children learn from their parents. Use open communication in your own relationships and with others to show the value of honesty and respect.	\N
-21	Mutual Respect: Treating each other’s perspectives with dignity and consideration.	\N
+30	Avoiding Overwhelming the Child: Children, especially younger ones, may not be able to process a lot of information at once. Break down complex topics into manageable pieces.	\N
+41	Non-judgmental Acceptance: Loving your child regardless of their actions or choices.\n\nEmotional Availability: Being there for your child, emotionally and physically, no matter the situation.\n\nUnwavering Support: Providing consistent love, even when a child is struggling or failing\n\nPatience and Forgiveness: Understanding that children are still learning and growing, and that mistakes are a part of the process.\n\n\n\n	\N
+22	Validate Feelings: Show empathy by acknowledging your child's feelings, even if you don't always agree. For example, "I understand you're upset. It's okay to feel that way."	\N
+27	Timing: Make sure you pick the right moments for deeper conversations. Sometimes, the best times to talk are when both parties are calm, relaxed, and in a good mood.	\N
 2	\nUnconditional love means loving your child without any conditions or expectations. It's not based on their behavior, achievements, or actions, but on a deep, unwavering commitment to their well-being and happiness. This kind of love is constant, even when the child makes mistakes or behaves in ways that may be challenging. It’s the foundation that builds a child’s emotional security and self-worth.	\N
-56	Daily Suggestions to Encourage Unconditional Love\n\n“I love you no matter what.”	\N
-20	Non-judgmental Attitude: Accepting emotions and opinions without criticism.	\N
-58	“I’m here for you, through thick and thin.”	\N
 15	🧠 What Are Daily Check-Ins?\n\nShort, regular conversations or moments where parents ask about their child’s feelings, experiences, and needs to stay connected.\n	\N
 16	🧠 What Is Choice Giving?\n\nProviding children with clear, manageable options so they can decide for themselves within safe boundaries.\n	\N
 13	🧠 What Is Effort-Based Praise?\n\nComplimenting the child’s effort, process, or attitude during tasks, rather than only praising natural ability or results.\n\n\n\n	\N
-148	🎯 Active Listening Starter Phrases for Parents\n\n•\t“Sounds like you’re feeling…”\n•\t“It seems like you’re saying…”\n•\t“You wish that…”\n•\t“That must have felt…”\n•\t“Tell me more about that.”\n•\t“I can see how that would be upsetting.”\n•\t“Wow, that’s exciting! What happened next?”\n	\N
-26	Stay Calm in Difficult Conversations: If the conversation becomes emotional, it's essential for parents to remain calm and avoid escalating the situation with anger or frustration.	\N
-30	Avoiding Overwhelming the Child: Children, especially younger ones, may not be able to process a lot of information at once. Break down complex topics into manageable pieces.	\N
-5	Active Listening: Paying attention without interrupting and validating what the child is saying.\n	\N
-107	5. Praise Effort and Ownership\n\nFocus praise on responsibility-related behaviors: “I noticed you packed your own lunch today—that shows responsibility!”\n	\N
-28	Use Open-Ended Questions: Encourage your child to elaborate by asking questions like "How did that make you feel?" or "Can you tell me more about what happened?"	\N
-41	Non-judgmental Acceptance: Loving your child regardless of their actions or choices.	\N
-109	Parent Exercise 1: Responsibility Spotting Journal\n\nFor one week, keep a simple log of times your child showed (or avoided) responsibility.\n\nReflect: What patterns do you see? When do they step up? When do they avoid?\n	\N
-19	Honesty and Transparency: Sharing thoughts and feelings openly without hiding behind defensiveness or dishonesty.	\N
-27	Timing: Make sure you pick the right moments for deeper conversations. Sometimes, the best times to talk are when both parties are calm, relaxed, and in a good mood.	\N
-42	Emotional Availability: Being there for your child, emotionally and physically, no matter the situation.	\N
-78	Daily Suggestions for Parents to Encourage Modeling Behavior\n\n“I strive to be a role model for you every day.”	\N
-80	“I am committed to being the person I want you to become.”	\N
+385	🧑🏫 Tips for Keeping a Parenting Journal\n\n•\tStart with just 5–10 minutes a few times a week\n•\tUse prompts (see below) to spark reflection\n•\tBe honest and non-judgmental—this is for you\n•\tKeep it private, or share with a partner or coach if helpful\n•\tUse a notebook, digital app, or even voice notes\n•\tRevisit entries monthly to track growth and themes\n	\N
+6	🧠 What Is Celebrating Progress?\n\nAcknowledging small wins, milestones, and improvements in your child’s behavior, skills, or efforts to encourage continued growth and confidence.\n\n\n	\N
 9	What is Open Communication?\n\nOpen Communication is the practice of creating a safe, judgment-free space where both parents and children can share their thoughts and feelings openly, while listening and responding with empathy, respect, and understanding.\n\n	\N
+28	Use Open-Ended Questions: Encourage your child to elaborate by asking questions like "How did that make you feel?" or "Can you tell me more about what happened?"	\N
+24	Model Open Communication: Children learn from their parents. Use open communication in your own relationships and with others to show the value of honesty and respect.	\N
+26	Stay Calm in Difficult Conversations: If the conversation becomes emotional, it's essential for parents to remain calm and avoid escalating the situation with anger or frustration.	\N
+5	Active Listening: Paying attention without interrupting and validating what the child is saying.\n\nHonesty and Transparency: Sharing thoughts and feelings openly without hiding behind defensiveness or dishonesty.\n\nNon-judgmental Attitude: Accepting emotions and opinions without criticism.\n\nMutual Respect: Treating each other’s perspectives with dignity and consideration.\n\n\n	\N
+107	5. Praise Effort and Ownership\n\nFocus praise on responsibility-related behaviors: “I noticed you packed your own lunch today—that shows responsibility!”\n	\N
+25	What Parents Should Pay Attention To:\n\nTone and Body Language: Non-verbal cues like body language and tone can convey more than words. Make sure your tone is gentle and non-judgmental.\n	\N
+109	Parent Exercise 1: Responsibility Spotting Journal\n\nFor one week, keep a simple log of times your child showed (or avoided) responsibility.\n\nReflect: What patterns do you see? When do they step up? When do they avoid?\n	\N
 86	Adaptability: Being flexible and open to change, adjusting to life’s challenges.	\N
 85	Key Elements of Resilience in Parenting:\n\nEmotional Regulation: The ability to stay calm and positive during tough situations.\n	\N
 119	"Parenting with Purpose: Discovering Your Child's Strengths" is a parenting approach focused on intentionally observing, nurturing, and supporting your child's unique talents and interests to help them grow with confidence and authenticity.	\N
-22	Validate Feelings: Show empathy by acknowledging your child's feelings, even if you don't always agree. For example, "I understand you're upset. It's okay to feel that way."	\N
-25	What Parents Should Pay Attention To:\n\nTone and Body Language: Non-verbal cues like body language and tone can convey more than words. Make sure your tone is gentle and non-judgmental.\n	\N
 17	Resilience is the ability to bounce back from adversity, adapt to challenges, and keep going in the face of difficulties. In parenting, resilience means helping children develop the emotional strength to cope with life's ups and downs while also demonstrating this strength yourself.	\N
 87	Perseverance: Encouraging persistence even when things are difficult or not going as planned.	\N
+150	🧠 What Is a “Calm Down Corner”?\n\nA safe, cozy, and quiet space filled with calming tools, where kids can go to regulate their emotions, feel safe, and learn self-soothing skills.\n\n\n	\N
 90	Key Techniques for Building Resilience in Parenting:\n\nModel Resilience Yourself:\n\nParents should lead by example. If you stay calm, focused, and positive when things go wrong, your child is more likely to model that behavior. Let them see you cope with stress, failure, and disappointment, and explain how you stay positive and keep moving forward.\n	\N
-57	“You are always enough, just as you are.”	\N
-79	“I will show you how to handle emotions calmly and thoughtfully.”	\N
 88	Self-Confidence: Helping children believe in their ability to overcome challenges.	\N
 91	Encourage Problem-Solving:\n\nWhen children face challenges, encourage them to think through solutions rather than just offering quick fixes. Teach them that obstacles are opportunities to learn and grow.\n	\N
 106	4. Encouraging Problem-Solving\n\nInstead of rescuing immediately, guide your child to think through a solution: “What do you think you can do about this?”\n	\N
 104	How Parents Can Deliver This Approach\n\nTo help kids build responsibility from within, parents should focus on:\n\n1. Modeling Responsibility\n\nChildren learn by watching. When parents admit mistakes, follow through on promises, and manage their own duties, kids absorb those behaviors.\n	\N
 120	How to Teach Parents to Discover, Support, and Adapt for Their Child\n\nStep 1: Discover – Identifying Strengths and Interests\n\n•\tObserve your child in different situations (free play, structured tasks, social interactions).\n•\tAsk questions: What does my child choose when they have free time? When do they seem most energized?\n•\tUse tools like interest checklists, strengths inventories (age-appropriate), or ask teachers/caregivers for input.\n•\tLook for patterns: Recurring themes like curiosity, empathy, artistic ability, problem-solving, etc.\n	\N
 282	8. When Your Child Is Whining\n\n•\tTrigger: Your child is whining for a snack even though they already had one.\n\n•\tMindful Pause:\n\no\tPause: Focus on grounding yourself—press your feet into the floor and take a deep breath.\no\tReflect: “I know they’re hungry, but I want to stay calm while addressing this.”\no\tResponse: “I hear you, but I already gave you a snack. You’ll need to wait until dinner.”\n	\N
-150	🧠 What Is a “Calm Down Corner”?\n\nA safe, cozy, and quiet space filled with calming tools, where kids can go to regulate their emotions, feel safe, and learn self-soothing skills.\n\n\n	\N
+601	9. Unmet Expectations\n\n•\t🧠 Trigger: “I expected a smooth bedtime, but they were bouncing off the walls.”\n•\t💥 Response: Felt out of control and angry.\n•\t💡 Reframe: “They’re wound up. I’ll build a calm-down routine with dim lights, music, and quiet time before bed.”\n\n	\N
+567	________________________________________\n2. Quiet Chair\n\n•\tA specific chair used for time-out where the child sits quietly for 1-3 minutes depending on age.\n________________________________________\n	\N
 321	________________________________________\n6. Problem-Solving Out Loud\n\nScenario: Something goes wrong with a plan.\n\nModel:\n\n“Our picnic got rained out. Let’s think about what we can do instead.”\n________________________________________\n	\N
-409	________________________________________\n4. Child Throws a Tantrum in Public\n\n😤 Parent feels: Embarrassed, overwhelmed\n\nPause: Deep breath, look down and ground yourself\n\nRespond:\n“You’re having a hard time. Let’s go somewhere quiet until you’re ready to talk.”\n________________________________________\n	\N
+451	________________________________________\n🧑🏫 Parent Tips for Reflective Listening\n\n•\tUse a calm, gentle tone\n•\tFocus on feelings, not just facts\n•\tKeep it short and simple\n•\tAvoid interrupting or correcting\n•\tEncourage more sharing by nodding or saying, “Tell me more.”\n•\tPractice patience — sometimes kids need time to open up\n________________________________________\n	\N
 370	________________________________________\n🧩 Sibling Conflicts\n\n🗣️ Instead of:\n"Be nice or you’re both in trouble!"\n\n✅ Say:\n"You’re welcome to keep playing together when you can treat each other with kindness."\n\nOR\n"You both decide if this game continues — based on how you play."\n________________________________________\n	\N
-37	"I’m always here if you need someone to talk to."	\N
+526	________________________________________\n2. Personal Story Sharing\n\n•\tShare stories from your own childhood or family history.\n\n•\tTalk about lessons learned or funny memories.\n________________________________________\n	\N
 198	3. “I noticed how carefully you planned your drawing before starting.”\n\n•\tPraises thoughtful preparation and strategy.\n	\N
 240	6. Behavioral Goal\n\n•\t“Let’s work on using your words when you feel upset instead of yelling.”\n\n•\tRole-play and praise efforts.\n	\N
 7	✅ Why Use Celebrating Progress?\n\n•\tMotivates kids to keep trying\n•\tBuilds self-confidence and resilience\n•\tReinforces positive behaviors and habits\n•\tShifts focus from perfection to growth\n•\tStrengthens parent-child connection\n\n	\N
-451	________________________________________\n🧑🏫 Parent Tips for Reflective Listening\n\n•\tUse a calm, gentle tone\n•\tFocus on feelings, not just facts\n•\tKeep it short and simple\n•\tAvoid interrupting or correcting\n•\tEncourage more sharing by nodding or saying, “Tell me more.”\n•\tPractice patience — sometimes kids need time to open up\n________________________________________\n	\N
-39	"I understand this is hard. I’m glad you’re sharing it with me."	\N
 448	________________________________________\n5. Child Is Excited About a New Hobby\n\n🧒: “I learned how to ride my bike without training wheels!”\n\n👂Parent Reflects:\n“You’re proud and excited about learning to ride your bike all by yourself!”\n________________________________________\n	\N
+607	\n📱 Screen Time & Electronics\n\n5.\tWhen your homework is finished, then you can have your tablet.\n6.\tWhen your room is tidy, then you may watch your show.\n7.\tWhen your chores are done, then you get 30 minutes of screen time.\n8.\tWhen the timer goes off, then the iPad goes off.\n\n	\N
+409	________________________________________\n4. Child Throws a Tantrum in Public\n\n😤 Parent feels: Embarrassed, overwhelmed\n\nPause: Deep breath, look down and ground yourself\n\nRespond:\n“You’re having a hard time. Let’s go somewhere quiet until you’re ready to talk.”\n________________________________________\n	\N
 496	________________________________________\n📚 3. After-School Routine (Ages 5–12)\n\n🏠 “Home from School” Routine Chart:\n1.\tHang up coat and backpack\n2.\tUnpack lunchbox\n3.\tEat a snack\n4.\tDo homework\n5.\tFree play or screen time\n6.\tDinner prep/help set table\n👪 This helps reduce after-school meltdowns by setting expectations.\n________________________________________\n	\N
-526	________________________________________\n2. Personal Story Sharing\n\n•\tShare stories from your own childhood or family history.\n\n•\tTalk about lessons learned or funny memories.\n________________________________________\n	\N
-567	________________________________________\n2. Quiet Chair\n\n•\tA specific chair used for time-out where the child sits quietly for 1-3 minutes depending on age.\n________________________________________\n	\N
-601	________________________________________\n9. Unmet Expectations\n\n•\t🧠 Trigger: “I expected a smooth bedtime, but they were bouncing off the walls.”\n•\t💥 Response: Felt out of control and angry.\n•\t💡 Reframe: “They’re wound up. I’ll build a calm-down routine with dim lights, music, and quiet time before bed.”\n________________________________________\n	\N
-43	Unwavering Support: Providing consistent love, even when a child is struggling or failing	\N
-59	“You are worthy of my love and respect every single day.”	\N
+14	A "Calm Down Corner" or Calm Down Tools are essential parts of positive parenting. These help children self-regulate when they feel overwhelmed, angry, anxious, or overstimulated — without punishment or shame. Instead of time-out, it's a time-in for emotional awareness and recovery.\n\n\n	\N
 112	Child Responsibility Exercises (Parents Can Assign or Encourage)\n\n1. Morning Routine Challenge\n\nCreate a checklist and challenge your child to complete it independently for a week.\n	\N
 89	Support Systems: The importance of creating a strong, supportive environment that fosters resilience.	\N
 121	Step 2: Support – Encouraging Development\n\n•\tProvide opportunities: Enroll in clubs, allow exploration at home, offer resources related to their interests.\n•\tPraise effort and growth, not just achievement.\n•\tBe present and engaged in their learning journey — talk with them, show genuine curiosity.\n•\tConnect interests to real life: Show how passions could turn into skills or even careers.\n	\N
-44	Patience and Forgiveness: Understanding that children are still learning and growing, and that mistakes are a part of the process.	\N
-60	“I’m so grateful for you and everything you bring to my life.”	\N
 102	Daily Suggestions for Parents to Encourage Resilience\n\n“I know you can handle challenges and learn from them.”	\N
 108	3. Natural Consequences over Punishment\n\nLet kids experience the results of their choices (e.g., forgetting homework = facing the teacher), so they learn cause and effect.\n	\N
-14	A "Calm Down Corner" or Calm Down Tools are essential parts of positive parenting. These help children self-regulate when they feel overwhelmed, angry, anxious, or overstimulated — without punishment or shame. Instead of time-out, it's a time-in for emotional awareness and recovery.\n\n\n	\N
 283	9. When You Feel Overwhelmed\n\n•\tTrigger: You’re feeling overwhelmed with housework, school pick-ups, and your child’s needs.\n\n•\tMindful Pause:\n\no\tPause: Close your eyes for 10 seconds, breathe in for four counts, out for four counts.\no\tReflect: “I need to reset before reacting or asking for help.”\no\tResponse: “I feel stressed right now. I need a minute to gather myself. Let’s take a break and I’ll come back with a plan.”\n	\N
+608	\n🧠 Emotional Regulation & Behavior\n\n9.\tWhen you use calm words, then I can help you.\n10.\tWhen you’re ready to speak kindly, then we’ll keep playing.\n11.\tWhen you apologize to your brother, then you can join the game again.\n12.\tWhen your voice is calm, then I’ll listen to what you’re saying.\n\n	\N
 199	4. “You practiced your piano every day, and it really shows!”\n\n•\tRewards consistent effort over time.\n	\N
 244	10. Sports or Activity Goal\n\n•\t“Try to practice soccer drills for 20 minutes, four times this week.”\n\n•\tTrack with a calendar.\n	\N
 371	________________________________________\n🧑🏫 Teaching Parents to Use Ownership Language\n\n📌 Parent Tips:\n•\tSpeak calmly and neutrally\n•\tGive clear cause-and-effect: behavior → result\n•\tLet the child choose when to act (and experience the results)\n•\tAvoid sarcasm or shaming tone\n•\tTrust that kids learn best through choices, not commands\n________________________________________\n	\N
 299	________________________________________\n🧠 What Is Modeling Accountability?\n\nDemonstrating responsibility, honesty, and follow-through in your own behavior to teach your child to do the same.\n________________________________________\n	\N
 308	________________________________________\n8. Correcting Yourself in Front of Others\n\n•\t“Actually, I was wrong about that. I looked it up, and you were right—thanks for catching that!”\n\n•\tDemonstrates humility and growth mindset.\n________________________________________\n	\N
+326	📚 Real-Life "Name It to Tame It" Parenting Examples\n________________________________________\n1. Tantrum Over Leaving the Park\n\n🧒: Screaming and refusing to leave\n\n👩👦 Parent:\n\n“You’re feeling really mad because we have to leave and you were having fun.”\n\n🧠 Why it works: It acknowledges the child’s feeling instead of dismissing it (“It’s not a big deal”).\n________________________________________\n	\N
 162	2. “Great job remembering to pack your school bag this week!”\n\n•\tCelebrates developing responsibility and consistency.\n	\N
-165	5. “You’ve made so much progress in riding your bike without training wheels!”\n\n•\tCelebrates skill development milestones.\n	\N
+572	________________________________________\n3. Talk Through Feelings\n\n•\tGently ask your child how they are feeling and validate their emotions (“I see you’re upset, it’s okay to feel that way”).\n________________________________________\n	\N
 289	2. Verbalizing Effort and Strategies\n\n•\t“This is tricky, but I’m going to try a different way.”\n\n•\tSay aloud the process you’re using to solve a problem.\n\n	\N
 286	🧠 What Is Modeling a Growth Mindset?\n\nDemonstrating attitudes and behaviors that reflect a belief in growth through effort, learning, and persistence rather than fixed ability.\n\n	\N
 287	________________________________________\n✅ Why Model a Growth Mindset?\n\n•\tEncourages kids to take on challenges without fear\n•\tHelps children see failure as a learning opportunity\n•\tBuilds resilience and motivation\n•\tPromotes curiosity and lifelong learning\n•\tStrengthens parent-child connection through authentic sharing\n________________________________________\n	\N
 294	8. Admitting When You Don’t Know\n\n•\t“I don’t know how to do this yet, but I’ll figure it out.”\n\n•\tShow humility and a willingness to learn.\n	\N
-326	📚 Real-Life "Name It to Tame It" Parenting Examples\n________________________________________\n1. Tantrum Over Leaving the Park\n\n🧒: Screaming and refusing to leave\n\n👩👦 Parent:\n\n“You’re feeling really mad because we have to leave and you were having fun.”\n\n🧠 Why it works: It acknowledges the child’s feeling instead of dismissing it (“It’s not a big deal”).\n________________________________________\n	\N
-413	________________________________________\n7. Child Whines Repeatedly\n\n😤 Parent feels: Irritated, worn down\n\nPause: Take a few slow breaths\n\nRespond:\n“I hear that you’re upset. Let’s use a calm voice so I can understand and help.”\n________________________________________\n	\N
-450	________________________________________\n7. Teen Is Quiet and Withdrawn\n\n🧑: Silent after school\n\n👂Parent Reflects:\n“You seem quiet and maybe tired or upset. I’m here if you want to talk.”\n________________________________________\n	\N
 527	________________________________________\n📚 Examples of Storytelling & Sharing in Parenting\n________________________________________\n1. Bedtime Stories\n\n•\tRead books aloud with expression, and discuss the story and characters.\n\n•\tEncourage your child to predict what happens next or share their favorite parts.\n________________________________________\n	\N
-533	________________________________________\n8. Story Journals\n\n•\tKeep a family story journal where everyone can write or draw stories.\n\n•\tShare entries during family time.\n________________________________________\n	\N
-572	________________________________________\n3. Talk Through Feelings\n\n•\tGently ask your child how they are feeling and validate their emotions (“I see you’re upset, it’s okay to feel that way”).\n________________________________________\n	\N
-81	“You are always learning from me, and I want to set a good example.”	\N
-61	“Thank you for your kindness today.”	\N
+450	________________________________________\n7. Teen Is Quiet and Withdrawn\n\n🧑: Silent after school\n\n👂Parent Reflects:\n“You seem quiet and maybe tired or upset. I’m here if you want to talk.”\n________________________________________\n	\N
+165	5. “You’ve made so much progress in riding your bike without training wheels!”\n\n•\tCelebrates skill development milestones.\n	\N
+413	________________________________________\n7. Child Whines Repeatedly\n\n😤 Parent feels: Irritated, worn down\n\nPause: Take a few slow breaths\n\nRespond:\n“I hear that you’re upset. Let’s use a calm voice so I can understand and help.”\n________________________________________\n	\N
 122	Step 3: Adapt – Cultivating Flexibility in Parenting\n\n•\tAdjust expectations based on your child’s personality, not social norms.\n•\tReframe challenges as opportunities to build skills (e.g., a shy child might become a deep thinker).\n•\tPractice reflective parenting: Ask yourself, “Am I supporting this child, or an ideal I imagined?”\n•\tStay open and curious as your child grows and evolves.\n	\N
-284	10. When Your Child Is Not Listening to Safety Instructions\n\n•\tTrigger: Your child refuses to listen when you warn them about touching something dangerous.\n\n•\tMindful Pause:\n\no\tPause: Ground yourself—take a moment to notice your feet on the floor, your breath.\no\tReflect: “It’s important to stay calm and explain the reason behind my rules.”\no\tResponse: “It’s really important that you don’t touch that because it could hurt you. Let me show you where it’s safe to play.”\n	\N
-82	“I’m grateful for your efforts and kindness today.”	\N
+327	________________________________________\n3. Child Is Nervous Before a Performance\n\n🧒: “My stomach hurts. I don’t want to go on stage.”\n\n👩👦 Parent:\n\n“It sounds like you’re feeling nervous — that’s what we feel when something really matters to us.”\n________________________________________\n	\N
+374	\n✅ Why Use a Parenting Journal?\n\n•\tIncreases self-awareness and emotional regulation\n•\tHelps identify patterns in your child’s behavior\n•\tTracks progress and milestones\n•\tEncourages intentional parenting choices\n•\tProvides a healthy emotional outlet for parents\n•\tStrengthens parent-child relationships through reflection\n\n	\N
+376	\n4. Recording a Repair\n\n📝 “I yelled when we were running late. Later I apologized and we had a calm conversation. I’m proud I owned it.”\n•\tReinforces accountability and emotional modeling\n\n	\N
+528	________________________________________\n3. Create-Your-Own Stories\n\n•\tTake turns making up stories together, building on each other’s ideas.\n\n•\tUse puppets, drawings, or toys to act out stories.\n________________________________________\n	\N
 151	✅ Why Use Calm Down Tools or a Calm Down Corner?\n\n•\tBuilds emotional regulation\n•\tTeaches coping strategies\n•\tReduces tantrums and meltdowns\n•\tEmpowers children to manage big feelings\n•\tPromotes calm-down skills instead of punishment\n\n	\N
-34	Suggestions for Daily Phrases to Encourage Open Communication and Gratitude\n\n\n"I love hearing about your thoughts and feelings. Please tell me more."\n	\N
 200	6. “You asked for help when you didn’t understand—that’s a smart way to learn.”\n\n•\tEncourages seeking support and learning strategies.\n	\N
 202	7. “You kept trying different ways until you solved the problem!”\n\n•\tEmphasizes flexibility and problem-solving.\n	\N
 245	🧑🏫 Tips for Goal Setting with Kids\n\n•\tMake goals specific, measurable, and realistic\n•\tInvolve your child in choosing and planning goals\n•\tBreak big goals into smaller, manageable steps\n•\tCelebrate progress regularly, not just completion\n•\tEncourage flexibility and adjusting goals as needed\n•\tUse visuals like charts or apps to track progress\n	\N
-373	________________________________________\n🧠 What Is a Parenting Journal?\n\nA regular habit of writing down thoughts, observations, experiences, challenges, and insights related to your parenting, with the aim of improving connection, awareness, and growth.\n________________________________________\n	\N
-374	________________________________________\n✅ Why Use a Parenting Journal?\n\n•\tIncreases self-awareness and emotional regulation\n•\tHelps identify patterns in your child’s behavior\n•\tTracks progress and milestones\n•\tEncourages intentional parenting choices\n•\tProvides a healthy emotional outlet for parents\n•\tStrengthens parent-child relationships through reflection\n________________________________________\n	\N
-164	4. “You finished more of your homework today than yesterday. Keep it up!”\n\n•\tEncourages continued effort and improvement.\n	\N
+284	10. When Your Child Is Not Listening to Safety Instructions\n\n•\tTrigger: Your child refuses to listen when you warn them about touching something dangerous.\n\n•\tMindful Pause:\n\no\tPause: Ground yourself—take a moment to notice your feet on the floor, your breath.\no\tReflect: “It’s important to stay calm and explain the reason behind my rules.”\no\tResponse: “It’s really important that you don’t touch that because it could hurt you. Let me show you where it’s safe to play.”\n	\N
+373	\n🧠 What Is a Parenting Journal?\n\nA regular habit of writing down thoughts, observations, experiences, challenges, and insights related to your parenting, with the aim of improving connection, awareness, and growth.\n\n	\N
+377	\n5. Gratitude Entry\n\n📝 “Today I’m grateful for our bedtime story time. It’s when I feel closest to Ava.”\n•\tBoosts positive mindset and emotional connection\n\n	\N
+45	How to Deliver Unconditional Love: Key Points for Parents\n\n\nPositive Reinforcement: Recognize and appreciate your child's efforts, not just their outcomes. Praise the process, their effort, and their growth rather than focusing on perfection.\n	\N
 415	________________________________________\n🧠 What Is Redirection?\n\nRedirecting a child means shifting their focus or activity from undesired behavior to something more appropriate—without punishment, but with intention and creativity.\n________________________________________\n	\N
 499	________________________________________\n🧽 7. Chore Chart by Age\n\n👶 Ages 3–5:\n•\tPut toys away\n•\tWater plants\n•\tHelp feed pet\n\n🧒 Ages 6–9:\n•\tMake bed\n•\tSweep/vacuum\n•\tPack lunch/snack\n\n👧 Ages 10–12:\n•\tLoad/unload dishwasher\n•\tDo laundry\n•\tHelp cook meals\n📊 Use stars, stickers, or a point system to track.\n________________________________________\n	\N
-528	________________________________________\n3. Create-Your-Own Stories\n\n•\tTake turns making up stories together, building on each other’s ideas.\n\n•\tUse puppets, drawings, or toys to act out stories.\n________________________________________\n	\N
-558	________________________________________\n8. Local Parenting Classes or Workshops\n\nExample:\n•\tParenting Classes or Workshops at Local Community Centers\no\tHow it Helps: These workshops offer educational support for specific parenting challenges (e.g., discipline, screen time management, teen transitions). They also provide an opportunity to meet other parents and build local support networks.\no\tHow to Utilize: Enroll in local parenting classes, attend workshops on specific topics (e.g., positive discipline, managing anxiety in children), or join support groups for parents facing similar challenges (e.g., parenting teens, raising kids with ADHD).\n________________________________________\n	\N
-376	________________________________________\n4. Recording a Repair\n\n📝 “I yelled when we were running late. Later I apologized and we had a calm conversation. I’m proud I owned it.”\n•\tReinforces accountability and emotional modeling\n________________________________________\n	\N
-377	________________________________________\n5. Gratitude Entry\n\n📝 “Today I’m grateful for our bedtime story time. It’s when I feel closest to Ava.”\n•\tBoosts positive mindset and emotional connection\n________________________________________\n	\N
-327	________________________________________\n3. Child Is Nervous Before a Performance\n\n🧒: “My stomach hurts. I don’t want to go on stage.”\n\n👩👦 Parent:\n\n“It sounds like you’re feeling nervous — that’s what we feel when something really matters to us.”\n________________________________________\n	\N
-45	How to Deliver Unconditional Love: Key Points for Parents\n\n\nPositive Reinforcement: Recognize and appreciate your child's efforts, not just their outcomes. Praise the process, their effort, and their growth rather than focusing on perfection.\n	\N
 452	🎯 Reflective Listening Starters for Parents\n\n•\t“It sounds like you’re feeling…”\n•\t“I hear you saying that…”\n•\t“You seem to be…”\n•\t“It looks like you’re…”\n•\t“You’re upset because…”\n•\t“You’re proud of…”\n•\t“I get the sense that…”\n	\N
+558	________________________________________\n8. Local Parenting Classes or Workshops\n\nExample:\n•\tParenting Classes or Workshops at Local Community Centers\no\tHow it Helps: These workshops offer educational support for specific parenting challenges (e.g., discipline, screen time management, teen transitions). They also provide an opportunity to meet other parents and build local support networks.\no\tHow to Utilize: Enroll in local parenting classes, attend workshops on specific topics (e.g., positive discipline, managing anxiety in children), or join support groups for parents facing similar challenges (e.g., parenting teens, raising kids with ADHD).\n________________________________________\n	\N
+533	________________________________________\n8. Story Journals\n\n•\tKeep a family story journal where everyone can write or draw stories.\n\n•\tShare entries during family time.\n________________________________________\n	\N
+164	4. “You finished more of your homework today than yesterday. Keep it up!”\n\n•\tEncourages continued effort and improvement.\n	\N
 92	Teach Emotional Regulation:\n\nResilience is often built through managing emotions in stressful situations. Teach your child techniques to calm themselves, like deep breathing, counting to ten, or taking a break when things feel overwhelming.\n	\N
-152	📚 Real-Life Calm Down Corner Examples & Tools\n\n🔹 1. Breathing Tools\n\n•\tPinwheel or feather to blow slowly\n•\t“Smell the flower, blow out the candle” technique\n•\tBubble wand\n•\tCalm breathing poster (“Breathe in 4… hold 4… out 4”)\n\n	\N
+375	📓 Examples of Parenting Journal Entries\n\n1. Daily Reflection Prompt\n\n📝 “What went well in my parenting today? What challenged me?”\n•\tReflects on wins and growth areas\n•\tHelps build confidence and clarity\n\n	\N
 110	Parent Exercise 2: Shift from Reminder to Question\n\nInstead of reminding ("Did you brush your teeth?"), ask questions that encourage ownership:\n\n“What do you need to do before bed?”\n\n“What’s your plan for your homework today?”\n	\N
 123	Exercise 2: One-on-One Exploration Time\n\n•\tSpend 30–60 minutes doing something new or child-led together (e.g., trying a science kit, drawing, building). Afterward, ask your child:\n\no\tWhat did you enjoy?\no\tWhat was hard?\no\tWould you want to do something like that again?\n	\N
-285	🧑🏫 Tips for a Successful Mindful Pause\n\n•\tSet a timer if needed to practice intentional pauses during the day.\n•\tUse grounding techniques (deep breaths, noticing senses, or a calming word like “peace” or “pause”).\n•\tBe consistent: The more you practice, the more automatic it will become.\n•\tShow your child how to pause when they're upset by modeling it, saying, "I need a moment to calm down before I speak."\n•\tReflect afterward on how the pause worked and what you could do differently next time.\n	\N
-83	“I appreciate how hard you’re trying to be patient and understanding.”	\N
+582	________________________________________\n6. Physical Presence\n\n•\tSit next to your child during homework or activities, offering physical closeness.\n\n•\tRock or sway your child gently if they’re feeling overwhelmed.\n________________________________________\n	\N
 93	Reframe Failures as Learning Opportunities:\n\nInstead of punishing failure, encourage your child to see mistakes as part of the learning process. For example, say, "It's okay to make mistakes. The important thing is that we learn from them and keep trying."\n	\N
-23	How to Deliver Open Communication: Key Points and Tips\n\nBe Present: Give your full attention when your child is speaking. Put away distractions (phones, TV) to show that you value the conversation.\n	\N
-36	"You can always talk to me about anything. I promise I won’t judge."	\N
-375	📓 Examples of Parenting Journal Entries\n________________________________________\n1. Daily Reflection Prompt\n\n📝 “What went well in my parenting today? What challenged me?”\n•\tReflects on wins and growth areas\n•\tHelps build confidence and clarity\n________________________________________\n	\N
-201	5. “Thank you for being patient and keeping calm while doing your homework.”\n\n•\tAcknowledges emotional effort and self-control.\n\n	\N
-330	________________________________________\n2. Child Is Crying After Losing a Game\n\n🧒: “I never win! It’s not fair!”\n\n👩👦 Parent:\n\n“Sounds like you’re really disappointed. You were hoping to win and it didn’t go the way you wanted.”\n________________________________________\n	\N
+609	\n🎒 School & Responsibility\n\n13.\tWhen your lunchbox is packed, then you can read.\n14.\tWhen your homework is checked, then you can go outside.\n15.\tWhen you put your library books in your bag, then you may watch cartoons.\n\n	\N
 333	________________________________________\n🧑🏫 How to Use It Effectively\n\n•\tUse emotion words: mad, sad, frustrated, worried, scared, excited, disappointed, etc.\n•\tMatch your tone and body language to the emotion\n•\tDon’t correct or judge their feelings — just name it\n•\tHelp younger kids with “emotion coaching” (“Your face looks angry…”)\n•\tFor older kids/teens, gently guess and check: “Are you feeling ___?”\n________________________________________\n	\N
+152	📚 Real-Life Calm Down Corner Examples & Tools\n\n🔹 1. Breathing Tools\n\n•\tPinwheel or feather to blow slowly\n•\t“Smell the flower, blow out the candle” technique\n•\tBubble wand\n•\tCalm breathing poster (“Breathe in 4… hold 4… out 4”)\n\n	\N
+285	🧑🏫 Tips for a Successful Mindful Pause\n\n•\tSet a timer if needed to practice intentional pauses during the day.\n•\tUse grounding techniques (deep breaths, noticing senses, or a calming word like “peace” or “pause”).\n•\tBe consistent: The more you practice, the more automatic it will become.\n•\tShow your child how to pause when they're upset by modeling it, saying, "I need a moment to calm down before I speak."\n•\tReflect afterward on how the pause worked and what you could do differently next time.\n	\N
+201	5. “Thank you for being patient and keeping calm while doing your homework.”\n\n•\tAcknowledges emotional effort and self-control.\n\n	\N
+529	________________________________________\n5. Storytelling Through Photos\n\n•\tLook at family photo albums and share stories about events or relatives.\n\n•\tInvite your child to tell their own stories related to the pictures.\n________________________________________\n	\N
+46	Emotional Validation: Always acknowledge your child's feelings. Whether they're happy, sad, angry, or frustrated, let them know it's okay to feel that way and that you are there to support them through it.	\N
 246	🧠 What Are “I” Statements\n\nA way of speaking where you take ownership of your feelings by starting with “I feel...” or “I need...”, instead of pointing fingers with “You always...” or “You never...”.\n\n	\N
 336	Natural consequences are the real-world results that happen when a child makes a choice — without a parent interfering or punishing.\n\n✅ They are:\n•\tLogical and related to the action\n•\tSafe and age-appropriate\n•\tNon-punitive (not about blame, but about learning)\n\n❌ They are not:\n•\tShame-based\n•\tIntentionally set up by the parent to "teach a lesson" (those are logical consequences)\n	\N
 163	3. “I noticed you stayed calm and used your words instead of yelling—that’s fantastic progress!”\n\n•\tAcknowledges positive behavior change.\n\n	\N
 166	6. “It’s awesome how you cleaned up your toys right after playing lately.”\n\n•\tHighlights growing independence and good habits.\n	\N
-582	________________________________________\n6. Physical Presence\n\n•\tSit next to your child during homework or activities, offering physical closeness.\n\n•\tRock or sway your child gently if they’re feeling overwhelmed.\n________________________________________\n	\N
+330	________________________________________\n2. Child Is Crying After Losing a Game\n\n🧒: “I never win! It’s not fair!”\n\n👩👦 Parent:\n\n“Sounds like you’re really disappointed. You were hoping to win and it didn’t go the way you wanted.”\n________________________________________\n	\N
+23	How to Deliver Open Communication: Key Points and Tips\n\nBe Present: Give your full attention when your child is speaking. Put away distractions (phones, TV) to show that you value the conversation.\n	\N
 453	________________________________________\n🧠 What Are Repair Conversations?\n\nCalm, respectful discussions after a difficult moment that focus on understanding what happened, expressing emotions, and making amends.\n________________________________________\n	\N
 500	________________________________________\n🛠️ How to Make a Visual Schedule:\n\n•\tUse magnets, Velcro, drawings, or printed icons\n•\tLaminate for reuse\n•\tLet kids decorate or color it\n•\tKeep it visible (fridge, wall, bedroom door)\n________________________________________\n	\N
-529	________________________________________\n5. Storytelling Through Photos\n\n•\tLook at family photo albums and share stories about events or relatives.\n\n•\tInvite your child to tell their own stories related to the pictures.\n________________________________________\n	\N
-609	________________________________________\n🎒 School & Responsibility\n\n13.\tWhen your lunchbox is packed, then you can read.\n14.\tWhen your homework is checked, then you can go outside.\n15.\tWhen you put your library books in your bag, then you may watch cartoons.\n________________________________________\n	\N
-10	Why is it important?\n\nOpen communication fosters mutual respect, trust, and understanding, encouraging emotional expression, healthy conflict resolution, and a stronger parent-child bond, all of which support the child's emotional and psychological well-being.	\N
-46	Emotional Validation: Always acknowledge your child's feelings. Whether they're happy, sad, angry, or frustrated, let them know it's okay to feel that way and that you are there to support them through it.	\N
-62	“I appreciate how hard you try, and I’m proud of you.”	\N
-49	Conditional Praise: Avoid praising only when your child does something “right” or meets a certain standard. Praise should be about effort and growth, not just results.	\N
 63	\nModeling behavior refers to the idea that children learn by observing and imitating the actions, attitudes, and behaviors of their parents or caregivers. As a parent, you are the first and most important role model in your child’s life. The way you act, the way you solve problems, interact with others, and respond to stress will shape how your child learns to act in similar situations.\n	\N
-48	Setting Boundaries with Love: Teach your child respect through clear, loving boundaries. Unconditional love doesn’t mean permissiveness; it means you are setting boundaries out of care and concern for their well-being.	\N
+49	Conditional Praise: Avoid praising only when your child does something “right” or meets a certain standard. Praise should be about effort and growth, not just results.	\N
 111	Parent Exercise 3: Let It Play Out\n\nChoose one non-dangerous situation where you usually intervene (e.g., forgotten gym clothes).\n\nStep back, let the consequence happen, and debrief after:\n\n“What happened? What would you do differently next time?”\n	\N
 124	Exercise 1: The Interest Journal\n\n•\tKeep a 5-day journal tracking what activities your child:\n\no\tChooses voluntarily\no\tSpends extra time on\no\tTalks about with excitement\n•\tReflect: What patterns do you see?\n	\N
-84	“Thank you for showing love and care to others.”	\N
 94	Foster a Growth Mindset:\n\nEmphasize the belief that abilities and intelligence can grow with effort. Praise effort over innate ability, helping your child understand that perseverance leads to success, no matter the outcome.\n	\N
+378	\n2. Behavior Tracking\n\n📝 “Emma had 3 meltdowns today around transitions. I noticed she’s more tired after daycare—maybe we need a quieter afternoon routine.”\n•\tHelps uncover patterns and create responsive strategies\n\n	\N
 203	8. “I love how you didn’t give up, even when it was frustrating.”\n\n•\tValidates emotional resilience.\n	\N
-153	🔹 3. Sensory Tools\n\n•\tStress ball or fidget spinner\n•\tKinetic sand or playdough\n•\tWeighted lap pad or small blanket\n•\tSoft stuffed animal to hug\n•\tCalm-down bottle (glitter jar or lava lamp-style bottle)\n	\N
+384	\n10. Problem-Solving Reflection\n\n📝 “Mornings are rough. Maybe if we create a visual routine chart together, it’ll give them more independence.”\n•\tUses journaling as a problem-solving space\n\n	\N
 208	✅ Why Use Empathy Statements?\n\n•\tBuilds trust and connection\n•\tReduces child’s anxiety and frustration\n•\tEncourages open communication\n•\tHelps kids develop emotional intelligence\n•\tDiffuses conflicts calmly\n	\N
-384	________________________________________\n10. Problem-Solving Reflection\n\n📝 “Mornings are rough. Maybe if we create a visual routine chart together, it’ll give them more independence.”\n•\tUses journaling as a problem-solving space\n________________________________________\n	\N
 247	✅ Structure of an “I” Statement:\n\n1.\tI feel [emotion]\n2.\tWhen you [behavior]\n3.\tBecause [reason]\n4.\tI would like [desired behavior or solution]\n	\N
 296	9. Encouraging “Yet”\n\n•\tUse language like “I can’t do this yet” to emphasize growth potential.\n\n•\tModel using “yet” yourself when facing difficulties.\n	\N
 8	📚 Examples of Celebrating Progress in Parenting\n\n1. “You’ve been practicing your reading every day—I see you’re getting better and better!”\n\n•\tRecognizes steady improvement over time.\n\n“You’re honest and safe.”\n\nTrust is built when parents are emotionally available, consistent, and responsive—especially during difficult moments.	\N
-378	________________________________________\n2. Behavior Tracking\n\n📝 “Emma had 3 meltdowns today around transitions. I noticed she’s more tired after daycare—maybe we need a quieter afternoon routine.”\n•\tHelps uncover patterns and create responsive strategies\n________________________________________\n	\N
+153	🔹 3. Sensory Tools\n\n•\tStress ball or fidget spinner\n•\tKinetic sand or playdough\n•\tWeighted lap pad or small blanket\n•\tSoft stuffed animal to hug\n•\tCalm-down bottle (glitter jar or lava lamp-style bottle)\n	\N
 288	📚 Examples of Modeling a Growth Mindset in Parenting\n________________________________________\n1. Sharing Your Own Learning Challenges\n\n•\t“I didn’t get it right the first time either, but I kept practicing and got better.”\n\n•\tTalk about your mistakes and how you learned from them.\n________________________________________\n	\N
 329	________________________________________\n4. Child Hits Sibling\n\n👩👦 Parent:\n\n“You’re really angry right now — it’s okay to feel angry, but it’s not okay to hit.”\n\n🧠 Follow-up: “Let’s talk about a better way to handle anger.”\n________________________________________\n\n	\N
-334	________________________________________\n🎯 Emotion Naming Starters\n\n•\t“You’re feeling ___ because ___.”\n•\t“It looks like you might be ___.”\n•\t“I can tell you’re ___ right now.”\n•\t“Sounds like you’re feeling ___.”\n•\t“That must feel really ___ for you.”\n•\t“It makes sense to feel ___ when that happens.”\n________________________________________\n	\N
+48	Setting Boundaries with Love: Teach your child respect through clear, loving boundaries. Unconditional love doesn’t mean permissiveness; it means you are setting boundaries out of care and concern for their well-being.	\N
 338	________________________________________\n2. Refusing to Eat Dinner\n\nBehavior: Child skips dinner because they don’t like what’s served.\n\nNatural Consequence: They’ll feel hungry later — and learn to eat when food is available.\n\n→ Don’t force food or offer snacks as replacement.\n________________________________________\n	\N
 340	________________________________________\n4. Not Doing Chores\n\nBehavior: Child doesn’t clean their room or do their share.\n\nNatural Consequence: They can't find their toys, or they have no clean clothes.\n\n→ Let them sit in the mess or wear wrinkled clothes if age-appropriate.\n________________________________________\n	\N
 344	________________________________________\n9. Leaving a Bike or Toy Outside\n\nBehavior: Child leaves toys or bike in the yard.\n\nNatural Consequence: It may get wet, dirty, or go missing.\n\n→ Builds habits of care and accountability.\n________________________________________\n	\N
 454	________________________________________\n✅ Why Use Repair Conversations?\n\n•\tRebuilds trust and connection\n•\tTeaches emotional intelligence and communication\n•\tEncourages accountability without shame\n•\tHelps kids learn problem-solving skills\n•\tModels healthy conflict resolution\n________________________________________\n	\N
 418	________________________________________\n✅ Why Use Problem-Solving Coaching?\n\n•\tBuilds critical thinking and decision-making skills\n•\tEncourages independence and confidence\n•\tReduces power struggles and frustration\n•\tTeaches responsibility for choices\n•\tStrengthens parent-child collaboration\n________________________________________\n	\N
+334	________________________________________\n🎯 Emotion Naming Starters\n\n•\t“You’re feeling ___ because ___.”\n•\t“It looks like you might be ___.”\n•\t“I can tell you’re ___ right now.”\n•\t“Sounds like you’re feeling ___.”\n•\t“That must feel really ___ for you.”\n•\t“It makes sense to feel ___ when that happens.”\n________________________________________\n	\N
 457	________________________________________\n4. When a Child Hurts Someone’s Feelings\n\n•\t“It seemed like your words hurt your friend. How do you think they felt? What can we do to make things right?”\n________________________________________\n	\N
-38	"What’s on your mind today? I want to know what you’re thinking."	\N
+379	3. Celebrating a Moment\n\n📝 “Liam helped his brother without being asked today. I’m proud of how kind and thoughtful he’s becoming!”\n•\tCaptures positive moments and personal growth\n\n	\N
 95	What Parents Should Pay Attention to:\n\nAvoid Overprotecting: While it’s natural to want to protect your child from pain, resilience is developed through facing challenges. Allow your child to experience discomfort, frustration, and failure, as these are essential for building emotional strength.\n	\N
 125	Exercise 3: Flexibility Check-In\n\n•\tWrite down one parenting moment in the past week when:\n\no\tYou felt frustrated or stuck.\no\tYou insisted on your way.\n\n•\tAsk: Could I have responded differently? How might I adapt next time?\n	\N
-113	Child Responsibility Exercises (Parents Can Assign or Encourage)\n\n2. My Responsibility Chart\n\nHave the child choose 3 daily tasks they “own” (e.g., feeding the pet, setting the table, packing their bag).\n	\N
 154	🔹 2. Visual Aids\n\n•\tFeelings chart or emotion wheel\n•\tCalm-down steps poster\n•\tMirror (to help see and name emotions)\n•\tHourglass or sand timer\n	\N
+113	Child Responsibility Exercises (Parents Can Assign or Encourage)\n\n2. My Responsibility Chart\n\nHave the child choose 3 daily tasks they “own” (e.g., feeding the pet, setting the table, packing their bag).\n	\N
+386	✍️ Helpful Journal Prompts for Parents\n\n1.\tWhat was my favorite moment with my child today?\n2.\tWhat triggered me today, and how did I respond?\n3.\tWhat strength did I notice in my child today?\n4.\tHow did I model patience, kindness, or accountability today?\n5.\tWhat’s one thing I want to do differently tomorrow?\n	\N
 174	2. Choosing Snacks\n\nInstead of:\n“Eat this apple.”\nTry:\n“Would you like an apple or a banana for your snack?”\n“Do you want carrot sticks or cucumber slices with lunch?”\n	\N
 204	9. “Your hard work on cleaning your room made such a difference.”\n\n•\tConnects effort with positive outcome.\n	\N
-40	Giving children a strong sense of trust and security is one of the most important roles parents play in child development. It forms the foundation for self-confidence, emotional resilience, and healthy relationships throughout life.\n	\N
+335	Bonus: Emotion Chart for Younger Kids\n\nConsider using a Feelings Chart with pictures or emojis to help young children point to how they feel — especially if they don’t yet have the words.\n	\N
 332	________________________________________\n7. Teen Is Quiet and Distant\n\n🧑: Doesn’t want to talk\n\n👩👦 Parent:\n\n“You seem down lately. Maybe you’re feeling overwhelmed or stressed?”\n\n🧠 Why it works: It opens the door without pushing too hard.\n________________________________________\n	\N
 207	🧠 What Are Empathy Statements?\n\nWords or phrases that acknowledge and validate your child’s feelings, showing that you truly understand and care.\n	\N
 248	📚 Real-Life “I” Statements Examples by Situation\n________________________________________\n1. Child Interrupts While You’re Talking\n\nInstead of:\n“You never let me finish!”\n\nTry:\n“I feel frustrated when I’m interrupted because I lose my train of thought. I would like you to wait until I finish speaking.”\n________________________________________\n	\N
+530	________________________________________\n4. Feelings Stories\n\n•\tShare stories focused on emotions (e.g., feeling scared, happy, or frustrated).\n\n•\tAsk your child to tell a story about a time they felt a certain way.\n________________________________________\n	\N
 167	7. “You did a great job listening and following directions today compared to last week.”\n\n•\tRecognizes improvement in attention and behavior.\n	\N
-171	🧑🏫 Tips for Celebrating Progress Effectively\n\n•\tBe specific about what progress you notice\n•\tCelebrate small steps, not just big achievements\n•\tUse positive language and enthusiasm\n•\tInvolve your child in recognizing their own progress\n•\tUse rewards or special activities to mark milestones (optional)\n•\tKeep celebrations genuine and consistent\n	\N
 47	Consistent Love: Show your child love consistently, regardless of their behavior. Set aside time to connect, whether through quality time, physical affection, or simple gestures of care.	\N
-335	Bonus: Emotion Chart for Younger Kids\n\nConsider using a Feelings Chart with pictures or emojis to help young children point to how they feel — especially if they don’t yet have the words.\n	\N
-379	________________________________________\n3. Celebrating a Moment\n\n📝 “Liam helped his brother without being asked today. I’m proud of how kind and thoughtful he’s becoming!”\n•\tCaptures positive moments and personal growth\n________________________________________\n	\N
-386	✍️ Helpful Journal Prompts for Parents\n\n1.\tWhat was my favorite moment with my child today?\n2.\tWhat triggered me today, and how did I respond?\n3.\tWhat strength did I notice in my child today?\n4.\tHow did I model patience, kindness, or accountability today?\n5.\tWhat’s one thing I want to do differently tomorrow?\n	\N
+171	🧑🏫 Tips for Celebrating Progress Effectively\n\n•\tBe specific about what progress you notice\n•\tCelebrate small steps, not just big achievements\n•\tUse positive language and enthusiasm\n•\tInvolve your child in recognizing their own progress\n•\tUse rewards or special activities to mark milestones (optional)\n•\tKeep celebrations genuine and consistent\n	\N
+535	________________________________________\n10. Reflective Sharing\n\n•\tAfter a busy day or event, ask your child to tell a story about their experience.\n\n•\tReflect together on feelings and highlights.\n________________________________________\n	\N
 291	6. Responding Positively to Challenges\n\n•\tWhen something is hard, say “This is a great chance to learn something new.”\n\n•\tShow excitement about tough tasks.\n	\N
 420	________________________________________\n3. Child Is Struggling to Make Friends\n\n👩👦 Parent:\n“Making friends can be hard. What are some ways you think you could meet new kids at school?”\n\nChild might suggest: “I can join a club or ask someone to play.”\n________________________________________\n	\N
+534	________________________________________\n9. "What If" Stories\n\n•\tPlay “What if…” games where you imagine different scenarios (e.g., “What if you were a superhero?”).\n\n•\tEncourage creativity and problem-solving.\n________________________________________\n	\N
 419	📚 Real-Life Examples of Problem-Solving Coaching With Kids\n________________________________________\n1. Child Forgot Homework\n\n👩👦 Parent:\n“Looks like you forgot your homework again. What do you think we can do to help you remember next time?”\n\nChild might answer: “Maybe I can pack my bag the night before.”\n________________________________________\n	\N
 427	________________________________________\n9. Child Lost Something Important\n\n👩👦 Parent:\n“Losing your jacket is frustrating. Where do you think we should look? What could you do next time to keep track?”\n\nChild might respond: “I’ll check the car and school, and maybe put a label on my jacket.”\n________________________________________\n	\N
 424	________________________________________\n6. Child Feels Overwhelmed With Chores\n\n👩👦 Parent:\n“You feel like chores are too much right now. How could we make them easier or more fun?”\n\nChild might suggest: “We can break them into smaller steps or play music while we do them.”\n________________________________________\n	\N
-530	________________________________________\n4. Feelings Stories\n\n•\tShare stories focused on emotions (e.g., feeling scared, happy, or frustrated).\n\n•\tAsk your child to tell a story about a time they felt a certain way.\n________________________________________\n	\N
-534	________________________________________\n9. "What If" Stories\n\n•\tPlay “What if…” games where you imagine different scenarios (e.g., “What if you were a superhero?”).\n\n•\tEncourage creativity and problem-solving.\n________________________________________\n	\N
-535	________________________________________\n10. Reflective Sharing\n\n•\tAfter a busy day or event, ask your child to tell a story about their experience.\n\n•\tReflect together on feelings and highlights.\n________________________________________\n	\N
+40	Giving children a strong sense of trust and security is one of the most important roles parents play in child development. It forms the foundation for self-confidence, emotional resilience, and healthy relationships throughout life.\n	\N
 456	________________________________________\n2. When a Child Breaks a Rule\n\n•\t“You forgot to do your homework today. What happened? How can we make sure it gets done tomorrow?”\n________________________________________\n	\N
 463	________________________________________\n9. When Setting New Agreements\n\n•\t“What rules or agreements should we try to make sure everyone feels respected?”\n________________________________________\n	\N
 65	Consistency is Key: Consistent behavior from parents helps children internalize values. The more predictable your actions, the more secure your child will feel and the more likely they are to adopt similar behaviors.	\N
-155	🔹 5. Books or Cards\n\n•\tFeelings flashcards or books like The Color Monster\n•\t“When I Feel” book series\n•\tDIY calming affirmation cards:\n“I can breathe.”\n“I am safe.”\n“I will feel better soon.”\n	\N
+380	\n6. Noticing a Strength\n\n📝 “Noah stayed so focused during art today. His creativity and patience really shine when he’s drawing.”\n•\tSupports strength-spotting and encouragement\n\n	\N
 114	Child Responsibility Exercises (Parents Can Assign or Encourage)\n\n3. “Fix It” Mission\n\nWhen something goes wrong (like spilling juice), let them handle the cleanup and ask,\n“How can you fix this?” instead of doing it for them.\n\n	\N
 96	Maintain a Positive Outlook: Resilience isn’t just about enduring hardship; it’s also about maintaining hope and a sense of possibility. Encourage your child to focus on what they can control, even in difficult circumstances.	\N
-50	Active Listening: Practice deep listening by being fully present when your child speaks. Let them know that their voice matters and that they are heard.	\N
+155	🔹 5. Books or Cards\n\n•\tFeelings flashcards or books like The Color Monster\n•\t“When I Feel” book series\n•\tDIY calming affirmation cards:\n“I can breathe.”\n“I am safe.”\n“I will feel better soon.”\n	\N
 300	✅ Why Model Accountability?\n\n•\tBuilds trust and respect\n•\tTeaches integrity and responsibility\n•\tEncourages kids to own their mistakes without shame\n•\tPromotes emotional maturity and self-reflection\n•\tStrengthens the parent-child relationship\n	\N
 206	🧑🏫 Tips for Using Effort-Based Praise\n\n•\tBe specific about what effort you notice\n•\tAvoid vague praise like “You’re so smart”\n•\tFocus on process, strategies, and attitude\n•\tEncourage self-reflection (“What part did you find challenging?”)\n•\tBalance praise with constructive feedback\n•\tCelebrate small steps and progress consistently\n	\N
 249	2. Child Leaves Toys Messy\n\nInstead of:\n“You’re so messy!”\n\nTry:\n“I feel overwhelmed when the toys are all over the floor because it’s hard to keep the house tidy. I would like you to put your toys away when you’re done playing.”\n	\N
 256	🧑🏫 Parent Tips for Using “I” Statements\n\n•\tStay calm and respectful\n•\tFocus on your feelings, not their faults\n•\tBe clear about what you want to happen\n•\tModel the behavior you want to see\n•\tUse “I” statements consistently to reduce power struggles\n\n	\N
 302	________________________________________\n3. Fixing a Mistake You Made\n\n•\t“I forgot to send that form to your school. I’m going to email the teacher right now to fix it.”\n\n•\tTeaches responsibility without blaming others.\n________________________________________\n	\N
-168	8. “I’m proud of how you’ve been practicing kindness with your friends.”\n\n•\tAppreciates social and emotional growth\n	\N
 290	3. Embracing Mistakes Publicly\n\n•\tWhen you mess up, say “Oops! That didn’t work. Let’s try again.”\n\n•\tShow that mistakes are normal and helpful.\n	\N
 337	📚 10+ Real-Life Natural Consequence Examples for Parenting Training\n________________________________________\n1. Forgetting Homework\n\nBehavior: Child doesn't pack or complete homework.\n\nNatural Consequence: They may get a lower grade or need to explain to the teacher.\n\n→ Instead of rescuing, coach them to prepare better next time.\n________________________________________\n	\N
-380	________________________________________\n6. Noticing a Strength\n\n📝 “Noah stayed so focused during art today. His creativity and patience really shine when he’s drawing.”\n•\tSupports strength-spotting and encouragement\n________________________________________\n	\N
-385	________________________________________\n🧑🏫 Tips for Keeping a Parenting Journal\n\n•\tStart with just 5–10 minutes a few times a week\n•\tUse prompts (see below) to spark reflection\n•\tBe honest and non-judgmental—this is for you\n•\tKeep it private, or share with a partner or coach if helpful\n•\tUse a notebook, digital app, or even voice notes\n•\tRevisit entries monthly to track growth and themes\n________________________________________\n	\N
+512	________________________________________\n✅ Why Use Special Time?\n\n•\tBuilds strong parent-child bonds\n•\tBoosts child’s self-esteem and emotional security\n•\tEncourages open communication\n•\tHelps parents understand their child’s world better\n•\tReduces behavior issues by meeting emotional needs\n________________________________________\n	\N
+50	Active Listening: Practice deep listening by being fully present when your child speaks. Let them know that their voice matters and that they are heard.	\N
 342	________________________________________\n6. Spending All Their Allowance\n\nBehavior: Child spends all their money on treats.\n\nNatural Consequence: They can’t buy anything else until next allowance.\n\n→ Teaches budgeting and patience.\n________________________________________\n	\N
 347	👨🏫 How to Teach Parents to Use Natural Consequences Effectively:\n\n1. Pause — Don’t Jump In Right Away\nLet the natural outcome happen if it’s safe. Rescuing prevents learning.\n2. Talk After, Not During\nAsk reflective questions:\n•\t“What happened?”\n•\t“What would you do differently next time?”\n•\t“How did that work out for you?”\n3. Stay Calm and Neutral\nNo sarcasm or punishment needed. Let the experience do the teaching.\n4. Offer Support, Not Shame\nYou’re not abandoning them — you’re giving them space to learn through life.\n	\N
-512	________________________________________\n✅ Why Use Special Time?\n\n•\tBuilds strong parent-child bonds\n•\tBoosts child’s self-esteem and emotional security\n•\tEncourages open communication\n•\tHelps parents understand their child’s world better\n•\tReduces behavior issues by meeting emotional needs\n________________________________________\n	\N
 421	________________________________________\n4. Child Is Upset About a Bad Grade\n\n👩👦 Parent:\n“You’re disappointed with your grade. What do you think you could do differently next time?”\n\nChild might respond: “I can ask the teacher for help or study more.”\n________________________________________\n	\N
-502	Behavior Shaping?\n\nShaping means you reward small, progressive steps that get closer to the target behavior — instead of expecting the full behavior right away.\n	\N
-503	🧒 Examples of Behavior Shaping for Kids\n________________________________________\n✅ 1. Getting Ready for School Independently\n\nGoal: Child gets dressed, packs bag, and is ready on time.\n\nShaping Steps:\n1.\tFirst week: Child gets dressed when asked → praise/reward\n2.\tNext week: Child gets dressed + brushes teeth → praise\n3.\tThen: Adds packing bag → praise\n4.\tFinal: Wakes up and does it all with little reminder → reward chart or privilege\n________________________________________\n	\N
 514	________________________________________\n2. Storytime Together\n\n•\tRead the child’s favorite book or make up a story together.\n\n•\tAsk questions about the story and listen to the child’s thoughts.\n________________________________________\n	\N
 459	5. After a Mistake\n\n•\t“Mistakes happen to all of us. What do you think you can learn from this one?”\n________________________________________\n	\N
 126	The “Fix-It” Process is a positive, restorative parenting tool that teaches kids how to take responsibility, repair mistakes, and learn from their actions — instead of just being punished.\n\nIt’s especially useful when a child has:\n\n•\tBroken a rule\n•\tHurt someone’s feelings\n•\tDamaged property\n•\tBeen dishonest\n	\N
-66	Emotional Regulation: Children will look to how you handle emotions. If they see you managing frustration or disappointment calmly, they are more likely to handle their own emotions in a similar manner.	\N
-156	🔹 4. Soothing Audio\n\n•\tHeadphones with calm music or white noise\n•\tRecorded guided meditation (like “peaceful ocean” or “magic breathing”)\n•\tSound machine with rain or heartbeat sounds\n	\N
+168	8. “I’m proud of how you’ve been practicing kindness with your friends.”\n\n•\tAppreciates social and emotional growth\n	\N
+502	Behavior Shaping?\n\nShaping means you reward small, progressive steps that get closer to the target behavior — instead of expecting the full behavior right away.\n	\N
+503	🧒 Examples of Behavior Shaping for Kids\n\n✅ 1. Getting Ready for School Independently\n\nGoal: Child gets dressed, packs bag, and is ready on time.\n\nShaping Steps:\n1.\tFirst week: Child gets dressed when asked → praise/reward\n2.\tNext week: Child gets dressed + brushes teeth → praise\n3.\tThen: Adds packing bag → praise\n4.\tFinal: Wakes up and does it all with little reminder → reward chart or privilege\n\n	\N
+381	\n7. Trigger Awareness\n\n📝 “I get really frustrated when they ignore me the first time. I need to pause instead of react. Maybe I can try a visual cue.”\n•\tIdentifies emotional triggers and goals for change\n\n	\N
 97	Create a Supportive Environment: Let your child know you are always there for them, even when they face difficulties. Emotional support and connection with parents are key to resilience.	\N
+156	🔹 4. Soothing Audio\n\n•\tHeadphones with calm music or white noise\n•\tRecorded guided meditation (like “peaceful ocean” or “magic breathing”)\n•\tSound machine with rain or heartbeat sounds\n	\N
 209	📚 Examples of Empathy Statements for Parenting\n\n________________________________________\n1. Child Is Upset About a Broken Toy\n“I can see you’re really sad that your toy broke. That must feel really disappointing.”\n________________________________________\n	\N
 220	🧠 What Are Family Meetings?\n\nA set time for the whole family to talk, listen, make decisions, and support one another in a respectful, inclusive way.\n	\N
 131	3. Breaking a Toy or Item\n\nSituation: Child throws and breaks a toy or remote.\n\nFix-It:\n\n•\tHelp clean up or repair it\n•\tContribute allowance or chores to replace it\n•\tReflect on how to manage frustration\n	\N
 51	Emotional Withdrawal: Never withdraw affection or love as a form of punishment. Children should always know that your love is constant, even during difficult moments.	\N
+66	Emotional Regulation: Children will look to how you handle emotions. If they see you managing frustration or disappointment calmly, they are more likely to handle their own emotions in a similar manner.	\N
 221	✅ Why Use Family Meetings?\n\n•\tTeaches kids communication and problem-solving skills\n•\tBuilds a sense of belonging and shared responsibility\n•\tEncourages emotional expression and listening\n•\tHelps prevent and resolve conflicts\n•\tStrengthens family connection and trust\n	\N
-381	________________________________________\n7. Trigger Awareness\n\n📝 “I get really frustrated when they ignore me the first time. I need to pause instead of react. Maybe I can try a visual cue.”\n•\tIdentifies emotional triggers and goals for change\n________________________________________\n	\N
+532	________________________________________\n6. Problem-Solving Stories\n\n•\tTell stories with a problem and ask your child how they might solve it.\n\n•\tDiscuss different solutions and outcomes.\n________________________________________\n	\N
 226	6. Setting Goals Together\n\n•\t🎯 “Let’s each share one goal we have for the week—school, home, or something fun.”\n\n•\tEncourages motivation and accountability.\n\n	\N
 228	7. Planning a Family Outing or Meal\n\n•\t🍕 “What should we cook together this weekend?”\n\n•\tIncludes kids in decision-making and planning fun.\n\n	\N
 235	📚 Examples of Goal Setting with Kids\n\n________________________________________\n1. Homework Goal\n•\t“Let’s set a goal to finish your math homework by 5 PM every day this week.”\n•\tHelp create a schedule or reminder system.\n________________________________________\n	\N
@@ -5881,26 +5775,26 @@ COPY public.components_coursecontent_texts (id, data, style) FROM stdin;
 254	7. Child is Late for Bedtime\n\nInstead of:\n“You’re always late to bed!”\n\nTry:\n“I feel tired when you stay up late because I want you to get enough rest. I would like you to be in bed by 8:30.”\n	\N
 292	4. Praise Your Own Effort\n\n•\t“I’m proud of how much time I spent practicing today.”\n\n•\tCelebrate your hard work in front of your child.\n	\N
 339	________________________________________\n3. Not Wearing a Coat\n\nBehavior: Child refuses to wear a jacket.\n\nNatural Consequence: They feel cold outside.\n\n→ As long as it's safe (not freezing), let them experience it.\n________________________________________\n	\N
-169	9. “Look how much your drawing skills have improved—your colors are so bright now!”\n\n•\tEncourages creativity and skill-building.\n	\N
+504	\n✅ 2. Doing Homework Without Resistance\n\nGoal: Child completes homework independently and without complaints.\n\nShaping Steps:\n1.\tSits down at the table when asked → verbal praise\n2.\tWorks for 5 minutes without complaining → small reward\n3.\tGradually increase time or amount of work\n4.\tWorks independently, checks work → extra screen time or token\n\n	\N
 115	Balancing screen time is an increasingly global concern, and different countries and cultures are implementing various solutions to help families manage technology use. Here are some international approaches and AI tools being used to help parents track and limit screen time for their children:\n1. Denmark: "Digital Well-being" Initiatives\n\nSolution: Denmark has a national focus on digital well-being, emphasizing how to use technology in a balanced way. The government encourages parents to set clear rules for screen time and to help children understand the importance of balance between online and offline activities.\n\nAI Tools:\n\n    DigiDenmark: This initiative includes resources for parents to guide their children in developing healthy digital habits. Danish children are taught to track their screen time and engage in digital detoxes.\n\n    App: Screen Time (Denmark-based app) allows parents to monitor and set limits on screen time across various apps and devices. It sends alerts when limits are approaching, helping parents enforce boundaries without being too controlling.\n\n2. South Korea: "Digital Detox" Camps\n\nSolution: South Korea has become one of the most tech-savvy countries globally, but the government has taken steps to address the issue of excessive screen time among youth. One such initiative is the "Digital Detox" camps where children spend a few days disconnected from screens, engaging in nature-based activities to reset their habits.\n\nAI Tools:\n\n    AI-Driven Monitoring: Apps like Chill and Mind and Family Link (by Google) are popular in South Korea to monitor screen time, with AI that automatically adjusts screen time limits based on the child’s age, device usage, and preferences.\n\n    Digital Detox Apps: Apps like Forest encourage children (and adults) to stay off their phones for set periods by planting a virtual tree. The longer you avoid using your phone, the more your tree grows. This approach uses a gamified system to motivate kids to focus on offline activities.\n\n3. Finland: "Tech-Free Zones" in Schools and Homes\n\nSolution: Finland is known for its innovative education system, and one of its approaches to balancing screen time is the creation of tech-free zones in homes and schools. These zones encourage students and children to engage in physical activities, reading, and face-to-face communication without technology.\n\nAI Tools:\n\n    Pact (Finland-based app): Uses AI to monitor and limit screen time by rewarding users with virtual currency if they stay off their devices for a set period. This virtual currency can be used to purchase rewards. The app encourages self-control and helps kids create positive screen time habits.\n\n    Kiddo (Finland-based): This AI app tracks children's media consumption and sends reports to parents. It also offers suggestions for tech-free activities to encourage kids to take breaks and get more involved in physical play and other creative outlets.\n\n4. Canada: "Tech-Free Time" and AI-Based Solutions\n\nSolution: In Canada, many parents and schools have started to incorporate "tech-free times" during the day, where both children and parents agree to spend time away from screens—whether it’s mealtime or an hour before bed. This approach helps children develop a routine that includes both digital and non-digital activities.\n\nAI Tools:\n\n    OurPact: This popular app, used widely in North America, allows parents to set schedules for screen time and even block access to apps and content during certain hours. It uses AI to analyze usage patterns and make recommendations for improving screen-time management.\n\n    ScreenLimit: A Canadian app that uses AI to track how much time children are spending on different devices and platforms. Parents can set time limits for specific apps or activities and receive alerts when the limits are nearing. The app also suggests breaks and activities to encourage children to step away from screens.\n\n5. Japan: Parental Control and AI Monitoring\n\nSolution: Japan has become very proactive in integrating technology with child safety and well-being. The country’s focus on balancing screen time includes educational programs that teach children and parents about the dangers of too much screen exposure and the importance of face-to-face interaction.\n\nAI Tools:\n\n    Kizuna World: An AI-based application developed by Japanese tech companies that provides screen time tracking, health checks, and reminders for breaks. It also uses data to suggest optimal study times and screen-time limits tailored to each child’s age and behavior.\n\n    Famido: A Japanese app designed for parents to monitor and control their children's screen time. It uses AI to recommend safe, healthy usage limits based on each child’s interests and needs. The app also helps children set goals for productive offline activities like reading or outdoor play.\n\n6. United Kingdom: "Screen Time and Digital Literacy"\n\nSolution: The UK government has promoted digital literacy as part of school curricula, teaching children about the importance of balance in their technology use. Many schools and parents are now creating "screen-free" zones at home to promote family interaction without the distraction of screens.\n\nAI Tools:\n\n    Family Link by Google: This tool helps parents manage their children’s screen time by setting limits, reviewing app activity, and even locking devices remotely. The AI-driven system provides insights into kids’ digital habits, allowing parents to make more informed decisions about screen time.\n\n    Qustodio: A popular UK-based parental control app that uses AI to help parents monitor, set time limits, and receive reports on their children's online activities across devices. It also suggests digital breaks based on usage patterns and creates a healthy schedule for children.\n\n7. Australia: "Mindful Technology Use" Programs\n\nSolution: In Australia, there has been a growing movement around "mindful technology use," encouraging parents and children to use tech intentionally rather than out of habit or addiction. Schools are increasingly introducing mindfulness programs that also focus on technology.\n\nAI Tools:\n\n    Moment: This app is used widely in Australia to help families track their screen time, with AI features that can recommend screen time reductions. It also tracks the types of activities users engage with on their devices, helping families find a balance between work, entertainment, and social media.\n\n    Circle with Disney: A device and app that uses AI to manage screen time, filter content, and track device usage in the home. It offers personalized recommendations for managing screen time and helps foster better digital habits.\n\nCommon Solutions Across the Globe\n\nAcross countries, the general trend is toward using AI-powered apps and digital tools that offer:\n\n    Automatic Screen Time Limiting: These tools can set and enforce boundaries on screen time, often offering insights on usage patterns and recommending breaks.\n\n    Gamification of Screen Time: Apps that make screen time management fun by rewarding kids with points, rewards, or time credits for spending time away from devices.\n\n    Family Monitoring and Control: Tools that allow parents to remotely manage and monitor their children's digital lives, with some apps offering suggestions for offline activities or "cool-down" periods.\n\n    Digital Literacy and Education: Many countries emphasize the importance of teaching children about the potential risks of excessive screen time, including addiction, sleep disruption, and impact on mental health.\n\nFinal Thought:\n\nWhile approaches vary, the common thread is that AI is being used not just for tracking and limiting screen time, but also to promote healthier, more mindful interactions with technology. These tools aim to create a balanced relationship between tech and real-world activities, allowing children to enjoy the benefits of both worlds.	\N
 345	________________________________________\n10. Interrupting or Yelling\n\nBehavior: Child constantly interrupts or yells.\n\nNatural Consequence: Others stop listening or get annoyed.\n\n→ Teach them that respectful communication earns attention.\n________________________________________\n	\N
 422	________________________________________\n2. Sibling Fight Over Toy\n\n👩👦 Parent:\n“I see you both want to play with the same toy. How can we make sure you both get a turn?”\n\nChild might say: “We can take turns and set a timer.”\n________________________________________\n	\N
-504	________________________________________\n✅ 2. Doing Homework Without Resistance\n\nGoal: Child completes homework independently and without complaints.\n\nShaping Steps:\n1.\tSits down at the table when asked → verbal praise\n2.\tWorks for 5 minutes without complaining → small reward\n3.\tGradually increase time or amount of work\n4.\tWorks independently, checks work → extra screen time or token\n________________________________________\n	\N
-532	________________________________________\n6. Problem-Solving Stories\n\n•\tTell stories with a problem and ask your child how they might solve it.\n\n•\tDiscuss different solutions and outcomes.\n________________________________________\n	\N
+169	9. “Look how much your drawing skills have improved—your colors are so bright now!”\n\n•\tEncourages creativity and skill-building.\n	\N
 458	________________________________________\n3. Following a Tantrum\n\n•\t“I saw you were really upset earlier. Do you want to tell me what you were feeling? How can I help next time?”\n________________________________________\n	\N
 127	🛠️ What Is the “Fix-It” Process?\n\nA simple, respectful way to help kids make things right after a poor choice — without shame, blame, or punishment.\n\nThe process emphasizes:\n\n•\tAccountability\n•\tProblem-solving\n•\tEmpathy\n•\tMaking amends	\N
 128	✅ 5 Key Steps of the “Fix-It” Process\n\n1.\tAcknowledge the Action\n“What happened?”\n2.\tTake Responsibility\n“What part did you play in it?”\n3.\tUnderstand the Impact\n“How did it affect others (or your things)?”\n4.\tMake It Right (Fix-It)\n“What can you do to repair the harm or solve the problem?”\n5.\tPlan for Next Time\n“What will you do differently if this happens again?”\n	\N
-67	How to Deliver Modeling Behavior to Parents\n\nLead by Example:\n\nParents must be aware that every action they take is being observed by their children. If you want your child to develop certain virtues, such as empathy, patience, or honesty, you need to demonstrate these qualities in your own actions.\n	\N
+157	🔹 6. Comfort Items\n\n•\tCozy blanket\n•\tFavorite stuffed toy\n•\tPicture of a loved one or pet\n•\tSmall “calm jar” filled with photos, notes, and familiar scents\n	\N
 116	Child Responsibility Exercises (Parents Can Assign or Encourage)\n\n4. Plan a Small Event\n\nLet the child plan a family snack night or game night. Give them a checklist and budget (if needed). Support but don’t take over.\n	\N
 98	Exercises for Parents to Practice Resilience\n\nExercise 1: "Growth Mindset" Conversation\n\nGoal: Teach children to embrace challenges and learn from failures.\n\nInstructions: When a child encounters a problem or failure, sit down with them and talk through what happened. Focus on the effort, what they learned, and what they can try next time. For example: "I see you tried really hard on your math test. Let’s talk about what strategies we can use next time."\n	\N
-158	🛋️ What a Calm Down Corner Might Look Like\n\n•\tA small tent, beanbag chair, or cushion pile\n•\tSoft lighting or fairy lights\n•\tCalm-down poster + toolkit basket\n•\tOption to leave or stay with adult support\n	\N
+382	\n8. Parenting Goals Entry\n\n📝 “This week I want to focus on giving more choices instead of commands, especially during transitions.”\n•\tSets an intention for practicing specific parenting tools\n\n	\N
 52	Neglecting Your Needs: Practicing unconditional love doesn't mean neglecting your own well-being. Parents need to take care of themselves to effectively give love to their children.	\N
-157	🔹 6. Comfort Items\n\n•\tCozy blanket\n•\tFavorite stuffed toy\n•\tPicture of a loved one or pet\n•\tSmall “calm jar” filled with photos, notes, and familiar scents\n	\N
+158	🛋️ What a Calm Down Corner Might Look Like\n\n•\tA small tent, beanbag chair, or cushion pile\n•\tSoft lighting or fairy lights\n•\tCalm-down poster + toolkit basket\n•\tOption to leave or stay with adult support\n	\N
 210	2. Child Is Nervous About a Test\n\n“It sounds like you’re feeling worried about the test. That’s totally normal when something feels important.”\n	\N
 251	4. Child Talks Back\n\nInstead of:\n“Don’t talk to me like that!”\n\nTry:\n“I feel disrespected when you talk to me that way because it hurts my feelings. I would like us to speak kindly to each other.”\n	\N
-170	10. “You’re learning so much about sharing and taking turns, and it’s really showing.”\n\n•\tReinforces developing social skills.\n	\N
+67	How to Deliver Modeling Behavior to Parents\n\nLead by Example:\n\nParents must be aware that every action they take is being observed by their children. If you want your child to develop certain virtues, such as empathy, patience, or honesty, you need to demonstrate these qualities in your own actions.\n	\N
+536	🧑🏫 Tips for Effective Storytelling & Sharing\n\n•\tUse expressive voices and gestures to engage your child\n•\tEncourage active participation and imagination\n•\tBe patient and listen attentively\n•\tAdapt stories to your child’s age and interests\n•\tUse stories as opportunities to discuss values and feelings\n•\tMake storytelling a regular, relaxed routine\n\n	\N
 466	________________________________________\n🧠 What Is a Responsibility Journal?\n\nA personal notebook or digital journal where kids record their daily or weekly responsibilities, reflect on how they managed them, and set goals for improvement.\n________________________________________\n	\N
-382	________________________________________\n8. Parenting Goals Entry\n\n📝 “This week I want to focus on giving more choices instead of commands, especially during transitions.”\n•\tSets an intention for practicing specific parenting tools\n________________________________________\n	\N
+505	\n✅ 3. Sharing with Siblings\n\nGoal: Child shares toys without conflict.\n\nShaping Steps:\n1.\tShares for 30 seconds with support → praise\n2.\tShares without prompting for 1 minute → sticker or token\n3.\tInitiates sharing → verbal praise and social reward\n4.\tShares multiple times/day → bigger reward or praise\n\n	\N
 293	5. Talking About Brain Growth\n\n•\tExplain how practicing helps the brain make new connections.\n\n•\tUse phrases like “Your brain is getting stronger every time you try.”\n	\N
 341	________________________________________\n5. Breaking or Losing a Toy\n\nBehavior: Child throws, breaks, or loses their toy.\n\nNatural Consequence: The toy is gone. No replacement.\n\n→ They learn to value and care for belongings.\n________________________________________\n	\N
 348	📝 Bonus Tool: Quick Decision Guide for Parents\n\nSituation\tIs It Safe?\tNatural Consequence?\tShould Parent Intervene?\n\nForgot homework\t         ✅\tLower grade\t                ❌ Let it go\nRefuses food\t                 ✅\tGets hungry\t                ❌ Let them choose\nHits sibling\t                 ❌\tUnsafe\t                 ✅ Use logical consequence\nDoesn't clean room\t         ✅\tNo clean clothes\t ❌ Let them manage\n\n	\N
@@ -5909,16 +5803,15 @@ COPY public.components_coursecontent_texts (id, data, style) FROM stdin;
 468	________________________________________\n2. Goal Setting\n\nThis week I want to:\n•\tFinish reading my book\n•\tClean my room every day\n•\tPractice piano for 15 minutes\n\nSteps to reach my goal:\n•\tSet a timer for practice\n•\tPut clothes away before dinner\n________________________________________\n	\N
 471	________________________________________\n4. Responsibility and Feelings\n\nI felt proud when I…\n•\tHelped my little sister with her drawing.\n\nI felt frustrated when…\n•\tI couldn’t finish cleaning my room.\n\nHow did I handle it?\n\nI took a break and then finished it.\n________________________________________\n	\N
 477	________________________________________\n9. Time Management Reflection\n\nHow did I manage my time today?\nI did my homework before playing.\n\nWhat distracted me?\nI checked my phone too much.\n\nHow can I improve?\nTurn off my phone while working.\n________________________________________\n	\N
-505	________________________________________\n✅ 3. Sharing with Siblings\n\nGoal: Child shares toys without conflict.\n\nShaping Steps:\n1.\tShares for 30 seconds with support → praise\n2.\tShares without prompting for 1 minute → sticker or token\n3.\tInitiates sharing → verbal praise and social reward\n4.\tShares multiple times/day → bigger reward or praise\n________________________________________\n	\N
-536	🧑🏫 Tips for Effective Storytelling & Sharing\n\n•\tUse expressive voices and gestures to engage your child\n•\tEncourage active participation and imagination\n•\tBe patient and listen attentively\n•\tAdapt stories to your child’s age and interests\n•\tUse stories as opportunities to discuss values and feelings\n•\tMake storytelling a regular, relaxed routine\n\n	\N
+170	10. “You’re learning so much about sharing and taking turns, and it’s really showing.”\n\n•\tReinforces developing social skills.\n	\N
 460	________________________________________\n6. When Apologizing\n\n•\t“Thank you for saying sorry. How do you think we can avoid this problem in the future?”\n________________________________________\n	\N
 129	📚 Real-Life “Fix-It” Examples by Situation\n\n1. Hurtful Words to a Sibling\nSituation: Child yells “You’re stupid!” during a fight.\n\nFix-It:\n\n•\tApologize with eye contact\n•\tOffer to play their favorite game\n•\tSay something kind to build connection\n	\N
-68	Practice What You Preach:\n\nIf you tell your child to stay calm in a stressful situation, show them how to do it by staying calm yourself. If you encourage honesty, make sure you model truthful behavior, even in situations where it might be difficult.\n	\N
-161	🧰 Optional Calm Down Corner Add-Ons\n\n•\tDIY emotion thermometer\n•\tCalm-down checklist (e.g., “1. Breathe. 2. Squeeze ball. 3. Hug stuffy.”)\n•\tChoice board: “Do you want to draw or listen to music?”\n•\tDry-erase board for drawing out feelings\n	\N
+383	9. Child Milestone Log\n\n📝 “Today was the first time Zoey zipped her coat all by herself! She beamed with pride.”\n•\tRecords development and builds memories\n\n	\N
 117	Child Responsibility Exercises (Parents Can Assign or Encourage)\n\n5. “Responsibility Storytime”\n\nRead a story (real or fictional) where a character shows responsibility, then discuss:\n\n“What did they do well?”\n\n“What would you have done?”\n	\N
 99	Exercise 2: "Emotion Regulation Practice"\n\nGoal: Teach children to manage emotions when feeling stressed or frustrated.\n\nInstructions: Set aside time each day to practice deep breathing, mindfulness, or other calming exercises together. You could do a "5-breath exercise," where both of you inhale for 4 seconds, hold for 4, and exhale for 4 seconds. Discuss how it feels before and after.\n	\N
-53	Exercises for Parents to Practice Unconditional Love\n\nExercise 1: Daily Affirmations of Love\n\nEncourage parents to say one loving affirmation to their child every day. This could be something simple like:\n•\t“I love you just as you are.”\n•\t“You are so important to me.”\n•\t“I will always be here for you, no matter what.”\n•\t“I’m proud of you for trying your best today.”\n	\N
-159	🎯 Phrases Parents Can Say\n\n•\t“Would you like to visit your calm space?”\n•\t“It looks like you’re having a big feeling. Let’s go take a break together.”\n•\t“This is your safe place to feel what you need to feel.”\n•\t“When you’re ready, we’ll talk.”	\N
+161	🧰 Optional Calm Down Corner Add-Ons\n\n•\tDIY emotion thermometer\n•\tCalm-down checklist (e.g., “1. Breathe. 2. Squeeze ball. 3. Hug stuffy.”)\n•\tChoice board: “Do you want to draw or listen to music?”\n•\tDry-erase board for drawing out feelings\n	\N
+53	Exercise 1: Daily Affirmations of Love\n\nEncourage parents to say one loving affirmation to their child every day. This could be something simple like:\n•\t“I love you just as you are.”\n•\t“You are so important to me.”\n•\t“I will always be here for you, no matter what.”\n•\t“I’m proud of you for trying your best today.”\n	\N
+68	Practice What You Preach:\n\nIf you tell your child to stay calm in a stressful situation, show them how to do it by staying calm yourself. If you encourage honesty, make sure you model truthful behavior, even in situations where it might be difficult.\n	\N
 172	✅ Why Use Choice Giving?\n\n•\tEncourages independence\n•\tBuilds decision-making skills\n•\tReduces power struggles\n•\tPromotes responsibility and ownership\n•\tMakes kids feel respected and heard\n	\N
 173	📚 Real-Life Choice Giving Examples by Situation\n\n1. Getting Ready in the Morning\nInstead of:\n“Put on your shoes now!”\nTry:\n“Would you like to wear your red shoes or your blue shoes today?”\n“Do you want to brush your teeth before or after breakfast?”\n	\N
 179	8. Screen Time Limits\n\nInstead of:\n“Turn off the tablet now!”\nTry:\n“Do you want 10 more minutes or 5 more minutes of screen time?”\n“Would you like to watch your show or play a game before dinner?”	\N
@@ -5927,23 +5820,24 @@ COPY public.components_coursecontent_texts (id, data, style) FROM stdin;
 215	7. Child Is Excited About an Achievement\n\n“You look really proud of yourself for finishing that project. That’s wonderful!”\n	\N
 252	5. Child Hits Sibling\n\nInstead of:\n“You’re always mean to your brother!”\n\nTry:\n“I feel upset when I see hitting because it can hurt. I would like you to use gentle hands.”\n	\N
 425	________________________________________\n7. Child Is Nervous About a Presentation\n\n👩👦 Parent:\n“Feeling nervous is normal. What can we practice together to help you feel ready?”\n\nChild might say: “We can rehearse my speech or do some deep breathing.”\n________________________________________\n	\N
-383	________________________________________\n9. Child Milestone Log\n\n📝 “Today was the first time Zoey zipped her coat all by herself! She beamed with pride.”\n•\tRecords development and builds memories\n________________________________________\n	\N
+566	📚 More Examples of Time-Out\n________________________________________\n1. Calm Down Corner\n\n•\tA designated cozy spot with calming items (books, stuffed animals, sensory toys) where the child can sit quietly for a few minutes.\n________________________________________\n	\N
 295	7. Modeling Persistence\n\n•\t“I’m going to keep working on this until I get it.”\n\n•\tDemonstrate sticking with difficult tasks.\n	\N
 297	10. Reflecting on Your Own Growth\n\n•\tShare examples of how you improved skills over time.\n\n•\tTalk about the journey, not just the result.\n	\N
 343	________________________________________\n8. Waking Up Late\n\nBehavior: Child doesn’t get out of bed on time.\n\nNatural Consequence: They’re late for school or miss breakfast.\n\n→ Builds internal responsibility for morning routines.\n________________________________________\n	\N
-542	________________________________________\n4. “You’re so kind to your little sister and always help her out.”\n\n•\tNoticing empathy and helpfulness.\n________________________________________\n	\N
-506	________________________________________\n✅ 4. Sleeping in Own Bed\n\nGoal: Child sleeps independently through the night.\n\nShaping Steps:\n1.\tFalls asleep in own bed with parent sitting nearby → praise\n2.\tParent sits at door → reward\n3.\tParent leaves after story → sticker chart\n4.\tSleeps all night alone → prize after X days\n________________________________________\n	\N
-566	📚 More Examples of Time-Out\n________________________________________\n1. Calm Down Corner\n\n•\tA designated cozy spot with calming items (books, stuffed animals, sensory toys) where the child can sit quietly for a few minutes.\n________________________________________\n	\N
+506	\n✅ 4. Sleeping in Own Bed\n\nGoal: Child sleeps independently through the night.\n\nShaping Steps:\n1.\tFalls asleep in own bed with parent sitting nearby → praise\n2.\tParent sits at door → reward\n3.\tParent leaves after story → sticker chart\n4.\tSleeps all night alone → prize after X days\n\n	\N
 569	________________________________________\n5. No Distractions\n\n•\tDuring time-out, avoid talking, eye contact, or stimulation to help the child calm down.\n________________________________________\n	\N
+537	________________________________________\n🧠 What Is Strength Spotting?\n\nActively observing and acknowledging your child’s strengths, talents, and positive behaviors to encourage growth and self-esteem.\n________________________________________\n	\N
+159	🎯 Phrases Parents Can Say\n\n•\t“Would you like to visit your calm space?”\n•\t“It looks like you’re having a big feeling. Let’s go take a break together.”\n•\t“This is your safe place to feel what you need to feel.”\n•\t“When you’re ready, we’ll talk.”	\N
 461	________________________________________\n7. When a Child Feels Frustrated\n\n•\t“I noticed you got frustrated with that puzzle. What made it hard? What would help you next time?”\n________________________________________\n	\N
 130	2. Lying About Homework\n\nSituation: Child says they did homework but didn’t.\n\nFix-It:\n\n•\tOwn the lie\n•\tFinish the homework now\n•\tWrite or say how they’ll be honest next time\n	\N
 539	📚 Examples of Strength Spotting in Parenting\n________________________________________\n1. “You have such a great memory for details—I noticed how you remembered all those facts in your science project!”\n\n•\tSpotting a child’s strong memory skills.\n________________________________________\n	\N
-537	________________________________________\n🧠 What Is Strength Spotting?\n\nActively observing and acknowledging your child’s strengths, talents, and positive behaviors to encourage growth and self-esteem.\n________________________________________\n	\N
-69	Show Empathy and Respect:\n\nTreat others with kindness, especially in front of your child. If you treat your spouse, friends, or even strangers with respect, your child will learn to do the same.\n	\N
+542	________________________________________\n4. “You’re so kind to your little sister and always help her out.”\n\n•\tNoticing empathy and helpfulness.\n________________________________________\n	\N
 160	🧑🏫 Parent Tips for Using Calm Down Tools\n\n•\tIntroduce the corner when your child is calm, not during a meltdown\n•\tPractice using the tools together first\n•\tNever force it — it’s an invitation, not a punishment\n•\tReflect afterward: “What helped you feel better?”\n	\N
-100	Exercise 3: "Resilience Reflection"\n\nGoal: Help parents and children reflect on past challenges and how they overcame them.\n\nInstructions: At the end of each week, have a "resilience reflection" time where you and your child discuss one difficult situation from the week. Ask questions like: "What was hard about it?" "How did you feel?" "How did you overcome it?" "What can we do better next time?"\n	\N
 402	🧑🏫 Tips for Writing Your Own Parenting Vision Statement\n\n•\tReflect on your core values: What’s most important to you in parenting (e.g., kindness, independence, emotional well-being)?\n•\tConsider your child’s personality: How can your parenting approach best support your child’s individual needs?\n•\tKeep it broad but actionable: Your statement should cover the big picture but include specific behaviors or practices you’d like to see.\n•\tMake it positive and inspiring: Use language that motivates you and encourages the behavior you want to cultivate in both yourself and your child.\n•\tRevisit and revise: Your parenting vision will evolve as your child grows and as you gain more clarity on your goals.\n	\N
+387	\n🧠 What Is a Parenting Vision Statement?\n\nA Parenting Vision Statement is a clear, concise declaration of the kind of parent you aspire to be and the qualities you want to nurture in your children. It reflects your values, parenting style, and long-term objectives.\n\n	\N
+100	Exercise 3: "Resilience Reflection"\n\nGoal: Help parents and children reflect on past challenges and how they overcame them.\n\nInstructions: At the end of each week, have a "resilience reflection" time where you and your child discuss one difficult situation from the week. Ask questions like: "What was hard about it?" "How did you feel?" "How did you overcome it?" "What can we do better next time?"\n	\N
 136	🧒 Why This Works for Kids\n\n•\tTeaches empathy and problem-solving\n•\tBuilds internal responsibility, not fear of punishment\n•\tTurns mistakes into learning\n•\tStrengthens parent-child connection\n	\N
+540	________________________________________\n2. “You’re really good at calming down when things get frustrating.”\n\n•\tHighlighting emotional regulation.\n________________________________________\n	\N
 175	4. Cleaning Up Toys\n\nInstead of:\n“Clean your room right now!”\nTry:\n“Do you want to pick up your Legos first or your books?”\n“Would you like to clean up now or in 10 minutes?”\n	\N
 177	7. Getting Dressed\n\nInstead of:\n“Put on your jacket!”\nTry:\n“Would you like to wear your blue jacket or your green one today?”\n“Do you want to put on your jacket yourself or do you want me to help?”\n	\N
 181	🧑🏫 Parent Tips for Effective Choice Giving\n\n•\tOffer limited options (2-3 max) to avoid overwhelm\n•\tKeep choices within safe and reasonable limits\n•\tStay calm and neutral\n•\tRespect the child’s choice when possible\n•\tUse it to teach consequences and responsibility\n•\tAvoid using it to avoid saying “no” when necessary\n	\N
@@ -5951,19 +5845,19 @@ COPY public.components_coursecontent_texts (id, data, style) FROM stdin;
 217	9. Child Is Scared of the Dark\n\n“The dark can feel scary sometimes. I’m here to help you feel safe.”\n	\N
 253	6. Child Does Not Listen\n\nInstead of:\n“Why don’t you ever listen?”\n\nTry:\n“I feel ignored when I have to repeat myself because it makes things slower. I would like you to listen the first time I ask.”\n	\N
 464	________________________________________\n10. When Encouraging Forgiveness\n\n•\t“Holding onto anger is hard. How do you feel about trying to forgive and move forward?”\n________________________________________\n	\N
-387	\n🧠 What Is a Parenting Vision Statement?\n\nA Parenting Vision Statement is a clear, concise declaration of the kind of parent you aspire to be and the qualities you want to nurture in your children. It reflects your values, parenting style, and long-term objectives.\n\n	\N
+548	\n________________________________________\n10. “You’re great at listening and remembering what others say.”\n\n•\tNoticing attentive and listening skills.\n________________________________________\n	\N
+507	\n✅ 5. Managing Big Emotions (Tantrums)\n\nGoal: Child uses calm strategies instead of screaming.\n\nShaping Steps:\n1.\tUses words after being prompted → praise\n2.\tTries deep breathing with help → token\n3.\tInitiates calming strategy → high five or special time\n4.\tManages frustration independently → build confidence and reinforce\n\n	\N
 298	🧑🏫 Tips for Modeling Growth Mindset\n\n•\tBe authentic and consistent in your messages\n•\tUse everyday moments to demonstrate mindset\n•\tAvoid focusing only on natural talent or fixed traits\n•\tEncourage open discussions about effort and learning\n•\tShow patience and celebrate progress, not perfection\n	\N
 346	________________________________________\n7. Being Mean to a Friend\n\nBehavior: Child speaks rudely or excludes a friend.\n\nNatural Consequence: The friend may not want to play.\n\n→ Helps child understand social consequences.\n________________________________________\n	\N
+69	Show Empathy and Respect:\n\nTreat others with kindness, especially in front of your child. If you treat your spouse, friends, or even strangers with respect, your child will learn to do the same.\n	\N
 429	🧑🏫 Tips for Effective Problem-Solving Coaching\n\n•\tAsk open-ended questions (“What could you try?” “How would that work?”)\n•\tListen carefully without jumping in with solutions right away\n•\tValidate feelings first (“I see this is hard for you.”)\n•\tEncourage brainstorming — no idea is too small or silly\n•\tHelp your child weigh pros and cons\n•\tSupport their choice and offer help as needed\n•\tCelebrate their efforts and learning, regardless of outcome\n\n	\N
-507	________________________________________\n✅ 5. Managing Big Emotions (Tantrums)\n\nGoal: Child uses calm strategies instead of screaming.\n\nShaping Steps:\n1.\tUses words after being prompted → praise\n2.\tTries deep breathing with help → token\n3.\tInitiates calming strategy → high five or special time\n4.\tManages frustration independently → build confidence and reinforce\n________________________________________\n	\N
 426	________________________________________\n8. Child Has Trouble Going to Bed on Time\n\n👩👦 Parent:\n“Bedtime is hard for you. What can we change in the evening to help you get to bed easier?”\n\nChild might suggest: “Maybe we can read a story or turn off screens earlier.”\n________________________________________\n	\N
-548	\n________________________________________\n10. “You’re great at listening and remembering what others say.”\n\n•\tNoticing attentive and listening skills.\n________________________________________\n	\N
 132	4. Interrupting Repeatedly\n\nSituation: Constantly interrupts during a phone call.\n\nFix-It:\n\n•\tWrite a note of apology\n•\tWait respectfully during the next call as a practice round\n•\tPractice “wait and tap” or use a visual signal system\n	\N
-540	________________________________________\n2. “You’re really good at calming down when things get frustrating.”\n\n•\tHighlighting emotional regulation.\n________________________________________\n	\N
-70	Acknowledge Mistakes and Show Growth:\n\nModeling positive behavior isn’t about being perfect. When you make mistakes (and you will!), model how to take responsibility, apologize, and make amends. This teaches children the importance of accountability and personal growth.\n	\N
+388	\n✅ Why Create a Parenting Vision Statement?\n\n•\tProvides a clear sense of direction in your parenting journey\n•\tHelps you make decisions that align with your values\n•\tKeeps you focused on long-term goals, even in tough moments\n•\tServes as a source of motivation during stressful or challenging times\n•\tAllows you to be intentional with your parenting actions and words\n•\tHelps foster a strong family culture that reflects your core beliefs\n\n	\N
+391	4. Creating a Growth-Oriented Environment\n\n“I aim to raise children who are not afraid of failure, but instead, see it as an opportunity to learn and grow. I will nurture a growth mindset by praising effort over results, modeling perseverance, and encouraging curiosity and exploration in all things.”\n\n	\N
 101		\N
 176	3. Bedtime Routine\n\nInstead of:\n“Go to bed now!”\nTry:\n“Do you want to read a story or listen to a song before bed?”\n“Would you like to wear your pajamas or your comfy hoodie to sleep?”\n	\N
-388	\n✅ Why Create a Parenting Vision Statement?\n\n•\tProvides a clear sense of direction in your parenting journey\n•\tHelps you make decisions that align with your values\n•\tKeeps you focused on long-term goals, even in tough moments\n•\tServes as a source of motivation during stressful or challenging times\n•\tAllows you to be intentional with your parenting actions and words\n•\tHelps foster a strong family culture that reflects your core beliefs\n\n	\N
+70	Acknowledge Mistakes and Show Growth:\n\nModeling positive behavior isn’t about being perfect. When you make mistakes (and you will!), model how to take responsibility, apologize, and make amends. This teaches children the importance of accountability and personal growth.\n	\N
 178	6. Resolving Conflicts\n\nInstead of:\n“Stop fighting with your sibling!”\nTry:\n“Would you like to take turns choosing the game or find a new game to play together?”\n“Do you want to take a break or talk about what’s bothering you?”\n	\N
 213	5. Child Is Frustrated Learning Something New\n\n“Learning something new can be really hard. I’m proud of you for trying even when it’s tough.”\n	\N
 218	10. Child Is Disappointed After Cancelled Plans\n\n“You were really looking forward to that, and it’s disappointing when plans change.”\n	\N
@@ -5976,26 +5870,26 @@ COPY public.components_coursecontent_texts (id, data, style) FROM stdin;
 428	________________________________________\n10. Child Feels Left Out by Friends\n\n👩👦 Parent:\n“Feeling left out hurts. What can you do to feel better or connect with others?”\n\nChild might suggest: “I can invite someone to play or talk to a new classmate.”\n________________________________________\n	\N
 469	📚 Examples of Responsibility Journal Entries and Prompts\n________________________________________\n1. Daily Task Tracker\n\nToday I completed:\n•\tMade my bed\n•\tDid homework\n•\tHelped set the table\n\nWhat was easy today?\nWhat was hard?\nWhat can I do better tomorrow?\n________________________________________\n	\N
 470	________________________________________\n3. Reflection on Mistakes\n\nToday I forgot to bring my homework.\n\nWhat happened?\n\nI was rushing and didn’t pack my bag the night before.\n\nWhat can I do next time?\n\nI will pack my bag before bedtime.\n________________________________________\n	\N
-391	4. Creating a Growth-Oriented Environment\n\n“I aim to raise children who are not afraid of failure, but instead, see it as an opportunity to learn and grow. I will nurture a growth mindset by praising effort over results, modeling perseverance, and encouraging curiosity and exploration in all things.”\n\n	\N
+568	________________________________________\n3. Pause and Breathe\n\n•\tGuide the child to sit quietly and take deep breaths for 5 counts during time-out.\n________________________________________\n	\N
 301	📚 Real-Life Examples of Modeling Accountability\n________________________________________\n1. Admitting a Mistake\n\n•\t“I was wrong to raise my voice earlier. I was frustrated, but I should have stayed calm. I’m sorry.”\n\n•\tShows honesty and ownership of emotions.\n________________________________________\n	\N
 310	________________________________________\n10. Being Consistent With Consequences\n\n•\t“I told you that if screen time rules weren’t followed, we’d take a break from the tablet. That’s still true today.”\n\n•\tModels fairness and integrity in setting boundaries.\n________________________________________\n	\N
+541	________________________________________\n3. “I love how creative you are when you draw or build things.”\n\n•\tRecognizing artistic talents and imagination.\n________________________________________\n	\N
 349	________________________________________\n🧠 What Are Open-Ended Questions?\n\nQuestions that cannot be answered with a simple “yes” or “no,” but require explanation, reflection, or creativity.\n________________________________________\n	\N
 350	________________________________________\n✅ Why Use Open-Ended Questions?\n\n•\tEncourage kids to think critically\n•\tHelp kids share feelings and ideas\n•\tFoster independence and problem-solving\n•\tBuild trust and connection\n________________________________________\n	\N
 475	________________________________________\n10. Learning From Others\n\nI learned from my friend how to…\nShare my toys nicely.\n\nI will try it next time.\n________________________________________\n	\N
-508	________________________________________\n✅ 6. Eating New Foods\n\nGoal: Child tries a wider range of healthy foods.\n\nShaping Steps:\n1.\tTouches or smells new food → smile, praise\n2.\tLicks or takes tiny bite → sticker\n3.\tEats small portion → verbal praise\n4.\tTries new food regularly → point system toward reward\n________________________________________\n	\N
-568	________________________________________\n3. Pause and Breathe\n\n•\tGuide the child to sit quietly and take deep breaths for 5 counts during time-out.\n________________________________________\n	\N
+508	\n✅ 6. Eating New Foods\n\nGoal: Child tries a wider range of healthy foods.\n\nShaping Steps:\n1.\tTouches or smells new food → smile, praise\n2.\tLicks or takes tiny bite → sticker\n3.\tEats small portion → verbal praise\n4.\tTries new food regularly → point system toward reward\n\n	\N
 133	6. Pushing or Physical Aggression\n\nSituation: Pushes classmate in line or during a game.\n\nFix-It:\n\n•\tApologize\n•\tOffer a kind gesture or help (e.g. carry their bag)\n•\tTake a break and rejoin when ready to be gentle\n	\N
-541	________________________________________\n3. “I love how creative you are when you draw or build things.”\n\n•\tRecognizing artistic talents and imagination.\n________________________________________\n	\N
 71	Encourage Reflection:\n\nTeach your child to reflect on their own behavior by reflecting on your own actions first. For example, after a stressful event, ask yourself and your child, “How did I handle that? Could I have done better?” Modeling self-reflection helps children build critical thinking skills and self-awareness.\n	\N
 180	5. Homework Time\n\nInstead of:\n“Do your homework!”\nTry:\n“Do you want to start with math or reading homework?”\n“Would you like to work at the table or in your room?”\n	\N
 214	6. Child Is Shy or Quiet\n\n“I notice you’re feeling a little shy. It’s okay to take your time to open up.”\n	\N
 216	8. Teen Feels Overwhelmed With School\n\n“It sounds like school is feeling really stressful for you right now. I’m here if you want to talk about it.”\n	\N
-397	9. Teaching the Value of Hard Work and Persistence\n\n“I want to raise children who understand the value of hard work, patience, and persistence. I will teach them that success is built on effort and that challenges are simply opportunities to grow. We will celebrate both the wins and the struggles, knowing that perseverance is the key to achievement.”\n	\N
+509	\n✅ 7. Tidying Up Toys\n\nGoal: Child cleans up their own play space daily.\n\nShaping Steps:\n1.\tPuts one toy away with help → praise\n2.\tCleans 3 items alone → sticker\n3.\tTidies full area → token system\n4.\tCleans without prompting → weekend privilege\n\n	\N
 134	5. Not Helping with a Team Task\n\nSituation: Refuses to help clean up after a family meal.\n\nFix-It:\n\n•\tDo the task later (dishes, wiping table)\n•\tTake the lead on the next clean-up\n•\tSay “thanks” to others who did extra work\n	\N
 372	🔧 Bonus: Ownership Language Starters for Parents\n\n•\t“That’s something you can handle.”\n•\t“You’re in charge of...”\n•\t“As soon as you…”\n•\t“You’re welcome to…”\n•\t“Let me know when…”\n•\t“You choose when it happens.”\n•\t“What’s your plan?”\n•\t“How do you want to solve that?”\n	\N
+389	📚 Examples of Parenting Vision Statements\n\n1. Nurturing Emotional Intelligence\n\n“I strive to raise children who are emotionally aware, kind, and resilient. I want them to feel safe expressing their emotions and to have the tools to manage their feelings in healthy ways. I will model empathy, self-regulation, and emotional resilience in my own behavior.”\n	\N
+397	9. Teaching the Value of Hard Work and Persistence\n\n“I want to raise children who understand the value of hard work, patience, and persistence. I will teach them that success is built on effort and that challenges are simply opportunities to grow. We will celebrate both the wins and the struggles, knowing that perseverance is the key to achievement.”\n	\N
 303	________________________________________\n2. Following Through on Promises\n\n•\t“I said we’d go to the park today. I know it’s late, but let’s go for a short walk like I promised.”\n\n•\tModels commitment and reliability.\n________________________________________\n	\N
 309	________________________________________\n9. Inviting Feedback\n\n•\t“I want to be a better listener. Is there anything I can do differently when you’re talking to me?”\n\n•\tEncourages reflection and shows that adults are always learning, too.\n________________________________________\n	\N
-389	📚 Examples of Parenting Vision Statements\n\n1. Nurturing Emotional Intelligence\n\n“I strive to raise children who are emotionally aware, kind, and resilient. I want them to feel safe expressing their emotions and to have the tools to manage their feelings in healthy ways. I will model empathy, self-regulation, and emotional resilience in my own behavior.”\n	\N
 351	📚 Real-Life Open-Ended Questions Examples by Situation\n________________________________________\n1. After School Check-In\n\nInstead of:\n“Did you have a good day?”\n\nTry:\n“What was the best part of your day today?”\n\n“What did you learn that surprised you?”\n\n“Who did you play with and what did you do?”\n________________________________________\n	\N
 362	________________________________________\n✅ Key Phrases That Use Ownership Language:\n\n•\t"It's your choice..."\n•\t"You’re welcome to..."\n•\t"As soon as you..."\n•\t"Feel free to..."\n•\t"Let me know when you're ready..."\n•\t"You decide..."\n•\t"That’s something you can fix."\n•\t"What’s your plan for...?"\n________________________________________\n	\N
 368	________________________________________\n🛏️ Bedtime Battles\n\n🗣️ Instead of:\n"If you don’t brush your teeth, no story!"\n\n✅ Say:\n"Storytime happens after teeth are brushed — up to you."\n\nOR\n"You choose — teeth now and we read, or skip story and sleep soon."\n________________________________________\n	\N
@@ -6005,7 +5899,7 @@ COPY public.components_coursecontent_texts (id, data, style) FROM stdin;
 476	________________________________________\n8. Problem-Solving with Responsibility\n\nToday I faced a problem:\nI lost my library book.\n\nWhat did I do?\nI told my teacher and looked for it at home.\n\nWhat can I do next time?\nKeep my books in the same place.\n________________________________________\n	\N
 434	________________________________________\n4. From Screaming Indoors to an Outlet\n\n•\t🚫 Child is yelling loudly indoors\n\n•\t✅ “Sounds like your voice wants to be big. Let’s go outside and use our loud voices there!”\n________________________________________\n	\N
 437	________________________________________\n7. From Boredom to a New Task\n\n•\t🚫 Child fidgets or acts out during quiet time\n\n•\t✅ “It looks like you need something to do. Want to help me stir the batter for cookies?”\n________________________________________\n	\N
-509	________________________________________\n✅ 7. Tidying Up Toys\n\nGoal: Child cleans up their own play space daily.\n\nShaping Steps:\n1.\tPuts one toy away with help → praise\n2.\tCleans 3 items alone → sticker\n3.\tTidies full area → token system\n4.\tCleans without prompting → weekend privilege\n________________________________________\n	\N
+390	\n2. Raising Independent, Responsible Kids\n\n“I am committed to raising independent children who take responsibility for their actions and choices. I will encourage them to problem-solve, face challenges, and learn from mistakes. My goal is to foster confidence, responsibility, and a strong work ethic.”\n\n	\N
 183	✅ Why Use Daily Check-Ins?\n\n•\tKeeps communication channels open\n•\tHelps parents spot issues early (stress, worries, conflicts)\n•\tEncourages kids to express emotions\n•\tBuilds emotional intelligence\n•\tStrengthens parent-child relationships\n	\N
 184	📚 Examples of Daily Check-In Questions and Prompts\n\n________________________________________\n1. Simple Feelings Check\n“How are you feeling today?”\n“What made you happy or upset today?”\n________________________________________\n	\N
 190	9. Fun and Creativity\n\n“What’s something fun or creative you did today?”\n\n“Did you learn or try something new?”\n	\N
@@ -6014,121 +5908,115 @@ COPY public.components_coursecontent_texts (id, data, style) FROM stdin;
 354	________________________________________\n4. Sibling Conflict\n\nInstead of:\n“Did you hit your brother?”\n\nTry:\n“What was going on before the fight?”\n\n“How do you think your brother felt when that happened?”\n\n“What could you do differently next time?”\n________________________________________\n	\N
 359	🎯 Examples of Open-Ended Question Starters\n\n•\t“What do you think about…?”\n•\t“How did you feel when…?”\n•\t“Why do you think…?”\n•\t“What would happen if…?”\n•\t“Can you tell me more about…?”\n•\t“What are some ways you could…?”\n•\t“How did you decide to…?”\n	\N
 304	________________________________________\n4. Being on Time (or Acknowledging When You’re Not)\n\n•\t“We’re late, and that’s on me. I didn’t plan enough time. Next time I’ll set a timer.”\n\n•\tModels time awareness and problem-solving.\n________________________________________\n	\N
-390	\n2. Raising Independent, Responsible Kids\n\n“I am committed to raising independent children who take responsibility for their actions and choices. I will encourage them to problem-solve, face challenges, and learn from mistakes. My goal is to foster confidence, responsibility, and a strong work ethic.”\n\n	\N
 403	📝 Parenting Vision Statement Template\n\nOur Parenting Vision Statement\n\n"As parents, we are committed to raising [adjective] children who [positive values/goals]. We believe in [core values or practices] and will create a home that [desired outcomes for your family]. We will model [key actions or behaviors] and consistently encourage [desired child behaviors]."\n\n	\N
+72	Modeling Patience: Children tend to mirror how we handle impatience. Practice slowing down and showing patience in both big and small moments, so your child knows that it’s okay to be patient and thoughtful.	\N
 352	________________________________________\n2. When Child is Upset\n\nInstead of:\n“Are you okay?”\n\nTry:\n\n“Can you tell me what’s making you feel this way?”\n\n“What happened that made you upset?”\n\n“How can I help you feel better?”\n________________________________________\n	\N
 259	📚 12+ Real-Life Logical Consequence Examples\n________________________________________\n1. Throwing Toys Indoors\nBehavior: Child throws a toy inside the house.\nLogical Consequence: That toy is put away for the rest of the day.\n→ Teaches: Toys are for playing safely, not throwing.\n________________________________________\n	\N
-570	📚 More Examples of Time-In\n________________________________________\n1. Sit Together\n\n•\tSit beside your child quietly, maybe with a hand on their back or holding their hand to show support.\n________________________________________\n	\N
+29	Encourage Expression: Create an environment where your child feels comfortable sharing their thoughts. Let them know that all feelings and ideas are valid, no matter how big or small.	\N
 438	________________________________________\n8. From Scribbling on the Wall to Paper\n\n•\t🚫 Child draws on the wall\n\n•\t✅ “Oops! Crayons are for paper. Let’s get some big paper and make a wall poster together.”\n________________________________________\n	\N
 441	🧑🏫 Tips for Successful Redirection\n\n•\tStay calm and positive—use a light tone if possible\n•\tMatch the redirection to your child’s current interest or need (energy, attention, emotion)\n•\tOffer choices whenever possible to give your child a sense of control\n•\tUse redirection early—before behavior escalates\n•\tReinforce the desired behavior afterward with praise or attention\n\n	\N
 473	________________________________________\n6. Reward Tracking\n\nI earned a star for:\n•\tPutting away my toys without being asked.\n\nAfter 5 stars, I get:\n•\tExtra screen time.\n________________________________________\n	\N
-510	________________________________________\n📌 Tips for Effective Shaping\n\n•\tBe specific with your praise: “You put your shoes on all by yourself! Great job!”\n•\tStart small — don’t expect full behavior too soon\n•\tUse visual trackers (charts, tokens, stickers) for motivation\n•\tChoose natural or meaningful rewards (extra book, screen time, family game)\n•\tStay consistent, but flexible with pacing\n________________________________________\n\n	\N
+570	📚 More Examples of Time-In\n________________________________________\n1. Sit Together\n\n•\tSit beside your child quietly, maybe with a hand on their back or holding their hand to show support.\n________________________________________\n	\N
 584	________________________________________\n7. Ritual Touch\n\n•\tCreate a special “goodnight hug” or “morning cuddle” ritual.\n\n•\tUse touch to mark transitions like bedtime or leaving for school.\n________________________________________\n	\N
 431	📚 Examples of Redirection in Parenting\n________________________________________\n1. From Hitting to Expressing\n\n•\t🚫 Child hits in frustration\n\n•\t✅ “Hands are for helping. Let’s use your words and tell me what’s wrong.”\n________________________________________\n	\N
-29	Encourage Expression: Create an environment where your child feels comfortable sharing their thoughts. Let them know that all feelings and ideas are valid, no matter how big or small.	\N
-501	✅ Pro Tips for Parents:\n\n•\tInvolve kids in making the chart\n•\tLet them check off or move each item\n•\tCelebrate completing routines with simple praise or a sticker\n•\tStay flexible — it’s a support tool, not a rule book\n\n	\N
 543	________________________________________\n5. “You have a great sense of humor—it’s fun to hear your jokes!”\n\n•\tSpotting social and communication strengths.\n________________________________________\n	\N
-72	Modeling Patience: Children tend to mirror how we handle impatience. Practice slowing down and showing patience in both big and small moments, so your child knows that it’s okay to be patient and thoughtful.	\N
+510	\n📌 Tips for Effective Shaping\n\n•\tBe specific with your praise: “You put your shoes on all by yourself! Great job!”\n•\tStart small — don’t expect full behavior too soon\n•\tUse visual trackers (charts, tokens, stickers) for motivation\n•\tChoose natural or meaningful rewards (extra book, screen time, family game)\n•\tStay consistent, but flexible with pacing\n\n\n	\N
+501	✅ Pro Tips for Parents:\n\n•\tInvolve kids in making the chart\n•\tLet them check off or move each item\n•\tCelebrate completing routines with simple praise or a sticker\n•\tStay flexible — it’s a support tool, not a rule book\n\n	\N
+392	5. Instilling Strong Values of Kindness and Respect\n\n“My parenting vision is to raise children who are compassionate, kind, and respectful toward others. I will teach them the importance of empathy, understanding, and being of service to others. We will create a home where kindness is celebrated, and all members treat each other with dignity and care.”\n\n	\N
+585	________________________________________\n5. Affectionate Gestures\n\n•\tGive kisses on the forehead or cheek regularly.\n\n•\tOffer a high-five or fist bump to celebrate accomplishments.\n________________________________________\n	\N
+587	________________________________________\n🧑🏫 Tips for Using Touch & Affection Mindfully\n\n•\tRespect your child’s comfort and personal boundaries\n•\tBe consistent but natural with physical affection\n•\tUse touch to enhance verbal reassurance and empathy\n•\tNotice your child’s response and adjust accordingly\n•\tCombine with eye contact and warm tone for maximum effect\n•\tEncourage older kids to express their preferences around touch\n________________________________________\n	\N
 185	2. Highlight and Lowlight\n\n“What was the best part of your day?”\n“Was there anything hard or frustrating?”\n	\N
 194	🧑🏫 Tips for Effective Daily Check-Ins\n\n•\tKeep it brief but consistent (2–5 minutes daily)\n•\tUse open-ended questions to invite sharing\n•\tListen actively without interrupting or judging\n•\tBe patient if your child doesn’t want to talk right away\n•\tUse a calm, warm tone\n•\tAdapt questions based on child’s age and mood\n•\tUse non-verbal cues like hugs or eye contact to show support\n	\N
 224	4. Chore Sharing\n\n•\t🧹 “Let’s rotate chores this week. Who wants to switch jobs?”\n\n•\tBuilds responsibility and teamwork.\n	\N
 260	2. Not Following Screen Time Rules\n\nBehavior: Child keeps using the tablet after timer ends.\n\nLogical Consequence: Loses screen time privilege the next day.\n\n→ Teaches: Limits matter, and choices affect privileges.\n	\N
 305	________________________________________\n5. Making Repairs After Conflict\n\n•\t“I snapped at you earlier, and I can see it hurt your feelings. I’m sorry. Let’s talk about what we both needed in that moment.”\n\n•\tShows emotional responsibility and encourages mutual respect.\n________________________________________\n	\N
 311	🧑🏫 Tips for Modeling Accountability\n\n•\tBe honest, not self-critical—focus on growth\n•\tAvoid blaming others or making excuses\n•\tUse age-appropriate language\n•\tCelebrate when your child shows accountability too\n•\tNormalize making and fixing mistakes\n•\tModel forgiveness—of yourself and your child\n	\N
-392	5. Instilling Strong Values of Kindness and Respect\n\n“My parenting vision is to raise children who are compassionate, kind, and respectful toward others. I will teach them the importance of empathy, understanding, and being of service to others. We will create a home where kindness is celebrated, and all members treat each other with dignity and care.”\n\n	\N
+571	________________________________________\n4. Timer Use\n\n•\tUse a visual timer or sand timer to help the child know when time-out ends.\n________________________________________\n	\N
 353	________________________________________\n6. When Child Is Excited\n\nInstead of:\n“Was that fun?”\n\nTry:\n“What was your favorite part of that activity?”\n\n“What made you feel proud about what you did?”\n\n“What do you want to do next time?”\n________________________________________\n	\N
 358	🧑🏫 Tips for Parents Using Open-Ended Questions\n\n•\tAsk questions with genuine curiosity\n•\tGive your child time to think and respond\n•\tAvoid rapid-fire questioning—space them out\n•\tFollow up on answers to show you’re listening\n•\tUse a calm and supportive tone\n	\N
-585	________________________________________\n5. Affectionate Gestures\n\n•\tGive kisses on the forehead or cheek regularly.\n\n•\tOffer a high-five or fist bump to celebrate accomplishments.\n________________________________________\n	\N
-474	________________________________________\n7. Family Help Log\n\nToday I helped with:\n•\tWashing the dishes\n•\tTaking out the trash\n\nI felt good because:\nI made things easier for my family.\n________________________________________\n	\N
-511	________________________________________\n🧠 What Is Special Time?\n\nIntentional, one-on-one time where a parent follows the child’s lead, listens, plays, or talks—without distractions or agendas.\n________________________________________\n	\N
-513	📚 Examples of Special Time Activities\n________________________________________\n1. Child-Led Play\n\n•\tLet the child choose the game or activity (e.g., building blocks, drawing, playing with cars).\n\n•\tParent follows the child’s lead, engaging fully without interrupting.\n________________________________________\n	\N
-571	________________________________________\n4. Timer Use\n\n•\tUse a visual timer or sand timer to help the child know when time-out ends.\n________________________________________\n	\N
 575	________________________________________\n5. Problem-Solving Chat\n\n•\tOnce calm, help your child talk about what happened and what they can do differently next time.\n________________________________________\n	\N
-587	________________________________________\n🧑🏫 Tips for Using Touch & Affection Mindfully\n\n•\tRespect your child’s comfort and personal boundaries\n•\tBe consistent but natural with physical affection\n•\tUse touch to enhance verbal reassurance and empathy\n•\tNotice your child’s response and adjust accordingly\n•\tCombine with eye contact and warm tone for maximum effect\n•\tEncourage older kids to express their preferences around touch\n________________________________________\n	\N
-433	________________________________________\n3. From Climbing Furniture to a Safe Space\n\n•\t🚫 Child climbs on the table\n\n•\t✅ “Whoa! Let’s use the step stool or go outside and climb the play structure.”\n________________________________________\n	\N
-524	________________________________________\n🧠 What Is Storytelling & Sharing?\n\nUsing stories—real or imagined—to teach, connect, and explore feelings, values, and experiences together.\n________________________________________\n	\N
+474	________________________________________\n7. Family Help Log\n\nToday I helped with:\n•\tWashing the dishes\n•\tTaking out the trash\n\nI felt good because:\nI made things easier for my family.\n________________________________________\n	\N
 544	________________________________________\n6. “I’m impressed with how organized you kept your school materials.”\n\n•\tAcknowledging organizational skills.\n________________________________________\n	\N
+524	________________________________________\n🧠 What Is Storytelling & Sharing?\n\nUsing stories—real or imagined—to teach, connect, and explore feelings, values, and experiences together.\n________________________________________\n	\N
+513	📚 Examples of Special Time Activities\n________________________________________\n1. Child-Led Play\n\n•\tLet the child choose the game or activity (e.g., building blocks, drawing, playing with cars).\n\n•\tParent follows the child’s lead, engaging fully without interrupting.\n________________________________________\n	\N
+511	________________________________________\n🧠 What Is Special Time?\n\nIntentional, one-on-one time where a parent follows the child’s lead, listens, plays, or talks—without distractions or agendas.\n________________________________________\n	\N
+433	________________________________________\n3. From Climbing Furniture to a Safe Space\n\n•\t🚫 Child climbs on the table\n\n•\t✅ “Whoa! Let’s use the step stool or go outside and climb the play structure.”\n________________________________________\n	\N
+54	Exercise 2: Active Listening Practice\n\nGoal: Practice listening without interrupting or giving advice immediately.\n\nInstructions: Once a day, sit with your child (at a designated time like after school or before bedtime) and let them talk freely about their day, feelings, or anything on their mind. The parent’s only job is to listen and validate, without giving solutions unless asked.\n	\N
 268	10. Running in a Store\n\nBehavior: Child keeps running away in a public space.\n\nLogical Consequence: Shopping trip ends early or child rides in cart/stays with parent.\n\n→ Teaches: Safety rules are serious.\n	\N
 272	📌 Natural vs. Logical Consequences (Quick Compare)\n\nSituation\tNatural Consequence\tLogical Consequence\nDoesn’t eat dinner\tGets hungry\tNo snack later\nDoesn’t do chores\tRoom stays messy\tNo weekend screen time\nLeaves toy outside\tIt might get lost\tCan’t use toy next day\nBreaks sibling’s toy\tSibling is upset\tMust give up own toy or replace it\n	\N
 137	7. Making a Mess\n\nSituation: Paints or eats and leaves a mess behind.\n\nFix-It:\n\n•\tHelp clean it up with parent\n•\tLearn how to prevent next time (use napkins, tray, etc.)\n•\tPrepare own materials or snacks next time\n	\N
-54	Exercise 2: Active Listening Practice\n\nGoal: Practice listening without interrupting or giving advice immediately.\n\nInstructions: Once a day, sit with your child (at a designated time like after school or before bedtime) and let them talk freely about their day, feelings, or anything on their mind. The parent’s only job is to listen and validate, without giving solutions unless asked.\n	\N
+394	6. Encouraging Healthy Communication and Conflict Resolution\n\n“I will teach my children how to communicate effectively, both in expressing their needs and listening to others. I want them to feel confident in resolving conflicts respectfully and finding peaceful solutions to disagreements. Our home will be one where we talk through challenges with honesty, patience, and understanding.”\n\n	\N
 187	3. Energy and Mood Check\n\n“Do you feel tired or energized right now?”\n“What can I do to help you feel better if you’re tired?”	\N
 227	3. Solving Family Problems\n\n•\t🧠 “We’ve been arguing about screen time. What’s a solution everyone can agree on?”\n\n•\tPractice compromise and active listening.\n\n	\N
-77	Exercise 3: Reflective Practice\n\n\nGoal: After a challenging interaction or event, reflect on your actions and how you could model better behavior.\n\nInstructions: After each day, spend 5 minutes reflecting on one situation where you could have modeled better behavior. Write down what you would do differently next time and commit to practicing that behavior.\n	\N
-515	________________________________________\n3. Nature Walk\n\n•\tTake a walk outside and let the child explore, ask questions, and share observations.\n\n•\tTalk about the sights, sounds, and feelings experienced.\n________________________________________\n	\N
-520	________________________________________\n8. Talking Circle\n\n•\tSit quietly and let your child share anything on their mind.\n\n•\tPractice active listening and empathy.\n________________________________________\n	\N
-306	________________________________________\n6. Owning Up to Overreacting\n\n•\t“I overreacted when I saw your messy room. I should’ve asked calmly instead of yelling. Let’s clean it together.”\n\n•\tTeaches how to take accountability for reactions, not just actions.\n________________________________________\n	\N
-394	6. Encouraging Healthy Communication and Conflict Resolution\n\n“I will teach my children how to communicate effectively, both in expressing their needs and listening to others. I want them to feel confident in resolving conflicts respectfully and finding peaceful solutions to disagreements. Our home will be one where we talk through challenges with honesty, patience, and understanding.”\n\n	\N
 400	12. Creating a Home Full of Love, Laughter, and Fun\n\n“Above all, I want to create a home where love, laughter, and fun are at the heart of everything we do. I want my children to look back on their childhoods with joy, knowing that they were supported, cherished, and encouraged to embrace life with enthusiasm.”\n\n	\N
+306	________________________________________\n6. Owning Up to Overreacting\n\n•\t“I overreacted when I saw your messy room. I should’ve asked calmly instead of yelling. Let’s clean it together.”\n\n•\tTeaches how to take accountability for reactions, not just actions.\n________________________________________\n	\N
+577	________________________________________\n🧠 What Is Touch & Affection?\n\nUsing gentle, loving physical contact—like hugs, pats, cuddles, or hand-holding—to express care, comfort, and emotional support.\n________________________________________\n	\N
+594	\n2. Back Talk or Disrespectful Tone\n\n•\t🧠 Trigger: “She rolled her eyes and said, ‘Whatever.’”\n•\t💥 Response: Took it personally and snapped.\n•\t💡 Reframe: “She’s testing boundaries, not rejecting me. I’ll calmly hold the boundary without matching her energy.”\n\n	\N
 355	________________________________________\n5. Homework and Schoolwork\n\nInstead of:\n“Did you finish your homework?”\n\nTry:\n“What homework do you have to do today?”\n\n“What part of your homework do you find most challenging?”\n\n“How do you plan to tackle your assignments?”\n________________________________________\n	\N
-523	🧑🏫 Tips for Successful Special Time\n\n•\tCommit to regular sessions (even 10-15 minutes daily or weekly)\n•\tTurn off phones and other distractions\n•\tLet the child choose the activity and pace\n•\tFollow their lead without correcting or directing\n•\tUse positive attention—smiles, eye contact, and encouragement\n•\tBe fully present and engaged\n	\N
 261	3. Yelling at Sibling\n\nBehavior: Child screams or is aggressive toward their sibling.\n\nLogical Consequence: They take a break from playtime until they’re calm.\n\n→ Teaches: We need to be respectful to participate in group activities\n	\N
 478	________________________________________\n🧑🏫 Tips for Using Responsibility Journals\n\n•\tMake journaling a daily or weekly habit (5–10 minutes)\n•\tKeep entries simple and age-appropriate\n•\tUse stickers, drawings, or colors to make it fun\n•\tReview the journal together occasionally for encouragement\n•\tEncourage honesty — it’s about learning, not perfection\n•\tCombine with goal setting and rewards to motivate\n________________________________________\n\n	\N
-574	________________________________________\n4. Sensory Support\n\n•\tOffer calming tools like a weighted blanket, stress ball, or soft music while staying close.\n________________________________________\n	\N
-577	________________________________________\n🧠 What Is Touch & Affection?\n\nUsing gentle, loving physical contact—like hugs, pats, cuddles, or hand-holding—to express care, comfort, and emotional support.\n________________________________________\n	\N
-594	________________________________________\n2. Back Talk or Disrespectful Tone\n\n•\t🧠 Trigger: “She rolled her eyes and said, ‘Whatever.’”\n•\t💥 Response: Took it personally and snapped.\n•\t💡 Reframe: “She’s testing boundaries, not rejecting me. I’ll calmly hold the boundary without matching her energy.”\n________________________________________\n	\N
-432	________________________________________\n2. From Throwing Toys to a Target Game\n\n•\t🚫 Child throws toys across the room\n\n•\t✅ “It looks like you want to throw something! Let’s play a beanbag toss instead.”\n________________________________________\n	\N
-264	7. Skipping Chores\n\nBehavior: Child skips assigned household tasks.\n\nLogical Consequence: They don’t earn allowance or weekend privilege.\n\n→ Teaches: Contributions earn rewards; skipping earns nothing.\n	\N
-545	________________________________________\n8. “You are very good at solving problems and thinking things through.”\n\n•\tRecognizing critical thinking skills.\n________________________________________\n	\N
 586	________________________________________\n8. Encouraging Touch\n\n•\tPat on the back or shoulder to encourage effort or bravery.\n\n•\tHold their hand during new or challenging experiences.\n________________________________________\n	\N
+574	________________________________________\n4. Sensory Support\n\n•\tOffer calming tools like a weighted blanket, stress ball, or soft music while staying close.\n________________________________________\n	\N
+545	________________________________________\n8. “You are very good at solving problems and thinking things through.”\n\n•\tRecognizing critical thinking skills.\n________________________________________\n	\N
+432	________________________________________\n2. From Throwing Toys to a Target Game\n\n•\t🚫 Child throws toys across the room\n\n•\t✅ “It looks like you want to throw something! Let’s play a beanbag toss instead.”\n________________________________________\n	\N
+520	________________________________________\n8. Talking Circle\n\n•\tSit quietly and let your child share anything on their mind.\n\n•\tPractice active listening and empathy.\n________________________________________\n	\N
+264	7. Skipping Chores\n\nBehavior: Child skips assigned household tasks.\n\nLogical Consequence: They don’t earn allowance or weekend privilege.\n\n→ Teaches: Contributions earn rewards; skipping earns nothing.\n	\N
+523	🧑🏫 Tips for Successful Special Time\n\n•\tCommit to regular sessions (even 10-15 minutes daily or weekly)\n•\tTurn off phones and other distractions\n•\tLet the child choose the activity and pace\n•\tFollow their lead without correcting or directing\n•\tUse positive attention—smiles, eye contact, and encouragement\n•\tBe fully present and engaged\n	\N
 270	12. Ignoring Bedtime\n\nBehavior: Refuses to settle at night or delays excessively.\n\nLogical Consequence: Loses bedtime story or wind-down privilege.\n\n→ Teaches: Delays take away fun parts of routine.\n	\N
-635	🛠️ 3. Give Tools for Emotion Coaching\n\nTeach parents to name emotions, validate them, and guide problem-solving.\n\nExample Script:\n🧒: “I hate my brother!”\n👩‍🦰: “Sounds like you're feeling really angry. I’m here, let’s take a breath.”\n👩‍🦰: “Can you tell me what happened?”\n👩‍🦰: “It’s okay to be mad. It’s not okay to hit. Let’s figure out what to do next time.”\nThis builds emotional intelligence and connection.\n\n\nTip: Encourage using “Special Time” — 10–15 minutes where the child leads play, undistracted, even just 2–3 times a week.\n\n	\N
+515	________________________________________\n3. Nature Walk\n\n•\tTake a walk outside and let the child explore, ask questions, and share observations.\n\n•\tTalk about the sights, sounds, and feelings experienced.\n________________________________________\n	\N
 74	What Parents Should Pay Attention to:\n\nAvoid Mixed Messages: Be mindful of contradictions between what you say and what you do. For example, if you tell your child to avoid screen time but you’re constantly on your phone, this sends a mixed message.\n	\N
-139	✅ Core Skills of Active Listening\n\n1.\tStop and listen with full attention (put down the phone, make eye contact)\n2.\tReflect feelings: “It sounds like you’re…”\n3.\tRepeat or rephrase their words\n4.\tAsk open-ended questions\n5.\tValidate their experience — even if you don’t agree\n6.\tPause before giving advice or correction\n	\N
 143	4. Child is Anxious About an Event\n\n🧒: “What if I mess up my lines in the play?”\n\n👂Parent:\n“It sounds like you’re nervous about forgetting something. You really want to do well.”\n\n✅ Builds emotional awareness and shows you're not brushing it off.\n	\N
+538	________________________________________\n✅ Why Use Strength Spotting?\n\n•\tBuilds confidence and positive self-image\n•\tEncourages children to use and develop their strengths\n•\tHelps kids feel seen and valued\n•\tSupports motivation and resilience\n•\tGuides parents in tailoring support to the child’s abilities\n________________________________________\n	\N
 393	3. Building a Close Family Connection\n\n“I want to build a strong, connected family where every member feels heard, supported, and loved. I will prioritize quality time together, foster open communication, and always show my children that they are valued. Our home will be a safe space for all emotions and ideas.”\n\n	\N
+139	✅ Core Skills of Active Listening\n\n1.\tStop and listen with full attention (put down the phone, make eye contact)\n2.\tReflect feelings: “It sounds like you’re…”\n3.\tRepeat or rephrase their words\n4.\tAsk open-ended questions\n5.\tValidate their experience — even if you don’t agree\n6.\tPause before giving advice or correction\n	\N
 141	2. Child is Angry About a Rule\n\n🧒: “It’s not fair that I can’t stay up late like my friends!”\n\n👂Parent:\n“You feel frustrated because it seems like the rules here are different.”\n“You wish you had the same freedom as your friends, huh?”\n\n✅ Shows empathy without giving in or starting an argument.\n	\N
+546	________________________________________\n7. “You worked really hard and showed great focus on your homework today.”\n\n•\tHighlighting persistence and concentration.\n________________________________________\n	\N
 189	7. Stress or Worry Check\n\n“Is there anything on your mind that’s worrying you?”\n\n“What can we do to make things easier?”\n	\N
 188	5. Goal or Task Check\n\n“Did you finish your homework?”\n\n“What do you want to work on tomorrow?”\n	\N
 229	8. Conflict Resolution\n\n•\t✋ “Let’s talk about what happened between you two. How can we make it better?”\n\n•\tSafe space for airing grievances and repairing relationships.\n	\N
 479	________________________________________\n🧠 What Are Rituals & Routines?\n\nRegularly practiced activities or traditions—simple or special—that create order and meaningful connection in daily family life.\n________________________________________\n	\N
 307	________________________________________\n7. Being Transparent About Limits\n\n•\t“I know I said yes to helping with your project, but I overcommitted today. Let’s schedule time tomorrow so I can really focus.”\n\n•\tModels healthy boundaries and self-honesty.\n________________________________________\n	\N
+549	🧑🏫 Tips for Strength Spotting\n\n•\tBe specific and genuine with your observations\n•\tLook for strengths in everyday activities, not just achievements\n•\tEncourage your child to recognize their own strengths too\n•\tUse strength spotting to guide growth and support\n•\tBalance spotting strengths with addressing challenges compassionately\n\n	\N
 356	________________________________________\n3. Problem Solving\n\nInstead of:\n“Did you clean your room?”\n\nTry:\n“What’s your plan for getting your room cleaned?”\n\n“What’s the hardest part about cleaning your room?”\n\n“How do you want to start?”\n________________________________________\n	\N
 480	________________________________________\n✅ Why Use Rituals & Routines?\n\n•\tProvide stability and reduce anxiety\n•\tHelp kids develop self-discipline and time management\n•\tEncourage positive behaviors and independence\n•\tCreate special moments and family identity\n•\tImprove sleep, nutrition, and emotional well-being\n________________________________________\n	\N
 262	5. Drawing on the Wall\n\nBehavior: Child colors on wall with crayons.\n\nLogical Consequence: Child helps clean it up with a parent.\n\n→ Teaches: We’re responsible for the messes we make.\n	\N
 486	________________________________________\n6. Chore Routine\n\n•\tAssign daily or weekly chores with clear expectations.\n\n•\tUse reward charts or stickers to motivate.\n________________________________________\n	\N
 488	________________________________________\n8. Greeting and Goodbye Rituals\n\n•\tDevelop a special handshake, hug, or phrase for leaving and returning home.\n\n•\tHelps kids feel connected and secure during transitions.\n________________________________________\n	\N
 516	________________________________________\n6. Music and Dancing\n\n•\tPlay favorite songs and dance or sing along together.\n\n•\tEncourage the child to pick the music and lead the moves.\n________________________________________\n	\N
-549	🧑🏫 Tips for Strength Spotting\n\n•\tBe specific and genuine with your observations\n•\tLook for strengths in everyday activities, not just achievements\n•\tEncourage your child to recognize their own strengths too\n•\tUse strength spotting to guide growth and support\n•\tBalance spotting strengths with addressing challenges compassionately\n\n	\N
 435	________________________________________\n5. From Grabbing Toys to Taking Turns\n\n•\t🚫 Child grabs a toy from another child\n\n•\t✅ “I can see you really want that toy. Let’s ask for a turn or choose another toy while we wait.”\n________________________________________\n	\N
-538	________________________________________\n✅ Why Use Strength Spotting?\n\n•\tBuilds confidence and positive self-image\n•\tEncourages children to use and develop their strengths\n•\tHelps kids feel seen and valued\n•\tSupports motivation and resilience\n•\tGuides parents in tailoring support to the child’s abilities\n________________________________________\n	\N
-546	________________________________________\n7. “You worked really hard and showed great focus on your homework today.”\n\n•\tHighlighting persistence and concentration.\n________________________________________\n	\N
 265	8. Being Disrespectful During Family Time\n\nBehavior: Rude or negative comments at the dinner table.\n\nLogical Consequence: They step away for a few minutes and rejoin when ready to be respectful.\n\n→ Teaches: Family time is built on respect.\n	\N
 271	🧑🏫 Teaching Parents to Use Logical Consequences\n\n👣 Step-by-Step Guide:\n\n1.\tStay calm — never give a consequence in anger.\n2.\tConnect the consequence to the behavior.\no\tAsk: What would naturally help them learn this lesson?\n3.\tState it clearly and kindly.\no\t“If you choose to _______, then you’re also choosing ________.”\n4.\tFollow through consistently, not emotionally.\n5.\tDebrief later — “What can you do differently next time?”\n	\N
-76	Exercise 2: Emotional Regulation in Action\n\nGoal: Model emotional regulation in a real-life scenario.\n\nInstructions: The next time you feel frustrated or upset, intentionally slow down, take deep breaths, and express your feelings calmly. For example, instead of yelling, try saying, “I’m feeling frustrated right now. Let me take a moment to calm down.”\n	\N
-142	3. Toddler Meltdown\n\n🧒: (Crying) “I wanted the blue cup!”\n\n👂Parent:\n“You’re really upset. You were hoping for the blue one. That matters to you.”\n\n✅ Acknowledging feelings calms the brain faster than distraction or “It doesn’t matter.”\n	\N
+588	________________________________________\n10. Affectionate Games\n\n•\tPlay games that involve touch, like “pat-a-cake” or gentle hand clapping games.\n________________________________________\n	\N
 186	4. School or Social Check\n\n“Did anything fun or interesting happen at school today?”\n“How are things with your friends?”\n	\N
+331	________________________________________\n6. Child Is Anxious About a New School\n\n🧒: “I don’t want to go. I don’t know anyone.”\n\n👩👦 Parent:\n\n“You sound nervous. Starting something new can feel scary when it’s unfamiliar.”\n________________________________________\n	\N
 231	10. Family Rules or Agreements\n\n•\t📜 “Let’s review or add to our family agreements. What’s working? What needs a change?”\n\n•\tGives kids a voice in rule-making, increasing buy-in.\n\n	\N
+395	\n7. Promoting Balance and Well-Being\n\n“I am committed to helping my children develop a healthy balance in their lives—between work, play, family time, and self-care. I will model healthy habits around physical activity, emotional well-being, and time management. Our family will prioritize well-being and mutual respect for personal boundaries.”\n\n	\N
 312	________________________________________\n🧠 What Is Modeling Self-Regulation?\n\nDemonstrating how to manage your emotions, stress, and reactions in healthy ways so your child learns by example.\n________________________________________\n	\N
 315	________________________________________\n2. Using Positive Self-Talk\n\nScenario: Parent makes a mistake, like burning dinner.\n\nModel:\n\n“Oops! I messed up dinner. It’s okay, I’ll try again tomorrow. Everyone makes mistakes.”\n________________________________________\n	\N
 325	________________________________________\n✅ Why It Works\n\n•\tBuilds emotional awareness\n•\tTeaches emotional vocabulary\n•\tHelps kids feel seen and safe\n•\tReduces tantrums and meltdowns\n•\tEncourages self-regulation\n________________________________________\n	\N
-331	________________________________________\n6. Child Is Anxious About a New School\n\n🧒: “I don’t want to go. I don’t know anyone.”\n\n👩👦 Parent:\n\n“You sound nervous. Starting something new can feel scary when it’s unfamiliar.”\n________________________________________\n	\N
-328	________________________________________\n5. Child Is Sad About a Broken Toy\n\n🧒: Holding broken toy, looking down\n\n👩👦 Parent:\n\n“You’re feeling really sad. That toy was special to you.”\n________________________________________\n	\N
+142	3. Toddler Meltdown\n\n🧒: (Crying) “I wanted the blue cup!”\n\n👂Parent:\n“You’re really upset. You were hoping for the blue one. That matters to you.”\n\n✅ Acknowledging feelings calms the brain faster than distraction or “It doesn’t matter.”\n	\N
+547	________________________________________\n9. “You showed a lot of courage trying that new sport even though it was challenging.”\n\n•\tSpotting bravery and willingness to try new things.\n________________________________________\n	\N
 357	________________________________________\n8. Encouraging Responsibility\n\nInstead of:\n“Did you remember your lunch?”\n\nTry:\n“What do you need to pack tomorrow for school?”\n\n“How can you make sure you don’t forget your lunch next time?”\n\n“What helps you remember important things?”\n________________________________________\n	\N
 266	9. Leaving Things Outside\n\nBehavior: Bike or toys left in yard after reminders.\n\nLogical Consequence: Child loses access to the item for a day.\n\n→ Teaches: Responsibility is part of ownership.\n	\N
 481	📚 Examples of Rituals & Routines for Parenting Kids\n________________________________________\n1. Morning Routine\n\n•\tWake up, make bed, brush teeth, get dressed, eat breakfast, pack school bag.\n\n•\tUse a checklist or visual chart for younger kids.\n________________________________________\n	\N
 482	________________________________________\n2. Bedtime Ritual\n\n•\tBath or wash-up, put on pajamas, read a story, cuddle, lights out.\n\n•\tUse calming music or lavender scent to signal winding down.\n________________________________________\n	\N
 484	________________________________________\n4. Homework Routine\n\n•\tDesignate a quiet time and space for homework, take short breaks, review work together.\n\n•\tUse timers or a checklist to stay focused.\n________________________________________\n	\N
 489	________________________________________\n10. Celebration Rituals\n\n•\tCelebrate birthdays, achievements, or holidays with special activities or meals.\n\n•\tCreate family traditions that honor milestones.\n________________________________________\n	\N
-517	________________________________________\n4. Cooking or Baking\n\n•\tInvolve your child in making a simple recipe.\n\n•\tAllow them to help measure, stir, and taste while chatting about their day.\n________________________________________\n	\N
-521	________________________________________\n9. Building Forts or Tents\n\n•\tUse pillows, blankets, and chairs to create a cozy space.\n\n•\tSpend special time inside sharing stories or playing.\n________________________________________\n	\N
+328	________________________________________\n5. Child Is Sad About a Broken Toy\n\n🧒: Holding broken toy, looking down\n\n👩👦 Parent:\n\n“You’re feeling really sad. That toy was special to you.”\n________________________________________\n	\N
 573	________________________________________\n2. Breathing Buddy\n\n•\tUse a stuffed animal on their belly and guide them to take slow, deep breaths together.\n________________________________________\n	\N
 436	________________________________________\n6. From Whining to Clear Speaking\n\n•\t🚫 Child whines for a snack\n\n•\t✅ “I can’t understand whining. Try using a strong, calm voice to tell me what you need.”\n________________________________________\n	\N
 263	6. Interrupting Repeatedly\n\nBehavior: Child interrupts adults after being reminded not to.\n\nLogical Consequence: Adult conversation ends, or child waits to rejoin until ready to listen.\n\n→ Teaches: Respectful timing matters in communication.\n	\N
-547	________________________________________\n9. “You showed a lot of courage trying that new sport even though it was challenging.”\n\n•\tSpotting bravery and willingness to try new things.\n________________________________________\n	\N
-588	________________________________________\n10. Affectionate Games\n\n•\tPlay games that involve touch, like “pat-a-cake” or gentle hand clapping games.\n________________________________________\n	\N
-75	Exercises for Parents to Practice Modeling Behavior\n\nExercise 1: Modeling Positive Communication\n\nGoal: Practice using respectful, kind, and calm language in your daily conversations.\n\nInstructions: Each day, pick one moment (whether it’s a conversation with your child, spouse, or even a stranger) and focus on modeling positive communication. For example, if there’s a disagreement, focus on using “I feel” statements and active listening.\n	\N
-395	\n7. Promoting Balance and Well-Being\n\n“I am committed to helping my children develop a healthy balance in their lives—between work, play, family time, and self-care. I will model healthy habits around physical activity, emotional well-being, and time management. Our family will prioritize well-being and mutual respect for personal boundaries.”\n\n	\N
-144	5. Child is Excited About Something\n\n🧒: “I made a huge Lego ship today with moving wings!”\n\n👂Parent:\n“Wow, you sound really proud of that! What part was hardest to build?”\n\n✅ Reinforces connection by celebrating their excitement with curiosity.\n	\N
+517	________________________________________\n4. Cooking or Baking\n\n•\tInvolve your child in making a simple recipe.\n\n•\tAllow them to help measure, stir, and taste while chatting about their day.\n________________________________________\n	\N
+521	________________________________________\n9. Building Forts or Tents\n\n•\tUse pillows, blankets, and chairs to create a cozy space.\n\n•\tSpend special time inside sharing stories or playing.\n________________________________________\n	\N
+589	________________________________________\n9. Mindful Touch\n\n•\tPractice slow, calming touch when doing mindfulness or relaxation exercises together.\n________________________________________\n	\N
 191	10. Future Planning\n\n“What are you looking forward to tomorrow?”\n\n“Is there anything you want help with?”\n	\N
 232	🧑🏫 Tips for Successful Family Meetings\n\n•\tSet a consistent day/time (e.g., Sunday nights or Friday dinners)\n•\tKeep meetings short and age-appropriate (10–30 minutes)\n•\tUse a talking stick or object so one person speaks at a time\n•\tRotate who leads the meeting—even kids can take turns\n•\tWrite down ideas, agreements, or tasks on a whiteboard or notebook\n•\tEnd with something fun—jokes, a game, or dessert!\n	\N
-518	________________________________________\n5. Art and Craft Time\n\n•\tPaint, color, or craft something together without any pressure or goals.\n\n•\tLet the child express themselves freely.\n________________________________________\n	\N
 314	📚 Real-Life Examples of Modeling Self-Regulation by Parents\n________________________________________\n1. Handling Frustration Calmly\n\nScenario: Parent is stuck in traffic, feels annoyed.\n\nModel:\n\nTakes a deep breath and says out loud, “Traffic is slow today. I’m feeling a bit frustrated, but I’m going to listen to some music and relax.”\n________________________________________\n	\N
 313	✅ Why Modeling Self-Regulation Matters\n\n•\tShows kids how to handle emotions effectively\n•\tBuilds a calm and safe family environment\n•\tTeaches problem-solving and coping skills\n•\tReduces family stress and conflict\n•\tEncourages kids to practice self-control\n	\N
 360	________________________________________\n7. Bedtime Reflection\n\nInstead of:\n“Did you brush your teeth?”\n\nTry:\n“What was the best thing about your day today?”\n\n“What’s something new you want to learn tomorrow?”\n\n“How are you feeling before bed?”\n________________________________________\n	\N
-637	💬 4. Roleplay & Reflect\n\nIf you’re working with parents directly:\nAct out real parenting scenarios together\nPause and ask: “How might your child feel in this moment?”\nPractice responses using empathy first, boundaries second\nThis helps parents rewire old habits with support.\n	\N
 483	________________________________________\n3. Mealtime Routine\n\n•\tSet the table together, say a family gratitude or “thank you” before eating, eat together, clear plates.\n\n•\tEncourage conversation about everyone’s day.\n________________________________________\n	\N
 485	________________________________________\n5. Weekly Family Meeting\n\n•\tChoose a regular day/time to discuss plans, feelings, and problems.\n\n•\tLet each family member share and contribute to decisions.\n________________________________________\n	\N
+396	8. Fostering a Spirit of Adventure and Curiosity\n\n“I aspire to raise children who are curious about the world and excited to explore new things. I will encourage them to take risks, try new activities, and remain open-minded. I want them to know that learning is a lifelong adventure and that the world is full of opportunities for discovery.”\n\n	\N
 455	📚 More Examples of Repair Conversations in Parenting\n________________________________________\n1. After a Sibling Fight\n\n•\t“I know things got heated earlier. Can we talk about what made you upset and how you want to fix it?”\n________________________________________\n	\N
 440	________________________________________\n10. From Impatience to Engagement\n\n•\t🚫 Child gets restless waiting in line\n\n•\t✅ “While we wait, let’s play a ‘I Spy’ game or count how many blue things we can find!”\n________________________________________\n	\N
 267	4. Refusing to Put on Shoes Before School\n\nBehavior: Child delays getting dressed in the morning.\n\nLogical Consequence: They must go to school without favorite shoes (within safety).\n\n→ Teaches: Morning routines are non-negotiable.\n	\N
@@ -6136,117 +6024,114 @@ COPY public.components_coursecontent_texts (id, data, style) FROM stdin;
 494	________________________________________\n🌙 2. Bedtime Routine Chart (Ages 3–10)\n\n🛏️ “Wind Down Time” Chart:\n1.\tClean up toys\n2.\tTake a bath or shower\n3.\tBrush teeth\n4.\tPut on pajamas\n5.\tPick tomorrow’s clothes\n6.\tStorytime\n7.\tHugs/kisses\n8.\tLights out\n✅ Goodnight!\n📷 Use pictures of your child doing each task for extra engagement.\n________________________________________\n	\N
 550	Support networks are an essential component of successful parenting. They provide emotional, practical, and informational resources, and they help parents feel less isolated. Support networks can be family, friends, professionals, or community groups that provide support, guidance, and connection throughout your parenting journey.\n\n\n	\N
 551	Here are some examples of Support Networks in the context of parenting:\n\n________________________________________\n1. Family Support Networks\n\nExample:\n•\tGrandparents or Close Relatives\n\no\tHow it Helps: They can provide babysitting, offer advice from experience, help with family activities, and give emotional support. Grandparents often provide a different perspective and are a stable source of love and wisdom.\n\no\tHow to Utilize: Arrange regular visits or phone calls for moral support and to share experiences. Grandparents can also help with practical tasks, like school pick-ups or errands.\n________________________________________\n	\N
-589	________________________________________\n9. Mindful Touch\n\n•\tPractice slow, calming touch when doing mindfulness or relaxation exercises together.\n________________________________________\n	\N
-396	8. Fostering a Spirit of Adventure and Curiosity\n\n“I aspire to raise children who are curious about the world and excited to explore new things. I will encourage them to take risks, try new activities, and remain open-minded. I want them to know that learning is a lifelong adventure and that the world is full of opportunities for discovery.”\n\n	\N
+144	5. Child is Excited About Something\n\n🧒: “I made a huge Lego ship today with moving wings!”\n\n👂Parent:\n“Wow, you sound really proud of that! What part was hardest to build?”\n\n✅ Reinforces connection by celebrating their excitement with curiosity.\n	\N
+518	________________________________________\n5. Art and Craft Time\n\n•\tPaint, color, or craft something together without any pressure or goals.\n\n•\tLet the child express themselves freely.\n________________________________________\n	\N
+414	🎯 Sample Self-Talk Phrases for Parents\n\n•\t“This is my chance to model calm.”\n•\t“I can pause now and respond later.”\n•\t“Their behavior is not personal.”\n•\t“My calm helps their calm.”\n•\t“I want to respond with love, not react with anger.”\n\n	\N
 192	8. Physical Check\n\n“Did you eat well and drink enough water today?”\n\n“Do you feel okay or need to rest?”\n	\N
 234	✅ Why Use Goal Setting?\n\n•\tBuilds self-discipline and responsibility\n•\tEncourages motivation and persistence\n•\tEnhances problem-solving and planning skills\n•\tBoosts confidence as kids achieve goals\n•\tHelps kids learn to manage time and priorities\n	\N
 243	9. Sleep Routine Goal\n\n•\t“Let’s aim to be in bed by 8 PM every night for a week.”\n\n•\tUse a reward chart.\n	\N
-519	________________________________________\n7. Puzzle or Board Game\n\n•\tPlay a game your child loves, focusing on fun and connection rather than winning.\n________________________________________\n	\N
-576	🧑🏫 Tips for Using Time-In and Time-Out\n\n•\tExplain the purpose and rules clearly to your child beforehand\n•\tKeep time-out brief and age-appropriate (1 min per year of age is common)\n•\tUse time-in to strengthen connection, not just as a reward\n•\tBe calm and consistent when implementing both techniques\n•\tAvoid using time-out as punishment; it’s a tool for regulation\n•\tCombine time-in and time-out based on the child’s needs and temperament\n\n	\N
+3	🧠 What Is Active Listening?\n\nActive listening means giving your child your full attention, reflecting back what they say (or feel), and responding with empathy — without jumping in to correct, solve, or dismiss.\n	\N
 316	________________________________________\n3. Taking Breaks When Overwhelmed\n\nScenario: After a long day, parent feels stressed.\n\nModel:\n\n“I’m feeling tired and stressed, so I’m going to take 10 minutes to sit quietly and breathe before helping with homework.”\n________________________________________\n	\N
 322	________________________________________\n9. Setting Healthy Boundaries for Self-Care\n\nScenario: Parent says no to extra work to protect family time.\n\nModel:\n\n“I need to finish work now so I can spend time with you. It’s important to have balance.”\n________________________________________\n	\N
-404	________________________________________\n🧠 What Is “Pause & Respond”?\n\nPausing gives you time to manage your emotions, and responding (instead of reacting) helps you guide your child calmly and respectfully.\n\nIt helps prevent:\n•\tYelling or snapping\n•\tSaying things you regret\n•\tEscalating power struggles\n________________________________________\n	\N
-414	🎯 Sample Self-Talk Phrases for Parents\n\n•\t“This is my chance to model calm.”\n•\t“I can pause now and respond later.”\n•\t“Their behavior is not personal.”\n•\t“My calm helps their calm.”\n•\t“I want to respond with love, not react with anger.”\n\n	\N
-361	________________________________________\n🧠 What Is Ownership Language?\n\nOwnership language gives clear choices, natural consequences, and invites kids to own their decisions and behavior.\nIt avoids:\n•\tPower struggles\n•\tConstant reminders\n•\tLecturing or threatening\nInstead, it uses calm, confident statements that shift responsibility to the child.\n________________________________________\n	\N
+519	________________________________________\n7. Puzzle or Board Game\n\n•\tPlay a game your child loves, focusing on fun and connection rather than winning.\n________________________________________\n	\N
 442	________________________________________\n🧠 What Is Reflective Listening?\n\nListening fully, then restating your child’s message in your own words, especially their emotions, to show you understand.\n________________________________________\n	\N
+361	________________________________________\n🧠 What Is Ownership Language?\n\nOwnership language gives clear choices, natural consequences, and invites kids to own their decisions and behavior.\nIt avoids:\n•\tPower struggles\n•\tConstant reminders\n•\tLecturing or threatening\nInstead, it uses calm, confident statements that shift responsibility to the child.\n________________________________________\n	\N
 445	________________________________________\n2. Child Is Nervous About a Test\n\n🧒: “I’m scared I’m going to fail the math test.”\n\n👂Parent Reflects:\n“You’re worried about the test because you want to do well.”\n________________________________________\n	\N
 487	________________________________________\n7. Special Weekend Ritual\n\n•\tHave a movie night, baking day, nature hike, or game afternoon.\n\n•\tCreate traditions like “Sunday pancake breakfast” or “Saturday bike rides.”\n________________________________________\n	\N
 590	A Trigger Tracker is a reflective parenting tool that helps you identify emotional “hot spots” — specific behaviors, situations, or patterns that consistently cause frustration, anger, or overwhelm in your parenting. By noticing and naming your triggers, you gain control over them instead of reacting on autopilot.	\N
-603	🧾 Sample Trigger Tracker Template\n\nDate\t  Triggered By\t       My Initial Reaction\tWhat Was I Feeling?\tMy Need\tNext Time I Could…\nJune 23\tKids not listening\tRaised voice\t        Frustrated, unseen\t   Respect, cooperation, Kneel down,             connect first\n\n	\N
-3	🧠 What Is Active Listening?\n\nActive listening means giving your child your full attention, reflecting back what they say (or feel), and responding with empathy — without jumping in to correct, solve, or dismiss.\n	\N
-555	________________________________________\n3. Online Parenting Communities\n\nExample:\n•\tParenting Forums, Facebook Groups, or Reddit Communities\n\no\tHow it Helps: These communities provide access to a broad group of parents who share similar concerns, challenges, and experiences. You can ask questions, seek advice, or just read others' stories to feel supported.\n\no\tHow to Utilize: Join online groups specific to your child’s age or unique challenges (e.g., single parents, special needs, homeschooling). Participate in discussions, post questions, or simply observe and learn from others.\n________________________________________\n	\N
 579	📚 Examples of Touch & Affection in Parenting\n________________________________________\n1. Hugs and Cuddles\n\n•\tGive warm hugs during greetings, goodbyes, or after a rough day.\n\n•\tCuddle during storytime or before bed.\n________________________________________\n	\N
-602	________________________________________\n10. Perfectionism or Control Issues\n\n•\t🧠 Trigger: “I wanted the family photo to go perfectly and it didn’t.”\n•\t💥 Response: Snapped at everyone.\n•\t💡 Reframe: “Perfection isn’t connection. I’ll focus on the joy and messiness of real life.”\n________________________________________\n	\N
+576	🧑🏫 Tips for Using Time-In and Time-Out\n\n•\tExplain the purpose and rules clearly to your child beforehand\n•\tKeep time-out brief and age-appropriate (1 min per year of age is common)\n•\tUse time-in to strengthen connection, not just as a reward\n•\tBe calm and consistent when implementing both techniques\n•\tAvoid using time-out as punishment; it’s a tool for regulation\n•\tCombine time-in and time-out based on the child’s needs and temperament\n\n	\N
+602	\n10. Perfectionism or Control Issues\n\n•\t🧠 Trigger: “I wanted the family photo to go perfectly and it didn’t.”\n•\t💥 Response: Snapped at everyone.\n•\t💡 Reframe: “Perfection isn’t connection. I’ll focus on the joy and messiness of real life.”\n\n	\N
+603	🧾 Sample Trigger Tracker Template\n\nDate\t  Triggered By\t       My Initial Reaction\tWhat Was I Feeling?\tMy Need\tNext Time I Could…\nJune 23\tKids not listening\tRaised voice\t        Frustrated, unseen\t   Respect, cooperation, Kneel down,             connect first\n\n	\N
+555	________________________________________\n3. Online Parenting Communities\n\nExample:\n•\tParenting Forums, Facebook Groups, or Reddit Communities\n\no\tHow it Helps: These communities provide access to a broad group of parents who share similar concerns, challenges, and experiences. You can ask questions, seek advice, or just read others' stories to feel supported.\n\no\tHow to Utilize: Join online groups specific to your child’s age or unique challenges (e.g., single parents, special needs, homeschooling). Participate in discussions, post questions, or simply observe and learn from others.\n________________________________________\n	\N
+404	________________________________________\n🧠 What Is “Pause & Respond”?\n\nPausing gives you time to manage your emotions, and responding (instead of reacting) helps you guide your child calmly and respectfully.\n\nIt helps prevent:\n•\tYelling or snapping\n•\tSaying things you regret\n•\tEscalating power struggles\n________________________________________\n	\N
 269	11. Breaking Materials in Class or Home Learning\n\nBehavior: Child rips or breaks school supplies.\n\nLogical Consequence: They must use older/damaged materials or replace them with allowance.\n\n→ Teaches: Respect for tools and property.\n	\N
 193	6. Gratitude Moment\n\n“What’s something you’re thankful for today?”\n\n“Did someone do something nice for you?”\n	\N
 236	3. Chore Goal\n\n•\t“Can you aim to tidy your room every evening before dinner?”\n\n•\tUse a checklist to mark completion.\n	\N
+522	________________________________________\n10. Mindfulness or Breathing Exercises\n\n•\tDo simple breathing or relaxation exercises together.\n\n•\tHelp your child feel calm and centered.\n________________________________________\n	\N
 443	________________________________________\n✅ Why Use Reflective Listening?\n\n•\tBuilds trust and connection\n•\tValidates your child’s feelings\n•\tHelps kids process emotions\n•\tReduces conflicts and misunderstandings\n•\tEncourages honest communication\n________________________________________\n	\N
 446	________________________________________\n3. Child Is Angry About a Rule\n\n🧒: “It’s not fair that I have to go to bed early!”\n\n👂Parent Reflects:\n“You feel upset because you want to stay up later like your friends.”\n________________________________________\n	\N
-449	________________________________________\n6. Child Is Reluctant to Clean Up\n\n🧒: “I don’t want to clean my room now.”\n\n👂Parent Reflects:\n“You don’t feel like cleaning right now because you want to keep playing.”\n________________________________________\n	\N
 273	🧠 What Is a Mindful Pause?\n\nA brief moment to stop, breathe, and collect yourself before responding to a situation—especially when you're feeling triggered or overwhelmed. This pause helps you make conscious choices, stay calm, and connect with your child in a positive way.\n	\N
-145	6. Sibling Conflict\n\n🧒: “He always ruins my games!”\n\n👂Parent:\n“You’re feeling really frustrated because your play keeps getting interrupted.”\n\n✅ Validates the emotion first before jumping in to solve the problem.\n	\N
 277	4. When Your Child Interrupts You\n\n•\tTrigger: Your child constantly interrupts while you’re on the phone.\n\n•\tMindful Pause:\n\no\tPause: Take a moment to notice the tension in your body and release it.\no\tReflect: “This is annoying, but it’s important to model patience.”\no\tResponse: “I need you to wait until I’m finished on the phone. I’ll be right with you.”\n\n	\N
+580	________________________________________\n2. Gentle Touches\n\n•\tLightly rub your child’s back when they’re upset or anxious.\n\n•\tHold their hand when crossing the street or walking together.\n________________________________________\n	\N
+564	Time-In and Time-Out?\n\n•\tTime-Out: A short, calm break away from a situation to help a child cool down and reflect on their behavior.\n\n•\tTime-In: A positive, supportive moment when a parent stays close to help the child calm down and feel understood.\n	\N
 317	________________________________________\n4. Expressing Emotions Verbally\n\nScenario: Parent feels sad after bad news.\n\nModel:\n\n“I’m feeling sad right now because of some news I got. It’s okay to feel this way.”\n________________________________________\n	\N
-405	________________________________________\n✅ Why “Pause & Respond” Works\n\n•\tModels emotional regulation for kids\n•\tKeeps conversations respectful\n•\tLeads to better problem-solving\n•\tBuilds trust and emotional safety\n•\tEncourages thoughtful discipline, not impulsive punishment\n________________________________________\n	\N
 407	________________________________________\n2. Child Refuses to Do Homework\n\n😤 Parent feels: Frustrated, impatient\n\nPause: Close eyes, exhale slowly\n\nRespond:\n“I can see you don’t feel like doing homework right now. Let’s talk about what’s making it hard for you.”\n________________________________________\n	\N
-411	________________________________________\n6. Sibling Fight Breaks Out\n\n😤 Parent feels: Stressed, overwhelmed\n\nPause: Step back, scan the situation\n\nRespond:\n“I hear that you’re both upset. One at a time — I’ll listen to each of you.”\n________________________________________\n	\N
+449	________________________________________\n6. Child Is Reluctant to Clean Up\n\n🧒: “I don’t want to clean my room now.”\n\n👂Parent Reflects:\n“You don’t feel like cleaning right now because you want to keep playing.”\n________________________________________\n	\N
 363	📚 Real-Life Ownership Language Examples by Situation\n________________________________________\n🎒 Morning Routine\n\n🗣️ Instead of:\n"Get dressed right now! I told you five times!"\n\n✅ Say:\n"You're welcome to come to breakfast as soon as you're dressed."\n\nOR\n"Let me know when you're ready — we leave in 10 minutes."\n________________________________________\n	\N
 364	________________________________________\n📱 Screen Time\n\n🗣️ Instead of:\n"Turn off the tablet or you're in trouble!"\n\n✅ Say:\n"When screen time is done on time, you're free to use it again tomorrow."\n\nOR\n"You’re in charge of stopping on time if you want screen time tomorrow."\n________________________________________\n	\N
 366	________________________________________\n📚 Homework\n\n🗣️ Instead of:\n"You better do your homework or no TV!"\n\n✅ Say:\n"TV is for after homework’s done. You decide how soon that happens."\n\nOR\n"Let me know when your work’s done — I’m happy to turn on the show then."\n________________________________________\n	\N
 490	________________________________________\n9. Emotional Check-In Routine\n\n•\tDaily or nightly moment where each person shares how they feel.\n\n•\tCan be part of dinner or bedtime.\n________________________________________\n	\N
-522	________________________________________\n10. Mindfulness or Breathing Exercises\n\n•\tDo simple breathing or relaxation exercises together.\n\n•\tHelp your child feel calm and centered.\n________________________________________\n	\N
-564	Time-In and Time-Out?\n\n•\tTime-Out: A short, calm break away from a situation to help a child cool down and reflect on their behavior.\n\n•\tTime-In: A positive, supportive moment when a parent stays close to help the child calm down and feel understood.\n	\N
-554	________________________________________\n2. Friend Support Networks\n\nExample:\n•\tClose Friends with Kids\no\tHow it Helps: Friends who are also parents can relate to your struggles and joys. They provide validation, shared experiences, and advice on managing parenting challenges.\no\tHow to Utilize: Set up playdates for kids, trade parenting tips, or vent in a safe space. Regular meet-ups or phone calls can foster deeper emotional connection and shared wisdom.\n________________________________________\n	\N
-580	________________________________________\n2. Gentle Touches\n\n•\tLightly rub your child’s back when they’re upset or anxious.\n\n•\tHold their hand when crossing the street or walking together.\n________________________________________\n	\N
+405	________________________________________\n✅ Why “Pause & Respond” Works\n\n•\tModels emotional regulation for kids\n•\tKeeps conversations respectful\n•\tLeads to better problem-solving\n•\tBuilds trust and emotional safety\n•\tEncourages thoughtful discipline, not impulsive punishment\n________________________________________\n	\N
 274	✅ Why Use a Mindful Pause?\n\n•\tHelps you avoid reacting impulsively or emotionally\n•\tPromotes emotional regulation and patience\n•\tEnhances communication and connection\n•\tPrevents escalating conflicts\n•\tEncourages thoughtful, intentional parenting responses\n•\tModels mindfulness and self-regulation for your child\n	\N
+145	6. Sibling Conflict\n\n🧒: “He always ruins my games!”\n\n👂Parent:\n“You’re feeling really frustrated because your play keeps getting interrupted.”\n\n✅ Validates the emotion first before jumping in to solve the problem.\n	\N
+554	________________________________________\n2. Friend Support Networks\n\nExample:\n•\tClose Friends with Kids\no\tHow it Helps: Friends who are also parents can relate to your struggles and joys. They provide validation, shared experiences, and advice on managing parenting challenges.\no\tHow to Utilize: Set up playdates for kids, trade parenting tips, or vent in a safe space. Regular meet-ups or phone calls can foster deeper emotional connection and shared wisdom.\n________________________________________\n	\N
+411	________________________________________\n6. Sibling Fight Breaks Out\n\n😤 Parent feels: Stressed, overwhelmed\n\nPause: Step back, scan the situation\n\nRespond:\n“I hear that you’re both upset. One at a time — I’ll listen to each of you.”\n________________________________________\n	\N
+324	________________________________________\n🧠 What Is "Name It to Tame It"?\n\nNaming the emotion a child is experiencing helps them feel understood and activates the thinking brain (prefrontal cortex), which helps calm the emotional brain (amygdala).\n________________________________________\n	\N
 195	✅ Why Use Effort-Based Praise?\n\n•\tEncourages persistence and motivation\n•\tBuilds confidence in tackling challenges\n•\tPromotes a growth mindset\n•\tHelps children learn from mistakes\n•\tReduces fear of failure\n	\N
 196	📚 Examples of Effort-Based Praise in Parenting\n________________________________________\n1. “I’m proud of how hard you worked on that puzzle!”\n\n•\tHighlights dedication rather than speed or perfection.\n________________________________________\n	\N
 238	2. Reading Challenge\n\n•\t“How about reading one new book each week this month?”\n\n•\tTrack books read on a chart.\n	\N
 242	8. Creative Goal\n\n•\t“Can you draw or write a story every weekend?”\n\n•\tDisplay their work proudly.\n	\N
-410	________________________________________\n5. Teen Lies About a Rule\n\n😤 Parent feels: Betrayed, angry\n\nPause: Walk away for a few minutes\n\nRespond:\n“I’m upset about what happened, but I want to hear your side. Let’s talk honestly and figure out a way to make this right.”\n________________________________________\n	\N
-367	________________________________________\n😡 Emotional Outbursts\n\n🗣️ Instead of:\n"Stop yelling or go to your room!"\n\n✅ Say:\n"You’re welcome to stay here when you’re using calm words."\n\nOR\n"When you're ready to talk respectfully, I’d love to listen."\n________________________________________\n	\N
+276	2. When Your Child Talks Back\n\n•\tTrigger: Your child rolls their eyes and says, “I’m not doing that.”\n\n•\tMindful Pause:\n\no\tPause: Count to three, slowly.\no\tReflect: "I feel disrespected, but I want to handle this with kindness."\no\tResponse: “I understand you’re frustrated, but I need you to speak to me with respect. Let’s talk about how we can handle this situation.”\n	\N
 279	6. When Your Child Is Frustrated with Homework\n\n•\tTrigger: Your child is whining and avoiding their homework.\n\n•\tMindful Pause:\n\no\tPause: Take a deep breath, then exhale slowly.\no\tReflect: “I’m getting frustrated, but I can guide them through this.”\no\tResponse: “I know this is hard. Let’s break it down together and take it one step at a time.”\n	\N
+412	________________________________________\n🧑🏫 Parent Tips to Practice “Pause & Respond”\n\n•\tCreate a mental cue to pause (like “breathe first”)\n•\tPractice self-talk: “I can stay calm.” “This is not an emergency.”\n•\tUse non-verbal cues like stepping back or turning away briefly\n•\tBuild a “calm-down plan” for yourself and your child\n•\tCelebrate your success even when it’s small!\n________________________________________\n	\N
+367	________________________________________\n😡 Emotional Outbursts\n\n🗣️ Instead of:\n"Stop yelling or go to your room!"\n\n✅ Say:\n"You’re welcome to stay here when you’re using calm words."\n\nOR\n"When you're ready to talk respectfully, I’d love to listen."\n________________________________________\n	\N
+531	________________________________________\n7. Cultural or Moral Stories\n\n•\tShare folktales, myths, or stories that teach values like kindness, honesty, or courage.\n\n•\tDiscuss what your child learned or thought about the story.\n________________________________________\n	\N
+583	________________________________________\n4. Comforting Touch\n\n•\tStroke your child’s hair or cheek to soothe them when they’re sad or scared.\n\n•\tSit close and offer a reassuring arm around their shoulder.\n________________________________________\n	\N
 149	✅ Why It Works\n\n•\tKids feel safe to express feelings\n•\tBuilds emotional vocabulary\n•\tEncourages problem-solving over reacting\n•\tStrengthens connection and cooperation\n	\N
+406	📚 Real-Life “Pause & Respond” Parenting Examples\n________________________________________\n1. Child Talks Back Rudely\n\n😤 Parent feels: Angry, disrespected\n\nPause: Take a deep breath and count to 5\n\nRespond:\n“I’m going to take a moment to calm down. Let’s talk when we can both be respectful.”\n________________________________________\n	\N
 318	________________________________________\n5. Apologizing and Repairing Relationships\n\nScenario: Parent loses temper briefly.\n\nModel:\n\n“I’m sorry I raised my voice. I was upset but I should have spoken more calmly.”\n________________________________________\n	\N
 320	________________________________________\n8. Showing Patience During Difficult Moments\n\nScenario: Child is upset and takes a while to calm down.\n\nModel:\n\nStaying calm and saying, “I’m here when you’re ready to talk.”\n________________________________________\n	\N
 323	🧑🏫 Tips for Parents to Model Self-Regulation\n\n•\tNarrate your process so kids hear how you handle feelings\n•\tUse calm voice and body language even when frustrated\n•\tShow it’s normal to have big emotions and that managing them is a skill\n•\tBe consistent — kids notice when you do this regularly\n•\tShare what works for you (breathing, counting, walking away)\n•\tPractice self-compassion; show that mistakes are okay\n	\N
-324	________________________________________\n🧠 What Is "Name It to Tame It"?\n\nNaming the emotion a child is experiencing helps them feel understood and activates the thinking brain (prefrontal cortex), which helps calm the emotional brain (amygdala).\n________________________________________\n	\N
-406	📚 Real-Life “Pause & Respond” Parenting Examples\n________________________________________\n1. Child Talks Back Rudely\n\n😤 Parent feels: Angry, disrespected\n\nPause: Take a deep breath and count to 5\n\nRespond:\n“I’m going to take a moment to calm down. Let’s talk when we can both be respectful.”\n________________________________________\n	\N
-412	________________________________________\n🧑🏫 Parent Tips to Practice “Pause & Respond”\n\n•\tCreate a mental cue to pause (like “breathe first”)\n•\tPractice self-talk: “I can stay calm.” “This is not an emergency.”\n•\tUse non-verbal cues like stepping back or turning away briefly\n•\tBuild a “calm-down plan” for yourself and your child\n•\tCelebrate your success even when it’s small!\n________________________________________\n	\N
-365	________________________________________\n🧹 Chores\n\n🗣️ Instead of:\n"I’m not going to tell you again — do your chores!"\n\n✅ Say:\n"As soon as the floor is swept, you’re free to go play."\n\nOR\n"You’re responsible for your chore — I trust you to figure out when to get it done."\n________________________________________\n	\N
+410	________________________________________\n5. Teen Lies About a Rule\n\n😤 Parent feels: Betrayed, angry\n\nPause: Walk away for a few minutes\n\nRespond:\n“I’m upset about what happened, but I want to hear your side. Let’s talk honestly and figure out a way to make this right.”\n________________________________________\n	\N
 444	📚 Real-Life Reflective Listening Examples by Situation\n________________________________________\n1. Child Is Frustrated After Losing a Game\n\n🧒: “I can’t win! This game is stupid.”\n\n👂Parent Reflects:\n“You’re feeling really frustrated because you want to win and it’s not happening.”\n________________________________________\n	\N
+365	________________________________________\n🧹 Chores\n\n🗣️ Instead of:\n"I’m not going to tell you again — do your chores!"\n\n✅ Say:\n"As soon as the floor is swept, you’re free to go play."\n\nOR\n"You’re responsible for your chore — I trust you to figure out when to get it done."\n________________________________________\n	\N
 491	🧑🏫 Tips for Building Effective Rituals & Routines\n\n•\tKeep routines simple and age-appropriate\n•\tBe consistent but flexible when needed\n•\tUse visual aids (charts, timers, reminders)\n•\tInvolve kids in planning routines to increase ownership\n•\tCelebrate successes and progress\n•\tAdjust as children grow and family needs change\n	\N
-531	________________________________________\n7. Cultural or Moral Stories\n\n•\tShare folktales, myths, or stories that teach values like kindness, honesty, or courage.\n\n•\tDiscuss what your child learned or thought about the story.\n________________________________________\n	\N
-583	________________________________________\n4. Comforting Touch\n\n•\tStroke your child’s hair or cheek to soothe them when they’re sad or scared.\n\n•\tSit close and offer a reassuring arm around their shoulder.\n________________________________________\n	\N
-276	2. When Your Child Talks Back\n\n•\tTrigger: Your child rolls their eyes and says, “I’m not doing that.”\n\n•\tMindful Pause:\n\no\tPause: Count to three, slowly.\no\tReflect: "I feel disrespected, but I want to handle this with kindness."\no\tResponse: “I understand you’re frustrated, but I need you to speak to me with respect. Let’s talk about how we can handle this situation.”\n	\N
 197	2. “You kept trying even when it was tough—great job!”\n\n•\tRecognizes persistence through difficulty.\n	\N
 205	10. “You made a plan and followed through step-by-step—that’s impressive!”\n\n•\tPraises organization and follow-through.\n	\N
 239	4. Kindness Goal\n\n•\t“Let’s try to do one kind thing for a friend or family member each day.”\n\n•\tDiscuss and celebrate acts of kindness\n	\N
-319	________________________________________\n7. Using Mindfulness or Relaxation Techniques\n\nScenario: Parent practices mindfulness with child.\n\nModel:\n\n“Let’s take three slow breaths together. Breathe in... breathe out...”\n________________________________________\n	\N
 280	3. When Your Child Refuses to Follow Instructions\n\n•\tTrigger: Your child ignores a request to clean up their toys.\n\n•\tMindful Pause:\n\no\tPause: Take a few deep breaths, focusing on your exhales.\no\tReflect: "I can handle this without getting upset. What’s the best way to approach this?"\no\tResponse: “I noticed you didn’t clean up your toys after I asked. How can we work together to get this done?”\n	\N
+319	________________________________________\n7. Using Mindfulness or Relaxation Techniques\n\nScenario: Parent practices mindfulness with child.\n\nModel:\n\n“Let’s take three slow breaths together. Breathe in... breathe out...”\n________________________________________\n	\N
+578	________________________________________\n✅ Why Use Touch & Affection?\n\n•\tStrengthens parent-child attachment\n•\tCalms and soothes children when upset\n•\tBoosts child’s confidence and security\n•\tEnhances emotional regulation\n•\tBuilds a foundation of trust and love\n________________________________________\n	\N
 643	\n⏱️ Format:\n\n5–6 weeks (Self-paced or live cohort)\n\nLevel: No prior tech or parenting experience needed\n	\N
-408	________________________________________\n3. Child Breaks Something by Accident\n\n😤 Parent feels: Annoyed, disappointed\n\nPause: Look away briefly, calm your tone\n\nRespond:\n“I know it was an accident. Let’s work together to clean it up and think about how to be more careful next time.”\n________________________________________\n	\N
 369	________________________________________\n🧠 Problem Solving\n\n🗣️ Instead of:\n"Why do you always forget your stuff?"\n\n✅ Say:\n"Looks like your backpack isn’t packed. What’s your plan to fix that?"\n\nOR\n"You’re in charge of remembering your things — how can you help yourself?"\n________________________________________\n	\N
 417	________________________________________\n🧠 What Is Problem-Solving Coaching?\n\nHelping your child identify a problem, think through possible solutions, weigh options, and choose the best way forward — with your support and encouragement.\n________________________________________\n	\N
-447	________________________________________\n4. Child Is Sad About a Friend Moving Away\n\n🧒: “I’m going to miss my friend so much.”\n\n👂Parent Reflects:\n“You’re feeling really sad about your friend moving away.”\n________________________________________\n	\N
+525	________________________________________\n✅ Why Use Storytelling & Sharing?\n\n•\tEncourages language and literacy skills\n•\tBuilds empathy and understanding\n•\tOpens doors for discussing emotions and challenges\n•\tStrengthens family bonds through shared experiences\n•\tSparks imagination and creativity\n________________________________________\n	\N
+581	________________________________________\n3. Playful Touch\n\n•\tEngage in gentle tickling, playful wrestling, or shoulder massages to bond through fun touch.\n________________________________________\n	\N
+408	________________________________________\n3. Child Breaks Something by Accident\n\n😤 Parent feels: Annoyed, disappointed\n\nPause: Look away briefly, calm your tone\n\nRespond:\n“I know it was an accident. Let’s work together to clean it up and think about how to be more careful next time.”\n________________________________________\n	\N
 565	________________________________________\n✅ Why Use Time-In and Time-Out?\n\n•\tHelps kids learn self-regulation\n•\tProvides clear limits and consequences\n•\tEncourages emotional awareness and control\n•\tBuilds secure parent-child connection (especially Time-In)\n•\tPrevents escalation of negative behaviors\n________________________________________\n	\N
-591	________________________________________\n🧠 What Is a Trigger Tracker?\n\nA simple journaling or logging practice where parents identify what triggered their emotional reactions, how they responded, and how they could respond more intentionally next time.\n________________________________________\n	\N
 462	________________________________________\n8. After Misunderstanding\n\n•\t“I think we got mixed up earlier. Can we talk about what each of us wanted?”\n________________________________________\n	\N
 495	________________________________________\n🧠 5. Emotional Regulation Routine (All Ages)\n\n😡 “What to Do When I Feel Upset” Chart:\n1.\tStop and breathe\n2.\tCount to 10 or squeeze something\n3.\tGo to my calm-down space\n4.\tUse words to ask for help\n5.\tRejoin the group when calm\n🌈 Ideal for emotional self-management and calming tools for younger kids.\n________________________________________\n	\N
-525	________________________________________\n✅ Why Use Storytelling & Sharing?\n\n•\tEncourages language and literacy skills\n•\tBuilds empathy and understanding\n•\tOpens doors for discussing emotions and challenges\n•\tStrengthens family bonds through shared experiences\n•\tSparks imagination and creativity\n________________________________________\n	\N
+447	________________________________________\n4. Child Is Sad About a Friend Moving Away\n\n🧒: “I’m going to miss my friend so much.”\n\n👂Parent Reflects:\n“You’re feeling really sad about your friend moving away.”\n________________________________________\n	\N
 553	________________________________________\n5. Parenting Groups or Playgroups\n\nExample:\n•\tLocal Parenting Meetup Groups or Parent-Child Playgroups\no\tHow it Helps: Meeting with other parents in your local community or attending organized playgroups allows you to create meaningful friendships while your children socialize and learn together. These groups provide an opportunity for mutual support and information exchange.\no\tHow to Utilize: Attend playgroup meet-ups, join local parenting workshops or support groups, or simply connect with parents in your neighborhood.\n________________________________________\n	\N
 556	________________________________________\n6. Extended Family or Trusted Friends for Emergency Support\n\nExample:\n•\tEmergency Babysitting or Backup Caregivers\no\tHow it Helps: Having people you trust to care for your child in emergencies gives you peace of mind. This support allows parents to take care of themselves, attend to personal matters, or get work done without worrying about their kids' safety.\no\tHow to Utilize: Arrange an emergency plan with close family members or friends who can step in when necessary, such as for last-minute work meetings or medical appointments.\n________________________________________\n	\N
-581	________________________________________\n3. Playful Touch\n\n•\tEngage in gentle tickling, playful wrestling, or shoulder massages to bond through fun touch.\n________________________________________\n	\N
-578	________________________________________\n✅ Why Use Touch & Affection?\n\n•\tStrengthens parent-child attachment\n•\tCalms and soothes children when upset\n•\tBoosts child’s confidence and security\n•\tEnhances emotional regulation\n•\tBuilds a foundation of trust and love\n________________________________________\n	\N
 147	🧑🏫 Parent Coaching: What NOT to Do\n\n❌ Don’t:\n\n•\tInterrupt with advice: “Just ignore them.”\n•\tMinimize: “It’s not a big deal.”\n•\tDismiss: “You’re being dramatic.”\n•\tRush: “You’ll be fine.”\n	\N
-35	"It’s okay to feel however you feel. I’m here to listen."	\N
-593	📚 Examples of Common Parenting Triggers\n________________________________________\n1. Being Ignored or Repeatedly Not Listened To\n\n•\t🧠 Trigger: “I told him to get dressed three times and he just kept playing.”\n•\t💥 Response: Yelled out of frustration.\n•\t💡 Reframe: “He’s immersed in play. Next time I’ll kneel down, make eye contact, and give a two-minute warning.”\n________________________________________\n	\N
-592	________________________________________\n✅ Why Use a Trigger Tracker?\n\n•\tBuilds self-awareness and emotional regulation\n•\tHelps break negative cycles and reactive patterns\n•\tIdentifies patterns and deeper unmet needs (for you or your child)\n•\tSupports modeling calm and accountability\n•\tStrengthens your parenting presence and effectiveness\n________________________________________\n	\N
-596	________________________________________\n4. Sibling Fighting\n\n•\t🧠 Trigger: “They were screaming over the remote.”\n•\t💥 Response: Yelled and took it away angrily.\n•\t💡 Reframe: “Conflict is normal. I’ll coach them through problem-solving next time instead of jumping in with anger.”\n________________________________________\n	\N
-598	________________________________________\n5. Messy or Disorganized Spaces\n\n•\t🧠 Trigger: “The living room was trashed again after I cleaned it.”\n•\t💥 Response: Blamed and scolded the kids.\n•\t💡 Reframe: “They need systems to clean up. I can guide them in creating and sticking to one.”\n________________________________________\n	\N
-597	________________________________________\n6. Tantrums in Public\n\n•\t🧠 Trigger: “He screamed in the store when I said no to candy.”\n•\t💥 Response: Felt embarrassed and shut him down.\n•\t💡 Reframe: “He’s learning to handle disappointment. I’ll stay calm and use it as a teachable moment.”\n________________________________________\n	\N
-605	________________________________________\n✅ Key Rules for Effective “When–Then” Parenting\n\n•\tThe “when” is the task or responsibility\n•\tThe “then” is the privilege, fun, or reward\n•\tStay neutral and consistent — no lectures\n•\tDon’t flip it into a threat (avoid: “If you don’t do this, you don’t get…”)\n________________________________________\n	\N
-607	________________________________________\n📱 Screen Time & Electronics\n\n5.\tWhen your homework is finished, then you can have your tablet.\n6.\tWhen your room is tidy, then you may watch your show.\n7.\tWhen your chores are done, then you get 30 minutes of screen time.\n8.\tWhen the timer goes off, then the iPad goes off.\n________________________________________\n	\N
-608	________________________________________\n🧠 Emotional Regulation & Behavior\n\n9.\tWhen you use calm words, then I can help you.\n10.\tWhen you’re ready to speak kindly, then we’ll keep playing.\n11.\tWhen you apologize to your brother, then you can join the game again.\n12.\tWhen your voice is calm, then I’ll listen to what you’re saying.\n________________________________________\n	\N
-610	________________________________________\n🎉 Fun & Privileges\n\n16.\tWhen your piano practice is done, then you can play with your friends.\n17.\tWhen you clean up the playroom, then we can go to the park.\n18.\tWhen your toys are off the floor, then we’ll start movie night.\n________________________________________\n	\N
-611	________________________________________\n🧹 Chores & Family Contributions\n\n19.\tWhen the table is cleared, then we’ll have dessert.\n20.\tWhen you feed the dog, then we’ll go on our walk.\n21.\tWhen the trash is taken out, then you can open your new toy.\n________________________________________\n	\N
-612	🧑🏫 Teaching Parents How to Use “When–Then” Language\n\n💡 3 Coaching Tips:\n1.\tSay it once, and walk away (don’t repeat — let the consequence do the work)\n2.\tMake it positive and factual, not emotional\n3.\tLet the child choose when — they can delay, but they don’t get the "then" until the "when" is done\n________________________________________\n❌ Common Mistake: Turning it into a Threat\n•\t❌ "If you don't clean your room, no TV!"\n•\t✅ "When your room is clean, then you may watch TV."\n________________________________________\n	\N
+591	\n🧠 What Is a Trigger Tracker?\n\nA simple journaling or logging practice where parents identify what triggered their emotional reactions, how they responded, and how they could respond more intentionally next time.\n\n	\N
+592	\n✅ Why Use a Trigger Tracker?\n\n•\tBuilds self-awareness and emotional regulation\n•\tHelps break negative cycles and reactive patterns\n•\tIdentifies patterns and deeper unmet needs (for you or your child)\n•\tSupports modeling calm and accountability\n•\tStrengthens your parenting presence and effectiveness\n	\N
+593	📚 Examples of Common Parenting Triggers\n\n1. Being Ignored or Repeatedly Not Listened To\n\n•\t🧠 Trigger: “I told him to get dressed three times and he just kept playing.”\n•\t💥 Response: Yelled out of frustration.\n•\t💡 Reframe: “He’s immersed in play. Next time I’ll kneel down, make eye contact, and give a two-minute warning.”\n	\N
+596	\n4. Sibling Fighting\n\n•\t🧠 Trigger: “They were screaming over the remote.”\n•\t💥 Response: Yelled and took it away angrily.\n•\t💡 Reframe: “Conflict is normal. I’ll coach them through problem-solving next time instead of jumping in with anger.”\n	\N
+598	\n5. Messy or Disorganized Spaces\n\n•\t🧠 Trigger: “The living room was trashed again after I cleaned it.”\n•\t💥 Response: Blamed and scolded the kids.\n•\t💡 Reframe: “They need systems to clean up. I can guide them in creating and sticking to one.”\n	\N
+597	\n6. Tantrums in Public\n\n•\t🧠 Trigger: “He screamed in the store when I said no to candy.”\n•\t💥 Response: Felt embarrassed and shut him down.\n•\t💡 Reframe: “He’s learning to handle disappointment. I’ll stay calm and use it as a teachable moment.”\n\n	\N
+600	\n8. Your Own Stress Overflowing\n\n•\t🧠 Trigger: “I had a hard workday and just couldn’t handle whining.”\n•\t💥 Response: Overreacted to small issues.\n•\t💡 Reframe: “I need a reset before reentering parenting mode. I’ll build in 5 minutes of breathing or music first.”\n\n	\N
+611	\n🧹 Chores & Family Contributions\n\n19.\tWhen the table is cleared, then we’ll have dessert.\n20.\tWhen you feed the dog, then we’ll go on our walk.\n21.\tWhen the trash is taken out, then you can open your new toy.\n\n	\N
+612	🧑🏫 Teaching Parents How to Use “When–Then” Language\n\n💡 3 Coaching Tips:\n1.\tSay it once, and walk away (don’t repeat — let the consequence do the work)\n2.\tMake it positive and factual, not emotional\n3.\tLet the child choose when — they can delay, but they don’t get the "then" until the "when" is done\n\n❌ Common Mistake: Turning it into a Threat\n•\t❌ "If you don't clean your room, no TV!"\n•\t✅ "When your room is clean, then you may watch TV."\n\n	\N
+599	\n\n7. Disrespect to Others (like teachers or grandparents)\n\n•\t🧠 Trigger: “She rolled her eyes at grandma.”\n•\t💥 Response: Scolded her harshly in front of others.\n•\t💡 Reframe: “We’ll talk privately later about respect. I’ll stay supportive but clear.”\n\n	\N
+604	“When–Then” Parenting?\n\n"When–Then" statements link a responsibility to a privilege — teaching that privileges come after tasks or good behavior.\n\nIt’s clear, calm, and puts kids in control of when they earn the “then.”\n\n	\N
+605	\n✅ Key Rules for Effective “When–Then” Parenting\n\n•\tThe “when” is the task or responsibility\n•\tThe “then” is the privilege, fun, or reward\n•\tStay neutral and consistent — no lectures\n•\tDon’t flip it into a threat (avoid: “If you don’t do this, you don’t get…”)\n________________________________________\n	\N
 492	________________________________________\n🧠 Why Use Routine Charts or Visual Schedules?\n\n•\tProvide structure and predictability\n•\tReduce power struggles and reminders\n•\tSupport visual learners\n•\tHelp kids feel in control and responsible\n•\tCan be interactive (checklists, magnets, Velcro, drawings)\n________________________________________\n	\N
 497	________________________________________\n🧹 4. Weekend Routine (Flexible, Ages 4–12)\n\n🧼 “Weekend Starter” Routine:\n1.\tWake up\n2.\tMake bed\n3.\tEat breakfast\n4.\tChores (dust, tidy room, feed pet)\n5.\tFamily activity (bike ride, crafts)\n6.\tFree time\n🧩 Helps keep weekends from turning into chaos or screen marathons.\n________________________________________\n	\N
 498	________________________________________\n💻 6. Screen Time Routine\n\n📺 “Before Screen Time” Checklist:\n1.\tGet ready for the day ✅\n2.\tComplete reading/homework ✅\n3.\tTidy your space ✅\n4.\tAsk permission ✅\n➡ Then: Screen time begins (for X minutes)\n🏁 Use timers and visual countdowns alongside.\n________________________________________\n	\N
 552	________________________________________\n4. Professional Support Networks\n\nExample:\n•\tTherapists, Pediatricians, or Parenting Coaches\no\tHow it Helps: Professionals can offer expert guidance, mental health support, and practical strategies to improve your parenting. They are trained to handle specific issues like behavioral concerns, mental health struggles, or developmental delays.\no\tHow to Utilize: Schedule regular sessions with a family therapist, speak with your pediatrician about your child’s development, or seek advice from a parenting coach for targeted support on discipline strategies or emotional regulation.\n________________________________________\n	\N
 557	________________________________________\n7. School or Educational Support Networks\n\nExample:\n•\tTeachers, School Counselors, or After-School Programs\no\tHow it Helps: Teachers and school counselors play a significant role in your child’s development. They provide academic support, emotional guidance, and behavioral interventions that complement your parenting efforts.\no\tHow to Utilize: Stay in regular contact with your child’s teacher or counselor to monitor academic progress, social integration, and emotional well-being. Participate in school events and volunteer opportunities to stay connected to the school community.\n________________________________________\n	\N
 562	________________________________________\n12. Neighbor Support Networks\n\nExample:\n•\tNeighboring Families or Friends for Immediate Help\no\tHow it Helps: Neighbors can become an important part of your support system, especially when you need help in a pinch (e.g., walking your child to school or watching them for a short period).\no\tHow to Utilize: Develop friendly relationships with neighbors, exchange contact information for emergencies, and create a neighborhood support system for mutual help.\n________________________________________\n	\N
-595	________________________________________\n3. Morning Chaos\n\n•\t🧠 Trigger: “We were late again and everyone was cranky.”\n•\t💥 Response: Rushed and stressed, with sharp tone.\n•\t💡 Reframe: “We need a clearer routine. I’ll prep the night before and wake up 10 minutes earlier.”\n________________________________________\n	\N
-600	________________________________________\n8. Your Own Stress Overflowing\n\n•\t🧠 Trigger: “I had a hard workday and just couldn’t handle whining.”\n•\t💥 Response: Overreacted to small issues.\n•\t💡 Reframe: “I need a reset before reentering parenting mode. I’ll build in 5 minutes of breathing or music first.”\n________________________________________\n	\N
-599	\n________________________________________\n7. Disrespect to Others (like teachers or grandparents)\n\n•\t🧠 Trigger: “She rolled her eyes at grandma.”\n•\t💥 Response: Scolded her harshly in front of others.\n•\t💡 Reframe: “We’ll talk privately later about respect. I’ll stay supportive but clear.”\n________________________________________\n	\N
-604	“When–Then” Parenting?\n\n"When–Then" statements link a responsibility to a privilege — teaching that privileges come after tasks or good behavior.\n\nIt’s clear, calm, and puts kids in control of when they earn the “then.”\n________________________________________\n	\N
+610	\n🎉 Fun & Privileges\n\n16.\tWhen your piano practice is done, then you can play with your friends.\n17.\tWhen you clean up the playroom, then we can go to the park.\n18.\tWhen your toys are off the floor, then we’ll start movie night.\n________________________________________\n	\N
+595	3. Morning Chaos\n\n•\t🧠 Trigger: “We were late again and everyone was cranky.”\n•\t💥 Response: Rushed and stressed, with sharp tone.\n•\t💡 Reframe: “We need a clearer routine. I’ll prep the night before and wake up 10 minutes earlier.”\n\n	\N
 559	________________________________________\n9. Religious or Spiritual Community Networks\n\nExample:\n•\tChurch, Synagogue, Mosque, or Other Faith-Based Communities\no\tHow it Helps: Many religious communities provide parenting support through mentorship programs, spiritual guidance, or family-based activities. These communities often foster strong values that align with parenting goals.\no\tHow to Utilize: Join church or religious groups focused on family life, attend family events or parenting workshops, and build relationships with like-minded parents.\n________________________________________\n	\N
 560	________________________________________\n10. Specialized Support Networks for Specific Needs\n\nExample:\n•\tParenting Networks for Children with Special Needs\no\tHow it Helps: Parents of children with special needs benefit from a support system that understands their unique challenges. These networks provide emotional support, educational resources, and a space for discussing specific concerns.\no\tHow to Utilize: Join organizations or online forums focused on your child’s specific condition (e.g., autism, ADHD, dyslexia) and attend support group meetings for expert advice, resources, and emotional connection.\n________________________________________\n	\N
 563	How to Build and Strengthen Your Support Network:\n\n1.\tBe Proactive: Reach out to local community groups, online forums, or existing relationships to build your network.\n2.\tCommunicate Your Needs: Be clear with family, friends, or professionals about the support you need and how they can help.\n3.\tOffer Support in Return: A strong support network is reciprocal. Help others when you can, which will make others more likely to help you.\n4.\tStay Consistent: Check in regularly with your support network. Keeping in touch helps maintain strong, trusting relationships.\n5.\tDiversify Your Network: Seek a variety of support types: emotional, practical, and informational. This ensures you're supported in many areas of your parenting journey\n	\N
 561	________________________________________\n11. Workplace Support Networks\n\nExample:\n•\tColleagues or Workplace Parent Support Groups\no\tHow it Helps: Workplace support systems for parents, such as flexible work hours, parent-specific events, or wellness programs, can ease the stress of balancing work and parenting responsibilities.\no\tHow to Utilize: Speak with HR about family-friendly policies, participate in workplace parent support groups, or lean on colleagues who share parenting experiences.\n________________________________________\n	\N
-606	📚 20+ Real-Life “When–Then” Examples by Age & Situation\n________________________________________\n🏡 Daily Routines\n\n1.\tWhen your teeth are brushed, then we’ll read your bedtime story.\n2.\tWhen you get dressed, then you can pick your breakfast.\n3.\tWhen your backpack is packed, then you can go play.\n4.\tWhen your laundry is in the hamper, then I’ll wash your favorite shirt.\n________________________________________\n	\N
 614	What Skills Will Future Generations Need?\n\n    AI Literacy: Understanding how AI works, the potential benefits, and risks, and knowing how to leverage it effectively will be key. Just as children today learn basic literacy and numeracy, they’ll need AI literacy to navigate future careers.\n\n    Emotional Intelligence (EQ): Roles that require human interaction—especially those that need empathy, like counseling or teaching—will be increasingly valuable. While AI can simulate emotions, it can’t truly replicate the human experience. Parents should encourage emotional intelligence and people skills in their children.\n\n    Creativity and Problem-Solving: These are skills that cannot be easily replicated by AI. Kids will need to develop the ability to think creatively, find novel solutions, and apply their ideas to the real world.\n\n    Technical and Digital Skills: Programming, understanding algorithms, and working with AI tools will become essential. Even basic coding or familiarity with tech platforms will give children a significant advantage.\n\n    Adaptability and Lifelong Learning: With the pace of change, the ability to adapt will be the most critical skill. Learning to learn, re-skill, and up-skill will be crucial as job roles evolve.	\N
+606	📚 20+ Real-Life “When–Then” Examples by Age & Situation\n\n🏡 Daily Routines\n\n1.\tWhen your teeth are brushed, then we’ll read your bedtime story.\n2.\tWhen you get dressed, then you can pick your breakfast.\n3.\tWhen your backpack is packed, then you can go play.\n4.\tWhen your laundry is in the hamper, then I’ll wash your favorite shirt.\n\n	\N
 619	Body Image & Social Comparison\n\n    Media Influence: With the rise of influencers, Instagram models, and online culture, parents are increasingly worried about their children (especially girls) facing body image issues and low self-esteem due to unrealistic standards of beauty.\n\n    Social Comparison: Social media has amplified the idea of comparing one's life to others, leading to feelings of inadequacy. Parents worry about their children’s sense of self-worth being shaped by what they see online rather than their real-world experiences.\n\n    Gender Identity: As more children explore their gender identity, parents may have questions about how to support their child’s journey, particularly when it comes to navigating societal expectations, school policies, and family dynamics.	\N
 618	 Social Development and Friendships\n\n    Isolation & Loneliness: With the rise of social media, many children may feel more connected online but less connected in the real world. Friendships have changed, with digital friendships sometimes taking priority over in-person interactions. Parents are concerned about how to help kids build real-world friendships and navigate issues like peer pressure, cliques, and social exclusion.\n\n    Bullying: Bullying remains a constant concern for parents, particularly in the digital age where it can take place 24/7 via social media and text messages. Parents are concerned about both traditional bullying in schools and cyberbullying online.	\N
 615	Creative Thinking in a World of AI\n\n    Content: Using AI to boost creativity—like designing digital art, writing stories with AI help, or building simple AI-powered apps.\n\n    Skills: Creative problem-solving, digital art, basic coding.	\N
@@ -6260,20 +6145,18 @@ COPY public.components_coursecontent_texts (id, data, style) FROM stdin;
 465	🧑🏫 Tips for Effective Repair Conversations\n\n•\tStay calm and listen actively\n•\tValidate feelings without judgment\n•\tUse “I” statements to express your perspective\n•\tEncourage your child to share their view\n•\tFocus on solutions, not blame\n•\tKeep conversations age-appropriate and brief if needed\n•\tFollow up with actions and reminders\n	\N
 623	This course is to help parents understand, develop, and apply emotional intelligence (EI) in their daily lives to improve their parenting skills, emotional awareness, and family dynamics.\n\n•\tConcept: Helping parents develop emotional intelligence (EQ) is critical, both for their well-being and for raising emotionally resilient children. Emotional intelligence involves self-awareness, self-regulation, empathy, and social skills.\n\n•\tFeatures:\no\tEQ exercises: Provide daily activities that boost emotional awareness, empathy, and relationship-building (e.g., “Think of one moment today where you felt frustrated, and reflect on how you could have managed it differently”).\no\tParent-Child Communication Tips: Share strategies for empathetic communication with children (e.g., using reflective listening or validating a child’s emotions).\no\tRole-Playing Scenarios: Offer interactive scenarios to practice responses to common parenting challenges, helping parents build empathy and control.\n\n•\tWhy it’s effective: Emotional intelligence is key to strong relationships and mental health. Parents with high EQ are more likely to handle challenges calmly and provide their children with healthy emotional guidance.\n	\N
 430	________________________________________\n✅ Why Use Redirection?\n\n•\tPrevents power struggles and escalations\n•\tTeaches self-regulation through modeling\n•\tMaintains a positive connection while correcting behavior\n•\tSupports learning through gentle guidance\n•\tWorks especially well for younger children\n________________________________________\n	\N
-633	🧩 1. Teach the “Core 3” Connection Habits\n\nMake it simple and memorable:\n✅ Pause – See – Connect\n1. Pause: Take a breath before reacting.\n2. See: Notice what your child is feeling, not just doing.\n3. Connect: Respond with empathy before correcting.\n🔁 Use this daily, especially during meltdowns, arguments, or emotional moments.\n	\N
 628	\n🫂 3. Be Emotionally Available\n\nChildren need to feel safe expressing their emotions without judgment.\n✅ What Parents Can Do:\nListen without rushing to fix or judge.\nAcknowledge their feelings, even if they seem small to you.\nOffer physical comfort (hugs, gentle touch).\n🌟 Example:\n“I see you're sad about losing the game. That makes sense. I’m here if you want to talk about it or just sit together.”\n\n	\N
-629	\n👀 4. Respect Their Feelings and Space\n\nSecurity comes from knowing their thoughts and boundaries are valued.\n✅ What Parents Can Do:\nAsk for their opinions on small choices (clothes, snacks).\nKnock before entering their room (if older).\nAvoid shaming or mocking their feelings.\n🌟 Example:\n“Would you rather wear the red shirt or the blue one today?” (It gives autonomy, which builds trust.)\n\n	\N
 632	\n🧩 5. Let Them Make (Safe) Mistakes\n\nDon’t protect them from everything — help them learn to trust themselves.\n✅ What Parents Can Do:\nEncourage them to try new things, even if they struggle.\nHelp them reflect without blame when mistakes happen.\nPraise effort and honesty more than outcome.\n🌟 Example:\n“You dropped the glass — let’s clean it up together. Everyone makes mistakes, and that’s how we learn.”\n\n	\N
+629	\n👀 4. Respect Their Feelings and Space\n\nSecurity comes from knowing their thoughts and boundaries are valued.\n✅ What Parents Can Do:\nAsk for their opinions on small choices (clothes, snacks).\nKnock before entering their room (if older).\nAvoid shaming or mocking their feelings.\n🌟 Example:\n“Would you rather wear the red shirt or the blue one today?” (It gives autonomy, which builds trust.)\n\n	\N
+55	Exercise 3: Unconditional Love Journaling\n\nGoal: Encourage parents to reflect on their experiences each day to see if they gave unconditional love to their child that day.\n\nInstructions: Parents write a daily journal entry where they reflect on moments when they showed unconditional love and how they responded to challenges. This can include moments of praise, listening, or comfort.\n\n	\N
 625	Here’s how parents can build that sense of trust and security, with clear examples you can apply right away:\n\n🧱 1. Be Consistent and Predictable\nChildren feel safest when they can rely on what’s going to happen next.\n✅ What Parents Can Do:\nStick to routines (meals, bedtime, goodbyes).\nFollow through on promises — big or small.\nBe on time when picking them up from school or activities.\n🌟 Example:\n"If you say you’ll read a bedtime story every night — even a short one — doing it consistently tells your child they can count on you."\n\n	\N
 654	________________________________________\n🎯 Course Overview:\n\nIn today’s fast-paced world, managing time well is a critical life skill—for both parents and kids. This short, practical course helps families work together to build healthier routines, reduce daily stress, and make time for what matters most.\n\nThrough fun, hands-on activities and guided strategies, families will learn how to set priorities, stay organized, and build time habits that support success at home, at school, and beyond.\n________________________________________\n	\N
 655	Before we even hold our child, we carry them — in our thoughts, in our fears, and often, in the places we haven’t yet healed. Parenting doesn’t start the moment the baby is born. It starts the moment we decide to change the story.\n\nFor many aspiring parents, especially those who have experienced trauma, instability, or simply a lack of healthy models, preparing to parent means doing some personal excavation. It’s not about being perfect. It’s about being aware. Being the parent you needed often requires becoming the adult your inner child needed first.\n\nTherapists call this "re-parenting." It can be as simple as setting boundaries with family, learning to self-regulate, or practicing saying kind things to yourself. When we heal, we create a safer space — not just for ourselves, but for the little ones to come.\n\n"Your healing is the seed of your child’s emotional garden"	\N
-636	🛠️ 3. Give Tools for Emotion Coaching\n\nTeach parents to name emotions, validate them, and guide problem-solving.\n\nExample Script:\n🧒: “I hate my brother!”\n👩‍🦰: “Sounds like you're feeling really angry. I’m here, let’s take a breath.”\n👩‍🦰: “Can you tell me what happened?”\n👩‍🦰: “It’s okay to be mad. It’s not okay to hit. Let’s figure out what to do next time.”\nThis builds emotional intelligence and connection.\n	\N
 656	You gave your toddler the tablet. It’s okay. You’re not failing.\n\nModern parenting comes with modern guilt. Screens are everywhere, and sometimes, they’re a break — for your kid and for your sanity. But the anxiety that follows (“Did I just ruin their brain?”) is real. The truth? Balance is the key.\n\nUse screens as tools, not babysitters. Create rituals like screen-free dinners or tech-free Sundays. And most importantly: model the relationship with screens that you want your child to have. That means putting your phone down too.\n\nThere’s no shame in using tech. There’s power in being intentional.\n\n	\N
 653	________________________________________\n🎯 Course Overview:\n\nSTEM subjects (Science, Technology, Engineering, and Math) can be tough—for both students and parents. This short, practical course introduces families to AI tools that can support learning, reduce frustration, and build confidence in math, science, and more.\nIn just a few sessions, you'll explore how AI-powered tools can:\n•\tExplain difficult concepts in simple ways\n•\tOffer instant homework help (without doing it for them!)\n•\tPersonalize practice and problem-solving\n•\tEncourage curiosity and independent thinking\n•\tSupport parents in guiding STEM learning—without needing to be experts\n_______________________________________\n	\N
 657	There’s something about warm air and slow Sundays that opens the heart. Summer invites us to pause, breathe, and imagine.\n\nWhether you’re already a parent or simply thinking about becoming one, this season is a powerful time to ask: What kind of legacy do I want to leave? The walks in the park. The beachside journal sessions. The quiet evenings under string lights — they’re more than aesthetic. They’re a mirror.\n\nLet summer be your reset. Reconnect with your values. Revisit the parent you want to be — or become.	\N
 658	Sunday scaries aren’t just for adults.\n\nKids pick up on transition energy. Sunday often means goodbye to family time, hello to school or daycare. It’s anxiety — but in toddler form. That may show up as whining, clinginess, or full-on meltdowns.\n\nThe fix? Create Sunday rituals. Pancake breakfasts. Walks together. A visual schedule for the week ahead. The more anchored Sunday feels, the less overwhelming Monday becomes.\n\nYou can be the calm before the storm.	\N
 659	Maybe your partner comes from a culture where children don’t speak at the table. Yours celebrates how the day went at dinner. Maybe your parents expect discipline, while you lean toward empathy.\n\nRaising a child between cultures is a beautiful balancing act. It’s a chance to choose what you pass down and what you release. Include your child in those traditions. Let them shape their identity with pride — not confusion.\n\nConnection is the culture you create together.	\N
-55	Exercise 3: Unconditional Love Journaling\n\nGoal: Encourage parents to reflect on their experiences each day to see if they gave unconditional love to their child that day.\n\nInstructions: Parents write a daily journal entry where they reflect on moments when they showed unconditional love and how they responded to challenges. This can include moments of praise, listening, or comfort.\n\n	\N
 647	\n🤖 Module 2: Building Your AI Support System\n\n•\tHow to use AI to plan: sleep schedules, meal prep, hospital bag checklists\n•\tAI as a decision coach (not a replacement for instinct)\n•\tUsing AI to simplify your mental load: reminders, logs, calendars\n•\tJournaling + reflection using AI chatbots\n\n📌 Tools: Notion AI, ChatGPT, BabyCenter GPT plugin, Cozi\n\n	\N
 646	\n📘 Core Modules:\n\n🌱 Module 1: Preparing for Parenthood in the AI Era\n•\tWhat really changes when you become a parent (emotionally & logistically)\n•\tHow AI is changing parenting (good and bad)\n•\tTech + humanity: keeping balance in a digital-first generation\n•\tMyths vs. realities of “perfect parenting”\n\n📌 Tools: ChatGPT as a nonjudgmental parenting researcher\n\n	\N
 642	\n🧭 Course Goals:\n\n•\tEquip future parents with emotional and communication tools\n•\tUse AI to reduce information overload, plan better, and feel more supported\n•\tBuild emotional awareness and co-parenting strength before baby arrives\n•\tTeach how to balance tech support with human intuition\n\n	\N
@@ -6288,34 +6171,29 @@ COPY public.components_coursecontent_texts (id, data, style) FROM stdin;
 660	You’ve just completed a major milestone — MBA in hand, job offers on the table, life plans in motion. But now, a new thought has entered your horizon: parenthood.\n\nLet’s be honest — your calendar is color-coded, your projects are tracked, but babies? They don’t come with Gantt charts.\n\nSo, should you wait? Maybe. But maybe you just need to shift how you think about readiness. Emotional preparedness isn’t about knowing every answer — it’s about being willing to grow through the questions.\n\nStart by reflecting on your own childhood: What values do you want to pass on? What patterns do you want to break? What kind of partner or co-parent would you want to be?\n\nSummer is a beautiful time to slow down and think big. So while you're brunching with friends or hiking solo, ask yourself: Can I be the guide I wish I had?	\N
 661	Your pet was your first baby. And now... a new kind of baby is on the way.\n\nMany expecting parents worry about the adjustment — and rightly so. Pets can feel displaced. But they can also thrive as companions and protectors, if the transition is handled with care.\n\nStart early. Introduce baby smells. Practice boundaries. Praise calm behaviour.\n\nAnd remember, your pet isn't just losing your undivided attention — they’re gaining a new family member. If you model love and inclusion, they’ll pick it up too.\n	\N
 662	Sunday morning. French toast. Windows open. Your partner smiles across the table and asks, "What do you think it’d be like to raise a kid together?"\n\nSuddenly, the vibe shifts — in a good way.\n\nThese early conversations matter. Not because you’ll figure it all out, but because dreaming together builds trust. It’s like rehearsing without a stage.\n\nTalk values. Talk fears. Talk about who your child might become — and what they’ll need from you.\n\nYou’re already parenting in the way you love each other. Keep going.	\N
-32	Exercise 2: Empathy Building\n\nObjective: Strengthen your empathy and emotional validation.\n\nInstructions:\n\n1.\tThink of a recent situation where your child felt upset or frustrated.\n2.\tReflect on how you responded at that moment.\n3.\tNow, imagine how your child might have felt during that situation. What could you have said or done differently to show more empathy?\n4.\tIn your next conversation, practice responding with empathy, for example: “I see you’re feeling frustrated because of that situation. I can understand why that might upset you.”\n	\N
-31	Practice Exercises for Parents---Exercise 1: Active Listening Practice\n\nObjective: Develop active listening skills.\n\nInstructions:\n1.\tSet aside a few minutes each day for uninterrupted one-on-one time with your child.\n2.\tAsk them about their day or how they’re feeling.\n3.\tPractice listening without interrupting, and try to reflect back what they’re saying to show understanding. For example: "It sounds like you had a tough day at school. What happened?"\n4.\tAfter the conversation, ask yourself how well you listened. Did you resist the urge to give advice or solve the problem immediately?\n	\N
-33	Exercise 3: Open-Ended Question Practice\n\nObjective: Develop a habit of asking open-ended questions.\n\nInstructions:\n\n1.\tWrite down a few questions you typically ask your child (e.g., “How was school?”).\n2.\tNow, rewrite them to be more open-ended. Instead of "How was school?" try asking "What was the best part of your day at school?"\n3.\tPractice using open-ended questions throughout the week to encourage your child to share more details and engage in deeper conversations.\n	\N
 64	Key Aspects of Modeling Behavior:\n\nActions Speak Louder than Words: Children are more likely to imitate what they see rather than what they hear. If you want your child to display certain behaviors (like kindness, patience, or self-control), you need to demonstrate them first.\n	\N
 631	\n🧠 7. Model Calm and Security Yourself\n\nChildren often mirror your emotional state.\n✅ What Parents Can Do:\nUse calm language during stress.\nShow how to handle emotions constructively.\nPractice mindfulness, breathing, or pausing before reacting.\n🌟 Example:\nInstead of yelling when a mess happens: “I feel really frustrated. Let’s take a deep breath, then figure out how to clean this up.”\n\n	\N
-73	Mind Your Body Language: Children are great at picking up on body language and non-verbal cues. Make sure your body language aligns with your words. For example, when saying “I love you,” make sure your tone and body language reflect warmth and care.	\N
 630	\n🛡️ 6. Stand Up for Them\n\nChildren need to know their parents are their safe base — someone who protects them.\n✅ What Parents Can Do:\nIntervene gently but firmly if someone is unkind to them.\nBe their advocate with teachers, caregivers, etc., when needed.\nHelp them name when something feels “not okay.”\n🌟 Example:\n“If anyone touches you in a way that makes you uncomfortable, you can always come to me — and I will believe you.”\n\n	\N
-639	🌅 1. Morning Gratitude Reflection (Personal)\nBefore the day begins, take a few minutes to reflect:\nPrompt: “What is one thing I appreciate about my child today?”\nOptional Journaling: Write it down to start your day with intention.\n✅ Why it helps: Centering your thoughts on gratitude sets a tone of patience and mindfulness before parenting challenges arise.\n\n🗣️ 2. Gratitude Talk at Mealtime\nDuring a family meal, take turns sharing:\nPrompt: “What is one thing that made you happy today?” or “What’s one thing you’re thankful for today?”\nLet your child go first sometimes so they feel heard.\n✅ Why it helps: Builds a habit of expressing appreciation and encourages kids to feel safe sharing their thoughts.\n\n💬 3. Daily Appreciation to Your Child\nAt least once a day, say something like:\n“I’m so grateful I get to be your parent.”\n“Thank you for helping with [specific action]. That was really kind.”\n“I loved spending time with you doing [activity] today.”\n✅ Why it helps: Verbal affirmations foster emotional security and positive reinforcement.\n\n✍️ 4. Gratitude Note or Drawing\nLeave a sticky note in their lunchbox or room, or draw a small picture together that represents something you're both grateful for.\n✅ Why it helps: Kids feel loved and valued through small, thoughtful gestures.\n\n💤 5. Bedtime Gratitude Ritual\nEnd the day by snuggling up and sharing:\n“What’s one good thing that happened today?”\n“What’s something we’re both thankful for about each other?”\n✅ Why it helps: Promotes peaceful sleep and reinforces connection at the end of the day.\n\n❤️ 6. Model Gratitude in Conflict\nWhen there’s tension or after a correction, try to follow up with:\n“I know today was tough, but I’m really thankful that you shared your feelings with me.”\n“Even when we disagree, I’m grateful we can talk about it together.”\n✅ Why it helps: Builds emotional resilience and trust that love isn’t withdrawn during conflict.\n\n📆 7. Weekly Family Gratitude Jar\nKeep a jar where everyone can add notes throughout the week. On Sundays, read them together.\n	\N
+73	Mind Your Body Language: Children are great at picking up on body language and non-verbal cues. Make sure your body language aligns with your words. For example, when saying “I love you,” make sure your tone and body language reflect warmth and care.	\N
 140	📚 Real-Life Active Listening Examples by Situation\n\n1. Child is Upset After School\n🧒: “Everyone picked partners except me. I hate school.”\n\n👂Parent (Active Listening):\n“Wow, that sounds really lonely. You felt left out when no one picked you?”\n\n✅ Why it works: Reflects the emotion, doesn’t jump in with “Don’t worry” or “I’m sure it’ll be fine.”\n	\N
 146	7. Teen Withdrawing or Being Quiet\n\n🧑: Silent, withdrawn after school\n\n👂Parent:\n“You seem quiet today. Want to talk about what’s on your mind? I’m here if you do.”\n\n✅ Opens the door without pressure or judgment.\n	\N
 275	📚 Examples of Mindful Pause in Parenting\n\n1. When Your Child is Having a Tantrum\n\n•\tTrigger: Your child is screaming because they can’t have a toy.\n\n•\tMindful Pause:\n\no\tPause: Take a deep breath.\no\tReflect: "I know this is difficult, but I want to stay calm."\no\tResponse: “I see you're upset, and I’m here to help. Let’s take a deep breath together, and we’ll talk about it.”\n	\N
 278	5. When Your Child Wants to Stay Up Late\n\n•\tTrigger: Your child argues about going to bed at bedtime.\n\n•\tMindful Pause:\n\no\tPause: Stand still for a moment, close your eyes, and breathe deeply.\no\tReflect: “I don’t want to argue right now. I want to stick to our routine.”\no\tResponse: “I know you want to stay up, but it’s bedtime. Let’s read one more short story, and then it’s time for sleep.”\n	\N
 281	7. When Your Child Acts Out in Public\n\n•\tTrigger: Your child is throwing a tantrum at the grocery store.\n\n•\tMindful Pause:\n\no\tPause: Take three breaths in through your nose, out through your mouth.\no\tReflect: “This is embarrassing, but reacting with anger won’t help.”\no\tResponse: “I see you’re upset. Let’s step aside and calm down for a minute.”\n	\N
-663	________________________________________\n✅ Definition: Setting Boundaries (Parenting Tool)\nSetting boundaries means clearly defining rules, expectations, and limits for your child’s behavior—what is okay and what is not. It helps children feel safe, understand their responsibilities, and learn self-control. Boundaries also teach kids how to respect others and develop healthy relationships.\n________________________________________\n	\N
-669	________________________________________\n5. Follow Through Calmly\n\nIf the child protests when time is up:\nParent stays calm and says:\n“I know you want to keep playing. But the rule is 30 minutes. You can try again tomorrow.”\n•\tWhy this matters: Consistent and calm follow-through builds respect and trust.\n________________________________________\n	\N
-667	________________________________________\n4. Use a Timer to Enforce the Limit\n\n“I’m setting the timer now. When it goes off, screen time is over.”\n•\tWhy this works: Using a timer avoids debate. It's neutral and consistent.\n________________________________________\n	\N
-664	________________________________________\n⚠️ Things Parents Should Pay Attention to When Setting Boundaries\n\n1. Be Clear and Simple\n•\tAvoid vague rules like “Behave yourself.” Instead, say, “Use your inside voice when we’re indoors.”\n2. Stay Emotionally Calm\n•\tChildren listen better when parents speak calmly, not in anger. Yelling weakens your authority over time.\n3. Don’t Set Too Many Rules at Once\n•\tToo many boundaries can overwhelm children. Focus on the most important ones first (like safety and respect).\n4. Make Sure Rules Are Age-Appropriate\n•\tA 3-year-old needs different limits than a 10-year-old. Match the rule to their developmental stage.\n5. Involve the Child When Possible\n•\tOlder children may respond better if they help set certain rules. It builds responsibility and cooperation.\n6. Be Consistent, Not Rigid\n•\tConsistency builds trust. But if the boundary is clearly not working, it's okay to adjust—just explain why.\n7. Model the Behavior You Want to See\n•\tChildren learn more from what you do than what you say. Show respect and self-control if you expect them to.\n8. Reinforce with Positive Feedback\n•\tPraise when they follow a rule. Encouragement motivates more than punishment alone.\n________________________________________\n\n	\N
-665	\n________________________________________\n📘 Example: Screen Time Limit for a 7-Year-Old\n\n💬 The Situation:\nYour 7-year-old wants to play video games or watch TV all evening after school.\n________________________________________\n	\N
-666	________________________________________\n2. Explain the Reason\n\nParent says:\n“Too much screen time isn’t good for your eyes or sleep. And it’s important to finish your work first.”\n•\tWhy this helps: It teaches your child the why behind the rule, making them more likely to respect it.\n________________________________________\n	\N
-671	________________________________________\n6. Praise Positive Behavior\n\n“Thanks for turning it off when the timer went off. That shows you’re being responsible.”\n•\tWhy this works: Positive feedback reinforces good habits.\n________________________________________\n	\N
-668	________________________________________\n3. Give a Choice Within Limits\n\nParent says:\n“You can choose to play a game or watch a show—but only for 30 minutes.”\n•\tWhy this works: It gives the child a sense of control within the boundary.\n________________________________________\n	\N
-670	________________________________________\n✅ Step-by-Step Boundary Setting\n\n1. Set a Clear and Specific Rule\nParent says:\n“You can have 30 minutes of screen time after you finish your homework and chores.”\n•\tWhy this works: It sets a clear limit (30 minutes), attaches it to responsibility (homework first), and avoids confusion.\n________________________________________\n	\N
-672	________________________________________\n💡 Tips for Parents\n\n•\tExpect some pushback at first. That’s normal—stay calm and firm.\n•\tBe consistent. If the rule changes every day, the boundary loses its power.\n•\tBe flexible occasionally. If it’s movie night or a special occasion, you can explain why the rule is being adjusted just this once.\n________________________________________\n	\N
+667	\n4. Use a Timer to Enforce the Limit\n\n“I’m setting the timer now. When it goes off, screen time is over.”\n•\tWhy this works: Using a timer avoids debate. It's neutral and consistent.\n\n	\N
+663	✅ Definition: Setting Boundaries (Parenting Tool)\nSetting boundaries means clearly defining rules, expectations, and limits for your child’s behavior—what is okay and what is not. It helps children feel safe, understand their responsibilities, and learn self-control. Boundaries also teach kids how to respect others and develop healthy relationships.\n\n	\N
+669	\n5. Follow Through Calmly\n\nIf the child protests when time is up:\nParent stays calm and says:\n“I know you want to keep playing. But the rule is 30 minutes. You can try again tomorrow.”\n•\tWhy this matters: Consistent and calm follow-through builds respect and trust.\n	\N
+664	⚠️ Things Parents Should Pay Attention to When Setting Boundaries\n\n1. Be Clear and Simple\n•\tAvoid vague rules like “Behave yourself.” Instead, say, “Use your inside voice when we’re indoors.”\n2. Stay Emotionally Calm\n•\tChildren listen better when parents speak calmly, not in anger. Yelling weakens your authority over time.\n3. Don’t Set Too Many Rules at Once\n•\tToo many boundaries can overwhelm children. Focus on the most important ones first (like safety and respect).\n4. Make Sure Rules Are Age-Appropriate\n•\tA 3-year-old needs different limits than a 10-year-old. Match the rule to their developmental stage.\n5. Involve the Child When Possible\n•\tOlder children may respond better if they help set certain rules. It builds responsibility and cooperation.\n6. Be Consistent, Not Rigid\n•\tConsistency builds trust. But if the boundary is clearly not working, it's okay to adjust—just explain why.\n7. Model the Behavior You Want to See\n•\tChildren learn more from what you do than what you say. Show respect and self-control if you expect them to.\n8. Reinforce with Positive Feedback\n•\tPraise when they follow a rule. Encouragement motivates more than punishment alone.\n\n\n	\N
+665	\n📘 Example: Screen Time Limit for a 7-Year-Old\n\n💬 The Situation:\nYour 7-year-old wants to play video games or watch TV all evening after school.\n	\N
+666	2. Explain the Reason\n\nParent says:\n“Too much screen time isn’t good for your eyes or sleep. And it’s important to finish your work first.”\n•\tWhy this helps: It teaches your child the why behind the rule, making them more likely to respect it.\n	\N
+671	\n6. Praise Positive Behavior\n\n“Thanks for turning it off when the timer went off. That shows you’re being responsible.”\n•\tWhy this works: Positive feedback reinforces good habits.\n	\N
+668	\n3. Give a Choice Within Limits\n\nParent says:\n“You can choose to play a game or watch a show—but only for 30 minutes.”\n•\tWhy this works: It gives the child a sense of control within the boundary.\n	\N
+670	✅ Step-by-Step Boundary Setting\n\n1. Set a Clear and Specific Rule\nParent says:\n“You can have 30 minutes of screen time after you finish your homework and chores.”\n•\tWhy this works: It sets a clear limit (30 minutes), attaches it to responsibility (homework first), and avoids confusion.\n	\N
+672	\n💡 Tips for Parents\n\n•\tExpect some pushback at first. That’s normal—stay calm and firm.\n•\tBe consistent. If the rule changes every day, the boundary loses its power.\n•\tBe flexible occasionally. If it’s movie night or a special occasion, you can explain why the rule is being adjusted just this once.\n\n	\N
 627	\n🗣️ 2. Communicate Honestly (in Age-Appropriate Ways)\n\nEven young children notice when adults hide things. Truth builds trust.\n✅ What Parents Can Do:\nExplain changes or challenges honestly but gently.\nIf something changes (plans, routines), explain why.\nAdmit when you make a mistake — and apologize.\n🌟 Example:\n“I know I said we’d go to the park, but it’s raining. I’m sorry. Let’s build a blanket fort instead.”\n\n	\N
 399	11. Instilling a Love of Learning and Curiosity\n\n“I believe learning is a lifelong process. My goal is to foster a deep love of learning in my children, where curiosity is celebrated, and every challenge is seen as an opportunity for growth. I will encourage them to pursue their passions and keep an open mind about exploring the world around them.”\n	\N
 401	\n13. Empowering Kids to Be Themselves\n\n“I want to raise children who are confident in who they are and who feel safe expressing themselves freely. I will encourage them to embrace their unique qualities, interests, and passions. My goal is to help them develop self-love and a strong sense of individuality, while also teaching the importance of respect for others.”\n\n	\N
 398	10. Fostering Gratitude and Appreciation\n\n“My goal is to raise children who practice gratitude and appreciate the small moments in life. I will make gratitude a daily practice in our home, modeling thankfulness for both big and small things. I want my children to grow up with a positive, appreciative outlook on life.”\n\n	\N
-638	💛 Connection-Building Phrases to Say Every Day\n\n🧠 1. “I’m so glad to be your parent.”\n– Sends the message: “You are wanted and valued.”\n🧘 2. “I love you no matter what.”\n– Reinforces: “My love doesn’t depend on your behavior or achievements.”\n👀 3. “I see you.”\n– You can expand it:\n“I see how hard you worked.”\n“I see you’re feeling upset.”\n– This helps kids feel understood and emotionally safe.\n🧏 4. “I’m listening. You can tell me anything.”\n– Creates emotional safety: “You don’t have to hide from me.”\n💬 5. “That makes sense.”\n– Validates emotions even if you don’t agree with behavior.\n“You didn’t want to leave the park—that makes sense.”\n🤝 6. “Let’s figure it out together.”\n– Builds trust and teamwork instead of control or judgment.\n🔁 7. “Everyone makes mistakes. I do too.”\n– Teaches forgiveness, humility, and repair.\n❤️ 8. “You don’t have to be perfect. I love you just as you are.”\n– Supports self-worth and belonging.\n🪞 9. “How did that feel for you?”\n– Encourages emotional expression and reflection.\n🫂 10. “I’m here. You’re not alone.”\n– Most powerful during tears, fear, or anger. It builds deep security.\n	\N
 \.
 
 
@@ -6328,6 +6206,19 @@ COPY public.components_coursecontent_videos (id) FROM stdin;
 13
 15
 16
+17
+18
+20
+23
+22
+19
+26
+27
+29
+30
+24
+21
+28
 \.
 
 
@@ -6408,59 +6299,59 @@ COPY public.courses (id, title, created_at, updated_at, created_by_id, updated_b
 56	Membership Only---Time-Smart Families: Time Management Skills for Parents and Kids	2025-07-03 18:08:53.551	2025-07-03 18:32:40.882	\N	1	en	\N
 7	Course 7 Parenting with Purpose: Discovering Your Child's Strengths	2025-06-13 23:11:20.519	2025-07-11 08:54:48.198	\N	\N	en	7
 53	Course 8 For future parents	2025-07-03 02:51:50.218	2025-07-11 08:54:58.796	\N	1	en	8
-1	Course 1 Building trust and security for kids	2025-06-13 18:14:34.626	2025-07-12 15:24:12.064	\N	1	en	1
-2	Course 2 Open Communication	2025-06-13 21:31:06.172	2025-07-12 15:24:22.914	\N	1	en	2
+37	Behavior Shaping	2025-06-27 00:03:12.389	2025-07-18 04:20:20.535	1	1	en	11
+1	Course 1 Building trust and security for kids	2025-06-13 18:14:34.626	2025-07-18 19:56:22.77	\N	1	en	1
+21	A Mindful Pause	2025-06-26 01:50:26.501	2025-07-15 20:35:53.472	\N	1	en	3
 38	Tool---Repair Conversations	2025-06-27 00:03:21.651	2025-06-29 02:00:50.299	1	1	en	\N
 51	Membership Only---Building Emotional Intelligence in Parents	2025-06-29 01:49:13.603	2025-06-30 18:29:38.072	\N	1	en	\N
-30	Tool---A Parenting Vision Statement	2025-06-26 16:49:16.743	2025-07-13 00:14:01.48	\N	1	en	4
 49	Membership Only---Creative Thinking in a World of AI	2025-06-27 17:34:08.841	2025-06-30 18:29:51.032	\N	1	en	\N
-34	Tool---Reflective Listening	2025-06-27 00:02:45.555	2025-06-27 00:23:29.228	1	1	en	\N
+30	A Parenting Vision Statement	2025-06-26 16:49:16.743	2025-07-15 20:36:15.235	\N	1	en	4
 50	Membership Only---Mental Health and Emotional Well-being in the Age of AI	2025-06-27 17:47:21.921	2025-06-30 18:30:07.587	\N	1	en	\N
 12	Tool---Choice Giving	2025-06-18 05:55:09.081	2025-06-25 01:46:18.915	1	1	en	\N
-57	Tool---Setting Boundaries	2025-07-12 20:03:41.28	2025-07-13 02:35:35.044	\N	\N	en	0
+31	Tool---Pause & Respond	2025-06-26 17:12:22.164	2025-07-18 20:04:30.612	\N	1	en	0
+5	Course 4 Modeling Behavior: Leading by Example	2025-06-13 22:46:38.637	2025-07-18 21:20:05.775	\N	\N	en	4
 40	Tool---Routine charts or visual schedules	2025-06-27 00:47:33.017	2025-06-27 02:38:00.485	\N	1	en	\N
 11	Tool---Daily Check-Ins	2025-06-18 05:43:31.97	2025-06-25 01:53:52.134	1	1	en	\N
 39	Tool---Responsibility Journals	2025-06-27 00:04:38.912	2025-06-27 00:38:08.585	1	1	en	\N
 9	Tool---Effort-Based Praise	2025-06-18 05:40:04.439	2025-06-25 02:03:37.268	1	1	en	\N
-41	Tool---Storytelling & Sharing	2025-06-27 01:05:51.566	2025-06-27 02:38:10.32	\N	1	en	\N
 16	Tool---Empathy Statements	2025-06-25 02:04:46.713	2025-06-25 02:13:43.879	\N	\N	en	\N
-10	Tool--- Calm Down Corner	2025-06-18 05:42:39.246	2025-07-12 15:32:56.745	1	1	en	2
+2	Course 2 Open Communication	2025-06-13 21:31:06.172	2025-07-18 20:25:51.152	\N	1	en	2
 17	Tool---Family Meetings	2025-06-25 02:17:31.187	2025-06-25 02:25:53.002	\N	\N	en	\N
 35	Tool---Rituals & Routines	2025-06-27 00:02:53.642	2025-06-27 00:45:42.029	1	1	en	\N
 18	Tool---Goal Setting with Kids	2025-06-25 02:27:19.557	2025-06-25 02:35:21.934	\N	\N	en	\N
-42	Tool---Strength Spotting	2025-06-27 01:16:23.389	2025-06-27 02:38:19.976	\N	1	en	\N
 19	Tool---“I” Statements	2025-06-25 02:36:19.943	2025-06-25 02:45:41.72	\N	\N	en	\N
 23	Tool---Modeling Accountability	2025-06-26 02:10:42.68	2025-06-26 23:57:34.153	\N	1	en	\N
-4	Tool---Active listening	2025-06-13 22:46:30.333	2025-07-12 22:40:03.14	\N	1	en	0
-8	Tool---Celebrating Progress	2025-06-16 20:28:26.895	2025-06-24 21:35:20.723	\N	\N	en	\N
-29	Tool---A Parenting Journal	2025-06-26 16:37:48.582	2025-06-26 23:58:07.938	\N	1	en	\N
+46	A Trigger Tracker	2025-06-27 01:59:32.82	2025-07-18 00:03:53.975	\N	1	en	9
 48	Membership only---What Skills Will Future Generations Need?	2025-06-27 17:25:53.981	2025-06-30 18:30:21.204	\N	1	en	\N
 22	Tool---Modeling a Growth Mindset	2025-06-26 02:01:40.112	2025-06-26 23:58:17.724	\N	1	en	\N
 24	Tool---Modeling Self-Regulation	2025-06-26 02:19:13.193	2025-06-26 23:58:27.164	\N	1	en	\N
-25	Tool---Name It to Tame It	2025-06-26 02:28:39.379	2025-06-26 23:58:34.76	\N	1	en	\N
 26	Tool---Natural Consequences	2025-06-26 02:46:05.997	2025-06-26 23:58:43.427	\N	1	en	\N
 27	Tool---Open-ended questions	2025-06-26 02:59:02.782	2025-06-26 23:58:51.824	\N	1	en	\N
-31	Tool---Pause & Respond	2025-06-26 17:12:22.164	2025-06-26 23:59:12.23	\N	1	en	\N
 28	Tool---Ownership Language	2025-06-26 03:12:09.53	2025-06-26 23:59:20.555	\N	1	en	\N
 43	Tool---Support networks	2025-06-27 01:25:42.469	2025-06-27 02:38:29.933	\N	1	en	\N
 32	Tool---Problem Soving	2025-06-26 12:46:07.229	2025-06-27 00:00:31.365	\N	1	en	\N
-44	Tool---Time-In and Time-Out	2025-06-27 01:36:11.514	2025-06-27 02:38:39.326	\N	1	en	\N
-37	Tool---Behavior Shaping	2025-06-27 00:03:12.389	2025-06-27 00:58:42.778	1	1	en	\N
-45	Tool---Touch & Affection	2025-06-27 01:44:36.168	2025-06-27 02:38:48.495	\N	1	en	\N
-36	Tool---Special Time	2025-06-27 00:03:02.185	2025-06-27 01:04:55.947	1	1	en	\N
-46	Tool---A Trigger Tracker	2025-06-27 01:59:32.82	2025-06-27 02:38:57.222	\N	1	en	\N
-47	Tool---“When–Then” Parenting	2025-06-27 02:11:14.16	2025-06-27 02:39:06.478	\N	1	en	\N
+34	Tool---Reflective Listening	2025-06-27 00:02:45.555	2025-07-18 20:39:05.055	1	1	en	0
 33	Tool---Redirection	2025-06-26 12:52:11.937	2025-06-30 18:31:08.747	\N	1	en	\N
 20	Tool---Logical Consequences	2025-06-24 19:44:58.771	2025-06-30 18:31:29.367	\N	1	en	\N
 14	Tool---The “Fix-It” Process	2025-06-24 11:58:58.885	2025-06-30 18:31:49.54	\N	1	en	\N
 52	Memebership Only---AI-Powered Sentiment Analysis for Parenting & Emotional Understanding	2025-07-03 02:29:21.103	2025-07-03 17:31:24.09	\N	1	en	\N
+29	A Parenting Journal	2025-06-26 16:37:48.582	2025-07-15 22:37:42.146	\N	1	en	6
 54	Membership Only---Handling Everyday Conflicts with Confidence	2025-07-03 17:34:36.722	2025-07-03 18:32:17.169	\N	1	en	\N
 55	Membership Only---Study Smarter: How AI Helps Kids and Parents Tackle STEM Challenges Together	2025-07-03 17:54:19.269	2025-07-03 18:32:26.065	\N	1	en	\N
-3	Course 3 Unconditional Love---The Heart of Parenting	2025-06-13 22:43:53.326	2025-07-11 08:54:02.58	\N	1	en	3
-5	Course 4 Modeling Behavior: Leading by Example	2025-06-13 22:46:38.637	2025-07-11 08:54:12.329	\N	\N	en	4
-21	Tool---A Mindful Pause	2025-06-26 01:50:26.501	2025-07-12 21:35:35.621	\N	1	en	3
+45	Tool---Touch & Affection	2025-06-27 01:44:36.168	2025-07-17 23:13:48.096	\N	1	en	0
+44	Tool---Time-In and Time-Out	2025-06-27 01:36:11.514	2025-07-17 23:41:56.412	\N	1	en	0
 13	Course 5 Resilience: Building Strength in Parenting and Life	2025-06-19 03:04:14.492	2025-07-11 08:54:27.424	\N	1	en	5
 6	Course 6 Raising Responsible Kids: Building Accountability from the Inside Out	2025-06-13 22:48:55.891	2025-07-11 08:54:37.493	\N	1	en	6
+47	“When–Then” Parenting	2025-06-27 02:11:14.16	2025-07-18 00:24:34.181	\N	1	en	8
+3	Course 3 Unconditional Love---The Heart of Parenting	2025-06-13 22:43:53.326	2025-07-18 21:02:00.176	\N	1	en	3
+8	Celebrating Progress	2025-06-16 20:28:26.895	2025-07-17 23:46:34.206	\N	\N	en	11
+25	Tool---Name It to Tame It	2025-06-26 02:28:39.379	2025-07-18 01:18:51.975	\N	1	en	0
+10	Calm Down Corner	2025-06-18 05:42:39.246	2025-07-15 20:35:20.164	1	1	en	2
+42	Tool---Strength Spotting	2025-06-27 01:16:23.389	2025-07-18 03:24:15.811	\N	1	en	0
+4	Active listening	2025-06-13 22:46:30.333	2025-07-17 23:55:55.282	\N	1	en	1
+41	Tool---Storytelling & Sharing	2025-06-27 01:05:51.566	2025-07-18 03:32:58.306	\N	1	en	0
+57	Setting Boundaries	2025-07-12 20:03:41.28	2025-07-18 04:07:48.975	\N	\N	en	5
+36	Tool---Special Time	2025-06-27 00:03:02.185	2025-07-18 21:10:21.254	1	1	en	0
 \.
 
 
@@ -6469,149 +6360,194 @@ COPY public.courses (id, title, created_at, updated_at, created_by_id, updated_b
 --
 
 COPY public.courses_components (id, entity_id, component_id, component_type, field, "order") FROM stdin;
-11663	21	273	coursecontent.text	content	1
-11664	21	274	coursecontent.image	content	2
+13502	44	18	coursecontent.video	content	1
+13503	44	564	coursecontent.text	content	2
 5943	24	312	coursecontent.text	content	1
-11665	21	278	coursecontent.pagebreaker	content	3
-11666	21	274	coursecontent.text	content	4
-11667	21	275	coursecontent.image	content	5
-11668	21	279	coursecontent.pagebreaker	content	6
-11669	21	275	coursecontent.text	content	7
-11670	21	276	coursecontent.image	content	8
-11671	21	280	coursecontent.pagebreaker	content	9
-11672	21	276	coursecontent.text	content	10
+13504	44	567	coursecontent.image	content	3
+13505	44	546	coursecontent.pagebreaker	content	4
+13506	44	565	coursecontent.text	content	5
+13507	44	568	coursecontent.image	content	6
 5944	24	313	coursecontent.image	content	2
 5945	24	314	coursecontent.pagebreaker	content	3
-11673	21	280	coursecontent.image	content	11
-11674	21	283	coursecontent.pagebreaker	content	12
-11675	21	280	coursecontent.text	content	13
-11676	21	278	coursecontent.image	content	14
-11677	21	282	coursecontent.pagebreaker	content	15
-11678	21	277	coursecontent.text	content	16
-11679	21	277	coursecontent.image	content	17
-11680	21	284	coursecontent.pagebreaker	content	18
-11681	21	278	coursecontent.text	content	19
-11682	21	279	coursecontent.image	content	20
-11683	21	281	coursecontent.pagebreaker	content	21
-11684	21	279	coursecontent.text	content	22
-11685	21	20	coursecontent.external-video	content	23
-11686	21	285	coursecontent.pagebreaker	content	24
-11687	21	281	coursecontent.text	content	25
-11688	21	282	coursecontent.image	content	26
-11689	21	286	coursecontent.pagebreaker	content	27
-11690	21	282	coursecontent.text	content	28
-11691	21	283	coursecontent.image	content	29
-11692	21	287	coursecontent.pagebreaker	content	30
-11693	21	283	coursecontent.text	content	31
-11694	21	284	coursecontent.image	content	32
-11695	21	288	coursecontent.pagebreaker	content	33
-11696	21	284	coursecontent.text	content	34
-11697	21	285	coursecontent.image	content	35
-11698	21	289	coursecontent.pagebreaker	content	36
-11699	21	285	coursecontent.text	content	37
-11700	21	286	coursecontent.image	content	38
 5946	24	313	coursecontent.text	content	4
 5947	24	314	coursecontent.image	content	5
 5948	24	315	coursecontent.pagebreaker	content	6
 5949	24	314	coursecontent.text	content	7
-12127	4	3	coursecontent.text	content	1
-12128	4	3	coursecontent.image	content	2
-12129	4	1	coursecontent.pagebreaker	content	3
-12130	4	139	coursecontent.text	content	4
-12131	4	137	coursecontent.image	content	5
-12132	4	149	coursecontent.pagebreaker	content	6
-12133	4	140	coursecontent.text	content	7
-12134	4	138	coursecontent.image	content	8
-12135	4	150	coursecontent.pagebreaker	content	9
-12136	4	141	coursecontent.text	content	10
-12137	4	659	coursecontent.image	content	11
-12138	4	151	coursecontent.pagebreaker	content	12
-12139	4	142	coursecontent.text	content	13
-12140	4	139	coursecontent.image	content	14
-12141	4	152	coursecontent.pagebreaker	content	15
-12142	4	143	coursecontent.text	content	16
-12143	4	140	coursecontent.image	content	17
-12144	4	153	coursecontent.pagebreaker	content	18
-12145	4	144	coursecontent.text	content	19
-12146	4	141	coursecontent.image	content	20
-12147	4	154	coursecontent.pagebreaker	content	21
-12148	4	145	coursecontent.text	content	22
-12149	4	143	coursecontent.image	content	23
-12150	4	155	coursecontent.pagebreaker	content	24
-12151	4	146	coursecontent.text	content	25
-12152	4	142	coursecontent.image	content	26
-12153	4	157	coursecontent.pagebreaker	content	27
-12154	4	147	coursecontent.text	content	28
-12155	4	144	coursecontent.image	content	29
-12156	4	156	coursecontent.pagebreaker	content	30
-12157	4	148	coursecontent.text	content	31
-12158	4	145	coursecontent.image	content	32
-12159	4	158	coursecontent.pagebreaker	content	33
-12160	4	149	coursecontent.text	content	34
-12161	4	146	coursecontent.image	content	35
-12431	30	394	coursecontent.image	content	20
-12432	30	389	coursecontent.pagebreaker	content	21
-12433	30	394	coursecontent.text	content	22
-12434	30	395	coursecontent.image	content	23
-12435	30	390	coursecontent.pagebreaker	content	24
-12436	30	395	coursecontent.text	content	25
-12437	30	396	coursecontent.image	content	26
-12438	30	391	coursecontent.pagebreaker	content	27
-12439	30	396	coursecontent.text	content	28
-12440	30	397	coursecontent.image	content	29
-12441	30	392	coursecontent.pagebreaker	content	30
-12442	30	397	coursecontent.text	content	31
-12443	30	398	coursecontent.image	content	32
-12444	30	393	coursecontent.pagebreaker	content	33
-12445	30	398	coursecontent.text	content	34
-12446	30	399	coursecontent.image	content	35
-12447	30	394	coursecontent.pagebreaker	content	36
-12448	30	399	coursecontent.text	content	37
-12449	30	400	coursecontent.image	content	38
-12450	30	395	coursecontent.pagebreaker	content	39
-12451	30	400	coursecontent.text	content	40
-12452	30	401	coursecontent.image	content	41
-12453	30	396	coursecontent.pagebreaker	content	42
-12454	30	401	coursecontent.text	content	43
-12455	30	402	coursecontent.image	content	44
-12456	30	397	coursecontent.pagebreaker	content	45
-12457	30	402	coursecontent.text	content	46
-12458	30	403	coursecontent.image	content	47
-12459	30	398	coursecontent.pagebreaker	content	48
-12460	30	403	coursecontent.text	content	49
-12461	30	404	coursecontent.image	content	50
+14252	31	404	coursecontent.text	content	1
+14253	31	405	coursecontent.image	content	2
+14254	31	399	coursecontent.pagebreaker	content	3
+14255	31	405	coursecontent.text	content	4
+14256	31	407	coursecontent.image	content	5
+14257	31	401	coursecontent.pagebreaker	content	6
+14258	31	406	coursecontent.text	content	7
+14259	31	408	coursecontent.image	content	8
+14260	31	402	coursecontent.pagebreaker	content	9
+14261	31	407	coursecontent.text	content	10
+14262	31	409	coursecontent.image	content	11
+14263	31	403	coursecontent.pagebreaker	content	12
+14264	31	408	coursecontent.text	content	13
+14265	31	410	coursecontent.image	content	14
+14266	31	407	coursecontent.pagebreaker	content	15
+14267	31	409	coursecontent.text	content	16
+14268	31	412	coursecontent.image	content	17
+14269	31	404	coursecontent.pagebreaker	content	18
+14270	31	410	coursecontent.text	content	19
+14271	31	411	coursecontent.image	content	20
+14272	31	405	coursecontent.pagebreaker	content	21
+14273	31	411	coursecontent.text	content	22
+14274	31	413	coursecontent.image	content	23
+14275	31	406	coursecontent.pagebreaker	content	24
+14276	31	413	coursecontent.text	content	25
+14277	31	414	coursecontent.image	content	26
+14278	31	408	coursecontent.pagebreaker	content	27
+14279	31	412	coursecontent.text	content	28
+14280	31	415	coursecontent.image	content	29
+14281	31	409	coursecontent.pagebreaker	content	30
+14282	31	414	coursecontent.text	content	31
+14283	31	416	coursecontent.image	content	32
+13463	45	17	coursecontent.video	content	1
+13464	45	577	coursecontent.text	content	2
+13465	45	580	coursecontent.image	content	3
+13466	45	558	coursecontent.pagebreaker	content	4
+13467	45	578	coursecontent.text	content	5
+13468	45	581	coursecontent.image	content	6
+13469	45	559	coursecontent.pagebreaker	content	7
+13470	45	579	coursecontent.text	content	8
+13471	45	582	coursecontent.image	content	9
+13472	45	560	coursecontent.pagebreaker	content	10
+13473	45	580	coursecontent.text	content	11
+13474	45	583	coursecontent.image	content	12
+13475	45	561	coursecontent.pagebreaker	content	13
+13476	45	581	coursecontent.text	content	14
+13477	45	584	coursecontent.image	content	15
+13478	45	562	coursecontent.pagebreaker	content	16
+13479	45	583	coursecontent.text	content	17
+13480	45	585	coursecontent.image	content	18
+13481	45	563	coursecontent.pagebreaker	content	19
+13482	45	585	coursecontent.text	content	20
+13483	45	587	coursecontent.image	content	21
+13484	45	565	coursecontent.pagebreaker	content	22
+13485	45	582	coursecontent.text	content	23
+13486	45	586	coursecontent.image	content	24
+13487	45	564	coursecontent.pagebreaker	content	25
+13488	45	584	coursecontent.text	content	26
+13489	45	588	coursecontent.image	content	27
+13490	45	566	coursecontent.pagebreaker	content	28
+13491	45	586	coursecontent.text	content	29
+13492	45	589	coursecontent.image	content	30
+13072	29	373	coursecontent.text	content	1
+13073	29	374	coursecontent.image	content	2
+13074	29	370	coursecontent.pagebreaker	content	3
+13075	29	374	coursecontent.text	content	4
+13076	29	375	coursecontent.image	content	5
+13077	29	371	coursecontent.pagebreaker	content	6
+13078	29	375	coursecontent.text	content	7
+13079	29	376	coursecontent.image	content	8
+13080	29	373	coursecontent.pagebreaker	content	9
+13081	29	378	coursecontent.text	content	10
+13082	29	377	coursecontent.image	content	11
+13083	29	372	coursecontent.pagebreaker	content	12
+13084	29	379	coursecontent.text	content	13
+13085	29	379	coursecontent.image	content	14
+13086	29	375	coursecontent.pagebreaker	content	15
+13087	29	376	coursecontent.text	content	16
+13088	29	380	coursecontent.image	content	17
+13089	29	374	coursecontent.pagebreaker	content	18
+13090	29	377	coursecontent.text	content	19
+13091	29	378	coursecontent.image	content	20
+13092	29	376	coursecontent.pagebreaker	content	21
+13093	29	380	coursecontent.text	content	22
+13094	29	381	coursecontent.image	content	23
+13095	29	377	coursecontent.pagebreaker	content	24
+13096	29	381	coursecontent.text	content	25
+13097	29	382	coursecontent.image	content	26
+13098	29	378	coursecontent.pagebreaker	content	27
+13099	29	382	coursecontent.text	content	28
+13100	29	385	coursecontent.image	content	29
+13101	29	380	coursecontent.pagebreaker	content	30
+13102	29	383	coursecontent.text	content	31
+13103	29	383	coursecontent.image	content	32
+13104	29	379	coursecontent.pagebreaker	content	33
+13105	29	384	coursecontent.text	content	34
+13106	29	384	coursecontent.image	content	35
+13107	29	381	coursecontent.pagebreaker	content	36
+13108	29	385	coursecontent.text	content	37
+13109	29	386	coursecontent.image	content	38
+13110	29	382	coursecontent.pagebreaker	content	39
+13111	29	386	coursecontent.text	content	40
+13112	29	387	coursecontent.image	content	41
+13508	44	547	coursecontent.pagebreaker	content	7
+13509	44	566	coursecontent.text	content	8
+13510	44	569	coursecontent.image	content	9
+13511	44	548	coursecontent.pagebreaker	content	10
+13512	44	567	coursecontent.text	content	11
+13513	44	570	coursecontent.image	content	12
+13514	44	549	coursecontent.pagebreaker	content	13
+13515	44	568	coursecontent.text	content	14
+13516	44	571	coursecontent.image	content	15
+13517	44	550	coursecontent.pagebreaker	content	16
+13518	44	571	coursecontent.text	content	17
+13519	44	572	coursecontent.image	content	18
+13520	44	551	coursecontent.pagebreaker	content	19
+13521	44	569	coursecontent.text	content	20
+13522	44	574	coursecontent.image	content	21
+13523	44	552	coursecontent.pagebreaker	content	22
+13524	44	570	coursecontent.text	content	23
+13525	44	573	coursecontent.image	content	24
+13526	44	553	coursecontent.pagebreaker	content	25
+13527	44	573	coursecontent.text	content	26
+13528	44	577	coursecontent.image	content	27
+13529	44	554	coursecontent.pagebreaker	content	28
+13530	44	572	coursecontent.text	content	29
+13531	44	575	coursecontent.image	content	30
+13532	44	555	coursecontent.pagebreaker	content	31
+13533	44	574	coursecontent.text	content	32
+13534	44	576	coursecontent.image	content	33
+13535	44	556	coursecontent.pagebreaker	content	34
+13536	44	575	coursecontent.text	content	35
+13537	44	578	coursecontent.image	content	36
+13538	44	557	coursecontent.pagebreaker	content	37
+13539	44	576	coursecontent.text	content	38
+13540	44	579	coursecontent.image	content	39
+14005	25	19	coursecontent.video	content	1
+14006	25	324	coursecontent.text	content	2
+14007	25	325	coursecontent.image	content	3
+14008	25	325	coursecontent.pagebreaker	content	4
+14009	25	325	coursecontent.text	content	5
+14010	25	326	coursecontent.image	content	6
+14011	25	326	coursecontent.pagebreaker	content	7
+14012	25	326	coursecontent.text	content	8
+14013	25	327	coursecontent.image	content	9
+14014	25	327	coursecontent.pagebreaker	content	10
+14015	25	330	coursecontent.text	content	11
+14016	25	328	coursecontent.image	content	12
+14017	25	328	coursecontent.pagebreaker	content	13
+14018	25	327	coursecontent.text	content	14
+14019	25	330	coursecontent.image	content	15
+14020	25	330	coursecontent.pagebreaker	content	16
+14021	25	329	coursecontent.text	content	17
+14022	25	329	coursecontent.image	content	18
+14023	25	329	coursecontent.pagebreaker	content	19
+14024	25	328	coursecontent.text	content	20
+14025	25	331	coursecontent.image	content	21
+14026	25	331	coursecontent.pagebreaker	content	22
+14027	25	331	coursecontent.text	content	23
+14028	25	332	coursecontent.image	content	24
+14029	25	332	coursecontent.pagebreaker	content	25
+14030	25	332	coursecontent.text	content	26
+14031	25	333	coursecontent.image	content	27
+14032	25	333	coursecontent.pagebreaker	content	28
+14033	25	333	coursecontent.text	content	29
+14034	25	334	coursecontent.image	content	30
+14035	25	334	coursecontent.pagebreaker	content	31
+14036	25	334	coursecontent.text	content	32
+14037	25	335	coursecontent.image	content	33
+14038	25	335	coursecontent.pagebreaker	content	34
+14039	25	335	coursecontent.text	content	35
+14040	25	336	coursecontent.image	content	36
 5950	24	315	coursecontent.image	content	8
 5951	24	316	coursecontent.pagebreaker	content	9
 5952	24	315	coursecontent.text	content	10
-12462	57	663	coursecontent.text	content	1
-12463	57	660	coursecontent.image	content	2
-12464	57	621	coursecontent.pagebreaker	content	3
-12465	57	664	coursecontent.text	content	4
-12466	57	661	coursecontent.image	content	5
-12467	57	622	coursecontent.pagebreaker	content	6
-12468	57	665	coursecontent.text	content	7
-12469	57	662	coursecontent.image	content	8
-12470	57	623	coursecontent.pagebreaker	content	9
-12471	57	670	coursecontent.text	content	10
-12472	57	666	coursecontent.image	content	11
-12473	57	625	coursecontent.pagebreaker	content	12
-12474	57	666	coursecontent.text	content	13
-12475	57	665	coursecontent.image	content	14
-12476	57	624	coursecontent.pagebreaker	content	15
-12477	57	668	coursecontent.text	content	16
-12478	57	663	coursecontent.image	content	17
-12479	57	626	coursecontent.pagebreaker	content	18
-12480	57	667	coursecontent.text	content	19
-12481	57	664	coursecontent.image	content	20
-12482	57	627	coursecontent.pagebreaker	content	21
-12483	57	669	coursecontent.text	content	22
-12484	57	667	coursecontent.image	content	23
-12485	57	628	coursecontent.pagebreaker	content	24
-12486	57	671	coursecontent.text	content	25
-12487	57	668	coursecontent.image	content	26
-12488	57	629	coursecontent.pagebreaker	content	27
-12489	57	672	coursecontent.text	content	28
-12490	57	669	coursecontent.image	content	29
 10217	7	125	coursecontent.text	content	19
 10218	7	123	coursecontent.image	content	20
 10219	7	15	coursecontent.video	content	21
@@ -6625,10 +6561,65 @@ COPY public.courses_components (id, entity_id, component_id, component_type, fie
 10227	7	30	coursecontent.quiz	content	29
 10228	7	136	coursecontent.pagebreaker	content	30
 10229	7	31	coursecontent.quiz	content	31
+13579	8	6	coursecontent.text	content	1
+13580	8	160	coursecontent.image	content	2
+13581	8	3	coursecontent.pagebreaker	content	3
+13582	8	7	coursecontent.text	content	4
+13583	8	161	coursecontent.image	content	5
+13584	8	171	coursecontent.pagebreaker	content	6
+13585	8	8	coursecontent.text	content	7
+13586	8	162	coursecontent.image	content	8
+13587	8	172	coursecontent.pagebreaker	content	9
+13588	8	162	coursecontent.text	content	10
+13589	8	165	coursecontent.image	content	11
+13590	8	174	coursecontent.pagebreaker	content	12
+13591	8	163	coursecontent.text	content	13
+13592	8	163	coursecontent.image	content	14
+13593	8	173	coursecontent.pagebreaker	content	15
+13594	8	164	coursecontent.text	content	16
+13595	8	164	coursecontent.image	content	17
+13596	8	175	coursecontent.pagebreaker	content	18
+13597	8	165	coursecontent.text	content	19
+13598	8	166	coursecontent.image	content	20
+13599	8	176	coursecontent.pagebreaker	content	21
+13600	8	166	coursecontent.text	content	22
+13601	8	167	coursecontent.image	content	23
+13602	8	177	coursecontent.pagebreaker	content	24
+13603	8	167	coursecontent.text	content	25
+13604	8	168	coursecontent.image	content	26
+13605	8	179	coursecontent.pagebreaker	content	27
+13606	8	168	coursecontent.text	content	28
+13607	8	169	coursecontent.image	content	29
+13608	8	178	coursecontent.pagebreaker	content	30
+13609	8	169	coursecontent.text	content	31
+13610	8	170	coursecontent.image	content	32
 5953	24	318	coursecontent.image	content	11
-12089	10	14	coursecontent.text	content	1
-12090	10	148	coursecontent.image	content	2
-12091	10	159	coursecontent.pagebreaker	content	3
+13611	8	180	coursecontent.pagebreaker	content	33
+13612	8	170	coursecontent.text	content	34
+13613	8	171	coursecontent.image	content	35
+13614	8	181	coursecontent.pagebreaker	content	36
+13615	8	171	coursecontent.text	content	37
+13616	8	172	coursecontent.image	content	38
+13842	46	23	coursecontent.video	content	1
+13843	46	590	coursecontent.text	content	2
+13844	46	593	coursecontent.image	content	3
+13845	46	570	coursecontent.pagebreaker	content	4
+13846	46	591	coursecontent.text	content	5
+13847	46	594	coursecontent.image	content	6
+13848	46	571	coursecontent.pagebreaker	content	7
+13849	46	592	coursecontent.text	content	8
+13850	46	595	coursecontent.image	content	9
+13851	46	572	coursecontent.pagebreaker	content	10
+13852	46	593	coursecontent.text	content	11
+13853	46	596	coursecontent.image	content	12
+13854	46	573	coursecontent.pagebreaker	content	13
+13855	46	594	coursecontent.text	content	14
+13856	46	597	coursecontent.image	content	15
+13857	46	574	coursecontent.pagebreaker	content	16
+13858	46	595	coursecontent.text	content	17
+13859	46	598	coursecontent.image	content	18
+13860	46	575	coursecontent.pagebreaker	content	19
+13861	46	596	coursecontent.text	content	20
 5954	24	317	coursecontent.pagebreaker	content	12
 5955	24	316	coursecontent.text	content	13
 5956	24	316	coursecontent.image	content	14
@@ -6636,41 +6627,44 @@ COPY public.courses_components (id, entity_id, component_id, component_type, fie
 5958	24	317	coursecontent.text	content	16
 5959	24	317	coursecontent.image	content	17
 5960	24	319	coursecontent.pagebreaker	content	18
-12092	10	150	coursecontent.text	content	4
-12093	10	147	coursecontent.image	content	5
-12094	10	160	coursecontent.pagebreaker	content	6
-12095	10	151	coursecontent.text	content	7
-12096	10	150	coursecontent.image	content	8
-12097	10	162	coursecontent.pagebreaker	content	9
-12098	10	152	coursecontent.text	content	10
-12099	10	149	coursecontent.image	content	11
-12100	10	161	coursecontent.pagebreaker	content	12
-12101	10	154	coursecontent.text	content	13
-12102	10	151	coursecontent.image	content	14
-12103	10	163	coursecontent.pagebreaker	content	15
-12104	10	153	coursecontent.text	content	16
-12105	10	152	coursecontent.image	content	17
-12106	10	164	coursecontent.pagebreaker	content	18
-12107	10	156	coursecontent.text	content	19
-12108	10	153	coursecontent.image	content	20
-12109	10	165	coursecontent.pagebreaker	content	21
-12110	10	155	coursecontent.text	content	22
-12111	10	154	coursecontent.image	content	23
-12112	10	166	coursecontent.pagebreaker	content	24
-12113	10	157	coursecontent.text	content	25
-12114	10	155	coursecontent.image	content	26
-12115	10	167	coursecontent.pagebreaker	content	27
-12116	10	158	coursecontent.text	content	28
-12117	10	156	coursecontent.image	content	29
-12118	10	168	coursecontent.pagebreaker	content	30
-12119	10	159	coursecontent.text	content	31
-12120	10	157	coursecontent.image	content	32
-12121	10	169	coursecontent.pagebreaker	content	33
-12122	10	160	coursecontent.text	content	34
-12123	10	16	coursecontent.video	content	35
-12124	10	170	coursecontent.pagebreaker	content	36
-12125	10	161	coursecontent.text	content	37
-12126	10	159	coursecontent.image	content	38
+13862	46	600	coursecontent.image	content	21
+13863	46	576	coursecontent.pagebreaker	content	22
+13864	46	598	coursecontent.text	content	23
+13865	46	599	coursecontent.image	content	24
+13866	46	577	coursecontent.pagebreaker	content	25
+13867	46	597	coursecontent.text	content	26
+13868	46	601	coursecontent.image	content	27
+13869	46	578	coursecontent.pagebreaker	content	28
+13870	46	599	coursecontent.text	content	29
+13871	46	602	coursecontent.image	content	30
+13872	46	579	coursecontent.pagebreaker	content	31
+13873	46	600	coursecontent.text	content	32
+13874	46	603	coursecontent.image	content	33
+13875	46	580	coursecontent.pagebreaker	content	34
+13876	46	601	coursecontent.text	content	35
+13877	46	604	coursecontent.image	content	36
+13878	46	581	coursecontent.pagebreaker	content	37
+13879	46	602	coursecontent.text	content	38
+13880	46	605	coursecontent.image	content	39
+13881	46	582	coursecontent.pagebreaker	content	40
+13882	46	603	coursecontent.text	content	41
+13883	46	606	coursecontent.image	content	42
+14041	42	26	coursecontent.video	content	1
+14042	42	537	coursecontent.text	content	2
+14043	42	540	coursecontent.image	content	3
+14044	42	521	coursecontent.pagebreaker	content	4
+14045	42	538	coursecontent.text	content	5
+14046	42	541	coursecontent.image	content	6
+14047	42	522	coursecontent.pagebreaker	content	7
+14048	42	539	coursecontent.text	content	8
+14049	42	542	coursecontent.image	content	9
+14050	42	525	coursecontent.pagebreaker	content	10
+14051	42	540	coursecontent.text	content	11
+14052	42	543	coursecontent.image	content	12
+14053	42	523	coursecontent.pagebreaker	content	13
+14054	42	541	coursecontent.text	content	14
+14055	42	544	coursecontent.image	content	15
+14056	42	524	coursecontent.pagebreaker	content	16
 5961	24	318	coursecontent.text	content	19
 5962	24	319	coursecontent.image	content	20
 5963	24	320	coursecontent.pagebreaker	content	21
@@ -6690,110 +6684,77 @@ COPY public.courses_components (id, entity_id, component_id, component_type, fie
 5977	24	324	coursecontent.image	content	35
 6013	26	336	coursecontent.text	content	1
 6014	26	337	coursecontent.image	content	2
-9933	3	2	coursecontent.text	content	1
-9934	3	37	coursecontent.image	content	2
-9935	3	34	coursecontent.pagebreaker	content	3
-9936	3	41	coursecontent.text	content	4
-9937	3	38	coursecontent.image	content	5
-9938	3	35	coursecontent.pagebreaker	content	6
-9939	3	42	coursecontent.text	content	7
-9940	3	39	coursecontent.image	content	8
-9941	3	36	coursecontent.pagebreaker	content	9
-9942	3	43	coursecontent.text	content	10
-9943	3	40	coursecontent.image	content	11
-9944	3	37	coursecontent.pagebreaker	content	12
-9945	3	44	coursecontent.text	content	13
-9946	3	41	coursecontent.image	content	14
-9947	3	60	coursecontent.pagebreaker	content	15
-9948	3	45	coursecontent.text	content	16
-9949	3	42	coursecontent.image	content	17
-9950	3	38	coursecontent.pagebreaker	content	18
-9951	3	46	coursecontent.text	content	19
-9952	3	43	coursecontent.image	content	20
-9953	3	41	coursecontent.pagebreaker	content	21
-9954	3	47	coursecontent.text	content	22
-9955	3	44	coursecontent.image	content	23
-9956	3	39	coursecontent.pagebreaker	content	24
-9957	3	50	coursecontent.text	content	25
-9958	3	45	coursecontent.image	content	26
-9959	3	40	coursecontent.pagebreaker	content	27
-9960	3	48	coursecontent.text	content	28
-9961	3	46	coursecontent.image	content	29
-9962	3	42	coursecontent.pagebreaker	content	30
-9963	3	49	coursecontent.text	content	31
-9964	3	47	coursecontent.image	content	32
-9965	3	43	coursecontent.pagebreaker	content	33
-9966	3	51	coursecontent.text	content	34
-9967	3	48	coursecontent.image	content	35
-9968	3	44	coursecontent.pagebreaker	content	36
-9969	3	52	coursecontent.text	content	37
-9970	3	49	coursecontent.image	content	38
-9971	3	45	coursecontent.pagebreaker	content	39
-9972	3	53	coursecontent.text	content	40
-9973	3	50	coursecontent.image	content	41
-9974	3	46	coursecontent.pagebreaker	content	42
-9975	3	54	coursecontent.text	content	43
-9976	3	51	coursecontent.image	content	44
-9977	3	47	coursecontent.pagebreaker	content	45
-9978	3	55	coursecontent.text	content	46
-9979	3	52	coursecontent.image	content	47
-9980	3	48	coursecontent.pagebreaker	content	48
-9981	3	7	coursecontent.quiz	content	49
-9982	3	49	coursecontent.pagebreaker	content	50
-9983	3	8	coursecontent.quiz	content	51
-9984	3	50	coursecontent.pagebreaker	content	52
-9985	3	9	coursecontent.quiz	content	53
-9986	3	51	coursecontent.pagebreaker	content	54
-9987	3	10	coursecontent.quiz	content	55
-9988	3	52	coursecontent.pagebreaker	content	56
-9989	3	11	coursecontent.quiz	content	57
-9990	3	53	coursecontent.pagebreaker	content	58
-9991	3	56	coursecontent.text	content	59
-9992	3	53	coursecontent.image	content	60
-9993	3	54	coursecontent.pagebreaker	content	61
-9994	3	57	coursecontent.text	content	62
-9995	3	54	coursecontent.image	content	63
-9996	3	55	coursecontent.pagebreaker	content	64
-9997	3	58	coursecontent.text	content	65
-5978	25	324	coursecontent.text	content	1
-5979	25	325	coursecontent.image	content	2
-5980	25	325	coursecontent.pagebreaker	content	3
-5981	25	325	coursecontent.text	content	4
-5982	25	326	coursecontent.image	content	5
-5983	25	326	coursecontent.pagebreaker	content	6
-5984	25	326	coursecontent.text	content	7
-5985	25	327	coursecontent.image	content	8
-5986	25	327	coursecontent.pagebreaker	content	9
-5987	25	330	coursecontent.text	content	10
-5988	25	328	coursecontent.image	content	11
-5989	25	328	coursecontent.pagebreaker	content	12
-5990	25	327	coursecontent.text	content	13
-5991	25	330	coursecontent.image	content	14
-5992	25	330	coursecontent.pagebreaker	content	15
-5993	25	329	coursecontent.text	content	16
-5994	25	329	coursecontent.image	content	17
-5995	25	329	coursecontent.pagebreaker	content	18
-5996	25	328	coursecontent.text	content	19
-5997	25	331	coursecontent.image	content	20
-5998	25	331	coursecontent.pagebreaker	content	21
-5999	25	331	coursecontent.text	content	22
-6000	25	332	coursecontent.image	content	23
-6001	25	332	coursecontent.pagebreaker	content	24
-6002	25	332	coursecontent.text	content	25
-6003	25	333	coursecontent.image	content	26
-6004	25	333	coursecontent.pagebreaker	content	27
-6005	25	333	coursecontent.text	content	28
-6006	25	334	coursecontent.image	content	29
-6007	25	334	coursecontent.pagebreaker	content	30
-6008	25	334	coursecontent.text	content	31
-6009	25	335	coursecontent.image	content	32
-6010	25	335	coursecontent.pagebreaker	content	33
-6011	25	335	coursecontent.text	content	34
-6012	25	336	coursecontent.image	content	35
-9998	3	55	coursecontent.image	content	66
-9999	3	56	coursecontent.pagebreaker	content	67
-10000	3	59	coursecontent.text	content	68
-10001	3	56	coursecontent.image	content	69
+14057	42	542	coursecontent.text	content	17
+14058	42	545	coursecontent.image	content	18
+14059	42	526	coursecontent.pagebreaker	content	19
+14060	42	543	coursecontent.text	content	20
+14061	42	546	coursecontent.image	content	21
+14062	42	527	coursecontent.pagebreaker	content	22
+14063	42	544	coursecontent.text	content	23
+14064	42	549	coursecontent.image	content	24
+14065	42	528	coursecontent.pagebreaker	content	25
+14066	42	546	coursecontent.text	content	26
+14067	42	547	coursecontent.image	content	27
+14068	42	529	coursecontent.pagebreaker	content	28
+14069	42	545	coursecontent.text	content	29
+14070	42	548	coursecontent.image	content	30
+14071	42	530	coursecontent.pagebreaker	content	31
+14072	42	547	coursecontent.text	content	32
+14073	42	550	coursecontent.image	content	33
+14074	42	531	coursecontent.pagebreaker	content	34
+14075	42	548	coursecontent.text	content	35
+14076	42	551	coursecontent.image	content	36
+14077	42	532	coursecontent.pagebreaker	content	37
+14078	42	549	coursecontent.text	content	38
+14079	42	552	coursecontent.image	content	39
+14337	2	21	coursecontent.video	content	1
+14338	2	9	coursecontent.text	content	2
+14339	2	1	coursecontent.image	content	3
+14340	2	2	coursecontent.pagebreaker	content	4
+14341	2	5	coursecontent.text	content	5
+14342	2	14	coursecontent.image	content	6
+14343	2	5	coursecontent.pagebreaker	content	7
+14344	2	23	coursecontent.text	content	8
+14345	2	18	coursecontent.image	content	9
+14346	2	11	coursecontent.pagebreaker	content	10
+14347	2	29	coursecontent.text	content	11
+14348	2	20	coursecontent.image	content	12
+14413	34	442	coursecontent.text	content	1
+14349	2	10	coursecontent.pagebreaker	content	13
+14350	2	28	coursecontent.text	content	14
+14351	2	21	coursecontent.image	content	15
+14352	2	12	coursecontent.pagebreaker	content	16
+14353	2	22	coursecontent.text	content	17
+14354	2	22	coursecontent.image	content	18
+14355	2	13	coursecontent.pagebreaker	content	19
+14356	2	26	coursecontent.text	content	20
+14357	2	23	coursecontent.image	content	21
+14358	2	630	coursecontent.pagebreaker	content	22
+14359	2	24	coursecontent.text	content	23
+14360	2	24	coursecontent.image	content	24
+14361	2	15	coursecontent.pagebreaker	content	25
+14362	2	25	coursecontent.text	content	26
+14363	2	25	coursecontent.image	content	27
+14364	2	14	coursecontent.pagebreaker	content	28
+14365	2	27	coursecontent.text	content	29
+14366	2	26	coursecontent.image	content	30
+14367	2	16	coursecontent.pagebreaker	content	31
+14368	2	30	coursecontent.text	content	32
+14369	2	27	coursecontent.image	content	33
+14370	2	17	coursecontent.pagebreaker	content	34
+14371	2	18	coursecontent.pagebreaker	content	35
+14372	2	3	coursecontent.quiz	content	36
+14373	2	23	coursecontent.pagebreaker	content	37
+14374	2	2	coursecontent.quiz	content	38
+14375	2	25	coursecontent.pagebreaker	content	39
+14376	2	4	coursecontent.quiz	content	40
+14377	2	24	coursecontent.pagebreaker	content	41
+14378	2	5	coursecontent.quiz	content	42
+14379	2	26	coursecontent.pagebreaker	content	43
+14380	2	6	coursecontent.quiz	content	44
+14414	34	445	coursecontent.image	content	2
+14415	34	434	coursecontent.pagebreaker	content	3
+14416	34	443	coursecontent.text	content	4
 4685	12	16	coursecontent.text	content	1
 4686	12	173	coursecontent.image	content	2
 4687	12	182	coursecontent.pagebreaker	content	3
@@ -6840,14 +6801,6 @@ COPY public.courses_components (id, entity_id, component_id, component_type, fie
 4717	12	192	coursecontent.pagebreaker	content	33
 4718	12	182	coursecontent.text	content	34
 4719	12	184	coursecontent.image	content	35
-10002	3	57	coursecontent.pagebreaker	content	70
-10003	3	60	coursecontent.text	content	71
-10004	3	57	coursecontent.image	content	72
-10005	3	58	coursecontent.pagebreaker	content	73
-10006	3	61	coursecontent.text	content	74
-10007	3	58	coursecontent.image	content	75
-10008	3	59	coursecontent.pagebreaker	content	76
-10009	3	62	coursecontent.text	content	77
 4758	11	15	coursecontent.text	content	1
 4759	11	185	coursecontent.image	content	2
 4760	11	193	coursecontent.pagebreaker	content	3
@@ -6885,7 +6838,6 @@ COPY public.courses_components (id, entity_id, component_id, component_type, fie
 4792	11	196	coursecontent.image	content	35
 4793	11	204	coursecontent.pagebreaker	content	36
 4794	11	194	coursecontent.text	content	37
-10010	3	59	coursecontent.image	content	78
 10230	53	641	coursecontent.text	content	1
 4797	9	13	coursecontent.text	content	1
 4798	9	197	coursecontent.image	content	2
@@ -7001,7 +6953,6 @@ COPY public.courses_components (id, entity_id, component_id, component_type, fie
 4909	17	233	coursecontent.image	content	35
 4910	17	240	coursecontent.pagebreaker	content	36
 4911	17	232	coursecontent.text	content	37
-10011	5	63	coursecontent.text	content	1
 4913	18	233	coursecontent.text	content	1
 4914	18	234	coursecontent.image	content	2
 4915	18	241	coursecontent.pagebreaker	content	3
@@ -7040,13 +6991,6 @@ COPY public.courses_components (id, entity_id, component_id, component_type, fie
 4948	18	252	coursecontent.pagebreaker	content	36
 4949	18	245	coursecontent.text	content	37
 4950	18	246	coursecontent.image	content	38
-10012	5	60	coursecontent.image	content	2
-10013	5	61	coursecontent.pagebreaker	content	3
-10014	5	64	coursecontent.text	content	4
-10015	5	61	coursecontent.image	content	5
-10016	5	62	coursecontent.pagebreaker	content	6
-10017	5	65	coursecontent.text	content	7
-10018	5	62	coursecontent.image	content	8
 6015	26	336	coursecontent.pagebreaker	content	3
 6016	26	337	coursecontent.text	content	4
 6017	26	338	coursecontent.image	content	5
@@ -7093,30 +7037,26 @@ COPY public.courses_components (id, entity_id, component_id, component_type, fie
 6023	26	340	coursecontent.image	content	11
 6024	26	339	coursecontent.pagebreaker	content	12
 6025	26	340	coursecontent.text	content	13
-10019	5	63	coursecontent.pagebreaker	content	9
-10020	5	66	coursecontent.text	content	10
-10021	5	63	coursecontent.image	content	11
-10022	5	64	coursecontent.image	content	12
-10023	5	65	coursecontent.pagebreaker	content	13
-10024	5	67	coursecontent.text	content	14
-10025	5	65	coursecontent.image	content	15
-10026	5	64	coursecontent.pagebreaker	content	16
-10027	5	69	coursecontent.text	content	17
-10028	5	67	coursecontent.image	content	18
-10029	5	66	coursecontent.pagebreaker	content	19
-10030	5	68	coursecontent.text	content	20
-10031	5	66	coursecontent.image	content	21
-10032	5	67	coursecontent.pagebreaker	content	22
-10033	5	70	coursecontent.text	content	23
-10034	5	68	coursecontent.image	content	24
-10035	5	68	coursecontent.pagebreaker	content	25
-10036	5	71	coursecontent.text	content	26
-10037	5	69	coursecontent.image	content	27
-10038	5	69	coursecontent.pagebreaker	content	28
-10039	5	74	coursecontent.text	content	29
-10040	5	71	coursecontent.image	content	30
-10041	5	71	coursecontent.pagebreaker	content	31
-10042	5	72	coursecontent.text	content	32
+12753	10	14	coursecontent.text	content	1
+12754	10	148	coursecontent.image	content	2
+12755	10	159	coursecontent.pagebreaker	content	3
+12756	10	150	coursecontent.text	content	4
+12757	10	147	coursecontent.image	content	5
+12758	10	160	coursecontent.pagebreaker	content	6
+12759	10	151	coursecontent.text	content	7
+12760	10	150	coursecontent.image	content	8
+12761	10	162	coursecontent.pagebreaker	content	9
+12762	10	152	coursecontent.text	content	10
+12763	10	149	coursecontent.image	content	11
+12764	10	161	coursecontent.pagebreaker	content	12
+12765	10	154	coursecontent.text	content	13
+12766	10	151	coursecontent.image	content	14
+12767	10	163	coursecontent.pagebreaker	content	15
+12768	10	153	coursecontent.text	content	16
+12769	10	152	coursecontent.image	content	17
+12770	10	164	coursecontent.pagebreaker	content	18
+12771	10	156	coursecontent.text	content	19
+12772	10	153	coursecontent.image	content	20
 6026	26	343	coursecontent.image	content	14
 6027	26	342	coursecontent.pagebreaker	content	15
 6028	26	341	coursecontent.text	content	16
@@ -7136,63 +7076,48 @@ COPY public.courses_components (id, entity_id, component_id, component_type, fie
 6042	26	345	coursecontent.pagebreaker	content	30
 6043	26	345	coursecontent.text	content	31
 6044	26	348	coursecontent.image	content	32
-10043	5	70	coursecontent.image	content	33
-10044	5	70	coursecontent.pagebreaker	content	34
-10045	5	73	coursecontent.text	content	35
-10046	5	72	coursecontent.image	content	36
-10047	5	72	coursecontent.pagebreaker	content	37
-10048	5	75	coursecontent.text	content	38
-10049	5	73	coursecontent.image	content	39
-10050	5	74	coursecontent.pagebreaker	content	40
-10051	5	76	coursecontent.text	content	41
-10052	5	74	coursecontent.image	content	42
-10053	5	73	coursecontent.pagebreaker	content	43
-10054	5	77	coursecontent.text	content	44
-10055	5	75	coursecontent.image	content	45
-10056	5	75	coursecontent.pagebreaker	content	46
-10057	5	12	coursecontent.quiz	content	47
 6455	39	466	coursecontent.text	content	1
 6456	39	469	coursecontent.image	content	2
 6457	39	456	coursecontent.pagebreaker	content	3
 6458	39	467	coursecontent.text	content	4
-5087	8	6	coursecontent.text	content	1
-5088	8	160	coursecontent.image	content	2
-5089	8	3	coursecontent.pagebreaker	content	3
-5090	8	7	coursecontent.text	content	4
-5091	8	161	coursecontent.image	content	5
-5092	8	171	coursecontent.pagebreaker	content	6
-5093	8	8	coursecontent.text	content	7
-5094	8	162	coursecontent.image	content	8
-5095	8	172	coursecontent.pagebreaker	content	9
-5096	8	162	coursecontent.text	content	10
-5097	8	165	coursecontent.image	content	11
-5098	8	174	coursecontent.pagebreaker	content	12
-5099	8	163	coursecontent.text	content	13
-5100	8	163	coursecontent.image	content	14
-5101	8	173	coursecontent.pagebreaker	content	15
-5102	8	164	coursecontent.text	content	16
-5103	8	164	coursecontent.image	content	17
-5104	8	175	coursecontent.pagebreaker	content	18
-5105	8	165	coursecontent.text	content	19
-5106	8	166	coursecontent.image	content	20
-5107	8	176	coursecontent.pagebreaker	content	21
-5108	8	166	coursecontent.text	content	22
-5109	8	167	coursecontent.image	content	23
-5110	8	177	coursecontent.pagebreaker	content	24
-5111	8	167	coursecontent.text	content	25
-5112	8	168	coursecontent.image	content	26
-5113	8	179	coursecontent.pagebreaker	content	27
-5114	8	168	coursecontent.text	content	28
-5115	8	169	coursecontent.image	content	29
-5116	8	178	coursecontent.pagebreaker	content	30
-5117	8	169	coursecontent.text	content	31
-5118	8	170	coursecontent.image	content	32
-5119	8	180	coursecontent.pagebreaker	content	33
-5120	8	170	coursecontent.text	content	34
-5121	8	171	coursecontent.image	content	35
-5122	8	181	coursecontent.pagebreaker	content	36
-5123	8	171	coursecontent.text	content	37
-5124	8	172	coursecontent.image	content	38
+14080	41	27	coursecontent.video	content	1
+14081	41	524	coursecontent.text	content	2
+14082	41	527	coursecontent.image	content	3
+14083	41	509	coursecontent.pagebreaker	content	4
+14084	41	525	coursecontent.text	content	5
+14085	41	528	coursecontent.image	content	6
+14086	41	510	coursecontent.pagebreaker	content	7
+14087	41	527	coursecontent.text	content	8
+14088	41	529	coursecontent.image	content	9
+14089	41	511	coursecontent.pagebreaker	content	10
+14090	41	526	coursecontent.text	content	11
+14091	41	530	coursecontent.image	content	12
+14092	41	512	coursecontent.pagebreaker	content	13
+14093	41	528	coursecontent.text	content	14
+14094	41	531	coursecontent.image	content	15
+14095	41	513	coursecontent.pagebreaker	content	16
+14096	41	530	coursecontent.text	content	17
+14097	41	533	coursecontent.image	content	18
+14098	41	514	coursecontent.pagebreaker	content	19
+14099	41	529	coursecontent.text	content	20
+14100	41	532	coursecontent.image	content	21
+14101	41	515	coursecontent.pagebreaker	content	22
+14102	41	532	coursecontent.text	content	23
+14103	41	534	coursecontent.image	content	24
+14104	41	517	coursecontent.pagebreaker	content	25
+14105	41	531	coursecontent.text	content	26
+14106	41	535	coursecontent.image	content	27
+14107	41	516	coursecontent.pagebreaker	content	28
+14108	41	533	coursecontent.text	content	29
+14109	41	536	coursecontent.image	content	30
+14110	41	518	coursecontent.pagebreaker	content	31
+14111	41	534	coursecontent.text	content	32
+14112	41	537	coursecontent.image	content	33
+14113	41	519	coursecontent.pagebreaker	content	34
+14114	41	535	coursecontent.text	content	35
+14115	41	538	coursecontent.image	content	36
+14116	41	520	coursecontent.pagebreaker	content	37
+14117	41	536	coursecontent.text	content	38
 6459	39	470	coursecontent.image	content	5
 6460	39	457	coursecontent.pagebreaker	content	6
 6461	39	469	coursecontent.text	content	7
@@ -7233,14 +7158,6 @@ COPY public.courses_components (id, entity_id, component_id, component_type, fie
 6206	32	422	coursecontent.text	content	10
 6207	32	422	coursecontent.image	content	11
 6208	32	413	coursecontent.pagebreaker	content	12
-10058	5	76	coursecontent.pagebreaker	content	48
-10059	5	13	coursecontent.quiz	content	49
-10060	5	77	coursecontent.pagebreaker	content	50
-10061	5	14	coursecontent.quiz	content	51
-10062	5	78	coursecontent.pagebreaker	content	52
-10063	5	15	coursecontent.quiz	content	53
-10064	5	80	coursecontent.pagebreaker	content	54
-10065	5	16	coursecontent.quiz	content	55
 7507	20	267	coursecontent.pagebreaker	content	12
 7508	20	267	coursecontent.text	content	13
 7509	20	265	coursecontent.image	content	14
@@ -7334,20 +7251,10 @@ COPY public.courses_components (id, entity_id, component_id, component_type, fie
 6232	32	421	coursecontent.pagebreaker	content	36
 6233	32	429	coursecontent.text	content	37
 6234	32	431	coursecontent.image	content	38
-10066	5	79	coursecontent.pagebreaker	content	56
-10067	5	78	coursecontent.text	content	57
 7539	20	273	coursecontent.image	content	44
-10068	5	76	coursecontent.image	content	58
-10069	5	81	coursecontent.pagebreaker	content	59
-10070	5	79	coursecontent.text	content	60
-10071	5	77	coursecontent.image	content	61
 6481	39	462	coursecontent.pagebreaker	content	27
 6482	39	476	coursecontent.text	content	28
 6483	39	479	coursecontent.image	content	29
-10072	5	82	coursecontent.pagebreaker	content	62
-10073	5	80	coursecontent.text	content	63
-10074	5	78	coursecontent.image	content	64
-10075	5	83	coursecontent.pagebreaker	content	65
 6484	39	465	coursecontent.pagebreaker	content	30
 6485	39	477	coursecontent.text	content	31
 6486	39	478	coursecontent.image	content	32
@@ -7357,153 +7264,75 @@ COPY public.courses_components (id, entity_id, component_id, component_type, fie
 6490	39	467	coursecontent.pagebreaker	content	36
 6491	39	478	coursecontent.text	content	37
 6492	39	480	coursecontent.image	content	38
-10076	5	81	coursecontent.text	content	66
-10077	5	79	coursecontent.image	content	67
-10078	5	84	coursecontent.pagebreaker	content	68
-10079	5	82	coursecontent.text	content	69
-10080	5	80	coursecontent.image	content	70
-10081	5	85	coursecontent.pagebreaker	content	71
-10082	5	83	coursecontent.text	content	72
-10083	5	81	coursecontent.image	content	73
-10084	5	86	coursecontent.pagebreaker	content	74
-10085	5	84	coursecontent.text	content	75
-6560	37	502	coursecontent.text	content	1
-6561	37	505	coursecontent.image	content	2
-6562	37	489	coursecontent.pagebreaker	content	3
-6563	37	503	coursecontent.text	content	4
-6564	37	506	coursecontent.image	content	5
-6565	37	490	coursecontent.pagebreaker	content	6
-6566	37	504	coursecontent.text	content	7
-6567	37	507	coursecontent.image	content	8
-6568	37	491	coursecontent.pagebreaker	content	9
-6569	37	505	coursecontent.text	content	10
-6570	37	508	coursecontent.image	content	11
-6571	37	492	coursecontent.pagebreaker	content	12
-6572	37	506	coursecontent.text	content	13
-6573	37	509	coursecontent.image	content	14
-6574	37	493	coursecontent.pagebreaker	content	15
-6575	37	507	coursecontent.text	content	16
-6576	37	510	coursecontent.image	content	17
-6577	37	495	coursecontent.pagebreaker	content	18
-6578	37	508	coursecontent.text	content	19
-6579	37	512	coursecontent.image	content	20
-6580	37	494	coursecontent.pagebreaker	content	21
-6581	37	509	coursecontent.text	content	22
-6582	37	511	coursecontent.image	content	23
-6583	37	496	coursecontent.pagebreaker	content	24
-6584	37	510	coursecontent.text	content	25
-6585	37	513	coursecontent.image	content	26
-6586	36	511	coursecontent.text	content	1
-6587	36	514	coursecontent.image	content	2
-6588	36	497	coursecontent.pagebreaker	content	3
-6589	36	512	coursecontent.text	content	4
-6590	36	515	coursecontent.image	content	5
-6591	36	498	coursecontent.pagebreaker	content	6
-6592	36	513	coursecontent.text	content	7
-6593	36	516	coursecontent.image	content	8
-6594	36	499	coursecontent.pagebreaker	content	9
-6595	36	514	coursecontent.text	content	10
-6596	36	517	coursecontent.image	content	11
-6597	36	501	coursecontent.pagebreaker	content	12
-6598	36	515	coursecontent.text	content	13
-6599	36	518	coursecontent.image	content	14
-6600	36	502	coursecontent.pagebreaker	content	15
-6601	36	517	coursecontent.text	content	16
-6602	36	519	coursecontent.image	content	17
-6603	36	500	coursecontent.pagebreaker	content	18
-6604	36	518	coursecontent.text	content	19
-6605	36	520	coursecontent.image	content	20
-6606	36	503	coursecontent.pagebreaker	content	21
-6607	36	516	coursecontent.text	content	22
-6608	36	521	coursecontent.image	content	23
-6609	36	504	coursecontent.pagebreaker	content	24
-6610	36	519	coursecontent.text	content	25
-6611	36	522	coursecontent.image	content	26
-6612	36	505	coursecontent.pagebreaker	content	27
-6613	36	520	coursecontent.text	content	28
-6614	36	523	coursecontent.image	content	29
-6615	36	506	coursecontent.pagebreaker	content	30
-6616	36	521	coursecontent.text	content	31
-6617	36	524	coursecontent.image	content	32
-6618	36	507	coursecontent.pagebreaker	content	33
-6619	36	522	coursecontent.text	content	34
-6620	36	525	coursecontent.image	content	35
-6621	36	508	coursecontent.pagebreaker	content	36
-6622	36	523	coursecontent.text	content	37
-6623	36	526	coursecontent.image	content	38
-10086	5	82	coursecontent.image	content	76
+14417	34	446	coursecontent.image	content	5
+14418	34	435	coursecontent.pagebreaker	content	6
+14419	34	444	coursecontent.text	content	7
+14420	34	447	coursecontent.image	content	8
+14421	34	436	coursecontent.pagebreaker	content	9
+14422	34	445	coursecontent.text	content	10
+14423	34	448	coursecontent.image	content	11
+14424	34	437	coursecontent.pagebreaker	content	12
+14425	34	446	coursecontent.text	content	13
+14426	34	449	coursecontent.image	content	14
+14427	34	438	coursecontent.pagebreaker	content	15
+14428	34	447	coursecontent.text	content	16
+14429	34	450	coursecontent.image	content	17
+14430	34	439	coursecontent.pagebreaker	content	18
+14431	34	448	coursecontent.text	content	19
+14432	34	452	coursecontent.image	content	20
+14433	34	440	coursecontent.pagebreaker	content	21
+14434	34	449	coursecontent.text	content	22
+14435	34	451	coursecontent.image	content	23
+14436	34	441	coursecontent.pagebreaker	content	24
+14437	34	450	coursecontent.text	content	25
+14438	34	453	coursecontent.image	content	26
+14439	34	442	coursecontent.pagebreaker	content	27
+14440	34	451	coursecontent.text	content	28
+14441	34	455	coursecontent.image	content	29
+14442	34	443	coursecontent.pagebreaker	content	30
+14443	34	452	coursecontent.text	content	31
+14444	34	454	coursecontent.image	content	32
+14723	5	63	coursecontent.text	content	1
+14724	5	60	coursecontent.image	content	2
+14725	5	61	coursecontent.pagebreaker	content	3
+14726	5	64	coursecontent.text	content	4
+14727	5	61	coursecontent.image	content	5
+14728	5	62	coursecontent.pagebreaker	content	6
+14729	5	65	coursecontent.text	content	7
+14730	5	62	coursecontent.image	content	8
+14731	5	63	coursecontent.pagebreaker	content	9
+14732	5	66	coursecontent.text	content	10
+14733	5	63	coursecontent.image	content	11
+14734	5	64	coursecontent.image	content	12
+14735	5	65	coursecontent.pagebreaker	content	13
+14736	5	67	coursecontent.text	content	14
+14737	5	65	coursecontent.image	content	15
+14738	5	64	coursecontent.pagebreaker	content	16
+14739	5	69	coursecontent.text	content	17
+14740	5	67	coursecontent.image	content	18
+14741	5	66	coursecontent.pagebreaker	content	19
+14742	5	68	coursecontent.text	content	20
+14743	5	66	coursecontent.image	content	21
+14744	5	67	coursecontent.pagebreaker	content	22
+14745	5	70	coursecontent.text	content	23
+14746	5	68	coursecontent.image	content	24
+14747	5	68	coursecontent.pagebreaker	content	25
+14748	5	71	coursecontent.text	content	26
+14749	5	69	coursecontent.image	content	27
+14750	5	69	coursecontent.pagebreaker	content	28
+14751	5	74	coursecontent.text	content	29
+14752	5	71	coursecontent.image	content	30
+14753	5	71	coursecontent.pagebreaker	content	31
+14754	5	72	coursecontent.text	content	32
+14755	5	70	coursecontent.image	content	33
+14756	5	70	coursecontent.pagebreaker	content	34
+14757	5	73	coursecontent.text	content	35
 10233	53	642	coursecontent.text	content	4
 10234	53	643	coursecontent.image	content	5
 10235	53	611	coursecontent.pagebreaker	content	6
 10236	53	643	coursecontent.text	content	7
 10237	53	644	coursecontent.image	content	8
 10238	53	612	coursecontent.pagebreaker	content	9
-6124	31	404	coursecontent.text	content	1
-6125	31	405	coursecontent.image	content	2
-6126	31	399	coursecontent.pagebreaker	content	3
-6127	31	406	coursecontent.image	content	4
-6128	31	400	coursecontent.pagebreaker	content	5
-6129	31	405	coursecontent.text	content	6
-6130	31	407	coursecontent.image	content	7
-6131	31	401	coursecontent.pagebreaker	content	8
-6132	31	406	coursecontent.text	content	9
-6133	31	408	coursecontent.image	content	10
-6134	31	402	coursecontent.pagebreaker	content	11
-6135	31	407	coursecontent.text	content	12
-6136	31	409	coursecontent.image	content	13
-6137	31	403	coursecontent.pagebreaker	content	14
-6138	31	408	coursecontent.text	content	15
-6139	31	410	coursecontent.image	content	16
-6140	31	407	coursecontent.pagebreaker	content	17
-6141	31	409	coursecontent.text	content	18
-6142	31	412	coursecontent.image	content	19
-6143	31	404	coursecontent.pagebreaker	content	20
-6144	31	410	coursecontent.text	content	21
-6145	31	411	coursecontent.image	content	22
-6146	31	405	coursecontent.pagebreaker	content	23
-6147	31	411	coursecontent.text	content	24
-6148	31	413	coursecontent.image	content	25
-6149	31	406	coursecontent.pagebreaker	content	26
-6150	31	413	coursecontent.text	content	27
-6151	31	414	coursecontent.image	content	28
-6152	31	408	coursecontent.pagebreaker	content	29
-6153	31	412	coursecontent.text	content	30
-6154	31	415	coursecontent.image	content	31
-6155	31	409	coursecontent.pagebreaker	content	32
-6156	31	414	coursecontent.text	content	33
-6157	31	416	coursecontent.image	content	34
-6385	34	442	coursecontent.text	content	1
-6386	34	445	coursecontent.image	content	2
-6387	34	434	coursecontent.pagebreaker	content	3
-6388	34	443	coursecontent.text	content	4
-6389	34	446	coursecontent.image	content	5
-6390	34	435	coursecontent.pagebreaker	content	6
-6391	34	444	coursecontent.text	content	7
-6392	34	447	coursecontent.image	content	8
-6393	34	436	coursecontent.pagebreaker	content	9
-6394	34	445	coursecontent.text	content	10
-6395	34	448	coursecontent.image	content	11
-6396	34	437	coursecontent.pagebreaker	content	12
-6397	34	446	coursecontent.text	content	13
-6398	34	449	coursecontent.image	content	14
-6399	34	438	coursecontent.pagebreaker	content	15
-6400	34	447	coursecontent.text	content	16
-6401	34	450	coursecontent.image	content	17
-6402	34	439	coursecontent.pagebreaker	content	18
-6403	34	448	coursecontent.text	content	19
-6404	34	452	coursecontent.image	content	20
-6405	34	440	coursecontent.pagebreaker	content	21
-6406	34	449	coursecontent.text	content	22
-6407	34	451	coursecontent.image	content	23
-6408	34	441	coursecontent.pagebreaker	content	24
-6409	34	450	coursecontent.text	content	25
-6410	34	453	coursecontent.image	content	26
-6411	34	442	coursecontent.pagebreaker	content	27
-6412	34	451	coursecontent.text	content	28
-6413	34	455	coursecontent.image	content	29
-6414	34	443	coursecontent.pagebreaker	content	30
-6415	34	452	coursecontent.text	content	31
-6416	34	454	coursecontent.image	content	32
 6493	35	479	coursecontent.text	content	1
 6494	35	482	coursecontent.image	content	2
 6495	35	468	coursecontent.pagebreaker	content	3
@@ -7544,6 +7373,24 @@ COPY public.courses_components (id, entity_id, component_id, component_type, fie
 6530	35	494	coursecontent.image	content	38
 8029	52	640	coursecontent.text	content	1
 8030	52	641	coursecontent.image	content	2
+12773	10	165	coursecontent.pagebreaker	content	21
+12774	10	155	coursecontent.text	content	22
+12775	10	154	coursecontent.image	content	23
+12776	10	166	coursecontent.pagebreaker	content	24
+12777	10	157	coursecontent.text	content	25
+12778	10	155	coursecontent.image	content	26
+12779	10	167	coursecontent.pagebreaker	content	27
+12780	10	158	coursecontent.text	content	28
+12781	10	156	coursecontent.image	content	29
+12782	10	168	coursecontent.pagebreaker	content	30
+12783	10	159	coursecontent.text	content	31
+12784	10	157	coursecontent.image	content	32
+12785	10	169	coursecontent.pagebreaker	content	33
+12786	10	160	coursecontent.text	content	34
+12787	10	16	coursecontent.video	content	35
+12788	10	170	coursecontent.pagebreaker	content	36
+12789	10	161	coursecontent.text	content	37
+12790	10	159	coursecontent.image	content	38
 7412	38	453	coursecontent.text	content	1
 7413	38	456	coursecontent.image	content	2
 7414	38	444	coursecontent.pagebreaker	content	3
@@ -7563,6 +7410,10 @@ COPY public.courses_components (id, entity_id, component_id, component_type, fie
 7428	38	461	coursecontent.image	content	17
 7429	38	447	coursecontent.pagebreaker	content	18
 7430	38	459	coursecontent.text	content	19
+14758	5	72	coursecontent.image	content	36
+14759	5	72	coursecontent.pagebreaker	content	37
+14760	5	12	coursecontent.quiz	content	38
+14761	5	76	coursecontent.pagebreaker	content	39
 5738	23	299	coursecontent.text	content	1
 5739	23	300	coursecontent.image	content	2
 5740	23	302	coursecontent.pagebreaker	content	3
@@ -7601,77 +7452,133 @@ COPY public.courses_components (id, entity_id, component_id, component_type, fie
 5773	23	313	coursecontent.pagebreaker	content	36
 5774	23	311	coursecontent.text	content	37
 5775	23	312	coursecontent.image	content	38
-11840	1	40	coursecontent.text	content	1
-11841	1	2	coursecontent.image	content	2
-11842	1	591	coursecontent.pagebreaker	content	3
-11843	1	656	coursecontent.image	content	4
-11844	1	626	coursecontent.image	content	5
-11845	1	592	coursecontent.pagebreaker	content	6
-11846	1	625	coursecontent.text	content	7
-11847	1	627	coursecontent.image	content	8
-11848	1	593	coursecontent.pagebreaker	content	9
-11849	1	627	coursecontent.text	content	10
-11850	1	628	coursecontent.image	content	11
-11851	1	620	coursecontent.pagebreaker	content	12
-11852	1	628	coursecontent.text	content	13
-11853	1	633	coursecontent.image	content	14
-11854	1	595	coursecontent.pagebreaker	content	15
-11855	1	629	coursecontent.text	content	16
-11856	1	631	coursecontent.image	content	17
-11857	1	596	coursecontent.pagebreaker	content	18
-11858	1	632	coursecontent.text	content	19
-11859	1	629	coursecontent.image	content	20
-11860	1	594	coursecontent.pagebreaker	content	21
-11861	1	630	coursecontent.text	content	22
-11862	1	630	coursecontent.image	content	23
-11863	1	597	coursecontent.pagebreaker	content	24
-11864	1	631	coursecontent.text	content	25
-11865	1	632	coursecontent.image	content	26
-11866	1	598	coursecontent.pagebreaker	content	27
-11867	1	34	coursecontent.quiz	content	28
-11868	1	599	coursecontent.pagebreaker	content	29
-11869	1	35	coursecontent.quiz	content	30
-5864	29	373	coursecontent.text	content	1
-5865	29	374	coursecontent.image	content	2
-5866	29	370	coursecontent.pagebreaker	content	3
-5867	29	374	coursecontent.text	content	4
-5868	29	375	coursecontent.image	content	5
-5869	29	371	coursecontent.pagebreaker	content	6
-5870	29	375	coursecontent.text	content	7
-5871	29	376	coursecontent.image	content	8
-5872	29	373	coursecontent.pagebreaker	content	9
-5873	29	378	coursecontent.text	content	10
-5874	29	377	coursecontent.image	content	11
-5875	29	372	coursecontent.pagebreaker	content	12
-5876	29	379	coursecontent.text	content	13
-5877	29	379	coursecontent.image	content	14
-5878	29	375	coursecontent.pagebreaker	content	15
-5879	29	376	coursecontent.text	content	16
-5880	29	380	coursecontent.image	content	17
-5881	29	374	coursecontent.pagebreaker	content	18
-5882	29	377	coursecontent.text	content	19
-5883	29	378	coursecontent.image	content	20
-5884	29	376	coursecontent.pagebreaker	content	21
-5885	29	380	coursecontent.text	content	22
-5886	29	381	coursecontent.image	content	23
-5887	29	377	coursecontent.pagebreaker	content	24
-5888	29	381	coursecontent.text	content	25
-5889	29	382	coursecontent.image	content	26
-5890	29	378	coursecontent.pagebreaker	content	27
-5891	29	382	coursecontent.text	content	28
-5892	29	385	coursecontent.image	content	29
-5893	29	380	coursecontent.pagebreaker	content	30
-5894	29	383	coursecontent.text	content	31
-5895	29	383	coursecontent.image	content	32
-5896	29	379	coursecontent.pagebreaker	content	33
-5897	29	384	coursecontent.text	content	34
-5898	29	384	coursecontent.image	content	35
-5899	29	381	coursecontent.pagebreaker	content	36
-5900	29	385	coursecontent.text	content	37
-5901	29	386	coursecontent.image	content	38
-5902	29	382	coursecontent.pagebreaker	content	39
-5903	29	386	coursecontent.text	content	40
-5904	29	387	coursecontent.image	content	41
+14762	5	13	coursecontent.quiz	content	40
+14763	5	77	coursecontent.pagebreaker	content	41
+14764	5	14	coursecontent.quiz	content	42
+14765	5	78	coursecontent.pagebreaker	content	43
+14766	5	15	coursecontent.quiz	content	44
+14767	5	80	coursecontent.pagebreaker	content	45
+14768	5	16	coursecontent.quiz	content	46
+14118	41	539	coursecontent.image	content	39
+14496	3	2	coursecontent.text	content	1
+14497	3	37	coursecontent.image	content	2
+14498	3	34	coursecontent.pagebreaker	content	3
+14499	3	41	coursecontent.text	content	4
+14500	3	38	coursecontent.image	content	5
+14501	3	35	coursecontent.pagebreaker	content	6
+14502	3	45	coursecontent.text	content	7
+14503	3	42	coursecontent.image	content	8
+14504	3	38	coursecontent.pagebreaker	content	9
+14505	3	46	coursecontent.text	content	10
+14506	3	43	coursecontent.image	content	11
+14507	3	41	coursecontent.pagebreaker	content	12
+14508	3	47	coursecontent.text	content	13
+14509	3	44	coursecontent.image	content	14
+14510	3	39	coursecontent.pagebreaker	content	15
+14511	3	50	coursecontent.text	content	16
+14512	3	45	coursecontent.image	content	17
+14513	3	40	coursecontent.pagebreaker	content	18
+14514	3	48	coursecontent.text	content	19
+14515	3	46	coursecontent.image	content	20
+14516	3	42	coursecontent.pagebreaker	content	21
+14517	3	49	coursecontent.text	content	22
+14518	3	47	coursecontent.image	content	23
+14519	3	43	coursecontent.pagebreaker	content	24
+14520	3	51	coursecontent.text	content	25
+14521	3	48	coursecontent.image	content	26
+14522	3	44	coursecontent.pagebreaker	content	27
+14523	3	52	coursecontent.text	content	28
+14524	3	49	coursecontent.image	content	29
+12791	21	273	coursecontent.text	content	1
+12792	21	274	coursecontent.image	content	2
+12793	21	278	coursecontent.pagebreaker	content	3
+12794	21	274	coursecontent.text	content	4
+12795	21	275	coursecontent.image	content	5
+12796	21	279	coursecontent.pagebreaker	content	6
+12797	21	275	coursecontent.text	content	7
+12798	21	276	coursecontent.image	content	8
+12799	21	280	coursecontent.pagebreaker	content	9
+12800	21	276	coursecontent.text	content	10
+12801	21	280	coursecontent.image	content	11
+12802	21	283	coursecontent.pagebreaker	content	12
+12803	21	280	coursecontent.text	content	13
+12804	21	278	coursecontent.image	content	14
+12805	21	282	coursecontent.pagebreaker	content	15
+12806	21	277	coursecontent.text	content	16
+12807	21	277	coursecontent.image	content	17
+12808	21	284	coursecontent.pagebreaker	content	18
+12809	21	278	coursecontent.text	content	19
+12810	21	279	coursecontent.image	content	20
+12811	21	281	coursecontent.pagebreaker	content	21
+12812	21	279	coursecontent.text	content	22
+12813	21	20	coursecontent.external-video	content	23
+12814	21	285	coursecontent.pagebreaker	content	24
+12815	21	281	coursecontent.text	content	25
+12816	21	282	coursecontent.image	content	26
+12817	21	286	coursecontent.pagebreaker	content	27
+12818	21	282	coursecontent.text	content	28
+12819	21	283	coursecontent.image	content	29
+12820	21	287	coursecontent.pagebreaker	content	30
+12821	21	283	coursecontent.text	content	31
+12822	21	284	coursecontent.image	content	32
+12823	21	288	coursecontent.pagebreaker	content	33
+12824	21	284	coursecontent.text	content	34
+12825	21	285	coursecontent.image	content	35
+12826	21	289	coursecontent.pagebreaker	content	36
+12827	21	285	coursecontent.text	content	37
+12828	21	286	coursecontent.image	content	38
+14525	3	45	coursecontent.pagebreaker	content	30
+14526	3	53	coursecontent.text	content	31
+14527	3	50	coursecontent.image	content	32
+14528	3	46	coursecontent.pagebreaker	content	33
+14529	3	54	coursecontent.text	content	34
+14530	3	51	coursecontent.image	content	35
+14531	3	47	coursecontent.pagebreaker	content	36
+14532	3	55	coursecontent.text	content	37
+14533	3	52	coursecontent.image	content	38
+14534	3	48	coursecontent.pagebreaker	content	39
+14535	3	7	coursecontent.quiz	content	40
+14536	3	49	coursecontent.pagebreaker	content	41
+13653	4	20	coursecontent.video	content	1
+13654	4	3	coursecontent.text	content	2
+13655	4	3	coursecontent.image	content	3
+13656	4	1	coursecontent.pagebreaker	content	4
+13657	4	139	coursecontent.text	content	5
+13658	4	137	coursecontent.image	content	6
+13659	4	149	coursecontent.pagebreaker	content	7
+13660	4	140	coursecontent.text	content	8
+13661	4	138	coursecontent.image	content	9
+13662	4	150	coursecontent.pagebreaker	content	10
+13663	4	141	coursecontent.text	content	11
+13664	4	659	coursecontent.image	content	12
+13665	4	151	coursecontent.pagebreaker	content	13
+13666	4	142	coursecontent.text	content	14
+13667	4	139	coursecontent.image	content	15
+13668	4	152	coursecontent.pagebreaker	content	16
+13669	4	143	coursecontent.text	content	17
+13670	4	140	coursecontent.image	content	18
+13671	4	153	coursecontent.pagebreaker	content	19
+13672	4	144	coursecontent.text	content	20
+13673	4	141	coursecontent.image	content	21
+13674	4	154	coursecontent.pagebreaker	content	22
+13675	4	145	coursecontent.text	content	23
+13676	4	143	coursecontent.image	content	24
+13677	4	155	coursecontent.pagebreaker	content	25
+13678	4	146	coursecontent.text	content	26
+13679	4	142	coursecontent.image	content	27
+13680	4	157	coursecontent.pagebreaker	content	28
+13681	4	147	coursecontent.text	content	29
+13682	4	144	coursecontent.image	content	30
+13683	4	156	coursecontent.pagebreaker	content	31
+13684	4	148	coursecontent.text	content	32
+13685	4	145	coursecontent.image	content	33
+13686	4	158	coursecontent.pagebreaker	content	34
+13687	4	149	coursecontent.text	content	35
+13688	4	146	coursecontent.image	content	36
+14537	3	8	coursecontent.quiz	content	42
+14538	3	50	coursecontent.pagebreaker	content	43
+14539	3	9	coursecontent.quiz	content	44
+14540	3	51	coursecontent.pagebreaker	content	45
 5905	22	286	coursecontent.text	content	1
 5906	22	287	coursecontent.image	content	2
 5907	22	290	coursecontent.pagebreaker	content	3
@@ -7806,13 +7713,11 @@ COPY public.courses_components (id, entity_id, component_id, component_type, fie
 10091	13	84	coursecontent.image	content	5
 10092	13	88	coursecontent.pagebreaker	content	6
 10093	13	86	coursecontent.text	content	7
-11870	1	600	coursecontent.pagebreaker	content	31
-11871	1	37	coursecontent.quiz	content	32
-11872	1	601	coursecontent.pagebreaker	content	33
-11873	1	36	coursecontent.quiz	content	34
-11874	1	602	coursecontent.pagebreaker	content	35
-11875	1	38	coursecontent.quiz	content	36
-11876	1	603	coursecontent.pagebreaker	content	37
+12829	30	387	coursecontent.text	content	1
+12830	30	388	coursecontent.image	content	2
+12831	30	383	coursecontent.pagebreaker	content	3
+12832	30	388	coursecontent.text	content	4
+12833	30	389	coursecontent.image	content	5
 10094	13	85	coursecontent.image	content	8
 10095	13	90	coursecontent.pagebreaker	content	9
 10096	13	87	coursecontent.text	content	10
@@ -7894,25 +7799,52 @@ COPY public.courses_components (id, entity_id, component_id, component_type, fie
 10258	53	651	coursecontent.image	content	29
 10259	53	619	coursecontent.pagebreaker	content	30
 10260	53	652	coursecontent.image	content	31
-11877	1	633	coursecontent.text	content	38
-11878	1	634	coursecontent.image	content	39
-11879	1	604	coursecontent.pagebreaker	content	40
-11880	1	635	coursecontent.image	content	41
-11881	1	605	coursecontent.pagebreaker	content	42
-11882	1	635	coursecontent.text	content	43
-11883	1	636	coursecontent.image	content	44
-11884	1	606	coursecontent.pagebreaker	content	45
-11885	1	636	coursecontent.text	content	46
-11886	1	637	coursecontent.image	content	47
-11887	1	607	coursecontent.pagebreaker	content	48
-11888	1	637	coursecontent.text	content	49
-11889	1	638	coursecontent.image	content	50
-11890	1	608	coursecontent.pagebreaker	content	51
-11891	1	638	coursecontent.text	content	52
-11892	1	639	coursecontent.image	content	53
-11893	1	609	coursecontent.pagebreaker	content	54
-11894	1	639	coursecontent.text	content	55
-11895	1	640	coursecontent.image	content	56
+12834	30	384	coursecontent.pagebreaker	content	6
+12835	30	389	coursecontent.text	content	7
+12836	30	390	coursecontent.image	content	8
+12837	30	385	coursecontent.pagebreaker	content	9
+12838	30	390	coursecontent.text	content	10
+12839	30	391	coursecontent.image	content	11
+12840	30	386	coursecontent.pagebreaker	content	12
+12841	30	393	coursecontent.text	content	13
+12842	30	392	coursecontent.image	content	14
+12843	30	388	coursecontent.pagebreaker	content	15
+12844	30	391	coursecontent.text	content	16
+12845	30	393	coursecontent.image	content	17
+12846	30	387	coursecontent.pagebreaker	content	18
+12847	30	392	coursecontent.text	content	19
+12848	30	394	coursecontent.image	content	20
+12849	30	389	coursecontent.pagebreaker	content	21
+12850	30	394	coursecontent.text	content	22
+12851	30	395	coursecontent.image	content	23
+12852	30	390	coursecontent.pagebreaker	content	24
+12853	30	395	coursecontent.text	content	25
+12854	30	396	coursecontent.image	content	26
+12855	30	391	coursecontent.pagebreaker	content	27
+12856	30	396	coursecontent.text	content	28
+12857	30	397	coursecontent.image	content	29
+12858	30	392	coursecontent.pagebreaker	content	30
+12859	30	397	coursecontent.text	content	31
+12860	30	398	coursecontent.image	content	32
+12861	30	393	coursecontent.pagebreaker	content	33
+12862	30	398	coursecontent.text	content	34
+12863	30	399	coursecontent.image	content	35
+12864	30	394	coursecontent.pagebreaker	content	36
+12865	30	399	coursecontent.text	content	37
+12866	30	400	coursecontent.image	content	38
+12867	30	395	coursecontent.pagebreaker	content	39
+12868	30	400	coursecontent.text	content	40
+12869	30	401	coursecontent.image	content	41
+12870	30	396	coursecontent.pagebreaker	content	42
+12871	30	401	coursecontent.text	content	43
+12872	30	402	coursecontent.image	content	44
+12873	30	397	coursecontent.pagebreaker	content	45
+12874	30	402	coursecontent.text	content	46
+12875	30	403	coursecontent.image	content	47
+12876	30	398	coursecontent.pagebreaker	content	48
+12877	30	403	coursecontent.text	content	49
+12878	30	404	coursecontent.image	content	50
+14541	3	10	coursecontent.quiz	content	46
 7452	49	615	coursecontent.text	content	1
 7453	49	617	coursecontent.image	content	2
 7456	48	614	coursecontent.text	content	1
@@ -7921,50 +7853,8 @@ COPY public.courses_components (id, entity_id, component_id, component_type, fie
 8048	54	653	coursecontent.image	content	2
 8051	56	654	coursecontent.text	content	1
 8052	56	655	coursecontent.image	content	2
-11896	2	9	coursecontent.text	content	1
-11897	2	1	coursecontent.image	content	2
-11898	2	4	coursecontent.pagebreaker	content	3
-11899	2	10	coursecontent.text	content	4
-11900	2	13	coursecontent.image	content	5
-12412	30	387	coursecontent.text	content	1
-12413	30	388	coursecontent.image	content	2
-12414	30	383	coursecontent.pagebreaker	content	3
-12415	30	388	coursecontent.text	content	4
-12416	30	389	coursecontent.image	content	5
-12417	30	384	coursecontent.pagebreaker	content	6
-12418	30	389	coursecontent.text	content	7
-12419	30	390	coursecontent.image	content	8
-12420	30	385	coursecontent.pagebreaker	content	9
-12421	30	390	coursecontent.text	content	10
-12422	30	391	coursecontent.image	content	11
-12423	30	386	coursecontent.pagebreaker	content	12
-12424	30	393	coursecontent.text	content	13
-12425	30	392	coursecontent.image	content	14
-12426	30	388	coursecontent.pagebreaker	content	15
-12427	30	391	coursecontent.text	content	16
-12428	30	393	coursecontent.image	content	17
-12429	30	387	coursecontent.pagebreaker	content	18
-12430	30	392	coursecontent.text	content	19
-11901	2	2	coursecontent.pagebreaker	content	6
-11902	2	5	coursecontent.text	content	7
-11903	2	14	coursecontent.image	content	8
-11904	2	5	coursecontent.pagebreaker	content	9
-11905	2	19	coursecontent.text	content	10
-11906	2	15	coursecontent.image	content	11
-11907	2	6	coursecontent.pagebreaker	content	12
-11908	2	20	coursecontent.text	content	13
-11909	2	17	coursecontent.image	content	14
-11910	2	8	coursecontent.pagebreaker	content	15
-11911	2	21	coursecontent.text	content	16
-11912	2	19	coursecontent.image	content	17
-11913	2	9	coursecontent.pagebreaker	content	18
-11914	2	23	coursecontent.text	content	19
-11915	2	18	coursecontent.image	content	20
-11916	2	11	coursecontent.pagebreaker	content	21
-11917	2	29	coursecontent.text	content	22
-11918	2	20	coursecontent.image	content	23
-11919	2	10	coursecontent.pagebreaker	content	24
-11920	2	28	coursecontent.text	content	25
+14542	3	52	coursecontent.pagebreaker	content	47
+14543	3	11	coursecontent.quiz	content	48
 10151	6	103	coursecontent.text	content	1
 10152	6	101	coursecontent.image	content	2
 10153	6	109	coursecontent.pagebreaker	content	3
@@ -8013,68 +7903,40 @@ COPY public.courses_components (id, entity_id, component_id, component_type, fie
 10196	6	25	coursecontent.quiz	content	46
 10197	6	125	coursecontent.pagebreaker	content	47
 10198	6	26	coursecontent.quiz	content	48
-11921	2	21	coursecontent.image	content	26
-11922	2	12	coursecontent.pagebreaker	content	27
-11923	2	22	coursecontent.text	content	28
-11924	2	22	coursecontent.image	content	29
 7454	50	616	coursecontent.text	content	1
 7455	50	618	coursecontent.image	content	2
 8049	55	653	coursecontent.text	content	1
 8050	55	654	coursecontent.image	content	2
-11925	2	13	coursecontent.pagebreaker	content	30
-11926	2	26	coursecontent.text	content	31
-11927	2	23	coursecontent.image	content	32
-11928	2	24	coursecontent.text	content	33
-11929	2	24	coursecontent.image	content	34
-11930	2	15	coursecontent.pagebreaker	content	35
-11931	2	25	coursecontent.text	content	36
-11932	2	25	coursecontent.image	content	37
-11933	2	14	coursecontent.pagebreaker	content	38
-11934	2	27	coursecontent.text	content	39
-11935	2	26	coursecontent.image	content	40
-11936	2	16	coursecontent.pagebreaker	content	41
-11937	2	30	coursecontent.text	content	42
-11938	2	27	coursecontent.image	content	43
-11939	2	17	coursecontent.pagebreaker	content	44
-11940	2	31	coursecontent.text	content	45
-11941	2	28	coursecontent.image	content	46
-11942	2	21	coursecontent.pagebreaker	content	47
-11943	2	32	coursecontent.text	content	48
-11944	2	30	coursecontent.image	content	49
-11945	2	20	coursecontent.pagebreaker	content	50
-11946	2	18	coursecontent.pagebreaker	content	51
-11947	2	33	coursecontent.text	content	52
-11948	2	29	coursecontent.image	content	53
-11949	2	22	coursecontent.pagebreaker	content	54
-11950	2	3	coursecontent.quiz	content	55
-11951	2	23	coursecontent.pagebreaker	content	56
-11952	2	2	coursecontent.quiz	content	57
-11953	2	25	coursecontent.pagebreaker	content	58
-11954	2	4	coursecontent.quiz	content	59
-11955	2	24	coursecontent.pagebreaker	content	60
-11956	2	5	coursecontent.quiz	content	61
-11957	2	26	coursecontent.pagebreaker	content	62
-11958	2	6	coursecontent.quiz	content	63
-11959	2	27	coursecontent.pagebreaker	content	64
-11960	2	34	coursecontent.text	content	65
-11961	2	31	coursecontent.image	content	66
-11962	2	28	coursecontent.pagebreaker	content	67
-11963	2	37	coursecontent.text	content	68
-11964	2	32	coursecontent.image	content	69
-11965	2	31	coursecontent.pagebreaker	content	70
-11966	2	35	coursecontent.text	content	71
-11967	2	33	coursecontent.image	content	72
-11968	2	30	coursecontent.pagebreaker	content	73
-11969	2	36	coursecontent.text	content	74
-11970	2	36	coursecontent.image	content	75
-11971	2	29	coursecontent.pagebreaker	content	76
-11972	2	38	coursecontent.text	content	77
-11973	2	34	coursecontent.image	content	78
-11974	2	32	coursecontent.pagebreaker	content	79
-11975	2	39	coursecontent.text	content	80
-11976	2	35	coursecontent.image	content	81
-11977	2	33	coursecontent.pagebreaker	content	82
-11978	2	657	coursecontent.image	content	83
+14158	57	29	coursecontent.video	content	1
+14159	57	663	coursecontent.text	content	2
+14160	57	660	coursecontent.image	content	3
+14161	57	621	coursecontent.pagebreaker	content	4
+14162	57	664	coursecontent.text	content	5
+14163	57	661	coursecontent.image	content	6
+14164	57	622	coursecontent.pagebreaker	content	7
+14165	57	665	coursecontent.text	content	8
+14166	57	662	coursecontent.image	content	9
+14167	57	623	coursecontent.pagebreaker	content	10
+14168	57	670	coursecontent.text	content	11
+14169	57	666	coursecontent.image	content	12
+14170	57	625	coursecontent.pagebreaker	content	13
+14171	57	666	coursecontent.text	content	14
+14172	57	665	coursecontent.image	content	15
+14173	57	624	coursecontent.pagebreaker	content	16
+14174	57	668	coursecontent.text	content	17
+14175	57	663	coursecontent.image	content	18
+14176	57	626	coursecontent.pagebreaker	content	19
+14177	57	667	coursecontent.text	content	20
+14178	57	664	coursecontent.image	content	21
+14179	57	627	coursecontent.pagebreaker	content	22
+14180	57	669	coursecontent.text	content	23
+14181	57	667	coursecontent.image	content	24
+14182	57	628	coursecontent.pagebreaker	content	25
+14183	57	671	coursecontent.text	content	26
+14184	57	668	coursecontent.image	content	27
+14185	57	629	coursecontent.pagebreaker	content	28
+14186	57	672	coursecontent.text	content	29
+14187	57	669	coursecontent.image	content	30
 7106	40	492	coursecontent.text	content	1
 7107	40	495	coursecontent.image	content	2
 7108	40	480	coursecontent.pagebreaker	content	3
@@ -8104,82 +7966,6 @@ COPY public.courses_components (id, entity_id, component_id, component_type, fie
 7132	40	487	coursecontent.pagebreaker	content	27
 7133	40	501	coursecontent.text	content	28
 7134	40	504	coursecontent.image	content	29
-7135	41	524	coursecontent.text	content	1
-7136	41	527	coursecontent.image	content	2
-7137	41	509	coursecontent.pagebreaker	content	3
-7138	41	525	coursecontent.text	content	4
-7139	41	528	coursecontent.image	content	5
-7140	41	510	coursecontent.pagebreaker	content	6
-7141	41	527	coursecontent.text	content	7
-7142	41	529	coursecontent.image	content	8
-7143	41	511	coursecontent.pagebreaker	content	9
-7144	41	526	coursecontent.text	content	10
-7145	41	530	coursecontent.image	content	11
-7146	41	512	coursecontent.pagebreaker	content	12
-7147	41	528	coursecontent.text	content	13
-7148	41	531	coursecontent.image	content	14
-7149	41	513	coursecontent.pagebreaker	content	15
-7150	41	530	coursecontent.text	content	16
-7151	41	533	coursecontent.image	content	17
-7152	41	514	coursecontent.pagebreaker	content	18
-7153	41	529	coursecontent.text	content	19
-7154	41	532	coursecontent.image	content	20
-7155	41	515	coursecontent.pagebreaker	content	21
-7156	41	532	coursecontent.text	content	22
-7157	41	534	coursecontent.image	content	23
-7158	41	517	coursecontent.pagebreaker	content	24
-7159	41	531	coursecontent.text	content	25
-7160	41	535	coursecontent.image	content	26
-7161	41	516	coursecontent.pagebreaker	content	27
-7162	41	533	coursecontent.text	content	28
-7163	41	536	coursecontent.image	content	29
-7164	41	518	coursecontent.pagebreaker	content	30
-7165	41	534	coursecontent.text	content	31
-7166	41	537	coursecontent.image	content	32
-7167	41	519	coursecontent.pagebreaker	content	33
-7168	41	535	coursecontent.text	content	34
-7169	41	538	coursecontent.image	content	35
-7170	41	520	coursecontent.pagebreaker	content	36
-7171	41	536	coursecontent.text	content	37
-7172	41	539	coursecontent.image	content	38
-7173	42	537	coursecontent.text	content	1
-7174	42	540	coursecontent.image	content	2
-7175	42	521	coursecontent.pagebreaker	content	3
-7176	42	538	coursecontent.text	content	4
-7177	42	541	coursecontent.image	content	5
-7178	42	522	coursecontent.pagebreaker	content	6
-7179	42	539	coursecontent.text	content	7
-7180	42	542	coursecontent.image	content	8
-7181	42	525	coursecontent.pagebreaker	content	9
-7182	42	540	coursecontent.text	content	10
-7183	42	543	coursecontent.image	content	11
-7184	42	523	coursecontent.pagebreaker	content	12
-7185	42	541	coursecontent.text	content	13
-7186	42	544	coursecontent.image	content	14
-7187	42	524	coursecontent.pagebreaker	content	15
-7188	42	542	coursecontent.text	content	16
-7189	42	545	coursecontent.image	content	17
-7190	42	526	coursecontent.pagebreaker	content	18
-7191	42	543	coursecontent.text	content	19
-7192	42	546	coursecontent.image	content	20
-7193	42	527	coursecontent.pagebreaker	content	21
-7194	42	544	coursecontent.text	content	22
-7195	42	549	coursecontent.image	content	23
-7196	42	528	coursecontent.pagebreaker	content	24
-7197	42	546	coursecontent.text	content	25
-7198	42	547	coursecontent.image	content	26
-7199	42	529	coursecontent.pagebreaker	content	27
-7200	42	545	coursecontent.text	content	28
-7201	42	548	coursecontent.image	content	29
-7202	42	530	coursecontent.pagebreaker	content	30
-7203	42	547	coursecontent.text	content	31
-7204	42	550	coursecontent.image	content	32
-7205	42	531	coursecontent.pagebreaker	content	33
-7206	42	548	coursecontent.text	content	34
-7207	42	551	coursecontent.image	content	35
-7208	42	532	coursecontent.pagebreaker	content	36
-7209	42	549	coursecontent.text	content	37
-7210	42	552	coursecontent.image	content	38
 7211	43	550	coursecontent.text	content	1
 7212	43	553	coursecontent.image	content	2
 7213	43	533	coursecontent.pagebreaker	content	3
@@ -8221,149 +8007,75 @@ COPY public.courses_components (id, entity_id, component_id, component_type, fie
 7249	43	545	coursecontent.pagebreaker	content	39
 7250	43	563	coursecontent.text	content	40
 7251	43	566	coursecontent.image	content	41
-7252	44	564	coursecontent.text	content	1
-7253	44	567	coursecontent.image	content	2
-7254	44	546	coursecontent.pagebreaker	content	3
-7255	44	565	coursecontent.text	content	4
-7256	44	568	coursecontent.image	content	5
-7257	44	547	coursecontent.pagebreaker	content	6
-7258	44	566	coursecontent.text	content	7
-7259	44	569	coursecontent.image	content	8
-7260	44	548	coursecontent.pagebreaker	content	9
-7261	44	567	coursecontent.text	content	10
-7262	44	570	coursecontent.image	content	11
-7263	44	549	coursecontent.pagebreaker	content	12
-7264	44	568	coursecontent.text	content	13
-7265	44	571	coursecontent.image	content	14
-7266	44	550	coursecontent.pagebreaker	content	15
-7267	44	571	coursecontent.text	content	16
-7268	44	572	coursecontent.image	content	17
-7269	44	551	coursecontent.pagebreaker	content	18
-7270	44	569	coursecontent.text	content	19
-7271	44	574	coursecontent.image	content	20
-7272	44	552	coursecontent.pagebreaker	content	21
-7273	44	570	coursecontent.text	content	22
-7274	44	573	coursecontent.image	content	23
-7275	44	553	coursecontent.pagebreaker	content	24
-7276	44	573	coursecontent.text	content	25
-7277	44	577	coursecontent.image	content	26
-7278	44	554	coursecontent.pagebreaker	content	27
-7279	44	572	coursecontent.text	content	28
-7280	44	575	coursecontent.image	content	29
-7281	44	555	coursecontent.pagebreaker	content	30
-7282	44	574	coursecontent.text	content	31
-7283	44	576	coursecontent.image	content	32
-7284	44	556	coursecontent.pagebreaker	content	33
-7285	44	575	coursecontent.text	content	34
-7286	44	578	coursecontent.image	content	35
-7287	44	557	coursecontent.pagebreaker	content	36
-7288	44	576	coursecontent.text	content	37
-7289	44	579	coursecontent.image	content	38
-7290	45	577	coursecontent.text	content	1
-7291	45	580	coursecontent.image	content	2
-7292	45	558	coursecontent.pagebreaker	content	3
-7293	45	578	coursecontent.text	content	4
-7294	45	581	coursecontent.image	content	5
-7295	45	559	coursecontent.pagebreaker	content	6
-7296	45	579	coursecontent.text	content	7
-7297	45	582	coursecontent.image	content	8
-7298	45	560	coursecontent.pagebreaker	content	9
-7299	45	580	coursecontent.text	content	10
-7300	45	583	coursecontent.image	content	11
-7301	45	561	coursecontent.pagebreaker	content	12
-7302	45	581	coursecontent.text	content	13
-7303	45	584	coursecontent.image	content	14
-7304	45	562	coursecontent.pagebreaker	content	15
-7305	45	583	coursecontent.text	content	16
-7306	45	585	coursecontent.image	content	17
-7307	45	563	coursecontent.pagebreaker	content	18
-7308	45	585	coursecontent.text	content	19
-7309	45	587	coursecontent.image	content	20
-7310	45	565	coursecontent.pagebreaker	content	21
-7311	45	582	coursecontent.text	content	22
-7312	45	586	coursecontent.image	content	23
-7313	45	564	coursecontent.pagebreaker	content	24
-7314	45	584	coursecontent.text	content	25
-7315	45	588	coursecontent.image	content	26
-7316	45	566	coursecontent.pagebreaker	content	27
-7317	45	586	coursecontent.text	content	28
-7318	45	589	coursecontent.image	content	29
-7319	45	568	coursecontent.pagebreaker	content	30
-7320	45	589	coursecontent.text	content	31
-7321	45	590	coursecontent.image	content	32
-7322	45	567	coursecontent.pagebreaker	content	33
-7323	45	588	coursecontent.text	content	34
-7324	45	591	coursecontent.image	content	35
-7325	45	569	coursecontent.pagebreaker	content	36
-7326	45	587	coursecontent.text	content	37
-7327	45	592	coursecontent.image	content	38
-7328	46	590	coursecontent.text	content	1
-7329	46	593	coursecontent.image	content	2
-7330	46	570	coursecontent.pagebreaker	content	3
-7331	46	591	coursecontent.text	content	4
-7332	46	594	coursecontent.image	content	5
-7333	46	571	coursecontent.pagebreaker	content	6
-7334	46	592	coursecontent.text	content	7
-7335	46	595	coursecontent.image	content	8
-7336	46	572	coursecontent.pagebreaker	content	9
-7337	46	593	coursecontent.text	content	10
-7338	46	596	coursecontent.image	content	11
-7339	46	573	coursecontent.pagebreaker	content	12
-7340	46	594	coursecontent.text	content	13
-7341	46	597	coursecontent.image	content	14
-7342	46	574	coursecontent.pagebreaker	content	15
-7343	46	595	coursecontent.text	content	16
-7344	46	598	coursecontent.image	content	17
-7345	46	575	coursecontent.pagebreaker	content	18
-7346	46	596	coursecontent.text	content	19
-7347	46	600	coursecontent.image	content	20
-7348	46	576	coursecontent.pagebreaker	content	21
-7349	46	598	coursecontent.text	content	22
-7350	46	599	coursecontent.image	content	23
-7351	46	577	coursecontent.pagebreaker	content	24
-7352	46	597	coursecontent.text	content	25
-7353	46	601	coursecontent.image	content	26
-7354	46	578	coursecontent.pagebreaker	content	27
-7355	46	599	coursecontent.text	content	28
-7356	46	602	coursecontent.image	content	29
-7357	46	579	coursecontent.pagebreaker	content	30
-7358	46	600	coursecontent.text	content	31
-7359	46	603	coursecontent.image	content	32
-7360	46	580	coursecontent.pagebreaker	content	33
-7361	46	601	coursecontent.text	content	34
-7362	46	604	coursecontent.image	content	35
-7363	46	581	coursecontent.pagebreaker	content	36
-7364	46	602	coursecontent.text	content	37
-7365	46	605	coursecontent.image	content	38
-7366	46	582	coursecontent.pagebreaker	content	39
-7367	46	603	coursecontent.text	content	40
-7368	46	606	coursecontent.image	content	41
-7369	47	604	coursecontent.text	content	1
-7370	47	607	coursecontent.image	content	2
-7371	47	583	coursecontent.pagebreaker	content	3
-7372	47	605	coursecontent.text	content	4
-7373	47	608	coursecontent.image	content	5
-7374	47	584	coursecontent.pagebreaker	content	6
-7375	47	606	coursecontent.text	content	7
-7376	47	609	coursecontent.image	content	8
-7377	47	585	coursecontent.pagebreaker	content	9
-7378	47	607	coursecontent.text	content	10
-7379	47	610	coursecontent.image	content	11
-7380	47	586	coursecontent.pagebreaker	content	12
-7381	47	608	coursecontent.text	content	13
-7382	47	611	coursecontent.image	content	14
-7383	47	587	coursecontent.pagebreaker	content	15
-7384	47	609	coursecontent.text	content	16
-7385	47	613	coursecontent.image	content	17
-7386	47	589	coursecontent.pagebreaker	content	18
-7387	47	610	coursecontent.text	content	19
-7388	47	612	coursecontent.image	content	20
-7389	47	588	coursecontent.pagebreaker	content	21
-7390	47	611	coursecontent.text	content	22
-7391	47	614	coursecontent.image	content	23
-7392	47	590	coursecontent.pagebreaker	content	24
-7393	47	612	coursecontent.text	content	25
-7394	47	615	coursecontent.image	content	26
+14188	37	30	coursecontent.video	content	1
+14189	37	502	coursecontent.text	content	2
+14190	37	505	coursecontent.image	content	3
+14191	37	489	coursecontent.pagebreaker	content	4
+14192	37	503	coursecontent.text	content	5
+14193	37	506	coursecontent.image	content	6
+14194	37	490	coursecontent.pagebreaker	content	7
+14195	37	504	coursecontent.text	content	8
+14196	37	507	coursecontent.image	content	9
+14197	37	491	coursecontent.pagebreaker	content	10
+14198	37	505	coursecontent.text	content	11
+14199	37	508	coursecontent.image	content	12
+14200	37	492	coursecontent.pagebreaker	content	13
+14201	37	506	coursecontent.text	content	14
+14202	37	509	coursecontent.image	content	15
+14203	37	493	coursecontent.pagebreaker	content	16
+14204	37	507	coursecontent.text	content	17
+14205	37	510	coursecontent.image	content	18
+14206	37	495	coursecontent.pagebreaker	content	19
+14207	37	508	coursecontent.text	content	20
+14208	37	512	coursecontent.image	content	21
+14209	37	494	coursecontent.pagebreaker	content	22
+14210	37	509	coursecontent.text	content	23
+14211	37	511	coursecontent.image	content	24
+14212	37	496	coursecontent.pagebreaker	content	25
+14213	37	510	coursecontent.text	content	26
+14214	37	513	coursecontent.image	content	27
+14583	36	28	coursecontent.video	content	1
+14584	36	511	coursecontent.text	content	2
+14585	36	514	coursecontent.image	content	3
+14586	36	497	coursecontent.pagebreaker	content	4
+14587	36	512	coursecontent.text	content	5
+14588	36	515	coursecontent.image	content	6
+14589	36	498	coursecontent.pagebreaker	content	7
+14590	36	513	coursecontent.text	content	8
+14591	36	516	coursecontent.image	content	9
+14592	36	499	coursecontent.pagebreaker	content	10
+14593	36	514	coursecontent.text	content	11
+14594	36	517	coursecontent.image	content	12
+14595	36	501	coursecontent.pagebreaker	content	13
+14596	36	515	coursecontent.text	content	14
+14597	36	518	coursecontent.image	content	15
+14598	36	502	coursecontent.pagebreaker	content	16
+14599	36	517	coursecontent.text	content	17
+14600	36	519	coursecontent.image	content	18
+14601	36	500	coursecontent.pagebreaker	content	19
+14602	36	518	coursecontent.text	content	20
+14603	36	520	coursecontent.image	content	21
+14604	36	503	coursecontent.pagebreaker	content	22
+14605	36	516	coursecontent.text	content	23
+14606	36	521	coursecontent.image	content	24
+14607	36	504	coursecontent.pagebreaker	content	25
+14608	36	519	coursecontent.text	content	26
+14609	36	522	coursecontent.image	content	27
+14610	36	505	coursecontent.pagebreaker	content	28
+14611	36	520	coursecontent.text	content	29
+14612	36	523	coursecontent.image	content	30
+14613	36	506	coursecontent.pagebreaker	content	31
+14614	36	521	coursecontent.text	content	32
+14615	36	524	coursecontent.image	content	33
+14616	36	507	coursecontent.pagebreaker	content	34
+14617	36	522	coursecontent.text	content	35
+14618	36	525	coursecontent.image	content	36
+14619	36	508	coursecontent.pagebreaker	content	37
+14620	36	523	coursecontent.text	content	38
+14621	36	526	coursecontent.image	content	39
+14215	1	24	coursecontent.video	content	1
+14216	1	40	coursecontent.text	content	2
+14217	1	2	coursecontent.image	content	3
 7458	33	415	coursecontent.text	content	1
 7459	33	432	coursecontent.image	content	2
 7460	33	422	coursecontent.pagebreaker	content	3
@@ -8420,6 +8132,76 @@ COPY public.courses_components (id, entity_id, component_id, component_type, fie
 10214	7	123	coursecontent.text	content	16
 10215	7	14	coursecontent.video	content	17
 10216	7	133	coursecontent.pagebreaker	content	18
+13493	45	568	coursecontent.pagebreaker	content	31
+13494	45	589	coursecontent.text	content	32
+13495	45	590	coursecontent.image	content	33
+13496	45	567	coursecontent.pagebreaker	content	34
+13497	45	588	coursecontent.text	content	35
+13498	45	591	coursecontent.image	content	36
+13499	45	569	coursecontent.pagebreaker	content	37
+13500	45	587	coursecontent.text	content	38
+13501	45	592	coursecontent.image	content	39
+14218	1	591	coursecontent.pagebreaker	content	4
+14219	1	656	coursecontent.image	content	5
+14220	1	626	coursecontent.image	content	6
+14221	1	592	coursecontent.pagebreaker	content	7
+14222	1	625	coursecontent.text	content	8
+14223	1	627	coursecontent.image	content	9
+14224	1	593	coursecontent.pagebreaker	content	10
+14225	1	627	coursecontent.text	content	11
+14226	1	628	coursecontent.image	content	12
+14227	1	620	coursecontent.pagebreaker	content	13
+14228	1	628	coursecontent.text	content	14
+14229	1	633	coursecontent.image	content	15
+14230	1	595	coursecontent.pagebreaker	content	16
+14231	1	629	coursecontent.text	content	17
+14232	1	631	coursecontent.image	content	18
+14233	1	596	coursecontent.pagebreaker	content	19
+14234	1	632	coursecontent.text	content	20
+14235	1	629	coursecontent.image	content	21
+14236	1	594	coursecontent.pagebreaker	content	22
+14237	1	630	coursecontent.text	content	23
+14238	1	630	coursecontent.image	content	24
+14239	1	597	coursecontent.pagebreaker	content	25
+14240	1	631	coursecontent.text	content	26
+14241	1	632	coursecontent.image	content	27
+14242	1	598	coursecontent.pagebreaker	content	28
+14243	1	34	coursecontent.quiz	content	29
+14244	1	599	coursecontent.pagebreaker	content	30
+13941	47	22	coursecontent.video	content	1
+13942	47	604	coursecontent.text	content	2
+13943	47	607	coursecontent.image	content	3
+13944	47	583	coursecontent.pagebreaker	content	4
+13945	47	605	coursecontent.text	content	5
+13946	47	608	coursecontent.image	content	6
+13947	47	584	coursecontent.pagebreaker	content	7
+13948	47	606	coursecontent.text	content	8
+13949	47	609	coursecontent.image	content	9
+13950	47	585	coursecontent.pagebreaker	content	10
+13951	47	607	coursecontent.text	content	11
+13952	47	610	coursecontent.image	content	12
+13953	47	586	coursecontent.pagebreaker	content	13
+13954	47	608	coursecontent.text	content	14
+13955	47	611	coursecontent.image	content	15
+13956	47	587	coursecontent.pagebreaker	content	16
+13957	47	609	coursecontent.text	content	17
+13958	47	613	coursecontent.image	content	18
+13959	47	589	coursecontent.pagebreaker	content	19
+13960	47	610	coursecontent.text	content	20
+13961	47	612	coursecontent.image	content	21
+13962	47	588	coursecontent.pagebreaker	content	22
+13963	47	611	coursecontent.text	content	23
+13964	47	614	coursecontent.image	content	24
+13965	47	590	coursecontent.pagebreaker	content	25
+13966	47	612	coursecontent.text	content	26
+13967	47	615	coursecontent.image	content	27
+14245	1	35	coursecontent.quiz	content	31
+14246	1	600	coursecontent.pagebreaker	content	32
+14247	1	37	coursecontent.quiz	content	33
+14248	1	601	coursecontent.pagebreaker	content	34
+14249	1	36	coursecontent.quiz	content	35
+14250	1	602	coursecontent.pagebreaker	content	36
+14251	1	38	coursecontent.quiz	content	37
 \.
 
 
@@ -8500,7 +8282,7 @@ COPY public.courses_localizations_links (id, course_id, inv_course_id, course_or
 --
 
 COPY public.daily_tips (id, created_at, updated_at, created_by_id, updated_by_id, locale) FROM stdin;
-1	2025-06-14 14:31:13.526	2025-07-13 00:00:00.277	1	1	en
+1	2025-06-14 14:31:13.526	2025-07-18 00:00:00.616	1	1	en
 \.
 
 
@@ -8517,9 +8299,9 @@ COPY public.daily_tips_localizations_links (id, daily_tip_id, inv_daily_tip_id, 
 --
 
 COPY public.daily_tips_tips_links (id, daily_tip_id, tip_id, tip_order) FROM stdin;
-100	1	11	1
-104	1	9	2
-105	1	13	3
+124	1	19	1
+125	1	12	2
+126	1	22	3
 \.
 
 
@@ -8666,6 +8448,7 @@ COPY public.files (id, name, alternative_text, caption, width, height, formats, 
 94	gentle-descipline.jpeg	\N	\N	2816	1536	{"large": {"ext": ".jpeg", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/large_gentle_descipline_81ebcd9f32/large_gentle_descipline_81ebcd9f32.jpeg", "hash": "large_gentle_descipline_81ebcd9f32", "mime": "image/jpeg", "name": "large_gentle-descipline.jpeg", "path": null, "size": 79, "width": 1000, "height": 545}, "small": {"ext": ".jpeg", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/small_gentle_descipline_81ebcd9f32/small_gentle_descipline_81ebcd9f32.jpeg", "hash": "small_gentle_descipline_81ebcd9f32", "mime": "image/jpeg", "name": "small_gentle-descipline.jpeg", "path": null, "size": 24.52, "width": 500, "height": 273}, "medium": {"ext": ".jpeg", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/medium_gentle_descipline_81ebcd9f32/medium_gentle_descipline_81ebcd9f32.jpeg", "hash": "medium_gentle_descipline_81ebcd9f32", "mime": "image/jpeg", "name": "medium_gentle-descipline.jpeg", "path": null, "size": 47.84, "width": 750, "height": 409}, "thumbnail": {"ext": ".jpeg", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/thumbnail_gentle_descipline_81ebcd9f32/thumbnail_gentle_descipline_81ebcd9f32.jpeg", "hash": "thumbnail_gentle_descipline_81ebcd9f32", "mime": "image/jpeg", "name": "thumbnail_gentle-descipline.jpeg", "path": null, "size": 8, "width": 245, "height": 134}}	gentle_descipline_81ebcd9f32	.jpeg	image/jpeg	547.36	https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/gentle_descipline_81ebcd9f32/gentle_descipline_81ebcd9f32.jpeg	\N	@strapi-community/strapi-provider-upload-google-cloud-storage	\N	/	2025-06-10 10:56:50.15	2025-06-10 13:34:52.056	1	1
 97	play-learn.jpeg	\N	\N	2816	1536	{"large": {"ext": ".jpeg", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/large_play_learn_aa558d5ae4/large_play_learn_aa558d5ae4.jpeg", "hash": "large_play_learn_aa558d5ae4", "mime": "image/jpeg", "name": "large_play-learn.jpeg", "path": null, "size": 121.77, "width": 1000, "height": 545}, "small": {"ext": ".jpeg", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/small_play_learn_aa558d5ae4/small_play_learn_aa558d5ae4.jpeg", "hash": "small_play_learn_aa558d5ae4", "mime": "image/jpeg", "name": "small_play-learn.jpeg", "path": null, "size": 37.83, "width": 500, "height": 273}, "medium": {"ext": ".jpeg", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/medium_play_learn_aa558d5ae4/medium_play_learn_aa558d5ae4.jpeg", "hash": "medium_play_learn_aa558d5ae4", "mime": "image/jpeg", "name": "medium_play-learn.jpeg", "path": null, "size": 74.01, "width": 750, "height": 409}, "thumbnail": {"ext": ".jpeg", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/thumbnail_play_learn_aa558d5ae4/thumbnail_play_learn_aa558d5ae4.jpeg", "hash": "thumbnail_play_learn_aa558d5ae4", "mime": "image/jpeg", "name": "thumbnail_play-learn.jpeg", "path": null, "size": 11.63, "width": 245, "height": 134}}	play_learn_aa558d5ae4	.jpeg	image/jpeg	738.96	https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/play_learn_aa558d5ae4/play_learn_aa558d5ae4.jpeg	\N	@strapi-community/strapi-provider-upload-google-cloud-storage	\N	/	2025-06-10 11:12:10.315	2025-06-10 11:12:44.171	1	1
 95	digital screening time.jpeg	\N	\N	2816	1536	{"large": {"ext": ".jpeg", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/large_digital_screening_time_2891059c7a/large_digital_screening_time_2891059c7a.jpeg", "hash": "large_digital_screening_time_2891059c7a", "mime": "image/jpeg", "name": "large_digital screening time.jpeg", "path": null, "size": 47.22, "width": 1000, "height": 545}, "small": {"ext": ".jpeg", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/small_digital_screening_time_2891059c7a/small_digital_screening_time_2891059c7a.jpeg", "hash": "small_digital_screening_time_2891059c7a", "mime": "image/jpeg", "name": "small_digital screening time.jpeg", "path": null, "size": 16.92, "width": 500, "height": 273}, "medium": {"ext": ".jpeg", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/medium_digital_screening_time_2891059c7a/medium_digital_screening_time_2891059c7a.jpeg", "hash": "medium_digital_screening_time_2891059c7a", "mime": "image/jpeg", "name": "medium_digital screening time.jpeg", "path": null, "size": 30.46, "width": 750, "height": 409}, "thumbnail": {"ext": ".jpeg", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/thumbnail_digital_screening_time_2891059c7a/thumbnail_digital_screening_time_2891059c7a.jpeg", "hash": "thumbnail_digital_screening_time_2891059c7a", "mime": "image/jpeg", "name": "thumbnail_digital screening time.jpeg", "path": null, "size": 6.09, "width": 245, "height": 134}}	digital_screening_time_2891059c7a	.jpeg	image/jpeg	325.55	https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/digital_screening_time_2891059c7a/digital_screening_time_2891059c7a.jpeg	\N	@strapi-community/strapi-provider-upload-google-cloud-storage	\N	/	2025-06-10 11:02:23.408	2025-06-27 00:21:03.245	1	1
+777	Setting Boundaries.mp4	\N	\N	\N	\N	\N	Setting_Boundaries_7cc7bfec7e	.mp4	video/mp4	32395.82	https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/Setting_Boundaries_7cc7bfec7e/Setting_Boundaries_7cc7bfec7e.mp4	\N	@strapi-community/strapi-provider-upload-google-cloud-storage	\N	/1	2025-07-18 04:07:42.95	2025-07-18 04:07:42.95	\N	\N
 98	tip3.jpeg	\N	\N	2816	1536	{"large": {"ext": ".jpeg", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/large_tip3_816c2a9b3c/large_tip3_816c2a9b3c.jpeg", "hash": "large_tip3_816c2a9b3c", "mime": "image/jpeg", "name": "large_tip3.jpeg", "path": null, "size": 63.59, "width": 1000, "height": 545}, "small": {"ext": ".jpeg", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/small_tip3_816c2a9b3c/small_tip3_816c2a9b3c.jpeg", "hash": "small_tip3_816c2a9b3c", "mime": "image/jpeg", "name": "small_tip3.jpeg", "path": null, "size": 22.13, "width": 500, "height": 273}, "medium": {"ext": ".jpeg", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/medium_tip3_816c2a9b3c/medium_tip3_816c2a9b3c.jpeg", "hash": "medium_tip3_816c2a9b3c", "mime": "image/jpeg", "name": "medium_tip3.jpeg", "path": null, "size": 40.54, "width": 750, "height": 409}, "thumbnail": {"ext": ".jpeg", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/thumbnail_tip3_816c2a9b3c/thumbnail_tip3_816c2a9b3c.jpeg", "hash": "thumbnail_tip3_816c2a9b3c", "mime": "image/jpeg", "name": "thumbnail_tip3.jpeg", "path": null, "size": 7.85, "width": 245, "height": 134}}	tip3_816c2a9b3c	.jpeg	image/jpeg	383.33	https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/tip3_816c2a9b3c/tip3_816c2a9b3c.jpeg	\N	@strapi-community/strapi-provider-upload-google-cloud-storage	\N	/	2025-06-10 19:50:19.454	2025-06-10 19:50:19.454	1	1
 99	tip2.jpeg	\N	\N	2816	1536	{"large": {"ext": ".jpeg", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/large_tip2_7e13c5b8ce/large_tip2_7e13c5b8ce.jpeg", "hash": "large_tip2_7e13c5b8ce", "mime": "image/jpeg", "name": "large_tip2.jpeg", "path": null, "size": 65.71, "width": 1000, "height": 545}, "small": {"ext": ".jpeg", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/small_tip2_7e13c5b8ce/small_tip2_7e13c5b8ce.jpeg", "hash": "small_tip2_7e13c5b8ce", "mime": "image/jpeg", "name": "small_tip2.jpeg", "path": null, "size": 23.85, "width": 500, "height": 273}, "medium": {"ext": ".jpeg", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/medium_tip2_7e13c5b8ce/medium_tip2_7e13c5b8ce.jpeg", "hash": "medium_tip2_7e13c5b8ce", "mime": "image/jpeg", "name": "medium_tip2.jpeg", "path": null, "size": 42.63, "width": 750, "height": 409}, "thumbnail": {"ext": ".jpeg", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/thumbnail_tip2_7e13c5b8ce/thumbnail_tip2_7e13c5b8ce.jpeg", "hash": "thumbnail_tip2_7e13c5b8ce", "mime": "image/jpeg", "name": "thumbnail_tip2.jpeg", "path": null, "size": 8.41, "width": 245, "height": 134}}	tip2_7e13c5b8ce	.jpeg	image/jpeg	372.72	https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/tip2_7e13c5b8ce/tip2_7e13c5b8ce.jpeg	\N	@strapi-community/strapi-provider-upload-google-cloud-storage	\N	/	2025-06-10 19:50:19.495	2025-06-10 19:50:19.495	1	1
 100	tip1.jpeg	\N	\N	2816	1536	{"large": {"ext": ".jpeg", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/large_tip1_dc5fad27b1/large_tip1_dc5fad27b1.jpeg", "hash": "large_tip1_dc5fad27b1", "mime": "image/jpeg", "name": "large_tip1.jpeg", "path": null, "size": 55.33, "width": 1000, "height": 545}, "small": {"ext": ".jpeg", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/small_tip1_dc5fad27b1/small_tip1_dc5fad27b1.jpeg", "hash": "small_tip1_dc5fad27b1", "mime": "image/jpeg", "name": "small_tip1.jpeg", "path": null, "size": 19.61, "width": 500, "height": 273}, "medium": {"ext": ".jpeg", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/medium_tip1_dc5fad27b1/medium_tip1_dc5fad27b1.jpeg", "hash": "medium_tip1_dc5fad27b1", "mime": "image/jpeg", "name": "medium_tip1.jpeg", "path": null, "size": 35.58, "width": 750, "height": 409}, "thumbnail": {"ext": ".jpeg", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/thumbnail_tip1_dc5fad27b1/thumbnail_tip1_dc5fad27b1.jpeg", "hash": "thumbnail_tip1_dc5fad27b1", "mime": "image/jpeg", "name": "thumbnail_tip1.jpeg", "path": null, "size": 6.87, "width": 245, "height": 134}}	tip1_dc5fad27b1	.jpeg	image/jpeg	399.87	https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/tip1_dc5fad27b1/tip1_dc5fad27b1.jpeg	\N	@strapi-community/strapi-provider-upload-google-cloud-storage	\N	/	2025-06-10 19:50:19.567	2025-06-10 19:50:19.567	1	1
@@ -8676,6 +8459,7 @@ COPY public.files (id, name, alternative_text, caption, width, height, formats, 
 105	tip1.jpeg	\N	\N	2816	1536	{"large": {"ext": ".jpeg", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/large_tip1_78eebf1f58/large_tip1_78eebf1f58.jpeg", "hash": "large_tip1_78eebf1f58", "mime": "image/jpeg", "name": "large_tip1.jpeg", "path": null, "size": 55.33, "width": 1000, "height": 545}, "small": {"ext": ".jpeg", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/small_tip1_78eebf1f58/small_tip1_78eebf1f58.jpeg", "hash": "small_tip1_78eebf1f58", "mime": "image/jpeg", "name": "small_tip1.jpeg", "path": null, "size": 19.61, "width": 500, "height": 273}, "medium": {"ext": ".jpeg", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/medium_tip1_78eebf1f58/medium_tip1_78eebf1f58.jpeg", "hash": "medium_tip1_78eebf1f58", "mime": "image/jpeg", "name": "medium_tip1.jpeg", "path": null, "size": 35.58, "width": 750, "height": 409}, "thumbnail": {"ext": ".jpeg", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/thumbnail_tip1_78eebf1f58/thumbnail_tip1_78eebf1f58.jpeg", "hash": "thumbnail_tip1_78eebf1f58", "mime": "image/jpeg", "name": "thumbnail_tip1.jpeg", "path": null, "size": 6.87, "width": 245, "height": 134}}	tip1_78eebf1f58	.jpeg	image/jpeg	399.87	https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/tip1_78eebf1f58/tip1_78eebf1f58.jpeg	\N	@strapi-community/strapi-provider-upload-google-cloud-storage	\N	/1	2025-06-12 21:46:22.444	2025-06-12 21:46:22.444	\N	\N
 106	1.webp	\N	\N	1080	675	{"large": {"ext": ".webp", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/large_1_49e67c537d/large_1_49e67c537d.webp", "hash": "large_1_49e67c537d", "mime": "image/webp", "name": "large_1.webp", "path": null, "size": 22.52, "width": 1000, "height": 625}, "small": {"ext": ".webp", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/small_1_49e67c537d/small_1_49e67c537d.webp", "hash": "small_1_49e67c537d", "mime": "image/webp", "name": "small_1.webp", "path": null, "size": 9.96, "width": 500, "height": 312}, "medium": {"ext": ".webp", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/medium_1_49e67c537d/medium_1_49e67c537d.webp", "hash": "medium_1_49e67c537d", "mime": "image/webp", "name": "medium_1.webp", "path": null, "size": 16.53, "width": 750, "height": 469}, "thumbnail": {"ext": ".webp", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/thumbnail_1_49e67c537d/thumbnail_1_49e67c537d.webp", "hash": "thumbnail_1_49e67c537d", "mime": "image/webp", "name": "thumbnail_1.webp", "path": null, "size": 4.18, "width": 245, "height": 153}}	1_49e67c537d	.webp	image/webp	27.81	https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/1_49e67c537d/1_49e67c537d.webp	\N	@strapi-community/strapi-provider-upload-google-cloud-storage	\N	/1	2025-06-12 21:56:31.469	2025-06-12 21:56:31.469	\N	\N
 107	pexels-karolina-grabowska-7296661.jpg	\N	\N	6720	4480	{"large": {"ext": ".jpg", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/large_pexels_karolina_grabowska_7296661_19265a0f99/large_pexels_karolina_grabowska_7296661_19265a0f99.jpg", "hash": "large_pexels_karolina_grabowska_7296661_19265a0f99", "mime": "image/jpeg", "name": "large_pexels-karolina-grabowska-7296661.jpg", "path": null, "size": 120.9, "width": 1000, "height": 667}, "small": {"ext": ".jpg", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/small_pexels_karolina_grabowska_7296661_19265a0f99/small_pexels_karolina_grabowska_7296661_19265a0f99.jpg", "hash": "small_pexels_karolina_grabowska_7296661_19265a0f99", "mime": "image/jpeg", "name": "small_pexels-karolina-grabowska-7296661.jpg", "path": null, "size": 39.25, "width": 500, "height": 333}, "medium": {"ext": ".jpg", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/medium_pexels_karolina_grabowska_7296661_19265a0f99/medium_pexels_karolina_grabowska_7296661_19265a0f99.jpg", "hash": "medium_pexels_karolina_grabowska_7296661_19265a0f99", "mime": "image/jpeg", "name": "medium_pexels-karolina-grabowska-7296661.jpg", "path": null, "size": 76.03, "width": 750, "height": 500}, "thumbnail": {"ext": ".jpg", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/thumbnail_pexels_karolina_grabowska_7296661_19265a0f99/thumbnail_pexels_karolina_grabowska_7296661_19265a0f99.jpg", "hash": "thumbnail_pexels_karolina_grabowska_7296661_19265a0f99", "mime": "image/jpeg", "name": "thumbnail_pexels-karolina-grabowska-7296661.jpg", "path": null, "size": 12.01, "width": 234, "height": 156}}	pexels_karolina_grabowska_7296661_19265a0f99	.jpg	image/jpeg	3084.47	https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/pexels_karolina_grabowska_7296661_19265a0f99/pexels_karolina_grabowska_7296661_19265a0f99.jpg	\N	@strapi-community/strapi-provider-upload-google-cloud-storage	\N	/	2025-06-12 22:27:31.295	2025-06-12 22:27:31.295	1	1
+778	Behavior Shaping.mp4	\N	\N	\N	\N	\N	Behavior_Shaping_297bdee444	.mp4	video/mp4	15130.43	https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/Behavior_Shaping_297bdee444/Behavior_Shaping_297bdee444.mp4	\N	@strapi-community/strapi-provider-upload-google-cloud-storage	\N	/1	2025-07-18 04:20:17.208	2025-07-18 04:20:17.208	\N	\N
 108	tip2.jpeg	\N	\N	2816	1536	{"large": {"ext": ".jpeg", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/large_tip2_6e61eb0b75/large_tip2_6e61eb0b75.jpeg", "hash": "large_tip2_6e61eb0b75", "mime": "image/jpeg", "name": "large_tip2.jpeg", "path": null, "size": 65.71, "width": 1000, "height": 545}, "small": {"ext": ".jpeg", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/small_tip2_6e61eb0b75/small_tip2_6e61eb0b75.jpeg", "hash": "small_tip2_6e61eb0b75", "mime": "image/jpeg", "name": "small_tip2.jpeg", "path": null, "size": 23.85, "width": 500, "height": 273}, "medium": {"ext": ".jpeg", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/medium_tip2_6e61eb0b75/medium_tip2_6e61eb0b75.jpeg", "hash": "medium_tip2_6e61eb0b75", "mime": "image/jpeg", "name": "medium_tip2.jpeg", "path": null, "size": 42.63, "width": 750, "height": 409}, "thumbnail": {"ext": ".jpeg", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/thumbnail_tip2_6e61eb0b75/thumbnail_tip2_6e61eb0b75.jpeg", "hash": "thumbnail_tip2_6e61eb0b75", "mime": "image/jpeg", "name": "thumbnail_tip2.jpeg", "path": null, "size": 8.41, "width": 245, "height": 134}}	tip2_6e61eb0b75	.jpeg	image/jpeg	372.72	https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/tip2_6e61eb0b75/tip2_6e61eb0b75.jpeg	\N	@strapi-community/strapi-provider-upload-google-cloud-storage	\N	/1	2025-06-12 22:47:49.674	2025-06-12 22:47:49.674	\N	\N
 109	MVI_0375.MOV	\N	\N	\N	\N	\N	MVI_0375_30c8a89b3a	.MOV	video/quicktime	175384.14	https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/MVI_0375_30c8a89b3a/MVI_0375_30c8a89b3a.mov	\N	@strapi-community/strapi-provider-upload-google-cloud-storage	\N	/1	2025-06-12 23:03:45.01	2025-06-12 23:03:45.01	\N	\N
 110	MVI_0375.MOV	\N	\N	\N	\N	\N	MVI_0375_4b2adb5abd	.MOV	video/quicktime	175384.14	https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/MVI_0375_4b2adb5abd/MVI_0375_4b2adb5abd.mov	\N	@strapi-community/strapi-provider-upload-google-cloud-storage	\N	/1	2025-06-13 10:00:09.537	2025-06-13 10:00:09.537	\N	\N
@@ -9222,6 +9006,137 @@ COPY public.files (id, name, alternative_text, caption, width, height, formats, 
 667	Gemini_Generated_Image_tlhn9xtlhn9xtlhn.png	\N	\N	2040	1826	{"large": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/large_Gemini_Generated_Image_tlhn9xtlhn9xtlhn_c9cfeee838/large_Gemini_Generated_Image_tlhn9xtlhn9xtlhn_c9cfeee838.png", "hash": "large_Gemini_Generated_Image_tlhn9xtlhn9xtlhn_c9cfeee838", "mime": "image/png", "name": "large_Gemini_Generated_Image_tlhn9xtlhn9xtlhn.png", "path": null, "size": 1779.29, "width": 1000, "height": 895}, "small": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/small_Gemini_Generated_Image_tlhn9xtlhn9xtlhn_c9cfeee838/small_Gemini_Generated_Image_tlhn9xtlhn9xtlhn_c9cfeee838.png", "hash": "small_Gemini_Generated_Image_tlhn9xtlhn9xtlhn_c9cfeee838", "mime": "image/png", "name": "small_Gemini_Generated_Image_tlhn9xtlhn9xtlhn.png", "path": null, "size": 458.35, "width": 500, "height": 448}, "medium": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/medium_Gemini_Generated_Image_tlhn9xtlhn9xtlhn_c9cfeee838/medium_Gemini_Generated_Image_tlhn9xtlhn9xtlhn_c9cfeee838.png", "hash": "medium_Gemini_Generated_Image_tlhn9xtlhn9xtlhn_c9cfeee838", "mime": "image/png", "name": "medium_Gemini_Generated_Image_tlhn9xtlhn9xtlhn.png", "path": null, "size": 996.35, "width": 750, "height": 671}, "thumbnail": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/thumbnail_Gemini_Generated_Image_tlhn9xtlhn9xtlhn_c9cfeee838/thumbnail_Gemini_Generated_Image_tlhn9xtlhn9xtlhn_c9cfeee838.png", "hash": "thumbnail_Gemini_Generated_Image_tlhn9xtlhn9xtlhn_c9cfeee838", "mime": "image/png", "name": "thumbnail_Gemini_Generated_Image_tlhn9xtlhn9xtlhn.png", "path": null, "size": 65.43, "width": 174, "height": 156}}	Gemini_Generated_Image_tlhn9xtlhn9xtlhn_c9cfeee838	.png	image/png	1667.29	https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/Gemini_Generated_Image_tlhn9xtlhn9xtlhn_c9cfeee838/Gemini_Generated_Image_tlhn9xtlhn9xtlhn_c9cfeee838.png	\N	@strapi-community/strapi-provider-upload-google-cloud-storage	\N	/1	2025-07-13 00:13:58.89	2025-07-13 00:13:58.89	\N	\N
 668	cry.jpg	\N	\N	2048	2048	{"large": {"ext": ".jpg", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/large_cry_b9c656aa18/large_cry_b9c656aa18.jpg", "hash": "large_cry_b9c656aa18", "mime": "image/jpeg", "name": "large_cry.jpg", "path": null, "size": 107.28, "width": 1000, "height": 1000}, "small": {"ext": ".jpg", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/small_cry_b9c656aa18/small_cry_b9c656aa18.jpg", "hash": "small_cry_b9c656aa18", "mime": "image/jpeg", "name": "small_cry.jpg", "path": null, "size": 30.14, "width": 500, "height": 500}, "medium": {"ext": ".jpg", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/medium_cry_b9c656aa18/medium_cry_b9c656aa18.jpg", "hash": "medium_cry_b9c656aa18", "mime": "image/jpeg", "name": "medium_cry.jpg", "path": null, "size": 60.85, "width": 750, "height": 750}, "thumbnail": {"ext": ".jpg", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/thumbnail_cry_b9c656aa18/thumbnail_cry_b9c656aa18.jpg", "hash": "thumbnail_cry_b9c656aa18", "mime": "image/jpeg", "name": "thumbnail_cry.jpg", "path": null, "size": 5.39, "width": 156, "height": 156}}	cry_b9c656aa18	.jpg	image/jpeg	472.91	https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/cry_b9c656aa18/cry_b9c656aa18.jpg	\N	@strapi-community/strapi-provider-upload-google-cloud-storage	\N	/1	2025-07-13 02:48:38.524	2025-07-13 02:48:38.524	\N	\N
 669	Twerking.jpg	\N	\N	2048	2048	{"large": {"ext": ".jpg", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/large_Twerking_607a61e2b8/large_Twerking_607a61e2b8.jpg", "hash": "large_Twerking_607a61e2b8", "mime": "image/jpeg", "name": "large_Twerking.jpg", "path": null, "size": 110.2, "width": 1000, "height": 1000}, "small": {"ext": ".jpg", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/small_Twerking_607a61e2b8/small_Twerking_607a61e2b8.jpg", "hash": "small_Twerking_607a61e2b8", "mime": "image/jpeg", "name": "small_Twerking.jpg", "path": null, "size": 37.59, "width": 500, "height": 500}, "medium": {"ext": ".jpg", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/medium_Twerking_607a61e2b8/medium_Twerking_607a61e2b8.jpg", "hash": "medium_Twerking_607a61e2b8", "mime": "image/jpeg", "name": "medium_Twerking.jpg", "path": null, "size": 68.66, "width": 750, "height": 750}, "thumbnail": {"ext": ".jpg", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/thumbnail_Twerking_607a61e2b8/thumbnail_Twerking_607a61e2b8.jpg", "hash": "thumbnail_Twerking_607a61e2b8", "mime": "image/jpeg", "name": "thumbnail_Twerking.jpg", "path": null, "size": 6.72, "width": 156, "height": 156}}	Twerking_607a61e2b8	.jpg	image/jpeg	403.45	https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/Twerking_607a61e2b8/Twerking_607a61e2b8.jpg	\N	@strapi-community/strapi-provider-upload-google-cloud-storage	\N	/1	2025-07-13 17:13:41.538	2025-07-13 17:13:41.538	\N	\N
+670	Gemini_Generated_Image_sopw1msopw1msopw.png	\N	\N	1873	2048	{"large": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/large_Gemini_Generated_Image_sopw1msopw1msopw_4ca4c12dfd/large_Gemini_Generated_Image_sopw1msopw1msopw_4ca4c12dfd.png", "hash": "large_Gemini_Generated_Image_sopw1msopw1msopw_4ca4c12dfd", "mime": "image/png", "name": "large_Gemini_Generated_Image_sopw1msopw1msopw.png", "path": null, "size": 1672.27, "width": 915, "height": 1000}, "small": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/small_Gemini_Generated_Image_sopw1msopw1msopw_4ca4c12dfd/small_Gemini_Generated_Image_sopw1msopw1msopw_4ca4c12dfd.png", "hash": "small_Gemini_Generated_Image_sopw1msopw1msopw_4ca4c12dfd", "mime": "image/png", "name": "small_Gemini_Generated_Image_sopw1msopw1msopw.png", "path": null, "size": 433.09, "width": 457, "height": 500}, "medium": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/medium_Gemini_Generated_Image_sopw1msopw1msopw_4ca4c12dfd/medium_Gemini_Generated_Image_sopw1msopw1msopw_4ca4c12dfd.png", "hash": "medium_Gemini_Generated_Image_sopw1msopw1msopw_4ca4c12dfd", "mime": "image/png", "name": "medium_Gemini_Generated_Image_sopw1msopw1msopw.png", "path": null, "size": 942.74, "width": 686, "height": 750}, "thumbnail": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/thumbnail_Gemini_Generated_Image_sopw1msopw1msopw_4ca4c12dfd/thumbnail_Gemini_Generated_Image_sopw1msopw1msopw_4ca4c12dfd.png", "hash": "thumbnail_Gemini_Generated_Image_sopw1msopw1msopw_4ca4c12dfd", "mime": "image/png", "name": "thumbnail_Gemini_Generated_Image_sopw1msopw1msopw.png", "path": null, "size": 50.13, "width": 143, "height": 156}}	Gemini_Generated_Image_sopw1msopw1msopw_4ca4c12dfd	.png	image/png	1645.12	https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/Gemini_Generated_Image_sopw1msopw1msopw_4ca4c12dfd/Gemini_Generated_Image_sopw1msopw1msopw_4ca4c12dfd.png	\N	@strapi-community/strapi-provider-upload-google-cloud-storage	\N	/1	2025-07-14 16:50:31.045	2025-07-14 16:50:31.045	\N	\N
+671	Gemini_Generated_Image_uvzdszuvzdszuvzd.png	\N	\N	1865	2024	{"large": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/large_Gemini_Generated_Image_uvzdszuvzdszuvzd_6a21d14232/large_Gemini_Generated_Image_uvzdszuvzdszuvzd_6a21d14232.png", "hash": "large_Gemini_Generated_Image_uvzdszuvzdszuvzd_6a21d14232", "mime": "image/png", "name": "large_Gemini_Generated_Image_uvzdszuvzdszuvzd.png", "path": null, "size": 1761.58, "width": 921, "height": 1000}, "small": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/small_Gemini_Generated_Image_uvzdszuvzdszuvzd_6a21d14232/small_Gemini_Generated_Image_uvzdszuvzdszuvzd_6a21d14232.png", "hash": "small_Gemini_Generated_Image_uvzdszuvzdszuvzd_6a21d14232", "mime": "image/png", "name": "small_Gemini_Generated_Image_uvzdszuvzdszuvzd.png", "path": null, "size": 459.6, "width": 461, "height": 500}, "medium": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/medium_Gemini_Generated_Image_uvzdszuvzdszuvzd_6a21d14232/medium_Gemini_Generated_Image_uvzdszuvzdszuvzd_6a21d14232.png", "hash": "medium_Gemini_Generated_Image_uvzdszuvzdszuvzd_6a21d14232", "mime": "image/png", "name": "medium_Gemini_Generated_Image_uvzdszuvzdszuvzd.png", "path": null, "size": 995.9, "width": 691, "height": 750}, "thumbnail": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/thumbnail_Gemini_Generated_Image_uvzdszuvzdszuvzd_6a21d14232/thumbnail_Gemini_Generated_Image_uvzdszuvzdszuvzd_6a21d14232.png", "hash": "thumbnail_Gemini_Generated_Image_uvzdszuvzdszuvzd_6a21d14232", "mime": "image/png", "name": "thumbnail_Gemini_Generated_Image_uvzdszuvzdszuvzd.png", "path": null, "size": 54.52, "width": 144, "height": 156}}	Gemini_Generated_Image_uvzdszuvzdszuvzd_6a21d14232	.png	image/png	1553.88	https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/Gemini_Generated_Image_uvzdszuvzdszuvzd_6a21d14232/Gemini_Generated_Image_uvzdszuvzdszuvzd_6a21d14232.png	\N	@strapi-community/strapi-provider-upload-google-cloud-storage	\N	/1	2025-07-14 16:51:59.754	2025-07-14 16:51:59.754	\N	\N
+774	Strength Spotting.mp4	\N	\N	\N	\N	\N	Strength_Spotting_b88f2fdffb	.mp4	video/mp4	20454.19	https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/Strength_Spotting_b88f2fdffb/Strength_Spotting_b88f2fdffb.mp4	\N	@strapi-community/strapi-provider-upload-google-cloud-storage	\N	/1	2025-07-18 03:24:09.136	2025-07-18 03:24:09.136	\N	\N
+672	Gemini_Generated_Image_7so8c47so8c47so8.png	\N	\N	1992	1881	{"large": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/large_Gemini_Generated_Image_7so8c47so8c47so8_57041ad8ac/large_Gemini_Generated_Image_7so8c47so8c47so8_57041ad8ac.png", "hash": "large_Gemini_Generated_Image_7so8c47so8c47so8_57041ad8ac", "mime": "image/png", "name": "large_Gemini_Generated_Image_7so8c47so8c47so8.png", "path": null, "size": 1939.45, "width": 1000, "height": 944}, "small": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/small_Gemini_Generated_Image_7so8c47so8c47so8_57041ad8ac/small_Gemini_Generated_Image_7so8c47so8c47so8_57041ad8ac.png", "hash": "small_Gemini_Generated_Image_7so8c47so8c47so8_57041ad8ac", "mime": "image/png", "name": "small_Gemini_Generated_Image_7so8c47so8c47so8.png", "path": null, "size": 499.6, "width": 500, "height": 472}, "medium": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/medium_Gemini_Generated_Image_7so8c47so8c47so8_57041ad8ac/medium_Gemini_Generated_Image_7so8c47so8c47so8_57041ad8ac.png", "hash": "medium_Gemini_Generated_Image_7so8c47so8c47so8_57041ad8ac", "mime": "image/png", "name": "medium_Gemini_Generated_Image_7so8c47so8c47so8.png", "path": null, "size": 1098.13, "width": 750, "height": 708}, "thumbnail": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/thumbnail_Gemini_Generated_Image_7so8c47so8c47so8_57041ad8ac/thumbnail_Gemini_Generated_Image_7so8c47so8c47so8_57041ad8ac.png", "hash": "thumbnail_Gemini_Generated_Image_7so8c47so8c47so8_57041ad8ac", "mime": "image/png", "name": "thumbnail_Gemini_Generated_Image_7so8c47so8c47so8.png", "path": null, "size": 63.45, "width": 165, "height": 156}}	Gemini_Generated_Image_7so8c47so8c47so8_57041ad8ac	.png	image/png	1443.45	https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/Gemini_Generated_Image_7so8c47so8c47so8_57041ad8ac/Gemini_Generated_Image_7so8c47so8c47so8_57041ad8ac.png	\N	@strapi-community/strapi-provider-upload-google-cloud-storage	\N	/1	2025-07-14 16:53:18.329	2025-07-14 16:53:18.329	\N	\N
+673	Gemini_Generated_Image_vn6rc7vn6rc7vn6r.png	\N	\N	2032	1810	{"large": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/large_Gemini_Generated_Image_vn6rc7vn6rc7vn6r_99059b92b3/large_Gemini_Generated_Image_vn6rc7vn6rc7vn6r_99059b92b3.png", "hash": "large_Gemini_Generated_Image_vn6rc7vn6rc7vn6r_99059b92b3", "mime": "image/png", "name": "large_Gemini_Generated_Image_vn6rc7vn6rc7vn6r.png", "path": null, "size": 1570.46, "width": 1000, "height": 891}, "small": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/small_Gemini_Generated_Image_vn6rc7vn6rc7vn6r_99059b92b3/small_Gemini_Generated_Image_vn6rc7vn6rc7vn6r_99059b92b3.png", "hash": "small_Gemini_Generated_Image_vn6rc7vn6rc7vn6r_99059b92b3", "mime": "image/png", "name": "small_Gemini_Generated_Image_vn6rc7vn6rc7vn6r.png", "path": null, "size": 401.51, "width": 500, "height": 445}, "medium": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/medium_Gemini_Generated_Image_vn6rc7vn6rc7vn6r_99059b92b3/medium_Gemini_Generated_Image_vn6rc7vn6rc7vn6r_99059b92b3.png", "hash": "medium_Gemini_Generated_Image_vn6rc7vn6rc7vn6r_99059b92b3", "mime": "image/png", "name": "medium_Gemini_Generated_Image_vn6rc7vn6rc7vn6r.png", "path": null, "size": 874.77, "width": 750, "height": 668}, "thumbnail": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/thumbnail_Gemini_Generated_Image_vn6rc7vn6rc7vn6r_99059b92b3/thumbnail_Gemini_Generated_Image_vn6rc7vn6rc7vn6r_99059b92b3.png", "hash": "thumbnail_Gemini_Generated_Image_vn6rc7vn6rc7vn6r_99059b92b3", "mime": "image/png", "name": "thumbnail_Gemini_Generated_Image_vn6rc7vn6rc7vn6r.png", "path": null, "size": 58.98, "width": 175, "height": 156}}	Gemini_Generated_Image_vn6rc7vn6rc7vn6r_99059b92b3	.png	image/png	1669.70	https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/Gemini_Generated_Image_vn6rc7vn6rc7vn6r_99059b92b3/Gemini_Generated_Image_vn6rc7vn6rc7vn6r_99059b92b3.png	\N	@strapi-community/strapi-provider-upload-google-cloud-storage	\N	/1	2025-07-14 16:54:21.437	2025-07-14 16:54:21.437	\N	\N
+674	Gemini_Generated_Image_2dudua2dudua2dud.png	\N	\N	2048	1850	{"large": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/large_Gemini_Generated_Image_2dudua2dudua2dud_1463619c85/large_Gemini_Generated_Image_2dudua2dudua2dud_1463619c85.png", "hash": "large_Gemini_Generated_Image_2dudua2dudua2dud_1463619c85", "mime": "image/png", "name": "large_Gemini_Generated_Image_2dudua2dudua2dud.png", "path": null, "size": 1795.35, "width": 1000, "height": 903}, "small": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/small_Gemini_Generated_Image_2dudua2dudua2dud_1463619c85/small_Gemini_Generated_Image_2dudua2dudua2dud_1463619c85.png", "hash": "small_Gemini_Generated_Image_2dudua2dudua2dud_1463619c85", "mime": "image/png", "name": "small_Gemini_Generated_Image_2dudua2dudua2dud.png", "path": null, "size": 461.74, "width": 500, "height": 452}, "medium": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/medium_Gemini_Generated_Image_2dudua2dudua2dud_1463619c85/medium_Gemini_Generated_Image_2dudua2dudua2dud_1463619c85.png", "hash": "medium_Gemini_Generated_Image_2dudua2dudua2dud_1463619c85", "mime": "image/png", "name": "medium_Gemini_Generated_Image_2dudua2dudua2dud.png", "path": null, "size": 1002.42, "width": 750, "height": 677}, "thumbnail": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/thumbnail_Gemini_Generated_Image_2dudua2dudua2dud_1463619c85/thumbnail_Gemini_Generated_Image_2dudua2dudua2dud_1463619c85.png", "hash": "thumbnail_Gemini_Generated_Image_2dudua2dudua2dud_1463619c85", "mime": "image/png", "name": "thumbnail_Gemini_Generated_Image_2dudua2dudua2dud.png", "path": null, "size": 66.11, "width": 173, "height": 156}}	Gemini_Generated_Image_2dudua2dudua2dud_1463619c85	.png	image/png	1637.39	https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/Gemini_Generated_Image_2dudua2dudua2dud_1463619c85/Gemini_Generated_Image_2dudua2dudua2dud_1463619c85.png	\N	@strapi-community/strapi-provider-upload-google-cloud-storage	\N	/1	2025-07-14 16:56:14.918	2025-07-14 16:56:14.918	\N	\N
+675	Gemini_Generated_Image_e1wf5ye1wf5ye1wf.png	\N	\N	2048	1857	{"large": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/large_Gemini_Generated_Image_e1wf5ye1wf5ye1wf_c323d94641/large_Gemini_Generated_Image_e1wf5ye1wf5ye1wf_c323d94641.png", "hash": "large_Gemini_Generated_Image_e1wf5ye1wf5ye1wf_c323d94641", "mime": "image/png", "name": "large_Gemini_Generated_Image_e1wf5ye1wf5ye1wf.png", "path": null, "size": 1534.77, "width": 1000, "height": 907}, "small": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/small_Gemini_Generated_Image_e1wf5ye1wf5ye1wf_c323d94641/small_Gemini_Generated_Image_e1wf5ye1wf5ye1wf_c323d94641.png", "hash": "small_Gemini_Generated_Image_e1wf5ye1wf5ye1wf_c323d94641", "mime": "image/png", "name": "small_Gemini_Generated_Image_e1wf5ye1wf5ye1wf.png", "path": null, "size": 385.45, "width": 500, "height": 453}, "medium": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/medium_Gemini_Generated_Image_e1wf5ye1wf5ye1wf_c323d94641/medium_Gemini_Generated_Image_e1wf5ye1wf5ye1wf_c323d94641.png", "hash": "medium_Gemini_Generated_Image_e1wf5ye1wf5ye1wf_c323d94641", "mime": "image/png", "name": "medium_Gemini_Generated_Image_e1wf5ye1wf5ye1wf.png", "path": null, "size": 859.47, "width": 750, "height": 680}, "thumbnail": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/thumbnail_Gemini_Generated_Image_e1wf5ye1wf5ye1wf_c323d94641/thumbnail_Gemini_Generated_Image_e1wf5ye1wf5ye1wf_c323d94641.png", "hash": "thumbnail_Gemini_Generated_Image_e1wf5ye1wf5ye1wf_c323d94641", "mime": "image/png", "name": "thumbnail_Gemini_Generated_Image_e1wf5ye1wf5ye1wf.png", "path": null, "size": 51.32, "width": 172, "height": 156}}	Gemini_Generated_Image_e1wf5ye1wf5ye1wf_c323d94641	.png	image/png	1651.15	https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/Gemini_Generated_Image_e1wf5ye1wf5ye1wf_c323d94641/Gemini_Generated_Image_e1wf5ye1wf5ye1wf_c323d94641.png	\N	@strapi-community/strapi-provider-upload-google-cloud-storage	\N	/1	2025-07-14 16:58:43.24	2025-07-14 16:58:43.24	\N	\N
+676	Gemini_Generated_Image_nmb71mnmb71mnmb7.png	\N	\N	2048	2048	{"large": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/large_Gemini_Generated_Image_nmb71mnmb71mnmb7_6e46518efe/large_Gemini_Generated_Image_nmb71mnmb71mnmb7_6e46518efe.png", "hash": "large_Gemini_Generated_Image_nmb71mnmb71mnmb7_6e46518efe", "mime": "image/png", "name": "large_Gemini_Generated_Image_nmb71mnmb71mnmb7.png", "path": null, "size": 2049.5, "width": 1000, "height": 1000}, "small": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/small_Gemini_Generated_Image_nmb71mnmb71mnmb7_6e46518efe/small_Gemini_Generated_Image_nmb71mnmb71mnmb7_6e46518efe.png", "hash": "small_Gemini_Generated_Image_nmb71mnmb71mnmb7_6e46518efe", "mime": "image/png", "name": "small_Gemini_Generated_Image_nmb71mnmb71mnmb7.png", "path": null, "size": 532.3, "width": 500, "height": 500}, "medium": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/medium_Gemini_Generated_Image_nmb71mnmb71mnmb7_6e46518efe/medium_Gemini_Generated_Image_nmb71mnmb71mnmb7_6e46518efe.png", "hash": "medium_Gemini_Generated_Image_nmb71mnmb71mnmb7_6e46518efe", "mime": "image/png", "name": "medium_Gemini_Generated_Image_nmb71mnmb71mnmb7.png", "path": null, "size": 1164.05, "width": 750, "height": 750}, "thumbnail": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/thumbnail_Gemini_Generated_Image_nmb71mnmb71mnmb7_6e46518efe/thumbnail_Gemini_Generated_Image_nmb71mnmb71mnmb7_6e46518efe.png", "hash": "thumbnail_Gemini_Generated_Image_nmb71mnmb71mnmb7_6e46518efe", "mime": "image/png", "name": "thumbnail_Gemini_Generated_Image_nmb71mnmb71mnmb7.png", "path": null, "size": 58.61, "width": 156, "height": 156}}	Gemini_Generated_Image_nmb71mnmb71mnmb7_6e46518efe	.png	image/png	1812.72	https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/Gemini_Generated_Image_nmb71mnmb71mnmb7_6e46518efe/Gemini_Generated_Image_nmb71mnmb71mnmb7_6e46518efe.png	\N	@strapi-community/strapi-provider-upload-google-cloud-storage	\N	/1	2025-07-14 16:59:41.443	2025-07-14 16:59:41.443	\N	\N
+677	Gemini_Generated_Image_2dudua2dudua2dud.png	\N	\N	2048	1850	{"large": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/large_Gemini_Generated_Image_2dudua2dudua2dud_7c678f76d4/large_Gemini_Generated_Image_2dudua2dudua2dud_7c678f76d4.png", "hash": "large_Gemini_Generated_Image_2dudua2dudua2dud_7c678f76d4", "mime": "image/png", "name": "large_Gemini_Generated_Image_2dudua2dudua2dud.png", "path": null, "size": 1795.35, "width": 1000, "height": 903}, "small": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/small_Gemini_Generated_Image_2dudua2dudua2dud_7c678f76d4/small_Gemini_Generated_Image_2dudua2dudua2dud_7c678f76d4.png", "hash": "small_Gemini_Generated_Image_2dudua2dudua2dud_7c678f76d4", "mime": "image/png", "name": "small_Gemini_Generated_Image_2dudua2dudua2dud.png", "path": null, "size": 461.74, "width": 500, "height": 452}, "medium": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/medium_Gemini_Generated_Image_2dudua2dudua2dud_7c678f76d4/medium_Gemini_Generated_Image_2dudua2dudua2dud_7c678f76d4.png", "hash": "medium_Gemini_Generated_Image_2dudua2dudua2dud_7c678f76d4", "mime": "image/png", "name": "medium_Gemini_Generated_Image_2dudua2dudua2dud.png", "path": null, "size": 1002.42, "width": 750, "height": 677}, "thumbnail": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/thumbnail_Gemini_Generated_Image_2dudua2dudua2dud_7c678f76d4/thumbnail_Gemini_Generated_Image_2dudua2dudua2dud_7c678f76d4.png", "hash": "thumbnail_Gemini_Generated_Image_2dudua2dudua2dud_7c678f76d4", "mime": "image/png", "name": "thumbnail_Gemini_Generated_Image_2dudua2dudua2dud.png", "path": null, "size": 66.11, "width": 173, "height": 156}}	Gemini_Generated_Image_2dudua2dudua2dud_7c678f76d4	.png	image/png	1637.39	https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/Gemini_Generated_Image_2dudua2dudua2dud_7c678f76d4/Gemini_Generated_Image_2dudua2dudua2dud_7c678f76d4.png	\N	@strapi-community/strapi-provider-upload-google-cloud-storage	\N	/1	2025-07-14 17:00:28.758	2025-07-14 17:00:28.758	\N	\N
+678	Gemini_Generated_Image_e1wf5ye1wf5ye1wf.png	\N	\N	2048	1857	{"large": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/large_Gemini_Generated_Image_e1wf5ye1wf5ye1wf_7ca6309d80/large_Gemini_Generated_Image_e1wf5ye1wf5ye1wf_7ca6309d80.png", "hash": "large_Gemini_Generated_Image_e1wf5ye1wf5ye1wf_7ca6309d80", "mime": "image/png", "name": "large_Gemini_Generated_Image_e1wf5ye1wf5ye1wf.png", "path": null, "size": 1534.77, "width": 1000, "height": 907}, "small": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/small_Gemini_Generated_Image_e1wf5ye1wf5ye1wf_7ca6309d80/small_Gemini_Generated_Image_e1wf5ye1wf5ye1wf_7ca6309d80.png", "hash": "small_Gemini_Generated_Image_e1wf5ye1wf5ye1wf_7ca6309d80", "mime": "image/png", "name": "small_Gemini_Generated_Image_e1wf5ye1wf5ye1wf.png", "path": null, "size": 385.45, "width": 500, "height": 453}, "medium": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/medium_Gemini_Generated_Image_e1wf5ye1wf5ye1wf_7ca6309d80/medium_Gemini_Generated_Image_e1wf5ye1wf5ye1wf_7ca6309d80.png", "hash": "medium_Gemini_Generated_Image_e1wf5ye1wf5ye1wf_7ca6309d80", "mime": "image/png", "name": "medium_Gemini_Generated_Image_e1wf5ye1wf5ye1wf.png", "path": null, "size": 859.47, "width": 750, "height": 680}, "thumbnail": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/thumbnail_Gemini_Generated_Image_e1wf5ye1wf5ye1wf_7ca6309d80/thumbnail_Gemini_Generated_Image_e1wf5ye1wf5ye1wf_7ca6309d80.png", "hash": "thumbnail_Gemini_Generated_Image_e1wf5ye1wf5ye1wf_7ca6309d80", "mime": "image/png", "name": "thumbnail_Gemini_Generated_Image_e1wf5ye1wf5ye1wf.png", "path": null, "size": 51.32, "width": 172, "height": 156}}	Gemini_Generated_Image_e1wf5ye1wf5ye1wf_7ca6309d80	.png	image/png	1651.15	https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/Gemini_Generated_Image_e1wf5ye1wf5ye1wf_7ca6309d80/Gemini_Generated_Image_e1wf5ye1wf5ye1wf_7ca6309d80.png	\N	@strapi-community/strapi-provider-upload-google-cloud-storage	\N	/1	2025-07-14 17:01:43.834	2025-07-14 17:01:43.834	\N	\N
+679	Gemini_Generated_Image_bzvuhlbzvuhlbzvu (1).png	\N	\N	2048	2048	{"large": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/large_Gemini_Generated_Image_bzvuhlbzvuhlbzvu_1_d15d282a16/large_Gemini_Generated_Image_bzvuhlbzvuhlbzvu_1_d15d282a16.png", "hash": "large_Gemini_Generated_Image_bzvuhlbzvuhlbzvu_1_d15d282a16", "mime": "image/png", "name": "large_Gemini_Generated_Image_bzvuhlbzvuhlbzvu (1).png", "path": null, "size": 1658.29, "width": 1000, "height": 1000}, "small": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/small_Gemini_Generated_Image_bzvuhlbzvuhlbzvu_1_d15d282a16/small_Gemini_Generated_Image_bzvuhlbzvuhlbzvu_1_d15d282a16.png", "hash": "small_Gemini_Generated_Image_bzvuhlbzvuhlbzvu_1_d15d282a16", "mime": "image/png", "name": "small_Gemini_Generated_Image_bzvuhlbzvuhlbzvu (1).png", "path": null, "size": 437.68, "width": 500, "height": 500}, "medium": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/medium_Gemini_Generated_Image_bzvuhlbzvuhlbzvu_1_d15d282a16/medium_Gemini_Generated_Image_bzvuhlbzvuhlbzvu_1_d15d282a16.png", "hash": "medium_Gemini_Generated_Image_bzvuhlbzvuhlbzvu_1_d15d282a16", "mime": "image/png", "name": "medium_Gemini_Generated_Image_bzvuhlbzvuhlbzvu (1).png", "path": null, "size": 940.54, "width": 750, "height": 750}, "thumbnail": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/thumbnail_Gemini_Generated_Image_bzvuhlbzvuhlbzvu_1_d15d282a16/thumbnail_Gemini_Generated_Image_bzvuhlbzvuhlbzvu_1_d15d282a16.png", "hash": "thumbnail_Gemini_Generated_Image_bzvuhlbzvuhlbzvu_1_d15d282a16", "mime": "image/png", "name": "thumbnail_Gemini_Generated_Image_bzvuhlbzvuhlbzvu (1).png", "path": null, "size": 53.01, "width": 156, "height": 156}}	Gemini_Generated_Image_bzvuhlbzvuhlbzvu_1_d15d282a16	.png	image/png	1571.14	https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/Gemini_Generated_Image_bzvuhlbzvuhlbzvu_1_d15d282a16/Gemini_Generated_Image_bzvuhlbzvuhlbzvu_1_d15d282a16.png	\N	@strapi-community/strapi-provider-upload-google-cloud-storage	\N	/1	2025-07-14 17:05:32.779	2025-07-14 17:05:32.779	\N	\N
+680	Gemini_Generated_Image_qjl58wqjl58wqjl5.png	\N	\N	2032	1834	{"large": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/large_Gemini_Generated_Image_qjl58wqjl58wqjl5_5d7659af7c/large_Gemini_Generated_Image_qjl58wqjl58wqjl5_5d7659af7c.png", "hash": "large_Gemini_Generated_Image_qjl58wqjl58wqjl5_5d7659af7c", "mime": "image/png", "name": "large_Gemini_Generated_Image_qjl58wqjl58wqjl5.png", "path": null, "size": 1862.83, "width": 1000, "height": 903}, "small": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/small_Gemini_Generated_Image_qjl58wqjl58wqjl5_5d7659af7c/small_Gemini_Generated_Image_qjl58wqjl58wqjl5_5d7659af7c.png", "hash": "small_Gemini_Generated_Image_qjl58wqjl58wqjl5_5d7659af7c", "mime": "image/png", "name": "small_Gemini_Generated_Image_qjl58wqjl58wqjl5.png", "path": null, "size": 474.8, "width": 500, "height": 451}, "medium": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/medium_Gemini_Generated_Image_qjl58wqjl58wqjl5_5d7659af7c/medium_Gemini_Generated_Image_qjl58wqjl58wqjl5_5d7659af7c.png", "hash": "medium_Gemini_Generated_Image_qjl58wqjl58wqjl5_5d7659af7c", "mime": "image/png", "name": "medium_Gemini_Generated_Image_qjl58wqjl58wqjl5.png", "path": null, "size": 1038.74, "width": 750, "height": 677}, "thumbnail": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/thumbnail_Gemini_Generated_Image_qjl58wqjl58wqjl5_5d7659af7c/thumbnail_Gemini_Generated_Image_qjl58wqjl58wqjl5_5d7659af7c.png", "hash": "thumbnail_Gemini_Generated_Image_qjl58wqjl58wqjl5_5d7659af7c", "mime": "image/png", "name": "thumbnail_Gemini_Generated_Image_qjl58wqjl58wqjl5.png", "path": null, "size": 64.96, "width": 173, "height": 156}}	Gemini_Generated_Image_qjl58wqjl58wqjl5_5d7659af7c	.png	image/png	1718.77	https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/Gemini_Generated_Image_qjl58wqjl58wqjl5_5d7659af7c/Gemini_Generated_Image_qjl58wqjl58wqjl5_5d7659af7c.png	\N	@strapi-community/strapi-provider-upload-google-cloud-storage	\N	/1	2025-07-14 17:05:36.277	2025-07-14 17:05:36.277	\N	\N
+681	Gemini_Generated_Image_ic06uvic06uvic06.png	\N	\N	1865	2040	{"large": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/large_Gemini_Generated_Image_ic06uvic06uvic06_6e591cc378/large_Gemini_Generated_Image_ic06uvic06uvic06_6e591cc378.png", "hash": "large_Gemini_Generated_Image_ic06uvic06uvic06_6e591cc378", "mime": "image/png", "name": "large_Gemini_Generated_Image_ic06uvic06uvic06.png", "path": null, "size": 1687.31, "width": 914, "height": 1000}, "small": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/small_Gemini_Generated_Image_ic06uvic06uvic06_6e591cc378/small_Gemini_Generated_Image_ic06uvic06uvic06_6e591cc378.png", "hash": "small_Gemini_Generated_Image_ic06uvic06uvic06_6e591cc378", "mime": "image/png", "name": "small_Gemini_Generated_Image_ic06uvic06uvic06.png", "path": null, "size": 445.14, "width": 457, "height": 500}, "medium": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/medium_Gemini_Generated_Image_ic06uvic06uvic06_6e591cc378/medium_Gemini_Generated_Image_ic06uvic06uvic06_6e591cc378.png", "hash": "medium_Gemini_Generated_Image_ic06uvic06uvic06_6e591cc378", "mime": "image/png", "name": "medium_Gemini_Generated_Image_ic06uvic06uvic06.png", "path": null, "size": 961.28, "width": 686, "height": 750}, "thumbnail": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/thumbnail_Gemini_Generated_Image_ic06uvic06uvic06_6e591cc378/thumbnail_Gemini_Generated_Image_ic06uvic06uvic06_6e591cc378.png", "hash": "thumbnail_Gemini_Generated_Image_ic06uvic06uvic06_6e591cc378", "mime": "image/png", "name": "thumbnail_Gemini_Generated_Image_ic06uvic06uvic06.png", "path": null, "size": 52.47, "width": 143, "height": 156}}	Gemini_Generated_Image_ic06uvic06uvic06_6e591cc378	.png	image/png	1436.46	https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/Gemini_Generated_Image_ic06uvic06uvic06_6e591cc378/Gemini_Generated_Image_ic06uvic06uvic06_6e591cc378.png	\N	@strapi-community/strapi-provider-upload-google-cloud-storage	\N	/1	2025-07-14 17:36:44.956	2025-07-14 17:36:44.956	\N	\N
+682	Gemini_Generated_Image_qjl58wqjl58wqjl5.png	\N	\N	2032	1834	{"large": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/large_Gemini_Generated_Image_qjl58wqjl58wqjl5_39a6276b61/large_Gemini_Generated_Image_qjl58wqjl58wqjl5_39a6276b61.png", "hash": "large_Gemini_Generated_Image_qjl58wqjl58wqjl5_39a6276b61", "mime": "image/png", "name": "large_Gemini_Generated_Image_qjl58wqjl58wqjl5.png", "path": null, "size": 1862.83, "width": 1000, "height": 903}, "small": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/small_Gemini_Generated_Image_qjl58wqjl58wqjl5_39a6276b61/small_Gemini_Generated_Image_qjl58wqjl58wqjl5_39a6276b61.png", "hash": "small_Gemini_Generated_Image_qjl58wqjl58wqjl5_39a6276b61", "mime": "image/png", "name": "small_Gemini_Generated_Image_qjl58wqjl58wqjl5.png", "path": null, "size": 474.8, "width": 500, "height": 451}, "medium": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/medium_Gemini_Generated_Image_qjl58wqjl58wqjl5_39a6276b61/medium_Gemini_Generated_Image_qjl58wqjl58wqjl5_39a6276b61.png", "hash": "medium_Gemini_Generated_Image_qjl58wqjl58wqjl5_39a6276b61", "mime": "image/png", "name": "medium_Gemini_Generated_Image_qjl58wqjl58wqjl5.png", "path": null, "size": 1038.74, "width": 750, "height": 677}, "thumbnail": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/thumbnail_Gemini_Generated_Image_qjl58wqjl58wqjl5_39a6276b61/thumbnail_Gemini_Generated_Image_qjl58wqjl58wqjl5_39a6276b61.png", "hash": "thumbnail_Gemini_Generated_Image_qjl58wqjl58wqjl5_39a6276b61", "mime": "image/png", "name": "thumbnail_Gemini_Generated_Image_qjl58wqjl58wqjl5.png", "path": null, "size": 64.96, "width": 173, "height": 156}}	Gemini_Generated_Image_qjl58wqjl58wqjl5_39a6276b61	.png	image/png	1718.77	https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/Gemini_Generated_Image_qjl58wqjl58wqjl5_39a6276b61/Gemini_Generated_Image_qjl58wqjl58wqjl5_39a6276b61.png	\N	@strapi-community/strapi-provider-upload-google-cloud-storage	\N	/1	2025-07-14 17:37:35.974	2025-07-14 17:37:35.974	\N	\N
+683	Gemini_Generated_Image_q4wb90q4wb90q4wb.png	\N	\N	1889	2048	{"large": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/large_Gemini_Generated_Image_q4wb90q4wb90q4wb_7ad2a03d96/large_Gemini_Generated_Image_q4wb90q4wb90q4wb_7ad2a03d96.png", "hash": "large_Gemini_Generated_Image_q4wb90q4wb90q4wb_7ad2a03d96", "mime": "image/png", "name": "large_Gemini_Generated_Image_q4wb90q4wb90q4wb.png", "path": null, "size": 2052.83, "width": 922, "height": 1000}, "small": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/small_Gemini_Generated_Image_q4wb90q4wb90q4wb_7ad2a03d96/small_Gemini_Generated_Image_q4wb90q4wb90q4wb_7ad2a03d96.png", "hash": "small_Gemini_Generated_Image_q4wb90q4wb90q4wb_7ad2a03d96", "mime": "image/png", "name": "small_Gemini_Generated_Image_q4wb90q4wb90q4wb.png", "path": null, "size": 526.28, "width": 461, "height": 500}, "medium": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/medium_Gemini_Generated_Image_q4wb90q4wb90q4wb_7ad2a03d96/medium_Gemini_Generated_Image_q4wb90q4wb90q4wb_7ad2a03d96.png", "hash": "medium_Gemini_Generated_Image_q4wb90q4wb90q4wb_7ad2a03d96", "mime": "image/png", "name": "medium_Gemini_Generated_Image_q4wb90q4wb90q4wb.png", "path": null, "size": 1153.24, "width": 692, "height": 750}, "thumbnail": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/thumbnail_Gemini_Generated_Image_q4wb90q4wb90q4wb_7ad2a03d96/thumbnail_Gemini_Generated_Image_q4wb90q4wb90q4wb_7ad2a03d96.png", "hash": "thumbnail_Gemini_Generated_Image_q4wb90q4wb90q4wb_7ad2a03d96", "mime": "image/png", "name": "thumbnail_Gemini_Generated_Image_q4wb90q4wb90q4wb.png", "path": null, "size": 58.92, "width": 144, "height": 156}}	Gemini_Generated_Image_q4wb90q4wb90q4wb_7ad2a03d96	.png	image/png	1714.57	https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/Gemini_Generated_Image_q4wb90q4wb90q4wb_7ad2a03d96/Gemini_Generated_Image_q4wb90q4wb90q4wb_7ad2a03d96.png	\N	@strapi-community/strapi-provider-upload-google-cloud-storage	\N	/1	2025-07-14 17:38:22.948	2025-07-14 17:38:22.948	\N	\N
+684	Gemini_Generated_Image_y47gkwy47gkwy47g.png	\N	\N	2048	1834	{"large": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/large_Gemini_Generated_Image_y47gkwy47gkwy47g_bcd793acb8/large_Gemini_Generated_Image_y47gkwy47gkwy47g_bcd793acb8.png", "hash": "large_Gemini_Generated_Image_y47gkwy47gkwy47g_bcd793acb8", "mime": "image/png", "name": "large_Gemini_Generated_Image_y47gkwy47gkwy47g.png", "path": null, "size": 1653.31, "width": 1000, "height": 896}, "small": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/small_Gemini_Generated_Image_y47gkwy47gkwy47g_bcd793acb8/small_Gemini_Generated_Image_y47gkwy47gkwy47g_bcd793acb8.png", "hash": "small_Gemini_Generated_Image_y47gkwy47gkwy47g_bcd793acb8", "mime": "image/png", "name": "small_Gemini_Generated_Image_y47gkwy47gkwy47g.png", "path": null, "size": 436.72, "width": 500, "height": 448}, "medium": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/medium_Gemini_Generated_Image_y47gkwy47gkwy47g_bcd793acb8/medium_Gemini_Generated_Image_y47gkwy47gkwy47g_bcd793acb8.png", "hash": "medium_Gemini_Generated_Image_y47gkwy47gkwy47g_bcd793acb8", "mime": "image/png", "name": "medium_Gemini_Generated_Image_y47gkwy47gkwy47g.png", "path": null, "size": 940.84, "width": 750, "height": 672}, "thumbnail": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/thumbnail_Gemini_Generated_Image_y47gkwy47gkwy47g_bcd793acb8/thumbnail_Gemini_Generated_Image_y47gkwy47gkwy47g_bcd793acb8.png", "hash": "thumbnail_Gemini_Generated_Image_y47gkwy47gkwy47g_bcd793acb8", "mime": "image/png", "name": "thumbnail_Gemini_Generated_Image_y47gkwy47gkwy47g.png", "path": null, "size": 63.4, "width": 174, "height": 156}}	Gemini_Generated_Image_y47gkwy47gkwy47g_bcd793acb8	.png	image/png	1469.83	https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/Gemini_Generated_Image_y47gkwy47gkwy47g_bcd793acb8/Gemini_Generated_Image_y47gkwy47gkwy47g_bcd793acb8.png	\N	@strapi-community/strapi-provider-upload-google-cloud-storage	\N	/1	2025-07-14 17:38:57.693	2025-07-14 17:38:57.693	\N	\N
+685	Gemini_Generated_Image_feb1mlfeb1mlfeb1.png	\N	\N	2024	1865	{"large": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/large_Gemini_Generated_Image_feb1mlfeb1mlfeb1_24412fe693/large_Gemini_Generated_Image_feb1mlfeb1mlfeb1_24412fe693.png", "hash": "large_Gemini_Generated_Image_feb1mlfeb1mlfeb1_24412fe693", "mime": "image/png", "name": "large_Gemini_Generated_Image_feb1mlfeb1mlfeb1.png", "path": null, "size": 1948.71, "width": 1000, "height": 921}, "small": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/small_Gemini_Generated_Image_feb1mlfeb1mlfeb1_24412fe693/small_Gemini_Generated_Image_feb1mlfeb1mlfeb1_24412fe693.png", "hash": "small_Gemini_Generated_Image_feb1mlfeb1mlfeb1_24412fe693", "mime": "image/png", "name": "small_Gemini_Generated_Image_feb1mlfeb1mlfeb1.png", "path": null, "size": 476.49, "width": 500, "height": 461}, "medium": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/medium_Gemini_Generated_Image_feb1mlfeb1mlfeb1_24412fe693/medium_Gemini_Generated_Image_feb1mlfeb1mlfeb1_24412fe693.png", "hash": "medium_Gemini_Generated_Image_feb1mlfeb1mlfeb1_24412fe693", "mime": "image/png", "name": "medium_Gemini_Generated_Image_feb1mlfeb1mlfeb1.png", "path": null, "size": 1064.78, "width": 750, "height": 691}, "thumbnail": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/thumbnail_Gemini_Generated_Image_feb1mlfeb1mlfeb1_24412fe693/thumbnail_Gemini_Generated_Image_feb1mlfeb1mlfeb1_24412fe693.png", "hash": "thumbnail_Gemini_Generated_Image_feb1mlfeb1mlfeb1_24412fe693", "mime": "image/png", "name": "thumbnail_Gemini_Generated_Image_feb1mlfeb1mlfeb1.png", "path": null, "size": 63.03, "width": 169, "height": 156}}	Gemini_Generated_Image_feb1mlfeb1mlfeb1_24412fe693	.png	image/png	2094.80	https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/Gemini_Generated_Image_feb1mlfeb1mlfeb1_24412fe693/Gemini_Generated_Image_feb1mlfeb1mlfeb1_24412fe693.png	\N	@strapi-community/strapi-provider-upload-google-cloud-storage	\N	/1	2025-07-14 17:40:52.337	2025-07-14 17:40:52.337	\N	\N
+686	Gemini_Generated_Image_bzvuhlbzvuhlbzvu.png	\N	\N	2000	1897	{"large": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/large_Gemini_Generated_Image_bzvuhlbzvuhlbzvu_ec6e9a46ea/large_Gemini_Generated_Image_bzvuhlbzvuhlbzvu_ec6e9a46ea.png", "hash": "large_Gemini_Generated_Image_bzvuhlbzvuhlbzvu_ec6e9a46ea", "mime": "image/png", "name": "large_Gemini_Generated_Image_bzvuhlbzvuhlbzvu.png", "path": null, "size": 1527.05, "width": 1000, "height": 949}, "small": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/small_Gemini_Generated_Image_bzvuhlbzvuhlbzvu_ec6e9a46ea/small_Gemini_Generated_Image_bzvuhlbzvuhlbzvu_ec6e9a46ea.png", "hash": "small_Gemini_Generated_Image_bzvuhlbzvuhlbzvu_ec6e9a46ea", "mime": "image/png", "name": "small_Gemini_Generated_Image_bzvuhlbzvuhlbzvu.png", "path": null, "size": 405.58, "width": 500, "height": 474}, "medium": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/medium_Gemini_Generated_Image_bzvuhlbzvuhlbzvu_ec6e9a46ea/medium_Gemini_Generated_Image_bzvuhlbzvuhlbzvu_ec6e9a46ea.png", "hash": "medium_Gemini_Generated_Image_bzvuhlbzvuhlbzvu_ec6e9a46ea", "mime": "image/png", "name": "medium_Gemini_Generated_Image_bzvuhlbzvuhlbzvu.png", "path": null, "size": 878.21, "width": 750, "height": 711}, "thumbnail": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/thumbnail_Gemini_Generated_Image_bzvuhlbzvuhlbzvu_ec6e9a46ea/thumbnail_Gemini_Generated_Image_bzvuhlbzvuhlbzvu_ec6e9a46ea.png", "hash": "thumbnail_Gemini_Generated_Image_bzvuhlbzvuhlbzvu_ec6e9a46ea", "mime": "image/png", "name": "thumbnail_Gemini_Generated_Image_bzvuhlbzvuhlbzvu.png", "path": null, "size": 53.74, "width": 164, "height": 156}}	Gemini_Generated_Image_bzvuhlbzvuhlbzvu_ec6e9a46ea	.png	image/png	1441.16	https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/Gemini_Generated_Image_bzvuhlbzvuhlbzvu_ec6e9a46ea/Gemini_Generated_Image_bzvuhlbzvuhlbzvu_ec6e9a46ea.png	\N	@strapi-community/strapi-provider-upload-google-cloud-storage	\N	/1	2025-07-14 17:41:20.754	2025-07-14 17:41:20.754	\N	\N
+687	Gemini_Generated_Image_nmb71mnmb71mnmb7.png	\N	\N	2048	2048	{"large": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/large_Gemini_Generated_Image_nmb71mnmb71mnmb7_03928eb04a/large_Gemini_Generated_Image_nmb71mnmb71mnmb7_03928eb04a.png", "hash": "large_Gemini_Generated_Image_nmb71mnmb71mnmb7_03928eb04a", "mime": "image/png", "name": "large_Gemini_Generated_Image_nmb71mnmb71mnmb7.png", "path": null, "size": 2049.5, "width": 1000, "height": 1000}, "small": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/small_Gemini_Generated_Image_nmb71mnmb71mnmb7_03928eb04a/small_Gemini_Generated_Image_nmb71mnmb71mnmb7_03928eb04a.png", "hash": "small_Gemini_Generated_Image_nmb71mnmb71mnmb7_03928eb04a", "mime": "image/png", "name": "small_Gemini_Generated_Image_nmb71mnmb71mnmb7.png", "path": null, "size": 532.3, "width": 500, "height": 500}, "medium": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/medium_Gemini_Generated_Image_nmb71mnmb71mnmb7_03928eb04a/medium_Gemini_Generated_Image_nmb71mnmb71mnmb7_03928eb04a.png", "hash": "medium_Gemini_Generated_Image_nmb71mnmb71mnmb7_03928eb04a", "mime": "image/png", "name": "medium_Gemini_Generated_Image_nmb71mnmb71mnmb7.png", "path": null, "size": 1164.05, "width": 750, "height": 750}, "thumbnail": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/thumbnail_Gemini_Generated_Image_nmb71mnmb71mnmb7_03928eb04a/thumbnail_Gemini_Generated_Image_nmb71mnmb71mnmb7_03928eb04a.png", "hash": "thumbnail_Gemini_Generated_Image_nmb71mnmb71mnmb7_03928eb04a", "mime": "image/png", "name": "thumbnail_Gemini_Generated_Image_nmb71mnmb71mnmb7.png", "path": null, "size": 58.61, "width": 156, "height": 156}}	Gemini_Generated_Image_nmb71mnmb71mnmb7_03928eb04a	.png	image/png	1812.72	https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/Gemini_Generated_Image_nmb71mnmb71mnmb7_03928eb04a/Gemini_Generated_Image_nmb71mnmb71mnmb7_03928eb04a.png	\N	@strapi-community/strapi-provider-upload-google-cloud-storage	\N	/1	2025-07-14 17:41:59.866	2025-07-14 17:41:59.866	\N	\N
+688	Gemini_Generated_Image_64agkw64agkw64ag.png	\N	\N	1992	1881	{"large": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/large_Gemini_Generated_Image_64agkw64agkw64ag_355242d800/large_Gemini_Generated_Image_64agkw64agkw64ag_355242d800.png", "hash": "large_Gemini_Generated_Image_64agkw64agkw64ag_355242d800", "mime": "image/png", "name": "large_Gemini_Generated_Image_64agkw64agkw64ag.png", "path": null, "size": 1728.29, "width": 1000, "height": 944}, "small": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/small_Gemini_Generated_Image_64agkw64agkw64ag_355242d800/small_Gemini_Generated_Image_64agkw64agkw64ag_355242d800.png", "hash": "small_Gemini_Generated_Image_64agkw64agkw64ag_355242d800", "mime": "image/png", "name": "small_Gemini_Generated_Image_64agkw64agkw64ag.png", "path": null, "size": 450.1, "width": 500, "height": 472}, "medium": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/medium_Gemini_Generated_Image_64agkw64agkw64ag_355242d800/medium_Gemini_Generated_Image_64agkw64agkw64ag_355242d800.png", "hash": "medium_Gemini_Generated_Image_64agkw64agkw64ag_355242d800", "mime": "image/png", "name": "medium_Gemini_Generated_Image_64agkw64agkw64ag.png", "path": null, "size": 982.39, "width": 750, "height": 708}, "thumbnail": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/thumbnail_Gemini_Generated_Image_64agkw64agkw64ag_355242d800/thumbnail_Gemini_Generated_Image_64agkw64agkw64ag_355242d800.png", "hash": "thumbnail_Gemini_Generated_Image_64agkw64agkw64ag_355242d800", "mime": "image/png", "name": "thumbnail_Gemini_Generated_Image_64agkw64agkw64ag.png", "path": null, "size": 59.83, "width": 165, "height": 156}}	Gemini_Generated_Image_64agkw64agkw64ag_355242d800	.png	image/png	1515.13	https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/Gemini_Generated_Image_64agkw64agkw64ag_355242d800/Gemini_Generated_Image_64agkw64agkw64ag_355242d800.png	\N	@strapi-community/strapi-provider-upload-google-cloud-storage	\N	/1	2025-07-14 17:44:29.07	2025-07-14 17:44:29.07	\N	\N
+689	Gemini_Generated_Image_n9fm1pn9fm1pn9fm.png	\N	\N	1992	1834	{"large": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/large_Gemini_Generated_Image_n9fm1pn9fm1pn9fm_e84d1eb153/large_Gemini_Generated_Image_n9fm1pn9fm1pn9fm_e84d1eb153.png", "hash": "large_Gemini_Generated_Image_n9fm1pn9fm1pn9fm_e84d1eb153", "mime": "image/png", "name": "large_Gemini_Generated_Image_n9fm1pn9fm1pn9fm.png", "path": null, "size": 2050.25, "width": 1000, "height": 921}, "small": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/small_Gemini_Generated_Image_n9fm1pn9fm1pn9fm_e84d1eb153/small_Gemini_Generated_Image_n9fm1pn9fm1pn9fm_e84d1eb153.png", "hash": "small_Gemini_Generated_Image_n9fm1pn9fm1pn9fm_e84d1eb153", "mime": "image/png", "name": "small_Gemini_Generated_Image_n9fm1pn9fm1pn9fm.png", "path": null, "size": 502.59, "width": 500, "height": 460}, "medium": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/medium_Gemini_Generated_Image_n9fm1pn9fm1pn9fm_e84d1eb153/medium_Gemini_Generated_Image_n9fm1pn9fm1pn9fm_e84d1eb153.png", "hash": "medium_Gemini_Generated_Image_n9fm1pn9fm1pn9fm_e84d1eb153", "mime": "image/png", "name": "medium_Gemini_Generated_Image_n9fm1pn9fm1pn9fm.png", "path": null, "size": 1137.06, "width": 750, "height": 691}, "thumbnail": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/thumbnail_Gemini_Generated_Image_n9fm1pn9fm1pn9fm_e84d1eb153/thumbnail_Gemini_Generated_Image_n9fm1pn9fm1pn9fm_e84d1eb153.png", "hash": "thumbnail_Gemini_Generated_Image_n9fm1pn9fm1pn9fm_e84d1eb153", "mime": "image/png", "name": "thumbnail_Gemini_Generated_Image_n9fm1pn9fm1pn9fm.png", "path": null, "size": 62.94, "width": 169, "height": 156}}	Gemini_Generated_Image_n9fm1pn9fm1pn9fm_e84d1eb153	.png	image/png	2308.90	https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/Gemini_Generated_Image_n9fm1pn9fm1pn9fm_e84d1eb153/Gemini_Generated_Image_n9fm1pn9fm1pn9fm_e84d1eb153.png	\N	@strapi-community/strapi-provider-upload-google-cloud-storage	\N	/1	2025-07-14 17:45:51.588	2025-07-14 17:45:51.588	\N	\N
+690	Gemini_Generated_Image_oeffkmoeffkmoeff.png	\N	\N	2048	1842	{"large": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/large_Gemini_Generated_Image_oeffkmoeffkmoeff_eb9e895742/large_Gemini_Generated_Image_oeffkmoeffkmoeff_eb9e895742.png", "hash": "large_Gemini_Generated_Image_oeffkmoeffkmoeff_eb9e895742", "mime": "image/png", "name": "large_Gemini_Generated_Image_oeffkmoeffkmoeff.png", "path": null, "size": 1675.44, "width": 1000, "height": 899}, "small": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/small_Gemini_Generated_Image_oeffkmoeffkmoeff_eb9e895742/small_Gemini_Generated_Image_oeffkmoeffkmoeff_eb9e895742.png", "hash": "small_Gemini_Generated_Image_oeffkmoeffkmoeff_eb9e895742", "mime": "image/png", "name": "small_Gemini_Generated_Image_oeffkmoeffkmoeff.png", "path": null, "size": 430.61, "width": 500, "height": 450}, "medium": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/medium_Gemini_Generated_Image_oeffkmoeffkmoeff_eb9e895742/medium_Gemini_Generated_Image_oeffkmoeffkmoeff_eb9e895742.png", "hash": "medium_Gemini_Generated_Image_oeffkmoeffkmoeff_eb9e895742", "mime": "image/png", "name": "medium_Gemini_Generated_Image_oeffkmoeffkmoeff.png", "path": null, "size": 939.52, "width": 750, "height": 675}, "thumbnail": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/thumbnail_Gemini_Generated_Image_oeffkmoeffkmoeff_eb9e895742/thumbnail_Gemini_Generated_Image_oeffkmoeffkmoeff_eb9e895742.png", "hash": "thumbnail_Gemini_Generated_Image_oeffkmoeffkmoeff_eb9e895742", "mime": "image/png", "name": "thumbnail_Gemini_Generated_Image_oeffkmoeffkmoeff.png", "path": null, "size": 59.08, "width": 173, "height": 156}}	Gemini_Generated_Image_oeffkmoeffkmoeff_eb9e895742	.png	image/png	1771.29	https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/Gemini_Generated_Image_oeffkmoeffkmoeff_eb9e895742/Gemini_Generated_Image_oeffkmoeffkmoeff_eb9e895742.png	\N	@strapi-community/strapi-provider-upload-google-cloud-storage	\N	/1	2025-07-14 17:46:09.452	2025-07-14 17:46:09.452	\N	\N
+691	Gemini_Generated_Image_tzwofctzwofctzwo.png	\N	\N	2048	1881	{"large": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/large_Gemini_Generated_Image_tzwofctzwofctzwo_abb460ef49/large_Gemini_Generated_Image_tzwofctzwofctzwo_abb460ef49.png", "hash": "large_Gemini_Generated_Image_tzwofctzwofctzwo_abb460ef49", "mime": "image/png", "name": "large_Gemini_Generated_Image_tzwofctzwofctzwo.png", "path": null, "size": 1899.23, "width": 1000, "height": 918}, "small": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/small_Gemini_Generated_Image_tzwofctzwofctzwo_abb460ef49/small_Gemini_Generated_Image_tzwofctzwofctzwo_abb460ef49.png", "hash": "small_Gemini_Generated_Image_tzwofctzwofctzwo_abb460ef49", "mime": "image/png", "name": "small_Gemini_Generated_Image_tzwofctzwofctzwo.png", "path": null, "size": 487.61, "width": 500, "height": 459}, "medium": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/medium_Gemini_Generated_Image_tzwofctzwofctzwo_abb460ef49/medium_Gemini_Generated_Image_tzwofctzwofctzwo_abb460ef49.png", "hash": "medium_Gemini_Generated_Image_tzwofctzwofctzwo_abb460ef49", "mime": "image/png", "name": "medium_Gemini_Generated_Image_tzwofctzwofctzwo.png", "path": null, "size": 1065.66, "width": 750, "height": 689}, "thumbnail": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/thumbnail_Gemini_Generated_Image_tzwofctzwofctzwo_abb460ef49/thumbnail_Gemini_Generated_Image_tzwofctzwofctzwo_abb460ef49.png", "hash": "thumbnail_Gemini_Generated_Image_tzwofctzwofctzwo_abb460ef49", "mime": "image/png", "name": "thumbnail_Gemini_Generated_Image_tzwofctzwofctzwo.png", "path": null, "size": 65.75, "width": 170, "height": 156}}	Gemini_Generated_Image_tzwofctzwofctzwo_abb460ef49	.png	image/png	1722.52	https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/Gemini_Generated_Image_tzwofctzwofctzwo_abb460ef49/Gemini_Generated_Image_tzwofctzwofctzwo_abb460ef49.png	\N	@strapi-community/strapi-provider-upload-google-cloud-storage	\N	/1	2025-07-14 17:47:02.347	2025-07-14 17:47:02.347	\N	\N
+692	Gemini_Generated_Image_vl3phxvl3phxvl3p.png	\N	\N	2048	1925	{"large": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/large_Gemini_Generated_Image_vl3phxvl3phxvl3p_e0c6c91d98/large_Gemini_Generated_Image_vl3phxvl3phxvl3p_e0c6c91d98.png", "hash": "large_Gemini_Generated_Image_vl3phxvl3phxvl3p_e0c6c91d98", "mime": "image/png", "name": "large_Gemini_Generated_Image_vl3phxvl3phxvl3p.png", "path": null, "size": 2078.05, "width": 1000, "height": 940}, "small": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/small_Gemini_Generated_Image_vl3phxvl3phxvl3p_e0c6c91d98/small_Gemini_Generated_Image_vl3phxvl3phxvl3p_e0c6c91d98.png", "hash": "small_Gemini_Generated_Image_vl3phxvl3phxvl3p_e0c6c91d98", "mime": "image/png", "name": "small_Gemini_Generated_Image_vl3phxvl3phxvl3p.png", "path": null, "size": 540.33, "width": 500, "height": 470}, "medium": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/medium_Gemini_Generated_Image_vl3phxvl3phxvl3p_e0c6c91d98/medium_Gemini_Generated_Image_vl3phxvl3phxvl3p_e0c6c91d98.png", "hash": "medium_Gemini_Generated_Image_vl3phxvl3phxvl3p_e0c6c91d98", "mime": "image/png", "name": "medium_Gemini_Generated_Image_vl3phxvl3phxvl3p.png", "path": null, "size": 1174.56, "width": 750, "height": 705}, "thumbnail": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/thumbnail_Gemini_Generated_Image_vl3phxvl3phxvl3p_e0c6c91d98/thumbnail_Gemini_Generated_Image_vl3phxvl3phxvl3p_e0c6c91d98.png", "hash": "thumbnail_Gemini_Generated_Image_vl3phxvl3phxvl3p_e0c6c91d98", "mime": "image/png", "name": "thumbnail_Gemini_Generated_Image_vl3phxvl3phxvl3p.png", "path": null, "size": 67.04, "width": 166, "height": 156}}	Gemini_Generated_Image_vl3phxvl3phxvl3p_e0c6c91d98	.png	image/png	1617.92	https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/Gemini_Generated_Image_vl3phxvl3phxvl3p_e0c6c91d98/Gemini_Generated_Image_vl3phxvl3phxvl3p_e0c6c91d98.png	\N	@strapi-community/strapi-provider-upload-google-cloud-storage	\N	/1	2025-07-15 22:28:12.141	2025-07-15 22:28:12.141	\N	\N
+693	Gemini_Generated_Image_8962ol8962ol8962.png	\N	\N	2024	1850	{"large": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/large_Gemini_Generated_Image_8962ol8962ol8962_139781cae3/large_Gemini_Generated_Image_8962ol8962ol8962_139781cae3.png", "hash": "large_Gemini_Generated_Image_8962ol8962ol8962_139781cae3", "mime": "image/png", "name": "large_Gemini_Generated_Image_8962ol8962ol8962.png", "path": null, "size": 1924.79, "width": 1000, "height": 914}, "small": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/small_Gemini_Generated_Image_8962ol8962ol8962_139781cae3/small_Gemini_Generated_Image_8962ol8962ol8962_139781cae3.png", "hash": "small_Gemini_Generated_Image_8962ol8962ol8962_139781cae3", "mime": "image/png", "name": "small_Gemini_Generated_Image_8962ol8962ol8962.png", "path": null, "size": 498.3, "width": 500, "height": 457}, "medium": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/medium_Gemini_Generated_Image_8962ol8962ol8962_139781cae3/medium_Gemini_Generated_Image_8962ol8962ol8962_139781cae3.png", "hash": "medium_Gemini_Generated_Image_8962ol8962ol8962_139781cae3", "mime": "image/png", "name": "medium_Gemini_Generated_Image_8962ol8962ol8962.png", "path": null, "size": 1082.28, "width": 750, "height": 686}, "thumbnail": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/thumbnail_Gemini_Generated_Image_8962ol8962ol8962_139781cae3/thumbnail_Gemini_Generated_Image_8962ol8962ol8962_139781cae3.png", "hash": "thumbnail_Gemini_Generated_Image_8962ol8962ol8962_139781cae3", "mime": "image/png", "name": "thumbnail_Gemini_Generated_Image_8962ol8962ol8962.png", "path": null, "size": 68.74, "width": 171, "height": 156}}	Gemini_Generated_Image_8962ol8962ol8962_139781cae3	.png	image/png	1563.24	https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/Gemini_Generated_Image_8962ol8962ol8962_139781cae3/Gemini_Generated_Image_8962ol8962ol8962_139781cae3.png	\N	@strapi-community/strapi-provider-upload-google-cloud-storage	\N	/1	2025-07-15 22:28:20.739	2025-07-15 22:28:20.739	\N	\N
+694	Gemini_Generated_Image_hyzjfrhyzjfrhyzj.png	\N	\N	1838	2048	{"large": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/large_Gemini_Generated_Image_hyzjfrhyzjfrhyzj_614dc4541e/large_Gemini_Generated_Image_hyzjfrhyzjfrhyzj_614dc4541e.png", "hash": "large_Gemini_Generated_Image_hyzjfrhyzjfrhyzj_614dc4541e", "mime": "image/png", "name": "large_Gemini_Generated_Image_hyzjfrhyzjfrhyzj.png", "path": null, "size": 1629.23, "width": 897, "height": 1000}, "small": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/small_Gemini_Generated_Image_hyzjfrhyzjfrhyzj_614dc4541e/small_Gemini_Generated_Image_hyzjfrhyzjfrhyzj_614dc4541e.png", "hash": "small_Gemini_Generated_Image_hyzjfrhyzjfrhyzj_614dc4541e", "mime": "image/png", "name": "small_Gemini_Generated_Image_hyzjfrhyzjfrhyzj.png", "path": null, "size": 424.01, "width": 449, "height": 500}, "medium": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/medium_Gemini_Generated_Image_hyzjfrhyzjfrhyzj_614dc4541e/medium_Gemini_Generated_Image_hyzjfrhyzjfrhyzj_614dc4541e.png", "hash": "medium_Gemini_Generated_Image_hyzjfrhyzjfrhyzj_614dc4541e", "mime": "image/png", "name": "medium_Gemini_Generated_Image_hyzjfrhyzjfrhyzj.png", "path": null, "size": 917.46, "width": 673, "height": 750}, "thumbnail": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/thumbnail_Gemini_Generated_Image_hyzjfrhyzjfrhyzj_614dc4541e/thumbnail_Gemini_Generated_Image_hyzjfrhyzjfrhyzj_614dc4541e.png", "hash": "thumbnail_Gemini_Generated_Image_hyzjfrhyzjfrhyzj_614dc4541e", "mime": "image/png", "name": "thumbnail_Gemini_Generated_Image_hyzjfrhyzjfrhyzj.png", "path": null, "size": 50.7, "width": 140, "height": 156}}	Gemini_Generated_Image_hyzjfrhyzjfrhyzj_614dc4541e	.png	image/png	1469.99	https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/Gemini_Generated_Image_hyzjfrhyzjfrhyzj_614dc4541e/Gemini_Generated_Image_hyzjfrhyzjfrhyzj_614dc4541e.png	\N	@strapi-community/strapi-provider-upload-google-cloud-storage	\N	/1	2025-07-15 22:28:34.954	2025-07-15 22:28:34.954	\N	\N
+695	Gemini_Generated_Image_t0lzypt0lzypt0lz.png	\N	\N	2040	1857	{"large": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/large_Gemini_Generated_Image_t0lzypt0lzypt0lz_241a87a131/large_Gemini_Generated_Image_t0lzypt0lzypt0lz_241a87a131.png", "hash": "large_Gemini_Generated_Image_t0lzypt0lzypt0lz_241a87a131", "mime": "image/png", "name": "large_Gemini_Generated_Image_t0lzypt0lzypt0lz.png", "path": null, "size": 1739.22, "width": 1000, "height": 910}, "small": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/small_Gemini_Generated_Image_t0lzypt0lzypt0lz_241a87a131/small_Gemini_Generated_Image_t0lzypt0lzypt0lz_241a87a131.png", "hash": "small_Gemini_Generated_Image_t0lzypt0lzypt0lz_241a87a131", "mime": "image/png", "name": "small_Gemini_Generated_Image_t0lzypt0lzypt0lz.png", "path": null, "size": 437.08, "width": 500, "height": 455}, "medium": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/medium_Gemini_Generated_Image_t0lzypt0lzypt0lz_241a87a131/medium_Gemini_Generated_Image_t0lzypt0lzypt0lz_241a87a131.png", "hash": "medium_Gemini_Generated_Image_t0lzypt0lzypt0lz_241a87a131", "mime": "image/png", "name": "medium_Gemini_Generated_Image_t0lzypt0lzypt0lz.png", "path": null, "size": 962.17, "width": 750, "height": 683}, "thumbnail": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/thumbnail_Gemini_Generated_Image_t0lzypt0lzypt0lz_241a87a131/thumbnail_Gemini_Generated_Image_t0lzypt0lzypt0lz_241a87a131.png", "hash": "thumbnail_Gemini_Generated_Image_t0lzypt0lzypt0lz_241a87a131", "mime": "image/png", "name": "thumbnail_Gemini_Generated_Image_t0lzypt0lzypt0lz.png", "path": null, "size": 60.91, "width": 171, "height": 156}}	Gemini_Generated_Image_t0lzypt0lzypt0lz_241a87a131	.png	image/png	1564.29	https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/Gemini_Generated_Image_t0lzypt0lzypt0lz_241a87a131/Gemini_Generated_Image_t0lzypt0lzypt0lz_241a87a131.png	\N	@strapi-community/strapi-provider-upload-google-cloud-storage	\N	/1	2025-07-15 22:28:45.452	2025-07-15 22:28:45.452	\N	\N
+696	Gemini_Generated_Image_r6bu3br6bu3br6bu.png	\N	\N	2016	1802	{"large": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/large_Gemini_Generated_Image_r6bu3br6bu3br6bu_68dda23bd8/large_Gemini_Generated_Image_r6bu3br6bu3br6bu_68dda23bd8.png", "hash": "large_Gemini_Generated_Image_r6bu3br6bu3br6bu_68dda23bd8", "mime": "image/png", "name": "large_Gemini_Generated_Image_r6bu3br6bu3br6bu.png", "path": null, "size": 1750.28, "width": 1000, "height": 894}, "small": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/small_Gemini_Generated_Image_r6bu3br6bu3br6bu_68dda23bd8/small_Gemini_Generated_Image_r6bu3br6bu3br6bu_68dda23bd8.png", "hash": "small_Gemini_Generated_Image_r6bu3br6bu3br6bu_68dda23bd8", "mime": "image/png", "name": "small_Gemini_Generated_Image_r6bu3br6bu3br6bu.png", "path": null, "size": 441.99, "width": 500, "height": 447}, "medium": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/medium_Gemini_Generated_Image_r6bu3br6bu3br6bu_68dda23bd8/medium_Gemini_Generated_Image_r6bu3br6bu3br6bu_68dda23bd8.png", "hash": "medium_Gemini_Generated_Image_r6bu3br6bu3br6bu_68dda23bd8", "mime": "image/png", "name": "medium_Gemini_Generated_Image_r6bu3br6bu3br6bu.png", "path": null, "size": 966.55, "width": 750, "height": 670}, "thumbnail": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/thumbnail_Gemini_Generated_Image_r6bu3br6bu3br6bu_68dda23bd8/thumbnail_Gemini_Generated_Image_r6bu3br6bu3br6bu_68dda23bd8.png", "hash": "thumbnail_Gemini_Generated_Image_r6bu3br6bu3br6bu_68dda23bd8", "mime": "image/png", "name": "thumbnail_Gemini_Generated_Image_r6bu3br6bu3br6bu.png", "path": null, "size": 63.06, "width": 175, "height": 156}}	Gemini_Generated_Image_r6bu3br6bu3br6bu_68dda23bd8	.png	image/png	1741.04	https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/Gemini_Generated_Image_r6bu3br6bu3br6bu_68dda23bd8/Gemini_Generated_Image_r6bu3br6bu3br6bu_68dda23bd8.png	\N	@strapi-community/strapi-provider-upload-google-cloud-storage	\N	/1	2025-07-15 22:29:28.486	2025-07-15 22:29:28.486	\N	\N
+697	Gemini_Generated_Image_uejzh8uejzh8uejz.png	\N	\N	2040	1881	{"large": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/large_Gemini_Generated_Image_uejzh8uejzh8uejz_e3d07595ef/large_Gemini_Generated_Image_uejzh8uejzh8uejz_e3d07595ef.png", "hash": "large_Gemini_Generated_Image_uejzh8uejzh8uejz_e3d07595ef", "mime": "image/png", "name": "large_Gemini_Generated_Image_uejzh8uejzh8uejz.png", "path": null, "size": 1622.02, "width": 1000, "height": 922}, "small": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/small_Gemini_Generated_Image_uejzh8uejzh8uejz_e3d07595ef/small_Gemini_Generated_Image_uejzh8uejzh8uejz_e3d07595ef.png", "hash": "small_Gemini_Generated_Image_uejzh8uejzh8uejz_e3d07595ef", "mime": "image/png", "name": "small_Gemini_Generated_Image_uejzh8uejzh8uejz.png", "path": null, "size": 428.76, "width": 500, "height": 461}, "medium": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/medium_Gemini_Generated_Image_uejzh8uejzh8uejz_e3d07595ef/medium_Gemini_Generated_Image_uejzh8uejzh8uejz_e3d07595ef.png", "hash": "medium_Gemini_Generated_Image_uejzh8uejzh8uejz_e3d07595ef", "mime": "image/png", "name": "medium_Gemini_Generated_Image_uejzh8uejzh8uejz.png", "path": null, "size": 918.77, "width": 750, "height": 692}, "thumbnail": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/thumbnail_Gemini_Generated_Image_uejzh8uejzh8uejz_e3d07595ef/thumbnail_Gemini_Generated_Image_uejzh8uejzh8uejz_e3d07595ef.png", "hash": "thumbnail_Gemini_Generated_Image_uejzh8uejzh8uejz_e3d07595ef", "mime": "image/png", "name": "thumbnail_Gemini_Generated_Image_uejzh8uejzh8uejz.png", "path": null, "size": 59.3, "width": 169, "height": 156}}	Gemini_Generated_Image_uejzh8uejzh8uejz_e3d07595ef	.png	image/png	1471.00	https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/Gemini_Generated_Image_uejzh8uejzh8uejz_e3d07595ef/Gemini_Generated_Image_uejzh8uejzh8uejz_e3d07595ef.png	\N	@strapi-community/strapi-provider-upload-google-cloud-storage	\N	/1	2025-07-15 22:29:46.644	2025-07-15 22:29:46.644	\N	\N
+698	Gemini_Generated_Image_4ptsql4ptsql4pts.png	\N	\N	1893	2048	{"large": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/large_Gemini_Generated_Image_4ptsql4ptsql4pts_f8628e12a5/large_Gemini_Generated_Image_4ptsql4ptsql4pts_f8628e12a5.png", "hash": "large_Gemini_Generated_Image_4ptsql4ptsql4pts_f8628e12a5", "mime": "image/png", "name": "large_Gemini_Generated_Image_4ptsql4ptsql4pts.png", "path": null, "size": 2061.63, "width": 924, "height": 1000}, "small": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/small_Gemini_Generated_Image_4ptsql4ptsql4pts_f8628e12a5/small_Gemini_Generated_Image_4ptsql4ptsql4pts_f8628e12a5.png", "hash": "small_Gemini_Generated_Image_4ptsql4ptsql4pts_f8628e12a5", "mime": "image/png", "name": "small_Gemini_Generated_Image_4ptsql4ptsql4pts.png", "path": null, "size": 522.41, "width": 462, "height": 500}, "medium": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/medium_Gemini_Generated_Image_4ptsql4ptsql4pts_f8628e12a5/medium_Gemini_Generated_Image_4ptsql4ptsql4pts_f8628e12a5.png", "hash": "medium_Gemini_Generated_Image_4ptsql4ptsql4pts_f8628e12a5", "mime": "image/png", "name": "medium_Gemini_Generated_Image_4ptsql4ptsql4pts.png", "path": null, "size": 1156.07, "width": 693, "height": 750}, "thumbnail": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/thumbnail_Gemini_Generated_Image_4ptsql4ptsql4pts_f8628e12a5/thumbnail_Gemini_Generated_Image_4ptsql4ptsql4pts_f8628e12a5.png", "hash": "thumbnail_Gemini_Generated_Image_4ptsql4ptsql4pts_f8628e12a5", "mime": "image/png", "name": "thumbnail_Gemini_Generated_Image_4ptsql4ptsql4pts.png", "path": null, "size": 58.61, "width": 144, "height": 156}}	Gemini_Generated_Image_4ptsql4ptsql4pts_f8628e12a5	.png	image/png	1796.26	https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/Gemini_Generated_Image_4ptsql4ptsql4pts_f8628e12a5/Gemini_Generated_Image_4ptsql4ptsql4pts_f8628e12a5.png	\N	@strapi-community/strapi-provider-upload-google-cloud-storage	\N	/1	2025-07-15 22:30:19.866	2025-07-15 22:30:19.866	\N	\N
+699	Gemini_Generated_Image_nudgegnudgegnudg.png	\N	\N	2032	1806	{"large": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/large_Gemini_Generated_Image_nudgegnudgegnudg_fd6d4e17e0/large_Gemini_Generated_Image_nudgegnudgegnudg_fd6d4e17e0.png", "hash": "large_Gemini_Generated_Image_nudgegnudgegnudg_fd6d4e17e0", "mime": "image/png", "name": "large_Gemini_Generated_Image_nudgegnudgegnudg.png", "path": null, "size": 1789.38, "width": 1000, "height": 889}, "small": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/small_Gemini_Generated_Image_nudgegnudgegnudg_fd6d4e17e0/small_Gemini_Generated_Image_nudgegnudgegnudg_fd6d4e17e0.png", "hash": "small_Gemini_Generated_Image_nudgegnudgegnudg_fd6d4e17e0", "mime": "image/png", "name": "small_Gemini_Generated_Image_nudgegnudgegnudg.png", "path": null, "size": 454.57, "width": 500, "height": 444}, "medium": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/medium_Gemini_Generated_Image_nudgegnudgegnudg_fd6d4e17e0/medium_Gemini_Generated_Image_nudgegnudgegnudg_fd6d4e17e0.png", "hash": "medium_Gemini_Generated_Image_nudgegnudgegnudg_fd6d4e17e0", "mime": "image/png", "name": "medium_Gemini_Generated_Image_nudgegnudgegnudg.png", "path": null, "size": 1000.32, "width": 750, "height": 667}, "thumbnail": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/thumbnail_Gemini_Generated_Image_nudgegnudgegnudg_fd6d4e17e0/thumbnail_Gemini_Generated_Image_nudgegnudgegnudg_fd6d4e17e0.png", "hash": "thumbnail_Gemini_Generated_Image_nudgegnudgegnudg_fd6d4e17e0", "mime": "image/png", "name": "thumbnail_Gemini_Generated_Image_nudgegnudgegnudg.png", "path": null, "size": 63.68, "width": 176, "height": 156}}	Gemini_Generated_Image_nudgegnudgegnudg_fd6d4e17e0	.png	image/png	1829.57	https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/Gemini_Generated_Image_nudgegnudgegnudg_fd6d4e17e0/Gemini_Generated_Image_nudgegnudgegnudg_fd6d4e17e0.png	\N	@strapi-community/strapi-provider-upload-google-cloud-storage	\N	/1	2025-07-15 22:30:40.156	2025-07-15 22:30:40.156	\N	\N
+700	Gemini_Generated_Image_rur64orur64orur6.png	\N	\N	2048	1905	{"large": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/large_Gemini_Generated_Image_rur64orur64orur6_6202b2e0af/large_Gemini_Generated_Image_rur64orur64orur6_6202b2e0af.png", "hash": "large_Gemini_Generated_Image_rur64orur64orur6_6202b2e0af", "mime": "image/png", "name": "large_Gemini_Generated_Image_rur64orur64orur6.png", "path": null, "size": 1533.12, "width": 1000, "height": 930}, "small": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/small_Gemini_Generated_Image_rur64orur64orur6_6202b2e0af/small_Gemini_Generated_Image_rur64orur64orur6_6202b2e0af.png", "hash": "small_Gemini_Generated_Image_rur64orur64orur6_6202b2e0af", "mime": "image/png", "name": "small_Gemini_Generated_Image_rur64orur64orur6.png", "path": null, "size": 389.86, "width": 500, "height": 465}, "medium": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/medium_Gemini_Generated_Image_rur64orur64orur6_6202b2e0af/medium_Gemini_Generated_Image_rur64orur64orur6_6202b2e0af.png", "hash": "medium_Gemini_Generated_Image_rur64orur64orur6_6202b2e0af", "mime": "image/png", "name": "medium_Gemini_Generated_Image_rur64orur64orur6.png", "path": null, "size": 850.73, "width": 750, "height": 698}, "thumbnail": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/thumbnail_Gemini_Generated_Image_rur64orur64orur6_6202b2e0af/thumbnail_Gemini_Generated_Image_rur64orur64orur6_6202b2e0af.png", "hash": "thumbnail_Gemini_Generated_Image_rur64orur64orur6_6202b2e0af", "mime": "image/png", "name": "thumbnail_Gemini_Generated_Image_rur64orur64orur6.png", "path": null, "size": 54.29, "width": 168, "height": 156}}	Gemini_Generated_Image_rur64orur64orur6_6202b2e0af	.png	image/png	1573.61	https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/Gemini_Generated_Image_rur64orur64orur6_6202b2e0af/Gemini_Generated_Image_rur64orur64orur6_6202b2e0af.png	\N	@strapi-community/strapi-provider-upload-google-cloud-storage	\N	/1	2025-07-15 22:31:01.755	2025-07-15 22:31:01.755	\N	\N
+701	Gemini_Generated_Image_ihrixfihrixfihri.png	\N	\N	2048	1865	{"large": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/large_Gemini_Generated_Image_ihrixfihrixfihri_e935c91410/large_Gemini_Generated_Image_ihrixfihrixfihri_e935c91410.png", "hash": "large_Gemini_Generated_Image_ihrixfihrixfihri_e935c91410", "mime": "image/png", "name": "large_Gemini_Generated_Image_ihrixfihrixfihri.png", "path": null, "size": 1748.76, "width": 1000, "height": 911}, "small": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/small_Gemini_Generated_Image_ihrixfihrixfihri_e935c91410/small_Gemini_Generated_Image_ihrixfihrixfihri_e935c91410.png", "hash": "small_Gemini_Generated_Image_ihrixfihrixfihri_e935c91410", "mime": "image/png", "name": "small_Gemini_Generated_Image_ihrixfihrixfihri.png", "path": null, "size": 461.46, "width": 500, "height": 455}, "medium": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/medium_Gemini_Generated_Image_ihrixfihrixfihri_e935c91410/medium_Gemini_Generated_Image_ihrixfihrixfihri_e935c91410.png", "hash": "medium_Gemini_Generated_Image_ihrixfihrixfihri_e935c91410", "mime": "image/png", "name": "medium_Gemini_Generated_Image_ihrixfihrixfihri.png", "path": null, "size": 992, "width": 750, "height": 683}, "thumbnail": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/thumbnail_Gemini_Generated_Image_ihrixfihrixfihri_e935c91410/thumbnail_Gemini_Generated_Image_ihrixfihrixfihri_e935c91410.png", "hash": "thumbnail_Gemini_Generated_Image_ihrixfihrixfihri_e935c91410", "mime": "image/png", "name": "thumbnail_Gemini_Generated_Image_ihrixfihrixfihri.png", "path": null, "size": 64.82, "width": 171, "height": 156}}	Gemini_Generated_Image_ihrixfihrixfihri_e935c91410	.png	image/png	1406.62	https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/Gemini_Generated_Image_ihrixfihrixfihri_e935c91410/Gemini_Generated_Image_ihrixfihrixfihri_e935c91410.png	\N	@strapi-community/strapi-provider-upload-google-cloud-storage	\N	/1	2025-07-15 22:31:12.033	2025-07-15 22:31:12.033	\N	\N
+702	Gemini_Generated_Image_alhqtgalhqtgalhq.png	\N	\N	2048	1881	{"large": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/large_Gemini_Generated_Image_alhqtgalhqtgalhq_a800e921f1/large_Gemini_Generated_Image_alhqtgalhqtgalhq_a800e921f1.png", "hash": "large_Gemini_Generated_Image_alhqtgalhqtgalhq_a800e921f1", "mime": "image/png", "name": "large_Gemini_Generated_Image_alhqtgalhqtgalhq.png", "path": null, "size": 1640.41, "width": 1000, "height": 918}, "small": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/small_Gemini_Generated_Image_alhqtgalhqtgalhq_a800e921f1/small_Gemini_Generated_Image_alhqtgalhqtgalhq_a800e921f1.png", "hash": "small_Gemini_Generated_Image_alhqtgalhqtgalhq_a800e921f1", "mime": "image/png", "name": "small_Gemini_Generated_Image_alhqtgalhqtgalhq.png", "path": null, "size": 442.75, "width": 500, "height": 459}, "medium": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/medium_Gemini_Generated_Image_alhqtgalhqtgalhq_a800e921f1/medium_Gemini_Generated_Image_alhqtgalhqtgalhq_a800e921f1.png", "hash": "medium_Gemini_Generated_Image_alhqtgalhqtgalhq_a800e921f1", "mime": "image/png", "name": "medium_Gemini_Generated_Image_alhqtgalhqtgalhq.png", "path": null, "size": 938.3, "width": 750, "height": 689}, "thumbnail": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/thumbnail_Gemini_Generated_Image_alhqtgalhqtgalhq_a800e921f1/thumbnail_Gemini_Generated_Image_alhqtgalhqtgalhq_a800e921f1.png", "hash": "thumbnail_Gemini_Generated_Image_alhqtgalhqtgalhq_a800e921f1", "mime": "image/png", "name": "thumbnail_Gemini_Generated_Image_alhqtgalhqtgalhq.png", "path": null, "size": 63.49, "width": 170, "height": 156}}	Gemini_Generated_Image_alhqtgalhqtgalhq_a800e921f1	.png	image/png	1350.48	https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/Gemini_Generated_Image_alhqtgalhqtgalhq_a800e921f1/Gemini_Generated_Image_alhqtgalhqtgalhq_a800e921f1.png	\N	@strapi-community/strapi-provider-upload-google-cloud-storage	\N	/1	2025-07-15 22:31:33.462	2025-07-15 22:31:33.462	\N	\N
+703	Gemini_Generated_Image_6v8su36v8su36v8s.png	\N	\N	2048	1842	{"large": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/large_Gemini_Generated_Image_6v8su36v8su36v8s_c3a122805e/large_Gemini_Generated_Image_6v8su36v8su36v8s_c3a122805e.png", "hash": "large_Gemini_Generated_Image_6v8su36v8su36v8s_c3a122805e", "mime": "image/png", "name": "large_Gemini_Generated_Image_6v8su36v8su36v8s.png", "path": null, "size": 1951.43, "width": 1000, "height": 899}, "small": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/small_Gemini_Generated_Image_6v8su36v8su36v8s_c3a122805e/small_Gemini_Generated_Image_6v8su36v8su36v8s_c3a122805e.png", "hash": "small_Gemini_Generated_Image_6v8su36v8su36v8s_c3a122805e", "mime": "image/png", "name": "small_Gemini_Generated_Image_6v8su36v8su36v8s.png", "path": null, "size": 498.21, "width": 500, "height": 450}, "medium": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/medium_Gemini_Generated_Image_6v8su36v8su36v8s_c3a122805e/medium_Gemini_Generated_Image_6v8su36v8su36v8s_c3a122805e.png", "hash": "medium_Gemini_Generated_Image_6v8su36v8su36v8s_c3a122805e", "mime": "image/png", "name": "medium_Gemini_Generated_Image_6v8su36v8su36v8s.png", "path": null, "size": 1092.63, "width": 750, "height": 675}, "thumbnail": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/thumbnail_Gemini_Generated_Image_6v8su36v8su36v8s_c3a122805e/thumbnail_Gemini_Generated_Image_6v8su36v8su36v8s_c3a122805e.png", "hash": "thumbnail_Gemini_Generated_Image_6v8su36v8su36v8s_c3a122805e", "mime": "image/png", "name": "thumbnail_Gemini_Generated_Image_6v8su36v8su36v8s.png", "path": null, "size": 68.39, "width": 173, "height": 156}}	Gemini_Generated_Image_6v8su36v8su36v8s_c3a122805e	.png	image/png	1664.82	https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/Gemini_Generated_Image_6v8su36v8su36v8s_c3a122805e/Gemini_Generated_Image_6v8su36v8su36v8s_c3a122805e.png	\N	@strapi-community/strapi-provider-upload-google-cloud-storage	\N	/1	2025-07-15 22:31:50.638	2025-07-15 22:31:50.638	\N	\N
+704	Gemini_Generated_Image_yznxp4yznxp4yznx.png	\N	\N	2040	1889	{"large": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/large_Gemini_Generated_Image_yznxp4yznxp4yznx_3487de1905/large_Gemini_Generated_Image_yznxp4yznxp4yznx_3487de1905.png", "hash": "large_Gemini_Generated_Image_yznxp4yznxp4yznx_3487de1905", "mime": "image/png", "name": "large_Gemini_Generated_Image_yznxp4yznxp4yznx.png", "path": null, "size": 1789.27, "width": 1000, "height": 926}, "small": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/small_Gemini_Generated_Image_yznxp4yznxp4yznx_3487de1905/small_Gemini_Generated_Image_yznxp4yznxp4yznx_3487de1905.png", "hash": "small_Gemini_Generated_Image_yznxp4yznxp4yznx_3487de1905", "mime": "image/png", "name": "small_Gemini_Generated_Image_yznxp4yznxp4yznx.png", "path": null, "size": 464.25, "width": 500, "height": 463}, "medium": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/medium_Gemini_Generated_Image_yznxp4yznxp4yznx_3487de1905/medium_Gemini_Generated_Image_yznxp4yznxp4yznx_3487de1905.png", "hash": "medium_Gemini_Generated_Image_yznxp4yznxp4yznx_3487de1905", "mime": "image/png", "name": "medium_Gemini_Generated_Image_yznxp4yznxp4yznx.png", "path": null, "size": 1006.8, "width": 750, "height": 694}, "thumbnail": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/thumbnail_Gemini_Generated_Image_yznxp4yznxp4yznx_3487de1905/thumbnail_Gemini_Generated_Image_yznxp4yznxp4yznx_3487de1905.png", "hash": "thumbnail_Gemini_Generated_Image_yznxp4yznxp4yznx_3487de1905", "mime": "image/png", "name": "thumbnail_Gemini_Generated_Image_yznxp4yznxp4yznx.png", "path": null, "size": 62.46, "width": 168, "height": 156}}	Gemini_Generated_Image_yznxp4yznxp4yznx_3487de1905	.png	image/png	1635.29	https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/Gemini_Generated_Image_yznxp4yznxp4yznx_3487de1905/Gemini_Generated_Image_yznxp4yznxp4yznx_3487de1905.png	\N	@strapi-community/strapi-provider-upload-google-cloud-storage	\N	/1	2025-07-15 22:32:11.045	2025-07-15 22:32:11.045	\N	\N
+705	Gemini_Generated_Image_q0y4yxq0y4yxq0y4.png	\N	\N	2048	1881	{"large": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/large_Gemini_Generated_Image_q0y4yxq0y4yxq0y4_d9be820c53/large_Gemini_Generated_Image_q0y4yxq0y4yxq0y4_d9be820c53.png", "hash": "large_Gemini_Generated_Image_q0y4yxq0y4yxq0y4_d9be820c53", "mime": "image/png", "name": "large_Gemini_Generated_Image_q0y4yxq0y4yxq0y4.png", "path": null, "size": 1716.45, "width": 1000, "height": 918}, "small": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/small_Gemini_Generated_Image_q0y4yxq0y4yxq0y4_d9be820c53/small_Gemini_Generated_Image_q0y4yxq0y4yxq0y4_d9be820c53.png", "hash": "small_Gemini_Generated_Image_q0y4yxq0y4yxq0y4_d9be820c53", "mime": "image/png", "name": "small_Gemini_Generated_Image_q0y4yxq0y4yxq0y4.png", "path": null, "size": 423.92, "width": 500, "height": 459}, "medium": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/medium_Gemini_Generated_Image_q0y4yxq0y4yxq0y4_d9be820c53/medium_Gemini_Generated_Image_q0y4yxq0y4yxq0y4_d9be820c53.png", "hash": "medium_Gemini_Generated_Image_q0y4yxq0y4yxq0y4_d9be820c53", "mime": "image/png", "name": "medium_Gemini_Generated_Image_q0y4yxq0y4yxq0y4.png", "path": null, "size": 942.51, "width": 750, "height": 689}, "thumbnail": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/thumbnail_Gemini_Generated_Image_q0y4yxq0y4yxq0y4_d9be820c53/thumbnail_Gemini_Generated_Image_q0y4yxq0y4yxq0y4_d9be820c53.png", "hash": "thumbnail_Gemini_Generated_Image_q0y4yxq0y4yxq0y4_d9be820c53", "mime": "image/png", "name": "thumbnail_Gemini_Generated_Image_q0y4yxq0y4yxq0y4.png", "path": null, "size": 56.21, "width": 170, "height": 156}}	Gemini_Generated_Image_q0y4yxq0y4yxq0y4_d9be820c53	.png	image/png	1940.91	https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/Gemini_Generated_Image_q0y4yxq0y4yxq0y4_d9be820c53/Gemini_Generated_Image_q0y4yxq0y4yxq0y4_d9be820c53.png	\N	@strapi-community/strapi-provider-upload-google-cloud-storage	\N	/1	2025-07-15 22:32:29.948	2025-07-15 22:32:29.948	\N	\N
+706	Gemini_Generated_Image_ce3a7ice3a7ice3a.png	\N	\N	2048	1818	{"large": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/large_Gemini_Generated_Image_ce3a7ice3a7ice3a_085ae9aa05/large_Gemini_Generated_Image_ce3a7ice3a7ice3a_085ae9aa05.png", "hash": "large_Gemini_Generated_Image_ce3a7ice3a7ice3a_085ae9aa05", "mime": "image/png", "name": "large_Gemini_Generated_Image_ce3a7ice3a7ice3a.png", "path": null, "size": 1820.15, "width": 1000, "height": 888}, "small": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/small_Gemini_Generated_Image_ce3a7ice3a7ice3a_085ae9aa05/small_Gemini_Generated_Image_ce3a7ice3a7ice3a_085ae9aa05.png", "hash": "small_Gemini_Generated_Image_ce3a7ice3a7ice3a_085ae9aa05", "mime": "image/png", "name": "small_Gemini_Generated_Image_ce3a7ice3a7ice3a.png", "path": null, "size": 481.07, "width": 500, "height": 444}, "medium": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/medium_Gemini_Generated_Image_ce3a7ice3a7ice3a_085ae9aa05/medium_Gemini_Generated_Image_ce3a7ice3a7ice3a_085ae9aa05.png", "hash": "medium_Gemini_Generated_Image_ce3a7ice3a7ice3a_085ae9aa05", "mime": "image/png", "name": "medium_Gemini_Generated_Image_ce3a7ice3a7ice3a.png", "path": null, "size": 1032.6, "width": 750, "height": 666}, "thumbnail": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/thumbnail_Gemini_Generated_Image_ce3a7ice3a7ice3a_085ae9aa05/thumbnail_Gemini_Generated_Image_ce3a7ice3a7ice3a_085ae9aa05.png", "hash": "thumbnail_Gemini_Generated_Image_ce3a7ice3a7ice3a_085ae9aa05", "mime": "image/png", "name": "thumbnail_Gemini_Generated_Image_ce3a7ice3a7ice3a.png", "path": null, "size": 70.69, "width": 176, "height": 156}}	Gemini_Generated_Image_ce3a7ice3a7ice3a_085ae9aa05	.png	image/png	1404.25	https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/Gemini_Generated_Image_ce3a7ice3a7ice3a_085ae9aa05/Gemini_Generated_Image_ce3a7ice3a7ice3a_085ae9aa05.png	\N	@strapi-community/strapi-provider-upload-google-cloud-storage	\N	/1	2025-07-15 22:33:03.848	2025-07-15 22:33:03.848	\N	\N
+707	Gemini_Generated_Image_wm84j2wm84j2wm84.png	\N	\N	1889	2048	{"large": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/large_Gemini_Generated_Image_wm84j2wm84j2wm84_2fc48b5500/large_Gemini_Generated_Image_wm84j2wm84j2wm84_2fc48b5500.png", "hash": "large_Gemini_Generated_Image_wm84j2wm84j2wm84_2fc48b5500", "mime": "image/png", "name": "large_Gemini_Generated_Image_wm84j2wm84j2wm84.png", "path": null, "size": 1619.04, "width": 922, "height": 1000}, "small": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/small_Gemini_Generated_Image_wm84j2wm84j2wm84_2fc48b5500/small_Gemini_Generated_Image_wm84j2wm84j2wm84_2fc48b5500.png", "hash": "small_Gemini_Generated_Image_wm84j2wm84j2wm84_2fc48b5500", "mime": "image/png", "name": "small_Gemini_Generated_Image_wm84j2wm84j2wm84.png", "path": null, "size": 417.61, "width": 461, "height": 500}, "medium": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/medium_Gemini_Generated_Image_wm84j2wm84j2wm84_2fc48b5500/medium_Gemini_Generated_Image_wm84j2wm84j2wm84_2fc48b5500.png", "hash": "medium_Gemini_Generated_Image_wm84j2wm84j2wm84_2fc48b5500", "mime": "image/png", "name": "medium_Gemini_Generated_Image_wm84j2wm84j2wm84.png", "path": null, "size": 914.24, "width": 692, "height": 750}, "thumbnail": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/thumbnail_Gemini_Generated_Image_wm84j2wm84j2wm84_2fc48b5500/thumbnail_Gemini_Generated_Image_wm84j2wm84j2wm84_2fc48b5500.png", "hash": "thumbnail_Gemini_Generated_Image_wm84j2wm84j2wm84_2fc48b5500", "mime": "image/png", "name": "thumbnail_Gemini_Generated_Image_wm84j2wm84j2wm84.png", "path": null, "size": 48.24, "width": 144, "height": 156}}	Gemini_Generated_Image_wm84j2wm84j2wm84_2fc48b5500	.png	image/png	1515.81	https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/Gemini_Generated_Image_wm84j2wm84j2wm84_2fc48b5500/Gemini_Generated_Image_wm84j2wm84j2wm84_2fc48b5500.png	\N	@strapi-community/strapi-provider-upload-google-cloud-storage	\N	/1	2025-07-15 23:37:30.827	2025-07-15 23:37:30.827	\N	\N
+708	Gemini_Generated_Image_s17n45s17n45s17n (1).png	\N	\N	1897	2016	{"large": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/large_Gemini_Generated_Image_s17n45s17n45s17n_1_f1ebb8731b/large_Gemini_Generated_Image_s17n45s17n45s17n_1_f1ebb8731b.png", "hash": "large_Gemini_Generated_Image_s17n45s17n45s17n_1_f1ebb8731b", "mime": "image/png", "name": "large_Gemini_Generated_Image_s17n45s17n45s17n (1).png", "path": null, "size": 1776.24, "width": 941, "height": 1000}, "small": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/small_Gemini_Generated_Image_s17n45s17n45s17n_1_f1ebb8731b/small_Gemini_Generated_Image_s17n45s17n45s17n_1_f1ebb8731b.png", "hash": "small_Gemini_Generated_Image_s17n45s17n45s17n_1_f1ebb8731b", "mime": "image/png", "name": "small_Gemini_Generated_Image_s17n45s17n45s17n (1).png", "path": null, "size": 458.34, "width": 470, "height": 500}, "medium": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/medium_Gemini_Generated_Image_s17n45s17n45s17n_1_f1ebb8731b/medium_Gemini_Generated_Image_s17n45s17n45s17n_1_f1ebb8731b.png", "hash": "medium_Gemini_Generated_Image_s17n45s17n45s17n_1_f1ebb8731b", "mime": "image/png", "name": "medium_Gemini_Generated_Image_s17n45s17n45s17n (1).png", "path": null, "size": 999.06, "width": 706, "height": 750}, "thumbnail": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/thumbnail_Gemini_Generated_Image_s17n45s17n45s17n_1_f1ebb8731b/thumbnail_Gemini_Generated_Image_s17n45s17n45s17n_1_f1ebb8731b.png", "hash": "thumbnail_Gemini_Generated_Image_s17n45s17n45s17n_1_f1ebb8731b", "mime": "image/png", "name": "thumbnail_Gemini_Generated_Image_s17n45s17n45s17n (1).png", "path": null, "size": 54.75, "width": 147, "height": 156}}	Gemini_Generated_Image_s17n45s17n45s17n_1_f1ebb8731b	.png	image/png	1641.21	https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/Gemini_Generated_Image_s17n45s17n45s17n_1_f1ebb8731b/Gemini_Generated_Image_s17n45s17n45s17n_1_f1ebb8731b.png	\N	@strapi-community/strapi-provider-upload-google-cloud-storage	\N	/1	2025-07-15 23:37:44.75	2025-07-15 23:37:44.75	\N	\N
+709	Gemini_Generated_Image_x0ryo7x0ryo7x0ry.png	\N	\N	1857	2048	{"large": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/large_Gemini_Generated_Image_x0ryo7x0ryo7x0ry_36bf1e1c54/large_Gemini_Generated_Image_x0ryo7x0ryo7x0ry_36bf1e1c54.png", "hash": "large_Gemini_Generated_Image_x0ryo7x0ryo7x0ry_36bf1e1c54", "mime": "image/png", "name": "large_Gemini_Generated_Image_x0ryo7x0ryo7x0ry.png", "path": null, "size": 1406.72, "width": 907, "height": 1000}, "small": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/small_Gemini_Generated_Image_x0ryo7x0ryo7x0ry_36bf1e1c54/small_Gemini_Generated_Image_x0ryo7x0ryo7x0ry_36bf1e1c54.png", "hash": "small_Gemini_Generated_Image_x0ryo7x0ryo7x0ry_36bf1e1c54", "mime": "image/png", "name": "small_Gemini_Generated_Image_x0ryo7x0ryo7x0ry.png", "path": null, "size": 366.58, "width": 453, "height": 500}, "medium": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/medium_Gemini_Generated_Image_x0ryo7x0ryo7x0ry_36bf1e1c54/medium_Gemini_Generated_Image_x0ryo7x0ryo7x0ry_36bf1e1c54.png", "hash": "medium_Gemini_Generated_Image_x0ryo7x0ryo7x0ry_36bf1e1c54", "mime": "image/png", "name": "medium_Gemini_Generated_Image_x0ryo7x0ryo7x0ry.png", "path": null, "size": 795.87, "width": 680, "height": 750}, "thumbnail": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/thumbnail_Gemini_Generated_Image_x0ryo7x0ryo7x0ry_36bf1e1c54/thumbnail_Gemini_Generated_Image_x0ryo7x0ryo7x0ry_36bf1e1c54.png", "hash": "thumbnail_Gemini_Generated_Image_x0ryo7x0ryo7x0ry_36bf1e1c54", "mime": "image/png", "name": "thumbnail_Gemini_Generated_Image_x0ryo7x0ryo7x0ry.png", "path": null, "size": 41.28, "width": 141, "height": 156}}	Gemini_Generated_Image_x0ryo7x0ryo7x0ry_36bf1e1c54	.png	image/png	1615.47	https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/Gemini_Generated_Image_x0ryo7x0ryo7x0ry_36bf1e1c54/Gemini_Generated_Image_x0ryo7x0ryo7x0ry_36bf1e1c54.png	\N	@strapi-community/strapi-provider-upload-google-cloud-storage	\N	/1	2025-07-16 00:01:09.058	2025-07-16 00:01:09.058	\N	\N
+710	Gemini_Generated_Image_akv2caakv2caakv2 (1).png	\N	\N	1977	1905	{"large": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/large_Gemini_Generated_Image_akv2caakv2caakv2_1_d9b7566513/large_Gemini_Generated_Image_akv2caakv2caakv2_1_d9b7566513.png", "hash": "large_Gemini_Generated_Image_akv2caakv2caakv2_1_d9b7566513", "mime": "image/png", "name": "large_Gemini_Generated_Image_akv2caakv2caakv2 (1).png", "path": null, "size": 1948.2, "width": 1000, "height": 964}, "small": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/small_Gemini_Generated_Image_akv2caakv2caakv2_1_d9b7566513/small_Gemini_Generated_Image_akv2caakv2caakv2_1_d9b7566513.png", "hash": "small_Gemini_Generated_Image_akv2caakv2caakv2_1_d9b7566513", "mime": "image/png", "name": "small_Gemini_Generated_Image_akv2caakv2caakv2 (1).png", "path": null, "size": 497.17, "width": 500, "height": 482}, "medium": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/medium_Gemini_Generated_Image_akv2caakv2caakv2_1_d9b7566513/medium_Gemini_Generated_Image_akv2caakv2caakv2_1_d9b7566513.png", "hash": "medium_Gemini_Generated_Image_akv2caakv2caakv2_1_d9b7566513", "mime": "image/png", "name": "medium_Gemini_Generated_Image_akv2caakv2caakv2 (1).png", "path": null, "size": 1094.09, "width": 750, "height": 723}, "thumbnail": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/thumbnail_Gemini_Generated_Image_akv2caakv2caakv2_1_d9b7566513/thumbnail_Gemini_Generated_Image_akv2caakv2caakv2_1_d9b7566513.png", "hash": "thumbnail_Gemini_Generated_Image_akv2caakv2caakv2_1_d9b7566513", "mime": "image/png", "name": "thumbnail_Gemini_Generated_Image_akv2caakv2caakv2 (1).png", "path": null, "size": 61.4, "width": 162, "height": 156}}	Gemini_Generated_Image_akv2caakv2caakv2_1_d9b7566513	.png	image/png	1495.28	https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/Gemini_Generated_Image_akv2caakv2caakv2_1_d9b7566513/Gemini_Generated_Image_akv2caakv2caakv2_1_d9b7566513.png	\N	@strapi-community/strapi-provider-upload-google-cloud-storage	\N	/1	2025-07-16 00:01:21.482	2025-07-16 00:01:21.482	\N	\N
+711	Gemini_Generated_Image_mvuc9xmvuc9xmvuc.png	\N	\N	1992	1913	{"large": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/large_Gemini_Generated_Image_mvuc9xmvuc9xmvuc_3369d6e97d/large_Gemini_Generated_Image_mvuc9xmvuc9xmvuc_3369d6e97d.png", "hash": "large_Gemini_Generated_Image_mvuc9xmvuc9xmvuc_3369d6e97d", "mime": "image/png", "name": "large_Gemini_Generated_Image_mvuc9xmvuc9xmvuc.png", "path": null, "size": 2008.27, "width": 1000, "height": 960}, "small": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/small_Gemini_Generated_Image_mvuc9xmvuc9xmvuc_3369d6e97d/small_Gemini_Generated_Image_mvuc9xmvuc9xmvuc_3369d6e97d.png", "hash": "small_Gemini_Generated_Image_mvuc9xmvuc9xmvuc_3369d6e97d", "mime": "image/png", "name": "small_Gemini_Generated_Image_mvuc9xmvuc9xmvuc.png", "path": null, "size": 510.54, "width": 500, "height": 480}, "medium": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/medium_Gemini_Generated_Image_mvuc9xmvuc9xmvuc_3369d6e97d/medium_Gemini_Generated_Image_mvuc9xmvuc9xmvuc_3369d6e97d.png", "hash": "medium_Gemini_Generated_Image_mvuc9xmvuc9xmvuc_3369d6e97d", "mime": "image/png", "name": "medium_Gemini_Generated_Image_mvuc9xmvuc9xmvuc.png", "path": null, "size": 1128.29, "width": 750, "height": 720}, "thumbnail": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/thumbnail_Gemini_Generated_Image_mvuc9xmvuc9xmvuc_3369d6e97d/thumbnail_Gemini_Generated_Image_mvuc9xmvuc9xmvuc_3369d6e97d.png", "hash": "thumbnail_Gemini_Generated_Image_mvuc9xmvuc9xmvuc_3369d6e97d", "mime": "image/png", "name": "thumbnail_Gemini_Generated_Image_mvuc9xmvuc9xmvuc.png", "path": null, "size": 62.45, "width": 162, "height": 156}}	Gemini_Generated_Image_mvuc9xmvuc9xmvuc_3369d6e97d	.png	image/png	1785.36	https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/Gemini_Generated_Image_mvuc9xmvuc9xmvuc_3369d6e97d/Gemini_Generated_Image_mvuc9xmvuc9xmvuc_3369d6e97d.png	\N	@strapi-community/strapi-provider-upload-google-cloud-storage	\N	/1	2025-07-16 00:01:43.475	2025-07-16 00:01:43.475	\N	\N
+712	Gemini_Generated_Image_v0d7f1v0d7f1v0d7.png	\N	\N	2048	2048	{"large": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/large_Gemini_Generated_Image_v0d7f1v0d7f1v0d7_b322ddd28f/large_Gemini_Generated_Image_v0d7f1v0d7f1v0d7_b322ddd28f.png", "hash": "large_Gemini_Generated_Image_v0d7f1v0d7f1v0d7_b322ddd28f", "mime": "image/png", "name": "large_Gemini_Generated_Image_v0d7f1v0d7f1v0d7.png", "path": null, "size": 1977.43, "width": 1000, "height": 1000}, "small": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/small_Gemini_Generated_Image_v0d7f1v0d7f1v0d7_b322ddd28f/small_Gemini_Generated_Image_v0d7f1v0d7f1v0d7_b322ddd28f.png", "hash": "small_Gemini_Generated_Image_v0d7f1v0d7f1v0d7_b322ddd28f", "mime": "image/png", "name": "small_Gemini_Generated_Image_v0d7f1v0d7f1v0d7.png", "path": null, "size": 507.71, "width": 500, "height": 500}, "medium": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/medium_Gemini_Generated_Image_v0d7f1v0d7f1v0d7_b322ddd28f/medium_Gemini_Generated_Image_v0d7f1v0d7f1v0d7_b322ddd28f.png", "hash": "medium_Gemini_Generated_Image_v0d7f1v0d7f1v0d7_b322ddd28f", "mime": "image/png", "name": "medium_Gemini_Generated_Image_v0d7f1v0d7f1v0d7.png", "path": null, "size": 1107.66, "width": 750, "height": 750}, "thumbnail": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/thumbnail_Gemini_Generated_Image_v0d7f1v0d7f1v0d7_b322ddd28f/thumbnail_Gemini_Generated_Image_v0d7f1v0d7f1v0d7_b322ddd28f.png", "hash": "thumbnail_Gemini_Generated_Image_v0d7f1v0d7f1v0d7_b322ddd28f", "mime": "image/png", "name": "thumbnail_Gemini_Generated_Image_v0d7f1v0d7f1v0d7.png", "path": null, "size": 58.72, "width": 156, "height": 156}}	Gemini_Generated_Image_v0d7f1v0d7f1v0d7_b322ddd28f	.png	image/png	2125.76	https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/Gemini_Generated_Image_v0d7f1v0d7f1v0d7_b322ddd28f/Gemini_Generated_Image_v0d7f1v0d7f1v0d7_b322ddd28f.png	\N	@strapi-community/strapi-provider-upload-google-cloud-storage	\N	/1	2025-07-16 00:02:10.111	2025-07-16 00:02:10.111	\N	\N
+713	Gemini_Generated_Image_rbmj12rbmj12rbmj.png	\N	\N	2008	1897	{"large": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/large_Gemini_Generated_Image_rbmj12rbmj12rbmj_1a9323c208/large_Gemini_Generated_Image_rbmj12rbmj12rbmj_1a9323c208.png", "hash": "large_Gemini_Generated_Image_rbmj12rbmj12rbmj_1a9323c208", "mime": "image/png", "name": "large_Gemini_Generated_Image_rbmj12rbmj12rbmj.png", "path": null, "size": 1925.04, "width": 1000, "height": 945}, "small": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/small_Gemini_Generated_Image_rbmj12rbmj12rbmj_1a9323c208/small_Gemini_Generated_Image_rbmj12rbmj12rbmj_1a9323c208.png", "hash": "small_Gemini_Generated_Image_rbmj12rbmj12rbmj_1a9323c208", "mime": "image/png", "name": "small_Gemini_Generated_Image_rbmj12rbmj12rbmj.png", "path": null, "size": 497.03, "width": 500, "height": 472}, "medium": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/medium_Gemini_Generated_Image_rbmj12rbmj12rbmj_1a9323c208/medium_Gemini_Generated_Image_rbmj12rbmj12rbmj_1a9323c208.png", "hash": "medium_Gemini_Generated_Image_rbmj12rbmj12rbmj_1a9323c208", "mime": "image/png", "name": "medium_Gemini_Generated_Image_rbmj12rbmj12rbmj.png", "path": null, "size": 1081.47, "width": 750, "height": 709}, "thumbnail": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/thumbnail_Gemini_Generated_Image_rbmj12rbmj12rbmj_1a9323c208/thumbnail_Gemini_Generated_Image_rbmj12rbmj12rbmj_1a9323c208.png", "hash": "thumbnail_Gemini_Generated_Image_rbmj12rbmj12rbmj_1a9323c208", "mime": "image/png", "name": "thumbnail_Gemini_Generated_Image_rbmj12rbmj12rbmj.png", "path": null, "size": 63.62, "width": 165, "height": 156}}	Gemini_Generated_Image_rbmj12rbmj12rbmj_1a9323c208	.png	image/png	1452.91	https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/Gemini_Generated_Image_rbmj12rbmj12rbmj_1a9323c208/Gemini_Generated_Image_rbmj12rbmj12rbmj_1a9323c208.png	\N	@strapi-community/strapi-provider-upload-google-cloud-storage	\N	/1	2025-07-16 00:02:26.588	2025-07-16 00:02:26.588	\N	\N
+714	Gemini_Generated_Image_gphm61gphm61gphm.png	\N	\N	2024	1873	{"large": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/large_Gemini_Generated_Image_gphm61gphm61gphm_83e8d54d31/large_Gemini_Generated_Image_gphm61gphm61gphm_83e8d54d31.png", "hash": "large_Gemini_Generated_Image_gphm61gphm61gphm_83e8d54d31", "mime": "image/png", "name": "large_Gemini_Generated_Image_gphm61gphm61gphm.png", "path": null, "size": 1577.37, "width": 1000, "height": 925}, "small": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/small_Gemini_Generated_Image_gphm61gphm61gphm_83e8d54d31/small_Gemini_Generated_Image_gphm61gphm61gphm_83e8d54d31.png", "hash": "small_Gemini_Generated_Image_gphm61gphm61gphm_83e8d54d31", "mime": "image/png", "name": "small_Gemini_Generated_Image_gphm61gphm61gphm.png", "path": null, "size": 402.91, "width": 500, "height": 463}, "medium": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/medium_Gemini_Generated_Image_gphm61gphm61gphm_83e8d54d31/medium_Gemini_Generated_Image_gphm61gphm61gphm_83e8d54d31.png", "hash": "medium_Gemini_Generated_Image_gphm61gphm61gphm_83e8d54d31", "mime": "image/png", "name": "medium_Gemini_Generated_Image_gphm61gphm61gphm.png", "path": null, "size": 880.98, "width": 750, "height": 694}, "thumbnail": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/thumbnail_Gemini_Generated_Image_gphm61gphm61gphm_83e8d54d31/thumbnail_Gemini_Generated_Image_gphm61gphm61gphm_83e8d54d31.png", "hash": "thumbnail_Gemini_Generated_Image_gphm61gphm61gphm_83e8d54d31", "mime": "image/png", "name": "thumbnail_Gemini_Generated_Image_gphm61gphm61gphm.png", "path": null, "size": 51.15, "width": 169, "height": 156}}	Gemini_Generated_Image_gphm61gphm61gphm_83e8d54d31	.png	image/png	1618.18	https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/Gemini_Generated_Image_gphm61gphm61gphm_83e8d54d31/Gemini_Generated_Image_gphm61gphm61gphm_83e8d54d31.png	\N	@strapi-community/strapi-provider-upload-google-cloud-storage	\N	/1	2025-07-16 00:02:49.19	2025-07-16 00:02:49.19	\N	\N
+715	Gemini_Generated_Image_tzj1z2tzj1z2tzj1.png	\N	\N	2048	2048	{"large": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/large_Gemini_Generated_Image_tzj1z2tzj1z2tzj1_a4c6fe114c/large_Gemini_Generated_Image_tzj1z2tzj1z2tzj1_a4c6fe114c.png", "hash": "large_Gemini_Generated_Image_tzj1z2tzj1z2tzj1_a4c6fe114c", "mime": "image/png", "name": "large_Gemini_Generated_Image_tzj1z2tzj1z2tzj1.png", "path": null, "size": 1721.05, "width": 1000, "height": 1000}, "small": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/small_Gemini_Generated_Image_tzj1z2tzj1z2tzj1_a4c6fe114c/small_Gemini_Generated_Image_tzj1z2tzj1z2tzj1_a4c6fe114c.png", "hash": "small_Gemini_Generated_Image_tzj1z2tzj1z2tzj1_a4c6fe114c", "mime": "image/png", "name": "small_Gemini_Generated_Image_tzj1z2tzj1z2tzj1.png", "path": null, "size": 455.64, "width": 500, "height": 500}, "medium": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/medium_Gemini_Generated_Image_tzj1z2tzj1z2tzj1_a4c6fe114c/medium_Gemini_Generated_Image_tzj1z2tzj1z2tzj1_a4c6fe114c.png", "hash": "medium_Gemini_Generated_Image_tzj1z2tzj1z2tzj1_a4c6fe114c", "mime": "image/png", "name": "medium_Gemini_Generated_Image_tzj1z2tzj1z2tzj1.png", "path": null, "size": 973.95, "width": 750, "height": 750}, "thumbnail": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/thumbnail_Gemini_Generated_Image_tzj1z2tzj1z2tzj1_a4c6fe114c/thumbnail_Gemini_Generated_Image_tzj1z2tzj1z2tzj1_a4c6fe114c.png", "hash": "thumbnail_Gemini_Generated_Image_tzj1z2tzj1z2tzj1_a4c6fe114c", "mime": "image/png", "name": "thumbnail_Gemini_Generated_Image_tzj1z2tzj1z2tzj1.png", "path": null, "size": 54.3, "width": 156, "height": 156}}	Gemini_Generated_Image_tzj1z2tzj1z2tzj1_a4c6fe114c	.png	image/png	1369.16	https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/Gemini_Generated_Image_tzj1z2tzj1z2tzj1_a4c6fe114c/Gemini_Generated_Image_tzj1z2tzj1z2tzj1_a4c6fe114c.png	\N	@strapi-community/strapi-provider-upload-google-cloud-storage	\N	/1	2025-07-16 00:03:05.543	2025-07-16 00:03:05.543	\N	\N
+716	Gemini_Generated_Image_s17n45s17n45s17n (1).png	\N	\N	1897	2016	{"large": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/large_Gemini_Generated_Image_s17n45s17n45s17n_1_3445f51425/large_Gemini_Generated_Image_s17n45s17n45s17n_1_3445f51425.png", "hash": "large_Gemini_Generated_Image_s17n45s17n45s17n_1_3445f51425", "mime": "image/png", "name": "large_Gemini_Generated_Image_s17n45s17n45s17n (1).png", "path": null, "size": 1776.24, "width": 941, "height": 1000}, "small": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/small_Gemini_Generated_Image_s17n45s17n45s17n_1_3445f51425/small_Gemini_Generated_Image_s17n45s17n45s17n_1_3445f51425.png", "hash": "small_Gemini_Generated_Image_s17n45s17n45s17n_1_3445f51425", "mime": "image/png", "name": "small_Gemini_Generated_Image_s17n45s17n45s17n (1).png", "path": null, "size": 458.34, "width": 470, "height": 500}, "medium": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/medium_Gemini_Generated_Image_s17n45s17n45s17n_1_3445f51425/medium_Gemini_Generated_Image_s17n45s17n45s17n_1_3445f51425.png", "hash": "medium_Gemini_Generated_Image_s17n45s17n45s17n_1_3445f51425", "mime": "image/png", "name": "medium_Gemini_Generated_Image_s17n45s17n45s17n (1).png", "path": null, "size": 999.06, "width": 706, "height": 750}, "thumbnail": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/thumbnail_Gemini_Generated_Image_s17n45s17n45s17n_1_3445f51425/thumbnail_Gemini_Generated_Image_s17n45s17n45s17n_1_3445f51425.png", "hash": "thumbnail_Gemini_Generated_Image_s17n45s17n45s17n_1_3445f51425", "mime": "image/png", "name": "thumbnail_Gemini_Generated_Image_s17n45s17n45s17n (1).png", "path": null, "size": 54.75, "width": 147, "height": 156}}	Gemini_Generated_Image_s17n45s17n45s17n_1_3445f51425	.png	image/png	1641.21	https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/Gemini_Generated_Image_s17n45s17n45s17n_1_3445f51425/Gemini_Generated_Image_s17n45s17n45s17n_1_3445f51425.png	\N	@strapi-community/strapi-provider-upload-google-cloud-storage	\N	/1	2025-07-16 00:03:21.789	2025-07-16 00:03:21.789	\N	\N
+717	Gemini_Generated_Image_v0d7f1v0d7f1v0d7.png	\N	\N	2048	2048	{"large": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/large_Gemini_Generated_Image_v0d7f1v0d7f1v0d7_0ad9239fba/large_Gemini_Generated_Image_v0d7f1v0d7f1v0d7_0ad9239fba.png", "hash": "large_Gemini_Generated_Image_v0d7f1v0d7f1v0d7_0ad9239fba", "mime": "image/png", "name": "large_Gemini_Generated_Image_v0d7f1v0d7f1v0d7.png", "path": null, "size": 1977.43, "width": 1000, "height": 1000}, "small": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/small_Gemini_Generated_Image_v0d7f1v0d7f1v0d7_0ad9239fba/small_Gemini_Generated_Image_v0d7f1v0d7f1v0d7_0ad9239fba.png", "hash": "small_Gemini_Generated_Image_v0d7f1v0d7f1v0d7_0ad9239fba", "mime": "image/png", "name": "small_Gemini_Generated_Image_v0d7f1v0d7f1v0d7.png", "path": null, "size": 507.71, "width": 500, "height": 500}, "medium": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/medium_Gemini_Generated_Image_v0d7f1v0d7f1v0d7_0ad9239fba/medium_Gemini_Generated_Image_v0d7f1v0d7f1v0d7_0ad9239fba.png", "hash": "medium_Gemini_Generated_Image_v0d7f1v0d7f1v0d7_0ad9239fba", "mime": "image/png", "name": "medium_Gemini_Generated_Image_v0d7f1v0d7f1v0d7.png", "path": null, "size": 1107.66, "width": 750, "height": 750}, "thumbnail": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/thumbnail_Gemini_Generated_Image_v0d7f1v0d7f1v0d7_0ad9239fba/thumbnail_Gemini_Generated_Image_v0d7f1v0d7f1v0d7_0ad9239fba.png", "hash": "thumbnail_Gemini_Generated_Image_v0d7f1v0d7f1v0d7_0ad9239fba", "mime": "image/png", "name": "thumbnail_Gemini_Generated_Image_v0d7f1v0d7f1v0d7.png", "path": null, "size": 58.72, "width": 156, "height": 156}}	Gemini_Generated_Image_v0d7f1v0d7f1v0d7_0ad9239fba	.png	image/png	2125.76	https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/Gemini_Generated_Image_v0d7f1v0d7f1v0d7_0ad9239fba/Gemini_Generated_Image_v0d7f1v0d7f1v0d7_0ad9239fba.png	\N	@strapi-community/strapi-provider-upload-google-cloud-storage	\N	/1	2025-07-16 00:03:30.762	2025-07-16 00:03:30.762	\N	\N
+718	Gemini_Generated_Image_ij9228ij9228ij92.png	\N	\N	1842	2048	{"large": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/large_Gemini_Generated_Image_ij9228ij9228ij92_542bb9c06b/large_Gemini_Generated_Image_ij9228ij9228ij92_542bb9c06b.png", "hash": "large_Gemini_Generated_Image_ij9228ij9228ij92_542bb9c06b", "mime": "image/png", "name": "large_Gemini_Generated_Image_ij9228ij9228ij92.png", "path": null, "size": 1492.59, "width": 899, "height": 1000}, "small": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/small_Gemini_Generated_Image_ij9228ij9228ij92_542bb9c06b/small_Gemini_Generated_Image_ij9228ij9228ij92_542bb9c06b.png", "hash": "small_Gemini_Generated_Image_ij9228ij9228ij92_542bb9c06b", "mime": "image/png", "name": "small_Gemini_Generated_Image_ij9228ij9228ij92.png", "path": null, "size": 409.56, "width": 450, "height": 500}, "medium": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/medium_Gemini_Generated_Image_ij9228ij9228ij92_542bb9c06b/medium_Gemini_Generated_Image_ij9228ij9228ij92_542bb9c06b.png", "hash": "medium_Gemini_Generated_Image_ij9228ij9228ij92_542bb9c06b", "mime": "image/png", "name": "medium_Gemini_Generated_Image_ij9228ij9228ij92.png", "path": null, "size": 859.08, "width": 675, "height": 750}, "thumbnail": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/thumbnail_Gemini_Generated_Image_ij9228ij9228ij92_542bb9c06b/thumbnail_Gemini_Generated_Image_ij9228ij9228ij92_542bb9c06b.png", "hash": "thumbnail_Gemini_Generated_Image_ij9228ij9228ij92_542bb9c06b", "mime": "image/png", "name": "thumbnail_Gemini_Generated_Image_ij9228ij9228ij92.png", "path": null, "size": 50.48, "width": 140, "height": 156}}	Gemini_Generated_Image_ij9228ij9228ij92_542bb9c06b	.png	image/png	1195.48	https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/Gemini_Generated_Image_ij9228ij9228ij92_542bb9c06b/Gemini_Generated_Image_ij9228ij9228ij92_542bb9c06b.png	\N	@strapi-community/strapi-provider-upload-google-cloud-storage	\N	/1	2025-07-16 23:53:01.687	2025-07-16 23:53:01.687	\N	\N
+719	Gemini_Generated_Image_efs76mefs76mefs7.png	\N	\N	1842	2048	{"large": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/large_Gemini_Generated_Image_efs76mefs76mefs7_9314e69b7d/large_Gemini_Generated_Image_efs76mefs76mefs7_9314e69b7d.png", "hash": "large_Gemini_Generated_Image_efs76mefs76mefs7_9314e69b7d", "mime": "image/png", "name": "large_Gemini_Generated_Image_efs76mefs76mefs7.png", "path": null, "size": 2057.06, "width": 899, "height": 1000}, "small": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/small_Gemini_Generated_Image_efs76mefs76mefs7_9314e69b7d/small_Gemini_Generated_Image_efs76mefs76mefs7_9314e69b7d.png", "hash": "small_Gemini_Generated_Image_efs76mefs76mefs7_9314e69b7d", "mime": "image/png", "name": "small_Gemini_Generated_Image_efs76mefs76mefs7.png", "path": null, "size": 549.3, "width": 450, "height": 500}, "medium": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/medium_Gemini_Generated_Image_efs76mefs76mefs7_9314e69b7d/medium_Gemini_Generated_Image_efs76mefs76mefs7_9314e69b7d.png", "hash": "medium_Gemini_Generated_Image_efs76mefs76mefs7_9314e69b7d", "mime": "image/png", "name": "medium_Gemini_Generated_Image_efs76mefs76mefs7.png", "path": null, "size": 1179.42, "width": 675, "height": 750}, "thumbnail": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/thumbnail_Gemini_Generated_Image_efs76mefs76mefs7_9314e69b7d/thumbnail_Gemini_Generated_Image_efs76mefs76mefs7_9314e69b7d.png", "hash": "thumbnail_Gemini_Generated_Image_efs76mefs76mefs7_9314e69b7d", "mime": "image/png", "name": "thumbnail_Gemini_Generated_Image_efs76mefs76mefs7.png", "path": null, "size": 61.34, "width": 140, "height": 156}}	Gemini_Generated_Image_efs76mefs76mefs7_9314e69b7d	.png	image/png	1379.78	https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/Gemini_Generated_Image_efs76mefs76mefs7_9314e69b7d/Gemini_Generated_Image_efs76mefs76mefs7_9314e69b7d.png	\N	@strapi-community/strapi-provider-upload-google-cloud-storage	\N	/1	2025-07-16 23:53:24.314	2025-07-16 23:53:24.314	\N	\N
+720	Gemini_Generated_Image_gjdplfgjdplfgjdp.png	\N	\N	2040	1873	{"large": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/large_Gemini_Generated_Image_gjdplfgjdplfgjdp_6d4159e505/large_Gemini_Generated_Image_gjdplfgjdplfgjdp_6d4159e505.png", "hash": "large_Gemini_Generated_Image_gjdplfgjdplfgjdp_6d4159e505", "mime": "image/png", "name": "large_Gemini_Generated_Image_gjdplfgjdplfgjdp.png", "path": null, "size": 1486.68, "width": 1000, "height": 918}, "small": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/small_Gemini_Generated_Image_gjdplfgjdplfgjdp_6d4159e505/small_Gemini_Generated_Image_gjdplfgjdplfgjdp_6d4159e505.png", "hash": "small_Gemini_Generated_Image_gjdplfgjdplfgjdp_6d4159e505", "mime": "image/png", "name": "small_Gemini_Generated_Image_gjdplfgjdplfgjdp.png", "path": null, "size": 357.82, "width": 500, "height": 459}, "medium": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/medium_Gemini_Generated_Image_gjdplfgjdplfgjdp_6d4159e505/medium_Gemini_Generated_Image_gjdplfgjdplfgjdp_6d4159e505.png", "hash": "medium_Gemini_Generated_Image_gjdplfgjdplfgjdp_6d4159e505", "mime": "image/png", "name": "medium_Gemini_Generated_Image_gjdplfgjdplfgjdp.png", "path": null, "size": 800.55, "width": 750, "height": 689}, "thumbnail": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/thumbnail_Gemini_Generated_Image_gjdplfgjdplfgjdp_6d4159e505/thumbnail_Gemini_Generated_Image_gjdplfgjdplfgjdp_6d4159e505.png", "hash": "thumbnail_Gemini_Generated_Image_gjdplfgjdplfgjdp_6d4159e505", "mime": "image/png", "name": "thumbnail_Gemini_Generated_Image_gjdplfgjdplfgjdp.png", "path": null, "size": 46.54, "width": 170, "height": 156}}	Gemini_Generated_Image_gjdplfgjdplfgjdp_6d4159e505	.png	image/png	1441.81	https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/Gemini_Generated_Image_gjdplfgjdplfgjdp_6d4159e505/Gemini_Generated_Image_gjdplfgjdplfgjdp_6d4159e505.png	\N	@strapi-community/strapi-provider-upload-google-cloud-storage	\N	/1	2025-07-16 23:53:30.802	2025-07-16 23:53:30.802	\N	\N
+721	Gemini_Generated_Image_drernbdrernbdrer.png	\N	\N	2048	1802	{"large": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/large_Gemini_Generated_Image_drernbdrernbdrer_f6f14981a0/large_Gemini_Generated_Image_drernbdrernbdrer_f6f14981a0.png", "hash": "large_Gemini_Generated_Image_drernbdrernbdrer_f6f14981a0", "mime": "image/png", "name": "large_Gemini_Generated_Image_drernbdrernbdrer.png", "path": null, "size": 1731.06, "width": 1000, "height": 880}, "small": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/small_Gemini_Generated_Image_drernbdrernbdrer_f6f14981a0/small_Gemini_Generated_Image_drernbdrernbdrer_f6f14981a0.png", "hash": "small_Gemini_Generated_Image_drernbdrernbdrer_f6f14981a0", "mime": "image/png", "name": "small_Gemini_Generated_Image_drernbdrernbdrer.png", "path": null, "size": 441.69, "width": 500, "height": 440}, "medium": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/medium_Gemini_Generated_Image_drernbdrernbdrer_f6f14981a0/medium_Gemini_Generated_Image_drernbdrernbdrer_f6f14981a0.png", "hash": "medium_Gemini_Generated_Image_drernbdrernbdrer_f6f14981a0", "mime": "image/png", "name": "medium_Gemini_Generated_Image_drernbdrernbdrer.png", "path": null, "size": 964.62, "width": 750, "height": 660}, "thumbnail": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/thumbnail_Gemini_Generated_Image_drernbdrernbdrer_f6f14981a0/thumbnail_Gemini_Generated_Image_drernbdrernbdrer_f6f14981a0.png", "hash": "thumbnail_Gemini_Generated_Image_drernbdrernbdrer_f6f14981a0", "mime": "image/png", "name": "thumbnail_Gemini_Generated_Image_drernbdrernbdrer.png", "path": null, "size": 65.93, "width": 177, "height": 156}}	Gemini_Generated_Image_drernbdrernbdrer_f6f14981a0	.png	image/png	1677.87	https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/Gemini_Generated_Image_drernbdrernbdrer_f6f14981a0/Gemini_Generated_Image_drernbdrernbdrer_f6f14981a0.png	\N	@strapi-community/strapi-provider-upload-google-cloud-storage	\N	/1	2025-07-16 23:53:38.387	2025-07-16 23:53:38.387	\N	\N
+722	Gemini_Generated_Image_35tex35tex35tex3.png	\N	\N	2048	2048	{"large": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/large_Gemini_Generated_Image_35tex35tex35tex3_8f13aaede5/large_Gemini_Generated_Image_35tex35tex35tex3_8f13aaede5.png", "hash": "large_Gemini_Generated_Image_35tex35tex35tex3_8f13aaede5", "mime": "image/png", "name": "large_Gemini_Generated_Image_35tex35tex35tex3.png", "path": null, "size": 1968.12, "width": 1000, "height": 1000}, "small": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/small_Gemini_Generated_Image_35tex35tex35tex3_8f13aaede5/small_Gemini_Generated_Image_35tex35tex35tex3_8f13aaede5.png", "hash": "small_Gemini_Generated_Image_35tex35tex35tex3_8f13aaede5", "mime": "image/png", "name": "small_Gemini_Generated_Image_35tex35tex35tex3.png", "path": null, "size": 504.38, "width": 500, "height": 500}, "medium": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/medium_Gemini_Generated_Image_35tex35tex35tex3_8f13aaede5/medium_Gemini_Generated_Image_35tex35tex35tex3_8f13aaede5.png", "hash": "medium_Gemini_Generated_Image_35tex35tex35tex3_8f13aaede5", "mime": "image/png", "name": "medium_Gemini_Generated_Image_35tex35tex35tex3.png", "path": null, "size": 1102.21, "width": 750, "height": 750}, "thumbnail": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/thumbnail_Gemini_Generated_Image_35tex35tex35tex3_8f13aaede5/thumbnail_Gemini_Generated_Image_35tex35tex35tex3_8f13aaede5.png", "hash": "thumbnail_Gemini_Generated_Image_35tex35tex35tex3_8f13aaede5", "mime": "image/png", "name": "thumbnail_Gemini_Generated_Image_35tex35tex35tex3.png", "path": null, "size": 57.51, "width": 156, "height": 156}}	Gemini_Generated_Image_35tex35tex35tex3_8f13aaede5	.png	image/png	1995.03	https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/Gemini_Generated_Image_35tex35tex35tex3_8f13aaede5/Gemini_Generated_Image_35tex35tex35tex3_8f13aaede5.png	\N	@strapi-community/strapi-provider-upload-google-cloud-storage	\N	/1	2025-07-16 23:53:48.202	2025-07-16 23:53:48.202	\N	\N
+723	Gemini_Generated_Image_726q9n726q9n726q.png	\N	\N	1842	2048	{"large": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/large_Gemini_Generated_Image_726q9n726q9n726q_7f9ec5f327/large_Gemini_Generated_Image_726q9n726q9n726q_7f9ec5f327.png", "hash": "large_Gemini_Generated_Image_726q9n726q9n726q_7f9ec5f327", "mime": "image/png", "name": "large_Gemini_Generated_Image_726q9n726q9n726q.png", "path": null, "size": 2049.83, "width": 899, "height": 1000}, "small": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/small_Gemini_Generated_Image_726q9n726q9n726q_7f9ec5f327/small_Gemini_Generated_Image_726q9n726q9n726q_7f9ec5f327.png", "hash": "small_Gemini_Generated_Image_726q9n726q9n726q_7f9ec5f327", "mime": "image/png", "name": "small_Gemini_Generated_Image_726q9n726q9n726q.png", "path": null, "size": 530.02, "width": 450, "height": 500}, "medium": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/medium_Gemini_Generated_Image_726q9n726q9n726q_7f9ec5f327/medium_Gemini_Generated_Image_726q9n726q9n726q_7f9ec5f327.png", "hash": "medium_Gemini_Generated_Image_726q9n726q9n726q_7f9ec5f327", "mime": "image/png", "name": "medium_Gemini_Generated_Image_726q9n726q9n726q.png", "path": null, "size": 1154.82, "width": 675, "height": 750}, "thumbnail": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/thumbnail_Gemini_Generated_Image_726q9n726q9n726q_7f9ec5f327/thumbnail_Gemini_Generated_Image_726q9n726q9n726q_7f9ec5f327.png", "hash": "thumbnail_Gemini_Generated_Image_726q9n726q9n726q_7f9ec5f327", "mime": "image/png", "name": "thumbnail_Gemini_Generated_Image_726q9n726q9n726q.png", "path": null, "size": 58.86, "width": 140, "height": 156}}	Gemini_Generated_Image_726q9n726q9n726q_7f9ec5f327	.png	image/png	1914.44	https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/Gemini_Generated_Image_726q9n726q9n726q_7f9ec5f327/Gemini_Generated_Image_726q9n726q9n726q_7f9ec5f327.png	\N	@strapi-community/strapi-provider-upload-google-cloud-storage	\N	/1	2025-07-16 23:54:07.873	2025-07-16 23:54:07.873	\N	\N
+724	Gemini_Generated_Image_440fir440fir440f.png	\N	\N	2048	1889	{"large": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/large_Gemini_Generated_Image_440fir440fir440f_1a30063ce5/large_Gemini_Generated_Image_440fir440fir440f_1a30063ce5.png", "hash": "large_Gemini_Generated_Image_440fir440fir440f_1a30063ce5", "mime": "image/png", "name": "large_Gemini_Generated_Image_440fir440fir440f.png", "path": null, "size": 2230.73, "width": 1000, "height": 922}, "small": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/small_Gemini_Generated_Image_440fir440fir440f_1a30063ce5/small_Gemini_Generated_Image_440fir440fir440f_1a30063ce5.png", "hash": "small_Gemini_Generated_Image_440fir440fir440f_1a30063ce5", "mime": "image/png", "name": "small_Gemini_Generated_Image_440fir440fir440f.png", "path": null, "size": 577.56, "width": 500, "height": 461}, "medium": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/medium_Gemini_Generated_Image_440fir440fir440f_1a30063ce5/medium_Gemini_Generated_Image_440fir440fir440f_1a30063ce5.png", "hash": "medium_Gemini_Generated_Image_440fir440fir440f_1a30063ce5", "mime": "image/png", "name": "medium_Gemini_Generated_Image_440fir440fir440f.png", "path": null, "size": 1262.26, "width": 750, "height": 692}, "thumbnail": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/thumbnail_Gemini_Generated_Image_440fir440fir440f_1a30063ce5/thumbnail_Gemini_Generated_Image_440fir440fir440f_1a30063ce5.png", "hash": "thumbnail_Gemini_Generated_Image_440fir440fir440f_1a30063ce5", "mime": "image/png", "name": "thumbnail_Gemini_Generated_Image_440fir440fir440f.png", "path": null, "size": 73.43, "width": 169, "height": 156}}	Gemini_Generated_Image_440fir440fir440f_1a30063ce5	.png	image/png	1759.94	https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/Gemini_Generated_Image_440fir440fir440f_1a30063ce5/Gemini_Generated_Image_440fir440fir440f_1a30063ce5.png	\N	@strapi-community/strapi-provider-upload-google-cloud-storage	\N	/1	2025-07-16 23:54:17.996	2025-07-16 23:54:17.996	\N	\N
+725	Gemini_Generated_Image_726q9n726q9n726q.png	\N	\N	1842	2048	{"large": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/large_Gemini_Generated_Image_726q9n726q9n726q_987adb53a4/large_Gemini_Generated_Image_726q9n726q9n726q_987adb53a4.png", "hash": "large_Gemini_Generated_Image_726q9n726q9n726q_987adb53a4", "mime": "image/png", "name": "large_Gemini_Generated_Image_726q9n726q9n726q.png", "path": null, "size": 2049.83, "width": 899, "height": 1000}, "small": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/small_Gemini_Generated_Image_726q9n726q9n726q_987adb53a4/small_Gemini_Generated_Image_726q9n726q9n726q_987adb53a4.png", "hash": "small_Gemini_Generated_Image_726q9n726q9n726q_987adb53a4", "mime": "image/png", "name": "small_Gemini_Generated_Image_726q9n726q9n726q.png", "path": null, "size": 530.02, "width": 450, "height": 500}, "medium": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/medium_Gemini_Generated_Image_726q9n726q9n726q_987adb53a4/medium_Gemini_Generated_Image_726q9n726q9n726q_987adb53a4.png", "hash": "medium_Gemini_Generated_Image_726q9n726q9n726q_987adb53a4", "mime": "image/png", "name": "medium_Gemini_Generated_Image_726q9n726q9n726q.png", "path": null, "size": 1154.82, "width": 675, "height": 750}, "thumbnail": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/thumbnail_Gemini_Generated_Image_726q9n726q9n726q_987adb53a4/thumbnail_Gemini_Generated_Image_726q9n726q9n726q_987adb53a4.png", "hash": "thumbnail_Gemini_Generated_Image_726q9n726q9n726q_987adb53a4", "mime": "image/png", "name": "thumbnail_Gemini_Generated_Image_726q9n726q9n726q.png", "path": null, "size": 58.86, "width": 140, "height": 156}}	Gemini_Generated_Image_726q9n726q9n726q_987adb53a4	.png	image/png	1914.44	https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/Gemini_Generated_Image_726q9n726q9n726q_987adb53a4/Gemini_Generated_Image_726q9n726q9n726q_987adb53a4.png	\N	@strapi-community/strapi-provider-upload-google-cloud-storage	\N	/1	2025-07-16 23:55:01.943	2025-07-16 23:55:01.943	\N	\N
+726	Gemini_Generated_Image_440fir440fir440f.png	\N	\N	2048	1889	{"large": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/large_Gemini_Generated_Image_440fir440fir440f_bced9a74f4/large_Gemini_Generated_Image_440fir440fir440f_bced9a74f4.png", "hash": "large_Gemini_Generated_Image_440fir440fir440f_bced9a74f4", "mime": "image/png", "name": "large_Gemini_Generated_Image_440fir440fir440f.png", "path": null, "size": 2230.73, "width": 1000, "height": 922}, "small": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/small_Gemini_Generated_Image_440fir440fir440f_bced9a74f4/small_Gemini_Generated_Image_440fir440fir440f_bced9a74f4.png", "hash": "small_Gemini_Generated_Image_440fir440fir440f_bced9a74f4", "mime": "image/png", "name": "small_Gemini_Generated_Image_440fir440fir440f.png", "path": null, "size": 577.56, "width": 500, "height": 461}, "medium": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/medium_Gemini_Generated_Image_440fir440fir440f_bced9a74f4/medium_Gemini_Generated_Image_440fir440fir440f_bced9a74f4.png", "hash": "medium_Gemini_Generated_Image_440fir440fir440f_bced9a74f4", "mime": "image/png", "name": "medium_Gemini_Generated_Image_440fir440fir440f.png", "path": null, "size": 1262.26, "width": 750, "height": 692}, "thumbnail": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/thumbnail_Gemini_Generated_Image_440fir440fir440f_bced9a74f4/thumbnail_Gemini_Generated_Image_440fir440fir440f_bced9a74f4.png", "hash": "thumbnail_Gemini_Generated_Image_440fir440fir440f_bced9a74f4", "mime": "image/png", "name": "thumbnail_Gemini_Generated_Image_440fir440fir440f.png", "path": null, "size": 73.43, "width": 169, "height": 156}}	Gemini_Generated_Image_440fir440fir440f_bced9a74f4	.png	image/png	1759.94	https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/Gemini_Generated_Image_440fir440fir440f_bced9a74f4/Gemini_Generated_Image_440fir440fir440f_bced9a74f4.png	\N	@strapi-community/strapi-provider-upload-google-cloud-storage	\N	/1	2025-07-16 23:55:12.309	2025-07-16 23:55:12.309	\N	\N
+727	Gemini_Generated_Image_1g4x361g4x361g4x.png	\N	\N	2048	1897	{"large": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/large_Gemini_Generated_Image_1g4x361g4x361g4x_6de8c5b7c9/large_Gemini_Generated_Image_1g4x361g4x361g4x_6de8c5b7c9.png", "hash": "large_Gemini_Generated_Image_1g4x361g4x361g4x_6de8c5b7c9", "mime": "image/png", "name": "large_Gemini_Generated_Image_1g4x361g4x361g4x.png", "path": null, "size": 1959.1, "width": 1000, "height": 926}, "small": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/small_Gemini_Generated_Image_1g4x361g4x361g4x_6de8c5b7c9/small_Gemini_Generated_Image_1g4x361g4x361g4x_6de8c5b7c9.png", "hash": "small_Gemini_Generated_Image_1g4x361g4x361g4x_6de8c5b7c9", "mime": "image/png", "name": "small_Gemini_Generated_Image_1g4x361g4x361g4x.png", "path": null, "size": 512.16, "width": 500, "height": 463}, "medium": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/medium_Gemini_Generated_Image_1g4x361g4x361g4x_6de8c5b7c9/medium_Gemini_Generated_Image_1g4x361g4x361g4x_6de8c5b7c9.png", "hash": "medium_Gemini_Generated_Image_1g4x361g4x361g4x_6de8c5b7c9", "mime": "image/png", "name": "medium_Gemini_Generated_Image_1g4x361g4x361g4x.png", "path": null, "size": 1110.49, "width": 750, "height": 695}, "thumbnail": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/thumbnail_Gemini_Generated_Image_1g4x361g4x361g4x_6de8c5b7c9/thumbnail_Gemini_Generated_Image_1g4x361g4x361g4x_6de8c5b7c9.png", "hash": "thumbnail_Gemini_Generated_Image_1g4x361g4x361g4x_6de8c5b7c9", "mime": "image/png", "name": "thumbnail_Gemini_Generated_Image_1g4x361g4x361g4x.png", "path": null, "size": 66.9, "width": 168, "height": 156}}	Gemini_Generated_Image_1g4x361g4x361g4x_6de8c5b7c9	.png	image/png	1580.95	https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/Gemini_Generated_Image_1g4x361g4x361g4x_6de8c5b7c9/Gemini_Generated_Image_1g4x361g4x361g4x_6de8c5b7c9.png	\N	@strapi-community/strapi-provider-upload-google-cloud-storage	\N	/1	2025-07-16 23:55:20.407	2025-07-16 23:55:20.407	\N	\N
+728	Gemini_Generated_Image_1g4x361g4x361g4x.png	\N	\N	2048	1897	{"large": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/large_Gemini_Generated_Image_1g4x361g4x361g4x_f6c6340c4f/large_Gemini_Generated_Image_1g4x361g4x361g4x_f6c6340c4f.png", "hash": "large_Gemini_Generated_Image_1g4x361g4x361g4x_f6c6340c4f", "mime": "image/png", "name": "large_Gemini_Generated_Image_1g4x361g4x361g4x.png", "path": null, "size": 1959.1, "width": 1000, "height": 926}, "small": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/small_Gemini_Generated_Image_1g4x361g4x361g4x_f6c6340c4f/small_Gemini_Generated_Image_1g4x361g4x361g4x_f6c6340c4f.png", "hash": "small_Gemini_Generated_Image_1g4x361g4x361g4x_f6c6340c4f", "mime": "image/png", "name": "small_Gemini_Generated_Image_1g4x361g4x361g4x.png", "path": null, "size": 512.16, "width": 500, "height": 463}, "medium": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/medium_Gemini_Generated_Image_1g4x361g4x361g4x_f6c6340c4f/medium_Gemini_Generated_Image_1g4x361g4x361g4x_f6c6340c4f.png", "hash": "medium_Gemini_Generated_Image_1g4x361g4x361g4x_f6c6340c4f", "mime": "image/png", "name": "medium_Gemini_Generated_Image_1g4x361g4x361g4x.png", "path": null, "size": 1110.49, "width": 750, "height": 695}, "thumbnail": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/thumbnail_Gemini_Generated_Image_1g4x361g4x361g4x_f6c6340c4f/thumbnail_Gemini_Generated_Image_1g4x361g4x361g4x_f6c6340c4f.png", "hash": "thumbnail_Gemini_Generated_Image_1g4x361g4x361g4x_f6c6340c4f", "mime": "image/png", "name": "thumbnail_Gemini_Generated_Image_1g4x361g4x361g4x.png", "path": null, "size": 66.9, "width": 168, "height": 156}}	Gemini_Generated_Image_1g4x361g4x361g4x_f6c6340c4f	.png	image/png	1580.95	https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/Gemini_Generated_Image_1g4x361g4x361g4x_f6c6340c4f/Gemini_Generated_Image_1g4x361g4x361g4x_f6c6340c4f.png	\N	@strapi-community/strapi-provider-upload-google-cloud-storage	\N	/1	2025-07-16 23:55:30.862	2025-07-16 23:55:30.862	\N	\N
+729	Gemini_Generated_Image_wwi6hbwwi6hbwwi6.png	\N	\N	2048	1850	{"large": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/large_Gemini_Generated_Image_wwi6hbwwi6hbwwi6_c3526b136d/large_Gemini_Generated_Image_wwi6hbwwi6hbwwi6_c3526b136d.png", "hash": "large_Gemini_Generated_Image_wwi6hbwwi6hbwwi6_c3526b136d", "mime": "image/png", "name": "large_Gemini_Generated_Image_wwi6hbwwi6hbwwi6.png", "path": null, "size": 1475.77, "width": 1000, "height": 903}, "small": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/small_Gemini_Generated_Image_wwi6hbwwi6hbwwi6_c3526b136d/small_Gemini_Generated_Image_wwi6hbwwi6hbwwi6_c3526b136d.png", "hash": "small_Gemini_Generated_Image_wwi6hbwwi6hbwwi6_c3526b136d", "mime": "image/png", "name": "small_Gemini_Generated_Image_wwi6hbwwi6hbwwi6.png", "path": null, "size": 391.73, "width": 500, "height": 452}, "medium": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/medium_Gemini_Generated_Image_wwi6hbwwi6hbwwi6_c3526b136d/medium_Gemini_Generated_Image_wwi6hbwwi6hbwwi6_c3526b136d.png", "hash": "medium_Gemini_Generated_Image_wwi6hbwwi6hbwwi6_c3526b136d", "mime": "image/png", "name": "medium_Gemini_Generated_Image_wwi6hbwwi6hbwwi6.png", "path": null, "size": 840.42, "width": 750, "height": 677}, "thumbnail": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/thumbnail_Gemini_Generated_Image_wwi6hbwwi6hbwwi6_c3526b136d/thumbnail_Gemini_Generated_Image_wwi6hbwwi6hbwwi6_c3526b136d.png", "hash": "thumbnail_Gemini_Generated_Image_wwi6hbwwi6hbwwi6_c3526b136d", "mime": "image/png", "name": "thumbnail_Gemini_Generated_Image_wwi6hbwwi6hbwwi6.png", "path": null, "size": 54.79, "width": 173, "height": 156}}	Gemini_Generated_Image_wwi6hbwwi6hbwwi6_c3526b136d	.png	image/png	1521.41	https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/Gemini_Generated_Image_wwi6hbwwi6hbwwi6_c3526b136d/Gemini_Generated_Image_wwi6hbwwi6hbwwi6_c3526b136d.png	\N	@strapi-community/strapi-provider-upload-google-cloud-storage	\N	/1	2025-07-16 23:55:42.501	2025-07-16 23:55:42.501	\N	\N
+730	Gemini_Generated_Image_x5d8lzx5d8lzx5d8.png	\N	\N	2040	1857	{"large": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/large_Gemini_Generated_Image_x5d8lzx5d8lzx5d8_213265677d/large_Gemini_Generated_Image_x5d8lzx5d8lzx5d8_213265677d.png", "hash": "large_Gemini_Generated_Image_x5d8lzx5d8lzx5d8_213265677d", "mime": "image/png", "name": "large_Gemini_Generated_Image_x5d8lzx5d8lzx5d8.png", "path": null, "size": 1781.28, "width": 1000, "height": 910}, "small": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/small_Gemini_Generated_Image_x5d8lzx5d8lzx5d8_213265677d/small_Gemini_Generated_Image_x5d8lzx5d8lzx5d8_213265677d.png", "hash": "small_Gemini_Generated_Image_x5d8lzx5d8lzx5d8_213265677d", "mime": "image/png", "name": "small_Gemini_Generated_Image_x5d8lzx5d8lzx5d8.png", "path": null, "size": 470.44, "width": 500, "height": 455}, "medium": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/medium_Gemini_Generated_Image_x5d8lzx5d8lzx5d8_213265677d/medium_Gemini_Generated_Image_x5d8lzx5d8lzx5d8_213265677d.png", "hash": "medium_Gemini_Generated_Image_x5d8lzx5d8lzx5d8_213265677d", "mime": "image/png", "name": "medium_Gemini_Generated_Image_x5d8lzx5d8lzx5d8.png", "path": null, "size": 1012.65, "width": 750, "height": 683}, "thumbnail": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/thumbnail_Gemini_Generated_Image_x5d8lzx5d8lzx5d8_213265677d/thumbnail_Gemini_Generated_Image_x5d8lzx5d8lzx5d8_213265677d.png", "hash": "thumbnail_Gemini_Generated_Image_x5d8lzx5d8lzx5d8_213265677d", "mime": "image/png", "name": "thumbnail_Gemini_Generated_Image_x5d8lzx5d8lzx5d8.png", "path": null, "size": 65.73, "width": 171, "height": 156}}	Gemini_Generated_Image_x5d8lzx5d8lzx5d8_213265677d	.png	image/png	1610.19	https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/Gemini_Generated_Image_x5d8lzx5d8lzx5d8_213265677d/Gemini_Generated_Image_x5d8lzx5d8lzx5d8_213265677d.png	\N	@strapi-community/strapi-provider-upload-google-cloud-storage	\N	/1	2025-07-16 23:55:51.069	2025-07-16 23:55:51.069	\N	\N
+731	Gemini_Generated_Image_21bcmf21bcmf21bc.png	\N	\N	2048	1834	{"large": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/large_Gemini_Generated_Image_21bcmf21bcmf21bc_cab90bd3fb/large_Gemini_Generated_Image_21bcmf21bcmf21bc_cab90bd3fb.png", "hash": "large_Gemini_Generated_Image_21bcmf21bcmf21bc_cab90bd3fb", "mime": "image/png", "name": "large_Gemini_Generated_Image_21bcmf21bcmf21bc.png", "path": null, "size": 1542.01, "width": 1000, "height": 896}, "small": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/small_Gemini_Generated_Image_21bcmf21bcmf21bc_cab90bd3fb/small_Gemini_Generated_Image_21bcmf21bcmf21bc_cab90bd3fb.png", "hash": "small_Gemini_Generated_Image_21bcmf21bcmf21bc_cab90bd3fb", "mime": "image/png", "name": "small_Gemini_Generated_Image_21bcmf21bcmf21bc.png", "path": null, "size": 397.21, "width": 500, "height": 448}, "medium": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/medium_Gemini_Generated_Image_21bcmf21bcmf21bc_cab90bd3fb/medium_Gemini_Generated_Image_21bcmf21bcmf21bc_cab90bd3fb.png", "hash": "medium_Gemini_Generated_Image_21bcmf21bcmf21bc_cab90bd3fb", "mime": "image/png", "name": "medium_Gemini_Generated_Image_21bcmf21bcmf21bc.png", "path": null, "size": 866.44, "width": 750, "height": 672}, "thumbnail": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/thumbnail_Gemini_Generated_Image_21bcmf21bcmf21bc_cab90bd3fb/thumbnail_Gemini_Generated_Image_21bcmf21bcmf21bc_cab90bd3fb.png", "hash": "thumbnail_Gemini_Generated_Image_21bcmf21bcmf21bc_cab90bd3fb", "mime": "image/png", "name": "thumbnail_Gemini_Generated_Image_21bcmf21bcmf21bc.png", "path": null, "size": 56.09, "width": 174, "height": 156}}	Gemini_Generated_Image_21bcmf21bcmf21bc_cab90bd3fb	.png	image/png	1718.06	https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/Gemini_Generated_Image_21bcmf21bcmf21bc_cab90bd3fb/Gemini_Generated_Image_21bcmf21bcmf21bc_cab90bd3fb.png	\N	@strapi-community/strapi-provider-upload-google-cloud-storage	\N	/1	2025-07-16 23:55:58.879	2025-07-16 23:55:58.879	\N	\N
+732	Gemini_Generated_Image_21bcmf21bcmf21bc.png	\N	\N	2048	1834	{"large": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/large_Gemini_Generated_Image_21bcmf21bcmf21bc_02af2193bf/large_Gemini_Generated_Image_21bcmf21bcmf21bc_02af2193bf.png", "hash": "large_Gemini_Generated_Image_21bcmf21bcmf21bc_02af2193bf", "mime": "image/png", "name": "large_Gemini_Generated_Image_21bcmf21bcmf21bc.png", "path": null, "size": 1542.01, "width": 1000, "height": 896}, "small": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/small_Gemini_Generated_Image_21bcmf21bcmf21bc_02af2193bf/small_Gemini_Generated_Image_21bcmf21bcmf21bc_02af2193bf.png", "hash": "small_Gemini_Generated_Image_21bcmf21bcmf21bc_02af2193bf", "mime": "image/png", "name": "small_Gemini_Generated_Image_21bcmf21bcmf21bc.png", "path": null, "size": 397.21, "width": 500, "height": 448}, "medium": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/medium_Gemini_Generated_Image_21bcmf21bcmf21bc_02af2193bf/medium_Gemini_Generated_Image_21bcmf21bcmf21bc_02af2193bf.png", "hash": "medium_Gemini_Generated_Image_21bcmf21bcmf21bc_02af2193bf", "mime": "image/png", "name": "medium_Gemini_Generated_Image_21bcmf21bcmf21bc.png", "path": null, "size": 866.44, "width": 750, "height": 672}, "thumbnail": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/thumbnail_Gemini_Generated_Image_21bcmf21bcmf21bc_02af2193bf/thumbnail_Gemini_Generated_Image_21bcmf21bcmf21bc_02af2193bf.png", "hash": "thumbnail_Gemini_Generated_Image_21bcmf21bcmf21bc_02af2193bf", "mime": "image/png", "name": "thumbnail_Gemini_Generated_Image_21bcmf21bcmf21bc.png", "path": null, "size": 56.09, "width": 174, "height": 156}}	Gemini_Generated_Image_21bcmf21bcmf21bc_02af2193bf	.png	image/png	1718.06	https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/Gemini_Generated_Image_21bcmf21bcmf21bc_02af2193bf/Gemini_Generated_Image_21bcmf21bcmf21bc_02af2193bf.png	\N	@strapi-community/strapi-provider-upload-google-cloud-storage	\N	/1	2025-07-16 23:56:08.369	2025-07-16 23:56:08.369	\N	\N
+733	Gemini_Generated_Image_2gx9r72gx9r72gx9.png	\N	\N	2028	1861	{"large": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/large_Gemini_Generated_Image_2gx9r72gx9r72gx9_eebb52bd8e/large_Gemini_Generated_Image_2gx9r72gx9r72gx9_eebb52bd8e.png", "hash": "large_Gemini_Generated_Image_2gx9r72gx9r72gx9_eebb52bd8e", "mime": "image/png", "name": "large_Gemini_Generated_Image_2gx9r72gx9r72gx9.png", "path": null, "size": 1825.47, "width": 1000, "height": 918}, "small": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/small_Gemini_Generated_Image_2gx9r72gx9r72gx9_eebb52bd8e/small_Gemini_Generated_Image_2gx9r72gx9r72gx9_eebb52bd8e.png", "hash": "small_Gemini_Generated_Image_2gx9r72gx9r72gx9_eebb52bd8e", "mime": "image/png", "name": "small_Gemini_Generated_Image_2gx9r72gx9r72gx9.png", "path": null, "size": 470.06, "width": 500, "height": 459}, "medium": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/medium_Gemini_Generated_Image_2gx9r72gx9r72gx9_eebb52bd8e/medium_Gemini_Generated_Image_2gx9r72gx9r72gx9_eebb52bd8e.png", "hash": "medium_Gemini_Generated_Image_2gx9r72gx9r72gx9_eebb52bd8e", "mime": "image/png", "name": "medium_Gemini_Generated_Image_2gx9r72gx9r72gx9.png", "path": null, "size": 1022.71, "width": 750, "height": 688}, "thumbnail": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/thumbnail_Gemini_Generated_Image_2gx9r72gx9r72gx9_eebb52bd8e/thumbnail_Gemini_Generated_Image_2gx9r72gx9r72gx9_eebb52bd8e.png", "hash": "thumbnail_Gemini_Generated_Image_2gx9r72gx9r72gx9_eebb52bd8e", "mime": "image/png", "name": "thumbnail_Gemini_Generated_Image_2gx9r72gx9r72gx9.png", "path": null, "size": 61.83, "width": 170, "height": 156}}	Gemini_Generated_Image_2gx9r72gx9r72gx9_eebb52bd8e	.png	image/png	1785.06	https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/Gemini_Generated_Image_2gx9r72gx9r72gx9_eebb52bd8e/Gemini_Generated_Image_2gx9r72gx9r72gx9_eebb52bd8e.png	\N	@strapi-community/strapi-provider-upload-google-cloud-storage	\N	/1	2025-07-16 23:56:58.558	2025-07-16 23:56:58.558	\N	\N
+734	Gemini_Generated_Image_t2fusgt2fusgt2fu.png	\N	\N	2048	1850	{"large": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/large_Gemini_Generated_Image_t2fusgt2fusgt2fu_75d0bd0436/large_Gemini_Generated_Image_t2fusgt2fusgt2fu_75d0bd0436.png", "hash": "large_Gemini_Generated_Image_t2fusgt2fusgt2fu_75d0bd0436", "mime": "image/png", "name": "large_Gemini_Generated_Image_t2fusgt2fusgt2fu.png", "path": null, "size": 1867.61, "width": 1000, "height": 903}, "small": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/small_Gemini_Generated_Image_t2fusgt2fusgt2fu_75d0bd0436/small_Gemini_Generated_Image_t2fusgt2fusgt2fu_75d0bd0436.png", "hash": "small_Gemini_Generated_Image_t2fusgt2fusgt2fu_75d0bd0436", "mime": "image/png", "name": "small_Gemini_Generated_Image_t2fusgt2fusgt2fu.png", "path": null, "size": 478.47, "width": 500, "height": 452}, "medium": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/medium_Gemini_Generated_Image_t2fusgt2fusgt2fu_75d0bd0436/medium_Gemini_Generated_Image_t2fusgt2fusgt2fu_75d0bd0436.png", "hash": "medium_Gemini_Generated_Image_t2fusgt2fusgt2fu_75d0bd0436", "mime": "image/png", "name": "medium_Gemini_Generated_Image_t2fusgt2fusgt2fu.png", "path": null, "size": 1044.48, "width": 750, "height": 677}, "thumbnail": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/thumbnail_Gemini_Generated_Image_t2fusgt2fusgt2fu_75d0bd0436/thumbnail_Gemini_Generated_Image_t2fusgt2fusgt2fu_75d0bd0436.png", "hash": "thumbnail_Gemini_Generated_Image_t2fusgt2fusgt2fu_75d0bd0436", "mime": "image/png", "name": "thumbnail_Gemini_Generated_Image_t2fusgt2fusgt2fu.png", "path": null, "size": 65.14, "width": 173, "height": 156}}	Gemini_Generated_Image_t2fusgt2fusgt2fu_75d0bd0436	.png	image/png	1765.90	https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/Gemini_Generated_Image_t2fusgt2fusgt2fu_75d0bd0436/Gemini_Generated_Image_t2fusgt2fusgt2fu_75d0bd0436.png	\N	@strapi-community/strapi-provider-upload-google-cloud-storage	\N	/1	2025-07-16 23:57:13.963	2025-07-16 23:57:13.963	\N	\N
+735	Gemini_Generated_Image_fqti4xfqti4xfqti.png	\N	\N	2032	1873	{"large": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/large_Gemini_Generated_Image_fqti4xfqti4xfqti_66b9edf18f/large_Gemini_Generated_Image_fqti4xfqti4xfqti_66b9edf18f.png", "hash": "large_Gemini_Generated_Image_fqti4xfqti4xfqti_66b9edf18f", "mime": "image/png", "name": "large_Gemini_Generated_Image_fqti4xfqti4xfqti.png", "path": null, "size": 1793.81, "width": 1000, "height": 922}, "small": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/small_Gemini_Generated_Image_fqti4xfqti4xfqti_66b9edf18f/small_Gemini_Generated_Image_fqti4xfqti4xfqti_66b9edf18f.png", "hash": "small_Gemini_Generated_Image_fqti4xfqti4xfqti_66b9edf18f", "mime": "image/png", "name": "small_Gemini_Generated_Image_fqti4xfqti4xfqti.png", "path": null, "size": 457.76, "width": 500, "height": 461}, "medium": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/medium_Gemini_Generated_Image_fqti4xfqti4xfqti_66b9edf18f/medium_Gemini_Generated_Image_fqti4xfqti4xfqti_66b9edf18f.png", "hash": "medium_Gemini_Generated_Image_fqti4xfqti4xfqti_66b9edf18f", "mime": "image/png", "name": "medium_Gemini_Generated_Image_fqti4xfqti4xfqti.png", "path": null, "size": 999.69, "width": 750, "height": 691}, "thumbnail": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/thumbnail_Gemini_Generated_Image_fqti4xfqti4xfqti_66b9edf18f/thumbnail_Gemini_Generated_Image_fqti4xfqti4xfqti_66b9edf18f.png", "hash": "thumbnail_Gemini_Generated_Image_fqti4xfqti4xfqti_66b9edf18f", "mime": "image/png", "name": "thumbnail_Gemini_Generated_Image_fqti4xfqti4xfqti.png", "path": null, "size": 62.13, "width": 169, "height": 156}}	Gemini_Generated_Image_fqti4xfqti4xfqti_66b9edf18f	.png	image/png	1642.61	https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/Gemini_Generated_Image_fqti4xfqti4xfqti_66b9edf18f/Gemini_Generated_Image_fqti4xfqti4xfqti_66b9edf18f.png	\N	@strapi-community/strapi-provider-upload-google-cloud-storage	\N	/1	2025-07-16 23:57:24.093	2025-07-16 23:57:24.093	\N	\N
+736	Gemini_Generated_Image_2gx9r72gx9r72gx9.png	\N	\N	2028	1861	{"large": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/large_Gemini_Generated_Image_2gx9r72gx9r72gx9_b9d69c35f1/large_Gemini_Generated_Image_2gx9r72gx9r72gx9_b9d69c35f1.png", "hash": "large_Gemini_Generated_Image_2gx9r72gx9r72gx9_b9d69c35f1", "mime": "image/png", "name": "large_Gemini_Generated_Image_2gx9r72gx9r72gx9.png", "path": null, "size": 1825.47, "width": 1000, "height": 918}, "small": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/small_Gemini_Generated_Image_2gx9r72gx9r72gx9_b9d69c35f1/small_Gemini_Generated_Image_2gx9r72gx9r72gx9_b9d69c35f1.png", "hash": "small_Gemini_Generated_Image_2gx9r72gx9r72gx9_b9d69c35f1", "mime": "image/png", "name": "small_Gemini_Generated_Image_2gx9r72gx9r72gx9.png", "path": null, "size": 470.06, "width": 500, "height": 459}, "medium": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/medium_Gemini_Generated_Image_2gx9r72gx9r72gx9_b9d69c35f1/medium_Gemini_Generated_Image_2gx9r72gx9r72gx9_b9d69c35f1.png", "hash": "medium_Gemini_Generated_Image_2gx9r72gx9r72gx9_b9d69c35f1", "mime": "image/png", "name": "medium_Gemini_Generated_Image_2gx9r72gx9r72gx9.png", "path": null, "size": 1022.71, "width": 750, "height": 688}, "thumbnail": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/thumbnail_Gemini_Generated_Image_2gx9r72gx9r72gx9_b9d69c35f1/thumbnail_Gemini_Generated_Image_2gx9r72gx9r72gx9_b9d69c35f1.png", "hash": "thumbnail_Gemini_Generated_Image_2gx9r72gx9r72gx9_b9d69c35f1", "mime": "image/png", "name": "thumbnail_Gemini_Generated_Image_2gx9r72gx9r72gx9.png", "path": null, "size": 61.83, "width": 170, "height": 156}}	Gemini_Generated_Image_2gx9r72gx9r72gx9_b9d69c35f1	.png	image/png	1785.06	https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/Gemini_Generated_Image_2gx9r72gx9r72gx9_b9d69c35f1/Gemini_Generated_Image_2gx9r72gx9r72gx9_b9d69c35f1.png	\N	@strapi-community/strapi-provider-upload-google-cloud-storage	\N	/1	2025-07-16 23:57:33.036	2025-07-16 23:57:33.036	\N	\N
+737	Gemini_Generated_Image_lfd4mvlfd4mvlfd4.png	\N	\N	1857	2048	{"large": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/large_Gemini_Generated_Image_lfd4mvlfd4mvlfd4_bc8f018208/large_Gemini_Generated_Image_lfd4mvlfd4mvlfd4_bc8f018208.png", "hash": "large_Gemini_Generated_Image_lfd4mvlfd4mvlfd4_bc8f018208", "mime": "image/png", "name": "large_Gemini_Generated_Image_lfd4mvlfd4mvlfd4.png", "path": null, "size": 1702.3, "width": 907, "height": 1000}, "small": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/small_Gemini_Generated_Image_lfd4mvlfd4mvlfd4_bc8f018208/small_Gemini_Generated_Image_lfd4mvlfd4mvlfd4_bc8f018208.png", "hash": "small_Gemini_Generated_Image_lfd4mvlfd4mvlfd4_bc8f018208", "mime": "image/png", "name": "small_Gemini_Generated_Image_lfd4mvlfd4mvlfd4.png", "path": null, "size": 431.35, "width": 453, "height": 500}, "medium": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/medium_Gemini_Generated_Image_lfd4mvlfd4mvlfd4_bc8f018208/medium_Gemini_Generated_Image_lfd4mvlfd4mvlfd4_bc8f018208.png", "hash": "medium_Gemini_Generated_Image_lfd4mvlfd4mvlfd4_bc8f018208", "mime": "image/png", "name": "medium_Gemini_Generated_Image_lfd4mvlfd4mvlfd4.png", "path": null, "size": 944.8, "width": 680, "height": 750}, "thumbnail": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/thumbnail_Gemini_Generated_Image_lfd4mvlfd4mvlfd4_bc8f018208/thumbnail_Gemini_Generated_Image_lfd4mvlfd4mvlfd4_bc8f018208.png", "hash": "thumbnail_Gemini_Generated_Image_lfd4mvlfd4mvlfd4_bc8f018208", "mime": "image/png", "name": "thumbnail_Gemini_Generated_Image_lfd4mvlfd4mvlfd4.png", "path": null, "size": 52.67, "width": 141, "height": 156}}	Gemini_Generated_Image_lfd4mvlfd4mvlfd4_bc8f018208	.png	image/png	1493.92	https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/Gemini_Generated_Image_lfd4mvlfd4mvlfd4_bc8f018208/Gemini_Generated_Image_lfd4mvlfd4mvlfd4_bc8f018208.png	\N	@strapi-community/strapi-provider-upload-google-cloud-storage	\N	/1	2025-07-17 22:33:05.976	2025-07-17 22:33:05.976	\N	\N
+738	Gemini_Generated_Image_n67365n67365n673.png	\N	\N	1873	2048	{"large": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/large_Gemini_Generated_Image_n67365n67365n673_f3816b9dc1/large_Gemini_Generated_Image_n67365n67365n673_f3816b9dc1.png", "hash": "large_Gemini_Generated_Image_n67365n67365n673_f3816b9dc1", "mime": "image/png", "name": "large_Gemini_Generated_Image_n67365n67365n673.png", "path": null, "size": 1574.67, "width": 915, "height": 1000}, "small": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/small_Gemini_Generated_Image_n67365n67365n673_f3816b9dc1/small_Gemini_Generated_Image_n67365n67365n673_f3816b9dc1.png", "hash": "small_Gemini_Generated_Image_n67365n67365n673_f3816b9dc1", "mime": "image/png", "name": "small_Gemini_Generated_Image_n67365n67365n673.png", "path": null, "size": 403.75, "width": 457, "height": 500}, "medium": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/medium_Gemini_Generated_Image_n67365n67365n673_f3816b9dc1/medium_Gemini_Generated_Image_n67365n67365n673_f3816b9dc1.png", "hash": "medium_Gemini_Generated_Image_n67365n67365n673_f3816b9dc1", "mime": "image/png", "name": "medium_Gemini_Generated_Image_n67365n67365n673.png", "path": null, "size": 887.88, "width": 686, "height": 750}, "thumbnail": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/thumbnail_Gemini_Generated_Image_n67365n67365n673_f3816b9dc1/thumbnail_Gemini_Generated_Image_n67365n67365n673_f3816b9dc1.png", "hash": "thumbnail_Gemini_Generated_Image_n67365n67365n673_f3816b9dc1", "mime": "image/png", "name": "thumbnail_Gemini_Generated_Image_n67365n67365n673.png", "path": null, "size": 45.24, "width": 143, "height": 156}}	Gemini_Generated_Image_n67365n67365n673_f3816b9dc1	.png	image/png	1564.91	https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/Gemini_Generated_Image_n67365n67365n673_f3816b9dc1/Gemini_Generated_Image_n67365n67365n673_f3816b9dc1.png	\N	@strapi-community/strapi-provider-upload-google-cloud-storage	\N	/1	2025-07-17 22:33:22.862	2025-07-17 22:33:22.862	\N	\N
+739	Gemini_Generated_Image_z2slshz2slshz2sl (1).png	\N	\N	2048	1933	{"large": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/large_Gemini_Generated_Image_z2slshz2slshz2sl_1_4054ca42f3/large_Gemini_Generated_Image_z2slshz2slshz2sl_1_4054ca42f3.png", "hash": "large_Gemini_Generated_Image_z2slshz2slshz2sl_1_4054ca42f3", "mime": "image/png", "name": "large_Gemini_Generated_Image_z2slshz2slshz2sl (1).png", "path": null, "size": 1734.52, "width": 1000, "height": 944}, "small": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/small_Gemini_Generated_Image_z2slshz2slshz2sl_1_4054ca42f3/small_Gemini_Generated_Image_z2slshz2slshz2sl_1_4054ca42f3.png", "hash": "small_Gemini_Generated_Image_z2slshz2slshz2sl_1_4054ca42f3", "mime": "image/png", "name": "small_Gemini_Generated_Image_z2slshz2slshz2sl (1).png", "path": null, "size": 458.77, "width": 500, "height": 472}, "medium": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/medium_Gemini_Generated_Image_z2slshz2slshz2sl_1_4054ca42f3/medium_Gemini_Generated_Image_z2slshz2slshz2sl_1_4054ca42f3.png", "hash": "medium_Gemini_Generated_Image_z2slshz2slshz2sl_1_4054ca42f3", "mime": "image/png", "name": "medium_Gemini_Generated_Image_z2slshz2slshz2sl (1).png", "path": null, "size": 986.17, "width": 750, "height": 708}, "thumbnail": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/thumbnail_Gemini_Generated_Image_z2slshz2slshz2sl_1_4054ca42f3/thumbnail_Gemini_Generated_Image_z2slshz2slshz2sl_1_4054ca42f3.png", "hash": "thumbnail_Gemini_Generated_Image_z2slshz2slshz2sl_1_4054ca42f3", "mime": "image/png", "name": "thumbnail_Gemini_Generated_Image_z2slshz2slshz2sl (1).png", "path": null, "size": 59.85, "width": 165, "height": 156}}	Gemini_Generated_Image_z2slshz2slshz2sl_1_4054ca42f3	.png	image/png	1538.77	https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/Gemini_Generated_Image_z2slshz2slshz2sl_1_4054ca42f3/Gemini_Generated_Image_z2slshz2slshz2sl_1_4054ca42f3.png	\N	@strapi-community/strapi-provider-upload-google-cloud-storage	\N	/1	2025-07-17 22:34:17.609	2025-07-17 22:34:17.609	\N	\N
+740	Gemini_Generated_Image_hmyc6khmyc6khmyc.png	\N	\N	2024	1834	{"large": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/large_Gemini_Generated_Image_hmyc6khmyc6khmyc_71fdfc0bf7/large_Gemini_Generated_Image_hmyc6khmyc6khmyc_71fdfc0bf7.png", "hash": "large_Gemini_Generated_Image_hmyc6khmyc6khmyc_71fdfc0bf7", "mime": "image/png", "name": "large_Gemini_Generated_Image_hmyc6khmyc6khmyc.png", "path": null, "size": 1605.92, "width": 1000, "height": 906}, "small": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/small_Gemini_Generated_Image_hmyc6khmyc6khmyc_71fdfc0bf7/small_Gemini_Generated_Image_hmyc6khmyc6khmyc_71fdfc0bf7.png", "hash": "small_Gemini_Generated_Image_hmyc6khmyc6khmyc_71fdfc0bf7", "mime": "image/png", "name": "small_Gemini_Generated_Image_hmyc6khmyc6khmyc.png", "path": null, "size": 426.2, "width": 500, "height": 453}, "medium": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/medium_Gemini_Generated_Image_hmyc6khmyc6khmyc_71fdfc0bf7/medium_Gemini_Generated_Image_hmyc6khmyc6khmyc_71fdfc0bf7.png", "hash": "medium_Gemini_Generated_Image_hmyc6khmyc6khmyc_71fdfc0bf7", "mime": "image/png", "name": "medium_Gemini_Generated_Image_hmyc6khmyc6khmyc.png", "path": null, "size": 914.97, "width": 750, "height": 680}, "thumbnail": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/thumbnail_Gemini_Generated_Image_hmyc6khmyc6khmyc_71fdfc0bf7/thumbnail_Gemini_Generated_Image_hmyc6khmyc6khmyc_71fdfc0bf7.png", "hash": "thumbnail_Gemini_Generated_Image_hmyc6khmyc6khmyc_71fdfc0bf7", "mime": "image/png", "name": "thumbnail_Gemini_Generated_Image_hmyc6khmyc6khmyc.png", "path": null, "size": 61.02, "width": 172, "height": 156}}	Gemini_Generated_Image_hmyc6khmyc6khmyc_71fdfc0bf7	.png	image/png	1359.24	https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/Gemini_Generated_Image_hmyc6khmyc6khmyc_71fdfc0bf7/Gemini_Generated_Image_hmyc6khmyc6khmyc_71fdfc0bf7.png	\N	@strapi-community/strapi-provider-upload-google-cloud-storage	\N	/1	2025-07-17 22:34:26.26	2025-07-17 22:34:26.26	\N	\N
+741	Gemini_Generated_Image_ufwy0aufwy0aufwy.png	\N	\N	1873	2048	{"large": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/large_Gemini_Generated_Image_ufwy0aufwy0aufwy_de366d8ce5/large_Gemini_Generated_Image_ufwy0aufwy0aufwy_de366d8ce5.png", "hash": "large_Gemini_Generated_Image_ufwy0aufwy0aufwy_de366d8ce5", "mime": "image/png", "name": "large_Gemini_Generated_Image_ufwy0aufwy0aufwy.png", "path": null, "size": 1571.64, "width": 915, "height": 1000}, "small": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/small_Gemini_Generated_Image_ufwy0aufwy0aufwy_de366d8ce5/small_Gemini_Generated_Image_ufwy0aufwy0aufwy_de366d8ce5.png", "hash": "small_Gemini_Generated_Image_ufwy0aufwy0aufwy_de366d8ce5", "mime": "image/png", "name": "small_Gemini_Generated_Image_ufwy0aufwy0aufwy.png", "path": null, "size": 416.98, "width": 457, "height": 500}, "medium": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/medium_Gemini_Generated_Image_ufwy0aufwy0aufwy_de366d8ce5/medium_Gemini_Generated_Image_ufwy0aufwy0aufwy_de366d8ce5.png", "hash": "medium_Gemini_Generated_Image_ufwy0aufwy0aufwy_de366d8ce5", "mime": "image/png", "name": "medium_Gemini_Generated_Image_ufwy0aufwy0aufwy.png", "path": null, "size": 898.06, "width": 686, "height": 750}, "thumbnail": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/thumbnail_Gemini_Generated_Image_ufwy0aufwy0aufwy_de366d8ce5/thumbnail_Gemini_Generated_Image_ufwy0aufwy0aufwy_de366d8ce5.png", "hash": "thumbnail_Gemini_Generated_Image_ufwy0aufwy0aufwy_de366d8ce5", "mime": "image/png", "name": "thumbnail_Gemini_Generated_Image_ufwy0aufwy0aufwy.png", "path": null, "size": 49.54, "width": 143, "height": 156}}	Gemini_Generated_Image_ufwy0aufwy0aufwy_de366d8ce5	.png	image/png	1389.10	https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/Gemini_Generated_Image_ufwy0aufwy0aufwy_de366d8ce5/Gemini_Generated_Image_ufwy0aufwy0aufwy_de366d8ce5.png	\N	@strapi-community/strapi-provider-upload-google-cloud-storage	\N	/1	2025-07-17 22:34:47.986	2025-07-17 22:34:47.986	\N	\N
+742	Gemini_Generated_Image_kwtks4kwtks4kwtk.png	\N	\N	2048	1786	{"large": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/large_Gemini_Generated_Image_kwtks4kwtks4kwtk_d25fc5d85d/large_Gemini_Generated_Image_kwtks4kwtks4kwtk_d25fc5d85d.png", "hash": "large_Gemini_Generated_Image_kwtks4kwtks4kwtk_d25fc5d85d", "mime": "image/png", "name": "large_Gemini_Generated_Image_kwtks4kwtks4kwtk.png", "path": null, "size": 1734.8, "width": 1000, "height": 872}, "small": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/small_Gemini_Generated_Image_kwtks4kwtks4kwtk_d25fc5d85d/small_Gemini_Generated_Image_kwtks4kwtks4kwtk_d25fc5d85d.png", "hash": "small_Gemini_Generated_Image_kwtks4kwtks4kwtk_d25fc5d85d", "mime": "image/png", "name": "small_Gemini_Generated_Image_kwtks4kwtks4kwtk.png", "path": null, "size": 437.5, "width": 500, "height": 436}, "medium": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/medium_Gemini_Generated_Image_kwtks4kwtks4kwtk_d25fc5d85d/medium_Gemini_Generated_Image_kwtks4kwtks4kwtk_d25fc5d85d.png", "hash": "medium_Gemini_Generated_Image_kwtks4kwtks4kwtk_d25fc5d85d", "mime": "image/png", "name": "medium_Gemini_Generated_Image_kwtks4kwtks4kwtk.png", "path": null, "size": 960.07, "width": 750, "height": 654}, "thumbnail": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/thumbnail_Gemini_Generated_Image_kwtks4kwtks4kwtk_d25fc5d85d/thumbnail_Gemini_Generated_Image_kwtks4kwtks4kwtk_d25fc5d85d.png", "hash": "thumbnail_Gemini_Generated_Image_kwtks4kwtks4kwtk_d25fc5d85d", "mime": "image/png", "name": "thumbnail_Gemini_Generated_Image_kwtks4kwtks4kwtk.png", "path": null, "size": 67.27, "width": 179, "height": 156}}	Gemini_Generated_Image_kwtks4kwtks4kwtk_d25fc5d85d	.png	image/png	1594.48	https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/Gemini_Generated_Image_kwtks4kwtks4kwtk_d25fc5d85d/Gemini_Generated_Image_kwtks4kwtks4kwtk_d25fc5d85d.png	\N	@strapi-community/strapi-provider-upload-google-cloud-storage	\N	/1	2025-07-17 22:35:18.943	2025-07-17 22:35:18.943	\N	\N
+743	Gemini_Generated_Image_ifu4dsifu4dsifu4.png	\N	\N	2048	1865	{"large": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/large_Gemini_Generated_Image_ifu4dsifu4dsifu4_e468354697/large_Gemini_Generated_Image_ifu4dsifu4dsifu4_e468354697.png", "hash": "large_Gemini_Generated_Image_ifu4dsifu4dsifu4_e468354697", "mime": "image/png", "name": "large_Gemini_Generated_Image_ifu4dsifu4dsifu4.png", "path": null, "size": 1661.04, "width": 1000, "height": 911}, "small": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/small_Gemini_Generated_Image_ifu4dsifu4dsifu4_e468354697/small_Gemini_Generated_Image_ifu4dsifu4dsifu4_e468354697.png", "hash": "small_Gemini_Generated_Image_ifu4dsifu4dsifu4_e468354697", "mime": "image/png", "name": "small_Gemini_Generated_Image_ifu4dsifu4dsifu4.png", "path": null, "size": 430.94, "width": 500, "height": 455}, "medium": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/medium_Gemini_Generated_Image_ifu4dsifu4dsifu4_e468354697/medium_Gemini_Generated_Image_ifu4dsifu4dsifu4_e468354697.png", "hash": "medium_Gemini_Generated_Image_ifu4dsifu4dsifu4_e468354697", "mime": "image/png", "name": "medium_Gemini_Generated_Image_ifu4dsifu4dsifu4.png", "path": null, "size": 933.63, "width": 750, "height": 683}, "thumbnail": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/thumbnail_Gemini_Generated_Image_ifu4dsifu4dsifu4_e468354697/thumbnail_Gemini_Generated_Image_ifu4dsifu4dsifu4_e468354697.png", "hash": "thumbnail_Gemini_Generated_Image_ifu4dsifu4dsifu4_e468354697", "mime": "image/png", "name": "thumbnail_Gemini_Generated_Image_ifu4dsifu4dsifu4.png", "path": null, "size": 58.26, "width": 171, "height": 156}}	Gemini_Generated_Image_ifu4dsifu4dsifu4_e468354697	.png	image/png	1477.92	https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/Gemini_Generated_Image_ifu4dsifu4dsifu4_e468354697/Gemini_Generated_Image_ifu4dsifu4dsifu4_e468354697.png	\N	@strapi-community/strapi-provider-upload-google-cloud-storage	\N	/1	2025-07-17 22:35:34.787	2025-07-17 22:35:34.787	\N	\N
+744	Gemini_Generated_Image_8x4d6b8x4d6b8x4d.png	\N	\N	2048	1873	{"large": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/large_Gemini_Generated_Image_8x4d6b8x4d6b8x4d_df70edea65/large_Gemini_Generated_Image_8x4d6b8x4d6b8x4d_df70edea65.png", "hash": "large_Gemini_Generated_Image_8x4d6b8x4d6b8x4d_df70edea65", "mime": "image/png", "name": "large_Gemini_Generated_Image_8x4d6b8x4d6b8x4d.png", "path": null, "size": 1714.31, "width": 1000, "height": 915}, "small": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/small_Gemini_Generated_Image_8x4d6b8x4d6b8x4d_df70edea65/small_Gemini_Generated_Image_8x4d6b8x4d6b8x4d_df70edea65.png", "hash": "small_Gemini_Generated_Image_8x4d6b8x4d6b8x4d_df70edea65", "mime": "image/png", "name": "small_Gemini_Generated_Image_8x4d6b8x4d6b8x4d.png", "path": null, "size": 441.1, "width": 500, "height": 457}, "medium": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/medium_Gemini_Generated_Image_8x4d6b8x4d6b8x4d_df70edea65/medium_Gemini_Generated_Image_8x4d6b8x4d6b8x4d_df70edea65.png", "hash": "medium_Gemini_Generated_Image_8x4d6b8x4d6b8x4d_df70edea65", "mime": "image/png", "name": "medium_Gemini_Generated_Image_8x4d6b8x4d6b8x4d.png", "path": null, "size": 958.83, "width": 750, "height": 686}, "thumbnail": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/thumbnail_Gemini_Generated_Image_8x4d6b8x4d6b8x4d_df70edea65/thumbnail_Gemini_Generated_Image_8x4d6b8x4d6b8x4d_df70edea65.png", "hash": "thumbnail_Gemini_Generated_Image_8x4d6b8x4d6b8x4d_df70edea65", "mime": "image/png", "name": "thumbnail_Gemini_Generated_Image_8x4d6b8x4d6b8x4d.png", "path": null, "size": 61.2, "width": 171, "height": 156}}	Gemini_Generated_Image_8x4d6b8x4d6b8x4d_df70edea65	.png	image/png	1471.10	https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/Gemini_Generated_Image_8x4d6b8x4d6b8x4d_df70edea65/Gemini_Generated_Image_8x4d6b8x4d6b8x4d_df70edea65.png	\N	@strapi-community/strapi-provider-upload-google-cloud-storage	\N	/1	2025-07-17 22:35:42.579	2025-07-17 22:35:42.579	\N	\N
+745	Gemini_Generated_Image_n67365n67365n673.png	\N	\N	1873	2048	{"large": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/large_Gemini_Generated_Image_n67365n67365n673_048b62c4a6/large_Gemini_Generated_Image_n67365n67365n673_048b62c4a6.png", "hash": "large_Gemini_Generated_Image_n67365n67365n673_048b62c4a6", "mime": "image/png", "name": "large_Gemini_Generated_Image_n67365n67365n673.png", "path": null, "size": 1574.67, "width": 915, "height": 1000}, "small": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/small_Gemini_Generated_Image_n67365n67365n673_048b62c4a6/small_Gemini_Generated_Image_n67365n67365n673_048b62c4a6.png", "hash": "small_Gemini_Generated_Image_n67365n67365n673_048b62c4a6", "mime": "image/png", "name": "small_Gemini_Generated_Image_n67365n67365n673.png", "path": null, "size": 403.75, "width": 457, "height": 500}, "medium": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/medium_Gemini_Generated_Image_n67365n67365n673_048b62c4a6/medium_Gemini_Generated_Image_n67365n67365n673_048b62c4a6.png", "hash": "medium_Gemini_Generated_Image_n67365n67365n673_048b62c4a6", "mime": "image/png", "name": "medium_Gemini_Generated_Image_n67365n67365n673.png", "path": null, "size": 887.88, "width": 686, "height": 750}, "thumbnail": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/thumbnail_Gemini_Generated_Image_n67365n67365n673_048b62c4a6/thumbnail_Gemini_Generated_Image_n67365n67365n673_048b62c4a6.png", "hash": "thumbnail_Gemini_Generated_Image_n67365n67365n673_048b62c4a6", "mime": "image/png", "name": "thumbnail_Gemini_Generated_Image_n67365n67365n673.png", "path": null, "size": 45.24, "width": 143, "height": 156}}	Gemini_Generated_Image_n67365n67365n673_048b62c4a6	.png	image/png	1564.91	https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/Gemini_Generated_Image_n67365n67365n673_048b62c4a6/Gemini_Generated_Image_n67365n67365n673_048b62c4a6.png	\N	@strapi-community/strapi-provider-upload-google-cloud-storage	\N	/1	2025-07-17 22:35:58.666	2025-07-17 22:35:58.666	\N	\N
+746	Gemini_Generated_Image_n67365n67365n673.png	\N	\N	1873	2048	{"large": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/large_Gemini_Generated_Image_n67365n67365n673_a7353152f2/large_Gemini_Generated_Image_n67365n67365n673_a7353152f2.png", "hash": "large_Gemini_Generated_Image_n67365n67365n673_a7353152f2", "mime": "image/png", "name": "large_Gemini_Generated_Image_n67365n67365n673.png", "path": null, "size": 1574.67, "width": 915, "height": 1000}, "small": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/small_Gemini_Generated_Image_n67365n67365n673_a7353152f2/small_Gemini_Generated_Image_n67365n67365n673_a7353152f2.png", "hash": "small_Gemini_Generated_Image_n67365n67365n673_a7353152f2", "mime": "image/png", "name": "small_Gemini_Generated_Image_n67365n67365n673.png", "path": null, "size": 403.75, "width": 457, "height": 500}, "medium": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/medium_Gemini_Generated_Image_n67365n67365n673_a7353152f2/medium_Gemini_Generated_Image_n67365n67365n673_a7353152f2.png", "hash": "medium_Gemini_Generated_Image_n67365n67365n673_a7353152f2", "mime": "image/png", "name": "medium_Gemini_Generated_Image_n67365n67365n673.png", "path": null, "size": 887.88, "width": 686, "height": 750}, "thumbnail": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/thumbnail_Gemini_Generated_Image_n67365n67365n673_a7353152f2/thumbnail_Gemini_Generated_Image_n67365n67365n673_a7353152f2.png", "hash": "thumbnail_Gemini_Generated_Image_n67365n67365n673_a7353152f2", "mime": "image/png", "name": "thumbnail_Gemini_Generated_Image_n67365n67365n673.png", "path": null, "size": 45.24, "width": 143, "height": 156}}	Gemini_Generated_Image_n67365n67365n673_a7353152f2	.png	image/png	1564.91	https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/Gemini_Generated_Image_n67365n67365n673_a7353152f2/Gemini_Generated_Image_n67365n67365n673_a7353152f2.png	\N	@strapi-community/strapi-provider-upload-google-cloud-storage	\N	/1	2025-07-17 22:36:11.746	2025-07-17 22:36:11.746	\N	\N
+747	Touch & Affection.mp4	\N	\N	\N	\N	\N	Touch_and_Affection_5e63904c17	.mp4	video/mp4	17425.19	https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/Touch_and_Affection_5e63904c17/Touch_and_Affection_5e63904c17.mp4	\N	@strapi-community/strapi-provider-upload-google-cloud-storage	\N	/1	2025-07-17 23:13:39.779	2025-07-17 23:13:39.779	\N	\N
+748	Gemini_Generated_Image_1xcnom1xcnom1xcn.png	\N	\N	2048	2048	{"large": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/large_Gemini_Generated_Image_1xcnom1xcnom1xcn_a9a43fc542/large_Gemini_Generated_Image_1xcnom1xcnom1xcn_a9a43fc542.png", "hash": "large_Gemini_Generated_Image_1xcnom1xcnom1xcn_a9a43fc542", "mime": "image/png", "name": "large_Gemini_Generated_Image_1xcnom1xcnom1xcn.png", "path": null, "size": 2030.26, "width": 1000, "height": 1000}, "small": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/small_Gemini_Generated_Image_1xcnom1xcnom1xcn_a9a43fc542/small_Gemini_Generated_Image_1xcnom1xcnom1xcn_a9a43fc542.png", "hash": "small_Gemini_Generated_Image_1xcnom1xcnom1xcn_a9a43fc542", "mime": "image/png", "name": "small_Gemini_Generated_Image_1xcnom1xcnom1xcn.png", "path": null, "size": 535.92, "width": 500, "height": 500}, "medium": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/medium_Gemini_Generated_Image_1xcnom1xcnom1xcn_a9a43fc542/medium_Gemini_Generated_Image_1xcnom1xcnom1xcn_a9a43fc542.png", "hash": "medium_Gemini_Generated_Image_1xcnom1xcnom1xcn_a9a43fc542", "mime": "image/png", "name": "medium_Gemini_Generated_Image_1xcnom1xcnom1xcn.png", "path": null, "size": 1151.11, "width": 750, "height": 750}, "thumbnail": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/thumbnail_Gemini_Generated_Image_1xcnom1xcnom1xcn_a9a43fc542/thumbnail_Gemini_Generated_Image_1xcnom1xcnom1xcn_a9a43fc542.png", "hash": "thumbnail_Gemini_Generated_Image_1xcnom1xcnom1xcn_a9a43fc542", "mime": "image/png", "name": "thumbnail_Gemini_Generated_Image_1xcnom1xcnom1xcn.png", "path": null, "size": 62.66, "width": 156, "height": 156}}	Gemini_Generated_Image_1xcnom1xcnom1xcn_a9a43fc542	.png	image/png	1670.64	https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/Gemini_Generated_Image_1xcnom1xcnom1xcn_a9a43fc542/Gemini_Generated_Image_1xcnom1xcnom1xcn_a9a43fc542.png	\N	@strapi-community/strapi-provider-upload-google-cloud-storage	\N	/1	2025-07-17 23:40:32.877	2025-07-17 23:40:32.877	\N	\N
+749	Gemini_Generated_Image_mfut1jmfut1jmfut.png	\N	\N	2048	2048	{"large": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/large_Gemini_Generated_Image_mfut1jmfut1jmfut_7eb8e1e5fd/large_Gemini_Generated_Image_mfut1jmfut1jmfut_7eb8e1e5fd.png", "hash": "large_Gemini_Generated_Image_mfut1jmfut1jmfut_7eb8e1e5fd", "mime": "image/png", "name": "large_Gemini_Generated_Image_mfut1jmfut1jmfut.png", "path": null, "size": 1732, "width": 1000, "height": 1000}, "small": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/small_Gemini_Generated_Image_mfut1jmfut1jmfut_7eb8e1e5fd/small_Gemini_Generated_Image_mfut1jmfut1jmfut_7eb8e1e5fd.png", "hash": "small_Gemini_Generated_Image_mfut1jmfut1jmfut_7eb8e1e5fd", "mime": "image/png", "name": "small_Gemini_Generated_Image_mfut1jmfut1jmfut.png", "path": null, "size": 458.97, "width": 500, "height": 500}, "medium": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/medium_Gemini_Generated_Image_mfut1jmfut1jmfut_7eb8e1e5fd/medium_Gemini_Generated_Image_mfut1jmfut1jmfut_7eb8e1e5fd.png", "hash": "medium_Gemini_Generated_Image_mfut1jmfut1jmfut_7eb8e1e5fd", "mime": "image/png", "name": "medium_Gemini_Generated_Image_mfut1jmfut1jmfut.png", "path": null, "size": 987.73, "width": 750, "height": 750}, "thumbnail": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/thumbnail_Gemini_Generated_Image_mfut1jmfut1jmfut_7eb8e1e5fd/thumbnail_Gemini_Generated_Image_mfut1jmfut1jmfut_7eb8e1e5fd.png", "hash": "thumbnail_Gemini_Generated_Image_mfut1jmfut1jmfut_7eb8e1e5fd", "mime": "image/png", "name": "thumbnail_Gemini_Generated_Image_mfut1jmfut1jmfut.png", "path": null, "size": 54.22, "width": 156, "height": 156}}	Gemini_Generated_Image_mfut1jmfut1jmfut_7eb8e1e5fd	.png	image/png	1564.50	https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/Gemini_Generated_Image_mfut1jmfut1jmfut_7eb8e1e5fd/Gemini_Generated_Image_mfut1jmfut1jmfut_7eb8e1e5fd.png	\N	@strapi-community/strapi-provider-upload-google-cloud-storage	\N	/1	2025-07-17 23:40:45.206	2025-07-17 23:40:45.206	\N	\N
+750	Gemini_Generated_Image_mfut1jmfut1jmfut.png	\N	\N	2048	2048	{"large": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/large_Gemini_Generated_Image_mfut1jmfut1jmfut_5a6c85c31f/large_Gemini_Generated_Image_mfut1jmfut1jmfut_5a6c85c31f.png", "hash": "large_Gemini_Generated_Image_mfut1jmfut1jmfut_5a6c85c31f", "mime": "image/png", "name": "large_Gemini_Generated_Image_mfut1jmfut1jmfut.png", "path": null, "size": 1732, "width": 1000, "height": 1000}, "small": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/small_Gemini_Generated_Image_mfut1jmfut1jmfut_5a6c85c31f/small_Gemini_Generated_Image_mfut1jmfut1jmfut_5a6c85c31f.png", "hash": "small_Gemini_Generated_Image_mfut1jmfut1jmfut_5a6c85c31f", "mime": "image/png", "name": "small_Gemini_Generated_Image_mfut1jmfut1jmfut.png", "path": null, "size": 458.97, "width": 500, "height": 500}, "medium": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/medium_Gemini_Generated_Image_mfut1jmfut1jmfut_5a6c85c31f/medium_Gemini_Generated_Image_mfut1jmfut1jmfut_5a6c85c31f.png", "hash": "medium_Gemini_Generated_Image_mfut1jmfut1jmfut_5a6c85c31f", "mime": "image/png", "name": "medium_Gemini_Generated_Image_mfut1jmfut1jmfut.png", "path": null, "size": 987.73, "width": 750, "height": 750}, "thumbnail": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/thumbnail_Gemini_Generated_Image_mfut1jmfut1jmfut_5a6c85c31f/thumbnail_Gemini_Generated_Image_mfut1jmfut1jmfut_5a6c85c31f.png", "hash": "thumbnail_Gemini_Generated_Image_mfut1jmfut1jmfut_5a6c85c31f", "mime": "image/png", "name": "thumbnail_Gemini_Generated_Image_mfut1jmfut1jmfut.png", "path": null, "size": 54.22, "width": 156, "height": 156}}	Gemini_Generated_Image_mfut1jmfut1jmfut_5a6c85c31f	.png	image/png	1564.50	https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/Gemini_Generated_Image_mfut1jmfut1jmfut_5a6c85c31f/Gemini_Generated_Image_mfut1jmfut1jmfut_5a6c85c31f.png	\N	@strapi-community/strapi-provider-upload-google-cloud-storage	\N	/1	2025-07-17 23:40:55.007	2025-07-17 23:40:55.007	\N	\N
+751	Gemini_Generated_Image_84gjn484gjn484gj.png	\N	\N	1889	2048	{"large": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/large_Gemini_Generated_Image_84gjn484gjn484gj_d967191d02/large_Gemini_Generated_Image_84gjn484gjn484gj_d967191d02.png", "hash": "large_Gemini_Generated_Image_84gjn484gjn484gj_d967191d02", "mime": "image/png", "name": "large_Gemini_Generated_Image_84gjn484gjn484gj.png", "path": null, "size": 1945.84, "width": 922, "height": 1000}, "small": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/small_Gemini_Generated_Image_84gjn484gjn484gj_d967191d02/small_Gemini_Generated_Image_84gjn484gjn484gj_d967191d02.png", "hash": "small_Gemini_Generated_Image_84gjn484gjn484gj_d967191d02", "mime": "image/png", "name": "small_Gemini_Generated_Image_84gjn484gjn484gj.png", "path": null, "size": 505.03, "width": 461, "height": 500}, "medium": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/medium_Gemini_Generated_Image_84gjn484gjn484gj_d967191d02/medium_Gemini_Generated_Image_84gjn484gjn484gj_d967191d02.png", "hash": "medium_Gemini_Generated_Image_84gjn484gjn484gj_d967191d02", "mime": "image/png", "name": "medium_Gemini_Generated_Image_84gjn484gjn484gj.png", "path": null, "size": 1103.71, "width": 692, "height": 750}, "thumbnail": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/thumbnail_Gemini_Generated_Image_84gjn484gjn484gj_d967191d02/thumbnail_Gemini_Generated_Image_84gjn484gjn484gj_d967191d02.png", "hash": "thumbnail_Gemini_Generated_Image_84gjn484gjn484gj_d967191d02", "mime": "image/png", "name": "thumbnail_Gemini_Generated_Image_84gjn484gjn484gj.png", "path": null, "size": 59.91, "width": 144, "height": 156}}	Gemini_Generated_Image_84gjn484gjn484gj_d967191d02	.png	image/png	1589.80	https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/Gemini_Generated_Image_84gjn484gjn484gj_d967191d02/Gemini_Generated_Image_84gjn484gjn484gj_d967191d02.png	\N	@strapi-community/strapi-provider-upload-google-cloud-storage	\N	/1	2025-07-17 23:41:10.56	2025-07-17 23:41:10.56	\N	\N
+752	Gemini_Generated_Image_wg9s4owg9s4owg9s.png	\N	\N	2000	1850	{"large": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/large_Gemini_Generated_Image_wg9s4owg9s4owg9s_a65e837c13/large_Gemini_Generated_Image_wg9s4owg9s4owg9s_a65e837c13.png", "hash": "large_Gemini_Generated_Image_wg9s4owg9s4owg9s_a65e837c13", "mime": "image/png", "name": "large_Gemini_Generated_Image_wg9s4owg9s4owg9s.png", "path": null, "size": 1472.37, "width": 1000, "height": 925}, "small": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/small_Gemini_Generated_Image_wg9s4owg9s4owg9s_a65e837c13/small_Gemini_Generated_Image_wg9s4owg9s4owg9s_a65e837c13.png", "hash": "small_Gemini_Generated_Image_wg9s4owg9s4owg9s_a65e837c13", "mime": "image/png", "name": "small_Gemini_Generated_Image_wg9s4owg9s4owg9s.png", "path": null, "size": 385.25, "width": 500, "height": 463}, "medium": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/medium_Gemini_Generated_Image_wg9s4owg9s4owg9s_a65e837c13/medium_Gemini_Generated_Image_wg9s4owg9s4owg9s_a65e837c13.png", "hash": "medium_Gemini_Generated_Image_wg9s4owg9s4owg9s_a65e837c13", "mime": "image/png", "name": "medium_Gemini_Generated_Image_wg9s4owg9s4owg9s.png", "path": null, "size": 836.99, "width": 750, "height": 694}, "thumbnail": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/thumbnail_Gemini_Generated_Image_wg9s4owg9s4owg9s_a65e837c13/thumbnail_Gemini_Generated_Image_wg9s4owg9s4owg9s_a65e837c13.png", "hash": "thumbnail_Gemini_Generated_Image_wg9s4owg9s4owg9s_a65e837c13", "mime": "image/png", "name": "thumbnail_Gemini_Generated_Image_wg9s4owg9s4owg9s.png", "path": null, "size": 51.82, "width": 169, "height": 156}}	Gemini_Generated_Image_wg9s4owg9s4owg9s_a65e837c13	.png	image/png	1285.36	https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/Gemini_Generated_Image_wg9s4owg9s4owg9s_a65e837c13/Gemini_Generated_Image_wg9s4owg9s4owg9s_a65e837c13.png	\N	@strapi-community/strapi-provider-upload-google-cloud-storage	\N	/1	2025-07-17 23:41:17.359	2025-07-17 23:41:17.359	\N	\N
+775	Storytelling.mp4	\N	\N	\N	\N	\N	Storytelling_68bcf94f4e	.mp4	video/mp4	32195.20	https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/Storytelling_68bcf94f4e/Storytelling_68bcf94f4e.mp4	\N	@strapi-community/strapi-provider-upload-google-cloud-storage	\N	/1	2025-07-18 03:32:52.175	2025-07-18 03:32:52.175	\N	\N
+753	Gemini_Generated_Image_v5k4kjv5k4kjv5k4.png	\N	\N	1929	2048	{"large": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/large_Gemini_Generated_Image_v5k4kjv5k4kjv5k4_a137a90bfa/large_Gemini_Generated_Image_v5k4kjv5k4kjv5k4_a137a90bfa.png", "hash": "large_Gemini_Generated_Image_v5k4kjv5k4kjv5k4_a137a90bfa", "mime": "image/png", "name": "large_Gemini_Generated_Image_v5k4kjv5k4kjv5k4.png", "path": null, "size": 1744.99, "width": 942, "height": 1000}, "small": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/small_Gemini_Generated_Image_v5k4kjv5k4kjv5k4_a137a90bfa/small_Gemini_Generated_Image_v5k4kjv5k4kjv5k4_a137a90bfa.png", "hash": "small_Gemini_Generated_Image_v5k4kjv5k4kjv5k4_a137a90bfa", "mime": "image/png", "name": "small_Gemini_Generated_Image_v5k4kjv5k4kjv5k4.png", "path": null, "size": 454.47, "width": 471, "height": 500}, "medium": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/medium_Gemini_Generated_Image_v5k4kjv5k4kjv5k4_a137a90bfa/medium_Gemini_Generated_Image_v5k4kjv5k4kjv5k4_a137a90bfa.png", "hash": "medium_Gemini_Generated_Image_v5k4kjv5k4kjv5k4_a137a90bfa", "mime": "image/png", "name": "medium_Gemini_Generated_Image_v5k4kjv5k4kjv5k4.png", "path": null, "size": 986.24, "width": 706, "height": 750}, "thumbnail": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/thumbnail_Gemini_Generated_Image_v5k4kjv5k4kjv5k4_a137a90bfa/thumbnail_Gemini_Generated_Image_v5k4kjv5k4kjv5k4_a137a90bfa.png", "hash": "thumbnail_Gemini_Generated_Image_v5k4kjv5k4kjv5k4_a137a90bfa", "mime": "image/png", "name": "thumbnail_Gemini_Generated_Image_v5k4kjv5k4kjv5k4.png", "path": null, "size": 53.89, "width": 147, "height": 156}}	Gemini_Generated_Image_v5k4kjv5k4kjv5k4_a137a90bfa	.png	image/png	1640.33	https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/Gemini_Generated_Image_v5k4kjv5k4kjv5k4_a137a90bfa/Gemini_Generated_Image_v5k4kjv5k4kjv5k4_a137a90bfa.png	\N	@strapi-community/strapi-provider-upload-google-cloud-storage	\N	/1	2025-07-17 23:41:26.675	2025-07-17 23:41:26.675	\N	\N
+754	Time-In and Time-Out.mp4	\N	\N	\N	\N	\N	Time_In_and_Time_Out_f5c1a1a27f	.mp4	video/mp4	22279.70	https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/Time_In_and_Time_Out_f5c1a1a27f/Time_In_and_Time_Out_f5c1a1a27f.mp4	\N	@strapi-community/strapi-provider-upload-google-cloud-storage	\N	/1	2025-07-17 23:41:46.791	2025-07-17 23:41:46.791	\N	\N
+755	Gemini_Generated_Image_qiam0uqiam0uqiam.png	\N	\N	2008	1889	{"large": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/large_Gemini_Generated_Image_qiam0uqiam0uqiam_15de26bea7/large_Gemini_Generated_Image_qiam0uqiam0uqiam_15de26bea7.png", "hash": "large_Gemini_Generated_Image_qiam0uqiam0uqiam_15de26bea7", "mime": "image/png", "name": "large_Gemini_Generated_Image_qiam0uqiam0uqiam.png", "path": null, "size": 2021.08, "width": 1000, "height": 941}, "small": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/small_Gemini_Generated_Image_qiam0uqiam0uqiam_15de26bea7/small_Gemini_Generated_Image_qiam0uqiam0uqiam_15de26bea7.png", "hash": "small_Gemini_Generated_Image_qiam0uqiam0uqiam_15de26bea7", "mime": "image/png", "name": "small_Gemini_Generated_Image_qiam0uqiam0uqiam.png", "path": null, "size": 527.71, "width": 500, "height": 470}, "medium": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/medium_Gemini_Generated_Image_qiam0uqiam0uqiam_15de26bea7/medium_Gemini_Generated_Image_qiam0uqiam0uqiam_15de26bea7.png", "hash": "medium_Gemini_Generated_Image_qiam0uqiam0uqiam_15de26bea7", "mime": "image/png", "name": "medium_Gemini_Generated_Image_qiam0uqiam0uqiam.png", "path": null, "size": 1147.66, "width": 750, "height": 706}, "thumbnail": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/thumbnail_Gemini_Generated_Image_qiam0uqiam0uqiam_15de26bea7/thumbnail_Gemini_Generated_Image_qiam0uqiam0uqiam_15de26bea7.png", "hash": "thumbnail_Gemini_Generated_Image_qiam0uqiam0uqiam_15de26bea7", "mime": "image/png", "name": "thumbnail_Gemini_Generated_Image_qiam0uqiam0uqiam.png", "path": null, "size": 65.57, "width": 166, "height": 156}}	Gemini_Generated_Image_qiam0uqiam0uqiam_15de26bea7	.png	image/png	1449.98	https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/Gemini_Generated_Image_qiam0uqiam0uqiam_15de26bea7/Gemini_Generated_Image_qiam0uqiam0uqiam_15de26bea7.png	\N	@strapi-community/strapi-provider-upload-google-cloud-storage	\N	/1	2025-07-17 23:42:08.83	2025-07-17 23:42:08.83	\N	\N
+756	Gemini_Generated_Image_mfut1jmfut1jmfut.png	\N	\N	2048	2048	{"large": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/large_Gemini_Generated_Image_mfut1jmfut1jmfut_cc5f5053d3/large_Gemini_Generated_Image_mfut1jmfut1jmfut_cc5f5053d3.png", "hash": "large_Gemini_Generated_Image_mfut1jmfut1jmfut_cc5f5053d3", "mime": "image/png", "name": "large_Gemini_Generated_Image_mfut1jmfut1jmfut.png", "path": null, "size": 1732, "width": 1000, "height": 1000}, "small": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/small_Gemini_Generated_Image_mfut1jmfut1jmfut_cc5f5053d3/small_Gemini_Generated_Image_mfut1jmfut1jmfut_cc5f5053d3.png", "hash": "small_Gemini_Generated_Image_mfut1jmfut1jmfut_cc5f5053d3", "mime": "image/png", "name": "small_Gemini_Generated_Image_mfut1jmfut1jmfut.png", "path": null, "size": 458.97, "width": 500, "height": 500}, "medium": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/medium_Gemini_Generated_Image_mfut1jmfut1jmfut_cc5f5053d3/medium_Gemini_Generated_Image_mfut1jmfut1jmfut_cc5f5053d3.png", "hash": "medium_Gemini_Generated_Image_mfut1jmfut1jmfut_cc5f5053d3", "mime": "image/png", "name": "medium_Gemini_Generated_Image_mfut1jmfut1jmfut.png", "path": null, "size": 987.73, "width": 750, "height": 750}, "thumbnail": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/thumbnail_Gemini_Generated_Image_mfut1jmfut1jmfut_cc5f5053d3/thumbnail_Gemini_Generated_Image_mfut1jmfut1jmfut_cc5f5053d3.png", "hash": "thumbnail_Gemini_Generated_Image_mfut1jmfut1jmfut_cc5f5053d3", "mime": "image/png", "name": "thumbnail_Gemini_Generated_Image_mfut1jmfut1jmfut.png", "path": null, "size": 54.22, "width": 156, "height": 156}}	Gemini_Generated_Image_mfut1jmfut1jmfut_cc5f5053d3	.png	image/png	1564.50	https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/Gemini_Generated_Image_mfut1jmfut1jmfut_cc5f5053d3/Gemini_Generated_Image_mfut1jmfut1jmfut_cc5f5053d3.png	\N	@strapi-community/strapi-provider-upload-google-cloud-storage	\N	/1	2025-07-17 23:42:26.752	2025-07-17 23:42:26.752	\N	\N
+757	Gemini_Generated_Image_sye6c1sye6c1sye6.png	\N	\N	1826	2040	{"large": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/large_Gemini_Generated_Image_sye6c1sye6c1sye6_4f2e99bf97/large_Gemini_Generated_Image_sye6c1sye6c1sye6_4f2e99bf97.png", "hash": "large_Gemini_Generated_Image_sye6c1sye6c1sye6_4f2e99bf97", "mime": "image/png", "name": "large_Gemini_Generated_Image_sye6c1sye6c1sye6.png", "path": null, "size": 1927.88, "width": 895, "height": 1000}, "small": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/small_Gemini_Generated_Image_sye6c1sye6c1sye6_4f2e99bf97/small_Gemini_Generated_Image_sye6c1sye6c1sye6_4f2e99bf97.png", "hash": "small_Gemini_Generated_Image_sye6c1sye6c1sye6_4f2e99bf97", "mime": "image/png", "name": "small_Gemini_Generated_Image_sye6c1sye6c1sye6.png", "path": null, "size": 508.21, "width": 448, "height": 500}, "medium": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/medium_Gemini_Generated_Image_sye6c1sye6c1sye6_4f2e99bf97/medium_Gemini_Generated_Image_sye6c1sye6c1sye6_4f2e99bf97.png", "hash": "medium_Gemini_Generated_Image_sye6c1sye6c1sye6_4f2e99bf97", "mime": "image/png", "name": "medium_Gemini_Generated_Image_sye6c1sye6c1sye6.png", "path": null, "size": 1097.67, "width": 671, "height": 750}, "thumbnail": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/thumbnail_Gemini_Generated_Image_sye6c1sye6c1sye6_4f2e99bf97/thumbnail_Gemini_Generated_Image_sye6c1sye6c1sye6_4f2e99bf97.png", "hash": "thumbnail_Gemini_Generated_Image_sye6c1sye6c1sye6_4f2e99bf97", "mime": "image/png", "name": "thumbnail_Gemini_Generated_Image_sye6c1sye6c1sye6.png", "path": null, "size": 56.3, "width": 140, "height": 156}}	Gemini_Generated_Image_sye6c1sye6c1sye6_4f2e99bf97	.png	image/png	1409.18	https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/Gemini_Generated_Image_sye6c1sye6c1sye6_4f2e99bf97/Gemini_Generated_Image_sye6c1sye6c1sye6_4f2e99bf97.png	\N	@strapi-community/strapi-provider-upload-google-cloud-storage	\N	/1	2025-07-17 23:43:38.466	2025-07-17 23:43:38.466	\N	\N
+758	Gemini_Generated_Image_6erk56erk56erk56.png	\N	\N	1778	2048	{"large": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/large_Gemini_Generated_Image_6erk56erk56erk56_6492d9b5b2/large_Gemini_Generated_Image_6erk56erk56erk56_6492d9b5b2.png", "hash": "large_Gemini_Generated_Image_6erk56erk56erk56_6492d9b5b2", "mime": "image/png", "name": "large_Gemini_Generated_Image_6erk56erk56erk56.png", "path": null, "size": 1581.24, "width": 868, "height": 1000}, "small": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/small_Gemini_Generated_Image_6erk56erk56erk56_6492d9b5b2/small_Gemini_Generated_Image_6erk56erk56erk56_6492d9b5b2.png", "hash": "small_Gemini_Generated_Image_6erk56erk56erk56_6492d9b5b2", "mime": "image/png", "name": "small_Gemini_Generated_Image_6erk56erk56erk56.png", "path": null, "size": 410.63, "width": 434, "height": 500}, "medium": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/medium_Gemini_Generated_Image_6erk56erk56erk56_6492d9b5b2/medium_Gemini_Generated_Image_6erk56erk56erk56_6492d9b5b2.png", "hash": "medium_Gemini_Generated_Image_6erk56erk56erk56_6492d9b5b2", "mime": "image/png", "name": "medium_Gemini_Generated_Image_6erk56erk56erk56.png", "path": null, "size": 892.44, "width": 651, "height": 750}, "thumbnail": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/thumbnail_Gemini_Generated_Image_6erk56erk56erk56_6492d9b5b2/thumbnail_Gemini_Generated_Image_6erk56erk56erk56_6492d9b5b2.png", "hash": "thumbnail_Gemini_Generated_Image_6erk56erk56erk56_6492d9b5b2", "mime": "image/png", "name": "thumbnail_Gemini_Generated_Image_6erk56erk56erk56.png", "path": null, "size": 47.77, "width": 135, "height": 156}}	Gemini_Generated_Image_6erk56erk56erk56_6492d9b5b2	.png	image/png	1388.00	https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/Gemini_Generated_Image_6erk56erk56erk56_6492d9b5b2/Gemini_Generated_Image_6erk56erk56erk56_6492d9b5b2.png	\N	@strapi-community/strapi-provider-upload-google-cloud-storage	\N	/1	2025-07-17 23:43:51.695	2025-07-17 23:43:51.695	\N	\N
+759	Gemini_Generated_Image_kh6pi2kh6pi2kh6p.png	\N	\N	2048	1897	{"large": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/large_Gemini_Generated_Image_kh6pi2kh6pi2kh6p_2d50405154/large_Gemini_Generated_Image_kh6pi2kh6pi2kh6p_2d50405154.png", "hash": "large_Gemini_Generated_Image_kh6pi2kh6pi2kh6p_2d50405154", "mime": "image/png", "name": "large_Gemini_Generated_Image_kh6pi2kh6pi2kh6p.png", "path": null, "size": 2186.96, "width": 1000, "height": 926}, "small": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/small_Gemini_Generated_Image_kh6pi2kh6pi2kh6p_2d50405154/small_Gemini_Generated_Image_kh6pi2kh6pi2kh6p_2d50405154.png", "hash": "small_Gemini_Generated_Image_kh6pi2kh6pi2kh6p_2d50405154", "mime": "image/png", "name": "small_Gemini_Generated_Image_kh6pi2kh6pi2kh6p.png", "path": null, "size": 581.91, "width": 500, "height": 463}, "medium": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/medium_Gemini_Generated_Image_kh6pi2kh6pi2kh6p_2d50405154/medium_Gemini_Generated_Image_kh6pi2kh6pi2kh6p_2d50405154.png", "hash": "medium_Gemini_Generated_Image_kh6pi2kh6pi2kh6p_2d50405154", "mime": "image/png", "name": "medium_Gemini_Generated_Image_kh6pi2kh6pi2kh6p.png", "path": null, "size": 1247.74, "width": 750, "height": 695}, "thumbnail": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/thumbnail_Gemini_Generated_Image_kh6pi2kh6pi2kh6p_2d50405154/thumbnail_Gemini_Generated_Image_kh6pi2kh6pi2kh6p_2d50405154.png", "hash": "thumbnail_Gemini_Generated_Image_kh6pi2kh6pi2kh6p_2d50405154", "mime": "image/png", "name": "thumbnail_Gemini_Generated_Image_kh6pi2kh6pi2kh6p.png", "path": null, "size": 74.65, "width": 168, "height": 156}}	Gemini_Generated_Image_kh6pi2kh6pi2kh6p_2d50405154	.png	image/png	1412.83	https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/Gemini_Generated_Image_kh6pi2kh6pi2kh6p_2d50405154/Gemini_Generated_Image_kh6pi2kh6pi2kh6p_2d50405154.png	\N	@strapi-community/strapi-provider-upload-google-cloud-storage	\N	/1	2025-07-17 23:44:01.76	2025-07-17 23:44:01.76	\N	\N
+760	Gemini_Generated_Image_i56y0i56y0i56y0i.png	\N	\N	1834	2048	{"large": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/large_Gemini_Generated_Image_i56y0i56y0i56y0i_a964a20281/large_Gemini_Generated_Image_i56y0i56y0i56y0i_a964a20281.png", "hash": "large_Gemini_Generated_Image_i56y0i56y0i56y0i_a964a20281", "mime": "image/png", "name": "large_Gemini_Generated_Image_i56y0i56y0i56y0i.png", "path": null, "size": 1588.96, "width": 896, "height": 1000}, "small": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/small_Gemini_Generated_Image_i56y0i56y0i56y0i_a964a20281/small_Gemini_Generated_Image_i56y0i56y0i56y0i_a964a20281.png", "hash": "small_Gemini_Generated_Image_i56y0i56y0i56y0i_a964a20281", "mime": "image/png", "name": "small_Gemini_Generated_Image_i56y0i56y0i56y0i.png", "path": null, "size": 420.4, "width": 448, "height": 500}, "medium": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/medium_Gemini_Generated_Image_i56y0i56y0i56y0i_a964a20281/medium_Gemini_Generated_Image_i56y0i56y0i56y0i_a964a20281.png", "hash": "medium_Gemini_Generated_Image_i56y0i56y0i56y0i_a964a20281", "mime": "image/png", "name": "medium_Gemini_Generated_Image_i56y0i56y0i56y0i.png", "path": null, "size": 902.68, "width": 672, "height": 750}, "thumbnail": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/thumbnail_Gemini_Generated_Image_i56y0i56y0i56y0i_a964a20281/thumbnail_Gemini_Generated_Image_i56y0i56y0i56y0i_a964a20281.png", "hash": "thumbnail_Gemini_Generated_Image_i56y0i56y0i56y0i_a964a20281", "mime": "image/png", "name": "thumbnail_Gemini_Generated_Image_i56y0i56y0i56y0i.png", "path": null, "size": 49.94, "width": 140, "height": 156}}	Gemini_Generated_Image_i56y0i56y0i56y0i_a964a20281	.png	image/png	1354.70	https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/Gemini_Generated_Image_i56y0i56y0i56y0i_a964a20281/Gemini_Generated_Image_i56y0i56y0i56y0i_a964a20281.png	\N	@strapi-community/strapi-provider-upload-google-cloud-storage	\N	/1	2025-07-17 23:44:08.779	2025-07-17 23:44:08.779	\N	\N
+761	Gemini_Generated_Image_o7kn3qo7kn3qo7kn.png	\N	\N	2032	1838	{"large": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/large_Gemini_Generated_Image_o7kn3qo7kn3qo7kn_25823bf26a/large_Gemini_Generated_Image_o7kn3qo7kn3qo7kn_25823bf26a.png", "hash": "large_Gemini_Generated_Image_o7kn3qo7kn3qo7kn_25823bf26a", "mime": "image/png", "name": "large_Gemini_Generated_Image_o7kn3qo7kn3qo7kn.png", "path": null, "size": 1752.57, "width": 1000, "height": 905}, "small": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/small_Gemini_Generated_Image_o7kn3qo7kn3qo7kn_25823bf26a/small_Gemini_Generated_Image_o7kn3qo7kn3qo7kn_25823bf26a.png", "hash": "small_Gemini_Generated_Image_o7kn3qo7kn3qo7kn_25823bf26a", "mime": "image/png", "name": "small_Gemini_Generated_Image_o7kn3qo7kn3qo7kn.png", "path": null, "size": 454.91, "width": 500, "height": 452}, "medium": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/medium_Gemini_Generated_Image_o7kn3qo7kn3qo7kn_25823bf26a/medium_Gemini_Generated_Image_o7kn3qo7kn3qo7kn_25823bf26a.png", "hash": "medium_Gemini_Generated_Image_o7kn3qo7kn3qo7kn_25823bf26a", "mime": "image/png", "name": "medium_Gemini_Generated_Image_o7kn3qo7kn3qo7kn.png", "path": null, "size": 986.89, "width": 750, "height": 678}, "thumbnail": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/thumbnail_Gemini_Generated_Image_o7kn3qo7kn3qo7kn_25823bf26a/thumbnail_Gemini_Generated_Image_o7kn3qo7kn3qo7kn_25823bf26a.png", "hash": "thumbnail_Gemini_Generated_Image_o7kn3qo7kn3qo7kn_25823bf26a", "mime": "image/png", "name": "thumbnail_Gemini_Generated_Image_o7kn3qo7kn3qo7kn.png", "path": null, "size": 62.69, "width": 172, "height": 156}}	Gemini_Generated_Image_o7kn3qo7kn3qo7kn_25823bf26a	.png	image/png	1373.38	https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/Gemini_Generated_Image_o7kn3qo7kn3qo7kn_25823bf26a/Gemini_Generated_Image_o7kn3qo7kn3qo7kn_25823bf26a.png	\N	@strapi-community/strapi-provider-upload-google-cloud-storage	\N	/1	2025-07-17 23:44:17.659	2025-07-17 23:44:17.659	\N	\N
+776	Special Time.mp4	\N	\N	\N	\N	\N	Special_Time_81a87c29b9	.mp4	video/mp4	28404.52	https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/Special_Time_81a87c29b9/Special_Time_81a87c29b9.mp4	\N	@strapi-community/strapi-provider-upload-google-cloud-storage	\N	/1	2025-07-18 03:51:19.152	2025-07-18 03:51:19.152	\N	\N
+762	Gemini_Generated_Image_o7kn3qo7kn3qo7kn.png	\N	\N	2032	1838	{"large": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/large_Gemini_Generated_Image_o7kn3qo7kn3qo7kn_75cc059212/large_Gemini_Generated_Image_o7kn3qo7kn3qo7kn_75cc059212.png", "hash": "large_Gemini_Generated_Image_o7kn3qo7kn3qo7kn_75cc059212", "mime": "image/png", "name": "large_Gemini_Generated_Image_o7kn3qo7kn3qo7kn.png", "path": null, "size": 1752.57, "width": 1000, "height": 905}, "small": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/small_Gemini_Generated_Image_o7kn3qo7kn3qo7kn_75cc059212/small_Gemini_Generated_Image_o7kn3qo7kn3qo7kn_75cc059212.png", "hash": "small_Gemini_Generated_Image_o7kn3qo7kn3qo7kn_75cc059212", "mime": "image/png", "name": "small_Gemini_Generated_Image_o7kn3qo7kn3qo7kn.png", "path": null, "size": 454.91, "width": 500, "height": 452}, "medium": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/medium_Gemini_Generated_Image_o7kn3qo7kn3qo7kn_75cc059212/medium_Gemini_Generated_Image_o7kn3qo7kn3qo7kn_75cc059212.png", "hash": "medium_Gemini_Generated_Image_o7kn3qo7kn3qo7kn_75cc059212", "mime": "image/png", "name": "medium_Gemini_Generated_Image_o7kn3qo7kn3qo7kn.png", "path": null, "size": 986.89, "width": 750, "height": 678}, "thumbnail": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/thumbnail_Gemini_Generated_Image_o7kn3qo7kn3qo7kn_75cc059212/thumbnail_Gemini_Generated_Image_o7kn3qo7kn3qo7kn_75cc059212.png", "hash": "thumbnail_Gemini_Generated_Image_o7kn3qo7kn3qo7kn_75cc059212", "mime": "image/png", "name": "thumbnail_Gemini_Generated_Image_o7kn3qo7kn3qo7kn.png", "path": null, "size": 62.69, "width": 172, "height": 156}}	Gemini_Generated_Image_o7kn3qo7kn3qo7kn_75cc059212	.png	image/png	1373.38	https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/Gemini_Generated_Image_o7kn3qo7kn3qo7kn_75cc059212/Gemini_Generated_Image_o7kn3qo7kn3qo7kn_75cc059212.png	\N	@strapi-community/strapi-provider-upload-google-cloud-storage	\N	/1	2025-07-17 23:44:31.903	2025-07-17 23:44:31.903	\N	\N
+763	Gemini_Generated_Image_g9nmqng9nmqng9nm.png	\N	\N	1826	2048	{"large": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/large_Gemini_Generated_Image_g9nmqng9nmqng9nm_ddf33806ed/large_Gemini_Generated_Image_g9nmqng9nmqng9nm_ddf33806ed.png", "hash": "large_Gemini_Generated_Image_g9nmqng9nmqng9nm_ddf33806ed", "mime": "image/png", "name": "large_Gemini_Generated_Image_g9nmqng9nmqng9nm.png", "path": null, "size": 1730.63, "width": 892, "height": 1000}, "small": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/small_Gemini_Generated_Image_g9nmqng9nmqng9nm_ddf33806ed/small_Gemini_Generated_Image_g9nmqng9nmqng9nm_ddf33806ed.png", "hash": "small_Gemini_Generated_Image_g9nmqng9nmqng9nm_ddf33806ed", "mime": "image/png", "name": "small_Gemini_Generated_Image_g9nmqng9nmqng9nm.png", "path": null, "size": 446.47, "width": 446, "height": 500}, "medium": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/medium_Gemini_Generated_Image_g9nmqng9nmqng9nm_ddf33806ed/medium_Gemini_Generated_Image_g9nmqng9nmqng9nm_ddf33806ed.png", "hash": "medium_Gemini_Generated_Image_g9nmqng9nmqng9nm_ddf33806ed", "mime": "image/png", "name": "medium_Gemini_Generated_Image_g9nmqng9nmqng9nm.png", "path": null, "size": 974.51, "width": 669, "height": 750}, "thumbnail": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/thumbnail_Gemini_Generated_Image_g9nmqng9nmqng9nm_ddf33806ed/thumbnail_Gemini_Generated_Image_g9nmqng9nmqng9nm_ddf33806ed.png", "hash": "thumbnail_Gemini_Generated_Image_g9nmqng9nmqng9nm_ddf33806ed", "mime": "image/png", "name": "thumbnail_Gemini_Generated_Image_g9nmqng9nmqng9nm.png", "path": null, "size": 50.52, "width": 139, "height": 156}}	Gemini_Generated_Image_g9nmqng9nmqng9nm_ddf33806ed	.png	image/png	1488.52	https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/Gemini_Generated_Image_g9nmqng9nmqng9nm_ddf33806ed/Gemini_Generated_Image_g9nmqng9nmqng9nm_ddf33806ed.png	\N	@strapi-community/strapi-provider-upload-google-cloud-storage	\N	/1	2025-07-17 23:44:49.116	2025-07-17 23:44:49.116	\N	\N
+764	Gemini_Generated_Image_v5k4kjv5k4kjv5k4.png	\N	\N	1929	2048	{"large": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/large_Gemini_Generated_Image_v5k4kjv5k4kjv5k4_7d211d340d/large_Gemini_Generated_Image_v5k4kjv5k4kjv5k4_7d211d340d.png", "hash": "large_Gemini_Generated_Image_v5k4kjv5k4kjv5k4_7d211d340d", "mime": "image/png", "name": "large_Gemini_Generated_Image_v5k4kjv5k4kjv5k4.png", "path": null, "size": 1744.99, "width": 942, "height": 1000}, "small": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/small_Gemini_Generated_Image_v5k4kjv5k4kjv5k4_7d211d340d/small_Gemini_Generated_Image_v5k4kjv5k4kjv5k4_7d211d340d.png", "hash": "small_Gemini_Generated_Image_v5k4kjv5k4kjv5k4_7d211d340d", "mime": "image/png", "name": "small_Gemini_Generated_Image_v5k4kjv5k4kjv5k4.png", "path": null, "size": 454.47, "width": 471, "height": 500}, "medium": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/medium_Gemini_Generated_Image_v5k4kjv5k4kjv5k4_7d211d340d/medium_Gemini_Generated_Image_v5k4kjv5k4kjv5k4_7d211d340d.png", "hash": "medium_Gemini_Generated_Image_v5k4kjv5k4kjv5k4_7d211d340d", "mime": "image/png", "name": "medium_Gemini_Generated_Image_v5k4kjv5k4kjv5k4.png", "path": null, "size": 986.24, "width": 706, "height": 750}, "thumbnail": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/thumbnail_Gemini_Generated_Image_v5k4kjv5k4kjv5k4_7d211d340d/thumbnail_Gemini_Generated_Image_v5k4kjv5k4kjv5k4_7d211d340d.png", "hash": "thumbnail_Gemini_Generated_Image_v5k4kjv5k4kjv5k4_7d211d340d", "mime": "image/png", "name": "thumbnail_Gemini_Generated_Image_v5k4kjv5k4kjv5k4.png", "path": null, "size": 53.89, "width": 147, "height": 156}}	Gemini_Generated_Image_v5k4kjv5k4kjv5k4_7d211d340d	.png	image/png	1640.33	https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/Gemini_Generated_Image_v5k4kjv5k4kjv5k4_7d211d340d/Gemini_Generated_Image_v5k4kjv5k4kjv5k4_7d211d340d.png	\N	@strapi-community/strapi-provider-upload-google-cloud-storage	\N	/1	2025-07-17 23:44:58.666	2025-07-17 23:44:58.666	\N	\N
+765	Gemini_Generated_Image_wg9s4owg9s4owg9s.png	\N	\N	2000	1850	{"large": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/large_Gemini_Generated_Image_wg9s4owg9s4owg9s_c0e82ed666/large_Gemini_Generated_Image_wg9s4owg9s4owg9s_c0e82ed666.png", "hash": "large_Gemini_Generated_Image_wg9s4owg9s4owg9s_c0e82ed666", "mime": "image/png", "name": "large_Gemini_Generated_Image_wg9s4owg9s4owg9s.png", "path": null, "size": 1472.37, "width": 1000, "height": 925}, "small": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/small_Gemini_Generated_Image_wg9s4owg9s4owg9s_c0e82ed666/small_Gemini_Generated_Image_wg9s4owg9s4owg9s_c0e82ed666.png", "hash": "small_Gemini_Generated_Image_wg9s4owg9s4owg9s_c0e82ed666", "mime": "image/png", "name": "small_Gemini_Generated_Image_wg9s4owg9s4owg9s.png", "path": null, "size": 385.25, "width": 500, "height": 463}, "medium": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/medium_Gemini_Generated_Image_wg9s4owg9s4owg9s_c0e82ed666/medium_Gemini_Generated_Image_wg9s4owg9s4owg9s_c0e82ed666.png", "hash": "medium_Gemini_Generated_Image_wg9s4owg9s4owg9s_c0e82ed666", "mime": "image/png", "name": "medium_Gemini_Generated_Image_wg9s4owg9s4owg9s.png", "path": null, "size": 836.99, "width": 750, "height": 694}, "thumbnail": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/thumbnail_Gemini_Generated_Image_wg9s4owg9s4owg9s_c0e82ed666/thumbnail_Gemini_Generated_Image_wg9s4owg9s4owg9s_c0e82ed666.png", "hash": "thumbnail_Gemini_Generated_Image_wg9s4owg9s4owg9s_c0e82ed666", "mime": "image/png", "name": "thumbnail_Gemini_Generated_Image_wg9s4owg9s4owg9s.png", "path": null, "size": 51.82, "width": 169, "height": 156}}	Gemini_Generated_Image_wg9s4owg9s4owg9s_c0e82ed666	.png	image/png	1285.36	https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/Gemini_Generated_Image_wg9s4owg9s4owg9s_c0e82ed666/Gemini_Generated_Image_wg9s4owg9s4owg9s_c0e82ed666.png	\N	@strapi-community/strapi-provider-upload-google-cloud-storage	\N	/1	2025-07-17 23:45:11.985	2025-07-17 23:45:11.985	\N	\N
+766	Gemini_Generated_Image_mfut1jmfut1jmfut.png	\N	\N	2048	2048	{"large": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/large_Gemini_Generated_Image_mfut1jmfut1jmfut_cc3fae5da0/large_Gemini_Generated_Image_mfut1jmfut1jmfut_cc3fae5da0.png", "hash": "large_Gemini_Generated_Image_mfut1jmfut1jmfut_cc3fae5da0", "mime": "image/png", "name": "large_Gemini_Generated_Image_mfut1jmfut1jmfut.png", "path": null, "size": 1732, "width": 1000, "height": 1000}, "small": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/small_Gemini_Generated_Image_mfut1jmfut1jmfut_cc3fae5da0/small_Gemini_Generated_Image_mfut1jmfut1jmfut_cc3fae5da0.png", "hash": "small_Gemini_Generated_Image_mfut1jmfut1jmfut_cc3fae5da0", "mime": "image/png", "name": "small_Gemini_Generated_Image_mfut1jmfut1jmfut.png", "path": null, "size": 458.97, "width": 500, "height": 500}, "medium": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/medium_Gemini_Generated_Image_mfut1jmfut1jmfut_cc3fae5da0/medium_Gemini_Generated_Image_mfut1jmfut1jmfut_cc3fae5da0.png", "hash": "medium_Gemini_Generated_Image_mfut1jmfut1jmfut_cc3fae5da0", "mime": "image/png", "name": "medium_Gemini_Generated_Image_mfut1jmfut1jmfut.png", "path": null, "size": 987.73, "width": 750, "height": 750}, "thumbnail": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/thumbnail_Gemini_Generated_Image_mfut1jmfut1jmfut_cc3fae5da0/thumbnail_Gemini_Generated_Image_mfut1jmfut1jmfut_cc3fae5da0.png", "hash": "thumbnail_Gemini_Generated_Image_mfut1jmfut1jmfut_cc3fae5da0", "mime": "image/png", "name": "thumbnail_Gemini_Generated_Image_mfut1jmfut1jmfut.png", "path": null, "size": 54.22, "width": 156, "height": 156}}	Gemini_Generated_Image_mfut1jmfut1jmfut_cc3fae5da0	.png	image/png	1564.50	https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/Gemini_Generated_Image_mfut1jmfut1jmfut_cc3fae5da0/Gemini_Generated_Image_mfut1jmfut1jmfut_cc3fae5da0.png	\N	@strapi-community/strapi-provider-upload-google-cloud-storage	\N	/1	2025-07-17 23:45:25.643	2025-07-17 23:45:25.643	\N	\N
+767	Gemini_Generated_Image_qiam0uqiam0uqiam.png	\N	\N	2008	1889	{"large": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/large_Gemini_Generated_Image_qiam0uqiam0uqiam_e1b80544e4/large_Gemini_Generated_Image_qiam0uqiam0uqiam_e1b80544e4.png", "hash": "large_Gemini_Generated_Image_qiam0uqiam0uqiam_e1b80544e4", "mime": "image/png", "name": "large_Gemini_Generated_Image_qiam0uqiam0uqiam.png", "path": null, "size": 2021.08, "width": 1000, "height": 941}, "small": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/small_Gemini_Generated_Image_qiam0uqiam0uqiam_e1b80544e4/small_Gemini_Generated_Image_qiam0uqiam0uqiam_e1b80544e4.png", "hash": "small_Gemini_Generated_Image_qiam0uqiam0uqiam_e1b80544e4", "mime": "image/png", "name": "small_Gemini_Generated_Image_qiam0uqiam0uqiam.png", "path": null, "size": 527.71, "width": 500, "height": 470}, "medium": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/medium_Gemini_Generated_Image_qiam0uqiam0uqiam_e1b80544e4/medium_Gemini_Generated_Image_qiam0uqiam0uqiam_e1b80544e4.png", "hash": "medium_Gemini_Generated_Image_qiam0uqiam0uqiam_e1b80544e4", "mime": "image/png", "name": "medium_Gemini_Generated_Image_qiam0uqiam0uqiam.png", "path": null, "size": 1147.66, "width": 750, "height": 706}, "thumbnail": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/thumbnail_Gemini_Generated_Image_qiam0uqiam0uqiam_e1b80544e4/thumbnail_Gemini_Generated_Image_qiam0uqiam0uqiam_e1b80544e4.png", "hash": "thumbnail_Gemini_Generated_Image_qiam0uqiam0uqiam_e1b80544e4", "mime": "image/png", "name": "thumbnail_Gemini_Generated_Image_qiam0uqiam0uqiam.png", "path": null, "size": 65.57, "width": 166, "height": 156}}	Gemini_Generated_Image_qiam0uqiam0uqiam_e1b80544e4	.png	image/png	1449.98	https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/Gemini_Generated_Image_qiam0uqiam0uqiam_e1b80544e4/Gemini_Generated_Image_qiam0uqiam0uqiam_e1b80544e4.png	\N	@strapi-community/strapi-provider-upload-google-cloud-storage	\N	/1	2025-07-17 23:45:49.863	2025-07-17 23:45:49.863	\N	\N
+768	Gemini_Generated_Image_84gjn484gjn484gj.png	\N	\N	1889	2048	{"large": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/large_Gemini_Generated_Image_84gjn484gjn484gj_b8db7b70cd/large_Gemini_Generated_Image_84gjn484gjn484gj_b8db7b70cd.png", "hash": "large_Gemini_Generated_Image_84gjn484gjn484gj_b8db7b70cd", "mime": "image/png", "name": "large_Gemini_Generated_Image_84gjn484gjn484gj.png", "path": null, "size": 1945.84, "width": 922, "height": 1000}, "small": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/small_Gemini_Generated_Image_84gjn484gjn484gj_b8db7b70cd/small_Gemini_Generated_Image_84gjn484gjn484gj_b8db7b70cd.png", "hash": "small_Gemini_Generated_Image_84gjn484gjn484gj_b8db7b70cd", "mime": "image/png", "name": "small_Gemini_Generated_Image_84gjn484gjn484gj.png", "path": null, "size": 505.03, "width": 461, "height": 500}, "medium": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/medium_Gemini_Generated_Image_84gjn484gjn484gj_b8db7b70cd/medium_Gemini_Generated_Image_84gjn484gjn484gj_b8db7b70cd.png", "hash": "medium_Gemini_Generated_Image_84gjn484gjn484gj_b8db7b70cd", "mime": "image/png", "name": "medium_Gemini_Generated_Image_84gjn484gjn484gj.png", "path": null, "size": 1103.71, "width": 692, "height": 750}, "thumbnail": {"ext": ".png", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/thumbnail_Gemini_Generated_Image_84gjn484gjn484gj_b8db7b70cd/thumbnail_Gemini_Generated_Image_84gjn484gjn484gj_b8db7b70cd.png", "hash": "thumbnail_Gemini_Generated_Image_84gjn484gjn484gj_b8db7b70cd", "mime": "image/png", "name": "thumbnail_Gemini_Generated_Image_84gjn484gjn484gj.png", "path": null, "size": 59.91, "width": 144, "height": 156}}	Gemini_Generated_Image_84gjn484gjn484gj_b8db7b70cd	.png	image/png	1589.80	https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/Gemini_Generated_Image_84gjn484gjn484gj_b8db7b70cd/Gemini_Generated_Image_84gjn484gjn484gj_b8db7b70cd.png	\N	@strapi-community/strapi-provider-upload-google-cloud-storage	\N	/1	2025-07-17 23:46:14.375	2025-07-17 23:46:14.375	\N	\N
+769	name(it).mp4	\N	\N	\N	\N	\N	name_it_378dc22c22	.mp4	video/mp4	10468.20	https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/name_it_378dc22c22/name_it_378dc22c22.mp4	\N	@strapi-community/strapi-provider-upload-google-cloud-storage	\N	/1	2025-07-17 23:55:15.433	2025-07-17 23:55:15.433	\N	\N
+770	Helping Your Child with Active Listening.mp4	\N	\N	\N	\N	\N	Helping_Your_Child_with_Active_Listening_12649e5c5d	.mp4	video/mp4	7892.63	https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/Helping_Your_Child_with_Active_Listening_12649e5c5d/Helping_Your_Child_with_Active_Listening_12649e5c5d.mp4	\N	@strapi-community/strapi-provider-upload-google-cloud-storage	\N	/1	2025-07-17 23:55:50.65	2025-07-17 23:55:50.65	\N	\N
+771	Video(sharescreen).mp4	\N	\N	\N	\N	\N	Video_sharescreen_e8da6ae7db	.mp4	video/mp4	1205.23	https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/Video_sharescreen_e8da6ae7db/Video_sharescreen_e8da6ae7db.mp4	\N	@strapi-community/strapi-provider-upload-google-cloud-storage	\N	/1	2025-07-18 01:17:18.018	2025-07-18 01:17:18.018	\N	\N
+772	video_generation_0 (1).mp4	\N	\N	\N	\N	\N	video_generation_0_1_f99ac39c96	.mp4	video/mp4	3814.52	https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/video_generation_0_1_f99ac39c96/video_generation_0_1_f99ac39c96.mp4	\N	@strapi-community/strapi-provider-upload-google-cloud-storage	\N	/1	2025-07-18 03:02:33.688	2025-07-18 03:02:33.688	\N	\N
+773	Video(sharescreen).mp4	\N	\N	\N	\N	\N	Video_sharescreen_adcd1d97b2	.mp4	video/mp4	1205.23	https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/Video_sharescreen_adcd1d97b2/Video_sharescreen_adcd1d97b2.mp4	\N	@strapi-community/strapi-provider-upload-google-cloud-storage	\N	/1	2025-07-18 03:02:40.892	2025-07-18 03:02:40.892	\N	\N
+779	a_black_canadian_father_sitting_cross_legged_with.jpeg	\N	\N	1280	1280	{"large": {"ext": ".jpeg", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/large_a_black_canadian_father_sitting_cross_legged_with_40f9efa367/large_a_black_canadian_father_sitting_cross_legged_with_40f9efa367.jpeg", "hash": "large_a_black_canadian_father_sitting_cross_legged_with_40f9efa367", "mime": "image/jpeg", "name": "large_a_black_canadian_father_sitting_cross_legged_with.jpeg", "path": null, "size": 128.74, "width": 1000, "height": 1000}, "small": {"ext": ".jpeg", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/small_a_black_canadian_father_sitting_cross_legged_with_40f9efa367/small_a_black_canadian_father_sitting_cross_legged_with_40f9efa367.jpeg", "hash": "small_a_black_canadian_father_sitting_cross_legged_with_40f9efa367", "mime": "image/jpeg", "name": "small_a_black_canadian_father_sitting_cross_legged_with.jpeg", "path": null, "size": 41.67, "width": 500, "height": 500}, "medium": {"ext": ".jpeg", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/medium_a_black_canadian_father_sitting_cross_legged_with_40f9efa367/medium_a_black_canadian_father_sitting_cross_legged_with_40f9efa367.jpeg", "hash": "medium_a_black_canadian_father_sitting_cross_legged_with_40f9efa367", "mime": "image/jpeg", "name": "medium_a_black_canadian_father_sitting_cross_legged_with.jpeg", "path": null, "size": 80.27, "width": 750, "height": 750}, "thumbnail": {"ext": ".jpeg", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/thumbnail_a_black_canadian_father_sitting_cross_legged_with_40f9efa367/thumbnail_a_black_canadian_father_sitting_cross_legged_with_40f9efa367.jpeg", "hash": "thumbnail_a_black_canadian_father_sitting_cross_legged_with_40f9efa367", "mime": "image/jpeg", "name": "thumbnail_a_black_canadian_father_sitting_cross_legged_with.jpeg", "path": null, "size": 7.08, "width": 156, "height": 156}}	a_black_canadian_father_sitting_cross_legged_with_40f9efa367	.jpeg	image/jpeg	188.42	https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/a_black_canadian_father_sitting_cross_legged_with_40f9efa367/a_black_canadian_father_sitting_cross_legged_with_40f9efa367.jpeg	\N	@strapi-community/strapi-provider-upload-google-cloud-storage	\N	/1	2025-07-18 20:01:55.323	2025-07-18 20:01:55.323	\N	\N
+780	a_middle_eastern_canadian_mom_and_dad.jpeg	\N	\N	1280	1280	{"large": {"ext": ".jpeg", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/large_a_middle_eastern_canadian_mom_and_dad_dfc583d351/large_a_middle_eastern_canadian_mom_and_dad_dfc583d351.jpeg", "hash": "large_a_middle_eastern_canadian_mom_and_dad_dfc583d351", "mime": "image/jpeg", "name": "large_a_middle_eastern_canadian_mom_and_dad.jpeg", "path": null, "size": 155, "width": 1000, "height": 1000}, "small": {"ext": ".jpeg", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/small_a_middle_eastern_canadian_mom_and_dad_dfc583d351/small_a_middle_eastern_canadian_mom_and_dad_dfc583d351.jpeg", "hash": "small_a_middle_eastern_canadian_mom_and_dad_dfc583d351", "mime": "image/jpeg", "name": "small_a_middle_eastern_canadian_mom_and_dad.jpeg", "path": null, "size": 48, "width": 500, "height": 500}, "medium": {"ext": ".jpeg", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/medium_a_middle_eastern_canadian_mom_and_dad_dfc583d351/medium_a_middle_eastern_canadian_mom_and_dad_dfc583d351.jpeg", "hash": "medium_a_middle_eastern_canadian_mom_and_dad_dfc583d351", "mime": "image/jpeg", "name": "medium_a_middle_eastern_canadian_mom_and_dad.jpeg", "path": null, "size": 95.51, "width": 750, "height": 750}, "thumbnail": {"ext": ".jpeg", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/thumbnail_a_middle_eastern_canadian_mom_and_dad_dfc583d351/thumbnail_a_middle_eastern_canadian_mom_and_dad_dfc583d351.jpeg", "hash": "thumbnail_a_middle_eastern_canadian_mom_and_dad_dfc583d351", "mime": "image/jpeg", "name": "thumbnail_a_middle_eastern_canadian_mom_and_dad.jpeg", "path": null, "size": 7.68, "width": 156, "height": 156}}	a_middle_eastern_canadian_mom_and_dad_dfc583d351	.jpeg	image/jpeg	226.78	https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/a_middle_eastern_canadian_mom_and_dad_dfc583d351/a_middle_eastern_canadian_mom_and_dad_dfc583d351.jpeg	\N	@strapi-community/strapi-provider-upload-google-cloud-storage	\N	/1	2025-07-18 20:02:32.054	2025-07-18 20:02:32.054	\N	\N
+781	a_chinese_canadian_mother_kneels_calmly_in.jpeg	\N	\N	1280	1280	{"large": {"ext": ".jpeg", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/large_a_chinese_canadian_mother_kneels_calmly_in_71cd1c636a/large_a_chinese_canadian_mother_kneels_calmly_in_71cd1c636a.jpeg", "hash": "large_a_chinese_canadian_mother_kneels_calmly_in_71cd1c636a", "mime": "image/jpeg", "name": "large_a_chinese_canadian_mother_kneels_calmly_in.jpeg", "path": null, "size": 121.69, "width": 1000, "height": 1000}, "small": {"ext": ".jpeg", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/small_a_chinese_canadian_mother_kneels_calmly_in_71cd1c636a/small_a_chinese_canadian_mother_kneels_calmly_in_71cd1c636a.jpeg", "hash": "small_a_chinese_canadian_mother_kneels_calmly_in_71cd1c636a", "mime": "image/jpeg", "name": "small_a_chinese_canadian_mother_kneels_calmly_in.jpeg", "path": null, "size": 40.09, "width": 500, "height": 500}, "medium": {"ext": ".jpeg", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/medium_a_chinese_canadian_mother_kneels_calmly_in_71cd1c636a/medium_a_chinese_canadian_mother_kneels_calmly_in_71cd1c636a.jpeg", "hash": "medium_a_chinese_canadian_mother_kneels_calmly_in_71cd1c636a", "mime": "image/jpeg", "name": "medium_a_chinese_canadian_mother_kneels_calmly_in.jpeg", "path": null, "size": 76.3, "width": 750, "height": 750}, "thumbnail": {"ext": ".jpeg", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/thumbnail_a_chinese_canadian_mother_kneels_calmly_in_71cd1c636a/thumbnail_a_chinese_canadian_mother_kneels_calmly_in_71cd1c636a.jpeg", "hash": "thumbnail_a_chinese_canadian_mother_kneels_calmly_in_71cd1c636a", "mime": "image/jpeg", "name": "thumbnail_a_chinese_canadian_mother_kneels_calmly_in.jpeg", "path": null, "size": 6.94, "width": 156, "height": 156}}	a_chinese_canadian_mother_kneels_calmly_in_71cd1c636a	.jpeg	image/jpeg	177.80	https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/a_chinese_canadian_mother_kneels_calmly_in_71cd1c636a/a_chinese_canadian_mother_kneels_calmly_in_71cd1c636a.jpeg	\N	@strapi-community/strapi-provider-upload-google-cloud-storage	\N	/1	2025-07-18 20:02:49.279	2025-07-18 20:02:49.279	\N	\N
+782	alternate_variation_a_black_canadian_father_sitting.jpeg	\N	\N	1280	1280	{"large": {"ext": ".jpeg", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/large_alternate_variation_a_black_canadian_father_sitting_0f7a381051/large_alternate_variation_a_black_canadian_father_sitting_0f7a381051.jpeg", "hash": "large_alternate_variation_a_black_canadian_father_sitting_0f7a381051", "mime": "image/jpeg", "name": "large_alternate_variation_a_black_canadian_father_sitting.jpeg", "path": null, "size": 116.9, "width": 1000, "height": 1000}, "small": {"ext": ".jpeg", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/small_alternate_variation_a_black_canadian_father_sitting_0f7a381051/small_alternate_variation_a_black_canadian_father_sitting_0f7a381051.jpeg", "hash": "small_alternate_variation_a_black_canadian_father_sitting_0f7a381051", "mime": "image/jpeg", "name": "small_alternate_variation_a_black_canadian_father_sitting.jpeg", "path": null, "size": 41.23, "width": 500, "height": 500}, "medium": {"ext": ".jpeg", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/medium_alternate_variation_a_black_canadian_father_sitting_0f7a381051/medium_alternate_variation_a_black_canadian_father_sitting_0f7a381051.jpeg", "hash": "medium_alternate_variation_a_black_canadian_father_sitting_0f7a381051", "mime": "image/jpeg", "name": "medium_alternate_variation_a_black_canadian_father_sitting.jpeg", "path": null, "size": 75.17, "width": 750, "height": 750}, "thumbnail": {"ext": ".jpeg", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/thumbnail_alternate_variation_a_black_canadian_father_sitting_0f7a381051/thumbnail_alternate_variation_a_black_canadian_father_sitting_0f7a381051.jpeg", "hash": "thumbnail_alternate_variation_a_black_canadian_father_sitting_0f7a381051", "mime": "image/jpeg", "name": "thumbnail_alternate_variation_a_black_canadian_father_sitting.jpeg", "path": null, "size": 7.47, "width": 156, "height": 156}}	alternate_variation_a_black_canadian_father_sitting_0f7a381051	.jpeg	image/jpeg	167.92	https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/alternate_variation_a_black_canadian_father_sitting_0f7a381051/alternate_variation_a_black_canadian_father_sitting_0f7a381051.jpeg	\N	@strapi-community/strapi-provider-upload-google-cloud-storage	\N	/1	2025-07-18 20:04:23.902	2025-07-18 20:04:23.902	\N	\N
+783	boyspeak.jpg	\N	\N	2048	2048	{"large": {"ext": ".jpg", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/large_boyspeak_6e6960dc9f/large_boyspeak_6e6960dc9f.jpg", "hash": "large_boyspeak_6e6960dc9f", "mime": "image/jpeg", "name": "large_boyspeak.jpg", "path": null, "size": 92.87, "width": 1000, "height": 1000}, "small": {"ext": ".jpg", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/small_boyspeak_6e6960dc9f/small_boyspeak_6e6960dc9f.jpg", "hash": "small_boyspeak_6e6960dc9f", "mime": "image/jpeg", "name": "small_boyspeak.jpg", "path": null, "size": 30.63, "width": 500, "height": 500}, "medium": {"ext": ".jpg", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/medium_boyspeak_6e6960dc9f/medium_boyspeak_6e6960dc9f.jpg", "hash": "medium_boyspeak_6e6960dc9f", "mime": "image/jpeg", "name": "medium_boyspeak.jpg", "path": null, "size": 56.52, "width": 750, "height": 750}, "thumbnail": {"ext": ".jpg", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/thumbnail_boyspeak_6e6960dc9f/thumbnail_boyspeak_6e6960dc9f.jpg", "hash": "thumbnail_boyspeak_6e6960dc9f", "mime": "image/jpeg", "name": "thumbnail_boyspeak.jpg", "path": null, "size": 5.65, "width": 156, "height": 156}}	boyspeak_6e6960dc9f	.jpg	image/jpeg	364.95	https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/boyspeak_6e6960dc9f/boyspeak_6e6960dc9f.jpg	\N	@strapi-community/strapi-provider-upload-google-cloud-storage	\N	/1	2025-07-18 20:32:02.244	2025-07-18 20:32:02.244	\N	\N
+784	holdback.jpg	\N	\N	2048	2048	{"large": {"ext": ".jpg", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/large_holdback_8614c16b31/large_holdback_8614c16b31.jpg", "hash": "large_holdback_8614c16b31", "mime": "image/jpeg", "name": "large_holdback.jpg", "path": null, "size": 124.07, "width": 1000, "height": 1000}, "small": {"ext": ".jpg", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/small_holdback_8614c16b31/small_holdback_8614c16b31.jpg", "hash": "small_holdback_8614c16b31", "mime": "image/jpeg", "name": "small_holdback.jpg", "path": null, "size": 38.09, "width": 500, "height": 500}, "medium": {"ext": ".jpg", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/medium_holdback_8614c16b31/medium_holdback_8614c16b31.jpg", "hash": "medium_holdback_8614c16b31", "mime": "image/jpeg", "name": "medium_holdback.jpg", "path": null, "size": 73.47, "width": 750, "height": 750}, "thumbnail": {"ext": ".jpg", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/thumbnail_holdback_8614c16b31/thumbnail_holdback_8614c16b31.jpg", "hash": "thumbnail_holdback_8614c16b31", "mime": "image/jpeg", "name": "thumbnail_holdback.jpg", "path": null, "size": 6.37, "width": 156, "height": 156}}	holdback_8614c16b31	.jpg	image/jpeg	506.81	https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/holdback_8614c16b31/holdback_8614c16b31.jpg	\N	@strapi-community/strapi-provider-upload-google-cloud-storage	\N	/1	2025-07-18 20:32:28.679	2025-07-18 20:32:28.679	\N	\N
+790	a_german_parent_with_a_calm_expression.jpeg	\N	\N	1280	1220	{"large": {"ext": ".jpeg", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/large_a_german_parent_with_a_calm_expression_a6e41b2168/large_a_german_parent_with_a_calm_expression_a6e41b2168.jpeg", "hash": "large_a_german_parent_with_a_calm_expression_a6e41b2168", "mime": "image/jpeg", "name": "large_a_german_parent_with_a_calm_expression.jpeg", "path": null, "size": 138.97, "width": 1000, "height": 953}, "small": {"ext": ".jpeg", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/small_a_german_parent_with_a_calm_expression_a6e41b2168/small_a_german_parent_with_a_calm_expression_a6e41b2168.jpeg", "hash": "small_a_german_parent_with_a_calm_expression_a6e41b2168", "mime": "image/jpeg", "name": "small_a_german_parent_with_a_calm_expression.jpeg", "path": null, "size": 36.39, "width": 500, "height": 477}, "medium": {"ext": ".jpeg", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/medium_a_german_parent_with_a_calm_expression_a6e41b2168/medium_a_german_parent_with_a_calm_expression_a6e41b2168.jpeg", "hash": "medium_a_german_parent_with_a_calm_expression_a6e41b2168", "mime": "image/jpeg", "name": "medium_a_german_parent_with_a_calm_expression.jpeg", "path": null, "size": 79.61, "width": 750, "height": 715}, "thumbnail": {"ext": ".jpeg", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/thumbnail_a_german_parent_with_a_calm_expression_a6e41b2168/thumbnail_a_german_parent_with_a_calm_expression_a6e41b2168.jpeg", "hash": "thumbnail_a_german_parent_with_a_calm_expression_a6e41b2168", "mime": "image/jpeg", "name": "thumbnail_a_german_parent_with_a_calm_expression.jpeg", "path": null, "size": 6.07, "width": 164, "height": 156}}	a_german_parent_with_a_calm_expression_a6e41b2168	.jpeg	image/jpeg	223.66	https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/a_german_parent_with_a_calm_expression_a6e41b2168/a_german_parent_with_a_calm_expression_a6e41b2168.jpeg	\N	@strapi-community/strapi-provider-upload-google-cloud-storage	\N	/1	2025-07-18 20:35:43.675	2025-07-18 20:35:43.675	\N	\N
+785	touch.jpg	\N	\N	2048	2048	{"large": {"ext": ".jpg", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/large_touch_37fd27384a/large_touch_37fd27384a.jpg", "hash": "large_touch_37fd27384a", "mime": "image/jpeg", "name": "large_touch.jpg", "path": null, "size": 116.24, "width": 1000, "height": 1000}, "small": {"ext": ".jpg", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/small_touch_37fd27384a/small_touch_37fd27384a.jpg", "hash": "small_touch_37fd27384a", "mime": "image/jpeg", "name": "small_touch.jpg", "path": null, "size": 37.61, "width": 500, "height": 500}, "medium": {"ext": ".jpg", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/medium_touch_37fd27384a/medium_touch_37fd27384a.jpg", "hash": "medium_touch_37fd27384a", "mime": "image/jpeg", "name": "medium_touch.jpg", "path": null, "size": 71.37, "width": 750, "height": 750}, "thumbnail": {"ext": ".jpg", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/thumbnail_touch_37fd27384a/thumbnail_touch_37fd27384a.jpg", "hash": "thumbnail_touch_37fd27384a", "mime": "image/jpeg", "name": "thumbnail_touch.jpg", "path": null, "size": 6.54, "width": 156, "height": 156}}	touch_37fd27384a	.jpg	image/jpeg	412.94	https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/touch_37fd27384a/touch_37fd27384a.jpg	\N	@strapi-community/strapi-provider-upload-google-cloud-storage	\N	/1	2025-07-18 20:33:07.702	2025-07-18 20:33:07.702	\N	\N
+786	smile.jpg	\N	\N	2048	2048	{"large": {"ext": ".jpg", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/large_smile_a910b03e63/large_smile_a910b03e63.jpg", "hash": "large_smile_a910b03e63", "mime": "image/jpeg", "name": "large_smile.jpg", "path": null, "size": 119.36, "width": 1000, "height": 1000}, "small": {"ext": ".jpg", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/small_smile_a910b03e63/small_smile_a910b03e63.jpg", "hash": "small_smile_a910b03e63", "mime": "image/jpeg", "name": "small_smile.jpg", "path": null, "size": 35.3, "width": 500, "height": 500}, "medium": {"ext": ".jpg", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/medium_smile_a910b03e63/medium_smile_a910b03e63.jpg", "hash": "medium_smile_a910b03e63", "mime": "image/jpeg", "name": "medium_smile.jpg", "path": null, "size": 69.83, "width": 750, "height": 750}, "thumbnail": {"ext": ".jpg", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/thumbnail_smile_a910b03e63/thumbnail_smile_a910b03e63.jpg", "hash": "thumbnail_smile_a910b03e63", "mime": "image/jpeg", "name": "thumbnail_smile.jpg", "path": null, "size": 5.31, "width": 156, "height": 156}}	smile_a910b03e63	.jpg	image/jpeg	493.27	https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/smile_a910b03e63/smile_a910b03e63.jpg	\N	@strapi-community/strapi-provider-upload-google-cloud-storage	\N	/1	2025-07-18 20:33:27.786	2025-07-18 20:33:27.786	\N	\N
+787	back.jpg	\N	\N	2048	2048	{"large": {"ext": ".jpg", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/large_back_c4003a779d/large_back_c4003a779d.jpg", "hash": "large_back_c4003a779d", "mime": "image/jpeg", "name": "large_back.jpg", "path": null, "size": 105.38, "width": 1000, "height": 1000}, "small": {"ext": ".jpg", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/small_back_c4003a779d/small_back_c4003a779d.jpg", "hash": "small_back_c4003a779d", "mime": "image/jpeg", "name": "small_back.jpg", "path": null, "size": 30.84, "width": 500, "height": 500}, "medium": {"ext": ".jpg", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/medium_back_c4003a779d/medium_back_c4003a779d.jpg", "hash": "medium_back_c4003a779d", "mime": "image/jpeg", "name": "medium_back.jpg", "path": null, "size": 62.25, "width": 750, "height": 750}, "thumbnail": {"ext": ".jpg", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/thumbnail_back_c4003a779d/thumbnail_back_c4003a779d.jpg", "hash": "thumbnail_back_c4003a779d", "mime": "image/jpeg", "name": "thumbnail_back.jpg", "path": null, "size": 4.83, "width": 156, "height": 156}}	back_c4003a779d	.jpg	image/jpeg	435.54	https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/back_c4003a779d/back_c4003a779d.jpg	\N	@strapi-community/strapi-provider-upload-google-cloud-storage	\N	/1	2025-07-18 20:34:11.461	2025-07-18 20:34:11.461	\N	\N
+788	cry.jpg	\N	\N	2048	2048	{"large": {"ext": ".jpg", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/large_cry_1bea9dab91/large_cry_1bea9dab91.jpg", "hash": "large_cry_1bea9dab91", "mime": "image/jpeg", "name": "large_cry.jpg", "path": null, "size": 107.28, "width": 1000, "height": 1000}, "small": {"ext": ".jpg", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/small_cry_1bea9dab91/small_cry_1bea9dab91.jpg", "hash": "small_cry_1bea9dab91", "mime": "image/jpeg", "name": "small_cry.jpg", "path": null, "size": 30.14, "width": 500, "height": 500}, "medium": {"ext": ".jpg", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/medium_cry_1bea9dab91/medium_cry_1bea9dab91.jpg", "hash": "medium_cry_1bea9dab91", "mime": "image/jpeg", "name": "medium_cry.jpg", "path": null, "size": 60.85, "width": 750, "height": 750}, "thumbnail": {"ext": ".jpg", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/thumbnail_cry_1bea9dab91/thumbnail_cry_1bea9dab91.jpg", "hash": "thumbnail_cry_1bea9dab91", "mime": "image/jpeg", "name": "thumbnail_cry.jpg", "path": null, "size": 5.39, "width": 156, "height": 156}}	cry_1bea9dab91	.jpg	image/jpeg	472.91	https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/cry_1bea9dab91/cry_1bea9dab91.jpg	\N	@strapi-community/strapi-provider-upload-google-cloud-storage	\N	/1	2025-07-18 20:34:38.499	2025-07-18 20:34:38.499	\N	\N
+789	chinese_parents_and_child_on_a_walk.jpeg	\N	\N	1280	1201	{"large": {"ext": ".jpeg", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/large_chinese_parents_and_child_on_a_walk_841a0275e0/large_chinese_parents_and_child_on_a_walk_841a0275e0.jpeg", "hash": "large_chinese_parents_and_child_on_a_walk_841a0275e0", "mime": "image/jpeg", "name": "large_chinese_parents_and_child_on_a_walk.jpeg", "path": null, "size": 113.91, "width": 1000, "height": 938}, "small": {"ext": ".jpeg", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/small_chinese_parents_and_child_on_a_walk_841a0275e0/small_chinese_parents_and_child_on_a_walk_841a0275e0.jpeg", "hash": "small_chinese_parents_and_child_on_a_walk_841a0275e0", "mime": "image/jpeg", "name": "small_chinese_parents_and_child_on_a_walk.jpeg", "path": null, "size": 37.53, "width": 500, "height": 469}, "medium": {"ext": ".jpeg", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/medium_chinese_parents_and_child_on_a_walk_841a0275e0/medium_chinese_parents_and_child_on_a_walk_841a0275e0.jpeg", "hash": "medium_chinese_parents_and_child_on_a_walk_841a0275e0", "mime": "image/jpeg", "name": "medium_chinese_parents_and_child_on_a_walk.jpeg", "path": null, "size": 70.34, "width": 750, "height": 704}, "thumbnail": {"ext": ".jpeg", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/thumbnail_chinese_parents_and_child_on_a_walk_841a0275e0/thumbnail_chinese_parents_and_child_on_a_walk_841a0275e0.jpeg", "hash": "thumbnail_chinese_parents_and_child_on_a_walk_841a0275e0", "mime": "image/jpeg", "name": "thumbnail_chinese_parents_and_child_on_a_walk.jpeg", "path": null, "size": 7.14, "width": 166, "height": 156}}	chinese_parents_and_child_on_a_walk_841a0275e0	.jpeg	image/jpeg	176.53	https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/chinese_parents_and_child_on_a_walk_841a0275e0/chinese_parents_and_child_on_a_walk_841a0275e0.jpeg	\N	@strapi-community/strapi-provider-upload-google-cloud-storage	\N	/1	2025-07-18 20:35:01.601	2025-07-18 20:35:01.601	\N	\N
+791	a_middle_eastern_mother_and_her_preteen.jpeg	\N	\N	1280	1280	{"large": {"ext": ".jpeg", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/large_a_middle_eastern_mother_and_her_preteen_e90c86b39c/large_a_middle_eastern_mother_and_her_preteen_e90c86b39c.jpeg", "hash": "large_a_middle_eastern_mother_and_her_preteen_e90c86b39c", "mime": "image/jpeg", "name": "large_a_middle_eastern_mother_and_her_preteen.jpeg", "path": null, "size": 107.98, "width": 1000, "height": 1000}, "small": {"ext": ".jpeg", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/small_a_middle_eastern_mother_and_her_preteen_e90c86b39c/small_a_middle_eastern_mother_and_her_preteen_e90c86b39c.jpeg", "hash": "small_a_middle_eastern_mother_and_her_preteen_e90c86b39c", "mime": "image/jpeg", "name": "small_a_middle_eastern_mother_and_her_preteen.jpeg", "path": null, "size": 36.21, "width": 500, "height": 500}, "medium": {"ext": ".jpeg", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/medium_a_middle_eastern_mother_and_her_preteen_e90c86b39c/medium_a_middle_eastern_mother_and_her_preteen_e90c86b39c.jpeg", "hash": "medium_a_middle_eastern_mother_and_her_preteen_e90c86b39c", "mime": "image/jpeg", "name": "medium_a_middle_eastern_mother_and_her_preteen.jpeg", "path": null, "size": 67.74, "width": 750, "height": 750}, "thumbnail": {"ext": ".jpeg", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/thumbnail_a_middle_eastern_mother_and_her_preteen_e90c86b39c/thumbnail_a_middle_eastern_mother_and_her_preteen_e90c86b39c.jpeg", "hash": "thumbnail_a_middle_eastern_mother_and_her_preteen_e90c86b39c", "mime": "image/jpeg", "name": "thumbnail_a_middle_eastern_mother_and_her_preteen.jpeg", "path": null, "size": 6.42, "width": 156, "height": 156}}	a_middle_eastern_mother_and_her_preteen_e90c86b39c	.jpeg	image/jpeg	157.95	https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/a_middle_eastern_mother_and_her_preteen_e90c86b39c/a_middle_eastern_mother_and_her_preteen_e90c86b39c.jpeg	\N	@strapi-community/strapi-provider-upload-google-cloud-storage	\N	/1	2025-07-18 20:36:12.79	2025-07-18 20:36:12.79	\N	\N
+792	18.jpg	\N	\N	2048	2048	{"large": {"ext": ".jpg", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/large_18_e980f2c2b0/large_18_e980f2c2b0.jpg", "hash": "large_18_e980f2c2b0", "mime": "image/jpeg", "name": "large_18.jpg", "path": null, "size": 101.63, "width": 1000, "height": 1000}, "small": {"ext": ".jpg", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/small_18_e980f2c2b0/small_18_e980f2c2b0.jpg", "hash": "small_18_e980f2c2b0", "mime": "image/jpeg", "name": "small_18.jpg", "path": null, "size": 34.54, "width": 500, "height": 500}, "medium": {"ext": ".jpg", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/medium_18_e980f2c2b0/medium_18_e980f2c2b0.jpg", "hash": "medium_18_e980f2c2b0", "mime": "image/jpeg", "name": "medium_18.jpg", "path": null, "size": 63.76, "width": 750, "height": 750}, "thumbnail": {"ext": ".jpg", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/thumbnail_18_e980f2c2b0/thumbnail_18_e980f2c2b0.jpg", "hash": "thumbnail_18_e980f2c2b0", "mime": "image/jpeg", "name": "thumbnail_18.jpg", "path": null, "size": 5.96, "width": 156, "height": 156}}	18_e980f2c2b0	.jpg	image/jpeg	371.54	https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/18_e980f2c2b0/18_e980f2c2b0.jpg	\N	@strapi-community/strapi-provider-upload-google-cloud-storage	\N	/1	2025-07-18 20:37:34.256	2025-07-18 20:37:34.256	\N	\N
+793	a_middle_eastern_mother_and_her_preteen.jpeg	\N	\N	1280	1280	{"large": {"ext": ".jpeg", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/large_a_middle_eastern_mother_and_her_preteen_ee23404e63/large_a_middle_eastern_mother_and_her_preteen_ee23404e63.jpeg", "hash": "large_a_middle_eastern_mother_and_her_preteen_ee23404e63", "mime": "image/jpeg", "name": "large_a_middle_eastern_mother_and_her_preteen.jpeg", "path": null, "size": 107.98, "width": 1000, "height": 1000}, "small": {"ext": ".jpeg", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/small_a_middle_eastern_mother_and_her_preteen_ee23404e63/small_a_middle_eastern_mother_and_her_preteen_ee23404e63.jpeg", "hash": "small_a_middle_eastern_mother_and_her_preteen_ee23404e63", "mime": "image/jpeg", "name": "small_a_middle_eastern_mother_and_her_preteen.jpeg", "path": null, "size": 36.21, "width": 500, "height": 500}, "medium": {"ext": ".jpeg", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/medium_a_middle_eastern_mother_and_her_preteen_ee23404e63/medium_a_middle_eastern_mother_and_her_preteen_ee23404e63.jpeg", "hash": "medium_a_middle_eastern_mother_and_her_preteen_ee23404e63", "mime": "image/jpeg", "name": "medium_a_middle_eastern_mother_and_her_preteen.jpeg", "path": null, "size": 67.74, "width": 750, "height": 750}, "thumbnail": {"ext": ".jpeg", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/thumbnail_a_middle_eastern_mother_and_her_preteen_ee23404e63/thumbnail_a_middle_eastern_mother_and_her_preteen_ee23404e63.jpeg", "hash": "thumbnail_a_middle_eastern_mother_and_her_preteen_ee23404e63", "mime": "image/jpeg", "name": "thumbnail_a_middle_eastern_mother_and_her_preteen.jpeg", "path": null, "size": 6.42, "width": 156, "height": 156}}	a_middle_eastern_mother_and_her_preteen_ee23404e63	.jpeg	image/jpeg	157.95	https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/a_middle_eastern_mother_and_her_preteen_ee23404e63/a_middle_eastern_mother_and_her_preteen_ee23404e63.jpeg	\N	@strapi-community/strapi-provider-upload-google-cloud-storage	\N	/1	2025-07-18 20:37:54.974	2025-07-18 20:37:54.974	\N	\N
+794	a_gentle_moment_between_a_sri_lankan (1).jpeg	\N	\N	1280	1280	{"large": {"ext": ".jpeg", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/large_a_gentle_moment_between_a_sri_lankan_1_15ef004b22/large_a_gentle_moment_between_a_sri_lankan_1_15ef004b22.jpeg", "hash": "large_a_gentle_moment_between_a_sri_lankan_1_15ef004b22", "mime": "image/jpeg", "name": "large_a_gentle_moment_between_a_sri_lankan (1).jpeg", "path": null, "size": 105.53, "width": 1000, "height": 1000}, "small": {"ext": ".jpeg", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/small_a_gentle_moment_between_a_sri_lankan_1_15ef004b22/small_a_gentle_moment_between_a_sri_lankan_1_15ef004b22.jpeg", "hash": "small_a_gentle_moment_between_a_sri_lankan_1_15ef004b22", "mime": "image/jpeg", "name": "small_a_gentle_moment_between_a_sri_lankan (1).jpeg", "path": null, "size": 32.35, "width": 500, "height": 500}, "medium": {"ext": ".jpeg", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/medium_a_gentle_moment_between_a_sri_lankan_1_15ef004b22/medium_a_gentle_moment_between_a_sri_lankan_1_15ef004b22.jpeg", "hash": "medium_a_gentle_moment_between_a_sri_lankan_1_15ef004b22", "mime": "image/jpeg", "name": "medium_a_gentle_moment_between_a_sri_lankan (1).jpeg", "path": null, "size": 64, "width": 750, "height": 750}, "thumbnail": {"ext": ".jpeg", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/thumbnail_a_gentle_moment_between_a_sri_lankan_1_15ef004b22/thumbnail_a_gentle_moment_between_a_sri_lankan_1_15ef004b22.jpeg", "hash": "thumbnail_a_gentle_moment_between_a_sri_lankan_1_15ef004b22", "mime": "image/jpeg", "name": "thumbnail_a_gentle_moment_between_a_sri_lankan (1).jpeg", "path": null, "size": 5.46, "width": 156, "height": 156}}	a_gentle_moment_between_a_sri_lankan_1_15ef004b22	.jpeg	image/jpeg	156.96	https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/a_gentle_moment_between_a_sri_lankan_1_15ef004b22/a_gentle_moment_between_a_sri_lankan_1_15ef004b22.jpeg	\N	@strapi-community/strapi-provider-upload-google-cloud-storage	\N	/1	2025-07-18 20:38:53.907	2025-07-18 20:38:53.907	\N	\N
+795	potting.jpg	\N	\N	2048	2048	{"large": {"ext": ".jpg", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/large_potting_8f83ddff1d/large_potting_8f83ddff1d.jpg", "hash": "large_potting_8f83ddff1d", "mime": "image/jpeg", "name": "large_potting.jpg", "path": null, "size": 122.25, "width": 1000, "height": 1000}, "small": {"ext": ".jpg", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/small_potting_8f83ddff1d/small_potting_8f83ddff1d.jpg", "hash": "small_potting_8f83ddff1d", "mime": "image/jpeg", "name": "small_potting.jpg", "path": null, "size": 44.4, "width": 500, "height": 500}, "medium": {"ext": ".jpg", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/medium_potting_8f83ddff1d/medium_potting_8f83ddff1d.jpg", "hash": "medium_potting_8f83ddff1d", "mime": "image/jpeg", "name": "medium_potting.jpg", "path": null, "size": 79.6, "width": 750, "height": 750}, "thumbnail": {"ext": ".jpg", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/thumbnail_potting_8f83ddff1d/thumbnail_potting_8f83ddff1d.jpg", "hash": "thumbnail_potting_8f83ddff1d", "mime": "image/jpeg", "name": "thumbnail_potting.jpg", "path": null, "size": 7.57, "width": 156, "height": 156}}	potting_8f83ddff1d	.jpg	image/jpeg	377.38	https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/potting_8f83ddff1d/potting_8f83ddff1d.jpg	\N	@strapi-community/strapi-provider-upload-google-cloud-storage	\N	/1	2025-07-18 21:05:21.891	2025-07-18 21:05:21.891	\N	\N
+796	climb.jpg	\N	\N	2048	2048	{"large": {"ext": ".jpg", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/large_climb_24c2adc729/large_climb_24c2adc729.jpg", "hash": "large_climb_24c2adc729", "mime": "image/jpeg", "name": "large_climb.jpg", "path": null, "size": 224.83, "width": 1000, "height": 1000}, "small": {"ext": ".jpg", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/small_climb_24c2adc729/small_climb_24c2adc729.jpg", "hash": "small_climb_24c2adc729", "mime": "image/jpeg", "name": "small_climb.jpg", "path": null, "size": 67.36, "width": 500, "height": 500}, "medium": {"ext": ".jpg", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/medium_climb_24c2adc729/medium_climb_24c2adc729.jpg", "hash": "medium_climb_24c2adc729", "mime": "image/jpeg", "name": "medium_climb.jpg", "path": null, "size": 135.05, "width": 750, "height": 750}, "thumbnail": {"ext": ".jpg", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/thumbnail_climb_24c2adc729/thumbnail_climb_24c2adc729.jpg", "hash": "thumbnail_climb_24c2adc729", "mime": "image/jpeg", "name": "thumbnail_climb.jpg", "path": null, "size": 8.82, "width": 156, "height": 156}}	climb_24c2adc729	.jpg	image/jpeg	788.22	https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/climb_24c2adc729/climb_24c2adc729.jpg	\N	@strapi-community/strapi-provider-upload-google-cloud-storage	\N	/1	2025-07-18 21:05:53.277	2025-07-18 21:05:53.277	\N	\N
+797	help.jpg	\N	\N	2048	2048	{"large": {"ext": ".jpg", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/large_help_8ef548eb8e/large_help_8ef548eb8e.jpg", "hash": "large_help_8ef548eb8e", "mime": "image/jpeg", "name": "large_help.jpg", "path": null, "size": 147.63, "width": 1000, "height": 1000}, "small": {"ext": ".jpg", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/small_help_8ef548eb8e/small_help_8ef548eb8e.jpg", "hash": "small_help_8ef548eb8e", "mime": "image/jpeg", "name": "small_help.jpg", "path": null, "size": 48.17, "width": 500, "height": 500}, "medium": {"ext": ".jpg", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/medium_help_8ef548eb8e/medium_help_8ef548eb8e.jpg", "hash": "medium_help_8ef548eb8e", "mime": "image/jpeg", "name": "medium_help.jpg", "path": null, "size": 91.18, "width": 750, "height": 750}, "thumbnail": {"ext": ".jpg", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/thumbnail_help_8ef548eb8e/thumbnail_help_8ef548eb8e.jpg", "hash": "thumbnail_help_8ef548eb8e", "mime": "image/jpeg", "name": "thumbnail_help.jpg", "path": null, "size": 7.85, "width": 156, "height": 156}}	help_8ef548eb8e	.jpg	image/jpeg	516.97	https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/help_8ef548eb8e/help_8ef548eb8e.jpg	\N	@strapi-community/strapi-provider-upload-google-cloud-storage	\N	/1	2025-07-18 21:06:48.757	2025-07-18 21:06:48.757	\N	\N
+798	girlspeak.jpg	\N	\N	2048	2048	{"large": {"ext": ".jpg", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/large_girlspeak_2c2350d255/large_girlspeak_2c2350d255.jpg", "hash": "large_girlspeak_2c2350d255", "mime": "image/jpeg", "name": "large_girlspeak.jpg", "path": null, "size": 119.73, "width": 1000, "height": 1000}, "small": {"ext": ".jpg", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/small_girlspeak_2c2350d255/small_girlspeak_2c2350d255.jpg", "hash": "small_girlspeak_2c2350d255", "mime": "image/jpeg", "name": "small_girlspeak.jpg", "path": null, "size": 38.61, "width": 500, "height": 500}, "medium": {"ext": ".jpg", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/medium_girlspeak_2c2350d255/medium_girlspeak_2c2350d255.jpg", "hash": "medium_girlspeak_2c2350d255", "mime": "image/jpeg", "name": "medium_girlspeak.jpg", "path": null, "size": 72.89, "width": 750, "height": 750}, "thumbnail": {"ext": ".jpg", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/thumbnail_girlspeak_2c2350d255/thumbnail_girlspeak_2c2350d255.jpg", "hash": "thumbnail_girlspeak_2c2350d255", "mime": "image/jpeg", "name": "thumbnail_girlspeak.jpg", "path": null, "size": 6.78, "width": 156, "height": 156}}	girlspeak_2c2350d255	.jpg	image/jpeg	451.38	https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/girlspeak_2c2350d255/girlspeak_2c2350d255.jpg	\N	@strapi-community/strapi-provider-upload-google-cloud-storage	\N	/1	2025-07-18 21:07:38.177	2025-07-18 21:07:38.177	\N	\N
+799	excise.jpg	\N	\N	2048	2048	{"large": {"ext": ".jpg", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/large_excise_8b97d514c9/large_excise_8b97d514c9.jpg", "hash": "large_excise_8b97d514c9", "mime": "image/jpeg", "name": "large_excise.jpg", "path": null, "size": 155.74, "width": 1000, "height": 1000}, "small": {"ext": ".jpg", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/small_excise_8b97d514c9/small_excise_8b97d514c9.jpg", "hash": "small_excise_8b97d514c9", "mime": "image/jpeg", "name": "small_excise.jpg", "path": null, "size": 49.36, "width": 500, "height": 500}, "medium": {"ext": ".jpg", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/medium_excise_8b97d514c9/medium_excise_8b97d514c9.jpg", "hash": "medium_excise_8b97d514c9", "mime": "image/jpeg", "name": "medium_excise.jpg", "path": null, "size": 95.21, "width": 750, "height": 750}, "thumbnail": {"ext": ".jpg", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/thumbnail_excise_8b97d514c9/thumbnail_excise_8b97d514c9.jpg", "hash": "thumbnail_excise_8b97d514c9", "mime": "image/jpeg", "name": "thumbnail_excise.jpg", "path": null, "size": 6.95, "width": 156, "height": 156}}	excise_8b97d514c9	.jpg	image/jpeg	546.01	https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/excise_8b97d514c9/excise_8b97d514c9.jpg	\N	@strapi-community/strapi-provider-upload-google-cloud-storage	\N	/1	2025-07-18 21:08:00.746	2025-07-18 21:08:00.746	\N	\N
+800	dish.jpg	\N	\N	2048	2048	{"large": {"ext": ".jpg", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/large_dish_0c15f3570f/large_dish_0c15f3570f.jpg", "hash": "large_dish_0c15f3570f", "mime": "image/jpeg", "name": "large_dish.jpg", "path": null, "size": 115, "width": 1000, "height": 1000}, "small": {"ext": ".jpg", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/small_dish_0c15f3570f/small_dish_0c15f3570f.jpg", "hash": "small_dish_0c15f3570f", "mime": "image/jpeg", "name": "small_dish.jpg", "path": null, "size": 38.88, "width": 500, "height": 500}, "medium": {"ext": ".jpg", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/medium_dish_0c15f3570f/medium_dish_0c15f3570f.jpg", "hash": "medium_dish_0c15f3570f", "mime": "image/jpeg", "name": "medium_dish.jpg", "path": null, "size": 71.86, "width": 750, "height": 750}, "thumbnail": {"ext": ".jpg", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/thumbnail_dish_0c15f3570f/thumbnail_dish_0c15f3570f.jpg", "hash": "thumbnail_dish_0c15f3570f", "mime": "image/jpeg", "name": "thumbnail_dish.jpg", "path": null, "size": 6.92, "width": 156, "height": 156}}	dish_0c15f3570f	.jpg	image/jpeg	436.60	https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/dish_0c15f3570f/dish_0c15f3570f.jpg	\N	@strapi-community/strapi-provider-upload-google-cloud-storage	\N	/1	2025-07-18 21:08:22.11	2025-07-18 21:08:22.11	\N	\N
+801	48626043763_e51d28e5bd_o.jpg	\N	\N	4000	6000	{"large": {"ext": ".jpg", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/large_48626043763_e51d28e5bd_o_ca26c63d8a/large_48626043763_e51d28e5bd_o_ca26c63d8a.jpg", "hash": "large_48626043763_e51d28e5bd_o_ca26c63d8a", "mime": "image/jpeg", "name": "large_48626043763_e51d28e5bd_o.jpg", "path": null, "size": 149.78, "width": 667, "height": 1000}, "small": {"ext": ".jpg", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/small_48626043763_e51d28e5bd_o_ca26c63d8a/small_48626043763_e51d28e5bd_o_ca26c63d8a.jpg", "hash": "small_48626043763_e51d28e5bd_o_ca26c63d8a", "mime": "image/jpeg", "name": "small_48626043763_e51d28e5bd_o.jpg", "path": null, "size": 46.1, "width": 333, "height": 500}, "medium": {"ext": ".jpg", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/medium_48626043763_e51d28e5bd_o_ca26c63d8a/medium_48626043763_e51d28e5bd_o_ca26c63d8a.jpg", "hash": "medium_48626043763_e51d28e5bd_o_ca26c63d8a", "mime": "image/jpeg", "name": "medium_48626043763_e51d28e5bd_o.jpg", "path": null, "size": 92.74, "width": 500, "height": 750}, "thumbnail": {"ext": ".jpg", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/thumbnail_48626043763_e51d28e5bd_o_ca26c63d8a/thumbnail_48626043763_e51d28e5bd_o_ca26c63d8a.jpg", "hash": "thumbnail_48626043763_e51d28e5bd_o_ca26c63d8a", "mime": "image/jpeg", "name": "thumbnail_48626043763_e51d28e5bd_o.jpg", "path": null, "size": 5.95, "width": 104, "height": 156}}	48626043763_e51d28e5bd_o_ca26c63d8a	.jpg	image/jpeg	3107.33	https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/48626043763_e51d28e5bd_o_ca26c63d8a/48626043763_e51d28e5bd_o_ca26c63d8a.jpg	\N	@strapi-community/strapi-provider-upload-google-cloud-storage	\N	/1	2025-07-18 21:09:00.878	2025-07-18 21:09:00.878	\N	\N
+802	a_parent_and_child_having_fun_together.jpeg	\N	\N	1280	1280	{"large": {"ext": ".jpeg", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/large_a_parent_and_child_having_fun_together_a1e4f20322/large_a_parent_and_child_having_fun_together_a1e4f20322.jpeg", "hash": "large_a_parent_and_child_having_fun_together_a1e4f20322", "mime": "image/jpeg", "name": "large_a_parent_and_child_having_fun_together.jpeg", "path": null, "size": 131.24, "width": 1000, "height": 1000}, "small": {"ext": ".jpeg", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/small_a_parent_and_child_having_fun_together_a1e4f20322/small_a_parent_and_child_having_fun_together_a1e4f20322.jpeg", "hash": "small_a_parent_and_child_having_fun_together_a1e4f20322", "mime": "image/jpeg", "name": "small_a_parent_and_child_having_fun_together.jpeg", "path": null, "size": 44.05, "width": 500, "height": 500}, "medium": {"ext": ".jpeg", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/medium_a_parent_and_child_having_fun_together_a1e4f20322/medium_a_parent_and_child_having_fun_together_a1e4f20322.jpeg", "hash": "medium_a_parent_and_child_having_fun_together_a1e4f20322", "mime": "image/jpeg", "name": "medium_a_parent_and_child_having_fun_together.jpeg", "path": null, "size": 82.04, "width": 750, "height": 750}, "thumbnail": {"ext": ".jpeg", "url": "https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/thumbnail_a_parent_and_child_having_fun_together_a1e4f20322/thumbnail_a_parent_and_child_having_fun_together_a1e4f20322.jpeg", "hash": "thumbnail_a_parent_and_child_having_fun_together_a1e4f20322", "mime": "image/jpeg", "name": "thumbnail_a_parent_and_child_having_fun_together.jpeg", "path": null, "size": 7.73, "width": 156, "height": 156}}	a_parent_and_child_having_fun_together_a1e4f20322	.jpeg	image/jpeg	193.59	https://storage.googleapis.com/lucid-arch-451211-b0-strapi-storage/a_parent_and_child_having_fun_together_a1e4f20322/a_parent_and_child_having_fun_together_a1e4f20322.jpeg	\N	@strapi-community/strapi-provider-upload-google-cloud-storage	\N	/1	2025-07-18 21:09:12.886	2025-07-18 21:09:12.886	\N	\N
 \.
 
 
@@ -9826,6 +9741,139 @@ COPY public.files_folder_links (id, file_id, folder_id, file_order) FROM stdin;
 594	667	1	594
 595	668	1	595
 596	669	1	596
+597	670	1	597
+598	671	1	598
+599	672	1	599
+600	673	1	600
+601	674	1	601
+602	675	1	602
+603	676	1	603
+604	677	1	604
+605	678	1	605
+606	679	1	606
+607	680	1	607
+608	681	1	608
+609	682	1	609
+610	683	1	610
+611	684	1	611
+612	685	1	612
+613	686	1	613
+614	687	1	614
+615	688	1	615
+616	689	1	616
+617	690	1	617
+618	691	1	618
+619	692	1	619
+620	693	1	620
+621	694	1	621
+622	695	1	622
+623	696	1	623
+624	697	1	624
+625	698	1	625
+626	699	1	626
+627	700	1	627
+628	701	1	628
+629	702	1	629
+630	703	1	630
+631	704	1	631
+632	705	1	632
+633	706	1	633
+634	707	1	634
+635	708	1	635
+636	709	1	636
+637	710	1	637
+638	711	1	638
+639	712	1	639
+640	713	1	640
+641	714	1	641
+642	715	1	642
+643	716	1	643
+644	717	1	644
+645	718	1	645
+646	719	1	646
+647	720	1	647
+648	721	1	648
+649	722	1	649
+650	723	1	650
+651	724	1	651
+652	725	1	652
+653	726	1	653
+654	727	1	654
+655	728	1	655
+656	729	1	656
+657	730	1	657
+658	731	1	658
+659	732	1	659
+660	733	1	660
+661	734	1	661
+662	735	1	662
+663	736	1	663
+664	737	1	664
+665	738	1	665
+666	739	1	666
+667	740	1	667
+668	741	1	668
+669	742	1	669
+670	743	1	670
+671	744	1	671
+672	745	1	672
+673	746	1	673
+674	747	1	674
+675	748	1	675
+676	749	1	676
+677	750	1	677
+678	751	1	678
+679	752	1	679
+680	753	1	680
+681	754	1	681
+682	755	1	682
+683	756	1	683
+684	757	1	684
+685	758	1	685
+686	759	1	686
+687	760	1	687
+688	761	1	688
+689	762	1	689
+690	763	1	690
+691	764	1	691
+692	765	1	692
+693	766	1	693
+694	767	1	694
+695	768	1	695
+696	769	1	696
+697	770	1	697
+698	771	1	698
+699	772	1	699
+700	773	1	700
+701	774	1	701
+702	775	1	702
+703	776	1	703
+704	777	1	704
+705	778	1	705
+706	779	1	706
+707	780	1	707
+708	781	1	708
+709	782	1	709
+710	783	1	710
+711	784	1	711
+712	785	1	712
+713	786	1	713
+714	787	1	714
+715	788	1	715
+716	789	1	716
+717	790	1	717
+718	791	1	718
+719	792	1	719
+720	793	1	720
+721	794	1	721
+722	795	1	722
+723	796	1	723
+724	797	1	724
+725	798	1	725
+726	799	1	726
+727	800	1	727
+728	801	1	728
+729	802	1	729
 \.
 
 
@@ -9844,7 +9892,7 @@ COPY public.files_related_morphs (id, file_id, related_id, related_type, field, 
 11	11	47	api::article.article	icon_image	1
 13	13	49	api::article.article	icon_image	1
 15	32	62	api::article.article	icon_image	1
-2732	617	659	coursecontent.image	image_file	1
+3277	556	18	coursecontent.image	image_file	1
 1552	494	20	api::tip.tip	icon_image	1
 21	31	61	api::article.article	icon_image	1
 26	43	67	api::article.article	icon_image	1
@@ -9855,7 +9903,7 @@ COPY public.files_related_morphs (id, file_id, related_id, related_type, field, 
 1554	496	22	api::tip.tip	icon_image	1
 33	52	74	api::article.article	icon_image	1
 1556	498	61	api::post.post	media	1
-2737	620	143	coursecontent.image	image_file	1
+3285	279	25	coursecontent.image	image_file	1
 2182	588	644	coursecontent.image	image_file	1
 2188	595	651	coursecontent.image	image_file	1
 2192	587	53	api::course.course	icon_image	1
@@ -9864,15 +9912,9 @@ COPY public.files_related_morphs (id, file_id, related_id, related_type, field, 
 78	95	3	api::hot-topic.hot-topic	icon_image	1
 79	96	4	api::hot-topic.hot-topic	icon_image	1
 80	97	5	api::hot-topic.hot-topic	icon_image	1
-2739	624	145	coursecontent.image	image_file	1
-2777	652	390	coursecontent.image	image_file	1
-2783	656	395	coursecontent.image	image_file	1
-2638	519	2	coursecontent.image	image_file	1
-2786	657	396	coursecontent.image	image_file	1
+2950	694	376	coursecontent.image	image_file	1
 92	100	1	api::tip.tip	icon_image	1
-2790	665	402	coursecontent.image	image_file	1
 94	98	3	api::tip.tip	icon_image	1
-2791	666	403	coursecontent.image	image_file	1
 1415	432	620	coursecontent.image	image_file	1
 98	104	80	api::article.article	icon_image	1
 100	105	23	api::article.article	icon_image	1
@@ -9903,6 +9945,7 @@ COPY public.files_related_morphs (id, file_id, related_id, related_type, field, 
 188	163	83	api::article.article	icon_image	1
 1473	428	618	coursecontent.image	image_file	1
 1474	427	50	api::course.course	icon_image	1
+3070	747	17	coursecontent.video	video_file	1
 194	168	28	api::post.post	media	1
 195	169	28	api::post.post	media	2
 196	170	29	api::post.post	media	1
@@ -9911,9 +9954,11 @@ COPY public.files_related_morphs (id, file_id, related_id, related_type, field, 
 199	173	31	api::post.post	media	1
 200	174	31	api::post.post	media	2
 201	175	31	api::post.post	media	3
+3073	419	44	api::course.course	icon_image	1
 1345	393	22	api::course.course	icon_image	1
 1346	395	24	api::course.course	icon_image	1
 1348	397	26	api::course.course	icon_image	1
+3093	765	163	coursecontent.image	image_file	1
 211	176	32	api::post.post	media	1
 212	177	32	api::post.post	media	2
 213	178	32	api::post.post	media	3
@@ -9921,8 +9966,6 @@ COPY public.files_related_morphs (id, file_id, related_id, related_type, field, 
 1509	470	52	api::course.course	icon_image	1
 219	179	33	api::post.post	media	1
 220	180	33	api::post.post	media	2
-1392	417	42	api::course.course	icon_image	1
-1397	422	47	api::course.course	icon_image	1
 1523	478	654	coursecontent.image	image_file	1
 1524	477	55	api::course.course	icon_image	1
 1530	481	85	api::article.article	icon_image	1
@@ -9932,9 +9975,8 @@ COPY public.files_related_morphs (id, file_id, related_id, related_type, field, 
 1546	489	22	api::article.article	icon_image	1
 2183	586	642	coursecontent.image	image_file	1
 2191	472	652	coursecontent.image	image_file	1
-2733	616	138	coursecontent.image	image_file	1
-2738	623	144	coursecontent.image	image_file	1
-2742	618	139	coursecontent.image	image_file	1
+3278	552	14	coursecontent.image	image_file	1
+3204	707	607	coursecontent.image	image_file	1
 1276	97	12	api::course.course	icon_image	1
 371	241	40	api::post.post	media	1
 372	242	41	api::post.post	media	1
@@ -9944,76 +9986,67 @@ COPY public.files_related_morphs (id, file_id, related_id, related_type, field, 
 1417	433	621	coursecontent.image	image_file	1
 1282	383	9	api::course.course	icon_image	1
 1418	156	10	api::topic.topic	icon_image	1
+2946	692	374	coursecontent.image	image_file	1
+2951	697	380	coursecontent.image	image_file	1
+2958	700	387	coursecontent.image	image_file	1
 2496	545	73	api::post.post	media	1
 1421	436	623	coursecontent.image	image_file	1
-2639	541	656	coursecontent.image	image_file	1
-2779	649	391	coursecontent.image	image_file	1
-2788	659	398	coursecontent.image	image_file	1
 419	271	49	api::post.post	media	1
-2643	530	633	coursecontent.image	image_file	1
-2652	537	638	coursecontent.image	image_file	1
 1422	435	8	api::topic.topic	icon_image	1
-2654	551	1	coursecontent.image	image_file	1
-2655	220	13	coursecontent.image	image_file	1
-2660	273	20	coursecontent.image	image_file	1
-2663	275	22	coursecontent.image	image_file	1
-2665	557	24	coursecontent.image	image_file	1
-2668	282	28	coursecontent.image	image_file	1
-2672	559	31	coursecontent.image	image_file	1
-2673	286	32	coursecontent.image	image_file	1
-2677	290	35	coursecontent.image	image_file	1
 1555	497	57	api::post.post	media	1
-1302	164	8	api::course.course	icon_image	1
 1557	499	62	api::post.post	media	1
 1558	500	63	api::post.post	media	1
 1429	441	624	coursecontent.image	image_file	1
 1430	160	11	api::topic.topic	icon_image	1
 1559	501	64	api::post.post	media	1
 1226	371	15	api::course.course	icon_image	1
-2678	560	657	coursecontent.image	image_file	1
 1560	502	65	api::post.post	media	1
 1433	99	2	api::tip.tip	icon_image	1
 1561	503	66	api::post.post	media	1
 1562	504	67	api::post.post	media	1
 1434	102	4	api::tip.tip	icon_image	1
 1563	505	68	api::post.post	media	1
+2855	607	152	coursecontent.image	image_file	1
+2858	608	155	coursecontent.image	image_file	1
+2861	601	150	coursecontent.image	image_file	1
+2863	613	159	coursecontent.image	image_file	1
 1469	466	625	coursecontent.image	image_file	1
 1470	465	51	api::course.course	icon_image	1
+2867	627	275	coursecontent.image	image_file	1
 1341	394	23	api::course.course	icon_image	1
-1347	396	25	api::course.course	icon_image	1
 1349	399	27	api::course.course	icon_image	1
 1477	412	33	api::course.course	icon_image	1
-2585	627	275	coursecontent.image	image_file	1
-2589	635	283	coursecontent.image	image_file	1
-2595	392	21	api::course.course	icon_image	1
-2721	601	150	coursecontent.image	image_file	1
-2725	603	151	coursecontent.image	image_file	1
+2868	631	278	coursecontent.image	image_file	1
+2871	632	277	coursecontent.image	image_file	1
 1373	95	39	api::course.course	icon_image	1
-2727	611	156	coursecontent.image	image_file	1
-1378	130	37	api::course.course	icon_image	1
-2728	608	155	coursecontent.image	image_file	1
-1380	149	36	api::course.course	icon_image	1
-2731	151	10	api::course.course	icon_image	1
 1513	476	5	api::tip.tip	icon_image	1
+2874	635	283	coursecontent.image	image_file	1
 1390	414	40	api::course.course	icon_image	1
 1393	418	43	api::course.course	icon_image	1
-1395	420	45	api::course.course	icon_image	1
-1396	421	46	api::course.course	icon_image	1
+2876	636	284	coursecontent.image	image_file	1
 1526	479	56	api::course.course	icon_image	1
+2877	637	285	coursecontent.image	image_file	1
+2878	392	21	api::course.course	icon_image	1
 1411	430	113	coursecontent.image	image_file	1
 1412	429	2	api::topic.topic	icon_image	1
+2879	649	391	coursecontent.image	image_file	1
 1532	455	27	api::article.article	icon_image	1
+2885	658	397	coursecontent.image	image_file	1
 1536	482	91	api::article.article	icon_image	1
 1538	485	6	api::article.article	icon_image	1
 1540	486	75	api::article.article	icon_image	1
 1542	487	76	api::article.article	icon_image	1
+2886	657	396	coursecontent.image	image_file	1
 1547	490	16	api::tip.tip	icon_image	1
 1548	491	17	api::tip.tip	icon_image	1
+2889	663	400	coursecontent.image	image_file	1
 1550	493	19	api::tip.tip	icon_image	1
 1551	492	18	api::tip.tip	icon_image	1
+2892	660	399	coursecontent.image	image_file	1
+2894	665	402	coursecontent.image	image_file	1
 2184	589	646	coursecontent.image	image_file	1
-2734	614	3	coursecontent.image	image_file	1
-2740	625	146	coursecontent.image	image_file	1
+3279	551	1	coursecontent.image	image_file	1
+3205	715	610	coursecontent.image	image_file	1
 1435	442	6	api::tip.tip	icon_image	1
 1436	443	7	api::tip.tip	icon_image	1
 366	224	37	api::post.post	media	1
@@ -10023,117 +10056,85 @@ COPY public.files_related_morphs (id, file_id, related_id, related_type, field, 
 377	157	13	api::post.post	media	1
 381	259	44	api::post.post	media	1
 2497	544	72	api::post.post	media	1
-2778	653	392	coursecontent.image	image_file	1
 1284	384	16	api::course.course	icon_image	1
 1437	444	8	api::tip.tip	icon_image	1
 1286	385	17	api::course.course	icon_image	1
 1711	548	93	api::article.article	icon_image	1
 1712	549	94	api::article.article	icon_image	1
-2781	654	393	coursecontent.image	image_file	1
-2640	521	627	coursecontent.image	image_file	1
-2784	660	399	coursecontent.image	image_file	1
-2644	531	631	coursecontent.image	image_file	1
-2645	534	632	coursecontent.image	image_file	1
-2651	538	636	coursecontent.image	image_file	1
-2794	646	57	api::course.course	icon_image	1
 2795	668	80	api::post.post	media	1
+2947	693	375	coursecontent.image	image_file	1
 415	267	46	api::post.post	media	1
 416	268	46	api::post.post	media	2
 417	269	47	api::post.post	media	1
 418	270	48	api::post.post	media	1
-2657	552	14	coursecontent.image	image_file	1
-2662	274	21	coursecontent.image	image_file	1
-2664	278	23	coursecontent.image	image_file	1
-2671	284	29	coursecontent.image	image_file	1
-2675	288	36	coursecontent.image	image_file	1
-2679	217	2	api::course.course	icon_image	1
+2952	703	383	coursecontent.image	image_file	1
+2953	696	379	coursecontent.image	image_file	1
+2954	705	382	coursecontent.image	image_file	1
+2959	698	378	coursecontent.image	image_file	1
 1438	445	9	api::tip.tip	icon_image	1
 1440	447	10	api::tip.tip	icon_image	1
-2586	631	278	coursecontent.image	image_file	1
 1441	448	11	api::tip.tip	icon_image	1
 1442	449	12	api::tip.tip	icon_image	1
 1443	450	13	api::tip.tip	icon_image	1
 1444	451	14	api::tip.tip	icon_image	1
 1445	452	15	api::tip.tip	icon_image	1
-2591	636	284	coursecontent.image	image_file	1
-2594	638	286	coursecontent.image	image_file	1
 1446	453	79	api::article.article	icon_image	1
-2719	382	147	coursecontent.image	image_file	1
-2720	600	148	coursecontent.image	image_file	1
-2724	607	152	coursecontent.image	image_file	1
 1456	459	78	api::article.article	icon_image	1
 1457	460	51	api::post.post	media	1
 1459	462	53	api::post.post	media	1
 1461	464	55	api::post.post	media	1
 1464	467	38	api::course.course	icon_image	1
-1344	401	29	api::course.course	icon_image	1
-1351	403	31	api::course.course	icon_image	1
 1352	400	28	api::course.course	icon_image	1
 1356	411	32	api::course.course	icon_image	1
+2853	600	148	coursecontent.image	image_file	1
+2856	606	153	coursecontent.image	image_file	1
 1468	44	69	api::article.article	icon_image	1
 1471	426	617	coursecontent.image	image_file	1
 1472	425	49	api::course.course	icon_image	1
-1369	413	34	api::course.course	icon_image	1
 1475	424	616	coursecontent.image	image_file	1
 1375	131	35	api::course.course	icon_image	1
 1382	416	50	api::post.post	media	1
 1476	423	48	api::course.course	icon_image	1
+2859	603	151	coursecontent.image	image_file	1
 1478	390	20	api::course.course	icon_image	1
 1479	370	14	api::course.course	icon_image	1
-1391	415	41	api::course.course	icon_image	1
-1394	419	44	api::course.course	icon_image	1
+2862	602	149	coursecontent.image	image_file	1
+2864	612	157	coursecontent.image	image_file	1
+2869	630	276	coursecontent.image	image_file	1
+2873	633	279	coursecontent.image	image_file	1
+2875	638	286	coursecontent.image	image_file	1
+2880	650	389	coursecontent.image	image_file	1
+2884	654	393	coursecontent.image	image_file	1
+2890	659	398	coursecontent.image	image_file	1
+2895	667	404	coursecontent.image	image_file	1
 1521	475	653	coursecontent.image	image_file	1
 1522	474	54	api::course.course	icon_image	1
 1525	480	655	coursecontent.image	image_file	1
 1564	506	69	api::post.post	media	1
 2185	593	648	coursecontent.image	image_file	1
 2189	592	649	coursecontent.image	image_file	1
-2735	615	137	coursecontent.image	image_file	1
-2741	621	142	coursecontent.image	image_file	1
+3280	274	21	coursecontent.image	image_file	1
+3288	217	2	api::course.course	icon_image	1
+3206	711	612	coursecontent.image	image_file	1
 2494	641	75	api::post.post	media	1
 2498	543	71	api::post.post	media	1
 2499	542	70	api::post.post	media	1
 2501	643	99	api::article.article	icon_image	1
 2502	644	100	api::article.article	icon_image	1
 2503	645	65	api::article.article	icon_image	1
-2641	520	626	coursecontent.image	image_file	1
-2646	532	629	coursecontent.image	image_file	1
-2647	533	630	coursecontent.image	image_file	1
-2648	535	634	coursecontent.image	image_file	1
-2780	650	389	coursecontent.image	image_file	1
-2787	663	400	coursecontent.image	image_file	1
-2789	664	401	coursecontent.image	image_file	1
+2948	706	381	coursecontent.image	image_file	1
+3305	788	450	coursecontent.image	image_file	1
+2955	704	385	coursecontent.image	image_file	1
+2960	401	29	api::course.course	icon_image	1
 2796	669	81	api::post.post	media	1
-2649	540	635	coursecontent.image	image_file	1
-2658	554	17	coursecontent.image	image_file	1
-2666	280	26	coursecontent.image	image_file	1
 2050	547	92	api::article.article	icon_image	1
 2052	454	77	api::article.article	icon_image	1
-2670	283	30	coursecontent.image	image_file	1
-2674	287	33	coursecontent.image	image_file	1
-2722	602	149	coursecontent.image	image_file	1
-2583	626	274	coursecontent.image	image_file	1
-2587	639	280	coursecontent.image	image_file	1
-2592	633	279	coursecontent.image	image_file	1
-2100	296	41	coursecontent.image	image_file	1
-2102	298	43	coursecontent.image	image_file	1
-2105	303	48	coursecontent.image	image_file	1
-2106	300	45	coursecontent.image	image_file	1
-2109	306	51	coursecontent.image	image_file	1
-2114	311	56	coursecontent.image	image_file	1
-2117	312	57	coursecontent.image	image_file	1
-2118	313	58	coursecontent.image	image_file	1
-2119	291	3	api::course.course	icon_image	1
-2121	317	61	coursecontent.image	image_file	1
-2124	318	62	coursecontent.image	image_file	1
-2123	322	65	coursecontent.image	image_file	1
-2127	323	67	coursecontent.image	image_file	1
-2128	326	69	coursecontent.image	image_file	1
-2132	330	73	coursecontent.image	image_file	1
-2133	329	72	coursecontent.image	image_file	1
-2138	335	78	coursecontent.image	image_file	1
-2142	338	81	coursecontent.image	image_file	1
-2143	315	5	api::course.course	icon_image	1
+2854	382	147	coursecontent.image	image_file	1
+2857	610	154	coursecontent.image	image_file	1
+2860	611	156	coursecontent.image	image_file	1
+2865	151	10	api::course.course	icon_image	1
+2866	639	280	coursecontent.image	image_file	1
+2870	626	274	coursecontent.image	image_file	1
 2144	341	83	coursecontent.image	image_file	1
 2148	342	84	coursecontent.image	image_file	1
 2149	347	89	coursecontent.image	image_file	1
@@ -10152,19 +10153,26 @@ COPY public.files_related_morphs (id, file_id, related_id, related_type, field, 
 2178	581	117	coursecontent.image	image_file	1
 2179	583	119	coursecontent.image	image_file	1
 2181	121	7	api::course.course	icon_image	1
-2593	637	285	coursecontent.image	image_file	1
-2726	610	154	coursecontent.image	image_file	1
-2729	612	157	coursecontent.image	image_file	1
+2872	634	282	coursecontent.image	image_file	1
+2881	652	390	coursecontent.image	image_file	1
+2882	647	388	coursecontent.image	image_file	1
+2883	653	392	coursecontent.image	image_file	1
+2887	656	395	coursecontent.image	image_file	1
+2888	655	394	coursecontent.image	image_file	1
+2891	664	401	coursecontent.image	image_file	1
+2893	666	403	coursecontent.image	image_file	1
+2896	402	30	api::course.course	icon_image	1
+3071	420	45	api::course.course	icon_image	1
 2186	590	645	coursecontent.image	image_file	1
 2187	591	647	coursecontent.image	image_file	1
 1567	508	14	api::topic.topic	icon_image	1
 2190	594	650	coursecontent.image	image_file	1
 1569	509	15	api::topic.topic	icon_image	1
-2736	619	140	coursecontent.image	image_file	1
+3281	273	20	coursecontent.image	image_file	1
 1571	510	16	api::topic.topic	icon_image	1
-2743	622	141	coursecontent.image	image_file	1
+3287	281	27	coursecontent.image	image_file	1
 1573	511	17	api::topic.topic	icon_image	1
-2744	375	4	api::course.course	icon_image	1
+3208	713	613	coursecontent.image	image_file	1
 1576	512	18	api::topic.topic	icon_image	1
 1578	513	19	api::topic.topic	icon_image	1
 1579	514	20	api::topic.topic	icon_image	1
@@ -10176,57 +10184,15 @@ COPY public.files_related_morphs (id, file_id, related_id, related_type, field, 
 2495	546	74	api::post.post	media	1
 2500	642	98	api::article.article	icon_image	1
 1587	153	9	api::topic.topic	icon_image	1
-2642	522	628	coursecontent.image	image_file	1
-2650	539	637	coursecontent.image	image_file	1
-2653	518	1	api::course.course	icon_image	1
-2656	555	19	coursecontent.image	image_file	1
-2659	553	15	coursecontent.image	image_file	1
-2661	556	18	coursecontent.image	image_file	1
-2667	279	25	coursecontent.image	image_file	1
-2776	647	388	coursecontent.image	image_file	1
-2669	281	27	coursecontent.image	image_file	1
-2782	655	394	coursecontent.image	image_file	1
-2785	658	397	coursecontent.image	image_file	1
-2792	667	404	coursecontent.image	image_file	1
-2793	402	30	api::course.course	icon_image	1
-2676	289	34	coursecontent.image	image_file	1
+2949	695	377	coursecontent.image	image_file	1
+2956	702	384	coursecontent.image	image_file	1
+2957	701	386	coursecontent.image	image_file	1
 2048	596	95	api::article.article	icon_image	1
 2049	597	96	api::article.article	icon_image	1
 2053	598	97	api::article.article	icon_image	1
-2584	630	276	coursecontent.image	image_file	1
-2588	632	277	coursecontent.image	image_file	1
-2590	634	282	coursecontent.image	image_file	1
-2723	606	153	coursecontent.image	image_file	1
-2730	613	159	coursecontent.image	image_file	1
-2096	293	38	coursecontent.image	image_file	1
-2097	294	39	coursecontent.image	image_file	1
-2098	292	37	coursecontent.image	image_file	1
-2099	297	42	coursecontent.image	image_file	1
-2101	295	40	coursecontent.image	image_file	1
-2103	301	46	coursecontent.image	image_file	1
-2104	299	44	coursecontent.image	image_file	1
-2107	304	49	coursecontent.image	image_file	1
-2108	302	47	coursecontent.image	image_file	1
-2110	305	50	coursecontent.image	image_file	1
-2111	307	52	coursecontent.image	image_file	1
-2112	308	53	coursecontent.image	image_file	1
-2113	309	54	coursecontent.image	image_file	1
-2115	310	55	coursecontent.image	image_file	1
-2116	314	59	coursecontent.image	image_file	1
-2120	316	60	coursecontent.image	image_file	1
-2122	321	64	coursecontent.image	image_file	1
-2125	319	63	coursecontent.image	image_file	1
-2126	324	66	coursecontent.image	image_file	1
-2129	328	70	coursecontent.image	image_file	1
-2130	325	68	coursecontent.image	image_file	1
-2131	327	71	coursecontent.image	image_file	1
-2134	332	75	coursecontent.image	image_file	1
-2135	331	74	coursecontent.image	image_file	1
-2136	334	77	coursecontent.image	image_file	1
-2137	333	76	coursecontent.image	image_file	1
-2139	337	80	coursecontent.image	image_file	1
-2140	336	79	coursecontent.image	image_file	1
-2141	339	82	coursecontent.image	image_file	1
+3072	754	18	coursecontent.video	video_file	1
+3094	763	166	coursecontent.image	image_file	1
+3095	761	167	coursecontent.image	image_file	1
 2145	343	85	coursecontent.image	image_file	1
 2146	344	86	coursecontent.image	image_file	1
 2147	345	87	coursecontent.image	image_file	1
@@ -10247,6 +10213,151 @@ COPY public.files_related_morphs (id, file_id, related_id, related_type, field, 
 2174	574	114	coursecontent.image	image_file	1
 2176	91	6	api::course.course	icon_image	1
 2180	584	120	coursecontent.image	image_file	1
+3282	557	24	coursecontent.image	image_file	1
+3209	710	614	coursecontent.image	image_file	1
+3393	316	60	coursecontent.image	image_file	1
+3405	328	70	coursecontent.image	image_file	1
+3283	275	22	coursecontent.image	image_file	1
+3098	757	171	coursecontent.image	image_file	1
+3088	756	161	coursecontent.image	image_file	1
+3096	759	169	coursecontent.image	image_file	1
+3284	278	23	coursecontent.image	image_file	1
+3394	318	62	coursecontent.image	image_file	1
+3401	327	71	coursecontent.image	image_file	1
+3089	755	160	coursecontent.image	image_file	1
+3097	760	168	coursecontent.image	image_file	1
+3286	280	26	coursecontent.image	image_file	1
+3091	766	165	coursecontent.image	image_file	1
+3310	794	454	coursecontent.image	image_file	1
+3214	769	19	coursecontent.video	video_file	1
+3092	764	164	coursecontent.image	image_file	1
+3100	748	172	coursecontent.image	image_file	1
+3101	164	8	api::course.course	icon_image	1
+3309	791	453	coursecontent.image	image_file	1
+3215	396	25	api::course.course	icon_image	1
+3395	317	61	coursecontent.image	image_file	1
+3216	774	26	coursecontent.video	video_file	1
+3301	783	445	coursecontent.image	image_file	1
+3306	787	449	coursecontent.image	image_file	1
+3396	319	63	coursecontent.image	image_file	1
+3402	323	67	coursecontent.image	image_file	1
+3406	315	5	api::course.course	icon_image	1
+3104	770	20	coursecontent.video	video_file	1
+3105	617	659	coursecontent.image	image_file	1
+3114	623	144	coursecontent.image	image_file	1
+3303	786	448	coursecontent.image	image_file	1
+3217	417	42	api::course.course	icon_image	1
+3397	322	65	coursecontent.image	image_file	1
+3106	614	3	coursecontent.image	image_file	1
+3218	775	27	coursecontent.video	video_file	1
+3307	789	452	coursecontent.image	image_file	1
+3398	325	68	coursecontent.image	image_file	1
+3107	619	140	coursecontent.image	image_file	1
+3113	620	143	coursecontent.image	image_file	1
+3308	790	451	coursecontent.image	image_file	1
+3311	792	455	coursecontent.image	image_file	1
+3219	415	41	api::course.course	icon_image	1
+3312	413	34	api::course.course	icon_image	1
+3399	321	64	coursecontent.image	image_file	1
+3404	324	66	coursecontent.image	image_file	1
+3108	616	138	coursecontent.image	image_file	1
+3116	625	146	coursecontent.image	image_file	1
+3117	375	4	api::course.course	icon_image	1
+3302	784	446	coursecontent.image	image_file	1
+3223	677	661	coursecontent.image	image_file	1
+3400	326	69	coursecontent.image	image_file	1
+3109	621	142	coursecontent.image	image_file	1
+3304	785	447	coursecontent.image	image_file	1
+3222	777	29	coursecontent.video	video_file	1
+3232	684	668	coursecontent.image	image_file	1
+3403	329	72	coursecontent.image	image_file	1
+3110	618	139	coursecontent.image	image_file	1
+3224	687	662	coursecontent.image	image_file	1
+3228	683	669	coursecontent.image	image_file	1
+3233	646	57	api::course.course	icon_image	1
+3237	744	507	coursecontent.image	image_file	1
+3242	737	513	coursecontent.image	image_file	1
+3111	622	141	coursecontent.image	image_file	1
+3225	675	666	coursecontent.image	image_file	1
+3112	615	137	coursecontent.image	image_file	1
+3226	670	660	coursecontent.image	image_file	1
+3115	624	145	coursecontent.image	image_file	1
+3330	301	46	coursecontent.image	image_file	1
+3227	681	665	coursecontent.image	image_file	1
+3336	302	47	coursecontent.image	image_file	1
+3341	291	3	api::course.course	icon_image	1
+3353	797	516	coursecontent.image	image_file	1
+3229	685	667	coursecontent.image	image_file	1
+3230	682	664	coursecontent.image	image_file	1
+3235	745	506	coursecontent.image	image_file	1
+3332	303	48	coursecontent.image	image_file	1
+3339	306	51	coursecontent.image	image_file	1
+3173	729	598	coursecontent.image	image_file	1
+3177	725	602	coursecontent.image	image_file	1
+3231	686	663	coursecontent.image	image_file	1
+3234	778	30	coursecontent.video	video_file	1
+3236	746	505	coursecontent.image	image_file	1
+3238	743	508	coursecontent.image	image_file	1
+3169	735	594	coursecontent.image	image_file	1
+3239	742	509	coursecontent.image	image_file	1
+3328	292	37	coursecontent.image	image_file	1
+3337	304	49	coursecontent.image	image_file	1
+3170	731	596	coursecontent.image	image_file	1
+3240	741	510	coursecontent.image	image_file	1
+3329	293	38	coursecontent.image	image_file	1
+3171	732	595	coursecontent.image	image_file	1
+3181	719	605	coursecontent.image	image_file	1
+3241	740	512	coursecontent.image	image_file	1
+3331	297	42	coursecontent.image	image_file	1
+3172	736	593	coursecontent.image	image_file	1
+3179	728	600	coursecontent.image	image_file	1
+3243	739	511	coursecontent.image	image_file	1
+3244	130	37	api::course.course	icon_image	1
+3333	299	44	coursecontent.image	image_file	1
+3174	730	597	coursecontent.image	image_file	1
+3246	519	2	coursecontent.image	image_file	1
+3247	541	656	coursecontent.image	image_file	1
+3248	520	626	coursecontent.image	image_file	1
+3245	198	24	coursecontent.video	video_file	1
+3334	298	43	coursecontent.image	image_file	1
+3338	307	52	coursecontent.image	image_file	1
+3175	726	601	coursecontent.image	image_file	1
+3249	530	633	coursecontent.image	image_file	1
+3335	300	45	coursecontent.image	image_file	1
+3176	727	599	coursecontent.image	image_file	1
+3182	718	606	coursecontent.image	image_file	1
+3183	421	46	api::course.course	icon_image	1
+3250	521	627	coursecontent.image	image_file	1
+3340	305	50	coursecontent.image	image_file	1
+3178	720	604	coursecontent.image	image_file	1
+3251	522	628	coursecontent.image	image_file	1
+3254	531	631	coursecontent.image	image_file	1
+3256	518	1	api::course.course	icon_image	1
+3352	796	515	coursecontent.image	image_file	1
+3359	801	520	coursecontent.image	image_file	1
+3180	721	603	coursecontent.image	image_file	1
+3252	532	629	coursecontent.image	image_file	1
+3354	776	28	coursecontent.video	video_file	1
+3357	795	514	coursecontent.image	image_file	1
+3253	534	632	coursecontent.image	image_file	1
+3358	800	519	coursecontent.image	image_file	1
+3255	533	630	coursecontent.image	image_file	1
+3360	802	521	coursecontent.image	image_file	1
+3257	780	407	coursecontent.image	image_file	1
+3356	798	517	coursecontent.image	image_file	1
+3361	149	36	api::course.course	icon_image	1
+3258	781	408	coursecontent.image	image_file	1
+3355	799	518	coursecontent.image	image_file	1
+3259	779	405	coursecontent.image	image_file	1
+3260	782	410	coursecontent.image	image_file	1
+3261	403	31	api::course.course	icon_image	1
+3201	717	608	coursecontent.image	image_file	1
+3207	709	615	coursecontent.image	image_file	1
+3210	422	47	api::course.course	icon_image	1
+3202	714	611	coursecontent.image	image_file	1
+3203	716	609	coursecontent.image	image_file	1
+3090	768	162	coursecontent.image	image_file	1
+3099	758	170	coursecontent.image	image_file	1
 \.
 
 
@@ -10276,7 +10387,7 @@ COPY public.functions_localizations_links (id, function_id, inv_function_id, fun
 --
 
 COPY public.hot_topics (id, created_at, updated_at, created_by_id, updated_by_id, locale) FROM stdin;
-1	2025-06-14 15:05:44.841	2025-07-13 00:00:00.278	1	1	en
+1	2025-06-14 15:05:44.841	2025-07-18 00:00:00.615	1	1	en
 \.
 
 
@@ -10293,9 +10404,9 @@ COPY public.hot_topics_localizations_links (id, hot_topic_id, inv_hot_topic_id, 
 --
 
 COPY public.hot_topics_topics_links (id, hot_topic_id, topic_id, topic_order) FROM stdin;
-100	1	14	1
-102	1	17	2
-103	1	18	3
+122	1	5	1
+119	1	19	2
+120	1	17	3
 \.
 
 
@@ -10349,14 +10460,8 @@ COPY public.likes_localizations_links (id, like_id, inv_like_id, like_order) FRO
 --
 
 COPY public.likes_post_links (id, like_id, post_id, like_order) FROM stdin;
-7	7	27	1
-11	11	33	1
-12	12	32	2
-13	13	46	1
 14	14	45	1
 15	15	44	1
-16	16	50	1
-18	18	58	1
 19	19	59	1
 20	20	62	1
 21	21	65	1
@@ -10401,22 +10506,11 @@ COPY public.pings (id, status, created_at, updated_at, published_at, created_by_
 --
 
 COPY public.posts (id, content, created_at, updated_at, created_by_id, updated_by_id, locale) FROM stdin;
-27	This is a good day. 	2025-06-18 00:58:39.927	2025-06-18 05:08:02.357	\N	1	en
-32	Today we had a pleasure trip to the park.	2025-06-18 05:10:48.794	2025-06-18 05:10:48.794	\N	\N	en
-33	Today, I took my kids to take a trip. The scenery is amazing. 	2025-06-18 06:36:11.114	2025-06-18 06:36:11.114	\N	\N	en
-36	Today is a nice day	2025-06-20 03:52:25.657	2025-06-20 03:52:25.657	\N	\N	en
-37	In the early morning, it's big sunshine, but it turns cloudy at noon.	2025-06-20 19:20:53.805	2025-06-20 19:20:53.805	\N	\N	en
-42	New photo to share	2025-06-20 21:27:10.786	2025-06-20 21:27:10.786	\N	\N	en
 10	Today it's a fine day. We went to the Stanley Park	2025-04-11 12:18:25.326	2025-06-21 05:40:35.949	\N	1	en
 22	Happy new day	2025-04-11 16:33:33.436	2025-06-21 05:51:36.145	\N	1	en
-43	Tomorrow is Saturday. I plan to go to a beach with kids. 	2025-06-21 07:15:46.695	2025-06-21 07:15:46.695	\N	\N	en
 44	My son is 10 years old, and he’s always trying to use his phone at home to communicate with his friends and play games. Sometimes, he ends up not having enough time to focus on his homework. When I ask him to spend less time on his phone, he agrees, but the change only lasts about 10 minutes. Your app really helps and now we can share our screen time every and have some fun time together.	2025-06-21 19:01:26.742	2025-06-21 19:01:26.742	\N	\N	en
 45	You’re right! Parents are the most important role models for their kids. When we play with our children, they’re the happiest kids in the world, no matter what toys we use.	2025-06-21 19:05:13.194	2025-06-21 19:05:13.194	\N	\N	en
-46	The function I implemented is useful. Happy	2025-06-21 20:11:37.026	2025-06-21 20:11:37.026	\N	\N	en
-47	My diner. 	2025-06-21 22:55:41.912	2025-06-21 22:55:41.912	\N	\N	en
 48	Spring in the woods	2025-06-22 00:19:35.022	2025-06-22 00:19:35.022	\N	\N	en
-49	River is running all the time, where is their destine?	2025-06-22 01:19:43.288	2025-06-22 01:19:43.288	\N	\N	en
-50	Kids are mostly very dangerous 	2025-06-27 01:14:40.998	2025-06-27 01:14:40.998	\N	\N	en
 51	I have a 15-year-old daughter, and lately, she’s been shutting me out. She doesn’t want to share what’s going on at school, and over the past few months, her grades have been slipping. I suspect she might have a boyfriend, but we can’t seem to have a normal conversation anymore. What do you suggest?	2025-06-28 19:08:01.579	2025-06-28 19:08:01.579	\N	\N	en
 52	I’m a busy mom with two kids, and I’m really fascinated by your GPA app. On those hectic mornings, I love taking a quick peek at it—it feels like a breath of fresh air and gives me a burst of energy. It also offers new strategies, love, and passion for my parenting journey throughout the day. Thank you, GPA, for your warmth and wisdom!	2025-06-28 19:14:43.221	2025-06-28 19:14:43.221	\N	\N	en
 53	I’m away from my kids during the week because I work in a different city, and I only get to visit them on the weekends. With your app, I’ve been able to share valuable parenting tools with my husband, and we use them every day. They really work! I truly appreciate your help—you’ve become the bridge that connects me with my kids and my family. Thank you!	2025-06-28 19:22:59.883	2025-06-28 19:22:59.883	\N	\N	en
@@ -10424,7 +10518,6 @@ COPY public.posts (id, content, created_at, updated_at, created_by_id, updated_b
 55	Since we arrived in Canada, my son has developed a strong passion for sports—swimming, playing basketball, and drama—but he barely focuses on his studies, and I’m really worried about his academic progress. How can he get into a good high school? What should I do to support him?	2025-06-28 19:50:37.271	2025-06-28 19:50:37.271	\N	\N	en
 56	Walking into nature \nEmbrace the fresh\n	2025-06-30 00:48:32.983	2025-06-30 00:48:32.983	\N	\N	en
 57	Today, we integrate the AI consulting. Go GPA	2025-07-05 10:40:04.87	2025-07-05 10:40:04.87	\N	\N	en
-58	Refactoring is the key to improve. Same as working with kids. 	2025-07-05 13:03:31.712	2025-07-05 13:03:31.712	\N	\N	en
 59	July 5 is an excellent day. 	2025-07-05 15:02:35.222	2025-07-05 15:02:35.222	\N	\N	en
 60	#SlowSundayThoughts\n\nFinished my Academias for a while, cleared out my desk, and now I’m journaling on a sunny Sunday asking: ‘What kind of parent do I want to be?’\nInteresting \n\n	2025-07-06 17:33:39.897	2025-07-06 17:33:39.897	\N	\N	en
 61	Should I be my child’s friend or their guide first?	2025-07-07 02:09:27.973	2025-07-07 02:09:27.973	\N	\N	en
@@ -10461,21 +10554,10 @@ COPY public.posts_localizations_links (id, post_id, inv_post_id, post_order) FRO
 
 COPY public.posts_users_permissions_user_links (id, post_id, user_id, post_order) FROM stdin;
 22	22	15	2
-27	27	23	3
-32	32	23	8
-33	33	23	9
-36	36	23	11
-37	37	23	12
-42	42	23	17
 43	10	17	1
-44	43	23	18
 45	44	24	2
 46	45	24	3
-47	46	23	19
-48	47	23	20
 49	48	23	21
-50	49	23	22
-51	50	23	23
 52	51	24	4
 53	52	24	5
 54	53	24	6
@@ -10483,7 +10565,6 @@ COPY public.posts_users_permissions_user_links (id, post_id, user_id, post_order
 56	55	24	8
 57	56	23	24
 58	57	23	25
-59	58	23	26
 60	59	23	27
 61	60	26	1
 62	61	24	9
@@ -10569,7 +10650,7 @@ COPY public.strapi_core_store_settings (id, key, value, type, environment, tag) 
 82	plugin_content_manager_configuration_content_types::api::topic.topic	{"uid":"api::topic.topic","settings":{"bulkable":true,"filterable":true,"searchable":true,"pageSize":10,"mainField":"title","defaultSortBy":"title","defaultSortOrder":"ASC"},"metadatas":{"id":{"edit":{},"list":{"label":"id","searchable":true,"sortable":true}},"title":{"edit":{"label":"title","description":"","placeholder":"","visible":true,"editable":true},"list":{"label":"title","searchable":true,"sortable":true}},"icon_image":{"edit":{"label":"icon_image","description":"","placeholder":"","visible":true,"editable":true},"list":{"label":"icon_image","searchable":false,"sortable":false}},"content":{"edit":{"label":"content","description":"","placeholder":"","visible":true,"editable":true},"list":{"label":"content","searchable":false,"sortable":false}},"createdAt":{"edit":{"label":"createdAt","description":"","placeholder":"","visible":false,"editable":true},"list":{"label":"createdAt","searchable":true,"sortable":true}},"updatedAt":{"edit":{"label":"updatedAt","description":"","placeholder":"","visible":false,"editable":true},"list":{"label":"updatedAt","searchable":true,"sortable":true}},"createdBy":{"edit":{"label":"createdBy","description":"","placeholder":"","visible":false,"editable":true,"mainField":"firstname"},"list":{"label":"createdBy","searchable":true,"sortable":true}},"updatedBy":{"edit":{"label":"updatedBy","description":"","placeholder":"","visible":false,"editable":true,"mainField":"firstname"},"list":{"label":"updatedBy","searchable":true,"sortable":true}}},"layouts":{"list":["id","title","icon_image","createdAt"],"edit":[[{"name":"title","size":6},{"name":"icon_image","size":6}],[{"name":"content","size":12}]]}}	object	\N	\N
 79	plugin_content_manager_configuration_components::profile.child	{"uid":"profile.child","settings":{"bulkable":true,"filterable":true,"searchable":true,"pageSize":10,"mainField":"name","defaultSortBy":"name","defaultSortOrder":"ASC"},"metadatas":{"id":{"edit":{},"list":{"label":"id","searchable":false,"sortable":false}},"name":{"edit":{"label":"name","description":"","placeholder":"","visible":true,"editable":true},"list":{"label":"name","searchable":true,"sortable":true}},"age":{"edit":{"label":"age","description":"","placeholder":"","visible":true,"editable":true},"list":{"label":"age","searchable":true,"sortable":true}},"gender":{"edit":{"label":"gender","description":"","placeholder":"","visible":true,"editable":true},"list":{"label":"gender","searchable":true,"sortable":true}}},"layouts":{"list":["id","name","age","gender"],"edit":[[{"name":"name","size":6},{"name":"age","size":4}],[{"name":"gender","size":6}]]},"isComponent":true}	object	\N	\N
 78	plugin_content_manager_configuration_components::dailylesson.daily-lesson-selection	{"uid":"dailylesson.daily-lesson-selection","settings":{"bulkable":true,"filterable":true,"searchable":true,"pageSize":10,"mainField":"id","defaultSortBy":"id","defaultSortOrder":"ASC"},"metadatas":{"id":{"edit":{},"list":{"label":"id","searchable":false,"sortable":false}},"day":{"edit":{"label":"day","description":"","placeholder":"","visible":true,"editable":true},"list":{"label":"day","searchable":true,"sortable":true}},"courses":{"edit":{"label":"courses","description":"","placeholder":"","visible":true,"editable":true,"mainField":"title"},"list":{"label":"courses","searchable":false,"sortable":false}}},"layouts":{"list":["id","day","courses"],"edit":[[{"name":"day","size":6},{"name":"courses","size":6}]]},"isComponent":true}	object	\N	\N
-20	plugin_upload_metrics	{"weeklySchedule":"41 59 22 * * 1","lastWeeklyUpdate":1751929185225}	object	\N	\N
+20	plugin_upload_metrics	{"weeklySchedule":"41 59 22 * * 1","lastWeeklyUpdate":1752533989726}	object	\N	\N
 80	plugin_content_manager_configuration_content_types::api::tip.tip	{"uid":"api::tip.tip","settings":{"bulkable":true,"filterable":true,"searchable":true,"pageSize":10,"mainField":"text","defaultSortBy":"text","defaultSortOrder":"ASC"},"metadatas":{"id":{"edit":{},"list":{"label":"id","searchable":true,"sortable":true}},"text":{"edit":{"label":"text","description":"","placeholder":"","visible":true,"editable":true},"list":{"label":"text","searchable":true,"sortable":true}},"icon_image":{"edit":{"label":"icon_image","description":"","placeholder":"","visible":true,"editable":true},"list":{"label":"icon_image","searchable":false,"sortable":false}},"createdAt":{"edit":{"label":"createdAt","description":"","placeholder":"","visible":false,"editable":true},"list":{"label":"createdAt","searchable":true,"sortable":true}},"updatedAt":{"edit":{"label":"updatedAt","description":"","placeholder":"","visible":false,"editable":true},"list":{"label":"updatedAt","searchable":true,"sortable":true}},"createdBy":{"edit":{"label":"createdBy","description":"","placeholder":"","visible":false,"editable":true,"mainField":"firstname"},"list":{"label":"createdBy","searchable":true,"sortable":true}},"updatedBy":{"edit":{"label":"updatedBy","description":"","placeholder":"","visible":false,"editable":true,"mainField":"firstname"},"list":{"label":"updatedBy","searchable":true,"sortable":true}}},"layouts":{"list":["id","text","icon_image","createdAt"],"edit":[[{"name":"text","size":6},{"name":"icon_image","size":6}]]}}	object	\N	\N
 73	plugin_content_manager_configuration_components::coursecontent.quiz	{"uid":"coursecontent.quiz","settings":{"bulkable":true,"filterable":true,"searchable":true,"pageSize":10,"mainField":"correctAnswer","defaultSortBy":"correctAnswer","defaultSortOrder":"ASC"},"metadatas":{"id":{"edit":{},"list":{"label":"id","searchable":false,"sortable":false}},"question":{"edit":{"label":"question","description":"","placeholder":"","visible":true,"editable":true},"list":{"label":"question","searchable":true,"sortable":true}},"options":{"edit":{"label":"options","description":"","placeholder":"","visible":true,"editable":true},"list":{"label":"options","searchable":false,"sortable":false}},"correctAnswer":{"edit":{"label":"correctAnswer","description":"","placeholder":"","visible":true,"editable":true},"list":{"label":"correctAnswer","searchable":true,"sortable":true}}},"layouts":{"list":["id","question","correctAnswer"],"edit":[[{"name":"question","size":6}],[{"name":"options","size":12}],[{"name":"correctAnswer","size":6}]]},"isComponent":true}	object	\N	\N
 74	plugin_content_manager_configuration_components::coursecontent.image	{"uid":"coursecontent.image","settings":{"bulkable":true,"filterable":true,"searchable":true,"pageSize":10,"mainField":"id","defaultSortBy":"id","defaultSortOrder":"ASC"},"metadatas":{"id":{"edit":{},"list":{"label":"id","searchable":false,"sortable":false}},"image_file":{"edit":{"label":"image_file","description":"","placeholder":"","visible":true,"editable":true},"list":{"label":"image_file","searchable":false,"sortable":false}}},"layouts":{"list":["id","image_file"],"edit":[[{"name":"image_file","size":6}]]},"isComponent":true}	object	\N	\N
@@ -10582,7 +10663,7 @@ COPY public.strapi_core_store_settings (id, key, value, type, environment, tag) 
 25	core_admin_auth	{"providers":{"autoRegister":false,"defaultRole":null,"ssoLockedRoles":null}}	object	\N	\N
 21	plugin_users-permissions_grant	{"email":{"enabled":true,"icon":"envelope"},"discord":{"enabled":false,"icon":"discord","key":"","secret":"","callback":"api/auth/discord/callback","scope":["identify","email"]},"facebook":{"enabled":false,"icon":"facebook-square","key":"","secret":"","callback":"api/auth/facebook/callback","scope":["email"]},"google":{"enabled":false,"icon":"google","key":"","secret":"","callback":"api/auth/google/callback","scope":["email"]},"github":{"enabled":false,"icon":"github","key":"","secret":"","callback":"api/auth/github/callback","scope":["user","user:email"]},"microsoft":{"enabled":false,"icon":"windows","key":"","secret":"","callback":"api/auth/microsoft/callback","scope":["user.read"]},"twitter":{"enabled":false,"icon":"twitter","key":"","secret":"","callback":"api/auth/twitter/callback"},"instagram":{"enabled":false,"icon":"instagram","key":"","secret":"","callback":"api/auth/instagram/callback","scope":["user_profile"]},"vk":{"enabled":false,"icon":"vk","key":"","secret":"","callback":"api/auth/vk/callback","scope":["email"]},"twitch":{"enabled":false,"icon":"twitch","key":"","secret":"","callback":"api/auth/twitch/callback","scope":["user:read:email"]},"linkedin":{"enabled":false,"icon":"linkedin","key":"","secret":"","callback":"api/auth/linkedin/callback","scope":["r_liteprofile","r_emailaddress"]},"cognito":{"enabled":false,"icon":"aws","key":"","secret":"","subdomain":"my.subdomain.com","callback":"api/auth/cognito/callback","scope":["email","openid","profile"]},"reddit":{"enabled":false,"icon":"reddit","key":"","secret":"","state":true,"callback":"api/auth/reddit/callback","scope":["identity"]},"auth0":{"enabled":false,"icon":"","key":"","secret":"","subdomain":"my-tenant.eu","callback":"api/auth/auth0/callback","scope":["openid","email","profile"]},"cas":{"enabled":false,"icon":"book","key":"","secret":"","callback":"api/auth/cas/callback","scope":["openid email"],"subdomain":"my.subdomain.com/cas"},"patreon":{"enabled":false,"icon":"","key":"","secret":"","callback":"api/auth/patreon/callback","scope":["identity","identity[email]"]}}	object	\N	\N
 34	plugin_content_manager_configuration_content_types::api::post.post	{"uid":"api::post.post","settings":{"bulkable":true,"filterable":true,"searchable":true,"pageSize":100,"mainField":"id","defaultSortBy":"id","defaultSortOrder":"DESC"},"metadatas":{"id":{"edit":{},"list":{"label":"id","searchable":true,"sortable":true}},"users_permissions_user":{"edit":{"label":"users_permissions_user","description":"","placeholder":"","visible":true,"editable":true,"mainField":"username"},"list":{"label":"users_permissions_user","searchable":true,"sortable":true}},"tags":{"edit":{"label":"tags","description":"","placeholder":"","visible":true,"editable":true,"mainField":"name"},"list":{"label":"tags","searchable":false,"sortable":false}},"likes":{"edit":{"label":"likes","description":"","placeholder":"","visible":true,"editable":true,"mainField":"id"},"list":{"label":"likes","searchable":false,"sortable":false}},"content":{"edit":{"label":"content","description":"","placeholder":"","visible":true,"editable":true},"list":{"label":"content","searchable":false,"sortable":false}},"media":{"edit":{"label":"media","description":"","placeholder":"","visible":true,"editable":true},"list":{"label":"media","searchable":false,"sortable":false}},"comments":{"edit":{"label":"comments","description":"","placeholder":"","visible":true,"editable":true,"mainField":"message"},"list":{"label":"comments","searchable":false,"sortable":false}},"createdAt":{"edit":{"label":"createdAt","description":"","placeholder":"","visible":false,"editable":true},"list":{"label":"createdAt","searchable":true,"sortable":true}},"updatedAt":{"edit":{"label":"updatedAt","description":"","placeholder":"","visible":false,"editable":true},"list":{"label":"updatedAt","searchable":true,"sortable":true}},"createdBy":{"edit":{"label":"createdBy","description":"","placeholder":"","visible":false,"editable":true,"mainField":"firstname"},"list":{"label":"createdBy","searchable":true,"sortable":true}},"updatedBy":{"edit":{"label":"updatedBy","description":"","placeholder":"","visible":false,"editable":true,"mainField":"firstname"},"list":{"label":"updatedBy","searchable":true,"sortable":true}}},"layouts":{"list":["id","content","users_permissions_user","media"],"edit":[[{"name":"content","size":12}],[{"name":"users_permissions_user","size":6}],[{"name":"tags","size":6}],[{"name":"likes","size":6},{"name":"media","size":6}],[{"name":"comments","size":6}]]}}	object	\N	\N
-86	plugin_content_manager_configuration_content_types::api::course.course	{"uid":"api::course.course","settings":{"bulkable":true,"filterable":true,"searchable":true,"pageSize":100,"mainField":"title","defaultSortBy":"title","defaultSortOrder":"ASC"},"metadatas":{"id":{"edit":{},"list":{"label":"id","searchable":true,"sortable":true}},"title":{"edit":{"label":"title","description":"","placeholder":"","visible":true,"editable":true},"list":{"label":"title","searchable":true,"sortable":true}},"content":{"edit":{"label":"content","description":"","placeholder":"","visible":true,"editable":true},"list":{"label":"content","searchable":false,"sortable":false}},"icon_image":{"edit":{"label":"icon_image","description":"","placeholder":"","visible":true,"editable":true},"list":{"label":"icon_image","searchable":false,"sortable":false}},"coursecategory":{"edit":{"label":"coursecategory","description":"","placeholder":"","visible":true,"editable":true,"mainField":"name"},"list":{"label":"coursecategory","searchable":true,"sortable":true}},"order":{"edit":{"label":"order","description":"","placeholder":"","visible":true,"editable":true},"list":{"label":"order","searchable":true,"sortable":true}},"createdAt":{"edit":{"label":"createdAt","description":"","placeholder":"","visible":false,"editable":true},"list":{"label":"createdAt","searchable":true,"sortable":true}},"updatedAt":{"edit":{"label":"updatedAt","description":"","placeholder":"","visible":false,"editable":true},"list":{"label":"updatedAt","searchable":true,"sortable":true}},"createdBy":{"edit":{"label":"createdBy","description":"","placeholder":"","visible":false,"editable":true,"mainField":"firstname"},"list":{"label":"createdBy","searchable":true,"sortable":true}},"updatedBy":{"edit":{"label":"updatedBy","description":"","placeholder":"","visible":false,"editable":true,"mainField":"firstname"},"list":{"label":"updatedBy","searchable":true,"sortable":true}}},"layouts":{"edit":[[{"name":"title","size":6}],[{"name":"icon_image","size":6}],[{"name":"coursecategory","size":6},{"name":"order","size":4}],[{"name":"content","size":12}]],"list":["id","title","icon_image","coursecategory"]}}	object	\N	\N
+86	plugin_content_manager_configuration_content_types::api::course.course	{"uid":"api::course.course","settings":{"bulkable":true,"filterable":true,"searchable":true,"pageSize":100,"mainField":"title","defaultSortBy":"title","defaultSortOrder":"ASC"},"metadatas":{"id":{"edit":{},"list":{"label":"id","searchable":true,"sortable":true}},"title":{"edit":{"label":"title","description":"","placeholder":"","visible":true,"editable":true},"list":{"label":"title","searchable":true,"sortable":true}},"content":{"edit":{"label":"content","description":"","placeholder":"","visible":true,"editable":true},"list":{"label":"content","searchable":false,"sortable":false}},"icon_image":{"edit":{"label":"icon_image","description":"","placeholder":"","visible":true,"editable":true},"list":{"label":"icon_image","searchable":false,"sortable":false}},"coursecategory":{"edit":{"label":"coursecategory","description":"","placeholder":"","visible":true,"editable":true,"mainField":"name"},"list":{"label":"coursecategory","searchable":true,"sortable":true}},"order":{"edit":{"label":"order","description":"","placeholder":"","visible":true,"editable":true},"list":{"label":"order","searchable":true,"sortable":true}},"createdAt":{"edit":{"label":"createdAt","description":"","placeholder":"","visible":false,"editable":true},"list":{"label":"createdAt","searchable":true,"sortable":true}},"updatedAt":{"edit":{"label":"updatedAt","description":"","placeholder":"","visible":false,"editable":true},"list":{"label":"updatedAt","searchable":true,"sortable":true}},"createdBy":{"edit":{"label":"createdBy","description":"","placeholder":"","visible":false,"editable":true,"mainField":"firstname"},"list":{"label":"createdBy","searchable":true,"sortable":true}},"updatedBy":{"edit":{"label":"updatedBy","description":"","placeholder":"","visible":false,"editable":true,"mainField":"firstname"},"list":{"label":"updatedBy","searchable":true,"sortable":true}}},"layouts":{"edit":[[{"name":"title","size":6}],[{"name":"icon_image","size":6}],[{"name":"coursecategory","size":6},{"name":"order","size":4}],[{"name":"content","size":12}]],"list":["id","title","icon_image","coursecategory","order"]}}	object	\N	\N
 81	plugin_content_manager_configuration_content_types::api::coursecategory.coursecategory	{"uid":"api::coursecategory.coursecategory","settings":{"bulkable":true,"filterable":true,"searchable":true,"pageSize":10,"mainField":"name","defaultSortBy":"name","defaultSortOrder":"ASC"},"metadatas":{"id":{"edit":{},"list":{"label":"id","searchable":true,"sortable":true}},"name":{"edit":{"label":"name","description":"","placeholder":"","visible":true,"editable":true},"list":{"label":"name","searchable":true,"sortable":true}},"courses":{"edit":{"label":"courses","description":"","placeholder":"","visible":true,"editable":true,"mainField":"title"},"list":{"label":"courses","searchable":false,"sortable":false}},"order":{"edit":{"label":"order","description":"","placeholder":"","visible":true,"editable":true},"list":{"label":"order","searchable":true,"sortable":true}},"createdAt":{"edit":{"label":"createdAt","description":"","placeholder":"","visible":false,"editable":true},"list":{"label":"createdAt","searchable":true,"sortable":true}},"updatedAt":{"edit":{"label":"updatedAt","description":"","placeholder":"","visible":false,"editable":true},"list":{"label":"updatedAt","searchable":true,"sortable":true}},"createdBy":{"edit":{"label":"createdBy","description":"","placeholder":"","visible":false,"editable":true,"mainField":"firstname"},"list":{"label":"createdBy","searchable":true,"sortable":true}},"updatedBy":{"edit":{"label":"updatedBy","description":"","placeholder":"","visible":false,"editable":true,"mainField":"firstname"},"list":{"label":"updatedBy","searchable":true,"sortable":true}}},"layouts":{"list":["id","name","courses","createdAt"],"edit":[[{"name":"name","size":6}],[{"name":"courses","size":6},{"name":"order","size":4}]]}}	object	\N	\N
 11	plugin_content_manager_configuration_content_types::plugin::users-permissions.user	{"uid":"plugin::users-permissions.user","settings":{"bulkable":true,"filterable":true,"searchable":true,"pageSize":100,"mainField":"username","defaultSortBy":"id","defaultSortOrder":"DESC"},"metadatas":{"id":{"edit":{},"list":{"label":"id","searchable":true,"sortable":true}},"username":{"edit":{"label":"username","description":"","placeholder":"","visible":true,"editable":true},"list":{"label":"username","searchable":true,"sortable":true}},"email":{"edit":{"label":"email","description":"","placeholder":"","visible":true,"editable":true},"list":{"label":"email","searchable":true,"sortable":true}},"provider":{"edit":{"label":"provider","description":"","placeholder":"","visible":false,"editable":true},"list":{"label":"provider","searchable":true,"sortable":true}},"password":{"edit":{"label":"password","description":"","placeholder":"","visible":true,"editable":true},"list":{"label":"password","searchable":true,"sortable":true}},"resetPasswordToken":{"edit":{"label":"resetPasswordToken","description":"","placeholder":"","visible":false,"editable":true},"list":{"label":"resetPasswordToken","searchable":true,"sortable":true}},"confirmationToken":{"edit":{"label":"confirmationToken","description":"","placeholder":"","visible":false,"editable":true},"list":{"label":"confirmationToken","searchable":true,"sortable":true}},"confirmed":{"edit":{"label":"confirmed","description":"","placeholder":"","visible":true,"editable":true},"list":{"label":"confirmed","searchable":true,"sortable":true}},"blocked":{"edit":{"label":"blocked","description":"","placeholder":"","visible":true,"editable":true},"list":{"label":"blocked","searchable":true,"sortable":true}},"role":{"edit":{"label":"role","description":"","placeholder":"","visible":true,"editable":true,"mainField":"name"},"list":{"label":"role","searchable":true,"sortable":true}},"articles":{"edit":{"label":"articles","description":"","placeholder":"","visible":true,"editable":true,"mainField":"id"},"list":{"label":"articles","searchable":false,"sortable":false}},"posts":{"edit":{"label":"posts","description":"","placeholder":"","visible":true,"editable":true,"mainField":"id"},"list":{"label":"posts","searchable":false,"sortable":false}},"user_profile":{"edit":{"label":"user_profile","description":"","placeholder":"","visible":true,"editable":true,"mainField":"id"},"list":{"label":"user_profile","searchable":true,"sortable":true}},"likes":{"edit":{"label":"likes","description":"","placeholder":"","visible":true,"editable":true,"mainField":"id"},"list":{"label":"likes","searchable":false,"sortable":false}},"comments":{"edit":{"label":"comments","description":"","placeholder":"","visible":true,"editable":true,"mainField":"message"},"list":{"label":"comments","searchable":false,"sortable":false}},"createdAt":{"edit":{"label":"createdAt","description":"","placeholder":"","visible":false,"editable":true},"list":{"label":"createdAt","searchable":true,"sortable":true}},"updatedAt":{"edit":{"label":"updatedAt","description":"","placeholder":"","visible":false,"editable":true},"list":{"label":"updatedAt","searchable":true,"sortable":true}},"createdBy":{"edit":{"label":"createdBy","description":"","placeholder":"","visible":false,"editable":true,"mainField":"firstname"},"list":{"label":"createdBy","searchable":true,"sortable":true}},"updatedBy":{"edit":{"label":"updatedBy","description":"","placeholder":"","visible":false,"editable":true,"mainField":"firstname"},"list":{"label":"updatedBy","searchable":true,"sortable":true}}},"layouts":{"list":["id","username","email","confirmed","role"],"edit":[[{"name":"username","size":6},{"name":"email","size":6}],[{"name":"password","size":6},{"name":"confirmed","size":4}],[{"name":"blocked","size":4},{"name":"role","size":6}],[{"name":"articles","size":6},{"name":"posts","size":6}],[{"name":"user_profile","size":6},{"name":"likes","size":6}],[{"name":"comments","size":6}]]}}	object	\N	\N
 122	plugin_content_manager_configuration_content_types::api::comment.comment	{"uid":"api::comment.comment","settings":{"bulkable":true,"filterable":true,"searchable":true,"pageSize":100,"mainField":"message","defaultSortBy":"createdAt","defaultSortOrder":"DESC"},"metadatas":{"id":{"edit":{},"list":{"label":"id","searchable":true,"sortable":true}},"message":{"edit":{"label":"message","description":"","placeholder":"","visible":true,"editable":true},"list":{"label":"message","searchable":true,"sortable":true}},"author":{"edit":{"label":"author","description":"","placeholder":"","visible":true,"editable":true,"mainField":"username"},"list":{"label":"author","searchable":true,"sortable":true}},"post":{"edit":{"label":"post","description":"","placeholder":"","visible":true,"editable":true,"mainField":"id"},"list":{"label":"post","searchable":true,"sortable":true}},"parent_comment":{"edit":{"label":"parent_comment","description":"","placeholder":"","visible":true,"editable":true,"mainField":"message"},"list":{"label":"parent_comment","searchable":true,"sortable":true}},"replies":{"edit":{"label":"replies","description":"","placeholder":"","visible":true,"editable":true,"mainField":"message"},"list":{"label":"replies","searchable":false,"sortable":false}},"createdAt":{"edit":{"label":"createdAt","description":"","placeholder":"","visible":false,"editable":true},"list":{"label":"createdAt","searchable":true,"sortable":true}},"updatedAt":{"edit":{"label":"updatedAt","description":"","placeholder":"","visible":false,"editable":true},"list":{"label":"updatedAt","searchable":true,"sortable":true}},"createdBy":{"edit":{"label":"createdBy","description":"","placeholder":"","visible":false,"editable":true,"mainField":"firstname"},"list":{"label":"createdBy","searchable":true,"sortable":true}},"updatedBy":{"edit":{"label":"updatedBy","description":"","placeholder":"","visible":false,"editable":true,"mainField":"firstname"},"list":{"label":"updatedBy","searchable":true,"sortable":true}}},"layouts":{"edit":[[{"name":"message","size":6},{"name":"author","size":6}],[{"name":"post","size":6},{"name":"parent_comment","size":6}],[{"name":"replies","size":6}]],"list":["id","message","author","post"]}}	object	\N	\N
@@ -11079,9 +11160,11 @@ COPY public.up_permissions (id, action, created_at, updated_at, created_by_id, u
 422	api::post.post.findWithFirstPageComments	2025-07-13 11:29:44.926	2025-07-13 11:29:44.926	\N	\N
 391	api::comment.comment.find	2025-07-12 18:27:23.742	2025-07-12 18:27:23.742	\N	\N
 393	api::comment.comment.update	2025-07-12 18:27:23.742	2025-07-12 18:27:23.742	\N	\N
+427	api::plan.plan.find	2025-07-17 10:53:27.728	2025-07-17 10:53:27.728	\N	\N
 397	api::comment.comment.find	2025-07-12 18:51:49.701	2025-07-12 18:51:49.701	\N	\N
 400	api::comment.comment.update	2025-07-12 18:51:49.701	2025-07-12 18:51:49.701	\N	\N
 404	api::comment.comment.update	2025-07-12 18:51:57.326	2025-07-12 18:51:57.326	\N	\N
+428	api::openai.openai.getCompletion	2025-07-17 16:43:02.469	2025-07-17 16:43:02.469	\N	\N
 398	api::comment.comment.create	2025-07-12 18:51:49.701	2025-07-12 18:51:49.701	\N	\N
 403	api::comment.comment.create	2025-07-12 18:51:57.326	2025-07-12 18:51:57.326	\N	\N
 291	api::course.course.create	2025-07-11 04:40:53.086	2025-07-11 04:40:53.086	\N	\N
@@ -11441,6 +11524,8 @@ COPY public.up_permissions_role_links (id, permission_id, role_id, permission_or
 421	421	1	28
 422	422	3	36
 423	423	4	23
+427	427	4	24
+428	428	1	29
 \.
 
 
@@ -11449,10 +11534,10 @@ COPY public.up_permissions_role_links (id, permission_id, role_id, permission_or
 --
 
 COPY public.up_roles (id, name, description, type, created_at, updated_at, created_by_id, updated_by_id) FROM stdin;
-2	Public	Default role given to unauthenticated user.	public	2025-02-27 01:45:38.684	2025-07-12 18:27:06.323	\N	\N
-4	admin	Administrator of the system	admin	2025-07-11 04:40:53.058	2025-07-13 11:30:45.23	\N	\N
-3	editor	Editor of articles	editor	2025-04-09 13:41:55.508	2025-07-13 11:31:13.786	\N	\N
-1	Authenticated	Default role given to authenticated user.	authenticated	2025-02-27 01:45:38.466	2025-07-13 11:39:37.418	\N	\N
+2	Public	Default role given to unauthenticated user.	public	2025-02-27 01:45:38.684	2025-07-17 10:52:35.508	\N	\N
+3	editor	Editor of articles	editor	2025-04-09 13:41:55.508	2025-07-17 10:53:06.518	\N	\N
+4	admin	Administrator of the system	admin	2025-07-11 04:40:53.058	2025-07-17 10:53:27.44	\N	\N
+1	Authenticated	Default role given to authenticated user.	authenticated	2025-02-27 01:45:38.466	2025-07-17 16:43:02.299	\N	\N
 \.
 
 
@@ -11486,7 +11571,8 @@ COPY public.up_users (id, username, email, provider, password, reset_password_to
 60	july112@gpa.com	july112@gpa.com	local	$2a$10$EzlggR7dWidJAoCz1j0CN.0BNjkbJ2gzAe6O0RPGzhXmDwYyLqPPy	\N	\N	t	f	2025-07-11 18:31:02.839	2025-07-11 18:31:02.839	\N	\N
 64	july113	july113@example.com	local	$2a$10$Ojr7hgWLOzBW5.tLmM9qoemSiUOM404oTitfz9mHT9tCUVQjDcOya	\N	\N	t	f	2025-07-12 00:06:12.565	2025-07-12 00:06:12.565	\N	\N
 65	july12	july12@example.com	local	$2a$10$rBqwvJAXh8BV9cUxgxO22.nSgtomnkiYsHTJKTl8OtK3vo7gUWI3C	\N	\N	t	f	2025-07-12 00:47:45.155	2025-07-12 00:47:45.155	\N	\N
-23	new	new@gpa.com	local	$2a$10$VMv1i33kX0AJtPYp9r3g2.9aPZRM9U1x10/IyEurSBAi7kysOLY4S	\N	\N	t	f	2025-06-11 15:20:07.429	2025-07-12 19:49:51.375	\N	1
+66	jcjioodyjumixmpqix	jcjioodyjumixmpqix@nespf.com	local	$2a$10$paDB7f9Lr8OEAfRoeSvZleNRR/sKQUBOMYiUM/Ov2eVhXvT4scsnm	\N	\N	t	f	2025-07-14 01:27:01.266	2025-07-14 01:27:01.266	\N	\N
+23	new	new@gpa.com	local	$2a$10$VMv1i33kX0AJtPYp9r3g2.9aPZRM9U1x10/IyEurSBAi7kysOLY4S	\N	\N	t	f	2025-06-11 15:20:07.429	2025-07-17 18:16:19.778	\N	1
 \.
 
 
@@ -11495,6 +11581,13 @@ COPY public.up_users (id, username, email, provider, password, reset_password_to
 --
 
 COPY public.up_users_role_links (id, user_id, role_id, user_order) FROM stdin;
+15	13	3	1
+16	12	3	2
+18	15	3	3
+26	21	3	4
+30	24	3	5
+34	17	3	6
+35	26	3	7
 14	14	1	1
 19	16	1	2
 23	20	1	3
@@ -11513,14 +11606,8 @@ COPY public.up_users_role_links (id, user_id, role_id, user_order) FROM stdin;
 63	60	1	16
 67	64	1	17
 68	65	1	18
-15	13	3	1
-16	12	3	2
-18	15	3	3
-26	21	3	4
-30	24	3	5
-34	17	3	6
-35	26	3	7
-71	23	1	19
+72	66	1	19
+73	23	3	8
 \.
 
 
@@ -11714,7 +11801,7 @@ SELECT pg_catalog.setval('public.components_coursecontent_images_id_seq', 669, t
 -- Name: components_coursecontent_pagebreakers_id_seq; Type: SEQUENCE SET; Schema: public; Owner: strapi
 --
 
-SELECT pg_catalog.setval('public.components_coursecontent_pagebreakers_id_seq', 629, true);
+SELECT pg_catalog.setval('public.components_coursecontent_pagebreakers_id_seq', 630, true);
 
 
 --
@@ -11735,7 +11822,7 @@ SELECT pg_catalog.setval('public.components_coursecontent_texts_id_seq', 672, tr
 -- Name: components_coursecontent_videos_id_seq; Type: SEQUENCE SET; Schema: public; Owner: strapi
 --
 
-SELECT pg_catalog.setval('public.components_coursecontent_videos_id_seq', 16, true);
+SELECT pg_catalog.setval('public.components_coursecontent_videos_id_seq', 30, true);
 
 
 --
@@ -11777,14 +11864,14 @@ SELECT pg_catalog.setval('public.coursecategories_localizations_links_id_seq', 1
 -- Name: courses_components_id_seq; Type: SEQUENCE SET; Schema: public; Owner: strapi
 --
 
-SELECT pg_catalog.setval('public.courses_components_id_seq', 12490, true);
+SELECT pg_catalog.setval('public.courses_components_id_seq', 14768, true);
 
 
 --
 -- Name: courses_coursecategory_links_id_seq; Type: SEQUENCE SET; Schema: public; Owner: strapi
 --
 
-SELECT pg_catalog.setval('public.courses_coursecategory_links_id_seq', 101, true);
+SELECT pg_catalog.setval('public.courses_coursecategory_links_id_seq', 159, true);
 
 
 --
@@ -11819,7 +11906,7 @@ SELECT pg_catalog.setval('public.daily_tips_localizations_links_id_seq', 1, fals
 -- Name: daily_tips_tips_links_id_seq; Type: SEQUENCE SET; Schema: public; Owner: strapi
 --
 
-SELECT pg_catalog.setval('public.daily_tips_tips_links_id_seq', 105, true);
+SELECT pg_catalog.setval('public.daily_tips_tips_links_id_seq', 126, true);
 
 
 --
@@ -11847,21 +11934,21 @@ SELECT pg_catalog.setval('public.dailylessons_localizations_links_id_seq', 1, fa
 -- Name: files_folder_links_id_seq; Type: SEQUENCE SET; Schema: public; Owner: strapi
 --
 
-SELECT pg_catalog.setval('public.files_folder_links_id_seq', 596, true);
+SELECT pg_catalog.setval('public.files_folder_links_id_seq', 729, true);
 
 
 --
 -- Name: files_id_seq; Type: SEQUENCE SET; Schema: public; Owner: strapi
 --
 
-SELECT pg_catalog.setval('public.files_id_seq', 669, true);
+SELECT pg_catalog.setval('public.files_id_seq', 802, true);
 
 
 --
 -- Name: files_related_morphs_id_seq; Type: SEQUENCE SET; Schema: public; Owner: strapi
 --
 
-SELECT pg_catalog.setval('public.files_related_morphs_id_seq', 2796, true);
+SELECT pg_catalog.setval('public.files_related_morphs_id_seq', 3406, true);
 
 
 --
@@ -11896,7 +11983,7 @@ SELECT pg_catalog.setval('public.hot_topics_localizations_links_id_seq', 1, fals
 -- Name: hot_topics_topics_links_id_seq; Type: SEQUENCE SET; Schema: public; Owner: strapi
 --
 
-SELECT pg_catalog.setval('public.hot_topics_topics_links_id_seq', 103, true);
+SELECT pg_catalog.setval('public.hot_topics_topics_links_id_seq', 124, true);
 
 
 --
@@ -12092,14 +12179,14 @@ SELECT pg_catalog.setval('public.topics_localizations_links_id_seq', 1, false);
 -- Name: up_permissions_id_seq; Type: SEQUENCE SET; Schema: public; Owner: strapi
 --
 
-SELECT pg_catalog.setval('public.up_permissions_id_seq', 423, true);
+SELECT pg_catalog.setval('public.up_permissions_id_seq', 428, true);
 
 
 --
 -- Name: up_permissions_role_links_id_seq; Type: SEQUENCE SET; Schema: public; Owner: strapi
 --
 
-SELECT pg_catalog.setval('public.up_permissions_role_links_id_seq', 423, true);
+SELECT pg_catalog.setval('public.up_permissions_role_links_id_seq', 428, true);
 
 
 --
@@ -12113,14 +12200,14 @@ SELECT pg_catalog.setval('public.up_roles_id_seq', 4, true);
 -- Name: up_users_id_seq; Type: SEQUENCE SET; Schema: public; Owner: strapi
 --
 
-SELECT pg_catalog.setval('public.up_users_id_seq', 65, true);
+SELECT pg_catalog.setval('public.up_users_id_seq', 66, true);
 
 
 --
 -- Name: up_users_role_links_id_seq; Type: SEQUENCE SET; Schema: public; Owner: strapi
 --
 
-SELECT pg_catalog.setval('public.up_users_role_links_id_seq', 71, true);
+SELECT pg_catalog.setval('public.up_users_role_links_id_seq', 73, true);
 
 
 --
