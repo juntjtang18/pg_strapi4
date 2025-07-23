@@ -139,9 +139,9 @@ module.exports = (plugin) => {
       throw new ApplicationError("Register action is currently disabled");
     }
 
-    const { email, username, password, baseLanguage } = ctx.request.body;
-    if (!username || !email || !password || !baseLanguage) {
-        throw new ApplicationError("Username, email, password, and baseLanguage are required.");
+    const { email, username, password } = ctx.request.body;
+    if (!username || !email || !password ) {
+        throw new ApplicationError("Username, email, password are required.");
     }
     
     const role = await strapi
@@ -175,14 +175,10 @@ module.exports = (plugin) => {
         console.log(`[DEBUG] User ${newUser.email} (ID: ${newUser.id}) created in main Strapi.`);
   
         await strapi.entityService.create('api::user-profile.user-profile', {
-            data: { user: newUser.id, baseLanguage },
+            data: { user: newUser.id },
         });
         console.log(`[DEBUG] UserProfile created for user ${newUser.id}.`);
 
-        await strapi.entityService.create('api::vbsetting.vbsetting', {
-            data: { user: newUser.id },
-        });
-        console.log(`[DEBUG] VBSetting created for user ${newUser.id}.`);
       });
 
       let subscription = null;
