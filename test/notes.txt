@@ -43,3 +43,17 @@ curl -X POST "http://localhost:8080/api/auth/local/register" \
   "password": "Passw0rd"
 }' \
 | jq .
+
+
+
+$TOKEN=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MjMsImlhdCI6MTc1MzQ5ODM0NCwiZXhwIjoxNzU2MDkwMzQ0fQ.obQ2NJr_O56j2fU5Qkmju3M4cRW1IV5tfRMNznSWO7U
+curl -X POST \
+  http://localhost:8080/api/v1/subscriptions/activate \
+  -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MjMsImlhdCI6MTc1MzQ5ODM0NCwiZXhwIjoxNzU2MDkwMzQ0fQ.obQ2NJr_O56j2fU5Qkmju3M4cRW1IV5tfRMNznSWO7U" \
+  -H 'Content-Type: application/json' \
+  -d '{
+    "apple_receipt": "fake_apple_receipt_string_goes_here"
+  }'
+
+
+test1@geniusparentingai.ca/NewP@ssw0rd

@@ -200,7 +200,21 @@ module.exports = (plugin) => {
           console.log(`[DEBUG] Subscription creation/fetch completed for user ${newUser.id}.`);
         }
       } catch (subError) {
-        console.error("[ERROR] Subscription call failed. Rolling back user creation.", subError);
+        //console.error("[ERROR] Subscription call failed. Rolling back user creation.", subError);
+        // --- START OF CHANGES ---
+        let detailedErrorMessage = subError.message; // Default to the basic message
+
+        // Check if the error came from the subsystem's response
+        if (subError.response && subError.response.data && subError.response.data.error) {
+          // Extract the clear error message from the subsystem
+          detailedErrorMessage = subError.response.data.error.message;
+        }
+
+        // Now, log a clean, human-readable error
+        console.error(
+          `[ERROR] Subscription call failed. Rolling back user creation. Reason: ${detailedErrorMessage}`
+        );
+        // --- END OF CHANGES ---
         await userService.remove({ id: newUser.id });
         throw new ApplicationError("Account could not be created due to a subscription system error.");
       }      
