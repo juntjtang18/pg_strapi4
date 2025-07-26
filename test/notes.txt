@@ -10,9 +10,9 @@ curl -X POST "http://localhost:8080/api/auth/local" \
 curl -X POST "http://localhost:8080/api/auth/local/register" \
 -H "Content-Type: application/json" \
 -d '{
-  "username": "july11",
-  "email": "july11@example.com",
-  "password": "SecurePassword123!"
+  "username": "july23",
+  "email": "july23@example.com",
+  "password": "Passw0rd"
 }' \
 | jq .
 
