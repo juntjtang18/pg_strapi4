@@ -15,5 +15,14 @@ module.exports = {
         policies: [],
       },
     },
+    {
+      method: 'GET',
+      path: '/subscriptions/my-active-plan',
+      handler: 'subscription.myActivePlan',
+      config: {
+        auth: false, // The controller handles authentication manually
+        policies: [],
+      },
+    },
   ],
 };

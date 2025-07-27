@@ -1,4 +1,3 @@
-// File: src/api/subscription/services/subscription.js
 'use strict';
 
 const axios = require('axios');
@@ -6,7 +5,11 @@ const { ApplicationError } = require('@strapi/utils').errors;
 
 module.exports = ({ strapi }) => ({
   async forwardActivationToSubsystem({ userId, receipt }) {
-    // Reading the environment variables just like in your strapi-server.js
+    // --- ADDED LOGGING HERE ---
+    strapi.log.debug(`forwardActivationToSubsystem called with userId: ${userId}`);
+    strapi.log.debug(`forwardActivationToSubsystem called with receipt: ${receipt}`);
+    // --------------------------
+
     const subsystemUrl = process.env.SUBSYS_BASE_URL;
     const subsystemSecret = process.env.SUBSCRIPTION_SERVICE_SECRET;
 
