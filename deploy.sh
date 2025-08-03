@@ -69,7 +69,7 @@ gcloud run deploy "${SERVICE_NAME}" \
   --set-env-vars "JWT_SECRET=${JWT_SECRET}" \
   --set-env-vars "TRANSFER_TOKEN_SALT=${TRANSFER_TOKEN_SALT}" \
   --set-env-vars "OPENAI_API_KEY=${OPENAI_API_KEY}" \
-  --set-env-vars "SUBSYS_BASE_URL=http://gpasubsys.geniusparentingai.ca" \
+  --set-env-vars "SUBSYS_BASE_URL=https://gpasubsys.geniusparentingai.ca" \
   --set-env-vars "SUBSCRIPTION_SERVICE_SECRET=${SUBSCRIPTION_SERVICE_SECRET}" \
   --revision-suffix "v${VERSION//./-}"
 
