@@ -24,7 +24,7 @@ module.exports = {
     });
     // --- SUBSYS PING CRON JOB ---
     strapi.cron.add({
-      '*/5 * * * *': async () => {
+      '*/8 * * * *': async () => {
         await keepSubsysWarm(strapi);
       },
     });
