@@ -1412,6 +1412,12 @@ export interface ApiPersonalityResultPersonalityResult
       'oneToMany',
       'api::user-profile.user-profile'
     >;
+    image: Attribute.Media &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: false;
+        };
+      }>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     createdBy: Attribute.Relation<

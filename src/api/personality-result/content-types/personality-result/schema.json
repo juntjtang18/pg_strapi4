@@ -55,6 +55,18 @@
       "relation": "oneToMany",
       "target": "api::user-profile.user-profile",
       "mappedBy": "personality_result"
+    },
+    "image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      }
     }
   }
 }
