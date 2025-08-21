@@ -1,0 +1,60 @@
+{
+  "kind": "collectionType",
+  "collectionName": "personality_results",
+  "info": {
+    "singularName": "personality-result",
+    "pluralName": "personality-results",
+    "displayName": "personality result",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "title": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string"
+    },
+    "power_tip": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string"
+    },
+    "ps_id": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "type": "string",
+      "required": true
+    },
+    "user_profiles": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::user-profile.user-profile",
+      "mappedBy": "personality_result"
+    }
+  }
+}

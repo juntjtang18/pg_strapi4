@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_a_answers",
+  "info": {
+    "displayName": "answer",
+    "icon": "bulletList"
+  },
+  "options": {},
+  "attributes": {
+    "ans_id": {
+      "type": "string",
+      "required": true
+    },
+    "ans_text": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

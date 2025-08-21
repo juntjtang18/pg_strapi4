@@ -1,5 +1,17 @@
 import type { Schema, Attribute } from '@strapi/strapi';
 
+export interface AAnswer extends Schema.Component {
+  collectionName: 'components_a_answers';
+  info: {
+    displayName: 'answer';
+    icon: 'bulletList';
+  };
+  attributes: {
+    ans_id: Attribute.String & Attribute.Required;
+    ans_text: Attribute.String & Attribute.Required;
+  };
+}
+
 export interface AFeatures extends Schema.Component {
   collectionName: 'components_a_features';
   info: {
@@ -128,6 +140,7 @@ export interface ProfileChild extends Schema.Component {
 declare module '@strapi/types' {
   export module Shared {
     export interface Components {
+      'a.answer': AAnswer;
       'a.features': AFeatures;
       'coursecontent.external-video': CoursecontentExternalVideo;
       'coursecontent.image': CoursecontentImage;

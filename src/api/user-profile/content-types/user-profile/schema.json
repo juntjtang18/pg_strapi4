@@ -10,11 +10,7 @@
   "options": {
     "draftAndPublish": false
   },
-  "pluginOptions": {
-    "i18n": {
-      "localized": true
-    }
-  },
+  "pluginOptions": {},
   "attributes": {
     "users_permissions_user": {
       "type": "relation",
@@ -23,23 +19,21 @@
       "inversedBy": "user_profile"
     },
     "consentForEmailNotice": {
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
+      "pluginOptions": {},
       "type": "boolean",
       "default": false
     },
     "children": {
       "type": "component",
       "repeatable": true,
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
+      "pluginOptions": {},
       "component": "profile.child"
+    },
+    "personality_result": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::personality-result.personality-result",
+      "inversedBy": "user_profiles"
     }
   }
 }

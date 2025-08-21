@@ -1,51 +1,62 @@
 'use strict';
-
-/**
- * user-profile controller
- */
-
 const { createCoreController } = require('@strapi/strapi').factories;
 
 module.exports = createCoreController('api::user-profile.user-profile', ({ strapi }) => ({
 
-  /**
-   * Finds the profile for the currently logged-in user.
-   */
   async findMine(ctx) {
     try {
-      // 1. Get and validate the JWT token
       const authHeader = ctx.request.header.authorization;
       if (!authHeader || !authHeader.startsWith('Bearer ')) {
         return ctx.unauthorized('Missing or invalid authorization header.');
       }
       const token = authHeader.split(' ')[1];
-
-      // 2. Verify token and extract user ID
       const { id: userId } = await strapi.plugins['users-permissions'].services.jwt.verify(token);
-      if (!userId) {
-        return ctx.unauthorized('Invalid token.');
-      }
+      if (!userId) return ctx.unauthorized('Invalid token.');
 
-      // 3. Find the user profile with proper filtering
-      const profiles = await strapi.entityService.findMany('api::user-profile.user-profile', {
-        filters: {
-          users_permissions_user: {
-            id: userId, // Use the correct relation field name
-          },
+      const requestedLocale = ctx.query.locale;
+      const queryLocale = requestedLocale || 'all';
+
+      // ✅ Populate only specific fields of the related personality_result.
+      const basePopulate = {
+        children: true,
+        personality_result: {
+          fields: ['title', 'description', 'power_tip', 'ps_id', 'locale', 'createdAt', 'updatedAt'],
+          // No nested populate here → prevents cycles (no user_profiles/createdBy/updatedBy/localizations)
         },
-        populate: { children: true }, // Populate related children data
+      };
+
+      let profiles = await strapi.entityService.findMany('api::user-profile.user-profile', {
+        filters: { users_permissions_user: { id: userId } },
+        locale: queryLocale,
+        populate: basePopulate,
       });
 
-      // 4. Handle case where no profile is found
-      if (!profiles || profiles.length === 0) {
-        return ctx.notFound('No user profile found for the current user.');
+      if ((!profiles || profiles.length === 0) && requestedLocale) {
+        profiles = await strapi.entityService.findMany('api::user-profile.user-profile', {
+          filters: { users_permissions_user: { id: userId } },
+          locale: 'all',
+          populate: basePopulate,
+        });
       }
 
-      // 5. Return the first matching profile
-      return this.transformResponse(profiles[0]);
+      if (!profiles?.length) return ctx.notFound('No user profile found for the current user.');
 
+      // Prefer requested or default locale when multiple exist
+      let profile = profiles[0];
+      if (requestedLocale && profiles.length > 1) {
+        const exact = profiles.find(p => p.locale === requestedLocale);
+        if (exact) profile = exact;
+      } else if (!requestedLocale && profiles.length > 1) {
+        try {
+          const defaultLocale = await strapi.plugin('i18n').service('locales').getDefaultLocale();
+          const def = profiles.find(p => p.locale === defaultLocale);
+          if (def) profile = def;
+        } catch (_) {}
+      }
+
+      return this.transformResponse(profile);
     } catch (err) {
-      strapi.log.error('Error in custom user-profile find', err);
+      strapi.log.error('Error in custom user-profile findMine', err);
       if (err.name === 'JsonWebTokenError' || err.name === 'TokenExpiredError') {
         return ctx.unauthorized('Invalid or expired token.');
       }
@@ -53,49 +64,57 @@ module.exports = createCoreController('api::user-profile.user-profile', ({ strap
     }
   },
 
-  /**
-   * Updates the profile for the currently logged-in user.
-   */
   async updateMine(ctx) {
     try {
-      // 1. Get and validate the JWT token
       const authHeader = ctx.request.header.authorization;
       if (!authHeader || !authHeader.startsWith('Bearer ')) {
         return ctx.unauthorized('Missing or invalid authorization header.');
       }
       const token = authHeader.split(' ')[1];
-
-      // 2. Verify token and extract user ID
       const { id: userId } = await strapi.plugins['users-permissions'].services.jwt.verify(token);
-      if (!userId) {
-        return ctx.unauthorized('Invalid token.');
+      if (!userId) return ctx.unauthorized('Invalid token.');
+
+      const requestedLocale = ctx.query.locale;
+      const profiles = await strapi.entityService.findMany('api::user-profile.user-profile', {
+        filters: { users_permissions_user: { id: userId } },
+        locale: requestedLocale || 'all',
+      });
+      if (!profiles?.length) return ctx.notFound('No user profile found for the current user.');
+      const profileId = profiles[0].id;
+
+      const body = ctx.request.body?.data || {};
+      const updateData = {};
+
+      if (typeof body.consentForEmailNotice === 'boolean') {
+        updateData.consentForEmailNotice = body.consentForEmailNotice;
+      }
+      if (Array.isArray(body.children)) {
+        updateData.children = body.children;
       }
 
-      // 3. Find the user-profile entry that belongs to this user
-      const profiles = await strapi.entityService.findMany('api::user-profile.user-profile', {
-        filters: {
-          users_permissions_user: {
-            id: userId, // Use the correct relation field name
+      // Require numeric Strapi id for relation (no ps_id here)
+      if (Number.isInteger(body.personality_result)) {
+        updateData.personality_result = body.personality_result;
+      } else if (body.personality_result?.id && Number.isInteger(body.personality_result.id)) {
+        updateData.personality_result = body.personality_result.id;
+      } else if ('personality_result' in body) {
+        return ctx.badRequest('personality_result must be a numeric id (e.g., 4).');
+      }
+
+      // ✅ Return only the clean, non-cyclic fields on the related entry
+      const updated = await strapi.entityService.update('api::user-profile.user-profile', profileId, {
+        data: updateData,
+        populate: {
+          children: true,
+          personality_result: {
+            fields: ['title', 'description', 'power_tip', 'ps_id', 'locale', 'createdAt', 'updatedAt'],
           },
         },
       });
 
-      // 4. Handle case where no profile is found
-      if (!profiles || profiles.length === 0) {
-        return ctx.notFound('No user profile found for the current user.');
-      }
-      const profileId = profiles[0].id;
-
-      // 5. Update the found profile with the data from the request body
-      const updatedProfile = await strapi.entityService.update('api::user-profile.user-profile', profileId, {
-        data: ctx.request.body.data,
-      });
-
-      // 6. Return the updated profile data
-      return this.transformResponse(updatedProfile);
-
+      return this.transformResponse(updated);
     } catch (err) {
-      strapi.log.error('Error in manual user-profile update', err);
+      strapi.log.error('Error in custom user-profile updateMine', err);
       if (err.name === 'JsonWebTokenError' || err.name === 'TokenExpiredError') {
         return ctx.unauthorized('Invalid or expired token.');
       }

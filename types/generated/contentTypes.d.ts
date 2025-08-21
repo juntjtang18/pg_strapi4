@@ -1305,6 +1305,136 @@ export interface ApiLikeLike extends Schema.CollectionType {
   };
 }
 
+export interface ApiPersQuestionPersQuestion extends Schema.CollectionType {
+  collectionName: 'pers_questions';
+  info: {
+    singularName: 'pers-question';
+    pluralName: 'pers-questions';
+    displayName: 'pers question';
+  };
+  options: {
+    draftAndPublish: false;
+  };
+  pluginOptions: {
+    i18n: {
+      localized: true;
+    };
+  };
+  attributes: {
+    order: Attribute.Integer &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: false;
+        };
+      }>;
+    question: Attribute.String &
+      Attribute.Required &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    answer: Attribute.Component<'a.answer', true> &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::pers-question.pers-question',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::pers-question.pers-question',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    localizations: Attribute.Relation<
+      'api::pers-question.pers-question',
+      'oneToMany',
+      'api::pers-question.pers-question'
+    >;
+    locale: Attribute.String;
+  };
+}
+
+export interface ApiPersonalityResultPersonalityResult
+  extends Schema.CollectionType {
+  collectionName: 'personality_results';
+  info: {
+    singularName: 'personality-result';
+    pluralName: 'personality-results';
+    displayName: 'personality result';
+    description: '';
+  };
+  options: {
+    draftAndPublish: false;
+  };
+  pluginOptions: {
+    i18n: {
+      localized: true;
+    };
+  };
+  attributes: {
+    title: Attribute.String &
+      Attribute.Required &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    description: Attribute.String &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    power_tip: Attribute.String &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    ps_id: Attribute.String &
+      Attribute.Required &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: false;
+        };
+      }>;
+    user_profiles: Attribute.Relation<
+      'api::personality-result.personality-result',
+      'oneToMany',
+      'api::user-profile.user-profile'
+    >;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::personality-result.personality-result',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::personality-result.personality-result',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    localizations: Attribute.Relation<
+      'api::personality-result.personality-result',
+      'oneToMany',
+      'api::personality-result.personality-result'
+    >;
+    locale: Attribute.String;
+  };
+}
+
 export interface ApiPingPing extends Schema.CollectionType {
   collectionName: 'pings';
   info: {
@@ -1542,30 +1672,19 @@ export interface ApiUserProfileUserProfile extends Schema.CollectionType {
   options: {
     draftAndPublish: false;
   };
-  pluginOptions: {
-    i18n: {
-      localized: true;
-    };
-  };
   attributes: {
     users_permissions_user: Attribute.Relation<
       'api::user-profile.user-profile',
       'oneToOne',
       'plugin::users-permissions.user'
     >;
-    consentForEmailNotice: Attribute.Boolean &
-      Attribute.SetPluginOptions<{
-        i18n: {
-          localized: true;
-        };
-      }> &
-      Attribute.DefaultTo<false>;
-    children: Attribute.Component<'profile.child', true> &
-      Attribute.SetPluginOptions<{
-        i18n: {
-          localized: true;
-        };
-      }>;
+    consentForEmailNotice: Attribute.Boolean & Attribute.DefaultTo<false>;
+    children: Attribute.Component<'profile.child', true>;
+    personality_result: Attribute.Relation<
+      'api::user-profile.user-profile',
+      'manyToOne',
+      'api::personality-result.personality-result'
+    >;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     createdBy: Attribute.Relation<
@@ -1580,12 +1699,6 @@ export interface ApiUserProfileUserProfile extends Schema.CollectionType {
       'admin::user'
     > &
       Attribute.Private;
-    localizations: Attribute.Relation<
-      'api::user-profile.user-profile',
-      'oneToMany',
-      'api::user-profile.user-profile'
-    >;
-    locale: Attribute.String;
   };
 }
 
@@ -1615,6 +1728,8 @@ declare module '@strapi/types' {
       'api::function.function': ApiFunctionFunction;
       'api::hot-topic.hot-topic': ApiHotTopicHotTopic;
       'api::like.like': ApiLikeLike;
+      'api::pers-question.pers-question': ApiPersQuestionPersQuestion;
+      'api::personality-result.personality-result': ApiPersonalityResultPersonalityResult;
       'api::ping.ping': ApiPingPing;
       'api::post.post': ApiPostPost;
       'api::tag.tag': ApiTagTag;
