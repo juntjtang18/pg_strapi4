@@ -129,13 +129,15 @@ curl -X GET 'http://192.168.1.66:8080/api/subscriptions/my-active-plan' \
 
 
 
-curl -X GET http://localhost:8080/api/personality-results \
--H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NDksImJhc2VMYW5ndWFnZSI6ImZyIiwiaWF0IjoxNzU1MTYxODY2LCJleHAiOjE3NTc3NTM4NjZ9.8GZFb3NkayGCo-mnMRo83qB_9cOSUnDFsvxAK7Csw6Q" \
+curl -X GET "http://localhost:8080/api/personality-results?populate%5Bimage%5D=*&locale=en" \
+-H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MjMsImlhdCI6MTc1NTc1ODY4MiwiZXhwIjoxNzU4MzUwNjgyfQ.SkypjFheUUaKaIzghEAk-Sq3NwCm6Af7cogAKFKHhn8" \
 -H "Content-Type: application/json" \
 | jq .
 
 
-curl -X GET "http://localhost:8080/api/api/user-profiles/mine" \
--H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NDksImJhc2VMYW5ndWFnZSI6ImZyIiwiaWF0IjoxNzU1MTYxODY2LCJleHAiOjE3NTc3NTM4NjZ9.8GZFb3NkayGCo-mnMRo83qB_9cOSUnDFsvxAK7Csw6Q" \
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MjMsImlhdCI6MTc1NTc1ODY4MiwiZXhwIjoxNzU4MzUwNjgyfQ.SkypjFheUUaKaIzghEAk-Sq3NwCm6Af7cogAKFKHhn8
+
+curl -X GET "http://localhost:8080/api/user-profiles/mine" \
+-H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MjMsImlhdCI6MTc1NTc1ODY4MiwiZXhwIjoxNzU4MzUwNjgyfQ.SkypjFheUUaKaIzghEAk-Sq3NwCm6Af7cogAKFKHhn8" \
 -H "Content-Type: application/json" \
 | jq .
