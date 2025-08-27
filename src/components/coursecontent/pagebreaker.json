@@ -2,7 +2,8 @@
   "collectionName": "components_coursecontent_pagebreakers",
   "info": {
     "displayName": "pagebreaker",
-    "icon": "file"
+    "icon": "file",
+    "description": ""
   },
   "options": {},
   "attributes": {
@@ -13,6 +14,9 @@
     "nextbutton": {
       "type": "boolean",
       "default": true
+    },
+    "unit_uuid": {
+      "type": "string"
     }
   }
 }

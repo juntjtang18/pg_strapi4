@@ -52,10 +52,12 @@ export interface CoursecontentPagebreaker extends Schema.Component {
   info: {
     displayName: 'pagebreaker';
     icon: 'file';
+    description: '';
   };
   attributes: {
     backbutton: Attribute.Boolean & Attribute.DefaultTo<true>;
     nextbutton: Attribute.Boolean & Attribute.DefaultTo<true>;
+    unit_uuid: Attribute.String;
   };
 }
 
