@@ -1,0 +1,54 @@
+{
+  "kind": "collectionType",
+  "collectionName": "course_read_logs",
+  "info": {
+    "singularName": "course-read-log",
+    "pluralName": "course-read-logs",
+    "displayName": "course read log"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "user": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "course_read_logs"
+    },
+    "course": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::course.course",
+      "inversedBy": "course_read_logs"
+    },
+    "unit_uuid": {
+      "type": "string",
+      "required": true
+    },
+    "event_type": {
+      "type": "enumeration",
+      "enum": [
+        "page_view"
+      ],
+      "default": "page_view",
+      "required": true
+    },
+    "dwell_ms": {
+      "type": "integer"
+    },
+    "session_id": {
+      "type": "string"
+    },
+    "event_id": {
+      "type": "string"
+    },
+    "client_ts": {
+      "type": "datetime"
+    },
+    "server_ts": {
+      "type": "datetime"
+    }
+  }
+}

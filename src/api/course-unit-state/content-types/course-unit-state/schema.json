@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "course_unit_states",
+  "info": {
+    "singularName": "course-unit-state",
+    "pluralName": "course-unit-states",
+    "displayName": "course unit state"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "user": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "course_unit_states"
+    },
+    "course": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::course.course",
+      "inversedBy": "course_unit_states"
+    },
+    "unit_uuid": {
+      "type": "string",
+      "required": true
+    },
+    "completed_at": {
+      "type": "datetime"
+    }
+  }
+}

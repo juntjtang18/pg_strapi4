@@ -60,7 +60,7 @@ module.exports = (plugin) => {
     ctx.body = sanitizedUser;
   };
 
-  // =================================================================
+// =================================================================
   // 2. 'LOGIN' ENDPOINT (/api/auth/local) - WITH SUBSCRIPTION & ROLE
   // =================================================================
   const originalCallback = plugin.controllers.auth.callback;
@@ -73,11 +73,18 @@ module.exports = (plugin) => {
       const user = ctx.body.user;
       let subscription = null;
       
-      // Re-fetch the user to populate the role and profile
+      // Re-fetch the user to populate the role, profile, and its related data
       let userWithDetails = await strapi.entityService.findOne(
         "plugin::users-permissions.user",
         user.id,
-        { populate: { role: true, user_profile: true } }
+        { 
+          populate: {
+            role: true,
+            user_profile: {
+              populate: ['personality_result', 'children']
+            }
+          }
+        }
       );
 
       // Check if user-profile exists, create one if it doesn't
@@ -92,11 +99,18 @@ module.exports = (plugin) => {
           });
           logger.debug(`[DEBUG] UserProfile created for user ${user.id}.`);
 
-          // Re-fetch user to include the newly created user-profile
+          // Re-fetch user to include the newly created user-profile and other details
           userWithDetails = await strapi.entityService.findOne(
             "plugin::users-permissions.user",
             user.id,
-            { populate: { role: true, user_profile: true } }
+            { 
+              populate: { 
+                role: true, 
+                user_profile: { 
+                  populate: ['personality_result', 'children'] 
+                } 
+              } 
+            }
           );
         } catch (profileError) {
           logger.error(`[ERROR] Failed to create user profile for user ${user.id}.`, profileError);
@@ -147,7 +161,7 @@ module.exports = (plugin) => {
     }
   };
 
-  // =================================================================
+// =================================================================
   // 3. 'REGISTER' ENDPOINT - WITH SUBSCRIPTION & ROLE
   // =================================================================
   plugin.controllers.auth.register = async (ctx) => {
@@ -242,7 +256,14 @@ module.exports = (plugin) => {
       const userWithDetails = await strapi.entityService.findOne(
         "plugin::users-permissions.user",
         newUser.id,
-        { populate: { role: true, user_profile: true } }
+        { 
+          populate: { 
+            role: true, 
+            user_profile: { 
+              populate: ['personality_result', 'children'] 
+            }
+          }
+        }
       );
 
       const userSchema = strapi.getModel('plugin::users-permissions.user');
@@ -263,6 +284,5 @@ module.exports = (plugin) => {
       throw new ApplicationError("An error occurred during the registration process.");
     }
   };
-
   return plugin;
 };

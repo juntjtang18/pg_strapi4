@@ -685,6 +685,21 @@ export interface PluginUsersPermissionsUser extends Schema.CollectionType {
       'oneToMany',
       'api::comment.comment'
     >;
+    course_progresses: Attribute.Relation<
+      'plugin::users-permissions.user',
+      'oneToMany',
+      'api::course-progress.course-progress'
+    >;
+    course_unit_states: Attribute.Relation<
+      'plugin::users-permissions.user',
+      'oneToMany',
+      'api::course-unit-state.course-unit-state'
+    >;
+    course_read_logs: Attribute.Relation<
+      'plugin::users-permissions.user',
+      'oneToMany',
+      'api::course-read-log.course-read-log'
+    >;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     createdBy: Attribute.Relation<
@@ -986,6 +1001,21 @@ export interface ApiCourseCourse extends Schema.CollectionType {
           localized: false;
         };
       }>;
+    course_progresses: Attribute.Relation<
+      'api::course.course',
+      'oneToMany',
+      'api::course-progress.course-progress'
+    >;
+    course_unit_states: Attribute.Relation<
+      'api::course.course',
+      'oneToMany',
+      'api::course-unit-state.course-unit-state'
+    >;
+    course_read_logs: Attribute.Relation<
+      'api::course.course',
+      'oneToMany',
+      'api::course-read-log.course-read-log'
+    >;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     createdBy: Attribute.Relation<
@@ -1006,6 +1036,147 @@ export interface ApiCourseCourse extends Schema.CollectionType {
       'api::course.course'
     >;
     locale: Attribute.String;
+  };
+}
+
+export interface ApiCourseProgressCourseProgress extends Schema.CollectionType {
+  collectionName: 'course_progresses';
+  info: {
+    singularName: 'course-progress';
+    pluralName: 'course-progresses';
+    displayName: 'course progress';
+  };
+  options: {
+    draftAndPublish: false;
+  };
+  attributes: {
+    user: Attribute.Relation<
+      'api::course-progress.course-progress',
+      'manyToOne',
+      'plugin::users-permissions.user'
+    >;
+    course: Attribute.Relation<
+      'api::course-progress.course-progress',
+      'manyToOne',
+      'api::course.course'
+    >;
+    status: Attribute.Enumeration<['queued', 'in_progress', 'completed']> &
+      Attribute.Required &
+      Attribute.DefaultTo<'queued'>;
+    source: Attribute.Enumeration<
+      ['personality', 'default', 'system', 'manual']
+    > &
+      Attribute.Required &
+      Attribute.DefaultTo<'system'>;
+    priority: Attribute.Integer & Attribute.DefaultTo<10>;
+    personality_rank: Attribute.Integer;
+    total_units: Attribute.Integer & Attribute.DefaultTo<0>;
+    completed_units: Attribute.Integer & Attribute.DefaultTo<0>;
+    current_unit_uuid: Attribute.String;
+    last_activity_at: Attribute.DateTime;
+    completed_at: Attribute.DateTime;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::course-progress.course-progress',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::course-progress.course-progress',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
+export interface ApiCourseReadLogCourseReadLog extends Schema.CollectionType {
+  collectionName: 'course_read_logs';
+  info: {
+    singularName: 'course-read-log';
+    pluralName: 'course-read-logs';
+    displayName: 'course read log';
+  };
+  options: {
+    draftAndPublish: false;
+  };
+  attributes: {
+    user: Attribute.Relation<
+      'api::course-read-log.course-read-log',
+      'manyToOne',
+      'plugin::users-permissions.user'
+    >;
+    course: Attribute.Relation<
+      'api::course-read-log.course-read-log',
+      'manyToOne',
+      'api::course.course'
+    >;
+    unit_uuid: Attribute.String & Attribute.Required;
+    event_type: Attribute.Enumeration<['page_view']> &
+      Attribute.Required &
+      Attribute.DefaultTo<'page_view'>;
+    dwell_ms: Attribute.Integer;
+    session_id: Attribute.String;
+    event_id: Attribute.String;
+    client_ts: Attribute.DateTime;
+    server_ts: Attribute.DateTime;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::course-read-log.course-read-log',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::course-read-log.course-read-log',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
+export interface ApiCourseUnitStateCourseUnitState
+  extends Schema.CollectionType {
+  collectionName: 'course_unit_states';
+  info: {
+    singularName: 'course-unit-state';
+    pluralName: 'course-unit-states';
+    displayName: 'course unit state';
+  };
+  options: {
+    draftAndPublish: false;
+  };
+  attributes: {
+    user: Attribute.Relation<
+      'api::course-unit-state.course-unit-state',
+      'manyToOne',
+      'plugin::users-permissions.user'
+    >;
+    course: Attribute.Relation<
+      'api::course-unit-state.course-unit-state',
+      'manyToOne',
+      'api::course.course'
+    >;
+    unit_uuid: Attribute.String & Attribute.Required;
+    completed_at: Attribute.DateTime;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::course-unit-state.course-unit-state',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::course-unit-state.course-unit-state',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
   };
 }
 
@@ -1418,6 +1589,12 @@ export interface ApiPersonalityResultPersonalityResult
           localized: false;
         };
       }>;
+    recommend_courses: Attribute.Component<'a.course-pick', true> &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: false;
+        };
+      }>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     createdBy: Attribute.Relation<
@@ -1728,6 +1905,9 @@ declare module '@strapi/types' {
       'api::category.category': ApiCategoryCategory;
       'api::comment.comment': ApiCommentComment;
       'api::course.course': ApiCourseCourse;
+      'api::course-progress.course-progress': ApiCourseProgressCourseProgress;
+      'api::course-read-log.course-read-log': ApiCourseReadLogCourseReadLog;
+      'api::course-unit-state.course-unit-state': ApiCourseUnitStateCourseUnitState;
       'api::coursecategory.coursecategory': ApiCoursecategoryCoursecategory;
       'api::daily-tip.daily-tip': ApiDailyTipDailyTip;
       'api::dailylesson.dailylesson': ApiDailylessonDailylesson;

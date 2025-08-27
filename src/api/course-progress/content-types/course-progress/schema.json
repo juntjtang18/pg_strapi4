@@ -1,0 +1,72 @@
+{
+  "kind": "collectionType",
+  "collectionName": "course_progresses",
+  "info": {
+    "singularName": "course-progress",
+    "pluralName": "course-progresses",
+    "displayName": "course progress"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "user": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "course_progresses"
+    },
+    "course": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::course.course",
+      "inversedBy": "course_progresses"
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "queued",
+        "in_progress",
+        "completed"
+      ],
+      "default": "queued",
+      "required": true
+    },
+    "source": {
+      "type": "enumeration",
+      "enum": [
+        "personality",
+        "default",
+        "system",
+        "manual"
+      ],
+      "default": "system",
+      "required": true
+    },
+    "priority": {
+      "type": "integer",
+      "default": 10
+    },
+    "personality_rank": {
+      "type": "integer"
+    },
+    "total_units": {
+      "type": "integer",
+      "default": 0
+    },
+    "completed_units": {
+      "type": "integer",
+      "default": 0
+    },
+    "current_unit_uuid": {
+      "type": "string"
+    },
+    "last_activity_at": {
+      "type": "datetime"
+    },
+    "completed_at": {
+      "type": "datetime"
+    }
+  }
+}

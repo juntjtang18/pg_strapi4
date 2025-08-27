@@ -12,6 +12,22 @@ export interface AAnswer extends Schema.Component {
   };
 }
 
+export interface ACoursePick extends Schema.Component {
+  collectionName: 'components_a_course_picks';
+  info: {
+    displayName: 'course-pick';
+    icon: 'database';
+  };
+  attributes: {
+    course: Attribute.Relation<
+      'a.course-pick',
+      'oneToOne',
+      'api::course.course'
+    >;
+    rank: Attribute.Integer;
+  };
+}
+
 export interface AFeatures extends Schema.Component {
   collectionName: 'components_a_features';
   info: {
@@ -143,6 +159,7 @@ declare module '@strapi/types' {
   export module Shared {
     export interface Components {
       'a.answer': AAnswer;
+      'a.course-pick': ACoursePick;
       'a.features': AFeatures;
       'coursecontent.external-video': CoursecontentExternalVideo;
       'coursecontent.image': CoursecontentImage;

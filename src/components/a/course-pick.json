@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_a_course_picks",
+  "info": {
+    "displayName": "course-pick",
+    "icon": "database"
+  },
+  "options": {},
+  "attributes": {
+    "course": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::course.course"
+    },
+    "rank": {
+      "type": "integer"
+    }
+  }
+}

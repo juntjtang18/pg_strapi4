@@ -141,3 +141,29 @@ curl -X GET "http://localhost:8080/api/user-profiles/mine" \
 -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MjMsImlhdCI6MTc1NTc1ODY4MiwiZXhwIjoxNzU4MzUwNjgyfQ.SkypjFheUUaKaIzghEAk-Sq3NwCm6Af7cogAKFKHhn8" \
 -H "Content-Type: application/json" \
 | jq .
+
+
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MjMsImlhdCI6MTc1NjI3MjE3OSwiZXhwIjoxNzU4ODY0MTc5fQ.wYAgeTECODDRd4SJRWe31bbW_N4jtiiZMxM_Twqdmvw
+
+curl -X POST "http://localhost:8080/api/courses" \
+-H "Content-Type: application/json" \
+-H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MjMsImlhdCI6MTc1NjI3MjE3OSwiZXhwIjoxNzU4ODY0MTc5fQ.wYAgeTECODDRd4SJRWe31bbW_N4jtiiZMxM_Twqdmvw" \
+  -d '{
+    "data": {
+      "title": "Test Course from curl",
+      "order": 99,
+      "locale": "en",
+      "content": [
+        { "__component": "coursecontent.text", "data": "Intro text" },
+        { "__component": "coursecontent.pagebreaker" },
+        { "__component": "coursecontent.text", "data": "Page 2 text" },
+        { "__component": "coursecontent.pagebreaker" }
+      ]
+    }
+  }' | jq .
+
+curl -X GET "http://localhost:8080/api/courses?filters%5Btitle%5D%5B$eq%5D=Test%20Course%20from%20curl&populate=*" \
+  -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MjMsImlhdCI6MTc1NjI3MjE3OSwiZXhwIjoxNzU4ODY0MTc5fQ.wYAgeTECODDRd4SJRWe31bbW_N4jtiiZMxM_Twqdmvw" | jq '.data%5B0%5D.attributes.content'
+
+curl -s "http://localhost:8080/api/courses/66?populate=*" \
+  -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MjMsImlhdCI6MTc1NjI3MjE3OSwiZXhwIjoxNzU4ODY0MTc5fQ.wYAgeTECODDRd4SJRWe31bbW_N4jtiiZMxM_Twqdmvw" | jq '.data.attributes.content | map({component: .__component, unit_uuid})'

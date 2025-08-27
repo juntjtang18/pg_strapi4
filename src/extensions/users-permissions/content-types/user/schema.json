@@ -95,6 +95,24 @@
       "relation": "oneToMany",
       "target": "api::comment.comment",
       "mappedBy": "author"
+    },
+    "course_progresses": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::course-progress.course-progress",
+      "mappedBy": "user"
+    },
+    "course_unit_states": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::course-unit-state.course-unit-state",
+      "mappedBy": "user"
+    },
+    "course_read_logs": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::course-read-log.course-read-log",
+      "mappedBy": "user"
     }
   }
 }
