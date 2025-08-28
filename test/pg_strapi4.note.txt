@@ -153,12 +153,12 @@ curl -X POST "http://localhost:8080/api/courses" \
       "title": "Test Course from curl",
       "order": 99,
       "locale": "en",
-      "content": [
+      "content": %5B
         { "__component": "coursecontent.text", "data": "Intro text" },
         { "__component": "coursecontent.pagebreaker" },
         { "__component": "coursecontent.text", "data": "Page 2 text" },
         { "__component": "coursecontent.pagebreaker" }
-      ]
+      %5D
     }
   }' | jq .
 
@@ -167,3 +167,67 @@ curl -X GET "http://localhost:8080/api/courses?filters%5Btitle%5D%5B$eq%5D=Test%
 
 curl -s "http://localhost:8080/api/courses/66?populate=*" \
   -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MjMsImlhdCI6MTc1NjI3MjE3OSwiZXhwIjoxNzU4ODY0MTc5fQ.wYAgeTECODDRd4SJRWe31bbW_N4jtiiZMxM_Twqdmvw" | jq '.data.attributes.content | map({component: .__component, unit_uuid})'
+
+curl -X GET "http://localhost:8080/api/my-recommend-course" \
+  -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MjMsImlhdCI6MTc1NjI3MjE3OSwiZXhwIjoxNzU4ODY0MTc5fQ.wYAgeTECODDRd4SJRWe31bbW_N4jtiiZMxM_Twqdmvw" \
+  | jq .
+
+curl -X GET 'http://localhost:8080/api/user-profiles/mine' \
+-H "Content-Type: application/json" \
+  -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MjMsImlhdCI6MTc1NjI3MjE3OSwiZXhwIjoxNzU4ODY0MTc5fQ.wYAgeTECODDRd4SJRWe31bbW_N4jtiiZMxM_Twqdmvw" \
+  | jq .
+
+
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MjMsImlhdCI6MTc1NjMxMTIxMywiZXhwIjoxNzU4OTAzMjEzfQ.JLTFR7XNa1-4uX4PQfL4vs_lT-inw3LrCIrQ_x7iiGI
+
+
+curl -X POST "http://localhost:8080/api/auth/local/register" \
+-H "Content-Type: application/json" \
+-d '{
+  "username": "aug27",
+  "email": "aug27@example.com",
+  "password": "Passw0rd"
+}' \
+| jq .
+
+
+curl -X GET 'http://localhost:8080/api/personality-results?populate%5Brecommend_courses%5D=*&locale=en' \
+-H "Content-Type: application/json" \
+-H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MjMsImlhdCI6MTc1NjI3MjE3OSwiZXhwIjoxNzU4ODY0MTc5fQ.wYAgeTECODDRd4SJRWe31bbW_N4jtiiZMxM_Twqdmvw" \
+| jq .
+
+curl -X GET 'http://localhost:8080/api/personality-results?populate%5Brecommend_courses%5D%5Bpopulate%5D%5Bcourse%5D=*' \
+ -H "Content-Type: application/json" \
+ -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MjMsImlhdCI6MTc1NjI3MjE3OSwiZXhwIjoxNzU4ODY0MTc5fQ.wYAgeTECODDRd4SJRWe31bbW_N4jtiiZMxM_Twqdmvw" \
+ | jq .
+
+ curl -X POST "http://localhost:8080/api/me/courses/18/read" \
+  -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MjMsImlhdCI6MTc1NjI3MjE3OSwiZXhwIjoxNzU4ODY0MTc5fQ.wYAgeTECODDRd4SJRWe31bbW_N4jtiiZMxM_Twqdmvw" \
+  -H "Content-Type: application/json" \
+  -d '{"data":{"unit_uuid":"<UNIT_UUID>","event_type":"page_view","dwell_ms":9000}}'
+
+
+curl -X GET "http://localhost:8080/api/course-progresses" \
+ -H "Content-Type: application/json" \
+ -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MjMsImlhdCI6MTc1NjI3MjE3OSwiZXhwIjoxNzU4ODY0MTc5fQ.wYAgeTECODDRd4SJRWe31bbW_N4jtiiZMxM_Twqdmvw" \
+ | jq .
+
+
+ curl -X POST "http://localhost:8080/api/me/courses/2/read" \
+  -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MjMsImlhdCI6MTc1NjI3MjE3OSwiZXhwIjoxNzU4ODY0MTc5fQ.wYAgeTECODDRd4SJRWe31bbW_N4jtiiZMxM_Twqdmvw" \
+  -H "Content-Type: application/json" \
+  -d '{"data":{"unit_uuid":"3b547fcf-1ccd-4142-b7c1-70d10431f90b","event_type":"page_view","dwell_ms":9000}}' \
+     | jq .
+
+
+
+     98a30656-9c01-47c2-83da-14a55ae980c5
+     a9153c53-1212-4edf-9409-e95d4e61b5cf
+
+3b547fcf-1ccd-4142-b7c1-70d10431f90b
+
+curl -s -X PUT "http://localhost:8080/api/user-profiles/mine" \
+  -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MjMsImlhdCI6MTc1NjI3MjE3OSwiZXhwIjoxNzU4ODY0MTc5fQ.wYAgeTECODDRd4SJRWe31bbW_N4jtiiZMxM_Twqdmvw" \
+  -H "Content-Type: application/json" \
+  -d '{"data":{"personality_result": 4}}' \
+| jq .

@@ -1,25 +1,125 @@
 'use strict';
 const { getUnitUUIDs } = require('../../../utils/course-units');
 
+// Priority semantics used across your codebase:
+// - higher number = higher priority (personality = 100, system = 10)
+const PRIO_PROMOTED = 100; // promote new personality picks to top
+const PRIO_DEMOTED  = 10;  // demote old queued personality picks (same as "system"-level)
+const RANK_DEMOTED  = 999;
+
+// Keep for any server-side sort you might use elsewhere
 const SORT = [{ priority: 'desc' }, { personality_rank: 'asc' }, { createdAt: 'asc' }, { id: 'asc' }];
 
-async function getUnfinished(userId, limit = 3) {
-  return strapi.entityService.findMany('api::course-progress.course-progress', {
-    filters: { user: userId, status: { $ne: 'completed' } },
-    sort: SORT,
-    populate: { course: { populate: ['icon_image'] } },
-    limit,
-  });
+// --- Personality change resync (called by user-profile lifecycles) ---
+async function resyncForPersonalityChangeSimple(userId, newPrId) {
+  strapi.log.info(`[reco] resync start user=${userId} pr=${newPrId}`);
+
+  // 1) DEMOTE existing queued personality picks — do it by IDs to avoid relation filters in UPDATE
+  try {
+    const toDemote = await strapi.db.query('api::course-progress.course-progress').findMany({
+      where: { user: userId, source: 'personality', status: 'queued' },
+      select: ['id'],
+    });
+
+    const demoteIds = toDemote.map(r => r.id);
+    strapi.log.info(`[reco] demote queued personality rows count=${demoteIds.length}`);
+
+    if (demoteIds.length) {
+      await strapi.db.query('api::course-progress.course-progress').updateMany({
+        where: { id: { $in: demoteIds } },
+        data:  { priority: PRIO_DEMOTED, personality_rank: RANK_DEMOTED },
+      });
+    }
+  } catch (e) {
+    // Log and continue; demotion failure shouldn't block reseeding
+    strapi.log.error(`[reco] demote step failed: ${e.message}`);
+  }
+
+  // 2) LOAD new personality picks
+  const pr = await strapi.entityService.findOne(
+    'api::personality-result.personality-result',
+    newPrId,
+    { populate: { recommend_courses: { populate: ['course'] } } }
+  );
+
+  const picks = (pr?.recommend_courses || [])
+    .map(rc => ({ rank: rc.rank ?? 999, courseId: rc.course?.id }))
+    .filter(p => p.courseId);
+
+  strapi.log.info(`[reco] new picks=${picks.length} → ${picks.map(p => `${p.courseId}(r${p.rank})`).join(', ')}`);
+
+  // 3) PROMOTE/UPSERT new picks
+  for (const { rank, courseId } of picks) {
+    const existing = await strapi.db.query('api::course-progress.course-progress').findOne({
+      where: { user: userId, course: courseId },
+    });
+
+    if (existing) {
+      if (existing.status !== 'completed') {
+        await strapi.db.query('api::course-progress.course-progress').update({
+          where: { id: existing.id },
+          data:  { source: 'personality', priority: PRIO_PROMOTED, personality_rank: rank },
+        });
+        strapi.log.info(`[reco] promoted existing cp#${existing.id} course=${courseId} rank=${rank}`);
+      } else {
+        strapi.log.info(`[reco] skip completed course=${courseId}`);
+      }
+    } else {
+      const units = await getUnitUUIDs(courseId); // your helper
+      await strapi.entityService.create('api::course-progress.course-progress', {
+        data: {
+          user: userId,
+          course: courseId,
+          source: 'personality',
+          priority: PRIO_PROMOTED,
+          personality_rank: rank,
+          status: 'queued',
+          total_units: units.length,
+          completed_units: 0,
+        },
+      });
+      strapi.log.info(`[reco] created new cp for course=${courseId} units=${units.length} rank=${rank}`);
+    }
+  }
+
+  strapi.log.info(`[reco] resync complete user=${userId} pr=${newPrId} picks=${picks.length}`);
 }
 
-// --- NEW: load personality recs from `recommend_courses`
+// --- Used by /api/my-recommend-course ---
+async function getUnfinished(userId, limit = 3) {
+  // Fetch more than we need; precise sort in memory
+  const rows = await strapi.entityService.findMany('api::course-progress.course-progress', {
+    filters: { user: userId, status: { $in: ['queued', 'in_progress'] } },
+    populate: { course: { populate: ['icon_image'] } },
+    sort: [{ updatedAt: 'desc' }],
+    limit: 100,
+  });
+
+  // In-progress first, then priority DESC (higher number first),
+  // then rank ASC (1..n), then updatedAt DESC
+  const sorted = rows.sort((a, b) => {
+    const aIn = a.status === 'in_progress', bIn = b.status === 'in_progress';
+    if (aIn !== bIn) return bIn - aIn;
+
+    const ap = a.priority ?? 0, bp = b.priority ?? 0;
+    if (ap !== bp) return bp - ap; // DESC
+
+    const ar = a.personality_rank ?? RANK_DEMOTED, br = b.personality_rank ?? RANK_DEMOTED;
+    if (ar !== br) return ar - br; // ASC
+
+    return new Date(b.updatedAt) - new Date(a.updatedAt); // DESC
+  });
+
+  return sorted.slice(0, limit);
+}
+
+// --- Load personality recs from recommend_courses ---
 async function getPersonalityRecs(userId) {
   const [profile] = await strapi.entityService.findMany('api::user-profile.user-profile', {
     filters: { users_permissions_user: userId },
     populate: {
       personality_result: {
         populate: {
-          // your field name is recommend_courses (no “ed”)
           recommend_courses: { populate: { course: true } },
         },
       },
@@ -29,19 +129,15 @@ async function getPersonalityRecs(userId) {
 
   const list = profile?.personality_result?.recommend_courses || [];
 
-  // Normalize various shapes into { courseId, rank }
   const recs = list
     .map((r) => {
       const rank = r.rank ?? 999;
       const c = r.course;
-
-      // course could be: { id } or number or { id, attributes } or { data: { id, attributes } }
       let courseId = null;
       if (!c) courseId = null;
       else if (typeof c === 'number') courseId = c;
       else if (typeof c?.id === 'number') courseId = c.id;
       else if (typeof c?.data?.id === 'number') courseId = c.data.id;
-
       return courseId ? { courseId, rank } : null;
     })
     .filter(Boolean)
@@ -68,7 +164,7 @@ async function ensureSeeded(userId) {
           status: 'queued',
           source: 'personality',
           personality_rank: r.rank,
-          priority: 100,
+          priority: PRIO_PROMOTED, // 100
           total_units: units.length,
           completed_units: 0,
         },
@@ -92,7 +188,7 @@ async function ensureSeeded(userId) {
           course: c.id,
           status: 'queued',
           source: 'system',
-          priority: 10,
+          priority: PRIO_DEMOTED, // 10
           total_units: units.length,
           completed_units: 0,
         },
@@ -124,14 +220,14 @@ async function addPersonalityPicks(userId) {
           status: 'queued',
           source: 'personality',
           personality_rank: r.rank,
-          priority: 100,
+          priority: PRIO_PROMOTED, // 100
           total_units: units.length,
           completed_units: 0,
         },
       });
-    } else if (found.status !== 'completed' && found.priority < 100) {
+    } else if (found.status !== 'completed' && (found.priority ?? 0) < PRIO_PROMOTED) {
       await strapi.entityService.update('api::course-progress.course-progress', found.id, {
-        data: { source: 'personality', personality_rank: r.rank, priority: 100 },
+        data: { source: 'personality', personality_rank: r.rank, priority: PRIO_PROMOTED },
       });
     }
   }
@@ -163,7 +259,7 @@ async function topUpIfNeeded(userId) {
         course: c.id,
         status: 'queued',
         source: 'system',
-        priority: 10,
+        priority: PRIO_DEMOTED, // 10
         total_units: units.length,
         completed_units: 0,
       },
@@ -181,10 +277,18 @@ async function userCompletedCount(userId) {
 }
 
 module.exports = {
+  // exported API
+  resyncForPersonalityChangeSimple,
   getUnfinished,
   ensureSeeded,
   addPersonalityPicks,
   topUpIfNeeded,
   allCoursesCount,
   userCompletedCount,
+
+  // expose constants if you want to reuse them elsewhere
+  PRIO_PROMOTED,
+  PRIO_DEMOTED,
+  RANK_DEMOTED,
+  SORT,
 };
