@@ -121,4 +121,46 @@ module.exports = createCoreController('api::user-profile.user-profile', ({ strap
       return ctx.internalServerError('An error occurred while updating the profile.');
     }
   },
+    /**
+   * Unregister and delete the currently authenticated user.
+   * This function will:
+   * 1. Get the user from the secure context (provided by Strapi's auth).
+   * 2. Delete the user's associated 'user-profile'.
+   * 3. Delete the user from the core 'users-permissions' plugin.
+   */
+  async unregister(ctx) {
+    const { id: userId, email } = ctx.state.user;
+
+    console.log(`Unregistration process started for user: ${email} (ID: ${userId})`);
+
+    try {
+      // (Optional but good practice) Delete the user's associated profile first
+      const userProfiles = await strapi.entityService.findMany('api::user-profile.user-profile', {
+        filters: { user: userId },
+      });
+      
+      if (userProfiles && userProfiles.length > 0) {
+        await strapi.entityService.delete('api::user-profile.user-profile', userProfiles[0].id);
+        console.log(`Deleted user-profile for user ID: ${userId}`);
+      }
+
+      // Delete the user from the Users & Permissions plugin
+      await strapi.plugin('users-permissions').service('user').remove({ id: userId });
+
+      // ✅ REMOVED THE CHECK for a missing user.
+      // The process will now always proceed to the success response,
+      // ensuring the client gets a success message even if the user was already deleted.
+
+      console.log(`Successfully completed unregistration process for user ID: ${userId}`);
+
+      // Return a success response
+      return ctx.send({
+        message: 'Your account has been successfully deleted.',
+      });
+
+    } catch (err) {
+      console.error('Error during unregistration:', err);
+      return ctx.internalServerError('An error occurred during the unregistration process.');
+    }
+  },
 }));

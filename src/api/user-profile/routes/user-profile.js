@@ -19,5 +19,15 @@ module.exports = {
         auth: false,
       },
     },
+        {
+      method: 'POST',
+      path: '/auth/unregister',
+      handler: 'user-profile.unregister',
+      config: {
+        // We will enable Strapi's authentication middleware.
+        // This is the secure way to get the currently logged-in user.
+        policies: [],
+      },
+    },
   ],
 };
