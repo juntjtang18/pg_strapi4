@@ -700,6 +700,31 @@ export interface PluginUsersPermissionsUser extends Schema.CollectionType {
       'oneToMany',
       'api::course-read-log.course-read-log'
     >;
+    moderation_reports_reporter: Attribute.Relation<
+      'plugin::users-permissions.user',
+      'oneToMany',
+      'api::moderation-report.moderation-report'
+    >;
+    moderation_reports_offender: Attribute.Relation<
+      'plugin::users-permissions.user',
+      'oneToMany',
+      'api::moderation-report.moderation-report'
+    >;
+    moderation_reports_handler: Attribute.Relation<
+      'plugin::users-permissions.user',
+      'oneToMany',
+      'api::moderation-report.moderation-report'
+    >;
+    moderation_blocks_blocker: Attribute.Relation<
+      'plugin::users-permissions.user',
+      'oneToMany',
+      'api::moderation-block.moderation-block'
+    >;
+    moderation_blocks_blocked: Attribute.Relation<
+      'plugin::users-permissions.user',
+      'oneToMany',
+      'api::moderation-block.moderation-block'
+    >;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     createdBy: Attribute.Relation<
@@ -1476,6 +1501,104 @@ export interface ApiLikeLike extends Schema.CollectionType {
   };
 }
 
+export interface ApiModerationBlockModerationBlock
+  extends Schema.CollectionType {
+  collectionName: 'moderation_blocks';
+  info: {
+    singularName: 'moderation-block';
+    pluralName: 'moderation-blocks';
+    displayName: 'moderation block';
+  };
+  options: {
+    draftAndPublish: false;
+  };
+  attributes: {
+    blocker: Attribute.Relation<
+      'api::moderation-block.moderation-block',
+      'manyToOne',
+      'plugin::users-permissions.user'
+    >;
+    blocked: Attribute.Relation<
+      'api::moderation-block.moderation-block',
+      'manyToOne',
+      'plugin::users-permissions.user'
+    >;
+    reason: Attribute.String;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::moderation-block.moderation-block',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::moderation-block.moderation-block',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
+export interface ApiModerationReportModerationReport
+  extends Schema.CollectionType {
+  collectionName: 'moderation_reports';
+  info: {
+    singularName: 'moderation-report';
+    pluralName: 'moderation-reports';
+    displayName: 'moderation report';
+  };
+  options: {
+    draftAndPublish: false;
+  };
+  attributes: {
+    target_type: Attribute.Enumeration<['post', 'comment', 'user']>;
+    target_id: Attribute.Integer & Attribute.Required;
+    reason: Attribute.Enumeration<
+      ['spam', 'harassment', 'hate', 'sexual', 'violence', 'illegal', 'other']
+    > &
+      Attribute.Required;
+    details: Attribute.String;
+    status: Attribute.Enumeration<['open', 'in_review', 'resolved']> &
+      Attribute.Required &
+      Attribute.DefaultTo<'open'>;
+    reporter: Attribute.Relation<
+      'api::moderation-report.moderation-report',
+      'manyToOne',
+      'plugin::users-permissions.user'
+    >;
+    offender: Attribute.Relation<
+      'api::moderation-report.moderation-report',
+      'manyToOne',
+      'plugin::users-permissions.user'
+    >;
+    handled_by: Attribute.Relation<
+      'api::moderation-report.moderation-report',
+      'manyToOne',
+      'plugin::users-permissions.user'
+    >;
+    handle_at: Attribute.DateTime;
+    action_taken: Attribute.Enumeration<
+      ['removed_content', 'warned_user', 'banned_user', 'no_violation']
+    >;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::moderation-report.moderation-report',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::moderation-report.moderation-report',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
 export interface ApiPersQuestionPersQuestion extends Schema.CollectionType {
   collectionName: 'pers_questions';
   info: {
@@ -1914,6 +2037,8 @@ declare module '@strapi/types' {
       'api::function.function': ApiFunctionFunction;
       'api::hot-topic.hot-topic': ApiHotTopicHotTopic;
       'api::like.like': ApiLikeLike;
+      'api::moderation-block.moderation-block': ApiModerationBlockModerationBlock;
+      'api::moderation-report.moderation-report': ApiModerationReportModerationReport;
       'api::pers-question.pers-question': ApiPersQuestionPersQuestion;
       'api::personality-result.personality-result': ApiPersonalityResultPersonalityResult;
       'api::ping.ping': ApiPingPing;

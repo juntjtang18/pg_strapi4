@@ -113,6 +113,36 @@
       "relation": "oneToMany",
       "target": "api::course-read-log.course-read-log",
       "mappedBy": "user"
+    },
+    "moderation_reports_reporter": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::moderation-report.moderation-report",
+      "mappedBy": "reporter"
+    },
+    "moderation_reports_offender": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::moderation-report.moderation-report",
+      "mappedBy": "offender"
+    },
+    "moderation_reports_handler": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::moderation-report.moderation-report",
+      "mappedBy": "handled_by"
+    },
+    "moderation_blocks_blocker": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::moderation-block.moderation-block",
+      "mappedBy": "blocker"
+    },
+    "moderation_blocks_blocked": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::moderation-block.moderation-block",
+      "mappedBy": "blocked"
     }
   }
 }

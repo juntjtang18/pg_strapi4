@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "moderation_blocks",
+  "info": {
+    "singularName": "moderation-block",
+    "pluralName": "moderation-blocks",
+    "displayName": "moderation block"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "blocker": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "moderation_blocks_blocker"
+    },
+    "blocked": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "moderation_blocks_blocked"
+    },
+    "reason": {
+      "type": "string"
+    }
+  }
+}

@@ -1,6 +1,6 @@
-curl -X GET 'http://192.168.1.66:8080/api/comments?populate%5Bauthor%5D%5Bfields%5D%5B0%5D=username&filters%5Bpost%5D%5Bid%5D%5B$eq%5D=75&sort%5B0%5D=createdAt:desc&pagination%5Bpage%5D=1&pagination%5BpageSize%5D=100' \
+curl -X GET 'http://localhost:8080/api/comments?populate%5Bauthor%5D%5Bfields%5D%5B0%5D=username&filters%5Bpost%5D%5Bid%5D%5B$eq%5D=75&sort%5B0%5D=createdAt:desc&pagination%5Bpage%5D=1&pagination%5BpageSize%5D=100' \
 -H "Content-Type: application/json" \
--H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MjMsImlhdCI6MTc1MjM3MTQwMiwiZXhwIjoxNzU0OTYzNDAyfQ.IcDID8-7GmQpNxBRqknxnwjo6tit9nRQ1CklnJQs5aE" \
+-H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MjMsImlhdCI6MTc1NzQzMzUzMiwiZXhwIjoxNzYwMDI1NTMyfQ.irys4RZ42Dy2pkn3ZpBaV0340CqDIdnBUk_UpAUXKvc" \
 | jq .
 
 curl -X POST "http://localhost:8080/api/auth/local" \
@@ -243,3 +243,48 @@ curl -X GET 'http://localhost:8080/api/personality-results' \
   -H "Content-Type: application/json" \
   | jq .
   
+
+  curl -X POST "http://localhost:8080/api/auth/local/register" \
+-H "Content-Type: application/json" \
+-d '{
+  "username": "aug27",
+  "email": "aug27@example.com",
+  "password": "Passw0rd"
+}' \
+| jq .
+
+curl -X POST "http://localhost:8080/api/auth/unregister" \
+-H "Content-Type: application/json" \
+-H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTA5LCJpYXQiOjE3NTcwMjk3MjEsImV4cCI6MTc1OTYyMTcyMX0.HZMrdoiiE3mik96jbGSKIpZMcWixjqOhzG-AVamoFls" \
+| jq .
+
+curl -X POST 'http://localhost:8080/api/auth/local' \
+-H "Content-Type: application/json" \
+-d '{
+  "identifier": "new@gpa.com",
+  "password": "Passw0rd"
+}' \
+| jq .
+
+curl -X POST 'http://localhost:8080/api/moderation/report/comment' \
+-H "Content-Type: application/json" \
+-H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MjMsImlhdCI6MTc1NzQzOTc3MiwiZXhwIjoxNzYwMDMxNzcyfQ.XYhlZWtVVxZUy79nRD76pHyVGq3KynZRjba2zzssZu8" \
+-d '{ "commentId": 15, "reason": "spam", "details": "This comment is spam." }' \
+| jq .
+
+curl -X POST 'http://localhost:8080/api/moderation/report/post' \
+-H "Content-Type: application/json" \
+-H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MjMsImlhdCI6MTc1NzQzOTc3MiwiZXhwIjoxNzYwMDMxNzcyfQ.XYhlZWtVVxZUy79nRD76pHyVGq3KynZRjba2zzssZu8" \
+-d '{ "postId": 20, "reason": "hate", "details": "This post contains inappropriate content." }' \
+| jq . 
+  // body: { postId: number, reason: enum, details?: string }
+  // body: { commentId: number, reason: enum, details?: string }
+enum for reason:spam
+harassment
+hate
+sexual
+violence
+illegal
+other
+
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MjMsImlhdCI6MTc1NzQzOTc3MiwiZXhwIjoxNzYwMDMxNzcyfQ.XYhlZWtVVxZUy79nRD76pHyVGq3KynZRjba2zzssZu8
