@@ -2,71 +2,150 @@
 
 const { createCoreController } = require('@strapi/strapi').factories;
 
-// Define how many comments to show in the post list preview.
+// How many comments to show in the post list preview.
 const COMMENTS_PREVIEW_SIZE = 3;
 
+// Your block model UID (from your schema)
+const BLOCK_UID = 'api::moderation-block.moderation-block';
+
+// --- helpers ---------------------------------------------------------------
+
+// Merge an author $notIn into existing post filters
+function mergePostAuthorNotIn(filters = {}, blockedIds = []) {
+  if (!blockedIds?.length) return filters;
+
+  const existingUser = filters.users_permissions_user ?? {};
+  const existingUserId = existingUser.id ?? {};
+  return {
+    ...filters,
+    users_permissions_user: {
+      ...existingUser,
+      id: {
+        ...existingUserId,
+        $notIn: blockedIds,
+      },
+    },
+  };
+}
+
+// Merge an author $notIn into existing comment filters
+function mergeCommentAuthorNotIn(filters = {}, blockedIds = []) {
+  if (!blockedIds?.length) return filters;
+
+  const existingAuthor = filters.author ?? {};
+  const existingAuthorId = existingAuthor.id ?? {};
+  return {
+    ...filters,
+    author: {
+      ...existingAuthor,
+      id: {
+        ...existingAuthorId,
+        $notIn: blockedIds,
+      },
+    },
+  };
+}
+
+// Get the current user's blocked user IDs (never throws; returns [])
+async function getBlockedUserIds(strapi, ctx) {
+  const userId = ctx.state.user?.id;
+  if (!userId) return [];
+
+  try {
+    const blocks = await strapi.entityService.findMany(BLOCK_UID, {
+      filters: { blocker: userId },
+      populate: { blocked: { fields: ['id'] } },
+      fields: ['id'],
+      limit: 500,
+    });
+
+    return (blocks || [])
+      .map(b => b?.blocked?.id)
+      .filter(Boolean);
+  } catch (err) {
+    strapi.log.error(`[post controller] Failed to load blocks: ${err.message}`);
+    return [];
+  }
+}
+
+// --------------------------------------------------------------------------
+
 module.exports = createCoreController('api::post.post', ({ strapi }) => ({
+
   /**
-   * REFACTORED: Fetches a paginated list of posts. Each post includes the
-   * first page of its comments (up to COMMENTS_PREVIEW_SIZE) and comment pagination metadata.
-   * Mapped to: GET /getposts
-   * @param {object} ctx - The Koa context object.
+   * GET /getposts
+   * Fetch a paginated list of posts (excluding blocked authors) and include
+   * a preview page of comments (also excluding blocked authors) + preview meta.
    */
   async findWithFirstPageComments(ctx) {
     const { query } = ctx;
 
-    // 1. Fetch the paginated list of posts
-    const { page = 1, pageSize = 10 } = query.pagination || {};
+    // 0) Current user's block list
+    const blockedIds = await getBlockedUserIds(strapi, ctx);
+
+    // 1) Merge client filters + author $notIn
+    const clientFilters = query.filters || {};
+    const mergedFilters = mergePostAuthorNotIn(clientFilters, blockedIds);
+
+    // 2) Pagination & sort
+    const page = Number(query?.pagination?.page ?? query['pagination[page]'] ?? 1);
+    const pageSize = Number(query?.pagination?.pageSize ?? query['pagination[pageSize]'] ?? 10);
+    const sort = query.sort || { createdAt: 'desc' };
+
+    // 3) Fetch paginated posts (already filtered by blocked authors)
     const { results: posts, pagination: postsPagination } = await strapi.entityService.findPage('api::post.post', {
-      ...query,
-      page: parseInt(page, 10),
-      pageSize: parseInt(pageSize, 10),
-      populate: { users_permissions_user: { fields: ['username'] }, media: true, likes: true },
+      filters: mergedFilters,
+      sort,
+      page,
+      pageSize,
+      populate: {
+        users_permissions_user: { fields: ['id', 'username'] },
+        media: true,
+        likes: true,
+      },
     });
 
     if (!posts.length) {
       return { data: [], meta: { pagination: postsPagination } };
     }
 
-    // 2. Get the IDs of the fetched posts
+    // 4) Collect post ids for preview comments
     const postIds = posts.map(p => p.id);
 
-    // 3. Fetch all comments for these posts for the preview
+    // 5) Fetch preview comments (exclude blocked authors)
+    const previewCommentFilters = mergeCommentAuthorNotIn(
+      { post: { id: { $in: postIds } } },
+      blockedIds
+    );
     const allComments = await strapi.entityService.findMany('api::comment.comment', {
-      filters: { post: { id: { $in: postIds } } },
+      filters: previewCommentFilters,
       populate: {
-        author: { fields: ['username'] },
+        author: { fields: ['id', 'username'] },
         post: { fields: ['id'] },
       },
       sort: { createdAt: 'desc' },
+      // We’ll slice per post locally; keep this reasonably bounded by page size
+      limit: 10000,
     });
 
-    // 4. Fetch data to count all comments for each post
-    const commentCounts = await strapi.entityService.findMany('api::comment.comment', {
-      filters: { post: { id: { $in: postIds } } },
-      fields: ['id'], // Fetch a minimal field to be efficient
-      populate: { post: { fields: ['id'] } },
-    });
+    // 6) Build per-post totals from the filtered list
+    const totalCommentsByPostId = {};
+    for (const c of allComments) {
+      const pid = c?.post?.id;
+      if (!pid) continue;
+      totalCommentsByPostId[pid] = (totalCommentsByPostId[pid] || 0) + 1;
+    }
 
-    // 5. Create a map of { postId: totalCommentCount }
-    const totalCommentsByPostId = commentCounts.reduce((acc, comment) => {
-      const postId = comment.post.id;
-      if (postId) {
-        acc[postId] = (acc[postId] || 0) + 1;
-      }
-      return acc;
-    }, {});
-
-
-    // 6. Group the fetched comment entities by their post ID
+    // 7) Group comments by post
     const commentsByPostId = allComments.reduce((acc, comment) => {
-      const postId = comment.post.id;
-      if (!acc[postId]) acc[postId] = [];
-      acc[postId].push(comment);
+      const pid = comment?.post?.id;
+      if (!pid) return acc;
+      if (!acc[pid]) acc[pid] = [];
+      acc[pid].push(comment);
       return acc;
     }, {});
 
-    // 7. Format the final response with sliced comments and the new meta object
+    // 8) Format response (preview slice + meta)
     const formattedData = posts.map(post => {
       const { users_permissions_user, media, likes, ...postAttributes } = post;
       const postComments = (commentsByPostId[post.id] || []).slice(0, COMMENTS_PREVIEW_SIZE);
@@ -76,20 +155,29 @@ module.exports = createCoreController('api::post.post', ({ strapi }) => ({
         id: post.id,
         attributes: {
           ...postAttributes,
-          users_permissions_user: users_permissions_user ? { data: { id: users_permissions_user.id, attributes: { username: users_permissions_user.username } } } : { data: null },
+          users_permissions_user: users_permissions_user
+            ? { data: { id: users_permissions_user.id, attributes: { username: users_permissions_user.username } } }
+            : { data: null },
           media: { data: media ? media.map(m => ({ id: m.id, attributes: m })) : null },
           likes: { data: { attributes: { count: Array.isArray(likes) ? likes.length : 0 } } },
           comments: {
             data: postComments.map(comment => {
               const { author, ...commentAttributes } = comment;
-              return { id: comment.id, attributes: { ...commentAttributes, author: author ? { data: { id: author.id, attributes: { username: author.username } } } : { data: null } } };
+              return {
+                id: comment.id,
+                attributes: {
+                  ...commentAttributes,
+                  author: author
+                    ? { data: { id: author.id, attributes: { username: author.username } } }
+                    : { data: null },
+                },
+              };
             }),
-            // --- ADDED META OBJECT FOR COMMENTS ---
             meta: {
               pagination: {
                 page: 1,
                 pageSize: COMMENTS_PREVIEW_SIZE,
-                pageCount: Math.ceil(totalComments / COMMENTS_PREVIEW_SIZE),
+                pageCount: Math.max(1, Math.ceil(totalComments / COMMENTS_PREVIEW_SIZE)),
                 total: totalComments,
               },
             },
@@ -97,58 +185,72 @@ module.exports = createCoreController('api::post.post', ({ strapi }) => ({
         },
       };
     });
-    
+
     return { data: formattedData, meta: { pagination: postsPagination } };
   },
 
   /**
-   * REFACTORED: Fetches a single post by its ID, along with its paginated comments.
-   * Mapped to: GET /posts/:id
-   * @param {object} ctx - The Koa context object.
+   * GET /posts/:id
+   * Fetch a single post and its paginated comments, excluding comments authored
+   * by blocked users.
    */
   async findOneWithDetails(ctx) {
     const { id } = ctx.params;
     const { query } = ctx;
 
-    // 1. Fetch the main post entity
+    // Main post
     const post = await strapi.entityService.findOne('api::post.post', id, {
-      populate: { users_permissions_user: { fields: ['username'] }, media: true, likes: true },
+      populate: { users_permissions_user: { fields: ['id', 'username'] }, media: true, likes: true },
     });
+    if (!post) return ctx.notFound('Post not found');
 
-    if (!post) {
-      return ctx.notFound('Post not found');
-    }
+    // Block list
+    const blockedIds = await getBlockedUserIds(strapi, ctx);
 
-    // 2. Fetch paginated comments for the post based on query params
-    const { page = 1, pageSize = 10 } = query.pagination || {};
+    // Comments pagination
+    const page = Number(query?.pagination?.page ?? query['pagination[page]'] ?? 1);
+    const pageSize = Number(query?.pagination?.pageSize ?? query['pagination[pageSize]'] ?? 10);
+
+    // Merge filters: target this post + exclude blocked comment authors
+    const commentFilters = mergeCommentAuthorNotIn({ post: { id } }, blockedIds);
+
     const { results: comments, pagination: commentsPagination } = await strapi.entityService.findPage('api::comment.comment', {
-      filters: { post: { id } },
+      filters: commentFilters,
       sort: { createdAt: 'desc' },
-      page: parseInt(page, 10),
-      pageSize: parseInt(pageSize, 10),
-      populate: { author: { fields: ['username'] } },
+      page,
+      pageSize,
+      populate: { author: { fields: ['id', 'username'] } },
     });
 
-    // 3. Format the response
     const { users_permissions_user, media, likes, ...postAttributes } = post;
     const formattedPost = {
       id: post.id,
       attributes: {
         ...postAttributes,
-        users_permissions_user: users_permissions_user ? { data: { id: users_permissions_user.id, attributes: { username: users_permissions_user.username } } } : { data: null },
+        users_permissions_user: users_permissions_user
+          ? { data: { id: users_permissions_user.id, attributes: { username: users_permissions_user.username } } }
+          : { data: null },
         media: { data: media ? media.map(m => ({ id: m.id, attributes: m })) : null },
         likes: { data: { attributes: { count: Array.isArray(likes) ? likes.length : 0 } } },
         comments: {
           data: comments.map(comment => {
             const { author, ...commentAttributes } = comment;
-            return { id: comment.id, attributes: { ...commentAttributes, author: author ? { data: { id: author.id, attributes: { username: author.username } } } : { data: null } } };
+            return {
+              id: comment.id,
+              attributes: {
+                ...commentAttributes,
+                author: author
+                  ? { data: { id: author.id, attributes: { username: author.username } } }
+                  : { data: null },
+              },
+            };
           }),
-          meta: { pagination: commentsPagination },
+          meta: commentsPagination,
         },
       },
     };
-    
-    // 4. Sanitize and return
+
+    // Sanitize + return
     const sanitizedEntity = await this.sanitizeOutput(formattedPost, ctx);
     return this.transformResponse(sanitizedEntity);
   },
