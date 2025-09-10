@@ -5,7 +5,7 @@ module.exports = {
     {
       method: 'GET',
       path: '/getcomments',
-      handler: 'comment.findWithAuthor',
+      handler: 'comment.findCommentsForAPost',
       config: {
         // By default, custom routes are private and require authentication.
         // You can add specific policies here if needed.

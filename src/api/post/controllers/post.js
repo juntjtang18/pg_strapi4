@@ -254,4 +254,23 @@ module.exports = createCoreController('api::post.post', ({ strapi }) => ({
     const sanitizedEntity = await this.sanitizeOutput(formattedPost, ctx);
     return this.transformResponse(sanitizedEntity);
   },
+
+  async create(ctx) {
+    const user = ctx.state.user;
+    strapi.log.info('[post.create] hit. user=%s', user?.id ?? 'nil');
+  
+    if (!user) {
+      return ctx.unauthorized('You must be logged in to create a post.');
+    }
+
+    const { data } = ctx.request.body;
+
+    // Force the relation to the logged-in user
+    data.users_permissions_user = user.id;
+
+    const entity = await strapi.entityService.create('api::post.post', { data });
+    const sanitized = await this.sanitizeOutput(entity, ctx);
+    return this.transformResponse(sanitized);
+  },
+
 }));
