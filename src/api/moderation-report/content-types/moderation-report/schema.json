@@ -4,7 +4,8 @@
   "info": {
     "singularName": "moderation-report",
     "pluralName": "moderation-reports",
-    "displayName": "moderation report"
+    "displayName": "moderation report",
+    "description": ""
   },
   "options": {
     "draftAndPublish": false
@@ -20,8 +21,7 @@
       ]
     },
     "target_id": {
-      "type": "integer",
-      "required": true
+      "type": "integer"
     },
     "reason": {
       "type": "enumeration",
@@ -39,33 +39,23 @@
     "details": {
       "type": "string"
     },
-    "status": {
-      "type": "enumeration",
-      "enum": [
-        "open",
-        "in_review",
-        "resolved"
-      ],
-      "required": true,
-      "default": "open"
-    },
     "reporter": {
       "type": "relation",
       "relation": "manyToOne",
       "target": "plugin::users-permissions.user",
-      "inversedBy": "moderation_reports_reporter"
+      "inversedBy": "moderation_report_reporter"
     },
     "offender": {
       "type": "relation",
       "relation": "manyToOne",
       "target": "plugin::users-permissions.user",
-      "inversedBy": "moderation_reports_offender"
+      "inversedBy": "moderation_reports_offend"
     },
     "handled_by": {
       "type": "relation",
       "relation": "manyToOne",
       "target": "plugin::users-permissions.user",
-      "inversedBy": "moderation_reports_handler"
+      "inversedBy": "moderation_reports_handle"
     },
     "handle_at": {
       "type": "datetime"
@@ -77,6 +67,14 @@
         "warned_user",
         "banned_user",
         "no_violation"
+      ]
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "open",
+        "in_review",
+        "resolved"
       ]
     }
   }

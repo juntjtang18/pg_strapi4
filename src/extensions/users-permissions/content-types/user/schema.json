@@ -143,6 +143,24 @@
       "relation": "oneToMany",
       "target": "api::moderation-block.moderation-block",
       "mappedBy": "blocked"
+    },
+    "moderation_report_reporter": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::moderation-report.moderation-report",
+      "mappedBy": "reporter"
+    },
+    "moderation_reports_offend": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::moderation-report.moderation-report",
+      "mappedBy": "offender"
+    },
+    "moderation_reports_handle": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::moderation-report.moderation-report",
+      "mappedBy": "handled_by"
     }
   }
 }

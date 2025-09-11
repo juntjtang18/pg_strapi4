@@ -725,6 +725,21 @@ export interface PluginUsersPermissionsUser extends Schema.CollectionType {
       'oneToMany',
       'api::moderation-block.moderation-block'
     >;
+    moderation_report_reporter: Attribute.Relation<
+      'plugin::users-permissions.user',
+      'oneToMany',
+      'api::moderation-report.moderation-report'
+    >;
+    moderation_reports_offend: Attribute.Relation<
+      'plugin::users-permissions.user',
+      'oneToMany',
+      'api::moderation-report.moderation-report'
+    >;
+    moderation_reports_handle: Attribute.Relation<
+      'plugin::users-permissions.user',
+      'oneToMany',
+      'api::moderation-report.moderation-report'
+    >;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     createdBy: Attribute.Relation<
@@ -1548,21 +1563,19 @@ export interface ApiModerationReportModerationReport
     singularName: 'moderation-report';
     pluralName: 'moderation-reports';
     displayName: 'moderation report';
+    description: '';
   };
   options: {
     draftAndPublish: false;
   };
   attributes: {
     target_type: Attribute.Enumeration<['post', 'comment', 'user']>;
-    target_id: Attribute.Integer & Attribute.Required;
+    target_id: Attribute.Integer;
     reason: Attribute.Enumeration<
       ['spam', 'harassment', 'hate', 'sexual', 'violence', 'illegal', 'other']
     > &
       Attribute.Required;
     details: Attribute.String;
-    status: Attribute.Enumeration<['open', 'in_review', 'resolved']> &
-      Attribute.Required &
-      Attribute.DefaultTo<'open'>;
     reporter: Attribute.Relation<
       'api::moderation-report.moderation-report',
       'manyToOne',
@@ -1582,6 +1595,7 @@ export interface ApiModerationReportModerationReport
     action_taken: Attribute.Enumeration<
       ['removed_content', 'warned_user', 'banned_user', 'no_violation']
     >;
+    status: Attribute.Enumeration<['open', 'in_review', 'resolved']>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     createdBy: Attribute.Relation<

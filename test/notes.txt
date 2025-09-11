@@ -57,3 +57,120 @@ curl -X POST \
 
 
 test1@geniusparentingai.ca/NewP@ssw0rd
+
+
+
+{
+  "kind": "collectionType",
+  "collectionName": "moderation_blocks",
+  "info": {
+    "singularName": "moderation-block",
+    "pluralName": "moderation-blocks",
+    "displayName": "moderation block"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "blocker": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "moderation_blocks_blocker"
+    },
+    "blocked": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "moderation_blocks_blocked"
+    },
+    "reason": {
+      "type": "string"
+    }
+  }
+}
+
+{
+  "kind": "collectionType",
+  "collectionName": "moderation_reports",
+  "info": {
+    "singularName": "moderation-report",
+    "pluralName": "moderation-reports",
+    "displayName": "moderation report"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "target_type": {
+      "type": "enumeration",
+      "enum": [
+        "post",
+        "comment",
+        "user"
+      ]
+    },
+    "target_id": {
+      "type": "integer",
+      "required": true
+    },
+    "reason": {
+      "type": "enumeration",
+      "enum": [
+        "spam",
+        "harassment",
+        "hate",
+        "sexual",
+        "violence",
+        "illegal",
+        "other"
+      ],
+      "required": true
+    },
+    "details": {
+      "type": "string"
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "open",
+        "in_review",
+        "resolved"
+      ],
+      "required": true,
+      "default": "open"
+    },
+    "reporter": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "moderation_reports_reporter"
+    },
+    "offender": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "moderation_reports_offender"
+    },
+    "handled_by": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "moderation_reports_handler"
+    },
+    "handle_at": {
+      "type": "datetime"
+    },
+    "action_taken": {
+      "type": "enumeration",
+      "enum": [
+        "removed_content",
+        "warned_user",
+        "banned_user",
+        "no_violation"
+      ]
+    }
+  }
+}
