@@ -34,8 +34,19 @@ module.exports = {
 
     // get 3 unfinished with course + icon populated (service already does this)
     const rows = await reco.getUnfinished(userId, 3);
+    
+    const sorted = [...rows].sort((a, b) => {
+      const ao = a.course?.order ?? Number.MAX_SAFE_INTEGER;
+      const bo = b.course?.order ?? Number.MAX_SAFE_INTEGER;
+      if (ao !== bo) return ao - bo;
 
-    const data = rows.map((r) => ({
+      const at = (a.course?.title || '');
+      const bt = (b.course?.title || '');
+      // case-insensitive, locale-aware
+      return at.localeCompare(bt, undefined, { sensitivity: 'base' });
+    });
+
+    const data = sorted.map((r) => ({
       id: r.id,
       attributes: {
         status: r.status,
@@ -49,7 +60,6 @@ module.exports = {
         completed_at: r.completed_at,
         createdAt: r.createdAt,
         updatedAt: r.updatedAt,
-        // computed field is OK to include; clients ignore unknown keys
         percent: r.total_units ? r.completed_units / r.total_units : 0,
         course: wrapCourse(r.course),
       },
@@ -58,7 +68,6 @@ module.exports = {
     const allCompleted =
       (await reco.userCompletedCount(userId)) >= (await reco.allCoursesCount());
 
-    // optional pagination meta for consistency
     const pageSize = 3;
     ctx.body = {
       data,
