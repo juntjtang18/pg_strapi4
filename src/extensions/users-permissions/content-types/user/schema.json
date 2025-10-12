@@ -161,6 +161,12 @@
       "relation": "oneToMany",
       "target": "api::moderation-report.moderation-report",
       "mappedBy": "handled_by"
+    },
+    "conversations": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::conversation.conversation",
+      "mappedBy": "user"
     }
   }
 }

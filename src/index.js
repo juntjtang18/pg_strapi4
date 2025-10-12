@@ -30,5 +30,9 @@ module.exports = {
     });
 
     console.log('📅 Cron jobs registered successfully.');
+
+    const len = process.env.OPENAI_API_KEY ? process.env.OPENAI_API_KEY.length : 0;
+    strapi.log.info(`OPENAI_API_KEY length at bootstrap: ${len}`);
+    strapi.log.info(`CWD at bootstrap: ${process.cwd()}`);
   },
 };

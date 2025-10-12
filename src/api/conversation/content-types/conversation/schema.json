@@ -1,0 +1,56 @@
+{
+  "kind": "collectionType",
+  "collectionName": "conversations",
+  "info": {
+    "singularName": "conversation",
+    "pluralName": "conversations",
+    "displayName": "conversation"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "session_id": {
+      "type": "uid",
+      "required": true
+    },
+    "user": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "conversations"
+    },
+    "started_at": {
+      "type": "datetime"
+    },
+    "last_at": {
+      "type": "datetime"
+    },
+    "model": {
+      "type": "string"
+    },
+    "summary": {
+      "type": "json"
+    },
+    "last_msgs": {
+      "type": "json"
+    },
+    "prompt_tokens": {
+      "type": "integer"
+    },
+    "completion_tokens": {
+      "type": "integer"
+    },
+    "total_tokens": {
+      "type": "integer"
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "open",
+        "archived"
+      ]
+    }
+  }
+}

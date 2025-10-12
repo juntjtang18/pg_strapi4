@@ -740,6 +740,11 @@ export interface PluginUsersPermissionsUser extends Schema.CollectionType {
       'oneToMany',
       'api::moderation-report.moderation-report'
     >;
+    conversations: Attribute.Relation<
+      'plugin::users-permissions.user',
+      'oneToMany',
+      'api::conversation.conversation'
+    >;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     createdBy: Attribute.Relation<
@@ -978,6 +983,49 @@ export interface ApiCommentComment extends Schema.CollectionType {
       Attribute.Private;
     updatedBy: Attribute.Relation<
       'api::comment.comment',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
+export interface ApiConversationConversation extends Schema.CollectionType {
+  collectionName: 'conversations';
+  info: {
+    singularName: 'conversation';
+    pluralName: 'conversations';
+    displayName: 'conversation';
+  };
+  options: {
+    draftAndPublish: false;
+  };
+  attributes: {
+    session_id: Attribute.UID & Attribute.Required;
+    user: Attribute.Relation<
+      'api::conversation.conversation',
+      'manyToOne',
+      'plugin::users-permissions.user'
+    >;
+    started_at: Attribute.DateTime;
+    last_at: Attribute.DateTime;
+    model: Attribute.String;
+    summary: Attribute.JSON;
+    last_msgs: Attribute.JSON;
+    prompt_tokens: Attribute.Integer;
+    completion_tokens: Attribute.Integer;
+    total_tokens: Attribute.Integer;
+    status: Attribute.Enumeration<['open', 'archived']>;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::conversation.conversation',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::conversation.conversation',
       'oneToOne',
       'admin::user'
     > &
@@ -2041,6 +2089,7 @@ declare module '@strapi/types' {
       'api::article.article': ApiArticleArticle;
       'api::category.category': ApiCategoryCategory;
       'api::comment.comment': ApiCommentComment;
+      'api::conversation.conversation': ApiConversationConversation;
       'api::course.course': ApiCourseCourse;
       'api::course-progress.course-progress': ApiCourseProgressCourseProgress;
       'api::course-read-log.course-read-log': ApiCourseReadLogCourseReadLog;
