@@ -14,8 +14,10 @@ module.exports = [
         'https://chatbot.geniusparentingai.ca',
       ],
       methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
-      headers: '*',
+      headers: ['Content-Type', 'Authorization', 'authorization'],
       credentials: true,
+      keepHeaderOnError: true,
+
     },
   },
   {

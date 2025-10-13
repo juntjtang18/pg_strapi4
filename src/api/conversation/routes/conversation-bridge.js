@@ -23,6 +23,7 @@ module.exports = {
       config: { auth: false },
     },
     { method: 'POST', path: '/ai/sessions/:session_id/chat', handler: 'conversation.chat', config: { auth: false } },
+    { method: 'POST', path: '/ai/chat', handler: 'conversation.chat', config: { auth: false } },
 
   ],
 };

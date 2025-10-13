@@ -216,199 +216,205 @@ module.exports = createCoreController('api::conversation.conversation', ({ strap
    * Behavior: includes small recent history in prompt, calls OpenAI, saves reply & usage.
    * Also auto-creates a new session if the current/latest is idle for >= SESSION_IDLE_MIN.
    */
-  async chat(ctx) {
-    // --- Auth ---
-    const authHeader = ctx.request.header.authorization;
-    if (!authHeader || !authHeader.startsWith('Bearer ')) {
-      return ctx.unauthorized('Missing or invalid authorization header.');
-    }
-    if (!process.env.OPENAI_API_KEY) {
-      strapi.log.error('OPENAI_API_KEY is not set.');
-      return ctx.internalServerError('Server misconfiguration: OPENAI_API_KEY missing.');
-    }
-
-    let userId;
-    try {
-      const payload = await strapi.plugin('users-permissions').service('jwt').verify(authHeader.split(' ')[1]);
-      userId = payload?.id;
-    } catch {
-      return ctx.unauthorized('Invalid or expired token.');
-    }
-    if (!userId) return ctx.unauthorized('Invalid token.');
-
-    // --- Params & body ---
-    const { session_id } = ctx.params;
-    const { message, temperature, word_cap, bullets, language, model } = ctx.request.body || {};
-    if (!message || typeof message !== 'string') {
-      return ctx.badRequest('Missing user "message".');
-    }
-
-    // Optional: include history flag
-    const includeHistory =
-      String(ctx.query?.include_history).toLowerCase() === 'true' ||
-      ctx.request.body?.return_history === true;
-
-    // --- Load session, or create if missing/idle ---
-    const { v4: uuidv4 } = require('uuid');
-    const now = new Date();
-
-    const findLatestOpen = async () => {
-      const [last] = await strapi.entityService.findMany('api::conversation.conversation', {
-        filters: { user: userId, status: 'open' },
-        sort: { last_at: 'desc' },
-        limit: 1,
-      });
-      return last || null;
-    };
-
-    // Try to load the requested one (if provided), otherwise latest open
-    let [session] = await strapi.entityService.findMany('api::conversation.conversation', {
-      filters: { user: userId, session_id },
-      limit: 1,
-    });
-    if (!session) session = await findLatestOpen();
-
-    let sessionSwitched = false;
-    let previousSessionId = null;
-
-    const needNewSession = () => {
-      if (!session) return true;
-      const lastAt = new Date(session.last_at || session.started_at || 0);
-      const diffMin = (now - lastAt) / 60000;
-      return diffMin >= SESSION_IDLE_MIN;
-    };
-
-    if (needNewSession()) {
-      previousSessionId = session?.session_id || null;
-      const modelToCarry = session?.model || DEFAULT_MODEL;
-      session = await strapi.entityService.create('api::conversation.conversation', {
-        data: {
-          session_id: uuidv4(),
-          user: userId,
-          started_at: now,
-          last_at: now,
-          model: modelToCarry,
-          summary: { facts: [], goals: [], prefs: [], open_items: [], notes: '' },
-          last_msgs: [],
-          prompt_tokens: 0,
-          completion_tokens: 0,
-          total_tokens: 0,
-          status: 'open',
-        },
-      });
-      sessionSwitched = true;
-    }
-
-    // ---- Effective settings ----
-    const effWordCap = Math.max(60, Math.min(Number(word_cap ?? REPLY_WORD_CAP), 200)); // 60–200
-    const effBullets = Math.max(2, Math.min(Number(bullets ?? 5), 6));                 // 2–6
-    const langHint = typeof language === 'string' && language.trim().length <= 10 ? language.trim() : null;
-
-    const dynamicMaxTokens = Math.min(
-      MAX_REPLY_TOKENS,
-      Math.max(80, Math.ceil(effWordCap * 1.6) + 20)
-    );
-
-    const candidateModel = (typeof model === 'string' && MODEL_ALLOW.has(model)) ? model : session.model;
-    const modelToUse = MODEL_ALLOW.has(candidateModel) ? candidateModel : DEFAULT_MODEL;
-
-    // ---- Build prompt (small history) ----
-    const recent = Array.isArray(session.last_msgs) ? session.last_msgs.slice(-CONTEXT_TAKE) : [];
-
-    const SYSTEM_STYLE_LINES = [
-      'You are a helpful parenting assistant.',
-      `Be crisp and actionable. Max ${effWordCap} words.`,
-      `Prefer ${effBullets} bullet points or short steps.`,
-      'Avoid long intros/outros. No repeated disclaimers.',
-    ];
-    if (langHint) SYSTEM_STYLE_LINES.push(`Respond in language code: ${langHint}.`);
-    const SYSTEM_STYLE = SYSTEM_STYLE_LINES.join(' ');
-
-    const messages = [
-      { role: 'system', content: SYSTEM_STYLE },
-      ...recent,
-      { role: 'user', content: message },
-    ];
-
-    // ---- Call OpenAI ----
-    try {
-      const aiResp = await axios.post(
-        'https://api.openai.com/v1/chat/completions',
-        {
-          model: modelToUse,
-          messages,
-                   temperature: typeof temperature === 'number' ? temperature : 0.4,
-          max_tokens: dynamicMaxTokens,
-        },
-        {
-          headers: {
-            Authorization: `Bearer ${process.env.OPENAI_API_KEY}`,
-            'Content-Type': 'application/json',
-          },
+    // POST /ai/chat  and  /ai/sessions/:session_id/chat
+    async chat(ctx) {
+        // --- Auth ---
+        const authHeader = ctx.request.header.authorization;
+        if (!authHeader || !authHeader.startsWith('Bearer ')) {
+            return ctx.unauthorized('Missing or invalid authorization header.');
         }
-      );
+        if (!process.env.OPENAI_API_KEY) {
+            strapi.log.error('OPENAI_API_KEY is not set.');
+            return ctx.internalServerError('Server misconfiguration: OPENAI_API_KEY missing.');
+        }
 
-      const choice = aiResp.data?.choices?.[0];
-      const assistantTextRaw = choice?.message?.content || '';
-      const assistantText = truncateToWords(assistantTextRaw, effWordCap);
+        let userId;
+        try {
+            const payload = await strapi.plugin('users-permissions').service('jwt').verify(authHeader.split(' ')[1]);
+            userId = payload?.id;
+        } catch {
+            return ctx.unauthorized('Invalid or expired token.');
+        }
+        if (!userId) return ctx.unauthorized('Invalid token.');
 
-      const usageRaw = aiResp.data?.usage || { prompt_tokens: 0, completion_tokens: 0, total_tokens: 0 };
-      // Slim usage: keep totals only
-      const usage = {
-        prompt_tokens: usageRaw.prompt_tokens || 0,
-        completion_tokens: usageRaw.completion_tokens || 0,
-        total_tokens: usageRaw.total_tokens || 0,
-      };
+        // --- Params & body ---
+        const { session_id } = ctx.params || {};
+        const { message, temperature, word_cap, language, model } = ctx.request.body || {};
+        if (!message || typeof message !== 'string') {
+            return ctx.badRequest('Missing user "message".');
+        }
 
-      // ---- Persist history & usage ----
-      const newMsgs = [
-        ...(Array.isArray(session.last_msgs) ? session.last_msgs : []),
-        { role: 'user', content: message },
-        { role: 'assistant', content: assistantText },
-      ];
+        // Optional: include history flag (for debugging/clients that want it)
+        const includeHistory =
+            String(ctx.query?.include_history).toLowerCase() === 'true' ||
+            ctx.request.body?.return_history === true;
 
-      session = await strapi.entityService.update('api::conversation.conversation', session.id, {
-        data: {
-          last_msgs: newMsgs.slice(-MAX_HISTORY),
-          last_at: new Date(),
-          prompt_tokens: (session.prompt_tokens || 0) + usage.prompt_tokens,
-          completion_tokens: (session.completion_tokens || 0) + usage.completion_tokens,
-          total_tokens: (session.total_tokens || 0) + usage.total_tokens,
-        },
-      });
+        // --- Load or auto-create session (idle switch) ---
+        const { v4: uuidv4 } = require('uuid');
+        const now = new Date();
+        const SESSION_IDLE_MIN = 45;
 
-      // ---- Response (no meta) ----
-      const attributes = {
-        session_id: session.session_id,
-        last_at: session.last_at,
-        ...(includeHistory ? { last_msgs: session.last_msgs } : {}),
-        prompt_tokens: session.prompt_tokens,
-        completion_tokens: session.completion_tokens,
-        total_tokens: session.total_tokens,
-        reply: assistantText,
+        const findLatestOpen = async () => {
+            const [last] = await strapi.entityService.findMany('api::conversation.conversation', {
+            filters: { user: userId, status: 'open' },
+            sort: { last_at: 'desc' },
+            limit: 1,
+            });
+            return last || null;
+        };
 
-        // helpful extras for client, still in `data`
-        model: modelToUse,
-        usage, // totals only
-        language: langHint || 'default',
+        let [session] = await strapi.entityService.findMany('api::conversation.conversation', {
+            filters: session_id ? { user: userId, session_id } : { id: -1 }, // harmless miss if none
+            limit: 1,
+        });
+        if (!session) session = await findLatestOpen();
 
-        // session switching info
-        session_switched: sessionSwitched,
-        ...(sessionSwitched && previousSessionId ? { previous_session_id: previousSessionId } : {}),
-      };
+        const needNewSession = () => {
+            if (!session) return true;
+            const lastAt = new Date(session.last_at || session.started_at || 0);
+            const diffMin = (now - lastAt) / 60000;
+            return diffMin >= SESSION_IDLE_MIN;
+        };
 
-      ctx.body = { data: { id: session.id, attributes } };
-    } catch (err) {
-      const status = err.response?.status;
-      const data = err.response?.data;
-      strapi.log.error('OpenAI chat error (auto-session lean)', { status, data, message: err.message });
+        if (needNewSession()) {
+            session = await strapi.entityService.create('api::conversation.conversation', {
+            data: {
+                session_id: uuidv4(),
+                user: userId,
+                started_at: now,
+                last_at: now,
+                model: session?.model || 'gpt-3.5-turbo',
+                summary: { facts: [], goals: [], prefs: [], open_items: [], notes: '' },
+                last_msgs: [],
+                prompt_tokens: 0,
+                completion_tokens: 0,
+                total_tokens: 0,
+                status: 'open',
+            },
+            });
+        }
 
-      if (!status) return ctx.internalServerError('Network error reaching OpenAI.');
-      if (status === 401 || status === 403) return ctx.internalServerError('OpenAI auth/permissions error.');
-      if (status === 404) return ctx.internalServerError('Model not found/accessible for this key.');
-      if (status === 429) return ctx.internalServerError('OpenAI rate limit or quota exceeded.');
-      return ctx.internalServerError('Error during AI chat.');
+        // ---- Effective settings ----
+        const DEFAULT_MODEL = 'gpt-3.5-turbo';
+        const MODEL_ALLOW = new Set(['gpt-3.5-turbo', 'gpt-4o-mini']);
+        const MAX_REPLY_TOKENS = 220;
+        const MAX_HISTORY = 10;
+        const CONTEXT_TAKE = 4;
+        const REPLY_WORD_CAP_DEFAULT = 120;
+
+        const effWordCap = Math.max(60, Math.min(Number(word_cap ?? REPLY_WORD_CAP_DEFAULT), 200)); // 60–200
+        const langHint = typeof language === 'string' && language.trim().length <= 10 ? language.trim() : null;
+
+        const dynamicMaxTokens = Math.min(
+            MAX_REPLY_TOKENS,
+            Math.max(80, Math.ceil(effWordCap * 1.6) + 20)
+        );
+
+        const candidateModel = (typeof model === 'string' && MODEL_ALLOW.has(model)) ? model : session.model;
+        const modelToUse = MODEL_ALLOW.has(candidateModel) ? candidateModel : DEFAULT_MODEL;
+
+        // ---- Build prompt (small history) ----
+        const recent = Array.isArray(session.last_msgs) ? session.last_msgs.slice(-CONTEXT_TAKE) : [];
+
+        // Natural, warm style. No bullets unless user explicitly asks.
+        const SYSTEM_STYLE_LINES = [
+            'You are a warm, concise parenting assistant.',
+            `Write in short, natural sentences and compact paragraphs (max ${effWordCap} words).`,
+            'Do not use markdown formatting (no **bold**, lists, or headings) unless the user explicitly asks for a list.',
+            'Offer 2–4 specific steps only when the user asks for ideas/steps; otherwise prefer a single compact paragraph.',
+            'Avoid long intros/outros and generic disclaimers.',
+        ];
+        if (langHint) SYSTEM_STYLE_LINES.push(`Respond in language code: ${langHint}.`);
+        const SYSTEM_STYLE = SYSTEM_STYLE_LINES.join(' ');
+
+        const messages = [
+            { role: 'system', content: SYSTEM_STYLE },
+            ...recent,
+            { role: 'user', content: message },
+        ];
+
+        // --- helper: truncate by words ---
+        function truncateToWords(text, maxWords) {
+            if (!text) return '';
+            const words = text.trim().split(/\s+/);
+            if (words.length <= maxWords) return text.trim();
+            return words.slice(0, maxWords).join(' ') + '…';
+        }
+
+        try {
+            const aiResp = await axios.post(
+            'https://api.openai.com/v1/chat/completions',
+            {
+                model: modelToUse,
+                messages,
+                temperature: typeof temperature === 'number' ? temperature : 0.4,
+                max_tokens: dynamicMaxTokens,
+            },
+            {
+                headers: {
+                Authorization: `Bearer ${process.env.OPENAI_API_KEY}`,
+                'Content-Type': 'application/json',
+                },
+            }
+            );
+
+            const choice = aiResp.data?.choices?.[0];
+            let assistantText = choice?.message?.content || '';
+            // lightweight cleanup if the model still sneaks in list markers/markdown
+            assistantText = assistantText
+            .replace(/^[\s*-]\s*/gm, '')     // strip leading "-" or "*" list markers
+            .replace(/^\d+\.\s+/gm, '')      // strip "1. ", "2. " etc.
+            .replace(/\*\*(.*?)\*\*/g, '$1') // strip bold
+            .replace(/#{1,6}\s+/g, '');      // strip markdown headings
+
+            assistantText = truncateToWords(assistantText, effWordCap);
+
+            const usage = aiResp.data?.usage || { prompt_tokens: 0, completion_tokens: 0, total_tokens: 0 };
+
+            // ---- Persist history & usage ----
+            const newMsgs = [
+            ...(Array.isArray(session.last_msgs) ? session.last_msgs : []),
+            { role: 'user', content: message },
+            { role: 'assistant', content: assistantText },
+            ];
+
+            session = await strapi.entityService.update('api::conversation.conversation', session.id, {
+            data: {
+                last_msgs: newMsgs.slice(-MAX_HISTORY),
+                last_at: new Date(),
+                prompt_tokens: (session.prompt_tokens || 0) + (usage.prompt_tokens || 0),
+                completion_tokens: (session.completion_tokens || 0) + (usage.completion_tokens || 0),
+                total_tokens: (session.total_tokens || 0) + (usage.total_tokens || 0),
+            },
+            });
+
+            // ---- Response (no meta) ----
+            const attributes = {
+            session_id: session.session_id,
+            last_at: session.last_at,
+            ...(includeHistory ? { last_msgs: session.last_msgs } : {}),
+            prompt_tokens: session.prompt_tokens,
+            completion_tokens: session.completion_tokens,
+            total_tokens: session.total_tokens,
+            reply: assistantText,
+            model: modelToUse,
+            // leave usage if your client needs it; safe to keep/remove
+            usage,
+            language: langHint || 'default',
+            };
+
+            ctx.body = { data: { id: session.id, attributes } };
+        } catch (err) {
+            const status = err.response?.status;
+            const data = err.response?.data;
+            strapi.log.error('OpenAI chat error (natural style)', { status, data, message: err.message });
+
+            if (!status) return ctx.internalServerError('Network error reaching OpenAI.');
+            if (status === 401 || status === 403) return ctx.internalServerError('OpenAI auth/permissions error.');
+            if (status === 404) return ctx.internalServerError('Model not found/accessible for this key.');
+            if (status === 429) return ctx.internalServerError('OpenAI rate limit or quota exceeded.');
+            return ctx.internalServerError('Error during AI chat.');
+        }
     }
-  }
 
 }));
