@@ -299,3 +299,55 @@ curl -X GET "http://localhost:8080/api/personality-results?populate%5Bimage%5D=*
 -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MjMsImlhdCI6MTc2MDI5ODI3NywiZXhwIjoxNzYyODkwMjc3fQ.dZdTL8GxjKrGlCLHP96Tg0FcHJ2ypyzLCriSHp5HMP0" \
 -H "Content-Type: application/json" \
 | jq .
+
+
+curl -X GET 'http://localhost:8080/api/ai/sessions' \
+-H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MjMsImlhdCI6MTc2MDI5ODI3NywiZXhwIjoxNzYyODkwMjc3fQ.dZdTL8GxjKrGlCLHP96Tg0FcHJ2ypyzLCriSHp5HMP0" \
+-H "Content-Type: application/json" \
+| jq .
+
+curl -s -X GET 'http://localhost:8080/api/ai/sessions/7190431b-f898-4208-8fef-fdedb5a8baaa' \
+-H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MjMsImlhdCI6MTc2MDI5ODI3NywiZXhwIjoxNzYyODkwMjc3fQ.dZdTL8GxjKrGlCLHP96Tg0FcHJ2ypyzLCriSHp5HMP0" \
+-H "Content-Type: application/json" \
+| jq .
+
+
+HOST="http://localhost:8080"
+TOKEN="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MjMsImlhdCI6MTc2MDI5ODI3NywiZXhwIjoxNzYyODkwMjc3fQ.dZdTL8GxjKrGlCLHP96Tg0FcHJ2ypyzLCriSHp5HMP0"
+SID="7190431b-f898-4208-8fef-fdedb5a8baaa"
+curl -s -X POST "http://localhost:8080/api/ai/sessions/7190431b-f898-4208-8fef-fdedb5a8baaa/chat" \
+  -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MjMsImlhdCI6MTc2MDI5ODI3NywiZXhwIjoxNzYyODkwMjc3fQ.dZdTL8GxjKrGlCLHP96Tg0FcHJ2ypyzLCriSHp5HMP0" \
+  -H "Content-Type: application/json" \
+  -d '{"message":"How do I handle bedtime resistance with my 3-year-old?"}' | jq .
+
+
+curl -s -X POST "http://localhost:8080/api/ai/chat" \
+  -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MjMsImlhdCI6MTc2MDI5ODI3NywiZXhwIjoxNzYyODkwMjc3fQ.dZdTL8GxjKrGlCLHP96Tg0FcHJ2ypyzLCriSHp5HMP0" \
+  -H "Content-Type: application/json" \
+  -d '{"message":"How do I handle bedtime resistance with my 3-year-old?"}' | jq .
+
+
+
+
+curl -s -X POST "http://localhost:8080/api/openai/completion" \
+  -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MjMsImlhdCI6MTc2MDI5ODI3NywiZXhwIjoxNzYyODkwMjc3fQ.dZdTL8GxjKrGlCLHP96Tg0FcHJ2ypyzLCriSHp5HMP0" \
+  -H "Content-Type: application/json" \
+  -d '{"prompt":"Give me 3 quick dinner ideas for a picky 5-year-old."}' | jq .
+
+
+curl -X GET "http://localhost:8080/api/articles?filters%5Bfunctions%5D%5Bid%5D%5B%24in%5D=2&pagination%5Bpage%5D=1&pagination%5BpageSize%5D=12&sort%5B0%5D=sortScore%3Adesc&sort%5B1%5D=createdAt%3Adesc&populate%5Bicon_image%5D%5Bpopulate%5D=formats" \
+  -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MjMsImlhdCI6MTc2MDI5ODI3NywiZXhwIjoxNzYyODkwMjc3fQ.dZdTL8GxjKrGlCLHP96Tg0FcHJ2ypyzLCriSHp5HMP0" \
+  -H "Content-Type: application/json" \
+ | jq .
+
+
+curl -X POST "http://localhost:8080/api/articles/3/translate?target_lang=zh"
+
+
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MjMsImlhdCI6MTc2MTk3Mzk3MywiZXhwIjoxNzY0NTY1OTczfQ._7DPOu37lU-rMAVteMhVmzmziN0AMDtL2PJm89Sc8eo
+
+
+curl -X POST "http://localhost:8080/api/articles/3/translate?target_lang=zh" \
+  -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MjMsImlhdCI6MTc2MTk3Mzk3MywiZXhwIjoxNzY0NTY1OTczfQ._7DPOu37lU-rMAVteMhVmzmziN0AMDtL2PJm89Sc8eo"
+
+curl -X POST "http://localhost:8080/api/articles/3/trans?target_lang=zh"
