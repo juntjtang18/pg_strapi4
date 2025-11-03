@@ -11,6 +11,7 @@
     "backup": "env-cmd -f .env -- sh -c 'pg_dump -h \"$DATABASE_HOST\" -U \"$DATABASE_USERNAME\" \"$DATABASE_NAME\" > database/backups/gpa_full.sql'"
   },
   "dependencies": {
+    "@iamtraction/google-translate": "^2.0.1",
     "@strapi-community/strapi-provider-upload-google-cloud-storage": "^4.10.5",
     "@strapi/plugin-cloud": "4.15.5",
     "@strapi/plugin-email": "^4.25.23",

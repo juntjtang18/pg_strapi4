@@ -350,4 +350,46 @@ eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MjMsImlhdCI6MTc2MTk3Mzk3MywiZXhwIjo
 curl -X POST "http://localhost:8080/api/articles/3/translate?target_lang=zh" \
   -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MjMsImlhdCI6MTc2MTk3Mzk3MywiZXhwIjoxNzY0NTY1OTczfQ._7DPOu37lU-rMAVteMhVmzmziN0AMDtL2PJm89Sc8eo"
 
-curl -X POST "http://localhost:8080/api/articles/3/trans?target_lang=zh"
+curl -X POST "http://localhost:8080/api/articles/3/trans?target_lang=zh" \
+  -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MjMsImlhdCI6MTc2MTk3Mzk3MywiZXhwIjoxNzY0NTY1OTczfQ._7DPOu37lU-rMAVteMhVmzmziN0AMDtL2PJm89Sc8eo"
+
+
+curl -X POST "http://localhost:8080/api/articles/3/trans?target_lang=zh&enforce=true" \
+  -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MjMsImlhdCI6MTc2MTk3Mzk3MywiZXhwIjoxNzY0NTY1OTczfQ._7DPOu37lU-rMAVteMhVmzmziN0AMDtL2PJm89Sc8eo"
+
+curl -X GET "http://localhost:8080/api/articles?filters%5Blocale%5D%5B$eq%5D=zh" \
+  -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MjMsImlhdCI6MTc2MTk3Mzk3MywiZXhwIjoxNzY0NTY1OTczfQ._7DPOu37lU-rMAVteMhVmzmziN0AMDtL2PJm89Sc8eo"
+
+
+curl -X POST "http://localhost:8080/api/articles/transall?target_lang=zh&enforce=true" \
+  -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MjMsImlhdCI6MTc2MTk3Mzk3MywiZXhwIjoxNzY0NTY1OTczfQ._7DPOu37lU-rMAVteMhVmzmziN0AMDtL2PJm89Sc8eo"
+
+
+curl -X GET "http://localhost:8080/api/articles?fields=id,locale,title" \
+  -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MjMsImlhdCI6MTc2MTk3Mzk3MywiZXhwIjoxNzY0NTY1OTczfQ._7DPOu37lU-rMAVteMhVmzmziN0AMDtL2PJm89Sc8eo"
+
+
+curl -s "http://localhost:8080/api/articles?filters%5Blocale%5D%5B$eq%5D=zh&fields%5B0%5D=id&fields%5B1%5D=locale&fields%5B2%5D=title" \
+  -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MjMsImlhdCI6MTc2MTk3Mzk3MywiZXhwIjoxNzY0NTY1OTczfQ._7DPOu37lU-rMAVteMhVmzmziN0AMDtL2PJm89Sc8eo"
+
+
+curl -s "http://localhost:8080/api/articles?locale=zh" \
+  -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MjMsImlhdCI6MTc2MTk3Mzk3MywiZXhwIjoxNzY0NTY1OTczfQ._7DPOu37lU-rMAVteMhVmzmziN0AMDtL2PJm89Sc8eo"
+
+
+curl -s "http://localhost:8080/api/articles?locale=en\
+&filters%5Bfunctions%5D%5Bid%5D%5B$in%5D=1\
+&fields%5B0%5D=id&fields%5B1%5D=locale&fields%5B2%5D=title\
+&populate%5Blocalizations%5D%5Bfilters%5D%5Blocale%5D%5B$eq%5D=zh\
+&populate%5Blocalizations%5D%5Bfields%5D%5B0%5D=id\
+&populate%5Blocalizations%5D%5Bfields%5D%5B1%5D=locale\
+&populate%5Blocalizations%5D%5Bfields%5D%5B2%5D=title\
+&populate%5Blocalizations%5D%5Bfields%5D%5B3%5D=content\
+&pagination%5BpageSize%5D=100" \
+  -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MjMsImlhdCI6MTc2MTk3Mzk3MywiZXhwIjoxNzY0NTY1OTczfQ._7DPOu37lU-rMAVteMhVmzmziN0AMDtL2PJm89Sc8eo" \
+  | jq .
+
+
+
+Strapi API Token: for local i18n operation
+0e13989e4e21c5d4e4047933446308f2646e224b2612e26d17fe3783fe230005e5e90e22d7c803a1fa452309bd81bd4f58d3b47a3bd74239d0127c5dcd803e092092f2442cf38134f8d324cb237a69917cccd341e9182b550c19847fc1079f524aaa53684990eba80a78079bb96e5f06c1d8b196fd226e91066cbe2fbe53d7c4
