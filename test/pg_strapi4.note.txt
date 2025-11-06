@@ -341,20 +341,20 @@ curl -X GET "http://localhost:8080/api/articles?filters%5Bfunctions%5D%5Bid%5D%5
  | jq .
 
 
-curl -X POST "http://localhost:8080/api/articles/3/translate?target_lang=zh"
+curl -X POST "http://localhost:8080/api/articles/12/translate?target_lang=zh"
 
 
 eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MjMsImlhdCI6MTc2MTk3Mzk3MywiZXhwIjoxNzY0NTY1OTczfQ._7DPOu37lU-rMAVteMhVmzmziN0AMDtL2PJm89Sc8eo
 
 
-curl -X POST "http://localhost:8080/api/articles/3/translate?target_lang=zh" \
+curl -X POST "http://localhost:8080/api/articles/12/translate?target_lang=zh" \
   -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MjMsImlhdCI6MTc2MTk3Mzk3MywiZXhwIjoxNzY0NTY1OTczfQ._7DPOu37lU-rMAVteMhVmzmziN0AMDtL2PJm89Sc8eo"
 
-curl -X POST "http://localhost:8080/api/articles/3/trans?target_lang=zh" \
+curl -X POST "http://localhost:8080/api/articles/12/trans?target_lang=zh" \
   -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MjMsImlhdCI6MTc2MTk3Mzk3MywiZXhwIjoxNzY0NTY1OTczfQ._7DPOu37lU-rMAVteMhVmzmziN0AMDtL2PJm89Sc8eo"
 
 
-curl -X POST "http://localhost:8080/api/articles/3/trans?target_lang=zh&enforce=true" \
+curl -X POST "http://localhost:8080/api/articles/12/trans?target_lang=zh&enforce=true" \
   -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MjMsImlhdCI6MTc2MTk3Mzk3MywiZXhwIjoxNzY0NTY1OTczfQ._7DPOu37lU-rMAVteMhVmzmziN0AMDtL2PJm89Sc8eo"
 
 curl -X GET "http://localhost:8080/api/articles?filters%5Blocale%5D%5B$eq%5D=zh" \
