@@ -393,3 +393,11 @@ curl -s "http://localhost:8080/api/articles?locale=en\
 
 Strapi API Token: for local i18n operation
 0e13989e4e21c5d4e4047933446308f2646e224b2612e26d17fe3783fe230005e5e90e22d7c803a1fa452309bd81bd4f58d3b47a3bd74239d0127c5dcd803e092092f2442cf38134f8d324cb237a69917cccd341e9182b550c19847fc1079f524aaa53684990eba80a78079bb96e5f06c1d8b196fd226e91066cbe2fbe53d7c4
+
+
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MjMsImlhdCI6MTc2MjQ2MTM4NCwiZXhwIjoxNzY1MDUzMzg0fQ.pwa0wPw9e94Smesn8R9S6jvhZqcXhaqtCCdaMISpbQM
+
+curl -X POST "http://localhost:8080/api/courses/2/createlocale?locale=zh" \
+  -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MjMsImlhdCI6MTc2MjQ2MTM4NCwiZXhwIjoxNzY1MDUzMzg0fQ.pwa0wPw9e94Smesn8R9S6jvhZqcXhaqtCCdaMISpbQM" \
+  -H "Content-Type: application/json"
+

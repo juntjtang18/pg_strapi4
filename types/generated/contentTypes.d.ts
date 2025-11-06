@@ -1074,7 +1074,7 @@ export interface ApiCourseCourse extends Schema.CollectionType {
     icon_image: Attribute.Media &
       Attribute.SetPluginOptions<{
         i18n: {
-          localized: true;
+          localized: false;
         };
       }>;
     coursecategory: Attribute.Relation<
