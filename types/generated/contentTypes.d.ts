@@ -1418,6 +1418,137 @@ export interface ApiDailylessonDailylesson extends Schema.SingleType {
   };
 }
 
+export interface ApiExpertEssayExpertEssay extends Schema.CollectionType {
+  collectionName: 'expert_essays';
+  info: {
+    singularName: 'expert-essay';
+    pluralName: 'expert-essays';
+    displayName: 'ExpertEssay';
+    description: '';
+  };
+  options: {
+    draftAndPublish: false;
+  };
+  pluginOptions: {
+    i18n: {
+      localized: true;
+    };
+  };
+  attributes: {
+    title: Attribute.Text &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    description: Attribute.Text &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    icon_image: Attribute.Media &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    url: Attribute.Text &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: false;
+        };
+      }>;
+    expert_section: Attribute.Relation<
+      'api::expert-essay.expert-essay',
+      'manyToOne',
+      'api::expert-section.expert-section'
+    >;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::expert-essay.expert-essay',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::expert-essay.expert-essay',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    localizations: Attribute.Relation<
+      'api::expert-essay.expert-essay',
+      'oneToMany',
+      'api::expert-essay.expert-essay'
+    >;
+    locale: Attribute.String;
+  };
+}
+
+export interface ApiExpertSectionExpertSection extends Schema.CollectionType {
+  collectionName: 'expert_sections';
+  info: {
+    singularName: 'expert-section';
+    pluralName: 'expert-sections';
+    displayName: 'ExpertSection';
+  };
+  options: {
+    draftAndPublish: false;
+  };
+  pluginOptions: {
+    i18n: {
+      localized: true;
+    };
+  };
+  attributes: {
+    title: Attribute.String &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    description: Attribute.Text &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    icon_image: Attribute.Media &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: false;
+        };
+      }>;
+    expert_essays: Attribute.Relation<
+      'api::expert-section.expert-section',
+      'oneToMany',
+      'api::expert-essay.expert-essay'
+    >;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::expert-section.expert-section',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::expert-section.expert-section',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    localizations: Attribute.Relation<
+      'api::expert-section.expert-section',
+      'oneToMany',
+      'api::expert-section.expert-section'
+    >;
+    locale: Attribute.String;
+  };
+}
+
 export interface ApiFunctionFunction extends Schema.CollectionType {
   collectionName: 'functions';
   info: {
@@ -2096,6 +2227,8 @@ declare module '@strapi/types' {
       'api::coursecategory.coursecategory': ApiCoursecategoryCoursecategory;
       'api::daily-tip.daily-tip': ApiDailyTipDailyTip;
       'api::dailylesson.dailylesson': ApiDailylessonDailylesson;
+      'api::expert-essay.expert-essay': ApiExpertEssayExpertEssay;
+      'api::expert-section.expert-section': ApiExpertSectionExpertSection;
       'api::function.function': ApiFunctionFunction;
       'api::hot-topic.hot-topic': ApiHotTopicHotTopic;
       'api::like.like': ApiLikeLike;

@@ -42,6 +42,7 @@ function assignOnPayload(data, phase = 'n/a') {
 }
 
 /** Post-persist pass to ensure values are actually saved on component rows */
+/*
 async function ensurePersisted(courseId, phase = 'n/a') {
   // Don’t re-enter if this afterUpdate was triggered by our own patch
   if (patchingIds.has(courseId)) {
@@ -102,6 +103,7 @@ async function ensurePersisted(courseId, phase = 'n/a') {
     }
   }
 }
+  */
 
 module.exports = {
   async beforeCreate(event) {
@@ -113,10 +115,10 @@ module.exports = {
     if (id && patchingIds.has(id)) return;
     assignOnPayload(event.params.data, 'beforeUpdate');
   },
-  async afterCreate(event) {
-    await ensurePersisted(event.result.id, 'afterCreate');
-  },
-  async afterUpdate(event) {
-    await ensurePersisted(event.result.id, 'afterUpdate');
-  },
+  //async afterCreate(event) {
+  //  await ensurePersisted(event.result.id, 'afterCreate');
+  //},
+  //async afterUpdate(event) {
+  //  await ensurePersisted(event.result.id, 'afterUpdate');
+  //},
 };

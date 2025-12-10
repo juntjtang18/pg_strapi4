@@ -401,3 +401,46 @@ curl -X POST "http://localhost:8080/api/courses/2/createlocale?locale=zh" \
   -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MjMsImlhdCI6MTc2MjQ2MTM4NCwiZXhwIjoxNzY1MDUzMzg0fQ.pwa0wPw9e94Smesn8R9S6jvhZqcXhaqtCCdaMISpbQM" \
   -H "Content-Type: application/json"
 
+curl -X POST "http://localhost:8080/api/courses/77/translate?locale=zh" \
+  -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MjMsImlhdCI6MTc2MjQ2MTM4NCwiZXhwIjoxNzY1MDUzMzg0fQ.pwa0wPw9e94Smesn8R9S6jvhZqcXhaqtCCdaMISpbQM" \
+  -H "Content-Type: application/json"
+
+
+curl -X POST "http://localhost:8080/api/courses/78/translate?locale=zh" \
+  -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MjMsImlhdCI6MTc2MjQ2MTM4NCwiZXhwIjoxNzY1MDUzMzg0fQ.pwa0wPw9e94Smesn8R9S6jvhZqcXhaqtCCdaMISpbQM" \
+  -H "Content-Type: application/json"
+
+
+curl -X POST "http://localhost:8080/api/courses/createlocale/all?locale=zh" \
+  -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MjMsImlhdCI6MTc2MjQ2MTM4NCwiZXhwIjoxNzY1MDUzMzg0fQ.pwa0wPw9e94Smesn8R9S6jvhZqcXhaqtCCdaMISpbQM" \
+  -H "Content-Type: application/json"
+
+
+curl -X POST "http://localhost:8080/api/courses/reassigncat?locale=zh" \
+  -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MjMsImlhdCI6MTc2MjQ2MTM4NCwiZXhwIjoxNzY1MDUzMzg0fQ.pwa0wPw9e94Smesn8R9S6jvhZqcXhaqtCCdaMISpbQM" \
+  -H "Content-Type: application/json"
+
+
+curl -m 1800 -X POST "http://localhost:8080/api/courses/translateall?locale=zh" \
+  -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MjMsImlhdCI6MTc2MjQ2MTM4NCwiZXhwIjoxNzY1MDUzMzg0fQ.pwa0wPw9e94Smesn8R9S6jvhZqcXhaqtCCdaMISpbQM" \
+  -H "Content-Type: application/json"  
+
+curl -m 7200 -X POST "http://localhost:8080/api/courses/translateall?locale=zh&startid=97" \
+  -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MjMsImlhdCI6MTc2MjQ2MTM4NCwiZXhwIjoxNzY1MDUzMzg0fQ.pwa0wPw9e94Smesn8R9S6jvhZqcXhaqtCCdaMISpbQM" \
+  -H "Content-Type: application/json"  
+
+
+curl -X POST "http://localhost:8080/api/courses/2/backfill?source=zh&target=en" \
+  -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MjMsImlhdCI6MTc2MjQ2MTM4NCwiZXhwIjoxNzY1MDUzMzg0fQ.pwa0wPw9e94Smesn8R9S6jvhZqcXhaqtCCdaMISpbQM" \
+  -H "Content-Type: application/json"
+
+
+curl -X POST "http://localhost:8080/api/courses/1/translate?locale=en&source=zh" \
+  -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MjMsImlhdCI6MTc2MjQ2MTM4NCwiZXhwIjoxNzY1MDUzMzg0fQ.pwa0wPw9e94Smesn8R9S6jvhZqcXhaqtCCdaMISpbQM" \
+  -H "Content-Type: application/json"
+
+
+curl -X POST "http://localhost:8080/api/courses/2/translate?locale=en&source=zh" \
+  -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MjMsImlhdCI6MTc2MjQ2MTM4NCwiZXhwIjoxNzY1MDUzMzg0fQ.pwa0wPw9e94Smesn8R9S6jvhZqcXhaqtCCdaMISpbQM" \
+  -H "Content-Type: application/json"
+  
