@@ -1,0 +1,56 @@
+{
+  "kind": "collectionType",
+  "collectionName": "families",
+  "info": {
+    "singularName": "family",
+    "pluralName": "families",
+    "displayName": "family",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "list": {
+      "type": "boolean",
+      "default": false
+    },
+    "user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user"
+    },
+    "parent": {
+      "type": "component",
+      "repeatable": true,
+      "component": "a.parent-info"
+    },
+    "kids": {
+      "type": "component",
+      "repeatable": true,
+      "component": "a.kid-info"
+    },
+    "availability": {
+      "type": "component",
+      "repeatable": true,
+      "component": "a.availabilityslot"
+    },
+    "verified": {
+      "type": "boolean",
+      "default": false
+    },
+    "activity": {
+      "type": "string"
+    },
+    "neighborhood": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::neighborhood.neighborhood",
+      "inversedBy": "families"
+    },
+    "address": {
+      "type": "string"
+    }
+  }
+}

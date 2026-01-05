@@ -444,3 +444,11 @@ curl -X POST "http://localhost:8080/api/courses/2/translate?locale=en&source=zh"
   -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MjMsImlhdCI6MTc2MjQ2MTM4NCwiZXhwIjoxNzY1MDUzMzg0fQ.pwa0wPw9e94Smesn8R9S6jvhZqcXhaqtCCdaMISpbQM" \
   -H "Content-Type: application/json"
   
+
+
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MjMsImlhdCI6MTc2NTMyMjIwMywiZXhwIjoxNzY3OTE0MjAzfQ.ufO3bgrRLGze8BmPBbViI9My28KMI_ap_K5mCTGw1YY
+curl -X GET "http://localhost:8080/api/expert-sections" \
+  -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MjMsImlhdCI6MTc2NTMyMjIwMywiZXhwIjoxNzY3OTE0MjAzfQ.ufO3bgrRLGze8BmPBbViI9My28KMI_ap_K5mCTGw1YY" \
+  -H "Content-Type: application/json"
+
+

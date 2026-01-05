@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "neighborhoods",
+  "info": {
+    "singularName": "neighborhood",
+    "pluralName": "neighborhoods",
+    "displayName": "neighborhood"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "families": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::family.family",
+      "mappedBy": "neighborhood"
+    }
+  }
+}

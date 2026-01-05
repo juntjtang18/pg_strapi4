@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_a_parent_infos",
+  "info": {
+    "displayName": "parent-info",
+    "icon": "bulletList"
+  },
+  "options": {},
+  "attributes": {
+    "lastname": {
+      "type": "string"
+    },
+    "firstname": {
+      "type": "string"
+    },
+    "birthday": {
+      "type": "date"
+    }
+  }
+}

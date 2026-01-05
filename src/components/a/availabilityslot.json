@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_a_availabilityslots",
+  "info": {
+    "displayName": "availabilityslot",
+    "icon": "calendar"
+  },
+  "options": {},
+  "attributes": {
+    "dayofweek": {
+      "type": "enumeration",
+      "enum": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+        "Sunday"
+      ]
+    },
+    "starttime": {
+      "type": "time"
+    },
+    "endtime": {
+      "type": "time"
+    },
+    "notes": {
+      "type": "string"
+    }
+  }
+}

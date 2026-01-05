@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_a_kid_infos",
+  "info": {
+    "displayName": "kid-info"
+  },
+  "options": {},
+  "attributes": {
+    "lastname": {
+      "type": "string"
+    },
+    "firstname": {
+      "type": "string"
+    },
+    "birthday": {
+      "type": "date"
+    },
+    "hobbytags": {
+      "type": "string"
+    }
+  }
+}

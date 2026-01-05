@@ -12,6 +12,30 @@ export interface AAnswer extends Schema.Component {
   };
 }
 
+export interface AAvailabilityslot extends Schema.Component {
+  collectionName: 'components_a_availabilityslots';
+  info: {
+    displayName: 'availabilityslot';
+    icon: 'calendar';
+  };
+  attributes: {
+    dayofweek: Attribute.Enumeration<
+      [
+        'Monday',
+        'Tuesday',
+        'Wednesday',
+        'Thursday',
+        'Friday',
+        'Saturday',
+        'Sunday'
+      ]
+    >;
+    starttime: Attribute.Time;
+    endtime: Attribute.Time;
+    notes: Attribute.String;
+  };
+}
+
 export interface ACoursePick extends Schema.Component {
   collectionName: 'components_a_course_picks';
   info: {
@@ -36,6 +60,32 @@ export interface AFeatures extends Schema.Component {
   };
   attributes: {
     feature: Attribute.String & Attribute.Required;
+  };
+}
+
+export interface AKidInfo extends Schema.Component {
+  collectionName: 'components_a_kid_infos';
+  info: {
+    displayName: 'kid-info';
+  };
+  attributes: {
+    lastname: Attribute.String;
+    firstname: Attribute.String;
+    birthday: Attribute.Date;
+    hobbytags: Attribute.String;
+  };
+}
+
+export interface AParentInfo extends Schema.Component {
+  collectionName: 'components_a_parent_infos';
+  info: {
+    displayName: 'parent-info';
+    icon: 'bulletList';
+  };
+  attributes: {
+    lastname: Attribute.String;
+    firstname: Attribute.String;
+    birthday: Attribute.Date;
   };
 }
 
@@ -159,8 +209,11 @@ declare module '@strapi/types' {
   export module Shared {
     export interface Components {
       'a.answer': AAnswer;
+      'a.availabilityslot': AAvailabilityslot;
       'a.course-pick': ACoursePick;
       'a.features': AFeatures;
+      'a.kid-info': AKidInfo;
+      'a.parent-info': AParentInfo;
       'coursecontent.external-video': CoursecontentExternalVideo;
       'coursecontent.image': CoursecontentImage;
       'coursecontent.pagebreaker': CoursecontentPagebreaker;

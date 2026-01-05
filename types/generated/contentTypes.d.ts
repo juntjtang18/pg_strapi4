@@ -1549,6 +1549,52 @@ export interface ApiExpertSectionExpertSection extends Schema.CollectionType {
   };
 }
 
+export interface ApiFamilyFamily extends Schema.CollectionType {
+  collectionName: 'families';
+  info: {
+    singularName: 'family';
+    pluralName: 'families';
+    displayName: 'family';
+    description: '';
+  };
+  options: {
+    draftAndPublish: false;
+  };
+  attributes: {
+    list: Attribute.Boolean & Attribute.DefaultTo<false>;
+    user: Attribute.Relation<
+      'api::family.family',
+      'oneToOne',
+      'plugin::users-permissions.user'
+    >;
+    parent: Attribute.Component<'a.parent-info', true>;
+    kids: Attribute.Component<'a.kid-info', true>;
+    availability: Attribute.Component<'a.availabilityslot', true>;
+    verified: Attribute.Boolean & Attribute.DefaultTo<false>;
+    activity: Attribute.String;
+    neighborhood: Attribute.Relation<
+      'api::family.family',
+      'manyToOne',
+      'api::neighborhood.neighborhood'
+    >;
+    address: Attribute.String;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::family.family',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::family.family',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
 export interface ApiFunctionFunction extends Schema.CollectionType {
   collectionName: 'functions';
   info: {
@@ -1784,6 +1830,40 @@ export interface ApiModerationReportModerationReport
       Attribute.Private;
     updatedBy: Attribute.Relation<
       'api::moderation-report.moderation-report',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
+export interface ApiNeighborhoodNeighborhood extends Schema.CollectionType {
+  collectionName: 'neighborhoods';
+  info: {
+    singularName: 'neighborhood';
+    pluralName: 'neighborhoods';
+    displayName: 'neighborhood';
+  };
+  options: {
+    draftAndPublish: false;
+  };
+  attributes: {
+    name: Attribute.String;
+    families: Attribute.Relation<
+      'api::neighborhood.neighborhood',
+      'oneToMany',
+      'api::family.family'
+    >;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::neighborhood.neighborhood',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::neighborhood.neighborhood',
       'oneToOne',
       'admin::user'
     > &
@@ -2229,11 +2309,13 @@ declare module '@strapi/types' {
       'api::dailylesson.dailylesson': ApiDailylessonDailylesson;
       'api::expert-essay.expert-essay': ApiExpertEssayExpertEssay;
       'api::expert-section.expert-section': ApiExpertSectionExpertSection;
+      'api::family.family': ApiFamilyFamily;
       'api::function.function': ApiFunctionFunction;
       'api::hot-topic.hot-topic': ApiHotTopicHotTopic;
       'api::like.like': ApiLikeLike;
       'api::moderation-block.moderation-block': ApiModerationBlockModerationBlock;
       'api::moderation-report.moderation-report': ApiModerationReportModerationReport;
+      'api::neighborhood.neighborhood': ApiNeighborhoodNeighborhood;
       'api::pers-question.pers-question': ApiPersQuestionPersQuestion;
       'api::personality-result.personality-result': ApiPersonalityResultPersonalityResult;
       'api::ping.ping': ApiPingPing;
