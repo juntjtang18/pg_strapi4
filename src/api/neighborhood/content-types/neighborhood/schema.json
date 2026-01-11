@@ -19,6 +19,12 @@
       "relation": "oneToMany",
       "target": "api::family.family",
       "mappedBy": "neighborhood"
+    },
+    "playplaces": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::playplace.playplace",
+      "mappedBy": "neighborhood"
     }
   }
 }

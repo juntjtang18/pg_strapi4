@@ -1854,6 +1854,11 @@ export interface ApiNeighborhoodNeighborhood extends Schema.CollectionType {
       'oneToMany',
       'api::family.family'
     >;
+    playplaces: Attribute.Relation<
+      'api::neighborhood.neighborhood',
+      'oneToMany',
+      'api::playplace.playplace'
+    >;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     createdBy: Attribute.Relation<
@@ -2031,6 +2036,45 @@ export interface ApiPingPing extends Schema.CollectionType {
     createdBy: Attribute.Relation<'api::ping.ping', 'oneToOne', 'admin::user'> &
       Attribute.Private;
     updatedBy: Attribute.Relation<'api::ping.ping', 'oneToOne', 'admin::user'> &
+      Attribute.Private;
+  };
+}
+
+export interface ApiPlayplacePlayplace extends Schema.CollectionType {
+  collectionName: 'playplaces';
+  info: {
+    singularName: 'playplace';
+    pluralName: 'playplaces';
+    displayName: 'playplace';
+  };
+  options: {
+    draftAndPublish: false;
+  };
+  attributes: {
+    name: Attribute.String;
+    agegroup: Attribute.String;
+    description: Attribute.Text;
+    photo: Attribute.Media;
+    address: Attribute.String;
+    website: Attribute.String;
+    neighborhood: Attribute.Relation<
+      'api::playplace.playplace',
+      'manyToOne',
+      'api::neighborhood.neighborhood'
+    >;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::playplace.playplace',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::playplace.playplace',
+      'oneToOne',
+      'admin::user'
+    > &
       Attribute.Private;
   };
 }
@@ -2319,6 +2363,7 @@ declare module '@strapi/types' {
       'api::pers-question.pers-question': ApiPersQuestionPersQuestion;
       'api::personality-result.personality-result': ApiPersonalityResultPersonalityResult;
       'api::ping.ping': ApiPingPing;
+      'api::playplace.playplace': ApiPlayplacePlayplace;
       'api::post.post': ApiPostPost;
       'api::tag.tag': ApiTagTag;
       'api::tip.tip': ApiTipTip;
