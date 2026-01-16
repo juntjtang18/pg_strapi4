@@ -57,9 +57,6 @@ curl -X POST \
 
 
 test1@geniusparentingai.ca/NewP@ssw0rd
-
-
-
 {
   "kind": "collectionType",
   "collectionName": "moderation_blocks",

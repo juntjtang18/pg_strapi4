@@ -452,3 +452,6 @@ curl -X GET "http://localhost:8080/api/expert-sections" \
   -H "Content-Type: application/json"
 
 
+curl -X GET "http://localhost:8080/api/playplaces" \
+  -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MjMsImlhdCI6MTc2NTMyMjIwMywiZXhwIjoxNzY3OTE0MjAzfQ.ufO3bgrRLGze8BmPBbViI9My28KMI_ap_K5mCTGw1YY" \
+  -H "Content-Type: application/json"
