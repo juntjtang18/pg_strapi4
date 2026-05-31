@@ -8,7 +8,8 @@
     "start": "strapi start",
     "build": "strapi build",
     "strapi": "strapi",
-    "backup": "env-cmd -f .env -- sh -c 'pg_dump -h \"$DATABASE_HOST\" -U \"$DATABASE_USERNAME\" \"$DATABASE_NAME\" > database/backups/gpa_full.sql'"
+    "backup": "env-cmd -f .env -- sh -c 'pg_dump -h \"$DATABASE_HOST\" -U \"$DATABASE_USERNAME\" \"$DATABASE_NAME\" > database/backups/gpa_full.sql'",
+    "test:subscription-proxy": "node --test test/subscription-v1_1-proxy.test.js"
   },
   "dependencies": {
     "@iamtraction/google-translate": "^2.0.1",
