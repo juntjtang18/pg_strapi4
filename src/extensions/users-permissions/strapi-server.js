@@ -3,13 +3,12 @@
 const logger = require('../../utils/logger'); // Path to src/utils/logger
 logger.debug("[DEBUG] ==> Loading custom users-permissions strapi-server.js");
 
-const axios = require("axios");
-const { ApplicationError, ValidationError } = require('@strapi/utils').errors;
+const { ApplicationError } = require('@strapi/utils').errors;
 const { sanitize } = require('@strapi/utils');
 
 module.exports = (plugin) => {
   // =================================================================
-  // 1. 'ME' ENDPOINT - WITH SUBSCRIPTION & USER PROFILE
+  // 1. 'ME' ENDPOINT - WITH USER PROFILE
   // =================================================================
   plugin.controllers.user.me = async (ctx) => {
     if (!ctx.state.user || !ctx.state.user.id) {
@@ -27,41 +26,15 @@ module.exports = (plugin) => {
       return ctx.notFound();
     }
 
-    // --- Subscription Fetching Logic ---
-    let subscription = null;
-    try {
-      logger.debug("[DEBUG] Entering subscription fetching logic for 'me' endpoint.");
-      const subscriptionUrl = process.env.SUBSYS_BASE_URL;
-      const secret = process.env.SUBSCRIPTION_SERVICE_SECRET;
-      
-      if (!subscriptionUrl || !secret) {
-        logger.error("[ERROR] Subscription environment variables not set. Skipping call.");
-      } else {
-        const userId = ctx.state.user.id;
-        logger.debug(`[DEBUG] Calling subscription endpoint for user ${userId}`);
-        const response = await axios.get(
-          `${subscriptionUrl}/api/v1/subscription-of-a-user/${userId}`,
-          { headers: { Authorization: `Bearer ${secret}` } }
-        );
-        subscription = response.data;
-        logger.debug(`[DEBUG] Subscription data fetched successfully for user ${userId}.`);
-      }
-    } catch (error) {
-      logger.error("[ERROR] Failed to fetch subscription data for user.", error.message);
-      subscription = null;
-    }
-    // --- End Subscription Logic ---
-
     const userSchema = strapi.getModel('plugin::users-permissions.user');
     const sanitizedUser = await sanitize.contentAPI.output(user, userSchema);
-    sanitizedUser.subscription = subscription;
     
     // Replace the original user object in the response with our new, detailed one
     ctx.body = sanitizedUser;
   };
 
 // =================================================================
-  // 2. 'LOGIN' ENDPOINT (/api/auth/local) - WITH SUBSCRIPTION & ROLE
+  // 2. 'LOGIN' ENDPOINT (/api/auth/local) - WITH ROLE AND PROFILE
   // =================================================================
   const originalCallback = plugin.controllers.auth.callback;
   plugin.controllers.auth.callback = async (ctx) => {
@@ -71,7 +44,6 @@ module.exports = (plugin) => {
     // If authentication was successful, ctx.body will have jwt and user
     if (ctx.body.jwt && ctx.body.user) {
       const user = ctx.body.user;
-      let subscription = null;
       
       // Re-fetch the user to populate the role, profile, and its related data
       let userWithDetails = await strapi.entityService.findOne(
@@ -117,44 +89,10 @@ module.exports = (plugin) => {
           throw new ApplicationError('Login failed due to a profile system error.');
         }
       }
-
-      const subscriptionUrl = process.env.SUBSYS_BASE_URL;
-      const secret = process.env.SUBSCRIPTION_SERVICE_SECRET;
-
-      if (!subscriptionUrl || !secret) {
-        logger.error("[ERROR] Subscription environment variables not set for login. Skipping call.");
-      } else {
-        try {
-          // First, try to fetch the existing subscription
-          logger.info(`[DEBUG] Login successful for user ${user.id}. Fetching subscription.`);
-          const response = await axios.get(
-            `${subscriptionUrl}/api/v1/subscription-of-a-user/${user.id}`,
-            { headers: { Authorization: `Bearer ${secret}` } }
-          );
-          subscription = response.data;
-          logger.debug(`[DEBUG] Subscription data fetched for user ${user.id}.`);
-        } catch (error) {
-          logger.warn(`[WARN] Could not fetch subscription for user ${user.id}. Attempting creation...`, error.message);
-
-          try {
-            // Create the free plan. The response from this endpoint is already complete.
-            const creationResponse = await axios.post(
-              `${subscriptionUrl}/api/v1/subscriptions/subscribe-free-plan`,
-              { userId: user.id }, 
-              { headers: { Authorization: `Bearer ${secret}` } }
-            );
-            subscription = creationResponse.data;
-            logger.debug(`[DEBUG] Successfully created new subscription for user ${user.id}.`);
-          } catch (creationError) {
-            logger.error(`[ERROR] CRITICAL: A failure occurred during the subscription creation process for user ${user.id}.`, creationError.message);
-          }
-        }
-      }
       
-      // Sanitize the user with the role, then attach the subscription and profile
+      // Sanitize the user with the role and profile.
       const userSchema = strapi.getModel('plugin::users-permissions.user');
       const sanitizedUser = await sanitize.contentAPI.output(userWithDetails, userSchema);
-      sanitizedUser.subscription = subscription;
       
       // Replace the original user object in the response with our new, detailed one
       ctx.body.user = sanitizedUser;
@@ -162,7 +100,7 @@ module.exports = (plugin) => {
   };
 
 // =================================================================
-  // 3. 'REGISTER' ENDPOINT - WITH SUBSCRIPTION & ROLE
+  // 3. 'REGISTER' ENDPOINT - WITH ROLE AND PROFILE
   // =================================================================
   plugin.controllers.auth.register = async (ctx) => {
     logger.debug("[DEBUG] ==> Starting custom /register controller.");
@@ -224,34 +162,6 @@ module.exports = (plugin) => {
         await userService.remove({ id: newUser.id }); // Clean up the created user
         throw new ApplicationError('Account could not be created due to a profile system error.');
       }
-      // Step 3: Create the subscription in the subsystem.
-      let subscription = null;
-      try {
-        const subscriptionUrl = process.env.SUBSYS_BASE_URL;
-        const secret = process.env.SUBSCRIPTION_SERVICE_SECRET;
-        
-        if (!subscriptionUrl || !secret) {
-          logger.error("[ERROR] Subscription environment variables not set. Skipping call.");
-        } else {
-          const creationResponse = await axios.post(
-            `${subscriptionUrl}/api/v1/subscriptions/subscribe-free-plan`,
-            { userId: newUser.id }, 
-            { headers: { Authorization: `Bearer ${secret}` } }
-          );
-          subscription = creationResponse.data;
-          logger.debug(`[DEBUG] Subscription creation completed for user ${newUser.id}.`);
-        }
-      } catch (subError) {
-        // If subscription fails, roll back the user (which should also cascade delete the profile)
-        let subErrorMessage = subError.message;
-        if (subError.response && subError.response.data && subError.response.data.error) {
-          subErrorMessage = subError.response.data.error.message;
-        }
-        logger.error(`[ERROR] Subscription call failed. Rolling back user creation. Reason: ${subErrorMessage}`);
-        
-        await userService.remove({ id: newUser.id });
-        throw new ApplicationError("Account could not be created due to a subscription system error.");
-      }      
       
       const userWithDetails = await strapi.entityService.findOne(
         "plugin::users-permissions.user",
@@ -268,7 +178,6 @@ module.exports = (plugin) => {
 
       const userSchema = strapi.getModel('plugin::users-permissions.user');
       const sanitizedUser = await sanitize.contentAPI.output(userWithDetails, userSchema);
-      sanitizedUser.subscription = subscription;
 
       return ctx.send({
         jwt: jwtService.issue({ id: sanitizedUser.id }),

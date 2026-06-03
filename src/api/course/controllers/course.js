@@ -5,6 +5,13 @@ const { createCoreController } = require('@strapi/strapi').factories;
 const crypto = require('crypto');
 const uuidv4 = crypto.randomUUID ? () => crypto.randomUUID() : require('uuid').v4;
 const { randomUUID } = require('crypto');
+const {
+  getAuthenticatedUserFromContext,
+} = require('../../../utils/authenticated-user');
+const {
+  consumeEntitlementUsage,
+  isMembershipOnlyCourse,
+} = require('../../../utils/entitlement-enforcement');
 
 const OpenAI = require('openai');
 
@@ -273,6 +280,42 @@ function normalizeContentForClone(baseContent = []) {
 }
 
 module.exports = createCoreController('api::course.course', ({ strapi }) => ({
+  async findOne(ctx) {
+    const courseId = Number(ctx.params?.id);
+    if (!Number.isInteger(courseId)) return ctx.badRequest('Invalid course id.');
+
+    const course = await strapi.entityService.findOne('api::course.course', courseId, {
+      fields: ['id', 'title'],
+      populate: {
+        coursecategory: {
+          fields: ['id', 'name'],
+        },
+      },
+    });
+    if (!course) return ctx.notFound('Course not found.');
+
+    if (isMembershipOnlyCourse(course)) {
+      const user = await getAuthenticatedUserFromContext(ctx);
+      if (!user) return;
+
+      const usageResult = await consumeEntitlementUsage(ctx, {
+        deniedMessage: 'This course requires an active membership plan.',
+        entitlementKey: 'courses.premium',
+        fallbackMessage: 'Unable to verify course entitlement.',
+        idempotencyKey: ctx.request?.header?.['x-usage-idempotency-key'] || ctx.query?.usageIdempotencyKey,
+        metadata: {
+          courseCategory: course.coursecategory?.name || null,
+          courseId,
+          route: ctx.request?.path || ctx.path || 'course.findOne',
+        },
+        userId: user.id,
+      });
+      if (!usageResult.allowed) return;
+    }
+
+    return super.findOne(ctx);
+  },
+
   /**
    * POST /api/courses/:id/createlocale?locale=zh[&enforce=true]
    * - Forwards user's JWT

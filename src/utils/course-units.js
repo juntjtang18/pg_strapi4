@@ -11,4 +11,7 @@ async function getUnitUUIDs(courseId) {
   return dz.filter(b => b.__component === PB && b.unit_uuid).map(b => b.unit_uuid);
 }
 
-module.exports = { getUnitUUIDs };
+module.exports = {
+  getUnitUUIDs,
+  ensureUnitUUIDs: getUnitUUIDs,
+};

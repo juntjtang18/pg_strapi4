@@ -1,6 +1,7 @@
 'use strict';
 
 const assert = require('node:assert/strict');
+const { readFileSync } = require('node:fs');
 const test = require('node:test');
 const axios = require('axios');
 
@@ -9,6 +10,9 @@ const {
   isJwtError,
 } = require('../src/utils/authenticated-user');
 const controller = require('../src/api/subscription/controllers/subscription');
+const openaiController = require('../src/api/openai/controllers/openai');
+const { keepSubscriptionServiceWarm } = require('../src/utils/cron-jobs');
+const planController = require('../src/api/plan/controllers/plan');
 const legacyPlanRoutes = require('../src/api/plan/routes/plan-routes');
 const legacySubscriptionRoutes = require('../src/api/subscription/routes/activation');
 const routeConfig = require('../src/api/subscription/routes/v1_1');
@@ -16,6 +20,10 @@ const subscriptionServiceFactory = require('../src/api/subscription/services/sub
 const {
   sendSubscriptionServiceError,
 } = require('../src/utils/subscription-service-client');
+const {
+  consumeEntitlementUsage,
+  isMembershipOnlyCourse,
+} = require('../src/utils/entitlement-enforcement');
 
 function createCtx(options = {}) {
   const authorization = Object.prototype.hasOwnProperty.call(options, 'authorization')
@@ -30,6 +38,7 @@ function createCtx(options = {}) {
       body,
       header: authorization ? { authorization } : {},
     },
+    state: options.state || {},
     status: undefined,
     internalServerError(message) {
       this.status = 500;
@@ -173,6 +182,92 @@ test('legacy subscription-facing routes remain unchanged', () => {
   ]);
 });
 
+test('auth extension no longer calls legacy subscription subsystem endpoints', () => {
+  const source = readFileSync('src/extensions/users-permissions/strapi-server.js', 'utf8');
+
+  assert.equal(source.includes('subscription-of-a-user'), false);
+  assert.equal(source.includes('subscribe-free-plan'), false);
+  assert.equal(source.includes('SUBSCRIPTION_SERVICE_BASE_URL'), false);
+  assert.equal(source.includes('SUBSCRIPTION_SERVICE_SECRET'), false);
+});
+
+test('Strapi main no longer uses legacy SUBSYS_BASE_URL naming', () => {
+  const files = [
+    '.env.example',
+    'src/index.js',
+    'src/utils/cron-jobs.js',
+    'src/utils/subscription-service-client.js',
+  ];
+
+  for (const file of files) {
+    const source = readFileSync(file, 'utf8');
+    assert.equal(source.includes('SUBSYS_BASE_URL'), false, `${file} should not use SUBSYS_BASE_URL`);
+    assert.equal(source.includes('/api/pings'), false, `${file} should not ping legacy /api/pings`);
+  }
+});
+
+test('subscription service warm-up cron pings gpa-subscription health endpoint', async (t) => {
+  const originalGet = axios.get;
+  const originalBaseUrl = process.env.SUBSCRIPTION_SERVICE_BASE_URL;
+  let receivedUrl;
+
+  process.env.SUBSCRIPTION_SERVICE_BASE_URL = 'http://subscription.internal';
+  axios.get = async (url) => {
+    receivedUrl = url;
+    return { status: 200 };
+  };
+
+  t.after(() => {
+    axios.get = originalGet;
+    if (originalBaseUrl === undefined) {
+      delete process.env.SUBSCRIPTION_SERVICE_BASE_URL;
+    } else {
+      process.env.SUBSCRIPTION_SERVICE_BASE_URL = originalBaseUrl;
+    }
+  });
+
+  await keepSubscriptionServiceWarm({
+    log: {
+      error() {},
+      info() {},
+      warn() {},
+    },
+  });
+
+  assert.equal(receivedUrl, 'http://subscription.internal/healthz');
+});
+
+test('deprecated subscription endpoints return 410 without proxying', async () => {
+  const activateCtx = createCtx();
+  await controller.activate(activateCtx);
+
+  assert.equal(activateCtx.status, 410);
+  assert.deepEqual(activateCtx.body, {
+    error: 'Gone',
+    message: 'This subscription endpoint is deprecated. Use /api/v1.1/subscription endpoints.',
+  });
+
+  const activePlanCtx = createCtx();
+  await controller.myActivePlan(activePlanCtx);
+
+  assert.equal(activePlanCtx.status, 410);
+  assert.deepEqual(activePlanCtx.body, {
+    error: 'Gone',
+    message: 'This subscription endpoint is deprecated. Use /api/v1.1/subscription endpoints.',
+  });
+});
+
+test('deprecated plan endpoint returns 410 without proxying', async () => {
+  const ctx = createCtx({ authorization: undefined });
+  await planController.find(ctx);
+
+  assert.equal(ctx.status, 410);
+  assert.deepEqual(ctx.body, {
+    error: 'Gone',
+    message: 'This plan endpoint is deprecated. Use /api/v1.1/subscription/plans.',
+  });
+});
+
 test('plansV11 proxies public plan catalog with locale', async () => {
   let received;
   installStrapiMock({
@@ -219,7 +314,7 @@ test('meV11 requires auth and injects current Strapi user id', async () => {
   installStrapiMock({
     async getUserEntitlementsV11(input) {
       received = input;
-      return { strapiUserId: 42 };
+      return { userId: 42 };
     },
   });
 
@@ -228,7 +323,7 @@ test('meV11 requires auth and injects current Strapi user id', async () => {
 
   assert.deepEqual(received, { locale: 'en', userId: 42 });
   assert.equal(ctx.status, 200);
-  assert.deepEqual(ctx.body, { strapiUserId: 42 });
+  assert.deepEqual(ctx.body, { userId: 42 });
 });
 
 test('meV11 rejects missing bearer token before proxying', async () => {
@@ -494,11 +589,11 @@ test('usage v1.1 endpoints proxy body with current user id', async () => {
 
 test('subscription service v1.1 methods call gpa-subscription with internal secret', async (t) => {
   const originalRequest = axios.request;
-  const originalBaseUrl = process.env.SUBSYS_BASE_URL;
+  const originalBaseUrl = process.env.SUBSCRIPTION_SERVICE_BASE_URL;
   const originalSecret = process.env.SUBSCRIPTION_SERVICE_SECRET;
   const calls = [];
 
-  process.env.SUBSYS_BASE_URL = 'http://subscription.internal/';
+  process.env.SUBSCRIPTION_SERVICE_BASE_URL = 'http://subscription.internal/';
   process.env.SUBSCRIPTION_SERVICE_SECRET = 'internal-secret';
   global.strapi = { log: { error() {}, info() {} } };
 
@@ -510,9 +605,9 @@ test('subscription service v1.1 methods call gpa-subscription with internal secr
   t.after(() => {
     axios.request = originalRequest;
     if (originalBaseUrl === undefined) {
-      delete process.env.SUBSYS_BASE_URL;
+      delete process.env.SUBSCRIPTION_SERVICE_BASE_URL;
     } else {
-      process.env.SUBSYS_BASE_URL = originalBaseUrl;
+      process.env.SUBSCRIPTION_SERVICE_BASE_URL = originalBaseUrl;
     }
 
     if (originalSecret === undefined) {
@@ -568,24 +663,24 @@ test('subscription service v1.1 methods call gpa-subscription with internal secr
   });
 
   assert.equal(calls[0].method, 'GET');
-  assert.equal(calls[0].url, 'http://subscription.internal/api/v1/plans');
+  assert.equal(calls[0].url, 'http://subscription.internal/api/v1.1/plans');
   assert.deepEqual(calls[0].params, { locale: 'zh_CN' });
   assert.equal(calls[0].headers['x-subscription-service-secret'], 'internal-secret');
 
   assert.equal(calls[1].method, 'GET');
-  assert.equal(calls[1].url, 'http://subscription.internal/api/v1/users/42/entitlements');
+  assert.equal(calls[1].url, 'http://subscription.internal/api/v1.1/users/42/entitlements');
   assert.deepEqual(calls[1].params, { locale: 'en' });
 
   assert.equal(calls[2].method, 'POST');
-  assert.equal(calls[2].url, 'http://subscription.internal/api/v1/purchases/apple/verify');
+  assert.equal(calls[2].url, 'http://subscription.internal/api/v1.1/purchases/apple/verify');
   assert.deepEqual(calls[2].params, { locale: 'en' });
   assert.deepEqual(calls[2].data, {
     receipt: 'signed-jws',
-    strapiUserId: 42,
+    userId: 42,
   });
 
   assert.equal(calls[3].method, 'POST');
-  assert.equal(calls[3].url, 'http://subscription.internal/api/v1/purchases/apple/sync');
+  assert.equal(calls[3].url, 'http://subscription.internal/api/v1.1/purchases/apple/sync');
   assert.deepEqual(calls[3].params, { locale: 'zh_CN' });
   assert.deepEqual(calls[3].data, {
     states: [
@@ -597,26 +692,26 @@ test('subscription service v1.1 methods call gpa-subscription with internal secr
         productId: 'ca.geniusparentingai.basic.monthly',
       },
     ],
-    strapiUserId: 42,
+    userId: 42,
   });
 
   assert.equal(calls[4].method, 'POST');
-  assert.equal(calls[4].url, 'http://subscription.internal/api/v1/purchases/google/verify');
+  assert.equal(calls[4].url, 'http://subscription.internal/api/v1.1/purchases/google/verify');
   assert.deepEqual(calls[4].params, { locale: 'en' });
   assert.deepEqual(calls[4].data, {
     purchaseToken: 'google-token',
-    strapiUserId: 42,
+    userId: 42,
   });
 
   assert.equal(calls[5].method, 'POST');
-  assert.equal(calls[5].url, 'http://subscription.internal/api/v1/users/42/usage/check');
+  assert.equal(calls[5].url, 'http://subscription.internal/api/v1.1/users/42/usage/check');
   assert.deepEqual(calls[5].data, {
     entitlementKey: 'ai.chat',
     quantity: 1,
   });
 
   assert.equal(calls[6].method, 'POST');
-  assert.equal(calls[6].url, 'http://subscription.internal/api/v1/users/42/usage/consume');
+  assert.equal(calls[6].url, 'http://subscription.internal/api/v1.1/users/42/usage/consume');
   assert.deepEqual(calls[6].data, {
     entitlementKey: 'ai.chat',
     idempotencyKey: 'test-key',
@@ -624,59 +719,156 @@ test('subscription service v1.1 methods call gpa-subscription with internal secr
   });
 });
 
-test('legacy activation forwarding still calls the old subsystem endpoint shape', async (t) => {
-  const originalPost = axios.post;
-  const originalBaseUrl = process.env.SUBSYS_BASE_URL;
-  const originalSecret = process.env.SUBSCRIPTION_SERVICE_SECRET;
-  let call;
-
-  process.env.SUBSYS_BASE_URL = 'http://legacy-subsys.internal';
-  process.env.SUBSCRIPTION_SERVICE_SECRET = 'legacy-secret';
-  global.strapi = {
-    log: {
-      debug() {},
-      error() {},
-      info() {},
+test('entitlement enforcement helper consumes usage and allows permitted actions', async () => {
+  let received;
+  installStrapiMock({
+    async consumeUsageV11(input) {
+      received = input;
+      return { allowed: true, entitlementKey: 'ai.chat', reason: 'allowed' };
     },
-  };
+  });
 
-  axios.post = async (url, data, options) => {
-    call = { data, options, url };
-    return { data: { ok: true } };
+  const ctx = createCtx();
+  const result = await consumeEntitlementUsage(ctx, {
+    entitlementKey: 'ai.chat',
+    idempotencyKey: 'chat-1',
+    metadata: { route: 'ai.chat' },
+    userId: 42,
+  });
+
+  assert.equal(result.allowed, true);
+  assert.deepEqual(received, {
+    body: {
+      entitlementKey: 'ai.chat',
+      idempotencyKey: 'chat-1',
+      metadata: { route: 'ai.chat' },
+      quantity: 1,
+    },
+    userId: 42,
+  });
+  assert.equal(ctx.status, undefined);
+});
+
+test('entitlement enforcement helper maps quota denial to 429', async () => {
+  installStrapiMock({
+    async consumeUsageV11() {
+      return {
+        allowed: false,
+        entitlementKey: 'ai.chat',
+        reason: 'limit_exceeded',
+      };
+    },
+  });
+
+  const ctx = createCtx();
+  const result = await consumeEntitlementUsage(ctx, {
+    deniedMessage: 'quota reached',
+    entitlementKey: 'ai.chat',
+    userId: 42,
+  });
+
+  assert.equal(result.allowed, false);
+  assert.equal(ctx.status, 429);
+  assert.deepEqual(ctx.body, {
+    error: 'EntitlementDenied',
+    message: 'quota reached',
+    usage: {
+      allowed: false,
+      entitlementKey: 'ai.chat',
+      reason: 'limit_exceeded',
+    },
+  });
+});
+
+test('legacy OpenAI completion endpoint consumes ai.chat before calling OpenAI', async (t) => {
+  const originalPost = axios.post;
+  let openAiCalled = false;
+  let receivedUsage;
+
+  installStrapiMock({
+    async consumeUsageV11(input) {
+      receivedUsage = input;
+      return { allowed: true, entitlementKey: 'ai.chat', reason: 'allowed' };
+    },
+  });
+
+  axios.post = async () => {
+    openAiCalled = true;
+    return { data: { choices: [{ message: { content: 'ok' } }] } };
   };
 
   t.after(() => {
     axios.post = originalPost;
-    if (originalBaseUrl === undefined) {
-      delete process.env.SUBSYS_BASE_URL;
-    } else {
-      process.env.SUBSYS_BASE_URL = originalBaseUrl;
-    }
-
-    if (originalSecret === undefined) {
-      delete process.env.SUBSCRIPTION_SERVICE_SECRET;
-    } else {
-      process.env.SUBSCRIPTION_SERVICE_SECRET = originalSecret;
-    }
   });
 
-  const service = subscriptionServiceFactory({ strapi: global.strapi });
-  const result = await service.forwardActivationToSubsystem({
-    receipt: 'legacy-receipt',
+  const ctx = createCtx({
+    body: { prompt: 'hello', usageIdempotencyKey: 'ai-1' },
+    state: { user: { id: 42 } },
+  });
+
+  await openaiController.getCompletion(ctx);
+
+  assert.equal(openAiCalled, true);
+  assert.deepEqual(receivedUsage, {
+    body: {
+      entitlementKey: 'ai.chat',
+      idempotencyKey: 'ai-1',
+      metadata: { route: 'openai.completion' },
+      quantity: 1,
+    },
     userId: 42,
   });
+  assert.equal(ctx.status, 200);
+  assert.deepEqual(ctx.body, { choices: [{ message: { content: 'ok' } }] });
+});
 
-  assert.deepEqual(result, { ok: true });
-  assert.deepEqual(call, {
-    data: {
-      receipt: 'legacy-receipt',
-      userId: 42,
+test('legacy OpenAI completion endpoint stops before OpenAI when quota denied', async (t) => {
+  const originalPost = axios.post;
+  let openAiCalled = false;
+
+  installStrapiMock({
+    async consumeUsageV11() {
+      return {
+        allowed: false,
+        entitlementKey: 'ai.chat',
+        reason: 'limit_exceeded',
+      };
     },
-    options: {
-      headers: {
-        Authorization: 'Bearer legacy-secret',
+  });
+
+  axios.post = async () => {
+    openAiCalled = true;
+    return { data: {} };
+  };
+
+  t.after(() => {
+    axios.post = originalPost;
+  });
+
+  const ctx = createCtx({
+    body: { prompt: 'hello' },
+    state: { user: { id: 42 } },
+  });
+
+  await openaiController.getCompletion(ctx);
+
+  assert.equal(openAiCalled, false);
+  assert.equal(ctx.status, 429);
+  assert.equal(ctx.body.error, 'EntitlementDenied');
+});
+
+test('course membership helper follows Swift category rule', () => {
+  assert.equal(isMembershipOnlyCourse({ coursecategory: { name: 'Membership Only' } }), true);
+  assert.equal(isMembershipOnlyCourse({ coursecategory: { name: 'Foundation' } }), false);
+  assert.equal(isMembershipOnlyCourse({
+    attributes: {
+      coursecategory: {
+        data: {
+          attributes: {
+            name: 'Membership Only',
+          },
+        },
       },
     },
-    url: 'http://legacy-subsys.internal/api/v1/verify-apple-purchase',
-  });
+  }), true);
 });

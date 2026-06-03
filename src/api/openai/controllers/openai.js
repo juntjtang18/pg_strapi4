@@ -2,6 +2,9 @@
 
 'use strict';
 const axios = require('axios');
+const {
+  consumeEntitlementUsage,
+} = require('../../../utils/entitlement-enforcement');
 
 module.exports = {
   async getCompletion(ctx) {
@@ -14,6 +17,18 @@ module.exports = {
     if (!prompt) {
       return ctx.badRequest('A "prompt" is required in the request body.');
     }
+
+    const usageResult = await consumeEntitlementUsage(ctx, {
+      deniedMessage: 'Your current plan does not allow more AI chat messages.',
+      entitlementKey: 'ai.chat',
+      fallbackMessage: 'Unable to verify AI chat entitlement.',
+      idempotencyKey: ctx.request.body?.usageIdempotencyKey,
+      metadata: {
+        route: ctx.request.path || ctx.path || 'openai.completion',
+      },
+      userId: ctx.state.user.id,
+    });
+    if (!usageResult.allowed) return;
 
     // 1. Create the new, enhanced prompt.
     // This adds your guideline to the user's original question.

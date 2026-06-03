@@ -2,6 +2,9 @@
 
 const { createCoreController } = require('@strapi/strapi').factories;
 const axios = require('axios');
+const {
+  consumeEntitlementUsage,
+} = require('../../../utils/entitlement-enforcement');
 
 // --- Simple, tunable bits ---
 const MAX_HISTORY = 10;                // how many messages we keep in DB
@@ -243,6 +246,19 @@ module.exports = createCoreController('api::conversation.conversation', ({ strap
         if (!message || typeof message !== 'string') {
             return ctx.badRequest('Missing user "message".');
         }
+
+        const usageResult = await consumeEntitlementUsage(ctx, {
+            deniedMessage: 'Your current plan does not allow more AI chat messages.',
+            entitlementKey: 'ai.chat',
+            fallbackMessage: 'Unable to verify AI chat entitlement.',
+            idempotencyKey: ctx.request.body?.usageIdempotencyKey,
+            metadata: {
+                route: ctx.request.path || ctx.path || 'ai.chat',
+                sessionId: session_id || null,
+            },
+            userId,
+        });
+        if (!usageResult.allowed) return;
 
         // Optional: include history flag (for debugging/clients that want it)
         const includeHistory =

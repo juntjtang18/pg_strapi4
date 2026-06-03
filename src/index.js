@@ -1,6 +1,6 @@
 'use strict';
 
-const { runHotTopicJob, runDailyTipJob, keepSubsysWarm } = require('./utils/cron-jobs');
+const { runHotTopicJob, runDailyTipJob, keepSubscriptionServiceWarm } = require('./utils/cron-jobs');
 
 module.exports = {
   register(/*{ strapi }*/) {},
@@ -22,10 +22,10 @@ module.exports = {
         await runDailyTipJob(strapi);
       },
     });
-    // --- SUBSYS PING CRON JOB ---
+    // --- SUBSCRIPTION SERVICE PING CRON JOB ---
     strapi.cron.add({
       '*/8 * * * *': async () => {
-        await keepSubsysWarm(strapi);
+        await keepSubscriptionServiceWarm(strapi);
       },
     });
 

@@ -11,12 +11,12 @@ function trimTrailingSlash(value) {
 }
 
 function getSubscriptionServiceConfig() {
-  const baseUrl = trimTrailingSlash(process.env.SUBSYS_BASE_URL);
+  const baseUrl = trimTrailingSlash(process.env.SUBSCRIPTION_SERVICE_BASE_URL);
   const secret = process.env.SUBSCRIPTION_SERVICE_SECRET;
 
   if (!baseUrl || !secret) {
     strapi.log.error(
-      'SUBSYS_BASE_URL or SUBSCRIPTION_SERVICE_SECRET environment variables are not set.'
+      'SUBSCRIPTION_SERVICE_BASE_URL or SUBSCRIPTION_SERVICE_SECRET environment variables are not set.'
     );
     throw new ApplicationError(SUBSCRIPTION_SERVICE_CONFIG_ERROR);
   }
