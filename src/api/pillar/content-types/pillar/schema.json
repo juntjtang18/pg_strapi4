@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "pillars",
+  "info": {
+    "singularName": "pillar",
+    "pluralName": "pillars",
+    "displayName": "pillar",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "pluginOptions": {},
+      "type": "string",
+      "unique": false,
+      "required": true
+    },
+    "order": {
+      "type": "integer"
+    },
+    "courses": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::course.course",
+      "mappedBy": "pillar"
+    }
+  }
+}

@@ -85,6 +85,22 @@
       "relation": "oneToMany",
       "target": "api::course-read-log.course-read-log",
       "mappedBy": "course"
+    },
+    "pillar": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::pillar.pillar",
+      "inversedBy": "courses"
+    },
+    "published": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "type": "boolean",
+      "default": false,
+      "required": true
     }
   }
 }

@@ -1103,6 +1103,19 @@ export interface ApiCourseCourse extends Schema.CollectionType {
       'oneToMany',
       'api::course-read-log.course-read-log'
     >;
+    pillar: Attribute.Relation<
+      'api::course.course',
+      'manyToOne',
+      'api::pillar.pillar'
+    >;
+    published: Attribute.Boolean &
+      Attribute.Required &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: false;
+        };
+      }> &
+      Attribute.DefaultTo<false>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     createdBy: Attribute.Relation<
@@ -2018,6 +2031,42 @@ export interface ApiPersonalityResultPersonalityResult
   };
 }
 
+export interface ApiPillarPillar extends Schema.CollectionType {
+  collectionName: 'pillars';
+  info: {
+    singularName: 'pillar';
+    pluralName: 'pillars';
+    displayName: 'pillar';
+    description: '';
+  };
+  options: {
+    draftAndPublish: false;
+  };
+  attributes: {
+    name: Attribute.String & Attribute.Required;
+    order: Attribute.Integer;
+    courses: Attribute.Relation<
+      'api::pillar.pillar',
+      'oneToMany',
+      'api::course.course'
+    >;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::pillar.pillar',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::pillar.pillar',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
 export interface ApiPingPing extends Schema.CollectionType {
   collectionName: 'pings';
   info: {
@@ -2362,6 +2411,7 @@ declare module '@strapi/types' {
       'api::neighborhood.neighborhood': ApiNeighborhoodNeighborhood;
       'api::pers-question.pers-question': ApiPersQuestionPersQuestion;
       'api::personality-result.personality-result': ApiPersonalityResultPersonalityResult;
+      'api::pillar.pillar': ApiPillarPillar;
       'api::ping.ping': ApiPingPing;
       'api::playplace.playplace': ApiPlayplacePlayplace;
       'api::post.post': ApiPostPost;
