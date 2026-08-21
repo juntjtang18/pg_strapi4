@@ -284,36 +284,56 @@ module.exports = createCoreController('api::course.course', ({ strapi }) => ({
     const courseId = Number(ctx.params?.id);
     if (!Number.isInteger(courseId)) return ctx.badRequest('Invalid course id.');
 
-    const course = await strapi.entityService.findOne('api::course.course', courseId, {
-      fields: ['id', 'title'],
-      populate: {
-        coursecategory: {
-          fields: ['id', 'name'],
+    try {
+      const course = await strapi.entityService.findOne('api::course.course', courseId, {
+        fields: ['id', 'title'],
+        populate: {
+          coursecategory: {
+            fields: ['id', 'name'],
+          },
         },
-      },
-    });
-    if (!course) return ctx.notFound('Course not found.');
-
-    if (isMembershipOnlyCourse(course)) {
-      const user = await getAuthenticatedUserFromContext(ctx);
-      if (!user) return;
-
-      const usageResult = await consumeEntitlementUsage(ctx, {
-        deniedMessage: 'This course requires an active membership plan.',
-        entitlementKey: 'courses.premium',
-        fallbackMessage: 'Unable to verify course entitlement.',
-        idempotencyKey: ctx.request?.header?.['x-usage-idempotency-key'] || ctx.query?.usageIdempotencyKey,
-        metadata: {
-          courseCategory: course.coursecategory?.name || null,
-          courseId,
-          route: ctx.request?.path || ctx.path || 'course.findOne',
-        },
-        userId: user.id,
       });
-      if (!usageResult.allowed) return;
-    }
+      if (!course) return ctx.notFound('Course not found.');
 
-    return super.findOne(ctx);
+      if (isMembershipOnlyCourse(course)) {
+        const user = await getAuthenticatedUserFromContext(ctx);
+        if (!user) return;
+
+        const fullUser = await strapi.entityService.findOne(
+          'plugin::users-permissions.user',
+          user.id,
+          { populate: ['role'] }
+        );
+        const roleName = String(fullUser?.role?.name || '').toUpperCase();
+        const isCmsEditor = roleName === 'EDITOR' || roleName === 'ADMIN';
+        if (!isCmsEditor) {
+          const usageResult = await consumeEntitlementUsage(ctx, {
+            deniedMessage: 'This course requires an active membership plan.',
+            entitlementKey: 'courses.premium',
+            fallbackMessage: 'Unable to verify course entitlement.',
+            idempotencyKey: ctx.request?.header?.['x-usage-idempotency-key'] || ctx.query?.usageIdempotencyKey,
+            metadata: {
+              courseCategory: course.coursecategory?.name || null,
+              courseId,
+              route: ctx.request?.path || ctx.path || 'course.findOne',
+            },
+            userId: user.id,
+          });
+          if (!usageResult.allowed) return;
+        }
+      }
+
+      return await super.findOne(ctx);
+    } catch (error) {
+      if (error?.name === 'JsonWebTokenError' || error?.name === 'TokenExpiredError') {
+        return ctx.unauthorized('Invalid or expired token.');
+      }
+      strapi.log.error(`[course.findOne] id=${courseId} ${error?.message || error}`, {
+        query: ctx.query,
+        stack: error?.stack,
+      });
+      return ctx.internalServerError('Failed to load course.');
+    }
   },
 
   /**
