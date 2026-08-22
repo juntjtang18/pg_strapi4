@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_coursecontent_attachments",
+  "info": {
+    "displayName": "attachments",
+    "icon": "paperclip",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "files": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "files"
+      ]
+    }
+  }
+}

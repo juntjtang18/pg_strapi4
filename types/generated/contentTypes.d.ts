@@ -1063,7 +1063,8 @@ export interface ApiCourseCourse extends Schema.CollectionType {
         'coursecontent.video',
         'coursecontent.external-video',
         'coursecontent.quiz',
-        'coursecontent.pagebreaker'
+        'coursecontent.pagebreaker',
+        'coursecontent.attachments'
       ]
     > &
       Attribute.SetPluginOptions<{

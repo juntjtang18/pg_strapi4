@@ -89,6 +89,19 @@ export interface AParentInfo extends Schema.Component {
   };
 }
 
+export interface CoursecontentAttachments extends Schema.Component {
+  collectionName: 'components_coursecontent_attachments';
+  info: {
+    displayName: 'attachments';
+    icon: 'paperclip';
+    description: '';
+  };
+  attributes: {
+    title: Attribute.String;
+    files: Attribute.Media;
+  };
+}
+
 export interface CoursecontentExternalVideo extends Schema.Component {
   collectionName: 'components_coursecontent_external_videos';
   info: {
@@ -214,6 +227,7 @@ declare module '@strapi/types' {
       'a.features': AFeatures;
       'a.kid-info': AKidInfo;
       'a.parent-info': AParentInfo;
+      'coursecontent.attachments': CoursecontentAttachments;
       'coursecontent.external-video': CoursecontentExternalVideo;
       'coursecontent.image': CoursecontentImage;
       'coursecontent.pagebreaker': CoursecontentPagebreaker;

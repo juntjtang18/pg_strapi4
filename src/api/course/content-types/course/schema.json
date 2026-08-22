@@ -38,7 +38,8 @@
         "coursecontent.video",
         "coursecontent.external-video",
         "coursecontent.quiz",
-        "coursecontent.pagebreaker"
+        "coursecontent.pagebreaker",
+        "coursecontent.attachments"
       ]
     },
     "icon_image": {

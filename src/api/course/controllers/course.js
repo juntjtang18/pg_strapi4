@@ -19,6 +19,16 @@ const openai = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
 
 // ------------------ content helpers ------------------
 
+function attachmentFileIds(item) {
+  const files = item?.files;
+  const list = Array.isArray(files) ? files : files ? [files] : [];
+  return list.map((file) => file?.id ?? file).filter(Boolean);
+}
+
+function cloneAttachmentsComponent(uid, item) {
+  return { __component: uid, title: item.title ?? '', files: attachmentFileIds(item) };
+}
+
 // Minimal clone for creation + guarantee pagebreaker.unit_uuid uniqueness
 function cloneContentEnsureUUIDs(baseContent = []) {
   if (!Array.isArray(baseContent)) return [];
@@ -61,6 +71,9 @@ function cloneContentEnsureUUIDs(baseContent = []) {
 
         case 'coursecontent.external-video':
           return { __component: uid, external_url: item.external_url ?? '', caption: item.caption ?? '' };
+
+        case 'coursecontent.attachments':
+          return cloneAttachmentsComponent(uid, item);
 
         case 'coursecontent.pagebreaker': {
           let id = (item.unit_uuid || '').trim();
@@ -168,6 +181,9 @@ function normalizeContentForTranslate(baseContent = []) {
         case 'coursecontent.external-video':
           return { __component: uid, external_url: item.external_url ?? '', caption: item.caption ?? '' };
 
+        case 'coursecontent.attachments':
+          return cloneAttachmentsComponent(uid, item);
+
         case 'coursecontent.pagebreaker':
           return {
             __component: uid,
@@ -263,6 +279,9 @@ function normalizeContentForClone(baseContent = []) {
 
         case 'coursecontent.external-video':
           return { __component: uid, external_url: item.external_url ?? '', caption: item.caption ?? '' };
+
+        case 'coursecontent.attachments':
+          return cloneAttachmentsComponent(uid, item);
 
         case 'coursecontent.pagebreaker':
           return {
@@ -835,6 +854,9 @@ async backfill(ctx) {
 
       case 'coursecontent.external-video':
         return { __component: uid, external_url: item.external_url ?? '', caption: item.caption ?? '' };
+
+      case 'coursecontent.attachments':
+        return cloneAttachmentsComponent(uid, item);
 
       case 'coursecontent.pagebreaker':
         return {
